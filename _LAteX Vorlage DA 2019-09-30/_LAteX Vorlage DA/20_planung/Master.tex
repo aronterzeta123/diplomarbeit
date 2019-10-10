@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper,oneside]{book}
-
+\let\counterwithout\relax
+\let\counterwithin\relax
 \usepackage[pdftex]{graphicx}
 \usepackage{nomencl}
 \usepackage[defernumbers=true, backend=biber]{biblatex}
@@ -34,8 +35,6 @@
 \setlength{\parskip}{3pt plus 1pt minus 0pt}       % vert. space before a paragraph
 \setcounter{tocdepth}{2}        % lowest section level entered in ToC
 \setcounter{secnumdepth}{2}     % lowest section level still numbered
-
-
 \begin{document}
 % Set global Varibales for this chpater
 \input{./_Doc_A.tex}
