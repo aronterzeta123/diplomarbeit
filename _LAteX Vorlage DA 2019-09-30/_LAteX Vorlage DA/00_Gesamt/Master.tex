@@ -22,8 +22,6 @@
 \usepackage{lastpage} %Ermittlung der letzten Seite 
 \usepackage{ifthen} %ifthen
 \usepackage{float}
-
-%Fußnoten forltaufend nummerieren
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
 
@@ -44,6 +42,8 @@
 	\input{./../#1/_Doc_App.tex}}
 \fi
 
+
+
 %Import file
 \ifdefined\inputdoc
 \renewcommand{\inputdoc}[1]{
@@ -51,9 +51,9 @@
 	\fancypagestyle{empty}{
 		\fancyhf{}
 		\fancyfoot[C]{Autor: \autor}		
-		}
+	}
 	\pagestyle{empty}
-
+	
 	\input{./../#1/_Doc.tex}} 
 \else
 \newcommand{\inputdoc}[1]{
@@ -65,7 +65,6 @@
 	\pagestyle{empty}
 	\input{./../#1/_Doc.tex}}
 \fi
-
 
 \geometry{a4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
 \setlength{\parskip}{3pt plus 1pt minus 0pt}       % vert. space before a paragraph

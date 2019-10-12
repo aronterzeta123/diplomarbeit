@@ -1,15 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 OCT 2019 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.4)  12 OCT 2019 22:50
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**Master.tex
-(./Master.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+**./Master.tex
+(Master.tex
+LaTeX2e <2018-12-01>
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\bk12.clo"
+File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -24,115 +21,152 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.s
+ty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty
+"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.s
+ty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphi
+cs.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex
+.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/nomencl/nomencl.sty
-Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/nomencl\nomencl.sty
+"
+Package: nomencl 2019/05/05 v5.2 Nomenclature package
+
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty
+"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.t
+ex"
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.
+tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count89
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocbasi
+c.sty"
+Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
+
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbase
+.sty"
+Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlfil
+e.sty"
+Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+))
+\scr@dte@tocline@numberwidth=\skip43
+\scr@dte@tocline@numbox=\box27
+)
+Package tocbasic Info: setting babel extension for `nlo' on input line 155.
+Package tocbasic Info: setting babel extension for `nls' on input line 156.
 \nomlabelwidth=\dimen105
 \nom@tempdim=\dimen106
-\nomitemsep=\skip43
+\nomitemsep=\skip44
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.s
+ty"
+Package: biblatex 2019/08/31 v3.13a programmable bibliographies (PK/MW)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexcm
+ds.sty"
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwarer
+r.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluatex
+.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.
+sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.st
+y"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count89
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.s
+ty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count90
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.
+sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetkey
+s.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmds
+.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count90
+\lrq@indent=\count91
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+)) ("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write3
-\integerpart=\count91
-\decimalpart=\count92
-)
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-)
-\c@tabx@nest=\count93
-\c@listtotal=\count94
-\c@listcount=\count95
-\c@liststart=\count96
-\c@liststop=\count97
-\c@citecount=\count98
-\c@citetotal=\count99
-\c@multicitecount=\count100
-\c@multicitetotal=\count101
-\c@instcount=\count102
-\c@maxnames=\count103
-\c@minnames=\count104
-\c@maxitems=\count105
-\c@minitems=\count106
-\c@citecounter=\count107
+\c@tabx@nest=\count92
+\c@listtotal=\count93
+\c@listcount=\count94
+\c@liststart=\count95
+\c@liststop=\count96
+\c@citecount=\count97
+\c@citetotal=\count98
+\c@multicitecount=\count99
+\c@multicitetotal=\count100
+\c@instcount=\count101
+\c@maxnames=\count102
+\c@minnames=\count103
+\c@maxitems=\count104
+\c@minitems=\count105
+\c@citecounter=\count106
+\c@maxcitecounter=\count107
 \c@savedcitecounter=\count108
 \c@uniquelist=\count109
 \c@uniquename=\count110
@@ -140,142 +174,148 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \c@refsegment=\count112
 \c@maxextratitle=\count113
 \c@maxextratitleyear=\count114
-\c@maxextradate=\count115
-\c@maxextraalpha=\count116
-\c@abbrvpenalty=\count117
-\c@highnamepenalty=\count118
-\c@lownamepenalty=\count119
-\c@maxparens=\count120
-\c@parenlevel=\count121
-\blx@tempcnta=\count122
-\blx@tempcntb=\count123
-\blx@tempcntc=\count124
-\blx@maxsection=\count125
-\blx@maxsegment@0=\count126
-\blx@notetype=\count127
-\blx@parenlevel@text=\count128
-\blx@parenlevel@foot=\count129
-\blx@sectionciteorder@0=\count130
-\labelnumberwidth=\skip44
-\labelalphawidth=\skip45
-\biblabelsep=\skip46
-\bibitemsep=\skip47
-\bibnamesep=\skip48
-\bibinitsep=\skip49
-\bibparsep=\skip50
-\bibhang=\skip51
+\c@maxextraname=\count115
+\c@maxextradate=\count116
+\c@maxextraalpha=\count117
+\c@abbrvpenalty=\count118
+\c@highnamepenalty=\count119
+\c@lownamepenalty=\count120
+\c@maxparens=\count121
+\c@parenlevel=\count122
+\blx@tempcnta=\count123
+\blx@tempcntb=\count124
+\blx@tempcntc=\count125
+\blx@maxsection=\count126
+\blx@maxsegment@0=\count127
+\blx@notetype=\count128
+\blx@parenlevel@text=\count129
+\blx@parenlevel@foot=\count130
+\blx@sectionciteorder@0=\count131
+\blx@entrysetcounter=\count132
+\labelnumberwidth=\skip45
+\labelalphawidth=\skip46
+\biblabelsep=\skip47
+\bibitemsep=\skip48
+\bibnamesep=\skip49
+\bibinitsep=\skip50
+\bibparsep=\skip51
+\bibhang=\skip52
 \blx@bcfin=\read1
-\blx@bcfout=\write4
-\c@mincomprange=\count131
-\c@maxcomprange=\count132
-\c@mincompwidth=\count133
+\blx@bcfout=\write3
+\blx@langwohyphens=\language82
+\c@mincomprange=\count133
+\c@maxcomprange=\count134
+\c@mincompwidth=\count135
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def
+"
+File: blx-dm.def 2019/08/31 v3.13a biblatex localization (PK/MW)
 )
 ! Missing \endcsname inserted.
 <to be read again> 
                    \relax 
-l.5955 \ProcessLocalKeyvalOptions{blx@opt@eldt}
+l.6564 \ProcessLocalKeyvalOptions{blx@opt@eldt}
                                                
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count134
-\c@savedafterword=\count135
-\c@annotator=\count136
-\c@savedannotator=\count137
-\c@author=\count138
-\c@savedauthor=\count139
-\c@bookauthor=\count140
-\c@savedbookauthor=\count141
-\c@commentator=\count142
-\c@savedcommentator=\count143
-\c@editor=\count144
-\c@savededitor=\count145
-\c@editora=\count146
-\c@savededitora=\count147
-\c@editorb=\count148
-\c@savededitorb=\count149
-\c@editorc=\count150
-\c@savededitorc=\count151
-\c@foreword=\count152
-\c@savedforeword=\count153
-\c@holder=\count154
-\c@savedholder=\count155
-\c@introduction=\count156
-\c@savedintroduction=\count157
-\c@namea=\count158
-\c@savednamea=\count159
-\c@nameb=\count160
-\c@savednameb=\count161
-\c@namec=\count162
-\c@savednamec=\count163
-\c@translator=\count164
-\c@savedtranslator=\count165
-\c@shortauthor=\count166
-\c@savedshortauthor=\count167
-\c@shorteditor=\count168
-\c@savedshorteditor=\count169
-\c@labelname=\count170
-\c@savedlabelname=\count171
-\c@institution=\count172
-\c@savedinstitution=\count173
-\c@lista=\count174
-\c@savedlista=\count175
-\c@listb=\count176
-\c@savedlistb=\count177
-\c@listc=\count178
-\c@savedlistc=\count179
-\c@listd=\count180
-\c@savedlistd=\count181
-\c@liste=\count182
-\c@savedliste=\count183
-\c@listf=\count184
-\c@savedlistf=\count185
-\c@location=\count186
-\c@savedlocation=\count187
-\c@organization=\count188
-\c@savedorganization=\count189
-\c@origlocation=\count190
-\c@savedoriglocation=\count191
-\c@origpublisher=\count192
-\c@savedorigpublisher=\count193
-\c@publisher=\count194
-\c@savedpublisher=\count195
-\c@language=\count196
-\c@savedlanguage=\count197
-\c@origlanguage=\count198
-\c@savedoriglanguage=\count199
-\c@pageref=\count266
-\c@savedpageref=\count267
-\shorthandwidth=\skip52
-\shortjournalwidth=\skip53
-\shortserieswidth=\skip54
-\shorttitlewidth=\skip55
-\shortauthorwidth=\skip56
-\shorteditorwidth=\skip57
-\locallabelnumberwidth=\skip58
-\locallabelalphawidth=\skip59
-\localshorthandwidth=\skip60
-\localshortjournalwidth=\skip61
-\localshortserieswidth=\skip62
-\localshorttitlewidth=\skip63
-\localshortauthorwidth=\skip64
-\localshorteditorwidth=\skip65
+\c@afterword=\count136
+\c@savedafterword=\count137
+\c@annotator=\count138
+\c@savedannotator=\count139
+\c@author=\count140
+\c@savedauthor=\count141
+\c@bookauthor=\count142
+\c@savedbookauthor=\count143
+\c@commentator=\count144
+\c@savedcommentator=\count145
+\c@editor=\count146
+\c@savededitor=\count147
+\c@editora=\count148
+\c@savededitora=\count149
+\c@editorb=\count150
+\c@savededitorb=\count151
+\c@editorc=\count152
+\c@savededitorc=\count153
+\c@foreword=\count154
+\c@savedforeword=\count155
+\c@holder=\count156
+\c@savedholder=\count157
+\c@introduction=\count158
+\c@savedintroduction=\count159
+\c@namea=\count160
+\c@savednamea=\count161
+\c@nameb=\count162
+\c@savednameb=\count163
+\c@namec=\count164
+\c@savednamec=\count165
+\c@translator=\count166
+\c@savedtranslator=\count167
+\c@shortauthor=\count168
+\c@savedshortauthor=\count169
+\c@shorteditor=\count170
+\c@savedshorteditor=\count171
+\c@labelname=\count172
+\c@savedlabelname=\count173
+\c@institution=\count174
+\c@savedinstitution=\count175
+\c@lista=\count176
+\c@savedlista=\count177
+\c@listb=\count178
+\c@savedlistb=\count179
+\c@listc=\count180
+\c@savedlistc=\count181
+\c@listd=\count182
+\c@savedlistd=\count183
+\c@liste=\count184
+\c@savedliste=\count185
+\c@listf=\count186
+\c@savedlistf=\count187
+\c@location=\count188
+\c@savedlocation=\count189
+\c@organization=\count190
+\c@savedorganization=\count191
+\c@origlocation=\count192
+\c@savedoriglocation=\count193
+\c@origpublisher=\count194
+\c@savedorigpublisher=\count195
+\c@publisher=\count196
+\c@savedpublisher=\count197
+\c@language=\count198
+\c@savedlanguage=\count199
+\c@origlanguage=\count266
+\c@savedoriglanguage=\count267
+\c@pageref=\count268
+\c@savedpageref=\count269
+\shorthandwidth=\skip53
+\shortjournalwidth=\skip54
+\shortserieswidth=\skip55
+\shorttitlewidth=\skip56
+\shortauthorwidth=\skip57
+\shorteditorwidth=\skip58
+\locallabelnumberwidth=\skip59
+\locallabelalphawidth=\skip60
+\localshorthandwidth=\skip61
+\localshortjournalwidth=\skip62
+\localshortserieswidth=\skip63
+\localshorttitlewidth=\skip64
+\localshortauthorwidth=\skip65
+\localshorteditorwidth=\skip66
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-compat
+.def"
+File: blx-compat.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
 )
 ! Missing \endcsname inserted.
 <to be read again> 
                    \relax 
-l.13787 \ProcessOptions*
+l.15085 \ProcessOptions*
                         
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -287,22 +327,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13787 \ProcessOptions*
+l.15085 \ProcessOptions*
                         
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Extra \endgroup.
 <argument> ...abel{key}{{}{1}}}}biblatex\endgroup 
-                                                  \relax ernumbers=true
-l.13787 \ProcessOptions*
+                                                  \relax \penalty \@M ernumb...
+l.15085 \ProcessOptions*
                         
 Things are pretty mixed up, but I think the worst is over.
 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@removeelement #1#2#3->\def \reserved@a ##1,#1,##
                                                   2\reserved@a {##1,##2\rese...
-l.13787 \ProcessOptions*
+l.15085 \ProcessOptions*
                         
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -314,7 +354,7 @@ Runaway argument?
 ! Paragraph ended before \reserved@a was complete.
 <to be read again> 
                    \par 
-l.13788 
+l.15086 
         
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -322,34 +362,45 @@ My plan is to forget the whole thing and hope for the best.
 
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count268
-\c@textcitetotal=\count269
-\c@textcitemaxnames=\count270
-\c@biburlnumpenalty=\count271
-\c@biburlucpenalty=\count272
-\c@biburllcpenalty=\count273
-\c@smartand=\count274
+
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.d
+ef"
+File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+\c@textcitecount=\count270
+\c@textcitetotal=\count271
+\c@textcitemaxnames=\count272
+\c@biburlbigbreakpenalty=\count273
+\c@biburlbreakpenalty=\count274
+\c@biburlnumpenalty=\count275
+\c@biburlucpenalty=\count276
+\c@biburllcpenalty=\count277
+\biburlbigskip=\muskip11
+\biburlnumskip=\muskip12
+\biburlucskip=\muskip13
+\biburllcskip=\muskip14
+\c@smartand=\count278
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\numeri
+c.bbx"
+File: numeric.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count275
-\c@bbx:relatedtotal=\count276
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\standa
+rd.bbx"
+File: standard.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count279
+\c@bbx:relatedtotal=\count280
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\numeri
+c.cbx"
+File: numeric.cbx 2019/08/31 v3.13a biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -365,7 +416,8 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.cfg
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.c
+fg"
 File: biblatex.cfg 
 ))
 
@@ -596,8 +648,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 
-     
+l.25 \usepackage
+                {chngcntr}
 The package `' is defective.
 It attempts to load `float' in the options section, i.e.,
 between \DeclareOption and \ProcessOptions.
@@ -609,7 +661,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \counterwithout
+l.26 \counterwithout
                     {footnote}{chapter}
 The package `' is defective.
 It attempts to load `chngcntr' in the options section, i.e.,
@@ -622,17 +674,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \counterwithout{f
+l.26 \counterwithout{f
                       ootnote}{chapter}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-\@nomenclaturefile=\write5
-\openout5 = `Master.nlo'.
+\@nomenclaturefile=\write4
+\openout4 = `Master.nlo'.
 
-Writing nomenclature file Master.nlo
+Package nomencl Info: Writing nomenclature file Master.nlo on input line 29.
 ! Undefined control sequence.
-l.70 \geometry
+l.69 \geometry
               {a4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -647,48 +699,50 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 \geometry{a
+l.69 \geometry{a
                 4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
-)
-\@quotelevel=\count277
-\@quotereset=\count278
 
-(./Master.aux)
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\englis
+h.lbx"
+File: english.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
+)
+\@quotelevel=\count281
+\@quotereset=\count282
+ (Master.aux)
 \openout1 = `Master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pd
+f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
+\scratchcounter=\count283
 \scratchdimen=\dimen107
-\scratchbox=\box26
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count282
+\scratchbox=\box28
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count286
 \MPscratchDim=\dimen108
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks16
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks18
 )
 
 ! LaTeX Error: \RequirePackage or \LoadClass in Options Section.
@@ -697,7 +751,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 \begin{document}
+l.75 \begin{document}
                      
 The package `' is defective.
 It attempts to load `epstopdf-base' in the options section, i.e.,
@@ -706,18 +760,18 @@ between \DeclareOption and \ProcessOptions.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `Master.bcf'.
+\openout3 = `Master.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Master.bbl' found.
-(./Master.bbl)
-Package biblatex Info: Reference section=0 on input line 76.
-Package biblatex Info: Reference segment=0 on input line 76.
- (./_Doc_A.tex) [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pd
-ftex.map}
+(Master.bbl)
+Package biblatex Info: Reference section=0 on input line 75.
+Package biblatex Info: Reference segment=0 on input line 75.
+ (_Doc_A.tex) [1{C:/Users/USER/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.ma
+p}
 
-] (./01_title.tex
-<./figures/Header_Seite.png, id=7, 137.01187pt x 48.18pt>
+] (01_title.tex
+<./figures/Header_Seite.png, id=6, 137.01187pt x 48.18pt>
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 6.
@@ -743,7 +797,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./../00_Gesamt/figures/Frontpage_back.png, id=8, 716.6775pt x 403.5075pt>
+<./../00_Gesamt/figures/Frontpage_back.png, id=7, 716.6775pt x 403.5075pt>
 File: ./../00_Gesamt/figures/Frontpage_back.png Graphic file (type png)
 <use ./../00_Gesamt/figures/Frontpage_back.png>
 Package pdftex.def Info: ./../00_Gesamt/figures/Frontpage_back.png  used on inp
@@ -761,7 +815,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 49.
- [3]) (./02_eidesstattliche.tex
+ [3]) (02_eidesstattliche.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -776,7 +830,7 @@ Overfull \hbox (15.88582pt too wide) in paragraph at lines 42--50
  [][] 
  []
 
-) (./03_kurzfassung.tex [1
+) (03_kurzfassung.tex [1
 
 ]
 ! Undefined control sequence.
@@ -797,7 +851,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./04_abstract.tex [2]
+) (04_abstract.tex [2]
 ! Undefined control sequence.
 l.12 \color
            {black}
@@ -816,7 +870,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./05_danksagung.tex [3]
+) (05_danksagung.tex [3]
 ! Undefined control sequence.
 l.13 \color
            {red}
@@ -837,7 +891,7 @@ and I'll forget about whatever was undefined.
 
 )
 ! Undefined control sequence.
-l.91 \fancypagestyle
+l.90 \fancypagestyle
                     {empty}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -846,7 +900,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.92 	\fancyhead
+l.91 	\fancyhead
                 [RO]{\slshape \nouppercase{\leftmark}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -855,7 +909,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.92 	\fancyhead[RO]{\slshape \nouppercase
+l.91 	\fancyhead[RO]{\slshape \nouppercase
                                           {\leftmark}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -864,7 +918,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.93 	\fancyhead
+l.92 	\fancyhead
                 [L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -874,10 +928,10 @@ and I'll forget about whatever was undefined.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 93.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 92.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 ! Undefined control sequence.
-l.94 	\fancyfoot
+l.93 	\fancyfoot
                 [C]{}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -886,7 +940,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.95 	\fancyfoot
+l.94 	\fancyfoot
                 [L]{}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -895,7 +949,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.96 	\fancyfoot
+l.95 	\fancyfoot
                 [R]{\thepage}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -904,15 +958,15 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 No file Master.nls.
-[4] (./Master.toc)
-\tf@toc=\write6
-\openout6 = `Master.toc'.
+[4] (Master.toc)
+\tf@toc=\write5
+\openout5 = `Master.toc'.
 
  [5
 
 ]
 ! Undefined control sequence.
-l.113 \fancypagestyle
+l.112 \fancypagestyle
                      {empty}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -921,7 +975,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.114 	\fancyhf
+l.113 	\fancyhf
                {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -930,7 +984,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.115 	\fancyhead
+l.114 	\fancyhead
                  [RO]{\slshape \nouppercase{\leftmark}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -939,7 +993,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.115 	\fancyhead[RO]{\slshape \nouppercase
+l.114 	\fancyhead[RO]{\slshape \nouppercase
                                            {\leftmark}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -948,7 +1002,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.116 	\fancyhead
+l.115 	\fancyhead
                  [L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -958,10 +1012,10 @@ and I'll forget about whatever was undefined.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 116.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 115.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 ! Undefined control sequence.
-l.117 	\fancyfoot
+l.116 	\fancyfoot
                  [R]{\thepage / \pageref{LastPage}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -970,13 +1024,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 117.
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 116.
 
-(./../10_allgemein/_Doc_A.tex)
+(../10_allgemein/_Doc_A.tex)
 ! Undefined control sequence.
 \inputdoc ...{./../#1/_Doc_A.tex} \fancypagestyle 
                                                   {empty}{ \fancyhf {} \fanc...
-l.124 \inputdoc{10_allgemein}
+l.123 \inputdoc{10_allgemein}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -987,7 +1041,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...x} \fancypagestyle {empty}{ \fancyhf 
                                                   {} \fancyfoot [C]{Autor: \...
-l.124 \inputdoc{10_allgemein}
+l.123 \inputdoc{10_allgemein}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -998,7 +1052,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...tyle {empty}{ \fancyhf {} \fancyfoot 
                                                   [C]{Autor: \autor } } \pag...
-l.124 \inputdoc{10_allgemein}
+l.123 \inputdoc{10_allgemein}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1009,7 +1063,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...cyhf {} \fancyfoot [C]{Autor: \autor 
                                                   } } \pagestyle {empty} \in...
-l.124 \inputdoc{10_allgemein}
+l.123 \inputdoc{10_allgemein}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1017,7 +1071,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-(./../10_allgemein/_Doc.tex [1
+(../10_allgemein/_Doc.tex [1
 
 ]
 Chapter 1.
@@ -1031,15 +1085,15 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 
 Overfull \hbox (12.13336pt too wide) in paragraph at lines 19--20
-[]\OT1/cmr/m/n/12 Egli k^^?ummert sich um die wichtig-sten Gesicht Daten zu ex-
-trahieren(Gr^^?o^^Ye
+[]\OT1/cmr/m/n/12 Egli kummert sich um die wichtig-sten Gesicht Daten zu ex-tr
+ahieren(Groe
  []
 
 [2
@@ -1054,11 +1108,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./../20_planung/_Doc_A.tex)
+) (../20_planung/_Doc_A.tex)
 ! Undefined control sequence.
 \inputdoc ...{./../#1/_Doc_A.tex} \fancypagestyle 
                                                   {empty}{ \fancyhf {} \fanc...
-l.125 \inputdoc{20_planung}
+l.124 \inputdoc{20_planung}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1069,7 +1123,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...x} \fancypagestyle {empty}{ \fancyhf 
                                                   {} \fancyfoot [C]{Autor: \...
-l.125 \inputdoc{20_planung}
+l.124 \inputdoc{20_planung}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1080,7 +1134,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...tyle {empty}{ \fancyhf {} \fancyfoot 
                                                   [C]{Autor: \autor } } \pag...
-l.125 \inputdoc{20_planung}
+l.124 \inputdoc{20_planung}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1091,7 +1145,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...cyhf {} \fancyfoot [C]{Autor: \autor 
                                                   } } \pagestyle {empty} \in...
-l.125 \inputdoc{20_planung}
+l.124 \inputdoc{20_planung}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1099,11 +1153,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-(./../20_planung/_Doc.tex [3]
+(../20_planung/_Doc.tex [3]
 Chapter 2.
 [4
 
-]
+] [5]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1111,16 +1165,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 \begin{figure}[H]
+l.73 \begin{figure}[H]
                       
 Option `H' ignored and `p' used.
 
-<./figures/Big_Picture.jpg, id=50, 1125.20375pt x 855.195pt>
+<./figures/Big_Picture.jpg, id=52, 1125.20375pt x 855.195pt>
 File: ./figures/Big_Picture.jpg Graphic file (type jpg)
 <use ./figures/Big_Picture.jpg>
-Package pdftex.def Info: ./figures/Big_Picture.jpg  used on input line 72.
+Package pdftex.def Info: ./figures/Big_Picture.jpg  used on input line 74.
 (pdftex.def)             Requested size: 312.00119pt x 237.1302pt.
-[5]
+
+LaTeX Warning: Reference `fig:bigpicture' on page 6 undefined on input line 79.
+
+
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1128,26 +1185,29 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \begin{figure}[H]
+l.83 \begin{figure}[H]
                       
 Option `H' ignored and `p' used.
 
-<./figures/scrum.jpg, id=54, 845.1575pt x 597.23125pt>
+<./figures/scrum.jpg, id=53, 845.1575pt x 597.23125pt>
 File: ./figures/scrum.jpg Graphic file (type jpg)
 <use ./figures/scrum.jpg>
-Package pdftex.def Info: ./figures/scrum.jpg  used on input line 81.
+Package pdftex.def Info: ./figures/scrum.jpg  used on input line 84.
 (pdftex.def)             Requested size: 312.00119pt x 220.48pt.
 
-Overfull \hbox (27.43874pt too wide) in paragraph at lines 86--87
-\OT1/cmr/m/n/12 Entwicklungsteams, weil das Team w^^?ahrend des Pro-jekts ver-s
-chiedene []Anderungen
+LaTeX Warning: Reference `fig:scrum' on page 6 undefined on input line 90.
+
+
+Overfull \hbox (27.43874pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/12 Entwicklungsteams, weil das Team wahrend des Pro-jekts ver-sch
+iedene []Anderungen
  []
 
-) (./../30_doku/_Doc_A.tex)
+) (../30_doku/_Doc_A.tex)
 ! Undefined control sequence.
 \inputdoc ...{./../#1/_Doc_A.tex} \fancypagestyle 
                                                   {empty}{ \fancyhf {} \fanc...
-l.126 \inputdoc{30_doku}
+l.125 \inputdoc{30_doku}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1158,7 +1218,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...x} \fancypagestyle {empty}{ \fancyhf 
                                                   {} \fancyfoot [C]{Autor: \...
-l.126 \inputdoc{30_doku}
+l.125 \inputdoc{30_doku}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1169,7 +1229,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \inputdoc ...tyle {empty}{ \fancyhf {} \fancyfoot 
                                                   [C]{Autor: \autor } } \pag...
-l.126 \inputdoc{30_doku}
+l.125 \inputdoc{30_doku}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1177,16 +1237,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-(./../30_doku/_Doc.tex [6] [7 <./figures/Big_Picture.jpg> <./figures/scrum.jpg>
-]
+(../30_doku/_Doc.tex [6] [7 <./figures/Big_Picture.jpg> <./figures/scrum.jpg>]
 Chapter 3.
-) (./../10_allgemein/_Doc_A.tex) (./../10_allgemein/_Doc_App.tex)
-(./../20_planung/_Doc_A.tex) (./../20_planung/_Doc_App.tex)
-(./../30_doku/_Doc_A.tex) (./../30_doku/_Doc_App.tex) [8
+) (../10_allgemein/_Doc_A.tex) (../10_allgemein/_Doc_App.tex)
+(../20_planung/_Doc_A.tex) (../20_planung/_Doc_App.tex) (../30_doku/_Doc_A.tex)
+(../30_doku/_Doc_App.tex) [8
 
 ]
 ! Undefined control sequence.
-l.139 \fancypagestyle
+l.138 \fancypagestyle
                      {empty}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1195,7 +1254,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.140 	\fancyhf
+l.139 	\fancyhf
                {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1204,7 +1263,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.141 	\fancyhead
+l.140 	\fancyhead
                  [RO]{\slshape \nouppercase{\leftmark}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1213,7 +1272,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.141 	\fancyhead[RO]{\slshape \nouppercase
+l.140 	\fancyhead[RO]{\slshape \nouppercase
                                            {\leftmark}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1222,7 +1281,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.142 	\fancyhead
+l.141 	\fancyhead
                  [L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1232,10 +1291,10 @@ and I'll forget about whatever was undefined.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 142.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 141.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 ! Undefined control sequence.
-l.143 	\fancyfoot
+l.142 	\fancyfoot
                  [R]{\thepage / \pageref{LastPage}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1244,79 +1303,82 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 143.
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 142.
 
 [9
 
-] (./Master.lof)
-\tf@lof=\write7
-\openout7 = `Master.lof'.
+] (Master.lof)
+\tf@lof=\write6
+\openout6 = `Master.lof'.
 
  [10
 
-] (./Master.lot)
-\tf@lot=\write8
-\openout8 = `Master.lot'.
+] (Master.lot)
+\tf@lot=\write7
+\openout7 = `Master.lot'.
 
  [11
 
 ]
 
-Package biblatex Warning: Type 'masterthesis' not found on input line 154.
+Package biblatex Warning: Type 'masterthesis' not found on input line 153.
+
+
+LaTeX Warning: Empty bibliography on input line 153.
+
+
+Package biblatex Warning: Type 'book' not found on input line 154.
 
 
 LaTeX Warning: Empty bibliography on input line 154.
 
 
-Package biblatex Warning: Type 'book' not found on input line 155.
+Package biblatex Warning: Type 'report' not found on input line 155.
 
 
 LaTeX Warning: Empty bibliography on input line 155.
 
 
-Package biblatex Warning: Type 'report' not found on input line 156.
+Package biblatex Warning: Type 'online' not found on input line 156.
 
 
 LaTeX Warning: Empty bibliography on input line 156.
 
 
-Package biblatex Warning: Type 'online' not found on input line 157.
-
-
 LaTeX Warning: Empty bibliography on input line 157.
-
-
-LaTeX Warning: Empty bibliography on input line 158.
 
 [12
 
-] (./Master.aux)
+] (Master.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'Master.run.xml'.
 \openout1 = `Master.run.xml'.
 
  )
-(\end occurred when \ifx on line 13787 was incomplete)
-(\end occurred when \ifx on line 13787 was incomplete) 
+(\end occurred when \ifx on line 15085 was incomplete)
+(\end occurred when \ifx on line 15085 was incomplete) 
 Here is how much of TeX's memory you used:
- 8076 strings out of 492649
- 142093 string characters out of 6129622
- 558222 words of memory out of 5000000
- 11849 multiletter control sequences out of 15000+600000
- 10073 words of font info for 35 fonts, out of 8000000 for 9000
+ 9160 strings out of 492895
+ 171456 string characters out of 3124202
+ 644879 words of memory out of 3000000
+ 12948 multiletter control sequences out of 15000+200000
+ 10073 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,31p,907b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Master.pdf (21 pages, 819087 bytes).
+ 44i,10n,50p,913b,790s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/USER/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/USE
+R/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
+:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr17.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on Master.pdf (21 pages, 826336 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
