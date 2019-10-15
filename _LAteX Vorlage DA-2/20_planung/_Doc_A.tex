@@ -1,0 +1,52 @@
+%Base ordner for all other ordners (figures, appendix, ....)
+\ifdefined\bordner
+\renewcommand{\bordner}{./../20_planung/}
+\else
+\newcommand{\bordner}{./../20_planung/}
+\fi
+
+
+%titelpage first Line
+\ifdefined\titelf
+\renewcommand{\titelf}{Diplomarbeit}
+\else
+\newcommand{\titelf}{Diplomarbeit}
+\fi
+
+
+%Name of Chapter
+\ifdefined\docname
+\renewcommand{\docname}{Planung}
+\else
+\newcommand{\docname}{Planung}
+\fi
+
+
+
+%titelpage secound Line
+\ifdefined\titels
+\renewcommand{\titels}{\docname}
+\else
+\newcommand{\titels}{\docname}
+\fi
+
+%Check Ordner for Figures
+\ifdefined\ordnerfigures
+\renewcommand{\ordnerfigures}{\bordner figures/}
+\else
+\newcommand{\ordnerfigures}{\bordner figures/}
+\fi
+
+%Check Ordner for Appendix
+\ifdefined\ordnerappendix
+\renewcommand{\ordnerappendix}{\bordner appendix/}
+\else
+\newcommand{\ordnerappendix}{\bordner appendix/}
+\fi
+
+%Check Ordner for Sourcecode
+\ifdefined\ordnersource
+\renewcommand{\ordnersource}{\bordner source/}
+\else
+\newcommand{\ordnersource}{\bordner source/}
+\fi

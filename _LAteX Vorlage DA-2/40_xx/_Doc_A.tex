@@ -1,0 +1,59 @@
+%Base ordner for all other ordners (figures, appendix, ....)
+\ifdefined\bordner
+\renewcommand{\bordner}{./../40_xx/}
+\else
+\newcommand{\bordner}{./../40_xx/}
+\fi
+
+
+%author of the document
+\ifdefined\autor
+\renewcommand{\autor}{Huber1}
+\else
+\newcommand{\autor}{Huber1}
+\fi
+
+%titelpage first Line
+\ifdefined\titelf
+\renewcommand{\titelf}{Diplomarbeit}
+\else
+\newcommand{\titelf}{Diplomarbeit}
+\fi
+
+
+%Name of Chapter
+\ifdefined\docname
+\renewcommand{\docname}{Paul Dirac}
+\else
+\newcommand{\docname}{Paul Dirac}
+\fi
+
+
+
+%titelpage secound Line
+\ifdefined\titels
+\renewcommand{\titels}{\docname}
+\else
+\newcommand{\titels}{\docname}
+\fi
+
+%Check Ordner for Figures
+\ifdefined\ordnerfigures
+\renewcommand{\ordnerfigures}{\bordner figures/}
+\else
+\newcommand{\ordnerfigures}{\bordner figures/}
+\fi
+
+%Check Ordner for Appendix
+\ifdefined\ordnerappendix
+\renewcommand{\ordnerappendix}{\bordner appendix/}
+\else
+\newcommand{\ordnerappendix}{\bordner appendix/}
+\fi
+
+%Check Ordner for Sourcecode
+\ifdefined\ordnersource
+\renewcommand{\ordnersource}{\bordner source/}
+\else
+\newcommand{\ordnersource}{\bordner source/}
+\fi
