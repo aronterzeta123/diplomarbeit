@@ -8,7 +8,7 @@ b=""
 print(b)
 bool=False
 try:
-    mycursor.execute("select * from test1 where email='%s'"%(var1))
+    mycursor.execute("select * from Person where email='%s'"%(var1))
     myresult=mycursor.fetchall()
     for x in myresult:
         if x[1]==var1:
