@@ -1,4 +1,4 @@
-#!/usr/bin/python3.5
+#!/usr/bin/python3
 
 import MySQLdb
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
