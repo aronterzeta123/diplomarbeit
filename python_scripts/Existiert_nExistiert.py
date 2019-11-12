@@ -3,6 +3,7 @@
 import MySQLdb
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
+print("Bitte Ihre Email eingeben:")
 var1=input()
 b=""
 print(b)
