@@ -1,7 +1,7 @@
 #!/usr/bin/python3.5
 
 import MySQLdb
-conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
+conn=MySQLdb.connect('localhost','aron','aronterzeta','test')
 mycursor=conn.cursor()
 var1=input()
 b=""
