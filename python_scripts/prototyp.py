@@ -18,6 +18,7 @@ while True:
         #os.system('./connection.py')
         exec(open('connection.py').read())
         if (a=="inserted values"):
+            
             GPIO.output(23,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(23,GPIO.LOW)
@@ -29,7 +30,7 @@ while True:
     else:
         #os.system('./connection.py')
         #GPIO.output(23,GPIO.LOW)
-        print("Registrierungsschalter nicht gedrueckt")
+        print("Schalter fuer Gesichtsregistrierung nicht gedrueckt")
         time.sleep(0.5)
         #exit()
     if GPIO.input(17):
@@ -38,11 +39,10 @@ while True:
             GPIO.output(27,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(27,GPIO.LOW)
-            print("Existiert")
         else:
-            print("Nicht existiert")
+            print("nicht existiert")
             GPIO.output(27,GPIO.LOW)
     else:
-        print("Erkennungsschalter nicht gedrueckt")
+        print("Schalter fuer Gesichtserkennung nicht gedrueckt")
         time.sleep(0.5)
 

@@ -1,9 +1,8 @@
 #!/usr/bin/python3.5
 
 import MySQLdb
-conn=MySQLdb.connect('localhost','aron','aronterzeta','test')
+conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
-print("Bitte Ihre Email eingeben:")
 var1=input()
 b=""
 print(b)
