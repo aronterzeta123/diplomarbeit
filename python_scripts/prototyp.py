@@ -4,6 +4,7 @@ import time
 import os
 import subprocess
 import sys
+from connection import (variable3)
 
 GPIO.setmode(GPIO.BCM)
 
@@ -17,8 +18,9 @@ while True:
     if GPIO.input(18):
         #os.system('./connection.py')
         exec(open('connection.py').read())
+        print(variable3)
         if (a=="inserted values"):
-            
+            os.system('./Test')
             GPIO.output(23,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(23,GPIO.LOW)
