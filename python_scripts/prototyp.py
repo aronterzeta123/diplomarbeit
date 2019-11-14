@@ -7,17 +7,17 @@ import sys
 
 GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(23, GPIO.OUT)
-GPIO.setup(18, GPIO.IN)
-GPIO.setup(17, GPIO.IN)
-GPIO.setup(27, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)#AronLed
+GPIO.setup(18, GPIO.IN)#AronSchalter
+GPIO.setup(17, GPIO.IN)#ReiLED
+GPIO.setup(27, GPIO.OUT)#ReiSchalter
 a=""
 b=""
 while True:
     if GPIO.input(18):
         #os.system('./connection.py')
         exec(open('connection.py').read())
-        if a=="inserted values":
+        if (a=="inserted values"):
             GPIO.output(23,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(23,GPIO.LOW)
@@ -39,9 +39,9 @@ while True:
             time.sleep(1.5)
             GPIO.output(27,GPIO.LOW)
         else:
-            print("Fehler")
+            print("nicht existiert")
             GPIO.output(27,GPIO.LOW)
     else:
-        print("Schalter fuer Gesichtserkennung nicht gedrueck")
+        print("Schalter fuer Gesichtserkennung nicht gedrueckt")
         time.sleep(0.5)
 
