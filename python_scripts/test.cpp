@@ -2,7 +2,8 @@
 #include "opencv2/opencv.hpp"
 using namespace std;
 using namespace cv;
-int main(int argc, char *argv[]){
+int main(int argc, char* argv[]){
+	const char *out_file=argv[1];
 	Mat output;
 	VideoCapture cp(0);
 	if(!cp.isOpened()){
@@ -14,6 +15,6 @@ int main(int argc, char *argv[]){
 	cout <<"Error";
 	return -1;
 	}
-	imwrite(argv[1],output);
+	imwrite(out_file,output);
 	return 0;
 }

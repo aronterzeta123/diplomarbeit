@@ -20,7 +20,7 @@ while True:
         exec(open('connection.py').read())
         print(variable3)
         if (a=="inserted values"):
-            os.system('./Test '+(variable3))
+            os.system('./Test '+(variable3)+".jpg")
             GPIO.output(23,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(23,GPIO.LOW)
