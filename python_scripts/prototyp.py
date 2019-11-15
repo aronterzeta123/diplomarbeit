@@ -5,7 +5,7 @@ import os
 import subprocess
 import sys
 from connection import (variable3)
-
+os.system("./enter.sh")
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(23, GPIO.OUT)#AronLed
@@ -20,7 +20,7 @@ while True:
         exec(open('connection.py').read())
         print(variable3)
         if (a=="inserted values"):
-            os.system('./Test')
+            os.system('./Test '+(variable3))
             GPIO.output(23,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(23,GPIO.LOW)
