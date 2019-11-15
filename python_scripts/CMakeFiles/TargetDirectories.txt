@@ -1,0 +1,3 @@
+/home/pi/diplomarbeit/python_scripts/CMakeFiles/rebuild_cache.dir
+/home/pi/diplomarbeit/python_scripts/CMakeFiles/edit_cache.dir
+/home/pi/diplomarbeit/python_scripts/CMakeFiles/Test.dir

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/diplomarbeit/python_scripts/test.cpp
+iostream
+-
+opencv2/opencv.hpp
+/home/pi/diplomarbeit/python_scripts/opencv2/opencv.hpp
+
