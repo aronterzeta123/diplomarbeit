@@ -14,6 +14,7 @@ GPIO.setup(17, GPIO.IN)#ReiLED
 GPIO.setup(27, GPIO.OUT)#ReiSchalter
 a=""
 b=""
+variable3=""
 while True:
     if GPIO.input(18):
         #os.system('./connection.py')
@@ -21,6 +22,7 @@ while True:
         print(variable3)
         if (a=="inserted values"):
             os.system('./Test '+(variable3)+".jpg")
+            os.system('./selectID_UpdateBild.py '+variable3)
             GPIO.output(23,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(23,GPIO.LOW)

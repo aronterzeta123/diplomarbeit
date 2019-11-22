@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e ("y\ny\ny\ny\n")
+echo -e ("\n\n\n\n")

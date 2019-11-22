@@ -67,7 +67,7 @@ def insert_values2(curs, spX, spY, v1X,v1Y,v2X,v2Y,v3X, v3Y,v4X,v4Y,v5X,v5Y, v6X
     data_info=(spX, spY, v1X,v1Y,v2X,v2Y,v3X, v3Y,v4X,v4Y,v5X,v5Y, v6X,v6Y,v7X,v7Y,v8X,v8Y,v9X,v9Y,v10X,v10Y,v11X,v11Y,v12X,v12Y,v13X,v13Y,v14X,v14Y,v15X,v15Y, imagePath, idP)
     curs.execute(add_info, data_info)
 
-conn = MySQLdb.connect('localhost','aron','aronterzeta','test')
+conn = MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 curs = conn.cursor()
 
 try:
