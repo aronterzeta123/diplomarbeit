@@ -5,7 +5,7 @@ import os
 import subprocess
 import sys
 from connection import (variable3)
-os.system("./enter.sh")
+#os.system("./enter.sh")
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(23, GPIO.OUT)#AronLed
@@ -14,23 +14,26 @@ GPIO.setup(17, GPIO.IN)#ReiLED
 GPIO.setup(27, GPIO.OUT)#ReiSchalter
 a=""
 b=""
-variable3=""
+c=""
 while True:
     if GPIO.input(18):
+        exec(open('test.py'))
+        if(c=="Matched"):
         #os.system('./connection.py')
-        exec(open('connection.py').read())
-        print(variable3)
-        if (a=="inserted values"):
-            os.system('./Test '+(variable3)+".jpg")
-            os.system('./selectID_UpdateBild.py '+variable3)
-            GPIO.output(23,GPIO.HIGH)
-            time.sleep(1.5)
-            GPIO.output(23,GPIO.LOW)
+            exec(open('connection.py').read())
+            print(variable3)
+            if (a=="inserted values"):
+                os.system('./Test '+(variable3)+".jpg")
+                GPIO.output(23,GPIO.HIGH)
+                time.sleep(1.5)
+                GPIO.output(23,GPIO.LOW)
             #exit()
-        else:
-            print("Fehler")
-            GPIO.output(23,GPIO.LOW)
+            else:
+                print("Fehler")
+                GPIO.output(23,GPIO.LOW)
         #exit()
+        else:
+            print("Admin ist nicht da")
     else:
         #os.system('./connection.py')
         #GPIO.output(23,GPIO.LOW)
