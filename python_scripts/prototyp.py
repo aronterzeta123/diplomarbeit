@@ -15,10 +15,11 @@ GPIO.setup(27, GPIO.OUT)#ReiSchalter
 a=""
 b=""
 c=""
+foto2=sys.argv[1]
 while True:
     if GPIO.input(18):
-        exec(open('test.py'))
-        if(c=="Matched"):
+        exec(open('./test.py '+(foto2)).read())
+        if(c=="matched"):
         #os.system('./connection.py')
             exec(open('connection.py').read())
             print(variable3)
