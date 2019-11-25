@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import cv2
 import sys
-image2=sys.argv[1]
+#image2=sys.argv[1]
 c=""
 class CompareImage(object):
+    c="test"
 #image_1_path=cv2.imread('harden.jpeg',0)
 #image_2_path=cv2.imread('harden1.jpeg',0)
     def __init__(self,image_1_path, image_2_path):
@@ -17,11 +18,10 @@ class CompareImage(object):
         commutative_image_diff = self.get_image_difference(image_1, image_2)
 
         if commutative_image_diff < self.minimum_commutative_image_diff:
-            c="matched"
+            self.c="matched"
             return commutative_image_diff
         else:
-            print("Not matched")
-            c="notmatched"
+            self.c="notmatched"
     @staticmethod
     def get_image_difference(image_1, image_2):
         first_image_hist = cv2.calcHist([image_1], [0], None, [256], [0, 256])
@@ -36,6 +36,8 @@ class CompareImage(object):
         return commutative_image_diff
 
 compare_image = CompareImage('drejt.jpg','%s'%(image2))
+
 #compare_image = CompareImage('harden.jpeg','harden.jpeg')
 image_difference = compare_image.compare_image()
+c=compare_image.c
 print (image_difference)
