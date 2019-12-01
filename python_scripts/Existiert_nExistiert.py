@@ -1,5 +1,4 @@
 #!/usr/bin/python3.5
-
 import MySQLdb
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()

@@ -39,10 +39,10 @@ while True:
         exec(open('Existiert_nExistiert.py').read())
         if b=="existiert":
             mycursor.execute(
-            """select * from info
-            join person
-            on info.idP=person.id
-            where person.email=%s;"""%var1)
+            """select * from info i \
+            join person p \
+            on i.idP=p.idP \
+            where p.email='%s';"""%var1)
             myresult=mycursor.fetchall()
             for x in myresult:
                 print(x)
