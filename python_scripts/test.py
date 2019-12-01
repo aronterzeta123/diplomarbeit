@@ -4,7 +4,6 @@ import sys
 #image2=sys.argv[1]
 c=""
 class CompareImage(object):
-    c="test"
 #image_1_path=cv2.imread('harden.jpeg',0)
 #image_2_path=cv2.imread('harden1.jpeg',0)
     def __init__(self,image_1_path, image_2_path):

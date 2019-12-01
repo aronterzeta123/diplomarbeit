@@ -2,7 +2,7 @@
 import MySQLdb
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
-var1=input()
+var1=input("Bitte email eingeben")
 b=""
 print(b)
 bool=False

@@ -18,6 +18,7 @@ image2=sys.argv[1]
 #foto2=sys.argv[1]
 while True:
     if GPIO.input(18):
+        os.system('./Test '+(image2)+".jpg")
         exec(open('./test.py').read())
         if(c=="matched"):
         #os.system('./connection.py')
