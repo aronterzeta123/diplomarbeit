@@ -4,7 +4,7 @@ import time
 import os
 import subprocess
 import sys
-from connection import (variable3)
+from Person_Registrierung import (variable3)
 #os.system("./enter.sh")
 GPIO.setmode(GPIO.BCM)
 
@@ -19,10 +19,10 @@ image2=sys.argv[1]
 while True:
     if GPIO.input(18):
         os.system('./Test '+(image2)+".jpg")
-        exec(open('./test.py').read())
+        exec(open('./Vergleich_2_Fotos.py').read())
         if(c=="matched"):
         #os.system('./connection.py')
-            exec(open('connection.py').read())
+            exec(open('Person_Registrierung.py').read())
             print(variable3)
             if (a=="inserted values"):
                 os.system('./Test '+(variable3)+".jpg")
