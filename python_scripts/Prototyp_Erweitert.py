@@ -4,8 +4,8 @@ import time
 import os
 import subprocess
 import sys
-from Person_Registrierung import (variable3)
-from Existiert_nExistiert import (var1)
+#from Person_Registrierung import (variable3)
+#from Existiert_nExistiert import (var1)
 #os.system("./enter.sh")
 GPIO.setmode(GPIO.BCM)
 
@@ -21,6 +21,8 @@ while True:
         os.system('./Test '+(image2)+".jpg")
         exec(open('./Vergleich_2_Fotos.py').read())
         if(c=="matched"):
+            #from Person_Registrierung import (variable3)
+            #from Existiert_nExistiert import (var1)
             exec(open('Person_Registrierung.py').read())
             print(variable3)
             if (a=="inserted values"):

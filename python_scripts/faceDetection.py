@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 import cv2
 import numpy as np
-
+import sys
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-image = cv2.imread('bekimalibali@htl-shkoder.com.jpg')
+image = cv2.imread('%s'%(sys.argv[1]))
 
 gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
