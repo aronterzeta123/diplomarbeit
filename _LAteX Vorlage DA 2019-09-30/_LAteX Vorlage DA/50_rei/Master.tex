@@ -1,0 +1,101 @@
+\documentclass[12pt,a4paper,oneside]{book}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{nomencl}
+\usepackage[defernumbers=true, backend=biber]{biblatex}
+\usepackage[hypcap]{caption} %for pdf export hyperlinks
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{ifpdf}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{siunitx}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{footnote}
+\usepackage{transparent} %Transparente Bilder im Hintergrund
+\usepackage{eso-pic} %Background Image
+\usepackage{lastpage} %Ermittlung der letzten Seite
+ 
+%Fußnoten forltaufend nummerieren
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\makenomenclature
+\addbibresource{./../literatur.bib}
+
+
+
+\geometry{a4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
+\setlength{\parskip}{3pt plus 1pt minus 0pt}       % vert. space before a paragraph
+\setcounter{tocdepth}{2}        % lowest section level entered in ToC
+\setcounter{secnumdepth}{2}     % lowest section level still numbered
+
+
+\begin{document}
+% Set global Varibales for this chpater
+\input{./_Doc_A.tex}
+\fancypagestyle{plan}{
+	\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
+	\fancyhead[L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
+	\fancyfoot[C]{}
+	\fancyfoot[R]{\thepage}    
+
+}
+\pagestyle{plan}
+
+\frontmatter
+\normalsize
+
+\pagenumbering{roman}
+\input{./01_title.tex}
+
+
+
+\printnomenclature %Abkürzungsverzeichnis
+\pagebreak
+	 
+\tableofcontents % Inhaltsverzeichnis
+
+
+
+\mainmatter
+%configure Header & Footer
+\fancypagestyle{plan}{
+	\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
+	\fancyhead[L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
+	\fancyfoot[R]{\thepage / \pageref{LastPage}}    
+	\fancyfoot[C]{Autor: \autor}
+}
+\pagestyle{plan}
+
+\cleardoublepage
+\pagenumbering{arabic}      
+
+\input{./_Doc.tex}
+
+
+\appendix
+
+\input{./_Doc_App.tex}
+
+\backmatter
+
+\listoffigures
+
+%\listofmyequations 
+
+\listoftables
+
+\printbibheading%[title=Blub]
+\printbibliography[type=masterthesis, heading=subbibliography,title={Wissenschaftliche Arbeiten}]
+\printbibliography[type=book, heading=subbibliography, title={Fachbücher}]
+\printbibliography[type=report, heading=subbibliography, title={Datenblätter und Applikationsschriften}]
+\printbibliography[type=online, heading=subbibliography, title={Aus dem Netz}]
+\printbibliography[heading=subbibliography,title={Der ganze Rest},nottype=online,nottype=masterthesis,nottype=report,nottype=book,notkeyword=sekundaer]
+
+\end{document}

@@ -1,0 +1,9 @@
+[2] Config.pm:304> INFO - This is Biber 2.13
+[3] Config.pm:307> INFO - Logfile is 'Master.blg'
+[277] biber-MSWIN64:315> INFO - === 
+[480] Biber.pm:375> INFO - Reading 'Master.bcf'
+[1265] Biber.pm:905> INFO - Found 0 citekeys in bib section 0
+[1331] Utils.pm:300> WARN - The file 'Master.bcf' does not contain any citations!
+[1384] bbl.pm:648> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[1388] bbl.pm:751> INFO - Output to Master.bbl
+[1396] Biber.pm:110> INFO - WARNINGS: 1

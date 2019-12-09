@@ -1,0 +1,83 @@
+\chapter{\docname}
+\label{\docname}
+
+\section{Allgemeines}
+Heutige Zeit ist die Technologie ein der wichtigsten Themen für den Welt. Mithilfe der Technologie hat die Menschheit wesentliche Fortschritte gemacht im Bereich der Lebensqualitätsverbesserung und Erleichterung. Mehr als jemals zuvor kommen intelligente Systeme im Einsatz, die um den Arbeitsaufwand und die Arbeitskomplexität zu reduzieren dienen. Diese Systeme werden in die wichtigsten Bereiche des Lebens verwendet, wie zum Beispiel: Menschlichen Beziehungen, Business, Transport, Banken, Medizin, Bildung und Kommunikation. Selbstverständlich gibt es zahlreiche Versuche von verschiedenen Menschen, die als Hauptziel den Zugriff auf diesen Systemen zu ermöglichen haben. Deshalb ist die Sicherheit in diesem Systemen eine der aktuellsten und wichtigsten Themen. Der unkontrollierte Zugriff auf so wichtige und delikate Systemen wurde zu unreparierbare Konsequenzen führen. Auf dieser Gründe muss es sehr genau und detailliert geplant werden, welche Sicherheit Strategien die klügsten bzw. die besten sind.  
+
+Der Hauptthema dieses Projekts ist genau die Sicherheit der Systeme, und zwar die Ermöglichung des kontrollierten Zugriffs von Menschen in verschiedenen Gebäude. Es wurde die Verantwortlichkeit übergenommen, dass der Zugriff in der Österreichischen Schule “Peter Mahringer” übergewiesen und kontrolliert ist. Zu diesem Zweck wird in diesem Projekt ein intelligentes System entwickelt, dass die Aufgabe hat, menschliche Gesichte (Gesichte von Schülern, Lehrern, Eltern usw.) zu registrieren und zu erkennen. Es wird höchstwahrscheinlich in dem Schultür integriert, weil vom dort werden alle unbedingt rein- bzw. rauskommen. Dieser Projekt wird große Hilfe für die Schule sein, aufgrund der vom Kameras und komplexen Algorithmen angebotenen Möglichkeiten. Beispielweise wird es überprüft, ob der Person dass reinkommt ein Student oder Lehrer ist, oder wird es notiert, wer die Schule wann verlässt oder besucht. Hat ein Person kein Zugriff, wird er nicht reinzukommen erlaubt.
+
+Eine Grobe Skize des Systems wurde sowie im Abb.\ref{fig:grobe_Skizze} zu sehen.
+\begin{figure}[htp]
+	\includegraphics{\ordnerfigures Capture.png}
+	\caption{Grobe Skizze des Systems}
+	\label{fig:grobe_Skizze}
+\end{figure}
+
+Um diesem Projekt zu realisieren, wird das Projekt in drei große und wichtige Teile zerlegt. Das erste Teil heißt Bildverarbeitung und hat die Aufgabe, Gesichtsbildern vom Kamera zu normalisieren und verarbeiten, damit sie in dem geeignete Format für die Gesichtsvergleichung sind. Das zweite Teil beschäftigt sich mit der Registrierung der Gesichter von Personen im Server. Das dritte Teil ist die Gesichtserkennung. Das ist genau das Teil für dem ich verantwortlich bin. Hier geht um die Erkennung der Gesichte der Benutzern des Systems. Es wird durch eine Vergleichung überprüft, ob der Person vorher schon registriert worden ist oder nicht und ob sein Gesichtsdaten schon im Server existieren oder nicht. Nur wenn die Vergleichungsergebnisse positiv sind, darf der Person reinkommen. Der Person braucht nur sein Email eingeben und vor dem Kamera stehen, das System wird dann alles machen. Dem Person werden die Ergebnisse durch Anzeigern kommuniziert. Dieses Teil des Projektes erfordert eine Arbeit mit Datenbanken, Gesichtsvergleichungsalgorithmen und mit vielen System Tests.Teil meiner Aufgabe ist auch der Aufbau des Systems und alles was mit Hardware zu tun hat. Alle Hardware Komponenten werden in den folgenden Kapiteln klar, verständlich und deutlich erklärt.
+\section{Technische Lösung}
+	\subsection{Hardware und Aufbau}
+Als erstens wird der Aufbau des Systems beschrieben, zusammen mit allen verwendeten Komponenten, dass zu verwenden sind. Ohne die Hardware wurde nichts funktionieren, weil die Software ohne die Hardware einfach nicht leben kann. 
+		\subsubsection{Bauteile und HW-Komponente}Die Bauteile, die für dieses System verwendet geworden sind, sind die folgende:
+\begin{enumerate}
+	\item Steckboard bzw. Steckplatine \\
+Die Steckplatine ist der wichtigste Komponent der Hardware unseres Systems. Sie wird für die Entstehung der elektrischen Verbindung von verschiedenen elektrischen Bauteile, um elektrische Schaltungen zu bauen oder um verschiedene Tests und Experimenten zu machen. In dieser Steckplatine werden alle andere Komponenten platziert, damit die Verbindung erstellt weden kann und damit das System läufen kann.
+	\item Kabeln bzw. Leitern \\
+Damit die verschiedene Komponenten, die in der Steckplatine platziert sind, miteinander verbundet sein können, braucht man unbedingt die Kabeln. Mithilfe von Kabeln können elektrische Impulse und Signale fließen, damit die Energie und die Information überträgt werden. Die verwendete Kabeln sind aus Kupfer und sind sowie vom Typ Male-Male als auch vom Typ Male-Female. Die Kabeln vom Typ Male-Female werden verwendet, um die Verbindungen zwischen die Elemente in der Steckplatine und den Raspberri Pi zu ermöglichen. Auf der anderen Seite werden die Male-Male Kabeln die Verbindungen innerhalb der Steckplatine machen.
+	\item LEDs \\
+LED steht für Light Emmiting Diode. Sie sind elektronische Halbleiter Elemente, die Licht produzieren können, wenn sie Spannung kriegen. Ein LED besteht aus zwei Beine. Die längere Beine ist die Anode, die den Pluspol symbolisiert. Die andere Beine ist die Kathode, und symbolisiert den Minuspol. Durch die Beinen wird der Kontakt mit der Steckplatiene erstellt.
+	\item Widerstand \\
+Ein Widerstand ist ein elektrisches Bauteil, dass um die Reduzierung von Strom verwendet wird, damit es ein Gleichgewicht zwischen Strom und Spannung gesichert werden kann. Die Einheit ist Ohm.
+	\item Tastern \\
+Ein Taster ist wird wie ein Button gedrüct, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster gefunden.
+	\item Raspberri Pi \\
+Raspberry Pi ist ein Minikomputer, dass in diesem Projekt der normale Komputer ersetzt. Gründe dafür sind die kleinere Kosten, das kleinere Platzbedarf sowie die Flexibilität, dass der Raspberry anbietet. Die SD-Karte ist das wichtigste Element, weil dort alle Daten und Informationen gespeichert sind. Raspberry Pi und Linux passen auch sehr gut zusammen.
+	\item Bildschirm \\
+Ein Bildschirm ist nur eine Anzeige, dass um die visualische Darstellung von verschiedenen Informationen oder Daten(wie Videos, Fotos, Statistiken usw) verwendet wird. Ein Bildschirm wird heutige Zeiten sehr häufig verwendet, aufgrund der hohen Benutzerfreundlichkeit dass angeboten wird.
+	\item Tastatur \\
+Eine Tastatur ist ein Input Gerät, dass durch das Eindrücken von Buttonen den Benutzer die Eingabe von Daten oder Befehle ermöglicht.
+	\item Kamera \\
+Letztens werden 2 Kameras benötigt, die die Fotos der Persongesichte machen werden. Sie werden auch im Raspberry integriert bzw. mit dem Raspberry verbunden.
+\end{enumerate}
+		\subsubsection{Schaltplan und Erklärung des Aufbaus}
+Die Hardware Komponenten werden in einer Steckplatine platziert. Dort werden die Verbinungen mit den anderen Komponenten sowie mit dem Raspberry Pi erstellt. Die elektrische Schaltung wird durch einen Schaltplan beschrieben. Dieser Schaltplan wurde mithilfe eines Programms, dass Fritzing heißt, gemacht und spielt eine sehr wichtige Rolle bei der Organisation und Planung des Schatkreises. Der Schaltplan ist auf Abb.\ref{fig:Schaltplan} zu sehen.
+\begin{figure}[htp]
+	\includegraphics[scale=0.5]{\ordnerfigures Schaltplan.png}
+	\caption{Schaltplan des Systems}
+	\label{fig:Schaltplan}
+\end{figure}
+	\subsection{Software}
+		\subsubsection{Verwendete Methoden und Technologien}
+In diesem Teil des Projekts dass Gesichtserkennung heißt, werden für die Umsetzung verschiedene Technologien und Planungsmethoden verwendet.
+\begin{enumerate}
+	\item Structed Design
+	\item Linux
+	\item Debian
+	\item Fritzing
+	\item Python
+	\item Open CV
+	\item LAteX
+	\item Vim Editor
+	\item Git
+	\item MySQL
+\end{enumerate}
+		\subsubsection{Lösungswegbeschreibung und Erklärung}
+		Die Big Picture steht unter Abb.\ref{fig:Big Picture}
+		\begin{figure}[htp]
+			\includegraphics[width=\textwidth]{\ordnerfigures Big_Picture.jpg}
+			\caption{Big Picture}
+			\label{fig:Big Picture}
+		\end{figure}
+	
+	
+	Die erste Ebene steht unter Abb.\ref{fig:Erste Ebene}
+	\begin{figure}[htp]
+		\includegraphics[width=\textwidth]{\ordnerfigures diplom_11Ebene.png}
+		\caption{Erste Ebene}
+		\label{fig:Erste Ebene}
+	\end{figure}
+\section{Herausforderungen, Problemen, und wie wurden sie gelöst}
+\section{Projektmanagement und Controlling}
+		
+
+
+
