@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import cv2
 import numpy as np
-import dlib 
+#import dlib 
 
 #filename = input("insert image file\n") 
 filename=(image2+".jpg")
