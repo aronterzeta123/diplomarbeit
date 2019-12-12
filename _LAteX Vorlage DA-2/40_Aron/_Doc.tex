@@ -1,0 +1,151 @@
+\chapter{\docname}
+\label{\docname}
+\section{Umsetzung}
+\subsection{Allgemein}
+Sicherheit ist heutzutage hoch interessant und relevant in mehreren technischen und nicht technischen Bereichen. Sicherheit ist eigentlich relativ, niemand weißt, ob er sicher ist oder nicht. Aber es gibt Systeme, bzw. Geräte, Personen usw., die Sicherheit garantieren. Das System, das entwickelt wird, hat mit Gesichte der Personen zu tun. Alle wissen, dass das Gesicht für jede Person anders ist. Jede Person wird mit ihrem Gesicht identifiziert, weil es einzig ist. Das Gesicht hat Daten, die von verschiedenen Algorithmen herausgeholt werden können, und sie für Realisierung der Überprüfung und Identifizierung der Personen verwenden zu können. 
+
+Das System ist in zwei Teile geteilt. Es gibt den Registrierungsteil und den Erkennungsteil. Bei dem Registrierungsteil wird die komplette Registrierung der Schüler und Schülerinnen, der Lehrer und Lehrerinnen. Es werden verschiedene Pakete gebraucht werden wie z.B. python-MySQLdb, numpy, build-essential, cmake, git, libgtk2.0-dev pkg-config, libavcodec-dev, libavformat-dev, libswscale-dev. Das Paket „python-MySQL
+db“ ist eine Schnittstelle, das nur für Python gültig ist, und die Verbindung zwischen Python (Scripts, Programme) und dem Datenbank Management System ermöglicht. Dient als Verbinder zwischen Python und der Datenbank, die in MySQL integriert ist. Wir brauchen es, um Statements (Select,Insert,Update) in der Datenbank ausführen zu können. 
+
+Das andere Paket namens „git“ ist für das System nicht notwendig, aber git könnte als eine Backup-Strategie verwendet, wenn das System abstürzt. Git ist ein Versionsverwaltungssystem, das verschiedene Versionen bzw. Commits auf einem Github-Server speichert. Auf dem Github-Server gibt dann verschiedene Versionen des Systems und die Daten werden von einem bestimmten Commit dann zurückgeholt. Es wird meistens bei der Implementierung-Phase verwendet, um die Veränderungen der Source-Code, wann geändert hat, wer geändert hat, deutlich zu sehen.
+Cmake Paket ist ein Paket, das gebraucht wird, wenn das System mit OpenCV-Framework arbeitet wird. Wenn das OpenCV-Framework in C++ Skripten verwendet wird, dann wird cmake so geschrieben und das build-Verzeichnis so kompiliert, damit die C++ Skripten das OpenCV-Framework verwenden können. Das gleiche passiert auch, wenn z.B. Python statt C++ verwendet wird. Die andere Pakete wie z.B. libgtk2.0-dev pkg-config, libavcodec-dev, libavformat-dev, libswscale-dev, sind nötige Paketen, damit das OpenCV-Framework eigentlich verwendet kann.  
+ \subsection{Technische Lösung}
+Technologien, die ich für die Implementierung verwendet habe sind: 
+\begin{itemize}
+	\item Linux als Betriebssystem \cite{Linux_Betriebssystem}
+	Linux ist das verwendeste Betriebssystem der Welt. Es ist eine open-source Software. Linux ist flexibel, man kann die einzelnen Modulen wegnehmen, ohne dass das Betriebssystem abstürzt. Der Benutzer kann auch die Kernkomponenten wählen wie z.B. welches System-Grafiken angezeigt werden, bzw. die ganze Komponenten der Benutzeroberfläche. Warum ich Linux gewählt habe, gibt es verschiedene Gründe. Linux ist für eingebettete Systeme sehr geeignet. Es ist sicher gegen Schadprogrammen, Viren, Trojanern. Linux ist einfacher. Vorher war ein kompliziertes System, jetzt seit den Bemühungen der Ubuntu-Fondationen und der Ubuntu-Distribution ist jetzt sehr einfach verwendbar.\\
+	\item python
+	"Python ist eine Programmiersprache, die 1991 veröffentlicht wurde. Python besitzt eine einfache Lesbarkeit und eine eindeutige Syntax. Python lässt sich leicht erlernen und unter UNIX, Linux, Windows und Mac OS verwenden." \cite{python} Warum ich python gewählt habe, gibt es verschieden Gründe. Python hat weniger Schlüsselwörter, reduziert den Sytax auf das Wesentliche und optimiert die Sprache. Ein Programm, das in python geschriebt ist, ist vom Betriebssystem unabhängig. Das bedeutet, sie können in allen Betriebssystemen interpretiert werden. Python hat auch eine gute Lesbarkeit. \\
+	
+\end{itemize}
+Das System besteht aus verschiedenen Terminatoren. Der wichtigste Terminator ist der "Register-Schalter". Er initialisiert das ganze Programm. Schalter in Technik ist nichts anders, nur ein Konnektor oder mit anderen Wörtern, eine Brücke. Wenn diese Brücke geöffnet ist, dann bekommt das System keinen Input und gibt keinen Output zurück. Wenn der Schalter gedrückt wird, bekommt das System einen Input, transformiert und gibt dann einen Output. Das System ist sehr einfach verwendbar.
+
+Das Register-LED dient als einen Anzeiger. Wenn mit dem System etwas schiefgeht, z.B. nicht richtige Inputdaten, dann wird mit einer bestimmten Farbe eingeleuchtet, mit rot. Wenn etwas passt, dann wird mit grün eingeleuchtet. Eigentlich das normale LED hat nur eine Farbe, aber es wird ein spezielles LED verwendet, namens RGB LED. RGB LED hat drei Grundfarben, rot, grün, blau, und mit diesen drei Farben kann man alle Farben erstellen. Es könnte auch zwei LEDs geben, rot und grün, aber es ist effektiver, ein RGB LED. 
+
+Eine spezielle Eigenschaft des Systems ist die Verwendung einer Tastatur. Es wird verwendet, weil die einzelnen Personen ihren Namen, bzw. Email schreiben werden. 
+Die andere spezielle Eigenschaft ist die Verwendung eines LCD-Screens. Da werden z.B. Errors gezeichnet, die Daten, die in Log gespeichert sind usw. Es ist leicht auch für den Benutzer zu sehen, dass z.B. ein Problem mit dem System hat, damit er nicht vor der Kamera 1 Stunde warten muss, damit er weißt, dass die Registrierungs-Phase nicht fertiggemacht wurde, usw. Eigentlich die Hauptfunktion des LCD-Screens ist, alles was der Benutzer mit der Tastatur schreibt, da gezeigt zu lassen. Warum es so geplant ist? Das Problem steht daran, wenn der Benutzer seine Email schreibt, dann kann er Fehler machen, weil er nicht sieht, was er schreibt. Und bei der Gesichtserkennung muss er noch einmal seine Email schreiben, aber werden nicht übereinstimmen, weil bei der Registrierung falsch getippt hat. Um es zu vermeiden, wird das LCD-Screen verwendet, damit der Benutzer sehen kann, was er schreibt.
+
+Damit die Personen mit ihren Infos irgendwo zu speichern, wird einen Server gebraucht. In diesem Server läuft ein Datenbank Management System, in dem eine Datenbank erstellt ist. Die Datenbank ist so konfiguriert, damit die Person mit ihren Infos gespeichert werden können. Um die Verbindung zwischen System und Server zu ermöglichen, wird das Paket „python-mysqldb“ verwendet. Dies Paket ist vorher erklärt.
+
+ Anschließend gibt es ein Backup-Server. Die Daten werden parallel bei Server sowie bei Backup-Server gespeichert, damit die Daten noch gesichert sind, wenn der Server ein Problem hat. Die Verwendung des Backup-Servers ist zustande gekommen, weil das System 24/7 arbeiten muss, und wenn der Hauptserver Maintenance oder Probleme hat, der Backup-Server arbeiten kann. Auf dem Abb. \ref{fig:1Ebene_Gesichtsregistrierung} können Sie in einem technischen Weg besser sehen, wie der Gesichtsregistrierung-Teil arbeitet. 
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{\ordnerfigures 1Ebene.png}
+	\caption{Structed Software Design bzw. erste Ebene }
+	\label{fig:1Ebene_Gesichtsregistrierung}
+\end{figure}
+Um Schalter und LEDs im System verwenden zu können, brauchen wir ein spezielles Paket namens „RPi.GPIO“. Dieses Paket macht möglich, das Raspberry PI mit dem HW (LED und Schalter) verbinden zu können. Dafür werden GPIOs verwendet. Der Schalter hat 3 Beine. Ein wird mit 5V verbunden, das andere mit Ground und das andere ist für Daten. Dies dann wird mit einem GPIO-Port in Raspberry PI verbunden. Das gleiche ist auch für LED, damit wir es von Raspberry PI kontrollieren zu können, wird mit einem GPIO-Port verbunden. Jetzt mithilfe dieser GPIO-Ports bekommt das System zurück, wenn der Schalter gedrückt wird. Wert „1“ ist der Schalter gedrückt und werden dann die verschiedenen Skripten aufgerufen. 
+
+Schritte: 
+\begin{enumerate}
+	
+	\item Am Beginn des Skripts diese Zeile schreiben: "\#!/usr/bin/python". Es gibt zwei Gründe, warum diese Zeile geschreibt wird. Der erste Grund ist, dass dieses Program mit einem Python-interpreter ausgeführt wird, der zweite ist, Verwendung des Programmsuchpfads, um es zu finden. \\ \\ \\ \\ \\ \\ \\ \\ 
+	 \item Alle Paketen importieren.Sehen Sie auf Abb. \ref{fig:Packages zu importieren} 
+	 \begin{figure}[H]
+	 	\includegraphics[width=\textwidth]{\ordnerfigures Import_Packages.png}
+	 	\caption{Packages zu importieren im Main-Skript}
+	 	\label{fig:Packages zu importieren}
+	 \end{figure}
+	 \begin{itemize}
+	 	
+	 \item RPi.GPIO ist ein Paket, das verwendet wird, um Zugriff auf die sogennanten GPIO-Ports zu haben. Vorher habe ich erwänt, wenn wir Zugriff auf die HW-Komponenten haben wollen, die mit Raspberry PI verbunden sind, brauchen wir die GPIO-Ports. Jetzt, um diese GPIO-Ports in Python zu verwenden, brauchen wir das sogennante Paket "RPi.GPIO". Es gibt verschiedene Pakete, die einen Zugriff zwischen GPIO-Ports und python ermöglichen, wie z.B. rpi.gpio, GPIOZero usw. Ich habe rpi.gpio Paket verwendet, weil es leicht verständlich, programmierfreundlich und einfach zu verwenden ist. \cite{rpigpio}
+	 
+	 \item time ist ein Paket in Python. Von diesem Paket habe ich nur die Funktion 'sleep' verwendet. Diese Funktion pausiert das python-Programm. \cite{timepackage}
+	 
+	 \item os ist das wichtigste Paket in unserem Skript. Es erlaubt mir, dass ich in einem Python-Skript andere Skripten aufrufen kann. Ist egal, in welcher Programmiersprache diese Skripten geschrieben sind. Es gibt auch verschiedene Methoden, wie man verschiedene Skripten in einem Python-Skript aufrufen kann. Man macht mit dem subprocess Paket, eine Main-Funktion in dem Skript machen und hier die verschiedenen Funktionen des anderen Skripts aufrufen. Ich habe os Paket verwenden, weil es für unseres System am besten ist. \cite{ospackage}
+	 
+	 \item subprocess Paket dient zur Verbindung zwischen verschiedenen Prozessen, in meinem Fall, ein Prozess heißt, ein Aufruf eines Skriptes, aber wird nicht im Skript verwendet. 
+	 
+	 \item sys Paket verwende ich, um Console Parameter zu geben. Das bedeutet, wenn ich einen Skript aufrufe, z.B. login.py dann nach dem login.py gebe ich einen Parameter mit login.py $<$parameter $>$ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
+   \end{itemize}
+	\item GPIO-Ports direction einrichten. Direction für LED ist 'out', weil das LED als ein Output für unseres System dient. Direction für Schalter ist 'in', weil der Schalter als ein Input für unseres System dient. Auf Abb. \ref{fig:GPIO-Ports Konfiguration} ist auch der Code in python. 
+	\begin{figure}[H]
+		\includegraphics[width=\textwidth]{\ordnerfigures GPIO_PORTS_Einrichten.png}
+		\caption{GPIO-Ports Konfiguration}
+		\label{fig:GPIO-Ports Konfiguration}
+	\end{figure}
+	Es gibt verschiedene Betriebsarten für GPIO wie BCM und Board.
+	Ich verwende BCM (Broadcom Pin Number), weil ich das Paket RPi.GPIO verwende. Mit diesem Paket darf ich nur die Betriebssart 'BCM'. 
+	\cite{gpiomode}
+	Für die Registrierung der Schüler und Schülerinnen bzw. Lehrer und Lehrerinnen ist es nötig, dass der Admin da physisch sein muss. Die Überprüfung, ob der Admin da ist oder nicht,  wird mit einem Vergleich von zwei Bilder gemacht. Ein Bild von Admin ist gespeichert, das andere wird gemacht, indem ich das Skript, das Bild macht, aufrufe, und dann vergleiche ich mit einem anderen Skript diese beide Bilder. Es gibt 'matched' zurück, wenn die Gesichte bei den beiden Bildern gestimmt haben und 'not matched' wenn die Gesichte nicht gestimmt haben.
+	\item Dann kommt der Teil "Input check". 
+	Hier dann verwende ich die Methode 'input'. Die Methode befindet sich im Paket 'RPi.GPIO' und gibt entweder true oder false zurück. 
+	Im Verzeichnis '/sys/class/gpio/gpio$<$GPIO-PORT$<$ gibt es zwei Dateien, value and direction. Direction für die Port des Schalters ist IN und für die Port des LEDs ist OUT. Mit der Methode 'input' hole ich das Wert (value) der Schalter-Port. Wenn der Schalter gedrückt wird, das Wert wird '1' und 1 representiert 'true' Das bedeutet, Input-methode liefert 'true' zurück und das Programm läuft weiter.
+	
+Nachdem der Schalter gedrückt wird, wird ein Skript aufgerufen. Dieses Skript dient zur Registrierung der Person in der Datenbank.
+Für die Registrierung der Schüler und Schülerinnen bzw. Lehrer und Lehrerinnen ist es nötig, dass der Admin da physisch sein muss. Die Überprüfung, ob der Admin da ist oder nicht,  wird mit einem Vergleich von zwei Bilder gemacht. Ein Bild von Admin ist gespeichert, das andere wird gemacht, indem ich das Skript, das Bild macht, aufrufe, und dann vergleiche ich mit einem anderen Skript diese beide Bilder. Es gibt 'matched' zurück, wenn die Gesichte bei den beiden Bildern gestimmt haben und 'not matched' wenn die Gesichte nicht gestimmt haben.
+Wenn 'matched', dann können die Personen registrieren.
+ Diese Person wird nach ihrem Vornamen, Nachnamen, Email und Rolle. Die Rolle schreibt der Admin. 1 ist für Admin, 2 für Schüler und 3 für Lehrer und Lehrerinnen. Die E-Mail speichere ich dann in einer Variable und diese Variable übergebe ich dann bei einem anderen Skript. Dieses Skript dann erstellt mit der Kamera eine Verbindung und macht ein Bild. Der Name des Bildes ist gleich mit der Email der Person. Es ist so gewählt, weil es leichter für das Einfügen der Daten in der Datenbank ist  und bei der Speicherung des Paths des Bildes in der Datenbank mit dem gleichen Namen wie E-Mail einfacher ist.
+
+Anschließend, wenn die Person in der Tabelle 'person' gespeichert ist, hole ich ID dieser Person und füge dann diese ID mit der E-Mail plus Path des Bildes in der Tabelle 'info'. 
+
+
+\begin{lstlisting}
+def insertPath(mycursor):
+mycursor.execute("select idP from person where email='%s';"%(variable3))
+myresult=mycursor.fetchall()
+for x in myresult:
+var1=x[0]
+mycursor.execute("insert into info(imagePath,idP) values('%s',%s);"%('./'+variable3+'.jpg',var1))
+
+\end{lstlisting}
+
+
+\end{enumerate}
+\subsection{Herausforderungen}
+Eigentlich, das Projekt für mich hatte viele Herausforderungen. Die Gründe dafür sind, weil es ein ziemlich großes Projekt ist, wir haben neue Technologien verwendet, die wir vorher nie verwendet haben. Keine Erfahrung z.B. mit OpenCV, Python und viele verschiedene Dinge, die ich später erwähnen werde. Ich habe von diesen Herausforderungen und Problemen viel gelernt. Einerseits bin ich froh, anderseits bin ich sauer, weil das Datum des Ende des Projekts ist verzögert. 
+Die Herausforderungen waren:
+
+\begin{itemize}
+	\item opencv zu installieren. Das war eigentlich die größte Herausforderung. Es hat mir 3 Woche gedauert, bis ich es installiert habe. 
+	
+	\item Beginn des Projektes. Immer der Beginn eines Projektes ist schwierig. Die Koordination im Team war sehr schwierig. Ich, als Projektleiter, musste allen sagen, wie sie arbeiten sollen, wo sie die Dateien finden können usw. Das war eine richtige große Herausforderung
+	
+	\item Git repository, Einrichtung von git. Manche von den Teammitgliedern wussten sehr wenig von git und ich musste sie erklären. Manche gab es merge conflicts, weil sie pull gemacht haben, ohne dass Sie die Änderungen commited haben. Ich sollte alle diese lösen, weil ich mehr Erfahrung mit git hatte. 
+	
+	\item Python als Programmiersprache. Wir wollten vorher mit C++ es machen, aber es war sehr schwierig, OpenCV in Visual Studio zu installieren. Manche von uns wollten in Windows arbeiten und der einzige Weg war, mit Visual Studio zu arbeiten. Es hat nicht gegangen, deshalb sind wir in python umgewandelt. Wir haben python gewählt, weil opencv in python sehr einfach installierbar war. Mit python hatten wir keine große Erfahrung. Das Maximum, was ich mit python gemacht habe ist, eine Verbindung mit der Datenbank und Statements da schicken (Insert,Select,Update,Delete). Alle andere Wissen sollte ich selbst von Bücher, Internet, Tutorials lernen. Die große Herausforderung hier war, die richtigen Quellen zu finden.
+	
+	\item Verwendung der Kamera und verbinden sie mit python. Ich wusste nicht, welche Funktionen man verwendet, um die Verbindung mit der Kamera zu erstellen. 
+	\item Bei der älteren Version von Raspbian heißt das Paket, das python mit Datenbank Managment System(MySQL) verbindet, 'python-mysqldb' und jetzt heißt es 'python-mariadb'. Ich wusste das nicht und hat mir einbisschen Zeit genommen. 
+	\item Abhängigkeiten zwischen einzelnen Arbeitsteilen. Die Aufgaben sind so geteilt, dass sie Abhängigkeiten zwischen einander legen. Das hat dann zu einer Verspätung der Projektabgabe, weil jeder Teammitglieder aufeinander warten sollten. 
+	\item Was ich geplant habe, hat nicht gut funktioniert. Die großen Teile meiner Planung haben gepasst, nur wenige Kleinigkeiten musste ich ändern. Das Problem war, ich konnte nicht, dass diese Kleinigkeiten nicht passen. Sie sind erst in der Implementierungsphase 
+	angezeigt.
+	\\
+	\\
+	
+Ich habe diese Lösungen für die Herausforderungen vorgenommen: 
+\begin{enumerate}
+	\item Ich habe viel Tutorials geschaut, Websites gesehen, wie opencv in Raspberry PI installiert werden kann. Ich habe viele verschiedene Methoden probiert und mit keinem guten Ergebnis. Endlich nach vielen Proben ist es gegangen. Es ist installiert, und habe ich dann verschiedene Skripte in python gemacht, um es zu probieren. Manche von Skripten sind gegangen, manche nicht. Jetzt war eine kleine Herausforderung für mich gewesen, dass ich diese manche Skripte, die nicht ausgegangen sind, zu verbessern. Anschließend habe ich herausgefunden, dass das Problem bei dem Kompilieren von opencv war (cmake). Ich habe es noch einmal vom Beginn kompiliert. Jetzt ist alles in Ordnung, alle Skripte arbeiten, keinen Fehler mehr, der mit opencv Paket zu tun hat.
+	
+	\item Eine Treffung mit meiner Gruppe vor dem Beginn des Projektes war notwendig. Ich hab sie gesagt und erklärt, in welchen Verzeichnise sollten sie arbeiten, die Struktur der Dokumentation, welcher Kommunikationskanal verwenden wir, um Probleme, Herausforderungen usw. zu besprechen usw. Jede Person hatte dann ihre Vorschläge, um das so und so zu lösen, und diese Treffung hat eigentlich zu viel gedauert, bis alle verstanden hatten, wie, wo,was, wann machen sollen. Aber auch nach der Treffung gab es zwischendurch Missverständisse bzw. Probleme mit der Kommunikation, nicht im richtigen Verzeichnis gearbeitet usw. 
+	
+	\item Ein Git-Repository erstellen und einzurichten war einfach. Ich hab es online in github.com erstellt. Einen Name eingegeben und dann als Collaborators die anderen Teammitglieder hinzugefügt. Strukturierter zu werden, habe ich dann verschiedene Branches eingelegt. Wie immer, gab es mit dem Befehl 'push' und 'pull' wieder Probleme. Das habe ich gelöst, in dem ich allen gesagt habe, dass, wenn sie in einem Github-Repository arbeiten möchten,dann bevor dem Beginn der Arbeit, müssen sie ein 'pull' machen, damit die Änderungen, die von anderen in dem Repository gemacht sind, mit deiner Version in Computer zu synchronisieren. Sie wissen nie, was die anderen in diesem Repository machen. Sie machen 'push', ohne zu sagen, dass sie ein 'push' gemacht haben. Das führt dann zu merge-Probleme usw. 
+	
+	\item Ich habe jedem Teammitglieder gesagt, er muss mindestens zwei Wochen an das Kennenlernen von python ausgeben. Tutorials anzusehen, Beispiele selbst zu probieren, die Quellen dafür selbst zu finden. 
+	
+	\item  Für die Verbindung der Kamera mit OpenCV, gibt es einen Skript in der offiziellen Website-Dokumentation von OpenCV. Da habe ich alle Funktionen gesucht und gefunden, die ich brauchte, um die Kamera in Python verwenden zu können. 
+	
+	\item Damit wir die Abhängigkeiten zu vermeiden, habe ich gedacht, dass jeder Teammitglieder andere Aufgaben bekommt, als die, die in der Dokumentation stehen. Ich war gezwungen, diese Änderung zu machen, sonst würde das Projekt viel länger dauern. 
+	
+	\item Bei der Implementierung sind Kleinigkeiten herausgekommen, die bei der Planung nicht berücksichtigt waren. Die habe ich direkt in der Implementierung verbessert, ohne dass ich nocheinmal die Planung mache. Aber ich habe diese Kleinigkeiten zur Kenntnis genommen, damit ich keinen solchen Fehler(Kleinigkeiten) mehr auf die Planungsphase machen werde. 
+ \end{enumerate}
+\end{itemize}
+\subsection{Qualitätssicherung und Controlling}
+Ein Risiko ist meistens nur ein Einschätzung, was kostet einem Unternehmen, wenn die Projektziele nicht erreicht werden. Ich, als Projektleiter, sollte es machen. Eine Risikoanalyse zu planen ist sehr schwierig, weil es mit der Zukunft zutun hat. Zuerst muss ich an die Zukunft denken, welche Bauteile z.B. können zu Fehler kommen, welche Programme können schief gehen. Das bedeutet, ein Überblick in die Zukunft und einschätzen, was für Fehler und Risiken geben kann. Dann schätze ich die Wahrscheinlichkeit ihres Eintretens und am Ende die Maßnahmen. Da versteckt sich eine große Arbeit.\cite{Risikoanalyse} 
+Auf dem Abb. \ref{fig:Risikoanalyse} können Sie die Risikoanalyse in Excel sehen. Es ist in Excel, weil es meistens mit Zahlen geht. Wahrscheinlichtkeit, Kosten usw. alles sollen wir berechnen und Excel ist super an Berechnungen.
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{\ordnerfigures Risikoanalyse1.png}
+	\includegraphics[width=\textwidth]{\ordnerfigures Risikoanalyse2.png}
+	\caption{Risikoanalyse in Excel}
+	\label{fig:Risikoanalyse}
+\end{figure}
+
+\section{Ergebnisse}
+Es sind 3 Monaten vergangen, seit ich angefangen habe zu arbeiten. Insgesamt habe ich 100 Stunden für die Diplomarbeit bis jetzt gearbeitet. Diese 100 Stunden haben dann ein Ergebnis gegeben. Weil mein Teil nicht viel Hardware hatte, nur ein LED, einen Schalter, Tastatur, war es nicht schwierig, die mit dem ganzem System zusammenzusetzen. Bis jetzt ist es gedacht, dass das System keine LCD Anzeige haben wird, weil ich nicht viel Zeit habe, um sie zu programmieren. Statt LCD Anzeige wird einen Bildschirm verwendet. 
+\subsection{Implementierung}
+Nachdem eine große und gute Arbeit meinerseits, denke ich, dass das Produkt in der Inbetriebnahme-Phase sich befindet. Das bedeutet, bis jetzt gibt es einen Prototyp. Ich habe für diesen Prototyp die sogennante Kernfunktionen implementiert. Kernfunktionen sind Grundfunktionen bzw. wesentliche Funktionen. Ohne denen geht nichts. Die Funktionen, die in diesem Prototyp implementiert sind, sind:
+\begin{itemize}
+	\item Admin Account. Wenn eine Person registriert möchtet, dann muss der Admin sich auf das System einloggen. Für diesen Prototyp gibt es nur ein Passwort, damit der Admin erkannt wird. Auf dem anderen Prototyp wird kein Passwort mehr geben, sondern die Überprüfung wird durch den Vergleich die Gesichter erfolgt.
+	\item Die Person mit ihrem Vorname, Nachname, Email und Role in der Datenbank speichern
+	\item Ein Bild von dieser Person nehmen, das in der Datenbank speichern mit dem ID der Person.
+	\item Wenn die Person erfolgreich in Datenbank gespeichert wird, wird das LED geleuchtet.
+\end{itemize}
