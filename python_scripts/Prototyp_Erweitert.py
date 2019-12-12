@@ -19,6 +19,8 @@ image2=sys.argv[1]
 while True:
     if GPIO.input(18):
         os.system('./Test '+(image2)+".jpg")
+        os.system('./faceDetect_crop.py')
+        filenam=zh
         exec(open('./Vergleich_2_Fotos.py').read())
         if(c=="matched"):
             #from Person_Registrierung import (variable3)
