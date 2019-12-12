@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 import cv2
 import numpy as np
-import dlib 
+#import dlib 
 
-filename = input("insert image file\n") 
-
+#filename = input("insert image file\n") 
+filename=(image2+".jpg")
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -48,7 +48,8 @@ if nrFace > 0:
             ny = int(centery - r) 
             nr = int(r * 2) 
             faceimg = image[ny:ny+nr, nx:nx+nr] 
-            filenam = input("Give new filename for cropped photo: \n")
+            #filenam = input("Give new filename for cropped photo: \n")
+            filenam=(image2+"new"+".jpg")
             image2 = cv2.imwrite(filenam,faceimg)
             imag = cv2.imread(image2) 
             gray2 = cv2.cvtColor(imag, cv2.COLOR_BGR2GRAY)

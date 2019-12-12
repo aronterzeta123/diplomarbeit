@@ -1,0 +1,19 @@
+#/bin/bash
+sudo apt-get -y install python-dev
+sudo apt-get -y install libavresample-dev
+sudo apt-get -y install libgstreamer1.0-dev
+sudo apt-get -y install libgstreamer-plugins-base1.0-dev**
+sudo apt-get -y install python-numpy
+sudo apt-get -y install libtbb2
+sudo apt-get -y install libtbb-dev
+sudo apt-get -y install libjpeg-dev
+sudo apt-get -y install libpng-dev
+sudo apt-get -y install libtiff-dev
+sudo apt-get -y install libjasper-dev
+sudo apt-get -y install libdc1394-22-dev
+sudo apt-get -y install pylint
+sudo apt-get -y install pylint3
+sudo apt-get -y install python-tk
+sudo apt-get -y install python3-tk
+sudo apt-get -y install python3-dev
+sudo apt-get -y install python3-numpy

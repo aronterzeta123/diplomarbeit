@@ -15,10 +15,13 @@ GPIO.setup(17, GPIO.IN)#ReiLED
 GPIO.setup(27, GPIO.OUT)#ReiSchalter
 a=""
 b=""
+zh=""
 image2=sys.argv[1]
 while True:
     if GPIO.input(18):
         os.system('./Test '+(image2)+".jpg")
+        exec(open('./faceDetect_crop.py').read())
+        filenam=zh
         exec(open('./Vergleich_2_Fotos.py').read())
         if(c=="matched"):
             #from Person_Registrierung import (variable3)
