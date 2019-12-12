@@ -1,83 +1,244 @@
+
 \chapter{\docname}
+% !TeX spellcheck = de_DE
 \label{\docname}
-
 \section{Allgemeines}
-Heutige Zeit ist die Technologie ein der wichtigsten Themen für den Welt. Mithilfe der Technologie hat die Menschheit wesentliche Fortschritte gemacht im Bereich der Lebensqualitätsverbesserung und Erleichterung. Mehr als jemals zuvor kommen intelligente Systeme im Einsatz, die um den Arbeitsaufwand und die Arbeitskomplexität zu reduzieren dienen. Diese Systeme werden in die wichtigsten Bereiche des Lebens verwendet, wie zum Beispiel: Menschlichen Beziehungen, Business, Transport, Banken, Medizin, Bildung und Kommunikation. Selbstverständlich gibt es zahlreiche Versuche von verschiedenen Menschen, die als Hauptziel den Zugriff auf diesen Systemen zu ermöglichen haben. Deshalb ist die Sicherheit in diesem Systemen eine der aktuellsten und wichtigsten Themen. Der unkontrollierte Zugriff auf so wichtige und delikate Systemen wurde zu unreparierbare Konsequenzen führen. Auf dieser Gründe muss es sehr genau und detailliert geplant werden, welche Sicherheit Strategien die klügsten bzw. die besten sind.  
+Heutige Zeit ist die Technologie ein der wichtigsten Themen für den Welt. Mithilfe der Technologie hat die Menschheit wesentliche Fortschritte gemacht im Bereich der Lebensqualitätsverbesserung und Erleichterung. Mehr als jemals zuvor kommen intelligente Systeme im Einsatz, die um den Arbeitsaufwand und die Arbeitskomplexität zu reduzieren dienen. Diese Systeme werden in die wichtigsten Bereiche des Lebens verwendet, wie zum Beispiel: Menschlichen Beziehungen, Business, Transport, Banken, Medizin, Bildung und Kommunikation. Selbstverständlich gibt es zahlreiche Versuche von verschiedenen Menschen, die als Hauptziel den Zugriff auf diesen Systemen zu ermöglichen haben. Deshalb ist die Sicherheit in diesem Systemen eine der aktuellsten und wichtigsten Themen. Der unkontrollierte Zugriff auf solchen wichtigen und delikaten Systemen wurde zu unreparierbare Konsequenzen führen. Auf dieser Gründe muss es sehr genau und detailliert geplant werden, welche Sicherheit Strategien die klügsten bzw. die besten sind.  
 
-Der Hauptthema dieses Projekts ist genau die Sicherheit der Systeme, und zwar die Ermöglichung des kontrollierten Zugriffs von Menschen in verschiedenen Gebäude. Es wurde die Verantwortlichkeit übergenommen, dass der Zugriff in der Österreichischen Schule “Peter Mahringer” übergewiesen und kontrolliert ist. Zu diesem Zweck wird in diesem Projekt ein intelligentes System entwickelt, dass die Aufgabe hat, menschliche Gesichte (Gesichte von Schülern, Lehrern, Eltern usw.) zu registrieren und zu erkennen. Es wird höchstwahrscheinlich in dem Schultür integriert, weil vom dort werden alle unbedingt rein- bzw. rauskommen. Dieser Projekt wird große Hilfe für die Schule sein, aufgrund der vom Kameras und komplexen Algorithmen angebotenen Möglichkeiten. Beispielweise wird es überprüft, ob der Person dass reinkommt ein Student oder Lehrer ist, oder wird es notiert, wer die Schule wann verlässt oder besucht. Hat ein Person kein Zugriff, wird er nicht reinzukommen erlaubt.
+Der Hauptthema dieses Projekts ist genau die Sicherheit der Systeme, und zwar die Ermöglichung des kontrollierten Zugriffs von Menschen in verschiedenen Gebäude. Es wurde die Verantwortlichkeit übernommen, dass der Zugriff in der Österreichischen Schule “Peter Mahringer” überwiesen und kontrolliert ist. Zu diesem Zweck wird in diesem Projekt ein intelligentes System entwickelt, dass die Aufgabe hat, menschliche Gesichtern (Gesichtern von Schülern, Lehrern, Eltern usw.) zu registrieren und zu erkennen. Es wird höchstwahrscheinlich in dem Schultür integriert, weil vom dort werden alle unbedingt reinkommen. Dieser Projekt wird große Hilfe für die Schule sein, aufgrund der vom Kameras und komplexen Algorithmen angebotenen Möglichkeiten. Beispielweise wird es überprüft, ob der Person dass reinkommt ein Student oder Lehrer ist, oder wird es notiert, wer die Schule wann verlässt oder besucht. Hat ein Person kein Zugriff, wird er nicht reinzukommen erlaubt.
 
-Eine Grobe Skize des Systems wurde sowie im Abb.\ref{fig:grobe_Skizze} zu sehen.
-\begin{figure}[htp]
-	\includegraphics{\ordnerfigures Capture.png}
+Um diesem Projekt zu realisieren, wird das Projekt in drei große und wichtige Teile zerlegt. Das erste Teil heißt Bildverarbeitung und hat die Aufgabe, Gesichtsbildern vom Kamera zu normalisieren und verarbeiten, damit sie in dem geeignete Format für die Gesichtsvergleichung sind. Das zweite Teil beschäftigt sich mit der Registrierung der Gesichter von Personen im Server. Das dritte Teil ist die Gesichtserkennung. Das ist genau das Teil für dem ich verantwortlich bin. Hier geht es um die Erkennung der Gesichtern der Benutzern des Systems. Es wird durch eine Vergleichung überprüft, ob der Person vorher schon registriert worden ist oder nicht, und ob sein Gesichtsdaten schon im Server existieren oder nicht. Nur wenn die Vergleichsergebnisse positiv sind, darf der Person reinkommen. %Der Person drüct einem Taster, dass für die Gesichtserkennung implementiert ist. Danach muss der Benutzer das Email eingeben und vor dem Kamera, in einer bestimmten Distanz stehen. Das System wird dann alles überprüfen. 
+Dem Person werden die Ergebnisse durch Anzeigern kommuniziert. Dieses Teil des Projektes erfordert eine Arbeit mit Datenbanken, Gesichtsvergleichsalgorithmen und mit vielen System Tests.Teil meiner Aufgabe ist auch der Aufbau des Systems und alles was mit Hardware zu tun hat. Alle Hardware Komponenten werden in den folgenden Kapiteln klar, verständlich und deutlich erklärt. Eine grobe Skizze des Systems wurde sowie im Abb.\ref{fig:grobe_Skizze} zu sehen.
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{\ordnerfigures Capture.png}
 	\caption{Grobe Skizze des Systems}
 	\label{fig:grobe_Skizze}
 \end{figure}
-
-Um diesem Projekt zu realisieren, wird das Projekt in drei große und wichtige Teile zerlegt. Das erste Teil heißt Bildverarbeitung und hat die Aufgabe, Gesichtsbildern vom Kamera zu normalisieren und verarbeiten, damit sie in dem geeignete Format für die Gesichtsvergleichung sind. Das zweite Teil beschäftigt sich mit der Registrierung der Gesichter von Personen im Server. Das dritte Teil ist die Gesichtserkennung. Das ist genau das Teil für dem ich verantwortlich bin. Hier geht um die Erkennung der Gesichte der Benutzern des Systems. Es wird durch eine Vergleichung überprüft, ob der Person vorher schon registriert worden ist oder nicht und ob sein Gesichtsdaten schon im Server existieren oder nicht. Nur wenn die Vergleichungsergebnisse positiv sind, darf der Person reinkommen. Der Person braucht nur sein Email eingeben und vor dem Kamera stehen, das System wird dann alles machen. Dem Person werden die Ergebnisse durch Anzeigern kommuniziert. Dieses Teil des Projektes erfordert eine Arbeit mit Datenbanken, Gesichtsvergleichungsalgorithmen und mit vielen System Tests.Teil meiner Aufgabe ist auch der Aufbau des Systems und alles was mit Hardware zu tun hat. Alle Hardware Komponenten werden in den folgenden Kapiteln klar, verständlich und deutlich erklärt.
 \section{Technische Lösung}
 	\subsection{Hardware und Aufbau}
 Als erstens wird der Aufbau des Systems beschrieben, zusammen mit allen verwendeten Komponenten, dass zu verwenden sind. Ohne die Hardware wurde nichts funktionieren, weil die Software ohne die Hardware einfach nicht leben kann. 
-		\subsubsection{Bauteile und HW-Komponente}Die Bauteile, die für dieses System verwendet geworden sind, sind die folgende:
+		\subsubsection{Bauteile und HW-Komponente}
+		Die Bauteile, die für dieses System verwendet geworden sind, sind die folgende:
 \begin{enumerate}
-	\item Steckboard bzw. Steckplatine \\
-Die Steckplatine ist der wichtigste Komponent der Hardware unseres Systems. Sie wird für die Entstehung der elektrischen Verbindung von verschiedenen elektrischen Bauteile, um elektrische Schaltungen zu bauen oder um verschiedene Tests und Experimenten zu machen. In dieser Steckplatine werden alle andere Komponenten platziert, damit die Verbindung erstellt weden kann und damit das System läufen kann.
-	\item Kabeln bzw. Leitern \\
-Damit die verschiedene Komponenten, die in der Steckplatine platziert sind, miteinander verbundet sein können, braucht man unbedingt die Kabeln. Mithilfe von Kabeln können elektrische Impulse und Signale fließen, damit die Energie und die Information überträgt werden. Die verwendete Kabeln sind aus Kupfer und sind sowie vom Typ Male-Male als auch vom Typ Male-Female. Die Kabeln vom Typ Male-Female werden verwendet, um die Verbindungen zwischen die Elemente in der Steckplatine und den Raspberri Pi zu ermöglichen. Auf der anderen Seite werden die Male-Male Kabeln die Verbindungen innerhalb der Steckplatine machen.
-	\item LEDs \\
-LED steht für Light Emmiting Diode. Sie sind elektronische Halbleiter Elemente, die Licht produzieren können, wenn sie Spannung kriegen. Ein LED besteht aus zwei Beine. Die längere Beine ist die Anode, die den Pluspol symbolisiert. Die andere Beine ist die Kathode, und symbolisiert den Minuspol. Durch die Beinen wird der Kontakt mit der Steckplatiene erstellt.
-	\item Widerstand \\
+	\item \textit{Steckboard bzw. Steckplatine}\\ 
+Die Steckplatine ist der wichtigste Komponente der Hardware unseres Systems. Sie wird für die Entstehung der elektrischen Verbindung von verschiedenen elektrischen Bauteile, um elektrische Schaltungen zu bauen oder um verschiedene Tests und Experimenten zu machen. In dieser Steckplatine werden alle andere Komponenten platziert, damit die Verbindung erstellt werden kann und damit das System laufen kann.
+	\item \textit{Kabeln bzw. Leitern} \\
+Damit die verschiedene Komponenten, die in der Steckplatine platziert sind, miteinander verbunden sein können, braucht man unbedingt die Kabeln. Mithilfe von Kabeln können elektrische Impulse und Signale fließen, damit die Energie und die Information überträgt werden. Die verwendete Kabeln sind aus Kupfer und sind sowie vom Typ Male-Male als auch vom Typ Male-Female. Die Kabeln vom Typ Male-Female werden verwendet, um die Verbindungen zwischen die Elemente in der Steckplatine und den Raspberry Pi zu ermöglichen. Auf der anderen Seite werden die Male-Male Kabeln die Verbindungen innerhalb der Steckplatine machen.
+	\item \textit{LEDs}\footnote{Light Emmiting Diode} \\
+LEDs sind elektronische Halbleiter Elemente, die Licht produzieren können, wenn sie Spannung kriegen. Ein LED besteht aus zwei Beine. Die längere Beine ist die Anode, die den Pluspol symbolisiert. Die andere Beine ist die Kathode, und symbolisiert den Minuspol. Durch die Beinen wird der Kontakt mit der Steckplatine erstellt.
+	\item \textit{Widerstand} \\
 Ein Widerstand ist ein elektrisches Bauteil, dass um die Reduzierung von Strom verwendet wird, damit es ein Gleichgewicht zwischen Strom und Spannung gesichert werden kann. Die Einheit ist Ohm.
-	\item Tastern \\
-Ein Taster ist wird wie ein Button gedrüct, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster gefunden.
-	\item Raspberri Pi \\
-Raspberry Pi ist ein Minikomputer, dass in diesem Projekt der normale Komputer ersetzt. Gründe dafür sind die kleinere Kosten, das kleinere Platzbedarf sowie die Flexibilität, dass der Raspberry anbietet. Die SD-Karte ist das wichtigste Element, weil dort alle Daten und Informationen gespeichert sind. Raspberry Pi und Linux passen auch sehr gut zusammen.
-	\item Bildschirm \\
+	\item \textit{Tastern} \\
+Ein Taster ist wird wie ein Button gedrückt, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster gefunden.
+	\item \textit{Raspberry Pi} \\
+Raspberry Pi ist ein Minicomputer, dass in diesem Projekt den normalen Computer ersetzt. Der verwendete Raspberry ist Version 3 und hat 4 USB-Anschlüsse, einem Netzteil, eine SD-Karte, 16 GPIO\footnote{Generated Input Output} Pins und einem VGA Schnittstelle. Die 32-Bit SD-Karte ist das wichtigste Element, weil dort alle Daten und Informationen gespeichert sind. 
+	\item \textit{Bildschirm} \\
 Ein Bildschirm ist nur eine Anzeige, dass um die visualische Darstellung von verschiedenen Informationen oder Daten(wie Videos, Fotos, Statistiken usw) verwendet wird. Ein Bildschirm wird heutige Zeiten sehr häufig verwendet, aufgrund der hohen Benutzerfreundlichkeit dass angeboten wird.
-	\item Tastatur \\
+	\item \textit{Tastatur} \\
 Eine Tastatur ist ein Input Gerät, dass durch das Eindrücken von Buttonen den Benutzer die Eingabe von Daten oder Befehle ermöglicht.
-	\item Kamera \\
-Letztens werden 2 Kameras benötigt, die die Fotos der Persongesichte machen werden. Sie werden auch im Raspberry integriert bzw. mit dem Raspberry verbunden.
+	\item \textit{Kamera} \\
+Letztens werden 2 Kameras benötigt, die die Fotos der Personsgesichten machen werden. Sie werden auch im Raspberry integriert bzw. mit dem Raspberry verbunden. Die Kameras sind auf Typ A
 \end{enumerate}
 		\subsubsection{Schaltplan und Erklärung des Aufbaus}
-Die Hardware Komponenten werden in einer Steckplatine platziert. Dort werden die Verbinungen mit den anderen Komponenten sowie mit dem Raspberry Pi erstellt. Die elektrische Schaltung wird durch einen Schaltplan beschrieben. Dieser Schaltplan wurde mithilfe eines Programms, dass Fritzing heißt, gemacht und spielt eine sehr wichtige Rolle bei der Organisation und Planung des Schatkreises. Der Schaltplan ist auf Abb.\ref{fig:Schaltplan} zu sehen.
-\begin{figure}[htp]
-	\includegraphics[scale=0.5]{\ordnerfigures Schaltplan.png}
+Die Hardware Komponenten werden in einer Steckplatine platziert. Dort werden die Verbindungen mit den anderen Komponenten sowie mit dem Raspberry Pi erstellt. Die elektrische Schaltung wird durch einen Schaltplan beschrieben. Dieser Schaltplan wurde mithilfe eines Programms, dass Fritzing heißt, gemacht und spielt eine sehr wichtige Rolle bei der Organisation und Planung des Schatzkreises. Der Schaltplan ist auf Abb.\ref{fig:Schaltplan} zu sehen.
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{\ordnerfigures Schaltplan.png}
 	\caption{Schaltplan des Systems}
 	\label{fig:Schaltplan}
 \end{figure}
+Wie der Schaltplan zeigt, besteht das System aus zwei LEDs, zwei Tastern, einem Widerstand, eine Steckplatine und aus einem Raspberry Pi. Sehr wichtig für den Aufbau der Schaltung sind die GPIO Pins. Diese Pins sind in dem Raspberry Pi platziert und können als Input, als Output oder Spannung Pins verwendet werden. 
+Der erste Taster dient für die Gesichtsregistrierung und besteht aus einem Pluspol, einem Datenleiter und aus dem Minuspol. Der Pluspol Anschluss wird mittels Steckplatine mit dem 5-Volt Pin des Raspberry Pi verbunden, während der Minuspol Anschluss verbindet sich mit dem Minuspol der Steckplatine. Der Datenanschluss ist mit dem GPIO18 Pin verbunden. Wie bei der Registrierung-Taster wird auch bei der Erkennungstaster\footnote{Auch als Login Taster genannt} der Minuspol Anschluss mit einem Pin des Minusbereichs der Steckplatine verbunden. Der Pluspol Anschluss gehört zu dem 5-Volt Pin des Raspberry, während der Datenanschluss mit dem GPIO17 Pin sich verbindet. Die rote LED wird verwendet wenn die Registrierung oder Erkennung der Benutzer im System nicht erfolgreich war. Die längere Beine oder die Anode wird mit dem GPIO23 Pin des Raspberry verbunden, während die Kathode wird in dem Minuspol Bereich der Steckplatine eingeschlossen. Die grüne LED ist eine RGB(Red Green Blue) LED. Diese LED kann die Farbe ändern. Wird im Fall einer erfolgreichen Registrierung oder Erkennung des Benutzers im System verwendet. Hat im Gegensatz zu der normalen LED 3 Anschlüsse. Der Minus Anschluss wird in dem Minuspol Bereich der Steckplatine eingeschlossen und der Pluspol Anschluss verbindet sich mit dem Pluspol Bereich der Steckplatine. Mit dem GPIO27 Pin des Raspberry wird der Datenanschluss verbunden. Die GPIO Pins sind extrem wichtig für die Integration der Tastern, LEDs und der anderen Bauteile in der technischen und logischen Teil bzw. in der Software und in der verwendete Skripte. 
 	\subsection{Software}
-		\subsubsection{Verwendete Methoden und Technologien}
-In diesem Teil des Projekts dass Gesichtserkennung heißt, werden für die Umsetzung verschiedene Technologien und Planungsmethoden verwendet.
+Nachdem der Aufbau und die verwendete Hardware des Systems beschrieben wurde, ist die Software dran. In diesem Unterkapitel wird alles was mit der logische Teil der Umsetzung hat: die verwendete Betriebssystemen, Programmiersprachen, Frameworks, Technologien und Planungsmethoden. Es wird jede Aufgabe zusammen mit der zugehörigen Lösung im Details beschrieben und jeder programmierter Skript erklärt.
+		\subsubsection{Verwendete Betriebssystemen, Programmiersprachen, Frameworks, Technologien und Planungsmethoden}
+In diesem Teil des Projekts dass Gesichtserkennung heißt, werden für die Umsetzung verschiedene Technologien,  Frameworks und Planungsmethoden verwendet.
 \begin{enumerate}
-	\item Structed Design
-	\item Linux
-	\item Debian
-	\item Fritzing
-	\item Python
-	\item Open CV
-	\item LAteX
-	\item Vim Editor
-	\item Git
-	\item MySQL
+	\item \textit{Betriebssystem und Programmiersprache} \\
+		\begin{itemize}
+			\item Linux(Debian) \\
+			Linux ist ein von die wichtigsten Betriebssystemen die zur Verfügung stehen. Linux wird meistens für Programmierungs- und Konfigurationszwecke. Dieses Betriebssystems wichtigste Bestandteile sind der Bootloader, der Kernel, und das Init System. Linux würde für die Umsetzung dieses Projekts gewählt, obwohl es auch andere Möglichkeiten wie zum Beispiel Microsoft Windows gab. Die Gründe dieser Wahl sind die folgende: 
+			 	\begin{itemize}
+			 		\item Open Source und Kostenlosigkeit \\
+			 			Linux wurde genutzt, weil es komplett kostenlos benutzt werden kann und weil es ein Open Source Betriebssystem ist.
+			 		\item Hohe Sicherheit \\
+			 			Für dieses Projekt ist Sicherheit sehr wichtig, und Linux bietet eine hohe Sicherheit an. Es gibt keine Viren und keine Abstürzte. Backup ist auch sehr leicht machbar.
+			 		\item Vielfältigkeit an Möglichkeiten und Benutzerfreiheit \\
+			 		Linux wurde auch aufgrund der Vielfältigkeit der Möglichkeiten dass angeboten wird und aufgrund der Freiheit, die die Benutzern haben, verwendet. Beliebige Systemkonfigurationen, verschiedene Gesichtserkennungspaketen(OpenCV\footnote{Open Computer Vision}) und andere Programmen oder Technologien(Fritzing) sind vom Linux besser und günstiger als bei anderen Betriebssystemen gefunden und installiert. Endlich ist der Raspberry auch mehr kompatibel mit Linux.
+			 		Als Linuxderivat wurde aufgrund der großen Menge angebotenen der Paketen, der hohen Geschwindigkeit und der schnellen Korrigieren des Fehlers Debian gewählt.\cite{Linux}
+			\begin{figure}[H]
+				\includegraphics[scale=0.5]{\ordnerfigures debian.jpg}
+				\centering
+				\caption{Debian}
+			\end{figure}\cite{DebianBild}	
+		 	\end{itemize}
+	 
+			\item Python \\
+			Die gewählt Programmiersprache ist Python. Der wichtigste Grund dieser Wahl ist hohe Leichtigkeit der Verwendung der OPEN-CV Pakete für die Gesichtserkennung Algorithmen. Im Vergleich zum C zum Beispiel werden die OpenCV Bibliotheken und Programmen viel praktischer und schneller gemacht. Python hat auch Vorteile im Bezug der Skripten Einbindung oder der Skripten Aufruf, als ein oder zwei Output Parametern genug sind um zwei Skripten miteinander zu verbinden. Version 3 wurde verwendet.
+			\begin{figure}[H]
+				\includegraphics[scale=0.5]{\ordnerfigures Python.jpg}
+				\centering
+				\caption{Python}
+			\end{figure}\cite{PythonBild}
+		\end{itemize}
+	\item \textit{Frameworks} \\
+	In diesem Projekt werden einige Frameworks verwendet, die nach unten beschrieben werden.
+		\begin{itemize}
+			\item Open CV \\
+			Die wichtigste Framework ist OpenCV. OpenCV ist eine Softwarebibliothek dass für Computer-Vision und maschinelles Lernen verwendet wurde. Die Bibliothek verfügt über mehr als 2500 optimierte Algorithmen, die sowohl klassische als auch moderne Computer Vision- und maschinelle Lernalgorithmen umfassen. Diese Algorithmen können verwendet werden, um Gesichter zu registrieren und erkennen, um Objekte zu identifizieren, menschliche Handlungen in Videos zu klassifizieren und Kamerabewegungen zu verfolgen. Dieser Framework wurde deswegen gewählt, weil die Vielfältigkeit der angebotenen Optionen und Paketen einfach größer als bei anderen Frameworks ist. Ein anderer Vorteil ist dass OpenCV Open-Source ist. Die größte Herausforderung ist die lange und komplizierte Installation auf Linux.\cite{OpenCV}
+			\begin{figure}[H]
+				\includegraphics[scale=0.5]{\ordnerfigures opencv.png}
+				\centering
+				\caption{Open CV}
+			\end{figure}\cite{OpenCVBild}
+			\item Git \\
+			Git ist ein Versionsverwaltungssystem, dass  für den Back-Up des Systems verwendet wurde. Dieser Framework ist ein verteiltes Versionsverwaltungssystem, das heißt, die unterschiedliche Versionen der Dateien werden funktional gespeichert, in dem die ganze Repository vom Server kopiert wird. Dieses erlaubt dem Benutzer lokal zu arbeiten, als alle Änderungen nachträglich im Server aktualisiert werden. Nicht nur das, sondern auch die hohe Geschwindigkeit der Fehlerfindung und die perfekte Unterstützung vom großen Projekte, in dem alle Teammitgliedern auf alle Daten Zugriff haben, waren die Gründe, warum Git für den Back-Up des Systems gewählt wurde.\cite{Git}
+			\begin{figure}[H]
+				\includegraphics[scale=0.5]{\ordnerfigures Git.png}
+				\centering
+				\caption{Git}
+			\end{figure}\cite{GitBild}
+		\end{itemize}
+	\item \textit{Technologien} \\
+	Das System braucht auch ein paar Technologien für die Umsetzung. Unter Technologien sind die Programme, die Systeme und die spezielle Komponenten, dass benutzt worden sind.
+		\begin{itemize}
+			\item Raspberry Pi \\
+			Wie es vorher erwähnt wurde in dem Gesichtserkennungteil des Projekts statt ein Computer ein Raspberry Pi verwendet. Was ein Raspberry Pi ist wurde in dem Kapitel Hardware erklärt. Die richtige Gründe der Wahl sind aber erst jetzt genant zu werden. Das kleinere Platzbedarf und die hohe Flexibilität dass der Raspberry anbietet sind wesentliche Vorteile. Die Bestandteile bewegen sich nicht, und es gibt gar keinen Lärm. Was sehr beliebt ist ist dass der Raspberry kann gleichzeitig für die Hardware(GPIO PINS) und die Software(wie ein normaler Computer) verwendet werden. Der unterstützt Raspberry Linux sehr gut. Ein der wichtigsten Gründe dieser Wahl ist auch dass  und dass im Fall eines Fehlers oder irgendwann wenn es notwendig ist, wird ein Raspberry sehr schnell und problemlos geändert oder repariert(einfach SD-Karte kopieren und dann ändern, alles wird gespeichert und die Informationen werden zuverlässig in einem anderen Raspberry transportiert).
+			\begin{figure}[H]
+				\includegraphics[scale=0.5]{\ordnerfigures RaspberryPi.jpg}
+				\centering
+				\caption{Raspberry Pi}
+			\end{figure}\cite{RaspberryBild}
+			\item Fritzing \\
+			Fritzing ist ein Programm das für die graphische Darstellung der Schaltkreis des Systems verwendet wurde. Durch dieses Programm wurde auch der Schaltplan des Systems erstellt(Abb.\ref{fig:Schaltplan}). Fritzing bietet eine sehr große Menge von elektronischen Komponenten und ein PCB, Steckplatine und Schematic View. In diesem Fall wurde die Breadboard View gewählt, weil dort alles übersichtlicher ist. Was noch gut ist, ist dass Fritzing kostenlos im Linux angeboten wird, was für Windows nicht der Fall ist.
+			\begin{figure}[H]
+				\includegraphics[scale=0.5]{\ordnerfigures Fritzing.png}
+				\centering
+				\caption{Fritzing}
+			\end{figure}\cite{FritzingBild}
+			\item MySQL und MariaDB \\
+			Um die Testdatenbanken zu erstellen damit die Benutzerfotos und Benutzerdaten gespeichert weden können, wurde die berühmteste Open-Source relationales Datenbank System, MySQL. Zusammen mit MySQL wurde auch die Pakete MariaDB auf dem System installiert, damit Python mit dem MySQL-Python Pakete besser umsetzen kann. Mithilfe der MariaDB werden die ganzen Tabellen mit ihren Daten gesehen.
+			\begin{figure}[H]
+				%\subfigure[Mysql]
+				\includegraphics[scale=0.5]{\ordnerfigures mysql.png}
+				\centering
+				%\subfigure[MariaDB]
+				%\includegraphics[width=\textwidth]{\ordnerfigures mariadb.png}
+			%\caption{Datenbankmanagementsysteme Paketten}	
+				\caption{Mysql}
+			\end{figure}\cite{MysqlBild}
+		\begin{figure}[H]
+			%\subfigure[Mysql]
+			%\includegraphics[width=\textwidth]{\ordnerfigures mysql.png}
+			%\subfigure[MariaDB]
+			\includegraphics[scale=0.5]{\ordnerfigures mariadb.png}
+			\centering
+			%\caption{Datenbankmanagementsysteme Paketten}	
+			\caption{Mariadb}
+
+		\end{figure}\cite{MariadbBild}
+		\end{itemize}
+	\item \textit{Planungsmethode} \\
+		\begin{itemize}
+			\item Structed Design
+			Structed Software Design ist die Methode, die um das System zu planen verwendet wurde. Diese Software-Architektur ermöglicht den Entwurf, das Implementierungskonzept und das Integrationskonzept des Systems zu planen. Obwohl Structed Design großer Aufwand benötigt, hat diese Methode viele Vorteile, die bei der Wahl der Planungsmethode eine große Rolle gespielt haben: Structed Design verwendet Logik, ist von allem verstehbar, beschreibt alles ohne Abgrenzungen und ganz detailliert. Die wichtigste Elemente die in der Structed Design beschrieben werden sind:
+			\begin{itemize}
+				\item Bubbeln \\
+				Die wichtigste Arbeitsbereiche des Systems(Gesichtsregistrierung, Gesichtserkennung, Bildverarbeitung)
+				\item Schnittstellen \\
+				Sind die Interfaces, die die Verbindung zwischen die Bestandteile machen /
+				\item Nachrichten \\
+				Sind die geschickte Signalen innerhalb des Systems.
+				\item Flüsse \\
+				Zeigt die Daten die innerhalb des Systems fließen.
+				\item Modulen \\
+				Bestandteil des Systems, dass innerhalb liegt.
+				\item Terminatoren \\
+				Ähnlich mit der Modulen, aber befinden sich außerhalb des Systems und bewirken es
+				\item definierte Abgrenzungen \\
+				Mithilfe der Abgrenzungen wird vom Systemhersteller genau definiert, was er nicht machen wird, sei es für Zeit-,Schwierigkeits-,- oder Komplexitätsverbundende Gründe. Diese Abgrenzungen dienen damit der Auftraggeber genau weißt was er erwarten muss, damit es keine Missverständnisse gibt.\cite{StructedDesign}
+			\end{itemize}
+		\end{itemize}
+	Mithilfe der Structed Design wurde die BigPicture des Systems und die Erste Ebene der Gesichtserkennung erstellt. 
 \end{enumerate}
-		\subsubsection{Lösungswegbeschreibung und Erklärung}
+		\subsubsection{Lösungsweg- Beschreibung und Erklärung}
+		Der Lösungsweg der Umsetzung der Aufgaben der Gesichtserkennung ist streng mit einer guten vorherigen Planung verbunden. Deshalb wurde nicht nur die Big Picture(Großes Sicht des Systems nach Außen), die in die vorherigen Kapiteln beschrieben wurde, sondern auch die Erste Ebene der Gesichtserkennungsbubbel.
 		Die Big Picture steht unter Abb.\ref{fig:Big Picture}
-		\begin{figure}[htp]
+		\begin{figure}[H]
 			\includegraphics[width=\textwidth]{\ordnerfigures Big_Picture.jpg}
 			\caption{Big Picture}
 			\label{fig:Big Picture}
-		\end{figure}
+		\end{figure}	
+	Die erste Ebene, die steht unter Abb.\ref{fig:Erste Ebene}. Sie ist ein mehr detailliertes Version der Big Picture, dass sich nur auf dem Erkennungsteil konzentriert. Man spricht von einer Iteration, dass hier passiert.  Folgend wird es die Vorgehensweiße und der Lösungsweg dieser Aufgabe mithilfe der Ersten Ebene erklärt und beschrieben.\\
 	
-	
-	Die erste Ebene steht unter Abb.\ref{fig:Erste Ebene}
-	\begin{figure}[htp]
+	\begin{figure}[H]
 		\includegraphics[width=\textwidth]{\ordnerfigures diplom_11Ebene.png}
 		\caption{Erste Ebene}
 		\label{fig:Erste Ebene}
 	\end{figure}
-\section{Herausforderungen, Problemen, und wie wurden sie gelöst}
+	\textbf{Einzelne Arbeitsschritte: } \\
+	\begin{enumerate}
+	\item \textit{Erkennungstaster wird eindr{\"u}ckt} \\
+	Will der Benutzer im System einloggen um reinzukommen, muss er zuerst den Erkennungstaster eindr{\"u}cken. Wird dieser Taster gedr{\"u}ct, dann kriegt der Benutzer eine Anmeldung, dass er seine Emailadresse eingeben muss. Um diese Aufgabe zu erledigen, muss die Pakete RPi.GPIO importiert werden. In dieser Weise ist der Zugriff auf den GPIO Pins erm{\"o}glicht, damit die Taster- Zustand, oder die LED Zustand erkannt werden. Die Pakette mysqldb wurde auch in der Zukunft ben{\"o}tigt, um Zugriff an die Datenbank zu haben.
+ 	\begin{lstlisting}
+ 		if GPIO.input(17):
+ 		exec(open('Existiert_nExistiert.py').read()) 
+ 	\end{lstlisting} 
+	\item \textit{Benutzer gibt seine Emailadresse ein} \\
+	Es ist wichtig zu erw{\"a}hnen, dass das Skripten Anruf innerhalb anderer Skripten extrem wichtig ist. Das wird durch Variablen gemacht. Deshalb ist das Importieren der Pakete sys n{\"o}tig.
+	Der Benutzer ergibt seine Emailadresse an, dass verwendet wird, um in der Datenbank schneller auf den Benutzerbilddaten zu suchen.
+	\item \textit{Bild wird gemacht und wird tempor{\"a}r gespeichert} \\
+	Gleich nachdem der Benutzer sein Email gegeben hat, wird die Kamera das Bild machen. Dieses Bild wird deswegen tempor{\"a}r gespeichert, weil nachdem der Vergleich von diesem Bild mit den anderen Bilderdaten, dass schon in der Datenbank liegen, ist die Verwendung dieses Bildes nicht sinnvoll. Sonst w{\"u}rde es extrem viele Bilderdaten in der Datenbank, dass nur einmal verwendbar sind. Stattdessen wird nur das Path des Bildes zusammen mit der extrahierten Punkten in der Datenbank gespeichert.
+	\item \textit{Die Existenz der selben Emailadresse des Benutzers in der Datenbank wird gepr{\"u}ft} \\
+	Dieser Schritt ist deswegen wichtig, weil falls das gegebene Email nicht in der Datenbank schon existierte, braucht das System gar nicht besorgen, um die Bildvergleichung zu machen. 
+	\item \textit{Wird die selbe Emailadresse in der Datenbank gefunden, werden die zugeh{\"o}rige Bildinformationen gekriegt} \\
+	Falls aber die vom Benutzer gegebene Emailadresse die gleiche mit einer Adresse in der Datenbank ist, weißt das System Bescheid, dass eine Bilderdatenvergleichung stattfinden muss. Um das zu erreichen, werden alle Bildinformationen gekriegt. Unter Bildinformationen sind die extrahierte Gesichtspunkte, die mindestens 16 sein werden, zu verstehen. Die kurze Codeabschnitt unten zeigt genau wie dieser Information Aufnahme erreicht wurde.
+	\begin{lstlisting}
+	if b=="existiert":
+	mycursor.execute(
+	"""select * from info i \
+	join person p \
+	on i.idP=p.idP \
+	where p.email='%s';"""%var1)
+	myresult=mycursor.fetchall()
+	for x in myresult:
+	print(x)
+	\end{lstlisting}
+	\item \textit{Die Bildinformationen der beiden Bildern werden vergleicht} \\
+	Die wichtigste Aufgabe ist die Vergleichung der Bildinformationen. Es werden die extrahierte Punkten der bereit gemachten Bildern mit der Punkten der schon in der Datenbank existierte Bildern vergleicht. Dazu wird die wichtigste Pakete, dass Open CV heißt, ben{\"o}tigt. Nachdem diese Pakete importiert wurde, kann die Vergleichung beginnen. Es wurde so gedacht, dass jeder Punkt von einem Bild mit dem zugeh{\"o}rigen Punkt des anderen Bildes vergleicht wurde. In dieser Wiese wird eine Toleranz kalkuliert. Danach wird der Skript dass die Bilder vergleicht angerufen, dass die Toleranz als Output gibt. Passt sie zu der kalkulierten Toleranz, stimmt die Vergleichung, die Bilder passen miteinander.
+	\item \textit{Passen die beiden Bildern zusammen, darf der Benutzer reinkommen} \\
+	Wenn die Vergleichsergebnisse positiv sind, wird die gr{\"u}ne LED leuchten und der Benutzer darf weitermachen. Sonst wird die rote LED eingeschaltet.\\
+	\end{enumerate}
+\section{Herausforderungen, Probleme, und wie wurden sie gelöst}
+W{\"a}hrend dieser Arbeit wurden einige Problemen und Herausforderungen eingetreten.
+	\begin{itemize}
+		\item \textit{OpenCV Installation}\\
+		Die gr{\"o}ßte Probleme hat die Installation der OpenCV gegeben. Sie dauerte sehr lang und es war sehr schwer zu bestimmen, genau was ausgelassen werden sollte und was nicht. Dieses Problem wurde nach vielen Proben gel{\"o}st, durch das Kopieren von einer anderen SD-Karte, dass OpenCV schon installiert hatte. CMake und Make waren sehr wichtige Paketen um diese Aufgabe zu erledigen.
+		\item \textit{Fritzing} \\
+		Das Problem beim Fritzing war folgendes, dass jedes Mal dass der Programm beendet wurde, konnte er nicht mehr ge{\"o}ffnet werden. Es fehlten die Paths oder die Bauteile, die f{\"u}r die Schaltung zu verwenden waren. Die L{\"o}sung war eigentlich sehr leicht. Der Programm wurde komplett gel{\"o}scht und dann wieder im System installiert, und danach wurde die ganze Schaltung gemacht, ohne den Programm zu beenden. Sonst wurden die selben Probleme wieder auftreten.
+		\item \textit{Kurzschluss beim Raspberry Pi}\\
+		Was noch passiert ist, ist dass beim Anfassen vom Raspberry ein Kurzschluss gab. Der Raspberry war kaputt und musste ersetzt werden.
+		\item \textit{Pakete FaceRecognition Installation} \\
+		Die Installation der Pakete FaceRecognition kann nicht erfolgreich gemacht werden, weil die dlib Pakete auch gebraucht wird. Wahrscheinlich aufgrund des nicht gen{\"u}genden RAMs kann diese Pakete nicht installiert werden. Dieses Problem wurde noch nicht gel{\"o}st.
+		\item \textit{Probleme bei dem Skripten Aufruf} \\
+		Am Beginn war das Umgehen mit der Skriptenaufrufe sehr schwer. Es war schwer zu verstehen wie das genau funktionierte, als der große Variablenanzahl die Arbeit kompliziert machte. Dieser Anzahl wurde reduziert und es wurden viele Recherche an der korrekten Verwendung von der sys Pakete gemacht um das Problem zu l{\"o}sen.
+	\end{itemize}
 \section{Projektmanagement und Controlling}
-		
-
+		Im Bezug auf Projektmanagement und Controlling wurde die Methode des Fehlerbaums verwendet. Diese ist eine ber{\"u}hmte Methode um die Aufwandsch{\"a}tzung zu kalkulieren und um eine Fehlerursache zu finden. Es wird der Problem in kleinen Teilen geschnitten damit es alles klarer wird. 
+		\begin{figure}		\includegraphics[width=\textwidth]{\ordnerfigures IMG_4535.jpg}
+		\caption{Fehlerbaum}
+		\end{figure}
+	Es wurde noch eine detaillierte Soll-Ist Analyse gemacht, die bei der neuen Aufgabeteilung sehr geholfen hat, und einen Balkendiagramm, dass f{\"u}r die Organisation und Festlegung der Arbeitstermine dient.
+\section{Ergebnisse}
+	Die bisherige Ergebnisse sind die folgende:\\
+	\begin{enumerate}
+		\item Systemaufbau \\
+		Das ganze System wurde aufgebaut zusammen mit der ganze Hardware.
+		\item Digitale Darstellung des Systemaufbaus\\
+		Der Schaltplan des Systems wurde durch Fritzing digital dargestellt.
+		\item Erkennung der Admin \\
+		Der Admin wurde sofort vom System erkannt, mithilfe einer Skript dass OpenCV verwendet um das Adminbild mit der anderen Bilder zu vergleichen.
+		\item Aufnahme der Benutzer Gesichtsdaten mithilfe der Emailadresse\\
+		Gibt der Benutzer seine Emailadresse ein, werden die zugehörige Gesichtsdaten von der Datenbank selektiert und gekriegt, um den Vergleich zu beginnen.
+	\end{enumerate}
 
 

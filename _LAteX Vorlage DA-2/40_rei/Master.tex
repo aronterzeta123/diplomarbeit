@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper,oneside]{book}
 
 \usepackage[pdftex]{graphicx}
+\usepackage{float}
 \usepackage{nomencl}
 \usepackage[defernumbers=true, backend=biber]{biblatex}
 \usepackage[hypcap]{caption} %for pdf export hyperlinks
@@ -14,12 +15,13 @@
 \usepackage{pdfpages}
 \usepackage{longtable}
 \usepackage{hyperref}
+\usepackage{listings}
 \usepackage{color}
 \usepackage{footnote}
 \usepackage{transparent} %Transparente Bilder im Hintergrund
 \usepackage{eso-pic} %Background Image
 \usepackage{lastpage} %Ermittlung der letzten Seite
- 
+%\usepackage{subfigure}
 %Fußnoten forltaufend nummerieren
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
@@ -46,6 +48,25 @@
 	\fancyfoot[R]{\thepage}    
 
 }
+%\definecolor{dkgreen}{rgb}{0,0.6,0}
+%\definecolor{grey}{rgb}{0.5,0.5,0.5}
+%\definecolor{mauve}{rgb}{0.58,0,0.82}
+%\lstset{
+%	frame=tb,
+%	language=Java,
+%	aboveskip=3mm,
+%	belowskip=3mm.
+%	showstringspaces=false,
+%	columns=flexible,
+%	basicstyle={\small\ttfamily},
+%	numbers=none,
+%	numberstyle=\tiny\color{gray},
+%	keywordstyle=\color{blue},
+%	commentstyle=\color{dkgreen},
+%	breklines=true,
+%	breakatwhitespace=true,
+%	tabsize=3
+%}
 \pagestyle{plan}
 
 \frontmatter
