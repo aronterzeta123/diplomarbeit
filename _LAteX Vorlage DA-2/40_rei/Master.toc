@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Gesichtserkennung}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Allgemeines}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Technische Lösung}{2}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.2.1}Hardware und Aufbau}{2}{subsection.1.2.1}% 
+\contentsline {subsubsection}{Bauteile und HW-Komponente}{3}{section*.3}% 
+\contentsline {subsubsection}{Schaltplan und Erklärung des Aufbaus}{4}{section*.4}% 
+\contentsline {subsection}{\numberline {1.2.2}Software}{5}{subsection.1.2.2}% 
+\contentsline {subsubsection}{Verwendete Betriebssystemen, Programmiersprachen, Frameworks, Technologien und Planungsmethoden}{5}{section*.6}% 
+\contentsline {subsubsection}{Lösungsweg- Beschreibung und Erklärung}{10}{section*.15}% 
+\contentsline {section}{\numberline {1.3}Herausforderungen, Probleme, und wie wurden sie gelöst}{14}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Projektmanagement und Controlling}{14}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}Ergebnisse}{16}{section.1.5}% 

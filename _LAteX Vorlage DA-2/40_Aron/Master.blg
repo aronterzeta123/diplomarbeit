@@ -1,0 +1,18 @@
+[1] Config.pm:302> INFO - This is Biber 2.11
+[2] Config.pm:305> INFO - Logfile is 'Master.blg'
+[83] biber-darwin:313> INFO - === Thu Dec 12, 2019, 10:15:21
+[125] Biber.pm:371> INFO - Reading 'Master.bcf'
+[282] Biber.pm:857> INFO - Found 7 citekeys in bib section 0
+[305] Biber.pm:3976> INFO - Processing section 0
+[320] Biber.pm:4136> INFO - Looking for bibtex format file './../literatur.bib' for section 0
+[322] bibtex.pm:1500> INFO - LaTeX decoding ...
+[337] bibtex.pm:1316> INFO - Found BibTeX data source './../literatur.bib'
+[352] Utils.pm:193> WARN - year field '12/7/2019' in entry 'python' is not an integer - this will probably not sort properly.
+[377] Utils.pm:193> WARN - Entry 'Risikoanalyse' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
+[400] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[400] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[400] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[400] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[419] bbl.pm:617> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[424] bbl.pm:720> INFO - Output to Master.bbl
+[424] Biber.pm:110> INFO - WARNINGS: 2
