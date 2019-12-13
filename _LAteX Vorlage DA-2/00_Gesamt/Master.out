@@ -6,7 +6,7 @@
 \BOOKMARK [2][-]{subsection.2.1.3}{Optionale Ziele}{section.2.1}% 6
 \BOOKMARK [1][-]{section.2.2}{Projektplanung}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.3}{Projektmanagmentmethode}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.3}{Gesichtsregistrierung}{}% 9
+\BOOKMARK [0][-]{chapter.3}{Gesichtsregistrierung - Aron}{}% 9
 \BOOKMARK [1][-]{section.3.1}{Umsetzung}{chapter.3}% 10
 \BOOKMARK [2][-]{subsection.3.1.1}{Allgemein}{section.3.1}% 11
 \BOOKMARK [2][-]{subsection.3.1.2}{Technische L\366sung}{section.3.1}% 12
@@ -14,8 +14,38 @@
 \BOOKMARK [2][-]{subsection.3.1.4}{Qualit\344tssicherung und Controlling}{section.3.1}% 14
 \BOOKMARK [1][-]{section.3.2}{Ergebnisse}{chapter.3}% 15
 \BOOKMARK [2][-]{subsection.3.2.1}{Implementierung}{section.3.2}% 16
-\BOOKMARK [0][-]{chapter.4}{Vulcano}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Etymology}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Worship}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.3}{Vulcanalia}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.4}{Theology}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.4}{Umsetzung - Jordi}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Allgemeine Beschreibung}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Technische L\366sungen}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.2.1}{Datenkbank}{section.4.2}% 20
+\BOOKMARK [1][-]{section.4.3}{Herausforderungen}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.3.1}{Datenkbank - MariaDB}{section.4.3}% 22
+\BOOKMARK [2][-]{subsection.4.3.2}{Python Scripting}{section.4.3}% 23
+\BOOKMARK [2][-]{subsection.4.3.3}{OpenCV}{section.4.3}% 24
+\BOOKMARK [1][-]{section.4.4}{Qualit\344tssicherung}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Ergebnisse - Jordi}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Datenbank}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Tieferkennung}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{Bildverarbeitung - Egli}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Allgemeines}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.1.1}{Entwicklungsumgebung und Technologien}{section.6.1}% 31
+\BOOKMARK [2][-]{subsection.6.1.2}{Frameworks und Bibliotheken}{section.6.1}% 32
+\BOOKMARK [1][-]{section.6.2}{Technische L\366sungen}{chapter.6}% 33
+\BOOKMARK [2][-]{subsection.6.2.1}{L\366sungsweg - Structed Software design}{section.6.2}% 34
+\BOOKMARK [2][-]{subsection.6.2.2}{Face Detection}{section.6.2}% 35
+\BOOKMARK [2][-]{subsection.6.2.3}{Face Detect and crop}{section.6.2}% 36
+\BOOKMARK [2][-]{subsection.6.2.4}{Facial Landmarks Extraction}{section.6.2}% 37
+\BOOKMARK [1][-]{section.6.3}{Herausforderungen, Probleme, und wie wurden sie gel\366st}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.4}{Qualit\344tssicherung, Controlling}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.5}{Ergebnise}{chapter.6}% 40
+\BOOKMARK [0][-]{chapter.7}{Gesichtserkennung - Rei}{}% 41
+\BOOKMARK [1][-]{section.7.1}{Allgemeines}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.2}{Technische L\366sung}{chapter.7}% 43
+\BOOKMARK [2][-]{subsection.7.2.1}{Hardware und Aufbau}{section.7.2}% 44
+\BOOKMARK [2][-]{subsection.7.2.2}{Software}{section.7.2}% 45
+\BOOKMARK [1][-]{section.7.3}{Herausforderungen, Probleme, und wie wurden sie gel\366st}{chapter.7}% 46
+\BOOKMARK [1][-]{section.7.4}{Projektmanagement und Controlling}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.5}{Ergebnisse}{chapter.7}% 48
+\BOOKMARK [0][-]{chapter.8}{Planung vs Realisierung}{}% 49
+\BOOKMARK [0][-]{chapter.9}{Evaluierung und Res\374mee}{}% 50
+\BOOKMARK [1][-]{section.9.1}{Wertsch\366pfung und Lessons Learned}{chapter.9}% 51

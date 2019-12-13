@@ -42,8 +42,9 @@ Es ist Cross-Platform, in C/C++ geschrieben und unterstützt auch Python. \\
 \begin{figure}[H]
 	\includegraphics[width=50mm,scale=0.5]{\ordnerfigures opencv.png}
 	\caption{OpenCV logo}
-	\label{fig:OpenCV logo}
-\end{figure}\cite{OpencvLogo}
+	\label{fig:OpenCV logo} 
+	\cite{OpencvLogo}
+\end{figure}
 
 
 SciPy hat sich deswegen von Nutzen erweist, um gewisse mathematische Angaben zu lösen und bei zusätzliche Installationen von Bibliotheken zu helfen.\\ 
@@ -58,7 +59,8 @@ NumPy kann also als leistungsfähiger mehrdimensionaler Behälter für generisch
 	\includegraphics[width=50mm,scale=0.5]{\ordnerfigures numpy.png}
 	\caption{Numpy logo}
 	\label{fig:Numpy logo}
-\end{figure}\cite{Numpy}
+	\cite{Numpy}
+\end{figure}
 
 Dlib ist ein so genanntes Toolkit, die Algorithmen für Machine Learning und Tools zum Erstellen komplexer Software zur Lösung von der realen Welt getauchte Probleme, beinhaltet.\\
 Es wird überall eingesetzt, in Robotik, Mobilgeräte und unter anderem in Computer Vision auch.\cite{dlib} \\
@@ -67,8 +69,9 @@ Es wurde prinzipiell um bei der Extrahierung der so genannten „Facial Landmark
 \begin{figure}[H]
 	\includegraphics[width=50mm,scale=0.5]{\ordnerfigures dlib.png}
 	\caption{dlib logo}
+	\cite{dlib}
 	\label{fig:dlib logo}
-\end{figure}\cite{dlib}
+\end{figure}
 
 
 \section{Technische Lösungen}
@@ -131,14 +134,16 @@ Diese Summen berechnet man durch integrale Bilder, die zur Vereinfachung von den
 	\includegraphics[scale=0.8]{\ordnerfigures haar_features.jpg}
 	\caption{Haar Features}
 	\label{fig:haar features}
-\end{figure}\cite{Viola01robustreal-time}
+	\cite{Viola01robustreal-time}
+\end{figure}
 
 Man muss aufpassen, da nicht alle Merkmale vom Nutzen sein können. Man kann es zum Beispiel deutlich auf Abbildung 3 sehen, wie die Nase viel heller als die Region von der Augen ist. Die Selektierung von den besten Merkmalen wird durch das Adaboost Algorithmus berechnet. \\\\
 \begin{figure}[H]
 	\includegraphics[scale=0.8]{\ordnerfigures haar.png}
 	\caption{Haar Einsetzung}
 	\label{fig:haar}
-\end{figure}\cite{Viola01robustreal-time}
+	\cite{Viola01robustreal-time}
+\end{figure}
 
 Mit dieser Absicht setzen wir alle Funktionen auf alle Trainingsbilder ein. Für jedes Merkmal wird der beste Schwellenwert ermittelt, der die Gesichter in positive und negative klassifiziert.\\\\
 
@@ -233,7 +238,8 @@ Die Indizes der 68 Koordinaten sind in der Abb.\ref{fig:landmarks} dargestellt:\
 	\includegraphics[scale=0.8]{\ordnerfigures landmarks.png}
 	\caption{Facial Landmarks}
 	\label{fig:landmarks}
-\end{figure}\cite{Kazemi2014OneMF}
+	\cite{Kazemi2014OneMF}
+\end{figure}
 
 Nachdem wir der „Predictor“ geladen haben speichern wir es in einem Formobjekt die die 68(x,y) Koordinaten enthält. \\
 Es wird hier die resize Funktion nicht verwendet, weil es an Qualität verliert und es rechenintensiver ist, je größer das Eingabebild wird. \\
