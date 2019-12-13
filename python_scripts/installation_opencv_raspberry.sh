@@ -1,4 +1,24 @@
 #/bin/bash
+mkdir opencv 
+cd opencv
+sudo mkdir /var/rep
+sudo mount 10.2.7.10:/var/local/rep /var/rep
+sudo apt-key add /var/rep/PublicKey
+sudo apt-get update
+sudo apt-get install git
+git clone copy@10.2.7.10:/var/local/git/opencv
+git clone copy@10.2.7.10:/var/local/git/opencv_contrib
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+cd opencv
+git checkout $cvVersion
+cd opencv_contrib
+git checkout $cvVersion
+cd opencv
+rm CMakeLists.txt
+cd ..
+sudo apt-get install streamer && sudo apt-get install imagemagick
+mkdir build
 sudo apt-get -y install python-dev
 sudo apt-get -y install libavresample-dev
 sudo apt-get -y install libgstreamer1.0-dev
