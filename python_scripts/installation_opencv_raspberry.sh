@@ -1,4 +1,5 @@
 #/bin/bash
+cd ~
 mkdir opencv 
 cd opencv
 sudo mkdir /var/rep
@@ -15,7 +16,6 @@ git checkout $cvVersion
 cd opencv_contrib
 git checkout $cvVersion
 cd opencv
-rm CMakeLists.txt
 cd ..
 sudo apt-get install streamer && sudo apt-get install imagemagick
 mkdir build
@@ -38,6 +38,6 @@ sudo apt-get -y install python3-tk
 sudo apt-get -y install python3-dev
 sudo apt-get -y install python3-numpy
 cd /home/pi/opencv/build
-cmake -D CMAKE_BUILD_TYPE=Release -D BUILD_EXAMPLES=OFF -D BUILD_DOCS=OFF -D BUILD_PERF_TESTS=OFF -D BUILD_TESTS=OFF -D WITH_QT=OFF -D WITH_GTK=ON -D OPENCV_GENERATE_PKCONFIG=ON -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ./
+cmake -D CMAKE_BUILD_TYPE=Release -D BUILD_EXAMPLES=OFF -D BUILD_DOCS=OFF -D BUILD_PERF_TESTS=OFF -D BUILD_TESTS=OFF -D WITH_QT=OFF -D WITH_GTK=ON -D OPENCV_GENERATE_PKCONFIG=ON -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ../
 make -j4
 sudo make install

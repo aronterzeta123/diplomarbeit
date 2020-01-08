@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 import cv2
 import numpy as np
-import dlib 
+import dlib
 from array import *
+arrayvlera=[[],[]]
 #read image from user input
-filename = input("insert image file\n") 
 
 #load cascade classifier for frontal face detecting
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-image = cv2.imread(filename)
+image = cv2.imread('%s'%(d))
 
 if(image is None): 
     print("Can't open image file")
@@ -51,16 +51,19 @@ if nrFace > 0:
         
         koords = np.empty(shape=[68,2])
         landmarks = predictor(gray,face) 
-        coords = np.zeros((68,2),dtype="float")
+        arrayvlera = np.zeros((68,2),dtype="float")
         for d in range(0,68): 
 
             x = float(landmarks.part(d).x / width)  
             y = float(landmarks.part(d).y / height) 
-            arr = np.empty(shape=[0,2])
-            for i in range(68):
-                for j in range(2):
-                    arr = np.append(arr,[[x,y]],axis=0)
-            print(arr)
+            for vleratx in range(68):
+                for vleraty in range(69):
+                    arrayvlera.insert(x [y])
+            #arr = np.empty(shape=[0,2])
+            #for i in range(68):
+                #for j in range(2):
+                    #arr = np.append(arr,[[x,y]],axis=0)
+            #print(arr)
                         
          #   coords[d] = (x,y) 
             

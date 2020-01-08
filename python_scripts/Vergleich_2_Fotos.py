@@ -7,9 +7,9 @@ class CompareImage(object):
 #image_1_path=cv2.imread('harden.jpeg',0)
 #image_2_path=cv2.imread('harden1.jpeg',0)
     def __init__(self,image_1_path, image_2_path):
-        self.minimum_commutative_image_diff = 0.25
+        self.minimum_commutative_image_diff = 0.80
         self.image_1_path = '%s'%(zh)
-        self.image_2_path = 'aroncropped3.jpg'
+        self.image_2_path = 'richtigenew.jpg'
         #self.image_2_path = '%s'%(image2)
     def compare_image(self):
         image_1 = cv2.imread(self.image_1_path, 0)
@@ -34,7 +34,7 @@ class CompareImage(object):
         commutative_image_diff = (img_hist_diff / 10) + img_template_diff
         return commutative_image_diff
 
-compare_image = CompareImage('%s'%(zh),'aroncropped3.jpg')
+compare_image = CompareImage('%s'%(zh),'richtigenew.jpg')
 
 #compare_image = CompareImage('harden.jpeg','harden.jpeg')
 image_difference = compare_image.compare_image()

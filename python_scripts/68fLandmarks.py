@@ -37,7 +37,7 @@ nrFace = len(faces)
 print("Detected faces: %d" % nrFace)
 
 i = 0
-
+coords[][]=""
 #get image dimensions
 height, width = image.shape[:2]
 

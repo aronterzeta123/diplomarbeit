@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import cv2
 import numpy as np
-#import dlib 
-
+import dlib 
+gesicht=""
 #filename = input("insert image file\n") 
 filename=(image2+".jpg")
 
@@ -50,11 +50,12 @@ if nrFace > 0:
             faceimg = image[ny:ny+nr, nx:nx+nr] 
             #filenam = input("Give new filename for cropped photo: \n")
             filenam=(image2+"new"+".jpg")
-            image2 = cv2.imwrite(filenam,faceimg)
-            imag = cv2.imread(image2) 
-            gray2 = cv2.cvtColor(imag, cv2.COLOR_BGR2GRAY)
+            image3 = cv2.imwrite(filenam,faceimg)
+            #imag = cv2.imread(image3) 
+            #gray2 = cv2.cvtColor(imag, cv2.COLOR_BGR2GRAY)
 
 elif nrFace <= 0:
+    gesicht="no"
     print("no faces found") 
-if cv2.waitKey(0):
-    cv2.destroyAllWindows()
+#if cv2.waitKey(0):
+    #cv2.destroyAllWindows()

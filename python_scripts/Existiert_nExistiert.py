@@ -9,11 +9,7 @@ d=sys.argv[1]
 print(b)
 bool=False
 myresult=""
-def vergleichMathematisch:
-    (x1-x2)2
 try:
-
-    #exec(open('fL_extract.py').read())
     mycursor.execute("select * from person p join info i on p.idP = i.idP where p.email='%s'"%(var1))
     global myresult
     myresult=mycursor.fetchall()
@@ -27,11 +23,11 @@ except:
 if bool:
     b="existiert"
     for res in myresult:
-        exec(open('68fLandmarks.py').read())
+        exec(open('68fLandmarks2.py').read())
         for x in range(17):
             for y in range(17):
                 i=3
-                if(cords[x][y]==res[i]):
+                if(arrayvlera[[x][y]]==res[i]):
                     print("Kot")
                     i+=1
                 y+=1
