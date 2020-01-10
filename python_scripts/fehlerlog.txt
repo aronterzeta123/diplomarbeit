@@ -5,3 +5,4 @@ ERROR:MY_LOGGER:This error occurred: This is test message
 ERROR:MY_LOGGER:This error occurred: This is test message
 ERROR:MY_LOGGER:This error occurred: This is test message
 ERROR:MY_LOGGER:This error occurred: This is test message
+ERROR:Gesichtserkennung:This error occurred: This is test message
