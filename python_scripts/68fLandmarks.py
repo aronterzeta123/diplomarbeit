@@ -37,7 +37,10 @@ nrFace = len(faces)
 print("Detected faces: %d" % nrFace)
 
 i = 0
-coords[][]=""
+coords=[]
+z=[]
+vleratx=[]
+vleraty=[]
 #get image dimensions
 height, width = image.shape[:2]
 
@@ -65,42 +68,11 @@ if nrFace > 0:
             i+1
             coords[d] = (x,y) 
             #for index in range(len(coords[d]):
-        print(d,":",coords, sep = "\n")
-            
+        #print(d,coords)
             #print(d,": ",x,y,"\n")
-       
-        
-        #left eye 
-        coords2 = np.zeros((68,2),dtype="float")
-        for e in range(42,47):
-            x = float(landmarks.part(e).x / width)
-            y = float(landmarks.part(e).y / height)
-            coords2[e] = (x,y)
-           # for index in range(len(coords2[e]):
-            #    print(e,":",coords2, sep = "\n")
-        
-
-        #nose 
-        coords3= np.zeros((68,2),dtype="float")
-        for f in range(27,35):
-           
-            x = float(landmarks.part(f).x / width)
-            y = float(landmarks.part(f).y / height)
-            coords3[f] = (x,y)
-            #for index in range(len(coords3[f]):
-              #  print(f,":",coords3, sep = "\n")
-        
-
-        #mouth
-        coords4 = np.zeros((68,2),dtype="float")
-        for g in range(48,59):
-            
-            x = float(landmarks.part(g).x / width)
-            y = float(landmarks.part(g).y / height)
-            coords4[f] = (x,y)
-            #for index in range(len(coords4[f]):
-            #    print(g,":",coords4, sep = "\n")                
-
+        z=np.hsplit(coords,2)
+        z[1]=vleraty
+        z[0]=vleratx
 elif nrFace <= 0:
     print("no faces found") 
 if cv2.waitKey(0):
