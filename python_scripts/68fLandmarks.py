@@ -5,11 +5,10 @@ import numpy as np
 import dlib 
 
 #read image from user input
-filename = input("insert image file\n") 
 
 #load cascade classifier for frontal face detecting
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-image = cv2.imread(filename)
+image = cv2.imread('%s',filename)
 
 if(image is None): 
     print("Can't open image file")

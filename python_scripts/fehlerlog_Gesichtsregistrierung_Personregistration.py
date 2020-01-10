@@ -43,9 +43,9 @@ if(log_to_db):
 
 logging.basicConfig(filename=log_file_path)
 if(log_to_db):
-    logging.getLogger('Aron').addHandler(logdb)
+    logging.getLogger('Aron Terzeta').addHandler(logdb)
 log=logging.getLogger('Gesichtsregistrierung')
 log.setLevel(log_error_level)
-test_var='Der Schalter fuer Gesichtsregistrierung ist gedrueckt.'
+test_var='Eine Person ist in der Datenbank registriert'
 log.error('Die Nachricht ist: %s' % test_var)
 

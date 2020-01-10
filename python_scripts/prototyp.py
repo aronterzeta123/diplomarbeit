@@ -19,9 +19,11 @@ correctpaswadmin="@r0nt3rz()"
 #foto2=sys.argv[1]
 while True:
     if GPIO.input(18):
+        os.system('./fehlerlog_Gesichtsregistrierung.py')
         print("Password for admin please :")
         inputpasw=input()
         if(inputpasw == correctpaswadmin):
+            os.system('./fehlerlog_Gesichtsregistrierung_admin.py')
         #os.system('./Test '+(image2)+".jpg")
         #exec(open('./Vergleich_2_Fotos.py').read())
         #if(c=="matched"):

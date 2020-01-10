@@ -9,6 +9,7 @@ def insertPath(mycursor):
     for x in myresult:
         var1=x[0]
     mycursor.execute("insert into info(imagePath,idP) values('%s',%s);"%('./'+variable3+'.jpg',var1))
+    os.system('./fehlerlog_Gesichstregistrierung_Personregistration.py')
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
 try:

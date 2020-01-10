@@ -46,6 +46,6 @@ if(log_to_db):
     logging.getLogger('Aron').addHandler(logdb)
 log=logging.getLogger('Gesichtsregistrierung')
 log.setLevel(log_error_level)
-test_var='Der Schalter fuer Gesichtsregistrierung ist gedrueckt.'
+test_var='Admin ist eingeloggt'
 log.error('Die Nachricht ist: %s' % test_var)
 

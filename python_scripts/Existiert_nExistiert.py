@@ -5,7 +5,7 @@ conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
 var1=input("Bitte email eingeben")
 b=""
-d=sys.argv[1]
+filename=sys.argv[1]
 print(b)
 bool=False
 myresult=""
