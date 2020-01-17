@@ -5,7 +5,7 @@ conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
 var1=input("Bitte email eingeben")
 b=""
-filename=sys.argv[1]
+d=sys.argv[1]
 print(b)
 bool=False
 myresult=""
@@ -21,6 +21,7 @@ try:
 except:
     print ("Select Statement nicht gut")
 if bool:
+    os.system('./Log_Erkennung_PersonExistiert.py')
     b="existiert"
     for res in myresult:
         exec(open('68fLandmarks2.py').read())
@@ -43,5 +44,7 @@ if bool:
         #       match='false'
         #   break
 else:
+    os.system('./Log_Erkennung_PersonExistiertNicht.py')
     b="nicht existiert"
+
         

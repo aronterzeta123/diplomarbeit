@@ -49,6 +49,7 @@ while True:
         time.sleep(0.5)
         #exit()
     if GPIO.input(17):
+        os.system('./Log_Erkennung_TasterGed.py')
         exec(open('Existiert_nExistiert.py').read())
         if b=="existiert":
             GPIO.output(27,GPIO.HIGH)
