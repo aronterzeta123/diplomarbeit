@@ -5,18 +5,19 @@ import numpy as np
 import dlib 
 
 #read image from user input
+filename = input("insert image file\n") 
 
 #load cascade classifier for frontal face detecting
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-#image = cv2.imread('%s',filename)
-image=cv2.imread('richtigenew.jpg')
+image = cv2.imread(filename)
+
 if(image is None): 
     print("Can't open image file")
-
+    
 #get image dimensions
-dimX = int(image.shape[0])
-dimY = int(image.shape[1]) 
-print("dimensionet e fotos",dimX,dimY) 
+    dimX = int(image.shape[0])
+    dimY = int(image.shape[1]) 
+    print("dimensionet e fotos",dimX,dimY) 
 
 #convert image into grayscale
 gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
@@ -36,10 +37,7 @@ nrFace = len(faces)
 print("Detected faces: %d" % nrFace)
 
 i = 0
-coords=[]
-z=[]
-vleratx=np.zeros((68,1),dtype="float")
-vleraty=np.zeros((68,1),dtype="float")
+
 #get image dimensions
 height, width = image.shape[:2]
 
@@ -67,12 +65,13 @@ if nrFace > 0:
             i+1
             coords[d] = (x,y) 
             #for index in range(len(coords[d]):
-        #print(d,coords)
+        print(d,":",coords, sep = "\n")
+            
             #print(d,": ",x,y,"\n")
-        z=np.hsplit(coords,2)
-        vleraty=z[1]
-        vleratx=z[0]
-        
+       
+               
+
+
 elif nrFace <= 0:
     print("no faces found") 
 if cv2.waitKey(0):
