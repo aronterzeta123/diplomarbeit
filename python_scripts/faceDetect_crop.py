@@ -3,18 +3,13 @@ import cv2
 import numpy as np
 import dlib 
 gesicht=""
-#filename = input("insert image file\n") 
-filename=(image2+".jpg")
-
+#filename=(image2+".jpg")
+filename=('drejt.jpg')
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 image = cv2.imread(filename)
-#if(image is None) 
- #   print("Can't open image file")
-  #  return 0
 
 
-#dimensionet e fotos
 dimX = int(image.shape[0])
 dimY = int(image.shape[1]) 
 print("dimensionet e fotos",dimX,dimY) 
@@ -48,11 +43,8 @@ if nrFace > 0:
             ny = int(centery - r) 
             nr = int(r * 2) 
             faceimg = image[ny:ny+nr, nx:nx+nr] 
-            #filenam = input("Give new filename for cropped photo: \n")
-            filenam=(image2+"new"+".jpg")
+            filenam=(filename+"new"+".jpg")
             image3 = cv2.imwrite(filenam,faceimg)
-            #imag = cv2.imread(image3) 
-            #gray2 = cv2.cvtColor(imag, cv2.COLOR_BGR2GRAY)
 
 elif nrFace <= 0:
     gesicht="no"
