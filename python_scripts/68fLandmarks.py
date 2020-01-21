@@ -8,8 +8,8 @@ import dlib
 
 #load cascade classifier for frontal face detecting
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-image = cv2.imread('%s',filename)
-
+#image = cv2.imread('%s',filename)
+image=cv2.imread('drejt.jpg')
 if(image is None): 
     print("Can't open image file")
 
@@ -38,8 +38,8 @@ print("Detected faces: %d" % nrFace)
 i = 0
 coords=[]
 z=[]
-vleratx=[]
-vleraty=[]
+vleratx=np.zeros((68,1),dtype="float")
+vleraty=np.zeros((68,1),dtype="float")
 #get image dimensions
 height, width = image.shape[:2]
 
@@ -70,8 +70,9 @@ if nrFace > 0:
         #print(d,coords)
             #print(d,": ",x,y,"\n")
         z=np.hsplit(coords,2)
-        z[1]=vleraty
-        z[0]=vleratx
+        vleraty=z[1]
+        vleratx=z[0]
+        
 elif nrFace <= 0:
     print("no faces found") 
 if cv2.waitKey(0):
