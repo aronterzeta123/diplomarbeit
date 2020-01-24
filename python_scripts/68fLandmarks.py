@@ -4,12 +4,10 @@ import cv2
 import numpy as np
 import dlib 
 
-#read image from user input
 
-#load cascade classifier for frontal face detecting
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #image = cv2.imread('%s',filename)
-image=cv2.imread('richtigenew.jpg')
+image = cv2.imread('drejt.jpg')
 if(image is None): 
     print("Can't open image file")
 
@@ -43,7 +41,6 @@ vleraty=np.zeros((68,1),dtype="float")
 #get image dimensions
 height, width = image.shape[:2]
 
-
 if nrFace > 0:
 
     for face in faces:
@@ -75,5 +72,3 @@ if nrFace > 0:
         
 elif nrFace <= 0:
     print("no faces found") 
-if cv2.waitKey(0):
-    cv2.destroyAllWindows()

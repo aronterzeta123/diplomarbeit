@@ -32,9 +32,9 @@ while True:
             #from Person_Registrierung import (variable3)
             #from Existiert_nExistiert import (var1)
             exec(open('Person_Registrierung.py').read())
-            print(variable3)
             if (a=="inserted values"):
                 os.system('./Test '+(variable3)+".jpg")
+                os.system('./selectID_UpdateBild.py '+variable3)
                 GPIO.output(23,GPIO.HIGH)
                 time.sleep(1.5)
                 GPIO.output(23,GPIO.LOW)

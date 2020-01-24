@@ -6,3 +6,8 @@ ERROR:MY_LOGGER:This error occurred: This is test message
 ERROR:MY_LOGGER:This error occurred: This is test message
 ERROR:MY_LOGGER:This error occurred: This is test message
 ERROR:Gesichtserkennung:This error occurred: This is test message
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert

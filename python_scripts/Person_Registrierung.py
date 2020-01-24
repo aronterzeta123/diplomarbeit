@@ -54,7 +54,6 @@ try:
     print("Role eingeben bitte:")
     variable4=int(input())
     insert_values1(curs,variable1,variable2,variable3,variable4)
-    #thrras funktionin e eglit edhe manejna i ndaj tdhanat me split edhe i thrras si parametra te funktioni inser_values2
     conn.commit()
     os.system('./fehlerlog_Gesichtsregistrierung_Personregistration.py')
     a="inserted values"

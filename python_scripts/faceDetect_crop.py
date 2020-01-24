@@ -3,8 +3,7 @@ import cv2
 import numpy as np
 import dlib 
 gesicht=""
-#filename=(image2+".jpg")
-filename=('drejt.jpg')
+filename=(image2+".jpg")
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 image = cv2.imread(filename)
