@@ -1,6 +1,7 @@
 #!/usr/bin/python3.5
 import MySQLdb
 import sys
+import os
 import math
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
@@ -22,16 +23,17 @@ try:
             bool=False
 except:
     print ("Select Statement nicht gut")
+exec(open('68fLandmarks.py').read())
 if bool:
     os.system('./Log_Erkennung_PersonExistiert.py')
     b="existiert"
     for res in myresult:
-            vx=4
-            vy=5
-        exec(open('68fLandmarks.py').read())
-        for i in range(0,16):
-            if vleratx[i]=myresult[vx] and vleraty[i]=myresult[vy]
-            if     
+        vx=4
+        vy=5
+        for i in range(0,67):
+            print ( math.sqrt(  ( (vleratx[i]-myresult[vx]) * (vleratx[i]-myresult[vx]) ) + ( (vleraty[i]-myresult[vy]) * (vleraty[i]-myresult[vy]) ) ) )
+            #if vleratx[i]=myresult[vx] and vleraty[i]=myresult[vy]
+            #if     
             vx+=2
             vy+=2
         #for x in range(17):
