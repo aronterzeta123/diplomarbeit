@@ -22,7 +22,6 @@ try:
         valueX = "'v"+str(x)+"X'"
         valueY = "'v"+str(x)+"Y'"    
     
-        curs.execute("SET @s1=CONCAT('ALTER table info add column `',%s,'` double');" % ("'bo'"))
         curs.execute("SET @s1=CONCAT('ALTER table info add column `',%s,'` double');" % (valueX))
         curs.execute("Prepare stmt1 from @s1;")
         curs.execute("execute stmt1;")

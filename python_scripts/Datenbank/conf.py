@@ -8,16 +8,16 @@ def drop_tables(curs):
 def create_tables(curs):
     curs.execute("""CREATE TABLE person(
                                         idP int auto_increment,
-                                        vorname varchar(50),
-                                        nachname varchar(50),
-                                        email varchar(50),
-                                        role int,
+                                        vorname varchar(50) not null,
+                                        nachname varchar(50) not null,
+                                        email varchar(50) not null,
+                                        role int not null,
                                         PRIMARY KEY (idP)
                                         )""")
     curs.execute("""CREATE TABLE info(
-                                        idF int auto_increment,
-                                        imagePath varchar(50),
-                                        idP int,
+                                        idF int auto_increment not null,
+                                        imagePath varchar(50) not null,
+                                        idP int not null,
                                         PRIMARY KEY (idF),
                                         FOREIGN KEY (idP) REFERENCES person (idP)
                                         )""")
