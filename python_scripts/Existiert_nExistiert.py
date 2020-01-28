@@ -2,6 +2,7 @@
 import MySQLdb
 import sys
 import math
+import os
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
 var1=input("Bitte email eingeben")
@@ -25,16 +26,7 @@ except:
 if bool:
     os.system('./Log_Erkennung_PersonExistiert.py')
     b="existiert"
-    for res in myresult:
-            vx=4
-            vy=5
-        exec(open('68fLandmarks.py').read())
-        for i in range(0,16):
-            if vleratx[i]=myresult[vx] and vleraty[i]=myresult[vy]
-            if     
-            vx+=2
-            vy+=2
-        #for x in range(17):
+    print(b)
          #   for y in range(17):
           #      i=3
            #     if(arrayvlera[[x][y]]==res[i]):

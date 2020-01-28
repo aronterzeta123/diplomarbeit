@@ -9,7 +9,7 @@ import dlib
 #load cascade classifier for frontal face detecting
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #image = cv2.imread('%s',filename)
-image=cv2.imread('drejt.jpgnew.jpg')
+image=cv2.imread('Newrei2.jpg')
 if(image is None): 
     print("Can't open image file")
 

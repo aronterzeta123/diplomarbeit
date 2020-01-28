@@ -3,11 +3,9 @@
 import cv2
 import numpy as np
 import dlib 
-
-
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #image = cv2.imread('%s',filename)
-image = cv2.imread('drejt.jpg')
+image = cv2.imread('Newrei1.jpg')
 if(image is None): 
     print("Can't open image file")
 

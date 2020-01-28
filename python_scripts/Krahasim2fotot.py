@@ -8,12 +8,11 @@ mycursor=conn.cursor()
 var1=input("Bitte email eingeben")
 b=""
 d=sys.argv[1]
-#varkot=1
-#shumzimi=1
 print(b)
 bool=False
 bool=False
 myresult=""
+maxwert=0
 geometrischesarray=np.zeros((68,1),dtype="float")
 try:
     mycursor.execute("select * from person p join info i on p.idP = i.idP where p.email='%s'"%(var1))
@@ -36,28 +35,32 @@ if bool:
     exec(open('68fLandmarks1.py').read())
     geometrischesarray=1
     print("Distanca e vjeter:")
+    min = 10
+    max = 0
     for i in range(0,67):
-        a=math.sqrt(  ( (vleratx[i]-vleratx1[i]) * (vleratx[i]-vleratx1[i]) ) + ( (vleraty[i]-vleraty1[i]) * (vleraty[i]-vleraty1[i]) ) )
-        #varkot=i-1
-        #print((geometrischesarray[varkot]*geometrischesarray[i])**(1/67))
-        #shumzimi=geometrischesarray[i]*geometrischesarray[varkot]
-        #varkot+=1
-    #print(shumzimi)a
+        dis=math.sqrt(  ( (vleratx[i]-vleratx1[i]) * (vleratx[i]-vleratx1[i]) ) + ( (vleraty[i]-vleraty1[i]) * (vleraty[i]-vleraty1[i]) ) )
         #print(math.sqrt(  ( (vleratx[i]-vleratx1[i]) * (vleratx[i]-vleratx1[i]) ) + ( (vleraty[i]-vleraty1[i]) * (vleraty[i]-vleraty1[i]) ) ))
-        print(a)
-        geometrischesarray *= a
-        #print(geometrischesarray)
+        if(dis < min):
+            min = dis
+        if(dis > max):
+            max = dis
+        print(dis)
+        geometrischesarray *= dis
     print("Shumzim")
     print(geometrischesarray)
+    print("Minimumi")
+    print(min)
+    print("Maximumi")
+    print(max)
     print("Toleranca me geo.Mittel")
     t1=geometrischesarray**(1/67)
     print(t1)
-    #print("Toleranca me MAX")
-    #print(max
-    #print("67")
-    #print(geometrischesarray[67])
-    #t2=max(a)
-    #print(t2)
+    print("Toleranca finale")
+    print((t1+max)/2)
+    #if math.abs(vleratx[i]-vleratx1[i])<t1 and math.abs(vleraty[i]-vleraty1[i])<t1
+    
+    print("Existiert")
+    #print("Toleranca me MAX: ")
     #tFinal=(t1+t2)/2
     #print(tFinal)
 else:

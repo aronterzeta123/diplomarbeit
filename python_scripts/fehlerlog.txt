@@ -11,3 +11,8 @@ ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank 
 ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
 ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
 ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtserkennung:This event occurred: Person existiert schon, Vergleichung stimmt
+ERROR:Gesichtserkennung:This event occurred: Person existiert schon, Vergleichung stimmt
+ERROR:Gesichtserkennung:This event occurred: Person existiert schon, Vergleichung stimmt
+ERROR:Gesichtserkennung:This event occurred: Person wurde nicht gefunden, Vergleichung stimmt nicht
+ERROR:Gesichtserkennung:This event occurred: Person existiert schon, Vergleichung stimmt

@@ -19,6 +19,7 @@ def insertPath(mycursor):
     #exec(open('68fLandmarks.py').read())
     for i in range(0,66):
         query=("update info set v%sX=%s, v%sY=%s where idP=%s;")
+        print(query)
         param=(i+1,vleratx[i],i+1,vleraty[i],var1)
         mycursor.execute(query,param)
     os.system('./fehlerlog_Gesichtsregistrierung_Personregistration.py')

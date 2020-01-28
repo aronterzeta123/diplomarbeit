@@ -30,12 +30,12 @@ if bool:
     for res in myresult:
         vx=4
         vy=5
-        for i in range(0,67):
+        for i in range(0,15):
             print ( math.sqrt(  ( (vleratx[i]-myresult[vx]) * (vleratx[i]-myresult[vx]) ) + ( (vleraty[i]-myresult[vy]) * (vleraty[i]-myresult[vy]) ) ) )
             #if vleratx[i]=myresult[vx] and vleraty[i]=myresult[vy]
             #if     
-            vx+=2
-            vy+=2
+        vx+=2
+        vy+=2
         #for x in range(17):
          #   for y in range(17):
           #      i=3
