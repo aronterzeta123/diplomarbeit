@@ -45,12 +45,12 @@ if bool:
             min = dis
         if(dis > max):
             max = dis
-        print(dis)
+        #print(dis)
         geometrischesarray *= dis
-    print("Shumzim")
-    print(geometrischesarray)
-    print("Minimumi")
-    print(min)
+    #print("Shumzim")
+    #print(geometrischesarray)
+    #print("Minimumi")
+    #print(min)
     print("Maximumi")
     print(max)
     print("Toleranca me geo.Mittel")
