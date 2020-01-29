@@ -1,17 +1,14 @@
 #!/usr/bin/python3
-#import useful packages
+
 import cv2
 import numpy as np
-import dlib 
+import dlib
 import sys
-#read image from user input
 
-#load cascade classifier for frontal face detecting
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-arrayFoto=["richtigenew.jpg","Newrei1.jpg","Newrei2.jpg","Newdrejt.jpg","Newadriano.jpg","Newadriano1.jpg","Neworens.jpg","Neworens1.jpg","Newprofe.jpg","Newprofe1.jpg"]
-for f in range(0,9):
-    print(arrayFoto[f])
-    image = cv2.imread(arrayFoto[f])
+def getPoints(Imagename):
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    print(Imagename)
+    image = cv2.imread(Imagename)
 #image=cv2.imread('aroncropped2.jpg')
     if(image is None): 
         print("Can't open image file")
@@ -19,7 +16,7 @@ for f in range(0,9):
 #get image dimensions
     dimX = int(image.shape[0])
     dimY = int(image.shape[1]) 
-    print("dimensionet e fotos",dimX,dimY) 
+    print("\tdimensionet e fotos",dimX,dimY) 
 
 #convert image into grayscale
     gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
@@ -36,7 +33,7 @@ for f in range(0,9):
 
 #get number of faces detected
     nrFace = len(faces) 
-    print("Detected faces: %d" % nrFace)
+    print("\tDetected faces: %d" % nrFace)
 
     i = 0
     coords=[]
@@ -76,4 +73,12 @@ for f in range(0,9):
             vleraty1=z[1]
             vleratx1=z[0]
     elif nrFace <= 0:
-        print("no faces found") 
+        print("\tno faces found") 
+
+    ret = dict()
+    ret['x'] = vleratx1
+    ret['y'] = vleraty1
+
+    return ret
+
+getPoints("richtigenew.jpg")

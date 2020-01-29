@@ -22,6 +22,7 @@ try:
     print(vleratx[3])
     for i in range(0,67):
         query=("update info set v%sX=%s, v%sY=%s where idP=%s;")
+        print(query)
         param=(i+1,vleratx[i],i+1,vleraty[i],var1)
         mycursor.execute(query,param)
         #print(param)

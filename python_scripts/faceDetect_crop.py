@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 import cv2
 import numpy as np
-import dlib 
+import dlib
+import sys
 gesicht=""
+image2=sys.argv[1]
 filename=(image2+".jpg")
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -42,7 +44,7 @@ if nrFace > 0:
             ny = int(centery - r) 
             nr = int(r * 2) 
             faceimg = image[ny:ny+nr, nx:nx+nr] 
-            filenam=(filename+"new"+".jpg")
+            filenam=("New"+filename)
             image3 = cv2.imwrite(filenam,faceimg)
 
 elif nrFace <= 0:
