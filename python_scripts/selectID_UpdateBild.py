@@ -19,11 +19,12 @@ mycursor.execute(query1,param1)
 conn.commit()
 exec(open('68fLandmarks.py').read())
 try:
+    print(vleratx[3])
     for i in range(0,67):
         query=("update info set v%sX=%s, v%sY=%s where idP=%s;")
         param=(i+1,vleratx[i],i+1,vleraty[i],var1)
         mycursor.execute(query,param)
-        print(param)
+        #print(param)
         conn.commit()
     print("Successful")
 except:
