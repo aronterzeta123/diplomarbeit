@@ -38,7 +38,15 @@ if bool:
     #exec(open('68fLandmarks.py').read())
     #exec(open('68fLandmarks1.py').read())
     #exec(open('68fLandmarks2.py').read())
-    arrayFoto=["richtigenew.jpg","Newdrejt.jpg","Newrei1.jpg","Newrei2.jpg","Newadriano.jpg","Newadriano1.jpg","Neworens.jpg","Neworens1.jpg","Newprofe.jpg","Newprofe1.jpg"]
+    arrayFoto=["richtigenew.jpg","Newdrejt.jpg","Newrei1.jpg","Newrei2.jpg","Newadriano.jpg","Newadriano1.jpg","Neworens.jpg","Neworens1.jpg","Newprofe.jpg","Newprofe1.jpg","NewAron.jpg","NewAron1.jpg","Newegli.jpg","Newegli1.jpg","Newjordi.jpg","Newjordi1.jpg"]
+    #arrayNjejtaAron=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg" ," NewAron1.jpg"]
+    #arrayNjejtaRei=["Newrei2.jpg","Newrei1.jpg"]
+    #arrayNjejtaJordi=["Newjordi.jpg","Newjordi1.jpg"]
+    #arrayNjejtaEgli=["Newegli.jpg" ," Newegli1.jpg"]
+    #arrayNjejtaAdriano=["Newadriano.jpg" ," Newadriano1.jpg"]
+    #arrayNjejtaOrens=["Neworens.jpg" ," Neworens1.jpg"]
+    #arrayNjejtaProfe=["Newprofe.jpg" ," Newprofe1.jpg"]
+    #arrayNdryshme=["Newrei1.jpg","Newadriano.jpg","Neworens.jpg","Newprofe.jpg", " NewAron.jpg", "Newegli.jpg"," Newirena.jpg", "Newjordi.jpg"]
     for f in range(0,len(arrayFoto)):
         for f1 in range(f,len(arrayFoto)):
             if arrayFoto[f]!=arrayFoto[f1]:

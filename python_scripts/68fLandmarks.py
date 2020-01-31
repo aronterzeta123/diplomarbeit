@@ -5,7 +5,7 @@ import numpy as np
 import dlib 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #image = cv2.imread('%s',filename)
-image = cv2.imread('aroncropped1.jpg')
+image = cv2.imread('Newprofe1.jpg')
 if(image is None): 
     print("Can't open image file")
 
@@ -29,7 +29,9 @@ faces = detector(gray)
 
 #get number of faces detected
 nrFace = len(faces) 
+nrFace_cv = len(faces_cv)
 print("Detected faces: %d" % nrFace)
+print("Detected faces me face cascade : %d" % nrFace_cv)
 
 i = 0
 coords=[]
@@ -39,14 +41,13 @@ vleraty=np.zeros((68,1),dtype="float")
 #get image dimensions
 height, width = image.shape[:2]
 
-if nrFace > 0:
-
+if nrFace_cv > 0:
     for face in faces:
         
-        x1 = face.left() 
-        y1 = face.top()
-        x2 = face.right() 
-        y2 = face.bottom()
+        #x1 = face.left() 
+        #y1 = face.top()
+        #x2 = face.right() 
+        #y2 = face.bottom()
 
                 
         i = 0
@@ -67,6 +68,6 @@ if nrFace > 0:
         z=np.hsplit(coords,2)
         vleraty=z[1]
         vleratx=z[0]
-        
+        print(vleratx)
 elif nrFace <= 0:
     print("no faces found") 
