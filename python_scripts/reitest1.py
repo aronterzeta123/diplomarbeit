@@ -39,7 +39,9 @@ if bool:
     #exec(open('68fLandmarks1.py').read())
     #exec(open('68fLandmarks2.py').read())
     arrayFoto=["richtigenew.jpg","Newdrejt.jpg","Newrei1.jpg","Newrei2.jpg","Newadriano.jpg","Newadriano1.jpg","Neworens.jpg","Neworens1.jpg","Newprofe.jpg","Newprofe1.jpg","NewAron.jpg","NewAron1.jpg","Newegli.jpg","Newegli1.jpg","Newjordi.jpg","Newjordi1.jpg"]
-    #arrayNjejtaAron=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg" ," NewAron1.jpg"]
+   #arrayNjejtaAron=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg" ," NewAron1.jpg"]
+   #arrayNjejtaAron=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg" ," NewAron1.jpg"]
+   #arrayNjejtaAron=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg" ," NewAron1.jpg"]
     #arrayNjejtaRei=["Newrei2.jpg","Newrei1.jpg"]
     #arrayNjejtaJordi=["Newjordi.jpg","Newjordi1.jpg"]
     #arrayNjejtaEgli=["Newegli.jpg" ," Newegli1.jpg"]
@@ -59,7 +61,6 @@ if bool:
                 ret1 = landmarks.getPoints(arrayFoto[f1])
                 vleratx1 = ret1['x']
                 vleraty1 = ret1['y']
-        
                 geometrischesarray=1
             #print("Distanca e vjeter:")
                 min = 10
