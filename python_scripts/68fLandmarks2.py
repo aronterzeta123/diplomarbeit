@@ -8,7 +8,7 @@ import sys
 
 #load cascade classifier for frontal face detecting
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-arrayFoto=["richtigenew.jpg","Newrei1.jpg","Newrei2.jpg","Newdrejt.jpg","Newadriano.jpg","Newadriano1.jpg","Neworens.jpg","Neworens1.jpg","Newprofe.jpg","Newprofe1.jpg"]
+arrayFoto=["Newadriano.jpg","richtigenew.jpg","Newrei1.jpg","Newrei2.jpg","Newdrejt.jpg","Newadriano1.jpg","Neworens.jpg","Neworens1.jpg","Newprofe.jpg","Newprofe1.jpg"]
 for f in range(0,9):
     print(arrayFoto[f])
     image = cv2.imread(arrayFoto[f])
