@@ -10,7 +10,7 @@ conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
 #var1=input("Bitte email eingeben: ")
 #f=open("Pikat1.txt","w+")
-var1="aroter14@htl-shkoder.com"
+var1="irebal14@htl-shkoder.com"
 b=""
 d=sys.argv[1]
 print(b)
@@ -21,11 +21,12 @@ maxwert=0
 counter=0
 #geometrischesarray=np.zeros((68,1),dtype="float")
 try:
-    mycursor.execute("select * from info i join person p on p.idP = i.idP where p.email='%s'"%(var1))
+    mycursor.execute("select distinct * from info i join person p on p.idP = i.idP where p.email='%s'"%(var1))
     global myresult
     myresult=mycursor.fetchall()
     for x in myresult:
-        if x[3]==var1:
+        print(x)
+        if x[142]==var1:
             bool=True
         else:
             bool=False
@@ -35,8 +36,8 @@ if bool:
     #os.system('./Log_Erkennung_PersonExistiert.py')
     b="existiert"
     for res in myresult:
-        vx=4
-        vy=5
+        vx=3
+        vy=4
         #ret = landmarks.getPoints(arrayFoto[f])
         ret=landmarks.getPoints(d)
         vleratx = ret['x']
@@ -44,7 +45,7 @@ if bool:
              
         print("-------------------------------Ftyra Anash---------------------------------")
         for pika in range(0,27):
-            dis=math.sqrt(  abs(( (vleratx[pika]-myresult[vx])) * abs((vleratx[pika]-myresult[vx]) )) + ( abs((vleraty[pika]-myresult[vy])) * abs((vleraty[pika]-myresult[vy]) ) ))
+            dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
                 min = dis
             if(dis > max):
@@ -63,7 +64,7 @@ if bool:
         vy+=2
         print("-------------------------------Hunda---------------------------------")
         for pika in range(27,36):
-            dis=math.sqrt(  abs(( (vleratx[pika]-myresult[vx])) * abs((vleratx[pika]-myresult[vx]) )) + ( abs((vleraty[pika]-myresult[vy])) * abs((vleraty[pika]-myresult[vy]) ) ))
+            dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
                 min = dis
             if(dis > max):
@@ -82,7 +83,7 @@ if bool:
         vy+=2
         print("-------------------------------Syni Djatht---------------------------------")
         for pika in range(36,42):
-            dis=math.sqrt(  abs(( (vleratx[pika]-myresult[vx])) * abs((vleratx[pika]-myresult[vx]) )) + ( abs((vleraty[pika]-myresult[vy])) * abs((vleraty[pika]-myresult[vy]) ) ))
+            dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
                 min = dis
             if(dis > max):
@@ -101,7 +102,7 @@ if bool:
         vy+=2
         print("-------------------------------Syni Majt---------------------------------")
         for pika in range(42,48):
-            dis=math.sqrt(  abs(( (vleratx[pika]-myresult[vx])) * abs((vleratx[pika]-myresult[vx]) )) + ( abs((vleraty[pika]-myresult[vy])) * abs((vleraty[pika]-myresult[vy]) ) ))
+            dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
                 min = dis
             if(dis > max):
@@ -120,7 +121,7 @@ if bool:
         vy+=2
         print("-------------------------------Goja---------------------------------")
         for pika in range(48,68):
-            dis=math.sqrt(  abs(( (vleratx[pika]-myresult[vx])) * abs((vleratx[pika]-myresult[vx]) )) + ( abs((vleraty[pika]-myresult[vy])) * abs((vleraty[pika]-myresult[vy]) ) ))
+            dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
                 min = dis
             if(dis > max):
@@ -134,7 +135,7 @@ if bool:
         vy+=2
         print("-------------------------------Total---------------------------------")
         for pika in range(1,68):
-            dis=math.sqrt(  abs(( (vleratx[pika]-myresult[vx])) * abs((vleratx[pika]-myresult[vx]) )) + ( abs((vleraty[pika]-myresult[vy])) * abs((vleraty[pika]-myresult[vy]) ) ))
+            dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
                 min = dis
             if(dis > max):
@@ -165,3 +166,4 @@ if bool:
                 
 else:
     b="nicht existiert"
+    print("sfbshsbs")

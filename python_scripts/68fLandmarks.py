@@ -82,9 +82,9 @@ if nrFace_cv > 0 or nrFace > 0:
 else:
     print("no faces found")
 try:
-    for i in range(0,67):
+    for i in range(0,68):
         query=("update info set v%sX=%s, v%sY=%s where idP=%s;")
-        param=(i+1,vleratx.item(i),i+1,vleraty.item(i+1),fc.idpersonit)
+        param=(i+1,vleratx.item(i),i+1,vleraty.item(i),fc.idpersonit)
         mycursor.execute(query,param)
         conn.commit()
     print("Successful")
