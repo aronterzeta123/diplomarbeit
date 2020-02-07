@@ -32,9 +32,9 @@ faces_cv = face_cascade.detectMultiScale(gray,1.1,4)
 faces = detector(gray) 
 
 
-faces_dlib = dlib.cnn_face_detection_model_v1("mmod_human_face_detector.dat") 
+#faces_dlib = dlib.cnn_face_detection_model_v1("mmod_human_face_detector.dat") 
 
-dets = faces_dlib(imzh)
+#dets = faces_dlib(imzh)
 
 
 #get number of faces detected

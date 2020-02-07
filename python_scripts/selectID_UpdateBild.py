@@ -13,7 +13,7 @@ for x in myresult:
     global var1
     var1=x[0]
 query1=("insert into info(imagePath,idP) values(%s,%s);")
-test = "./aroter14@htl-shkoder.com.jpg"
+test = ("./"+variable3+".jpg")
 param1=(test,var1)
 mycursor.execute(query1,param1)
 conn.commit()

@@ -25,7 +25,7 @@ except:
     print ("Backup Database Working")
 
 try:
-    for x in range(16,64):
+    for x in range(1,69):
         valueX = "'v"+str(x)+"X'"
         valueY = "'v"+str(x)+"Y'"    
     
