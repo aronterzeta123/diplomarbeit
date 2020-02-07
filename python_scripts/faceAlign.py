@@ -7,8 +7,12 @@ import numpy as np
 
 
 #read image from input
-filename=input("GIVE FILENAME:\n-------------------\n")
+#filename=input("GIVE FILENAME:\n-------------------\n")
 
+#Read image
+image = sys.argv[1]
+filename=(image+".jpg")
+image = cv2.imread(filename)
 
 #Ähnlichkeitstransformation bei zwei aehnlichen  Punkten. Für die Berechnung der Ähnlichkeitsmatrix benötigt opencv 3 Punkte aber..
 
@@ -90,9 +94,7 @@ def getFaceLandmarks(image, faceDetector, landmarkDetector):
         return points
 
 
-#Read image
 
-image = cv2.imread(filename)
 
 #check if image exists
 if image is None:
@@ -138,16 +140,21 @@ cv2.namedWindow("face aligned", cv2.WINDOW_NORMAL)
 
 
 #increase sharpness
-#sKernel = np.array(([0, -1, 0],[-1, 5, -1],[0, -1, 0]), dtype="int")
-#output = cv2.filter2D(image, -1, sKernel)
+sKernel = np.array(([0, -1, 0],[-1, 5, -1],[0, -1, 0]), dtype="int")
+
+
+#smoothening filter
+
+kernel = np.ones((5,5),np.float32)/25
+output = cv2.filter2D(im, -1, kernel)
 
 #display images
 cv2.imshow("image", image)
-cv2.imshow("face aligned", im)
+cv2.imshow("face aligned", output)
 
 #save image
 
-#imazh = cv2.imwrite("egliAligned.jpg",im)
+imazh = cv2.imwrite("aligned"+filename,output)
 
 #press esc to exit the program
 cv2.waitKey(0)
