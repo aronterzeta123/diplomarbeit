@@ -3,6 +3,7 @@
 import MySQLdb
 import sys
 import os
+import subprocess
 variable3=sys.argv[1]
 var1=""
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
@@ -15,9 +16,10 @@ for x in myresult:
 query1=("insert into info(imagePath,idP) values(%s,%s);")
 test = ("./"+variable3+".jpg")
 param1=(test,var1)
+image2=variable3
 mycursor.execute(query1,param1)
 conn.commit()
-exec(open('68fLandmarks.py').read())
+#exec(open('./68fLandmarks.py').read())
 try:
     for i in range(0,67):
         query=("update info set v%sX=%s, v%sY=%s where idP=%s;")

@@ -3,25 +3,25 @@
 import cv2
 import numpy as np
 import dlib 
-
-
+import sys
+import faceDetect_crop as fc
+import MySQLdb
+conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
+mycursor=conn.cursor()
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-
-filename = "NewRei2.jpg"
 #filename=""
 #image = cv2.imread('%s',filename)
-image = cv2.imread(filename)
-if(image is None): 
+image45 = cv2.imread('%s'%(fc.filenam))
+if(image45 is None): 
     print("Can't open image file")
 
 #get image dimensions
-dimX = int(image.shape[0])
-dimY = int(image.shape[1]) 
+dimX = int(image45.shape[0])
+dimY = int(image45.shape[1]) 
 print("dimensionet e fotos",dimX,dimY) 
 
 #convert image into grayscale
-gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-imzh = dlib.load_rgb_image(filename)
+gray = cv2.cvtColor(image45,cv2.COLOR_BGR2GRAY)
 
 #load shape predictors to extract landmarks
 
@@ -50,7 +50,7 @@ z=[]
 vleratx=np.zeros((68,1),dtype="float")
 vleraty=np.zeros((68,1),dtype="float")
 #get image dimensions
-height, width = image.shape[:2]
+height, width = image45.shape[:2]
 
 if nrFace_cv > 0 or nrFace > 0:
     for face in faces:
@@ -79,6 +79,15 @@ if nrFace_cv > 0 or nrFace > 0:
         z=np.hsplit(coords,2)
         vleraty=z[1]
         vleratx=z[0]
-        print(vleratx)
-elif nrFace_cv <= 0:
-    print("no faces found") 
+else:
+    print("no faces found")
+try:
+    for i in range(0,67):
+        query=("update info set v%sX=%s, v%sY=%s where idP=%s;")
+        param=(i+1,vleratx.item(i),i+1,vleraty.item(i+1),fc.idpersonit)
+        mycursor.execute(query,param)
+        conn.commit()
+    print("Successful")
+except:
+    conn.rollback()
+    print("Rregjistrimi i pikave nuk u kry")
