@@ -7,9 +7,10 @@ import dlib
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-filename = "Newprofe.jpg"
+filename = "NewRei2.jpg"
+#filename=""
 #image = cv2.imread('%s',filename)
-image = cv2.imread('profe.jpg')
+image = cv2.imread(filename)
 if(image is None): 
     print("Can't open image file")
 

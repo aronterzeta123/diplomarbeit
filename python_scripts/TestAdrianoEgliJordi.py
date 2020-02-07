@@ -36,7 +36,7 @@ if bool:
     for res in myresult:
         vx=4
         vy=5
-    arrayFoto=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg","NewAron1.jpg","NewAron3.jpg","NewAron4.jpg","Newrei1.jpg","Newrei2.jpg","NewRei1.jpg","NewRei2.jpg","Newadriano1.jpg","NewAdriano1.jpg","NewAdriano2.jpg","NewAldo1.jpg","NewAldo2.jpg","NewAldo3.jpg","NewJordi1.jpg","NewJordi2.jpg","NewEgli1.jpg","NewEgli2.jpg","Newegli1.jpg","Neworens.jpg","Neworens1.jpg"]
+    arrayFoto=["NewEgli1.jpg","Newegli1.jpg","NewAdriano1.jpg","NewAdriano2.jpg","Newadriano1.jpg","NewJordi2.jpg","NewJordi1.jpg"]
     
     
     for f in range(0,len(arrayFoto)):
