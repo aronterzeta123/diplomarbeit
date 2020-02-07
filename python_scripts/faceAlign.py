@@ -7,8 +7,12 @@ import numpy as np
 
 
 #read image from input
-filename=input("GIVE FILENAME:\n-------------------\n")
+#filename=input("GIVE FILENAME:\n-------------------\n")
 
+#Read image
+image = sys.argv[1]
+filename=(image+".jpg")
+image = cv2.imread(filename)
 
 #Ähnlichkeitstransformation bei zwei aehnlichen  Punkten. Für die Berechnung der Ähnlichkeitsmatrix benötigt opencv 3 Punkte aber..
 
@@ -55,9 +59,11 @@ def faceAlign(image, size, faceLandmarks):
 
         #similarity transform einsetzen hehehe
         faceAligned = cv2.warpAffine(image, similarityTransform, (w, h))
+        
+        imazhi = cv2.cvtColor(faceAligned, cv2.COLOR_BGR2RGB)
 
-        return faceAligned
-
+        #return faceAligned
+        return imazhi
 
 #face landmarks finden
 def getFaceLandmarks(image, faceDetector, landmarkDetector):
@@ -71,7 +77,7 @@ def getFaceLandmarks(image, faceDetector, landmarkDetector):
         #detect faces
         faces = faceDetector(dlibImage, 0)
 
-        #go through first face in the image
+        #go through faces in the image
         if(len(faces) > 0):
             i=0
             for face in faces:
@@ -88,9 +94,7 @@ def getFaceLandmarks(image, faceDetector, landmarkDetector):
         return points
 
 
-#Read image
 
-image = cv2.imread(filename)
 
 #check if image exists
 if image is None:
@@ -110,24 +114,24 @@ faceLandmarks = getFaceLandmarks(image, faceDetector, landmarkDetector)
 faceLandmarks = np.array(faceLandmarks)
 
 #convert image to floating point and in the range 0 to 1
-imzh = np.float32(image)/255.0
-print(imzh)
+#imzh = np.float32(image)/255.0
+#print(imzh)
 
 #size of the faceAligned image
 size = (600, 600)
 
 #align face image
-faceAligned = faceAlign(imzh, size, faceLandmarks)
+faceAligned = faceAlign(image, size, faceLandmarks)
 #print(faceAligned)
 
 
 
 #read the aligned face
 
-im = cv2.cvtColor(
-        cv2.imread(filename), cv2.COLOR_BGR2RGB).astype(np.float32)/255.0
-
-gray = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
+#im = cv2.imread(faceAligned)
+im = cv2.cvtColor(faceAligned, cv2.COLOR_BGR2RGB)
+#print(im)
+#gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
 #create windows to display images
 cv2.namedWindow("image", cv2.WINDOW_NORMAL)
@@ -135,20 +139,22 @@ cv2.namedWindow("face aligned", cv2.WINDOW_NORMAL)
 
 
 
+#increase sharpness
 sKernel = np.array(([0, -1, 0],[-1, 5, -1],[0, -1, 0]), dtype="int")
 
-#filter2D is used to perform the convolution.
-# The third parameter (depth) is set to -1 which means the bit-depth of the output image is the 
-# same as the input image. So if the input image is of type CV_8UC3, the output image will also be of the same type
-output = cv2.filter2D(image, -1, sKernel)
+
+#smoothening filter
+
+kernel = np.ones((5,5),np.float32)/25
+output = cv2.filter2D(im, -1, kernel)
 
 #display images
 cv2.imshow("image", image)
-cv2.imshow("face aligned", faceAligned)
+cv2.imshow("face aligned", output)
 
 #save image
 
-imazh = cv2.imwrite("egliAligned.jpg",gray)
+imazh = cv2.imwrite("aligned"+filename,output)
 
 #press esc to exit the program
 cv2.waitKey(0)
