@@ -29,17 +29,14 @@ try:
         valueX = "'v"+str(x)+"X'"
         valueY = "'v"+str(x)+"Y'"    
     
-<<<<<<< HEAD
         curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` double');" % (valueX))
-=======
-        curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` VARCHAR(50)');" % ("'bo'"))
-        curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` VARCHAR(50)');" % (valueX))
->>>>>>> d865ed046bf013b87c3fe8f23431e1479fac7103
+        curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` double');" % ("'bo'"))
+        curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` double');" % (valueX))
         curs.execute("Prepare stmt1 from @s1;")
         curs.execute("execute stmt1;")
         curs.execute("deallocate prepare stmt1;")
     
-        curs.execute("SET @s2=CONCAT('ALTER table person add column `',%s,'` VARCHAR(50)');" % (valueY))
+        curs.execute("SET @s2=CONCAT('ALTER table person add column `',%s,'` double');" % (valueY))
         curs.execute("Prepare stmt2 from @s2;")
         curs.execute("execute stmt2;")
         curs.execute("deallocate prepare stmt2;")
