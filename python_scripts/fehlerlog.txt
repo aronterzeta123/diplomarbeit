@@ -64,3 +64,18 @@ ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank 
 ERROR:Gesichtsregistrierung:Die Nachricht ist: Der Schalter fuer Gesichtsregistrierung ist gedrueckt.
 ERROR:Gesichtsregistrierung:Die Nachricht ist: Admin ist eingeloggt
 ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Der Schalter fuer Gesichtsregistrierung ist gedrueckt.
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Admin ist eingeloggt
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Der Schalter fuer Gesichtsregistrierung ist gedrueckt.
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Admin ist eingeloggt
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Der Schalter fuer Gesichtsregistrierung ist gedrueckt.
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Admin ist eingeloggt
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Der Schalter fuer Gesichtsregistrierung ist gedrueckt.
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Admin ist eingeloggt
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Der Schalter fuer Gesichtsregistrierung ist gedrueckt.
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Admin ist eingeloggt
+ERROR:Gesichtsregistrierung:Die Nachricht ist: Eine Person ist in der Datenbank registriert

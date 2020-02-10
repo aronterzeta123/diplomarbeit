@@ -4,9 +4,8 @@ import numpy as np
 import dlib
 import sys
 import selectID_UpdateBild as su
-idpersonit=su.var1
 gesicht=""
-imagepercrop=su.image2
+imagepercrop=su.variable3
 filename=('%s'%(imagepercrop+'.jpg'))
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
