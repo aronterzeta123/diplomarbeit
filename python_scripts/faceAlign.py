@@ -5,7 +5,6 @@ import dlib
 import math
 import numpy as np
 
-
 #read image from input
 #filename=input("GIVE FILENAME:\n-------------------\n")
 

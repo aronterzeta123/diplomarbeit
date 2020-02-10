@@ -7,12 +7,11 @@ def drop_tables(curs):
 
 def create_tables(curs):
     curs.execute("""CREATE TABLE person(
-                                        idP int auto_increment,
                                         vorname varchar(50) not null,
                                         nachname varchar(50) not null,
                                         email varchar(50) not null,
                                         role int not null,
-                                        imagePath varchar(50) not null,
+                                        imagePath varchar(50),
                                         PRIMARY KEY (email)
                                         )""")
 

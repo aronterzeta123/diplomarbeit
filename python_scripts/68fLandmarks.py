@@ -9,9 +9,8 @@ import MySQLdb
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-#filename=""
-#image = cv2.imread('%s',filename)
 image45 = cv2.imread('%s'%(fc.filenam))
+emaili=sys.argv[1]
 if(image45 is None): 
     print("Can't open image file")
 
@@ -43,7 +42,7 @@ nrFace = len(faces)
 nrFace_cv = len(faces_cv)
 print("Detected faces me dlib detector: %d" % nrFace)
 print("Detected faces me face cascade : %d" % nrFace_cv)
-
+test=("./"+fc.filenam+".jpg")
 i = 0
 coords=[]
 z=[]
@@ -68,6 +67,7 @@ if nrFace_cv > 0 or nrFace > 0:
         coords = np.zeros((68,2),dtype="float")
 
         for d in range(0,68): 
+#image = cv2.imread('%s',filename)
             x = float(landmarks.part(d).x / width)  
             y = float(landmarks.part(d).y / height) 
             #cv2.circle(gray2, (x, y), 4, (255,0,0), -1) 
@@ -81,13 +81,11 @@ if nrFace_cv > 0 or nrFace > 0:
         vleratx=z[0]
 else:
     print("no faces found")
-try:
-    for i in range(0,68):
-        query=("update info set v%sX=%s, v%sY=%s where idP=%s;")
-        param=(i+1,vleratx.item(i),i+1,vleraty.item(i),fc.idpersonit)
-        mycursor.execute(query,param)
-        conn.commit()
-    print("Successful")
-except:
-    conn.rollback()
-    print("Rregjistrimi i pikave nuk u kry")
+for i in range(0,68):
+    query=("update person set imagePath=%s,v%sX=%s, v%sY=%s where email=%s;")
+    param=(test,i+1,vleratx.item(i),i+1,vleraty.item(i),emaili)
+    mycursor.execute(query,param)
+    conn.commit()
+print("Successful")
+    #conn.rollback()
+    #print("Rregjistrimi i pikave nuk u kry")
