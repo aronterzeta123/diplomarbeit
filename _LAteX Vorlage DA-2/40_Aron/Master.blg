@@ -1,25 +1,25 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Master.blg'
-[60] biber-darwin:313> INFO - === Fri Jan 17, 2020, 10:50:25
-[93] Biber.pm:371> INFO - Reading 'Master.bcf'
-[303] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
-[349] Biber.pm:3976> INFO - Processing section 0
-[385] Biber.pm:4136> INFO - Looking for bibtex format file './../literatur.bib' for section 0
-[390] bibtex.pm:1500> INFO - LaTeX decoding ...
-[499] bibtex.pm:1316> INFO - Found BibTeX data source './../literatur.bib'
-[504] Utils.pm:193> WARN - Possible typo (case mismatch) between datasource keys: 'OpencvLogo' and 'OpenCVlogo' in file './../literatur.bib'
-[548] Utils.pm:193> WARN - year field '12/7/2019' in entry 'python' is not an integer - this will probably not sort properly.
-[556] Utils.pm:193> WARN - Entry 'terminator' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
-[582] Utils.pm:193> WARN - Entry 'Risikoanalyse' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
-[582] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/omsYlWt3IP/literatur.bib_1225.utf8, line 48, warning: 1 characters of junk seen at toplevel
-[582] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/omsYlWt3IP/literatur.bib_1225.utf8, line 52, warning: 1 characters of junk seen at toplevel
-[582] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/omsYlWt3IP/literatur.bib_1225.utf8, line 59, warning: 1 characters of junk seen at toplevel
-[582] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/omsYlWt3IP/literatur.bib_1225.utf8, line 63, warning: 1 characters of junk seen at toplevel
-[582] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/omsYlWt3IP/literatur.bib_1225.utf8, line 193, warning: 7 characters of junk seen at toplevel
-[621] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[621] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[622] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[622] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[641] bbl.pm:617> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
-[644] bbl.pm:720> INFO - Output to Master.bbl
-[645] Biber.pm:110> INFO - WARNINGS: 9
+[58] biber-darwin:313> INFO - === Mon Feb 10, 2020, 22:39:23
+[86] Biber.pm:371> INFO - Reading 'Master.bcf'
+[200] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
+[217] Biber.pm:3976> INFO - Processing section 0
+[231] Biber.pm:4136> INFO - Looking for bibtex format file './../literatur.bib' for section 0
+[233] bibtex.pm:1500> INFO - LaTeX decoding ...
+[283] bibtex.pm:1316> INFO - Found BibTeX data source './../literatur.bib'
+[287] Utils.pm:193> WARN - Possible typo (case mismatch) between datasource keys: 'OpencvLogo' and 'OpenCVlogo' in file './../literatur.bib'
+[306] Utils.pm:193> WARN - year field '12/7/2019' in entry 'python' is not an integer - this will probably not sort properly.
+[310] Utils.pm:193> WARN - Entry 'terminator' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
+[326] Utils.pm:193> WARN - Entry 'Risikoanalyse' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
+[327] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/SgMza92bnG/literatur.bib_4560.utf8, line 48, warning: 1 characters of junk seen at toplevel
+[327] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/SgMza92bnG/literatur.bib_4560.utf8, line 52, warning: 1 characters of junk seen at toplevel
+[327] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/SgMza92bnG/literatur.bib_4560.utf8, line 59, warning: 1 characters of junk seen at toplevel
+[327] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/SgMza92bnG/literatur.bib_4560.utf8, line 63, warning: 1 characters of junk seen at toplevel
+[327] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/SgMza92bnG/literatur.bib_4560.utf8, line 193, warning: 7 characters of junk seen at toplevel
+[350] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[351] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[351] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[351] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[364] bbl.pm:617> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[367] bbl.pm:720> INFO - Output to Master.bbl
+[367] Biber.pm:110> INFO - WARNINGS: 9
