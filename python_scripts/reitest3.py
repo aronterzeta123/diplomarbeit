@@ -5,33 +5,26 @@ import sys
 import math
 import numpy as np
 import dlib
-import reitest as landmarks
+import reitest as rei
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
-#var1=input("Bitte email eingeben: ")
-#f=open("Pikat1.txt","w+")
-var1="irebal14@htl-shkoder.com"
 b=""
-d=sys.argv[1]
-print(b)
 bool=False
 bool=False
 myresult=""
 maxwert=0
 counter=0
-#geometrischesarray=np.zeros((68,1),dtype="float")
-try:
-    mycursor.execute("select distinct * from info i join person p on p.idP = i.idP where p.email='%s'"%(var1))
-    global myresult
-    myresult=mycursor.fetchall()
-    for x in myresult:
-        print(x)
-        if x[142]==var1:
-            bool=True
-        else:
-            bool=False
-except:
-    print ("Select Statement nicht gut")
+#try:
+mycursor.execute("select distinct * from person where email='%s';"%(rei.emailiperkrahasim))
+global myresult
+myresult=mycursor.fetchall()
+for x in myresult:
+    if x[2]==var1:
+        bool=True
+    else:
+        bool=False
+#except:
+    #print ("Select Statement nicht gut")
 if bool:
     #os.system('./Log_Erkennung_PersonExistiert.py')
     b="existiert"
@@ -39,9 +32,8 @@ if bool:
         vx=3
         vy=4
         #ret = landmarks.getPoints(arrayFoto[f])
-        ret=landmarks.getPoints(d)
-        vleratx = ret['x']
-        vleraty = ret['y']
+        vleratx = rei.vlera['x']
+        vleraty = rei.vlera['y']
              
         print("-------------------------------Ftyra Anash---------------------------------")
         for pika in range(0,27):
@@ -166,4 +158,4 @@ if bool:
                 
 else:
     b="nicht existiert"
-    print("sfbshsbs")
+    print("FEHLER!!!!")
