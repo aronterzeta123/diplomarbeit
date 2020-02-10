@@ -6,9 +6,9 @@ import sys
 import os
 print("Bitte email eingeben")
 emaili=input()
-os.system('./Test %s'%(emaili))
+os.system('./Test %s'%(emaili+'.jpg'))
 gesicht=""
-imagepercrop=emaili
+imagepercrop='%s'%(emaili)
 filename=('%s'%(imagepercrop+'.jpg'))
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
