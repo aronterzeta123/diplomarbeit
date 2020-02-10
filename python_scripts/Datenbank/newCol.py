@@ -6,7 +6,7 @@ def insert_procedure(curs):
     curs.execute("""CREATE PROCEDURE addCol(IN name VARCHAR(50))
                     BEGIN
                         ALTER TABLE person
-                        ADD name VARCHAR(50) NOT NULL;p
+                        ADD name VARCHAR(50) NOT NULL;
                 """)
 
 def call_procedure(curs, value, vl):

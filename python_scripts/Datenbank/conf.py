@@ -11,7 +11,7 @@ def create_tables(curs):
                                         nachname varchar(50) not null,
                                         email varchar(50) not null primary key,
                                         role int not null,
-                                        imagePath varchar(50) not null
+                                        imagePath varchar(50)
                                         );""")
 
 def insert_values1(curs, vorname, nachname, email, rolle):
