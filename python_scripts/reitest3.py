@@ -14,12 +14,11 @@ bool=False
 myresult=""
 maxwert=0
 counter=0
-#try:
 mycursor.execute("select distinct * from person where email='%s';"%(rei.emailiperkrahasim))
 global myresult
 myresult=mycursor.fetchall()
 for x in myresult:
-    if x[2]==var1:
+    if x[2]==rei.emailiperkrahasim:
         bool=True
     else:
         bool=False
@@ -29,15 +28,14 @@ if bool:
     #os.system('./Log_Erkennung_PersonExistiert.py')
     b="existiert"
     for res in myresult:
-        vx=3
-        vy=4
+        vx=5
+        vy=6
         #ret = landmarks.getPoints(arrayFoto[f])
         vleratx = rei.vlera['x']
         vleraty = rei.vlera['y']
-             
         print("-------------------------------Ftyra Anash---------------------------------")
         for pika in range(0,27):
-            dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
+            dis=math.sqrt(abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
                 min = dis
             if(dis > max):
@@ -154,7 +152,7 @@ if bool:
         #maxi=[MAX1,MAX2,MAX3,MAX4,MAX5]
         #for M in range(1,5)
 
-    
+        
                 
 else:
     b="nicht existiert"
