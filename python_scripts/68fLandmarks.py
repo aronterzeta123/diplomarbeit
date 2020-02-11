@@ -3,25 +3,24 @@
 import cv2
 import numpy as np
 import dlib 
-
-#read image from user input
-filename = input("insert image file\n") 
-
-#load cascade classifier for frontal face detecting
+import sys
+import faceDetect_crop as fc
+import MySQLdb
+conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
+mycursor=conn.cursor()
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-image = cv2.imread(filename)
-
-if(image is None): 
+image45 = cv2.imread('%s'%(fc.filenam))
+emaili=sys.argv[1]
+if(image45 is None): 
     print("Can't open image file")
 
 #get image dimensions
-dimX = int(image.shape[0])
-dimY = int(image.shape[1]) 
+dimX = int(image45.shape[0])
+dimY = int(image45.shape[1]) 
 print("dimensionet e fotos",dimX,dimY) 
 
 #convert image into grayscale
-gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-
+gray = cv2.cvtColor(image45,cv2.COLOR_BGR2GRAY)
 
 #load shape predictors to extract landmarks
 
@@ -32,76 +31,61 @@ detector = dlib.get_frontal_face_detector()
 faces_cv = face_cascade.detectMultiScale(gray,1.1,4)
 faces = detector(gray) 
 
+
+#faces_dlib = dlib.cnn_face_detection_model_v1("mmod_human_face_detector.dat") 
+
+#dets = faces_dlib(imzh)
+
+
 #get number of faces detected
 nrFace = len(faces) 
-print("Detected faces: %d" % nrFace)
-
+nrFace_cv = len(faces_cv)
+print("Detected faces me dlib detector: %d" % nrFace)
+print("Detected faces me face cascade : %d" % nrFace_cv)
+test=("./"+fc.filenam+".jpg")
 i = 0
-
+coords=[]
+z=[]
+vleratx=np.zeros((68,1),dtype="float")
+vleraty=np.zeros((68,1),dtype="float")
 #get image dimensions
-height, width = image.shape[:2]
+height, width = image45.shape[:2]
 
-
-if nrFace > 0:
-
+if nrFace_cv > 0 or nrFace > 0:
     for face in faces:
         
-        x1 = face.left() 
-        y1 = face.top()
-        x2 = face.right() 
-        y2 = face.bottom()
+        #x1 = face.left() 
+        #y1 = face.top()
+        #x2 = face.right() 
+        #y2 = face.bottom()
 
                 
         i = 0
-        #problemi!! 
-        landmarks = predictor(gray,face) 
-        #shape = shape_utils.shape_to_np(landmarks) 
+        #
+        #landmarks = predictor(imzh,face) 
+        landmarks = predictor(gray,face)
         coords = np.zeros((68,2),dtype="float")
-        #right eye
+
         for d in range(0,68): 
+#image = cv2.imread('%s',filename)
             x = float(landmarks.part(d).x / width)  
             y = float(landmarks.part(d).y / height) 
             #cv2.circle(gray2, (x, y), 4, (255,0,0), -1) 
             i+1
             coords[d] = (x,y) 
             #for index in range(len(coords[d]):
-        print(d,":",coords, sep = "\n")
-            
+        #print(d,coords)
             #print(d,": ",x,y,"\n")
-       
-        
-        #left eye 
-        coords2 = np.zeros((68,2),dtype="float")
-        for e in range(42,47):
-            x = float(landmarks.part(e).x / width)
-            y = float(landmarks.part(e).y / height)
-            coords2[e] = (x,y)
-           # for index in range(len(coords2[e]):
-            #    print(e,":",coords2, sep = "\n")
-        
-
-        #nose 
-        coords3= np.zeros((68,2),dtype="float")
-        for f in range(27,35):
-           
-            x = float(landmarks.part(f).x / width)
-            y = float(landmarks.part(f).y / height)
-            coords3[f] = (x,y)
-            #for index in range(len(coords3[f]):
-              #  print(f,":",coords3, sep = "\n")
-        
-
-        #mouth
-        coords4 = np.zeros((68,2),dtype="float")
-        for g in range(48,59):
-            
-            x = float(landmarks.part(g).x / width)
-            y = float(landmarks.part(g).y / height)
-            coords4[f] = (x,y)
-            #for index in range(len(coords4[f]):
-            #    print(g,":",coords4, sep = "\n")                
-
-elif nrFace <= 0:
-    print("no faces found") 
-if cv2.waitKey(0):
-    cv2.destroyAllWindows()
+        z=np.hsplit(coords,2)
+        vleraty=z[1]
+        vleratx=z[0]
+else:
+    print("no faces found")
+for i in range(0,68):
+    query=("update person set imagePath=%s,v%sX=%s, v%sY=%s where email=%s;")
+    param=(test,i+1,vleratx.item(i),i+1,vleraty.item(i),emaili)
+    mycursor.execute(query,param)
+    conn.commit()
+print("Successful")
+    #conn.rollback()
+    #print("Rregjistrimi i pikave nuk u kry")

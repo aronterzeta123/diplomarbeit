@@ -1,0 +1,59 @@
+%Base ordner for all other ordners (figures, appendix, ....)
+\ifdefined\bordner
+\renewcommand{\bordner}{./../50_egli/}
+\else
+\newcommand{\bordner}{./../50_egli/}
+\fi
+
+
+%author of the document
+\ifdefined\autor
+\renewcommand{\autor}{Egli Hasmegaj}
+\else
+\newcommand{\autor}{Egli Hasmegaj}
+\fi
+
+%titelpage first Line
+\ifdefined\titelf
+\renewcommand{\titelf}{Diplomarbeit}
+\else
+\newcommand{\titelf}{Diplomarbeit}
+\fi
+
+
+%Name of Chapter
+\ifdefined\docname
+\renewcommand{\docname}{Bildverarbeitung - Egli}
+\else
+\newcommand{\docname}{Bildverarbeitung - Egli}
+\fi
+
+
+
+%titelpage secound Line
+\ifdefined\titels
+\renewcommand{\titels}{\docname}
+\else
+\newcommand{\titels}{\docname}
+\fi
+
+%Check Ordner for Figures
+\ifdefined\ordnerfigures
+\renewcommand{\ordnerfigures}{\bordner figures/}
+\else
+\newcommand{\ordnerfigures}{\bordner figures/}
+\fi
+
+%Check Ordner for Appendix
+\ifdefined\ordnerappendix
+\renewcommand{\ordnerappendix}{\bordner appendix/}
+\else
+\newcommand{\ordnerappendix}{\bordner appendix/}
+\fi
+
+%Check Ordner for Sourcecode
+\ifdefined\ordnersource
+\renewcommand{\ordnersource}{\bordner source/}
+\else
+\newcommand{\ordnersource}{\bordner source/}
+\fi

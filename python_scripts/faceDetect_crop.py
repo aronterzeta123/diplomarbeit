@@ -1,20 +1,17 @@
 #!/usr/bin/python3
 import cv2
 import numpy as np
-#import dlib 
-
-#filename = input("insert image file\n") 
-filename=(image2+".jpg")
-
+import dlib
+import sys
+import selectID_UpdateBild as su
+gesicht=""
+imagepercrop=su.variable3
+filename=('%s'%(imagepercrop+'.jpg'))
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 image = cv2.imread(filename)
-#if(image is None) 
- #   print("Can't open image file")
-  #  return 0
 
-
-#dimensionet e fotos
+filenam=""
 dimX = int(image.shape[0])
 dimY = int(image.shape[1]) 
 print("dimensionet e fotos",dimX,dimY) 
@@ -48,13 +45,10 @@ if nrFace > 0:
             ny = int(centery - r) 
             nr = int(r * 2) 
             faceimg = image[ny:ny+nr, nx:nx+nr] 
-            #filenam = input("Give new filename for cropped photo: \n")
-            filenam=(image2+"new"+".jpg")
-            image2 = cv2.imwrite(filenam,faceimg)
-            imag = cv2.imread(image2) 
-            gray2 = cv2.cvtColor(imag, cv2.COLOR_BGR2GRAY)
-
+            filenam=("New"+filename)
+            cv2.imwrite(filenam,faceimg)
 elif nrFace <= 0:
+    gesicht="no"
     print("no faces found") 
-if cv2.waitKey(0):
-    cv2.destroyAllWindows()
+#if cv2.waitKey(0):
+    #cv2.destroyAllWindows()
