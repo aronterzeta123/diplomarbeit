@@ -17,6 +17,7 @@ counter=0
 mycursor.execute("select distinct * from person where email='%s';"%(rei.emailiperkrahasim))
 global myresult
 myresult=mycursor.fetchall()
+MAX = [0,0,0,0,0]
 for x in myresult:
     if x[2]==rei.emailiperkrahasim:
         bool=True
@@ -33,7 +34,9 @@ if bool:
         #ret = landmarks.getPoints(arrayFoto[f])
         vleratx = rei.vlera['x']
         vleraty = rei.vlera['y']
+        
         print("-------------------------------Ftyra Anash---------------------------------")
+        
         for pika in range(0,27):
             dis=math.sqrt(abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
@@ -41,18 +44,20 @@ if bool:
             if(dis > max):
                 max = dis
             gm *= dis
+            vx+=2
+            vy+=2
         gm=gm**(1/27)    
-        global MAX1
-        MAX1=max
-        print("Max:%s\t GM:%s\n"%(MAX1,gm))
+        global MAX
+        MAX[0]=max
+        print("Max:%s\t GM:%s\n"%(MAX[0],gm))
         min=10
         max=0
         summe=0
         gm=1
         dis=0
-        vx+=2
-        vy+=2
+        
         print("-------------------------------Hunda---------------------------------")
+        
         for pika in range(27,36):
             dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
@@ -60,18 +65,22 @@ if bool:
             if(dis > max):
                 max = dis
             gm *= dis
+            vx+=2
+            vy+=2
         gm=gm**(1/9)    
-        global MAX2
-        MAX2=max
-        print("Max:%s\t GM:%s\n"%(MAX2,gm))
+        #global MAX2
+        #MAX2=max
+        global MAX
+        MAX[1]=max
+        print("Max:%s\t GM:%s\n"%(MAX[1],gm))
         min=10
         max=0
         summe=0
         gm=1
         dis=0
-        vx+=2
-        vy+=2
+        
         print("-------------------------------Syni Djatht---------------------------------")
+        
         for pika in range(36,42):
             dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
@@ -79,18 +88,20 @@ if bool:
             if(dis > max):
                 max = dis
             gm *= dis
+            vx+=2
+            vy+=2
         gm=gm**(1/6)    
-        global MAX3
-        MAX3=max
-        print("Max:%s\t GM:%s\n"%(MAX3,gm))
+        global MAX
+        MAX[2]=max
+        print("Max:%s\t GM:%s\n"%(MAX[2],gm))
         min=10
         max=0
         summe=0
         gm=1
         dis=0
-        vx+=2
-        vy+=2
+        
         print("-------------------------------Syni Majt---------------------------------")
+        
         for pika in range(42,48):
             dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
@@ -98,18 +109,20 @@ if bool:
             if(dis > max):
                 max = dis
             gm *= dis
+            vx+=2
+            vy+=2
         gm=gm**(1/6)    
-        global MAX4
-        MAX4=max
-        print("Max:%s\t GM:%s\n"%(MAX4,gm))
+        global MAX
+        MAX[3]=max
+        print("Max:%s\t GM:%s\n"%(MAX[3],gm))
         min=10
         max=0
         summe=0
         gm=1
         dis=0
-        vx+=2
-        vy+=2
+        
         print("-------------------------------Goja---------------------------------")
+        
         for pika in range(48,68):
             dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
@@ -117,13 +130,15 @@ if bool:
             if(dis > max):
                 max = dis
             gm *= dis
+            vx+=2
+            vy+=2
         gm=gm**(1/20)    
-        global MAX5
-        MAX5=max
-        print("Max:%s\t GM:%s\n"%(MAX5,gm))
-        vx+=2
-        vy+=2
+        global MAX
+        MAX[5]=max
+        print("Max:%s\t GM:%s\n"%(MAX[5],gm))
+        
         print("-------------------------------Total---------------------------------")
+        
         for pika in range(1,68):
             dis=math.sqrt(  abs(( (vleratx.item(pika)-myresult[vx])) * abs( (vleratx.item(pika)-myresult[vx]) )) + ( abs((vleraty.item(pika)-myresult[vy])) * abs((vleraty.item(pika)-myresult[vy]) ) ))
             if(dis < min):
@@ -131,26 +146,59 @@ if bool:
             if(dis > max):
                 max = dis
             gm *= dis
+            vx+=2
+            vy+=2
         gmT=gm**(1/68)    
         global MAX6
         MAX6=max 
         print("Max:%s\t GM:%s\n"%(MAX6,gmT))
-        vx+=2
-        vy+=2
 
         #1)  Mindestens 2 von 5 Maximumwerte sind groesser als 0.06:
+        global count
+        count = 0
+        for i in range(0,len(MAX)):
+            if max[i] > 0.06:
+                count++
+        status1=true
+        #  Wenn JA:    Nur wenn gmT kleiner als 0.01 sind sie richtig, sonst FALSCH
+        if count >= 2:
+            if gmT > 0.01:
+                global status1
+                status1 = false
          #   Wenn NEIN:  gmT muss kleiner als 0.027 sein,um RICHTIG zu sein
-          #  Wenn JA:    Nur wenn gmT kleiner als 0.01 sind sie richtig, sonst FALSCH
+        else:
+            if gmT > 0.027:
+                global status1
+                status1 = false
+       
        # 2)  Eine MAXwert groesser als 0.07:
+        count = 0
+        for i in range(0,len(MAX)):
+            if max[i] > 0.07 and < 0.084:
+                count++
+        status2=true
         #        Wenn JA:    Wenn gmT kleiner als 0.027 ist passt, sonst FALSCH
+        if count = 1:
+            if gmT > 0.027:
+                global status1
+                status1 = false
          #       Wenn 2 oder mehr: FALSCH
-        #3)  Eine MAXwert groesser als 0.084:
-         #       Wenn JA:    FALSCH
-          #      Wenn 2 oder mehr: FALSCH
+        else if count > 1:
+            global status2
+            status2 = false
+
+
+        #3)  Eine oder mehrere MAXwert groesser als 0.084:
+        for i in range(0,len(MAX)):
+            if max[i] > 0.084:
+                count ++
+        status3=true
+         #  Wenn JA: FALSCH
+         if count >=1:
+             global status3
+             status3=false
         #4)  Wenn Case 1&2 oder 2&3 eintretten:
          #       Falsch
-        #maxi=[MAX1,MAX2,MAX3,MAX4,MAX5]
-        #for M in range(1,5)
 
         
                 
