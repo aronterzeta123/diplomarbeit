@@ -4,6 +4,7 @@ import numpy as np
 import dlib
 import sys
 import os
+import time
 print("Bitte email eingeben")
 emaili=input()
 os.system('./Test %s'%(emaili+'.jpg'))
@@ -52,6 +53,10 @@ if nrFace > 0:
             cv2.imwrite(filenampererkennung,faceimg)
 elif nrFace <= 0:
     gesicht="no"
-    print("no faces found") 
+    print("no faces found, provoje edhe iher") 
+    time.sleep(2)
+    os.system('./Test %s'%(emaili+'.jpg'))
+    imagepercrop='%s'%(emaili)
+    filename=('%s'%(imagepercrop+'.jpg'))
 #if cv2.waitKey(0):
     #cv2.destroyAllWindows()

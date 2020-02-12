@@ -74,7 +74,7 @@ def getPoints(Imagename):
             vleraty1=z[1]
             vleratx1=z[0]
     elif nrFace <= 0:
-        print("\tno faces found") 
+        print("\tno faces found")
 
     ret = dict()
     ret['x'] = vleratx1

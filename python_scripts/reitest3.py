@@ -170,47 +170,59 @@ if bool:
             if MAX[i] > 0.06:
                 count+=1
         status1=True
+        status11=True
+        status2=True
+        status22=True
         #  Wenn JA:    Nur wenn gmT kleiner als 0.01 sind sie richtig, sonst FALSCH
+        if count ==1:
+            global status11
+            status11=False
         if count >= 2:
+            global status22
+            status22=False
             if gmT > 0.01:
                 global status1
                 status1 = False
          #   Wenn NEIN:  gmT muss kleiner als 0.027 sein,um RICHTIG zu sein
         else:
             if gmT > 0.027:
-                global status1
-                status1 = False
+                global status2
+                status2 = False
        
        # 2)  Eine MAXwert groesser als 0.07:
         count = 0
         for i in range(0,len(MAX)):
             if MAX[i] > 0.07 and MAX[i]< 0.084:
                 count+=1
-        status2=True
+        status3=True
+        status33=True
+        status4=True
         #        Wenn JA:    Wenn gmT kleiner als 0.027 ist passt, sonst FALSCH
         if count == 1:
+            global status33
+            status33=False
             if gmT > 0.027:
-                global status1
-                status1 = False
+                global status3
+                status3 = False
          #       Wenn 2 oder mehr: FALSCH
         elif count > 1:
-            global status2
-            status2 = False
+            global status4
+            status4 = False
 
 
         #3)  Eine oder mehrere MAXwert groesser als 0.084:
         for i in range(0,len(MAX)):
             if MAX[i] > 0.084:
                 count+=1
-        status3=True
+        status5=True
          #  Wenn JA: FALSCH
         if count >=1:
-            global status3
-            status3=False
+            global status5
+            status5=False
         #4)  Wenn Case 1&2 oder 2&3 eintretten:
          #       Falsch
-
-        if (status1==False and status2==False) or (status2==False and status3==False):
+        if status1==False or status2==False or status3==False or status4==False or status5==False or (status11==False and status33==False) or (status22==False and status33==False):
+        #if (status1==False and status2==False) or (status2==False and status3==False):
             print("Vergleich nicht erfolgreich, sie sind nicht eingeloggt!!!")
         else:
             print("Vergleich erfolgreich, Sie sind eingeloggt!!!")
