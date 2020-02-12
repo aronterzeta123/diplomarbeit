@@ -6,6 +6,7 @@ import dlib
 import sys
 import faceDetect_crop_rei as fdcr
 emailiperkrahasim=fdcr.emaili
+nofaces=""
 print(emailiperkrahasim)
 def getPoints(Imagename):
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -46,7 +47,7 @@ def getPoints(Imagename):
 
 
     if nrFace > 0:
-
+        nofaces="face"
         for face in faces:
         
             x1 = face.left() 

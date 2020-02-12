@@ -8,6 +8,7 @@ import dlib
 import reitest as rei
 conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
 mycursor=conn.cursor()
+skaftyra=rei.nofaces
 b=""
 bool=False
 bool=False
