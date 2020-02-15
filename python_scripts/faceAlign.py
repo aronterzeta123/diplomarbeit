@@ -6,16 +6,12 @@ import math
 import numpy as np
 
 
-#read image from input
-#filename=input("GIVE FILENAME:\n-------------------\n")
-
 #Read image
 image = sys.argv[1]
 filename=(image+".jpg")
 image = cv2.imread(filename)
 
 #Ähnlichkeitstransformation bei zwei aehnlichen  Punkten. Für die Berechnung der Ähnlichkeitsmatrix benötigt opencv 3 Punkte aber..
-
 #Nehmen wir den dritten Punkt des Gleichungsdreiecks mit diesen beiden gegebenen Punkten an
 def similarityTransformMat(initialPoints, destinationPoints):
         sin60 = math.sin(60*math.pi / 180)
@@ -37,7 +33,6 @@ def similarityTransformMat(initialPoints, destinationPoints):
         tform = cv2.estimateAffinePartial2D(np.array([initialPoints]), np.array([destinationPoints]))
         return tform[0]
 
-#face Alignes a facial image to a standard size. The normalization is done based on Dlib's landmark points.
 #Gesicht wird nach einem standart Groesse normalisert auf den Dlib "Landmarks" basierend
 
 def faceAlign(image, size, faceLandmarks):
@@ -96,26 +91,23 @@ def getFaceLandmarks(image, faceDetector, landmarkDetector):
 
 
 
-#check if image exists
+
+
+
+
 if image is None:
         print("can not find image")
         sys.exit()
 
-#define face detector
+#load detectors
 faceDetector = dlib.get_frontal_face_detector()
-
-#define landmark detector and load face landmark model
 landmarkDetector = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
-#get face landmarks
+#retrieve face landmarks hehe
 faceLandmarks = getFaceLandmarks(image, faceDetector, landmarkDetector)
 
-#convert to numpy array
+#zu numpy array konvertieren
 faceLandmarks = np.array(faceLandmarks)
-
-#convert image to floating point and in the range 0 to 1
-#imzh = np.float32(image)/255.0
-#print(imzh)
 
 #size of the faceAligned image
 size = (600, 600)
@@ -133,31 +125,19 @@ im = cv2.cvtColor(faceAligned, cv2.COLOR_BGR2RGB)
 #print(im)
 #gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
-#create windows to display images
-cv2.namedWindow("image", cv2.WINDOW_NORMAL)
-cv2.namedWindow("face aligned", cv2.WINDOW_NORMAL)
-
-
-
 #increase sharpness
 sKernel = np.array(([0, -1, 0],[-1, 5, -1],[0, -1, 0]), dtype="int")
-
 
 #smoothening filter
 
 kernel = np.ones((5,5),np.float32)/25
 output = cv2.filter2D(im, -1, kernel)
 
-#display images
-cv2.imshow("image", image)
-cv2.imshow("face aligned", output)
+#cv2.imshow("image", image)
+#cv2.imshow("face aligned", output)
 
 #save image
-
 imazh = cv2.imwrite("aligned"+filename,output)
 
-#press esc to exit the program
-cv2.waitKey(0)
-
-#close all the opened windows
-cv2.destroyAllWindows()
+#cv2.waitKey(0)
+#cv2.destroyAllWindows()
