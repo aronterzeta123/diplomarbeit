@@ -3,25 +3,24 @@
 import cv2
 import numpy as np
 import dlib 
-
-
+import sys
+import faceDetect_crop as fc
+import MySQLdb
+conn=MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
+mycursor=conn.cursor()
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-
-filename = "NewRei2.jpg"
-#filename=""
-#image = cv2.imread('%s',filename)
-image = cv2.imread(filename)
-if(image is None): 
+image45 = cv2.imread('%s'%(fc.filenam))
+emaili=sys.argv[1]
+if(image45 is None): 
     print("Can't open image file")
 
 #get image dimensions
-dimX = int(image.shape[0])
-dimY = int(image.shape[1]) 
+dimX = int(image45.shape[0])
+dimY = int(image45.shape[1]) 
 print("dimensionet e fotos",dimX,dimY) 
 
 #convert image into grayscale
-gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-imzh = dlib.load_rgb_image(filename)
+gray = cv2.cvtColor(image45,cv2.COLOR_BGR2GRAY)
 
 #load shape predictors to extract landmarks
 
@@ -33,9 +32,9 @@ faces_cv = face_cascade.detectMultiScale(gray,1.1,4)
 faces = detector(gray) 
 
 
-faces_dlib = dlib.cnn_face_detection_model_v1("mmod_human_face_detector.dat") 
+#faces_dlib = dlib.cnn_face_detection_model_v1("mmod_human_face_detector.dat") 
 
-dets = faces_dlib(imzh)
+#dets = faces_dlib(imzh)
 
 
 #get number of faces detected
@@ -43,14 +42,14 @@ nrFace = len(faces)
 nrFace_cv = len(faces_cv)
 print("Detected faces me dlib detector: %d" % nrFace)
 print("Detected faces me face cascade : %d" % nrFace_cv)
-
+test=("./"+fc.filenam+".jpg")
 i = 0
 coords=[]
 z=[]
 vleratx=np.zeros((68,1),dtype="float")
 vleraty=np.zeros((68,1),dtype="float")
 #get image dimensions
-height, width = image.shape[:2]
+height, width = image45.shape[:2]
 
 if nrFace_cv > 0 or nrFace > 0:
     for face in faces:
@@ -68,6 +67,7 @@ if nrFace_cv > 0 or nrFace > 0:
         coords = np.zeros((68,2),dtype="float")
 
         for d in range(0,68): 
+#image = cv2.imread('%s',filename)
             x = float(landmarks.part(d).x / width)  
             y = float(landmarks.part(d).y / height) 
             #cv2.circle(gray2, (x, y), 4, (255,0,0), -1) 
@@ -79,6 +79,13 @@ if nrFace_cv > 0 or nrFace > 0:
         z=np.hsplit(coords,2)
         vleraty=z[1]
         vleratx=z[0]
-        print(vleratx)
-elif nrFace_cv <= 0:
-    print("no faces found") 
+else:
+    print("no faces found")
+for i in range(0,68):
+    query=("update person set imagePath=%s,v%sX=%s, v%sY=%s where email=%s;")
+    param=(test,i+1,vleratx.item(i),i+1,vleraty.item(i),emaili)
+    mycursor.execute(query,param)
+    conn.commit()
+print("Successful")
+    #conn.rollback()
+    #print("Rregjistrimi i pikave nuk u kry")

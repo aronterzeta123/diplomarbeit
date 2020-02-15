@@ -5,6 +5,11 @@ import dlib
 import math
 import numpy as np
 
+<<<<<<< HEAD
+=======
+#read image from input
+#filename=input("GIVE FILENAME:\n-------------------\n")
+>>>>>>> 4ccec1acd0b67977cdaa675d254f81c5ce47433e
 
 #Read image
 image = sys.argv[1]

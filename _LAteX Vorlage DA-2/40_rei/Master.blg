@@ -1,23 +1,25 @@
 [2] Config.pm:304> INFO - This is Biber 2.13
-[2] Config.pm:307> INFO - Logfile is 'Master.blg'
-[236] biber-MSWIN64:315> INFO - === 
-[369] Biber.pm:375> INFO - Reading 'Master.bcf'
-[1097] Biber.pm:905> INFO - Found 12 citekeys in bib section 0
-[1216] Biber.pm:4196> INFO - Processing section 0
-[1223] Utils.pm:75> INFO - Globbing data source './../literatur.bib'
-[1295] Utils.pm:91> INFO - Globbed data source './../literatur.bib' to ./../literatur.bib
-[1388] Biber.pm:4373> INFO - Looking for bibtex format file './../literatur.bib' for section 0
-[1403] bibtex.pm:1462> INFO - LaTeX decoding ...
-[1445] bibtex.pm:1281> INFO - Found BibTeX data source './../literatur.bib'
-[1462] Utils.pm:300> WARN - Entry 'Linux' (./../literatur.bib): Invalid format '25.01.2012' of date field 'date' - ignoring
-[1503] Utils.pm:300> WARN - Entry 'Git' (./../literatur.bib): Invalid format '12.02.2018' of date field 'date' - ignoring
-[1543] Utils.pm:300> WARN - Entry 'StructedDesign' (./../literatur.bib): Invalid format '16.09.2018' of date field 'date' - ignoring
-[1553] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\B9uouAicHZ\literatur.bib_6900.utf8, line 8, warning: 1 characters of junk seen at toplevel
-[1553] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\B9uouAicHZ\literatur.bib_6900.utf8, line 13, warning: 1 characters of junk seen at toplevel
-[1705] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1705] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1706] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[1706] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
-[1799] bbl.pm:648> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
-[1820] bbl.pm:751> INFO - Output to Master.bbl
-[1832] Biber.pm:110> INFO - WARNINGS: 5
+[3] Config.pm:307> INFO - Logfile is 'Master.blg'
+[273] biber-MSWIN64:315> INFO - === 
+[521] Biber.pm:375> INFO - Reading 'Master.bcf'
+[1399] Biber.pm:905> INFO - Found 12 citekeys in bib section 0
+[1545] Biber.pm:4196> INFO - Processing section 0
+[1620] Utils.pm:75> INFO - Globbing data source './../literatur.bib'
+[1754] Utils.pm:91> INFO - Globbed data source './../literatur.bib' to ./../literatur.bib
+[1878] Biber.pm:4373> INFO - Looking for bibtex format file './../literatur.bib' for section 0
+[1904] bibtex.pm:1462> INFO - LaTeX decoding ...
+[2013] bibtex.pm:1281> INFO - Found BibTeX data source './../literatur.bib'
+[2034] Utils.pm:300> WARN - Entry 'Linux' (./../literatur.bib): Invalid format '25.01.2012' of date field 'date' - ignoring
+[2077] Utils.pm:300> WARN - Entry 'Git' (./../literatur.bib): Invalid format '12.02.2018' of date field 'date' - ignoring
+[2120] Utils.pm:300> WARN - Entry 'StructedDesign' (./../literatur.bib): Invalid format '16.09.2018' of date field 'date' - ignoring
+[2131] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\x2L8qkNgNP\literatur.bib_9696.utf8, line 2, warning: 11 characters of junk seen at toplevel
+[2132] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\x2L8qkNgNP\literatur.bib_9696.utf8, line 9, warning: 1 characters of junk seen at toplevel
+[2132] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\x2L8qkNgNP\literatur.bib_9696.utf8, line 14, warning: 1 characters of junk seen at toplevel
+[2132] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\x2L8qkNgNP\literatur.bib_9696.utf8, line 77, warning: 7 characters of junk seen at toplevel
+[2291] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2292] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2292] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[2293] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
+[2446] bbl.pm:648> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[2468] bbl.pm:751> INFO - Output to Master.bbl
+[2481] Biber.pm:110> INFO - WARNINGS: 7

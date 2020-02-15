@@ -18,6 +18,7 @@ bool=False
 bool=False
 myresult=""
 maxwert=0
+counter=0
 geometrischesarray=np.zeros((68,1),dtype="float")
 try:
     mycursor.execute("select * from person p join info i on p.idP = i.idP where p.email='%s'"%(var1))
@@ -36,7 +37,8 @@ if bool:
     for res in myresult:
         vx=4
         vy=5
-    arrayFoto=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg","NewAron1.jpg","NewAron3.jpg","NewAron4.jpg","Newrei1.jpg","Newrei2.jpg","NewRei1.jpg","NewRei2.jpg","Newadriano1.jpg","NewAdriano1.jpg","NewAdriano2.jpg","NewAldo1.jpg","NewAldo2.jpg","NewAldo3.jpg","NewJordi1.jpg","NewJordi2.jpg","NewEgli1.jpg","NewEgli2.jpg","Newegli1.jpg","Neworens.jpg","Neworens1.jpg"]
+    arrayFoto=["Newdrejt.jpg","NewAron.jpg","NewAron1.jpg","NewAron3.jpg","NewAron4.jpg","Newrei1.jpg","Newrei2.jpg","NewAdriano1.jpg","NewAdriano2.jpg","NewAldo1.jpg","NewAldo2.jpg","NewAldo3.jpg","NewJordi1.jpg","NewJordi2.jpg","NewEgli1.jpg","Newegli1.jpg","Neworens.jpg","Neworens1.jpg"]
+    #arrayFoto=["richtigenew.jpg","Newdrejt.jpg","NewAron.jpg","NewAron1.jpg","NewAron3.jpg","NewAron4.jpg","Newrei1.jpg","Newrei2.jpg","NewRei1.jpg","NewRei2.jpg","Newadriano1.jpg","NewAdriano1.jpg","NewAdriano2.jpg","NewAldo1.jpg","NewAldo2.jpg","NewAldo3.jpg","NewJordi1.jpg","NewJordi2.jpg","NewEgli1.jpg","NewEgli2.jpg","Newegli1.jpg","Neworens.jpg","Neworens1.jpg"]
     
     
     for f in range(0,len(arrayFoto)):
@@ -53,6 +55,8 @@ if bool:
                 vleratx1 = ret1['x']
                 vleraty1 = ret1['y']
                 min=10.0
+                global counter
+                counter+=1
                 max=0.0
                 summe=0.0
                 gm=1.0
@@ -162,5 +166,6 @@ if bool:
                 gm=gm**(1/68)    
                 print("Max:%s\t GM:%s\n"%(max,gm))
                 #print('\033[93m'+"Max: %s\t"%(max)+'\033[0m'+"GM: %s\n"%(gm))
+    print(counter)
 else:
     b="nicht existiert"

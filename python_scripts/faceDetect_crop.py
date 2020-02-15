@@ -3,14 +3,15 @@ import cv2
 import numpy as np
 import dlib
 import sys
+import selectID_UpdateBild as su
 gesicht=""
-image2=sys.argv[1]
-filename=(image2+".jpg")
+imagepercrop=su.variable3
+filename=('%s'%(imagepercrop+'.jpg'))
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 image = cv2.imread(filename)
 
-
+filenam=""
 dimX = int(image.shape[0])
 dimY = int(image.shape[1]) 
 print("dimensionet e fotos",dimX,dimY) 
@@ -45,8 +46,7 @@ if nrFace > 0:
             nr = int(r * 2) 
             faceimg = image[ny:ny+nr, nx:nx+nr] 
             filenam=("New"+filename)
-            image3 = cv2.imwrite(filenam,faceimg)
-
+            cv2.imwrite(filenam,faceimg)
 elif nrFace <= 0:
     gesicht="no"
     print("no faces found") 

@@ -5,8 +5,8 @@ def insert_procedure(curs):
     curs.execute("DROP PROCEDURE IF EXISTS addCol")
     curs.execute("""CREATE PROCEDURE addCol(IN name VARCHAR(50))
                     BEGIN
-                        ALTER TABLE info
-                        ADD name VARCHAR(50) NOT NULL;p
+                        ALTER TABLE person
+                        ADD name VARCHAR(50) NOT NULL;
                 """)
 
 def call_procedure(curs, value, vl):
@@ -16,30 +16,27 @@ def call_procedure(curs, value, vl):
     #curs.execute(add, data)
 
 try:
-    conn = MySQLdb.connect('','','127.0.0.1','diploma')
+    conn = MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
     curs = conn.cursor()
     print ("Database Working")
 except:
-    conn = MySQLdb.connect('','','127.0.0.1','backup')
+    conn = MySQLdb.connect('localhost','aronterzeta','aronterzeta','test')
     curs = conn.cursor()
     print ("Backup Database Working")
 
 try:
-    for x in range(16,64):
+    for x in range(1,69):
         valueX = "'v"+str(x)+"X'"
         valueY = "'v"+str(x)+"Y'"    
     
-<<<<<<< HEAD
-        curs.execute("SET @s1=CONCAT('ALTER table info add column `',%s,'` double');" % (valueX))
-=======
-        curs.execute("SET @s1=CONCAT('ALTER table info add column `',%s,'` VARCHAR(50)');" % ("'bo'"))
-        curs.execute("SET @s1=CONCAT('ALTER table info add column `',%s,'` VARCHAR(50)');" % (valueX))
->>>>>>> d865ed046bf013b87c3fe8f23431e1479fac7103
+        curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` double');" % (valueX))
+        curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` double');" % ("'bo'"))
+        curs.execute("SET @s1=CONCAT('ALTER table person add column `',%s,'` double');" % (valueX))
         curs.execute("Prepare stmt1 from @s1;")
         curs.execute("execute stmt1;")
         curs.execute("deallocate prepare stmt1;")
     
-        curs.execute("SET @s2=CONCAT('ALTER table info add column `',%s,'` VARCHAR(50)');" % (valueY))
+        curs.execute("SET @s2=CONCAT('ALTER table person add column `',%s,'` double');" % (valueY))
         curs.execute("Prepare stmt2 from @s2;")
         curs.execute("execute stmt2;")
         curs.execute("deallocate prepare stmt2;")

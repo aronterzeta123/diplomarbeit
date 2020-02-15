@@ -4,6 +4,7 @@ import time
 import os
 import subprocess
 import sys
+from getpass import getpass
 #from Person_Registrierung import (variable3)
 #os.system("./enter.sh")
 GPIO.setmode(GPIO.BCM)
@@ -21,7 +22,7 @@ while True:
     if GPIO.input(18):
         os.system('./fehlerlog_Gesichtsregistrierung.py')
         print("Password for admin please :")
-        inputpasw=input()
+        inputpasw=getpass()
         if(inputpasw == correctpaswadmin):
             os.system('./fehlerlog_Gesichtsregistrierung_admin.py')
         #os.system('./Test '+(image2)+".jpg")
@@ -32,7 +33,8 @@ while True:
             print(variable3)
             if (a=="inserted values"):
                 os.system('./Test '+(variable3)+".jpg")
-                os.system('./selectID_UpdateBild.py '+(variable3))
+                #os.system('./selectID_UpdateBild.py '+(variable3)) 
+                os.system('./68fLandmarks.py %s'%(variable3))
                 GPIO.output(23,GPIO.HIGH)
                 time.sleep(1.5)
                 GPIO.output(23,GPIO.LOW)
@@ -51,8 +53,8 @@ while True:
         #exit()
     if GPIO.input(17):
         os.system('./Log_Erkennung_TasterGed.py')
-        exec(open('Existiert_nExistiert.py').read())
-        if b=="existiert":
+        exec(open('reitest3.py').read())
+        if b=="existiert" and skaftyra=="face":
             GPIO.output(27,GPIO.HIGH)
             time.sleep(1.5)
             GPIO.output(27,GPIO.LOW)
