@@ -11,6 +11,7 @@
 
 \usepackage[pdftex]{graphicx}
 \usepackage{nomencl}
+\usepackage{listings}
 \usepackage[defernumbers=true, backend=biber]{biblatex}
 \usepackage[hypcap]{caption} %for pdf export hyperlinks
 \usepackage{fancyhdr}
@@ -29,7 +30,7 @@
 \usepackage{eso-pic} %Background Image
 \usepackage{lastpage} %Ermittlung der letzten Seite
 \usepackage{float}
-%Fußnoten forltaufend nummerieren
+%Fußnoten fortlaufend nummerieren
 \usepackage{chngcntr}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -57,7 +58,7 @@
 \makenomenclature
 \addbibresource{./../literatur.bib}
 
- 
+ \nomenclature{$LED$}{"Light Emittent Diode"}
 
 \geometry{a4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
 \setlength{\parskip}{3pt plus 1pt minus 0pt}       % vert. space before a paragraph
@@ -92,7 +93,7 @@
 
 
 
-\mainmatter
+\mainmatter 
 %configure Header & Footer
 \fancypagestyle{plan}{
 	\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
