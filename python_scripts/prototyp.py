@@ -56,6 +56,7 @@ while True:
         exec(open('reitest3.py').read())
         if b=="existiert" and skaftyra=="face":
             GPIO.output(27,GPIO.HIGH)
+
             time.sleep(1.5)
             GPIO.output(27,GPIO.LOW)
         else:

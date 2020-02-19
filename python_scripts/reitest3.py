@@ -2,6 +2,7 @@
 import cv2
 import MySQLdb
 import sys
+import os
 import math
 import numpy as np
 import dlib
@@ -24,11 +25,12 @@ for x in myresult:
         bool=True
     else:
         bool=False
+        os.system('./Log_Erkennung_Email_Nicht_Gefunden.py')
+
 #except:
     #print ("Select Statement nicht gut")
 if bool:
     #os.system('./Log_Erkennung_PersonExistiert.py')
-    b="existiert"
     for res in myresult:
         print(res[5])
         vx=5
@@ -225,8 +227,11 @@ if bool:
         if status1==False or status2==False or status3==False or status4==False or status5==False or (status11==False and status33==False) or (status22==False and status33==False):
         #if (status1==False and status2==False) or (status2==False and status3==False):
             print("Vergleich nicht erfolgreich, sie sind nicht eingeloggt!!!")
+            os.system('./Log_Erkennung_Person_Existiert_Nicht.py')
         else:
+            b="existiert"
             print("Vergleich erfolgreich, Sie sind eingeloggt!!!")
+            os.system('./Log_Erkennung_Person_Existiert.py')
                 
 else:
     b="nicht existiert"
