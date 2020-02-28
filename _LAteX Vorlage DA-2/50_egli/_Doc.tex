@@ -210,6 +210,7 @@ Mit imwrite wird das Image gespeichert. Auf Abb.\ref{fig:aroncropped} sieht man 
 
 \begin{figure}[H]
 \includegraphics[scale=0.6]{\ordnerfigures aroncropped.jpg}
+\centering
 \caption{abgeschnittenes Gesicht}
 \label{fig:aroncropped}
 \end{figure}
@@ -228,14 +229,10 @@ Dieser Methode werden viele Trainingsdaten hinzugefügt womit es ein Kombination
 Dadurch werden unsere gewünschten 68 Gesichtsmarkierungen mit hohen Vorhersagbarkeit extrahiert und als x,y Koordinaten weitergegeben. 
 Die Indizes der 68 Koordinaten sind in der Abb.\ref{fig:landmarks} dargestellt:\\
 
-
-
-
 \begin{figure}[H]
 	\includegraphics[scale=0.8]{\ordnerfigures landmarks.png}
-	\caption{Facial Landmarks}
-	\label{fig:landmarks}
-	\cite{Kazemi2014OneMF}
+	\centering
+	\caption{Facial Landmarks\cite{Kazemi2014OneMF}
 \end{figure}
 
 Nachdem wir der „Predictor“ geladen haben speichern wir sie in einem Formobjekt mit 68(x,y) Koordinaten. \\
