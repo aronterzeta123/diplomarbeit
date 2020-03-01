@@ -46,21 +46,3 @@
 \contentsline {subsubsection}{Umsetzung in Code}{34}{section*.35}% 
 \contentsline {subsection}{\numberline {6.2.3}Gesichtsdetektion und Zuschneiden}{35}{subsection.6.2.3}% 
 \contentsline {subsection}{\numberline {6.2.4}Gesichtsschl\IeC {\"u}sselpunkte Extraktion}{35}{subsection.6.2.4}% 
-\contentsline {section}{\numberline {6.3}Herausforderungen, Probleme und deren L\IeC {\"o}sung }{38}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}Qualit\IeC {\"a}tssicherung, Controlling}{39}{section.6.4}% 
-\contentsline {section}{\numberline {6.5}Ergebnise}{39}{section.6.5}% 
-\contentsline {chapter}{\numberline {7}Gesichtserkennung - Rei}{41}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}Allgemeines}{41}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}Technische L\IeC {\"o}sung}{42}{section.7.2}% 
-\contentsline {subsection}{\numberline {7.2.1}Hardware und Aufbau}{42}{subsection.7.2.1}% 
-\contentsline {subsubsection}{Bauteile und HW-Komponenten}{42}{section*.40}% 
-\contentsline {subsubsection}{Schaltplan und Erkl\IeC {\"a}rung des Aufbaus}{44}{section*.41}% 
-\contentsline {subsection}{\numberline {7.2.2}Software}{45}{subsection.7.2.2}% 
-\contentsline {subsubsection}{Verwendete Betriebssysteme, Programmiersprachen, Frameworks, Technologien und Planungsmethoden}{45}{section*.43}% 
-\contentsline {subsubsection}{L\IeC {\"o}sungsweg- Beschreibung und Erkl\IeC {\"a}rung}{50}{section*.52}% 
-\contentsline {section}{\numberline {7.3}Herausforderungen, Probleme, und deren L\IeC {\"o}sung}{54}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}Projektmanagement und Controlling}{54}{section.7.4}% 
-\contentsline {section}{\numberline {7.5}Ergebnisse}{56}{section.7.5}% 
-\contentsline {chapter}{\numberline {8}Planung vs Realisierung}{57}{chapter.8}% 
-\contentsline {chapter}{\numberline {9}Evaluierung und Res\IeC {\"u}mee}{60}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}Wertsch\IeC {\"o}pfung und Lessons Learned}{60}{section.9.1}% 
