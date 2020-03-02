@@ -2129,26 +2129,6 @@
     <bcf:datasource type="file" datatype="bibtex">./../literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Linux</bcf:citekey>
-    <bcf:citekey order="2">DebianBild</bcf:citekey>
-    <bcf:citekey order="3">DebianBild</bcf:citekey>
-    <bcf:citekey order="4">PythonBild</bcf:citekey>
-    <bcf:citekey order="5">PythonBild</bcf:citekey>
-    <bcf:citekey order="6">OpenCV</bcf:citekey>
-    <bcf:citekey order="7">OpenCVBild</bcf:citekey>
-    <bcf:citekey order="8">OpenCVBild</bcf:citekey>
-    <bcf:citekey order="9">Git</bcf:citekey>
-    <bcf:citekey order="10">GitBild</bcf:citekey>
-    <bcf:citekey order="11">GitBild</bcf:citekey>
-    <bcf:citekey order="12">RaspberryBild</bcf:citekey>
-    <bcf:citekey order="13">RaspberryBild</bcf:citekey>
-    <bcf:citekey order="14">FritzingBild</bcf:citekey>
-    <bcf:citekey order="15">FritzingBild</bcf:citekey>
-    <bcf:citekey order="16">MysqlBild</bcf:citekey>
-    <bcf:citekey order="17">MysqlBild</bcf:citekey>
-    <bcf:citekey order="18">MariadbBild</bcf:citekey>
-    <bcf:citekey order="19">MariadbBild</bcf:citekey>
-    <bcf:citekey order="20">StructedDesign</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
