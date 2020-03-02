@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.4)  21 JAN 2020 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.4)  28 FEB 2020 09:07
 entering extended mode
 **./Master.tex
 (Master.tex
@@ -1078,10 +1078,6 @@ tion.
 Package biblatex Warning: citation 'Kazemi2014OneMF' was not found at all in th
 e .bbl, bibliography labels cannot be generated, please correct the citation.
 
-
-Package biblatex Warning: citation 'fmea' was not found at all in the .bbl, bib
-liography labels cannot be generated, please correct the citation.
-
 Package biblatex Info: Reference section=0 on input line 60.
 Package biblatex Info: Reference segment=0 on input line 60.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1244,7 +1240,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 60.
  (_Doc_A.tex) (01_title.tex
-<./figures/Header_Seite.png, id=51, 137.01187pt x 48.18pt>
+<./figures/Header_Seite.png, id=39, 137.01187pt x 48.18pt>
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 7.
@@ -1254,7 +1250,7 @@ Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 7.
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 27.
 
-<./../50_egli/figures/Frontpage_back.png, id=52, 716.6775pt x 403.5075pt>
+<./../50_egli/figures/Frontpage_back.png, id=40, 716.6775pt x 403.5075pt>
 File: ./../50_egli/figures/Frontpage_back.png Graphic file (type png)
 <use ./../50_egli/figures/Frontpage_back.png>
 Package pdftex.def Info: ./../50_egli/figures/Frontpage_back.png  used on input
@@ -1328,7 +1324,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
 LaTeX Warning: Citation 'opencv_library' on page 2 undefined on input line 40.
 
-<./../50_egli/figures/opencv.png, id=81, 513.92pt x 513.92pt>
+<./../50_egli/figures/opencv.png, id=66, 513.92pt x 513.92pt>
 File: ./../50_egli/figures/opencv.png Graphic file (type png)
 <use ./../50_egli/figures/opencv.png>
 Package pdftex.def Info: ./../50_egli/figures/opencv.png  used on input line 43
@@ -1346,7 +1342,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--47
 LaTeX Warning: Citation '2019arXiv190710121V-scipy' on page 2 undefined on inpu
 t line 51.
 
-<./../50_egli/figures/numpy.png, id=83, 225.84375pt x 225.84375pt>
+<./../50_egli/figures/numpy.png, id=68, 225.84375pt x 225.84375pt>
 File: ./../50_egli/figures/numpy.png Graphic file (type png)
 <use ./../50_egli/figures/numpy.png>
 Package pdftex.def Info: ./../50_egli/figures/numpy.png  used on input line 59.
@@ -1379,7 +1375,7 @@ This may cause the page layout to be inconsistent, however.
 
 LaTeX Warning: Citation 'dlib' on page 3 undefined on input line 66.
 
-<./../50_egli/figures/dlib.png, id=93, 479.391pt x 342.078pt>
+<./../50_egli/figures/dlib.png, id=78, 479.391pt x 342.078pt>
 File: ./../50_egli/figures/dlib.png Graphic file (type png)
 <use ./../50_egli/figures/dlib.png>
 Package pdftex.def Info: ./../50_egli/figures/dlib.png  used on input line 70.
@@ -1417,7 +1413,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 88.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [3 <./../50_egli/figures/numpy.png> <./../50_egli/figures/dlib.png>]
-<./../50_egli/figures/bildverarbeitung.png, id=103, 1085.05376pt x 885.3075pt>
+<./../50_egli/figures/bildverarbeitung.png, id=88, 1085.05376pt x 885.3075pt>
 File: ./../50_egli/figures/bildverarbeitung.png Graphic file (type png)
 <use ./../50_egli/figures/bildverarbeitung.png>
 Package pdftex.def Info: ./../50_egli/figures/bildverarbeitung.png  used on inp
@@ -1476,7 +1472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--126
 
  []
 
-<./../50_egli/figures/haar_features.jpg, id=125, 321.2pt x 272.01625pt>
+<./../50_egli/figures/haar_features.jpg, id=110, 321.2pt x 272.01625pt>
 File: ./../50_egli/figures/haar_features.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/haar_features.jpg>
 Package pdftex.def Info: ./../50_egli/figures/haar_features.jpg  used on input 
@@ -1496,7 +1492,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 136.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [6]
-<./../50_egli/figures/haar.png, id=132, 335.2525pt x 203.76125pt>
+<./../50_egli/figures/haar.png, id=117, 335.2525pt x 203.76125pt>
 File: ./../50_egli/figures/haar.png Graphic file (type png)
 <use ./../50_egli/figures/haar.png>
 Package pdftex.def Info: ./../50_egli/figures/haar.png  used on input line 140.
@@ -1533,7 +1529,7 @@ Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 150.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [7 <./../50_egli/figures/haar_features.jpg> <./../50_egli/figures/haar.png (PNG
  copy)>]
-<./../50_egli/figures/aronfd.png, id=139, 324.46219pt x 261.97874pt>
+<./../50_egli/figures/aronfd.png, id=124, 324.46219pt x 261.97874pt>
 File: ./../50_egli/figures/aronfd.png Graphic file (type png)
 <use ./../50_egli/figures/aronfd.png>
 Package pdftex.def Info: ./../50_egli/figures/aronfd.png  used on input line 17
@@ -1568,162 +1564,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
  []
 
-<./../50_egli/figures/aroncropped.jpg, id=162, 155.58125pt x 155.58125pt>
+<./../50_egli/figures/aroncropped.jpg, id=147, 155.58125pt x 155.58125pt>
 File: ./../50_egli/figures/aroncropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/aroncropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/aroncropped.jpg  used on input li
 ne 212.
 (pdftex.def)             Requested size: 93.34946pt x 93.34946pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 223.
+(Font)              <7> on input line 224.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 223.
-
-LaTeX Warning: Citation 'Kazemi2014OneMF' on page 9 undefined on input line 224
-.
-
+(Font)              <5> on input line 224.
 
 LaTeX Warning: Citation 'Kazemi2014OneMF' on page 9 undefined on input line 225
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--226
+LaTeX Warning: Citation 'Kazemi2014OneMF' on page 9 undefined on input line 226
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--226
+Underfull \hbox (badness 10000) in paragraph at lines 221--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--226
+Underfull \hbox (badness 10000) in paragraph at lines 221--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--226
+Underfull \hbox (badness 10000) in paragraph at lines 221--227
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 226.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 227.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [9 <./../50_egli/figures/aroncropped.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+LaTeX Warning: Reference `fig:landmarks' on page 10 undefined on input line 230
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
-<./../50_egli/figures/landmarks.png, id=186, 415.5525pt x 395.4775pt>
+<./../50_egli/figures/landmarks.png, id=169, 415.5525pt x 395.4775pt>
 File: ./../50_egli/figures/landmarks.png Graphic file (type png)
 <use ./../50_egli/figures/landmarks.png>
 Package pdftex.def Info: ./../50_egli/figures/landmarks.png  used on input line
- 235.
+ 233.
 (pdftex.def)             Requested size: 332.44244pt x 316.38243pt.
+)
+Runaway argument?
+{Facial Landmarks\cite {Kazemi2014OneMF} \end {figure} \par Nachdem w\ETC.
+! File ended while scanning use of \caption@xdblarg.
+<inserted text> 
+                \par 
+l.100 \input{./_Doc.tex}
+                        
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
 
-LaTeX Warning: Citation 'Kazemi2014OneMF' on page 10 undefined on input line 23
-8.
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 240.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 241--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--247
-
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 252.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[11 <./../50_egli/figures/landmarks.png (PNG copy)>]
-Overfull \hbox (9.22018pt too wide) in paragraph at lines 269--269
-[]\OT1/cmr/bx/n/17.28 Herausforderungen, Pro-ble-me und de-ren L[]osung 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--276
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--276
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--280
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--280
-
- []
-
-
-LaTeX Warning: Citation 'fmea' on page 12 undefined on input line 284.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--287
-
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 287.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--317
-
- []
-
-) (_Doc_App.tex)
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 107.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [13]
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 107.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [14] (Master.lof)
+(_Doc_App.tex) (Master.lof)
 \tf@lof=\write7
 \openout7 = `Master.lof'.
 
- [15
-
-
-] (Master.lot)
+ (Master.lot)
 \tf@lot=\write8
 \openout8 = `Master.lot'.
 
- [16
 
-]
 
 Package biblatex Warning: Type 'masterthesis' not found on input line 116.
 
@@ -1753,16 +1673,26 @@ LaTeX Warning: Empty bibliography on input line 120.
 
 
 AED: lastpage setting LastPage
-[17
 
-]
+! LaTeX Error: \begin{figure} on input line 232 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
- (Master.aux)
+(Master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: E82C6CDC5754F6B849DB8B6F9BCA9177;936.
+(rerunfilecheck)             Checksum: 091D2CE09A9238397A65A0DEB879C765;701.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1778,28 +1708,53 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'Master.run.xml'.
 \openout1 = `Master.run.xml'.
 
- ) 
+! You can't use `\end' in internal vertical mode.
+\enddocument ...cumenthook \deadcycles \z@ \@@end 
+                                                  
+l.122 \end{document}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: \begin{figure} on input line 232 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.122 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> ./Master.tex
+                
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 31055 strings out of 492895
- 582493 string characters out of 3124202
- 1078604 words of memory out of 3000000
- 34554 multiletter control sequences out of 15000+200000
+ 31017 strings out of 492895
+ 582209 string characters out of 3124202
+ 1078539 words of memory out of 3000000
+ 34551 multiletter control sequences out of 15000+200000
  541748 words of font info for 58 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  57i,16n,100p,852b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmcsc10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/USER/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/USER/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/
-USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pf
-b><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb>
-Output written on Master.pdf (19 pages, 1154040 bytes).
-PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+!  ==> Fatal error occurred, no output PDF file produced!

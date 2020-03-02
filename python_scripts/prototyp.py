@@ -53,9 +53,10 @@ while True:
         #exit()
     if GPIO.input(17):
         os.system('./Log_Erkennung_TasterGed.py')
-        exec(open('Existiert_nExistiert.py').read())
-        if b=="existiert":
+        exec(open('reitest3.py').read())
+        if b=="existiert" and skaftyra=="face":
             GPIO.output(27,GPIO.HIGH)
+
             time.sleep(1.5)
             GPIO.output(27,GPIO.LOW)
         else:
