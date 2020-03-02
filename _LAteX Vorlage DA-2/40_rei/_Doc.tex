@@ -53,112 +53,75 @@ Wie der Schaltplan zeigt, besteht das System aus zwei LEDs, zwei Tastern, einem 
 Der erste Taster dient für die Gesichtsregistrierung und besteht aus einem Pluspol, einem Datenleiter und aus dem Minuspol. Der Pluspol Anschluss wird mittels Steckplatine mit dem 5-Volt Pin des Raspberry Pi verbunden, während der Minuspol Anschluss mit dem Minuspol der Steckplatine verbunden wird. Der Datenanschluss ist mit dem GPIO18 Pin verbunden. Wie bei dem Registrierungs-Taster wird auch bei dem Erkennungstaster\footnote{Auch als Login Taster genannt} der Minuspol Anschluss mit einem Pin des Minusbereichs der Steckplatine verbunden. Der Pluspol Anschluss gehört zu dem 5-Volt Pin des Raspberry PI, während der Datenanschluss mit dem GPIO17 Pin verbunden sind. Die rote LED wird verwendet wenn die Registrierung oder Erkennung der Benutzer im System nicht erfolgreich war. Das längere Bein(die Anode) wird mit dem GPIO23 Pin des Raspberry verbunden, während die Kathode mit dem Minuspol Bereich der Steckplatine verbunden wird. Die grüne LED ist eine RGB(Red Green Blue) LED. Diese LED kann die Farbe ändern, und wird im Fall einer erfolgreichen Registrierung oder Erkennung des Benutzers im System verwendet. Sie hat im Gegensatz zu der normalen LED 3 Anschlüsse. Der Minus Anschluss wird in dem Minuspol Bereich der Steckplatine eingeschlossen und der Pluspol Anschluss wird mit dem Pluspol Bereich der Steckplatine verbunden. Mit dem GPIO27 Pin des Raspberry wird der Datenanschluss verbunden. Die GPIO Pins sind extrem wichtig für die Integration der Tastern, LEDs und der anderen Bauteile in dem technischen und logischen Teil bzw. in der Software und in den verwendeten Skripten.	
 \subsection{Software}
 Nachdem der Aufbau und die verwendete Hardware des Systems beschrieben wurden, ist die Software dran. In diesem Unterkapitel wird alles was mit der logische Teil der Umsetzung zu tun hat: das verwendete Betriebssysteme, Programmiersprachen, Frameworks, Technologien und Planungsmethoden. Es wird jede Aufgabe zusammen mit der zugehörigen Lösung im Detail beschrieben und jedes programmiertes Skript erklärt.
-\subsubsection{Verwendete Betriebssysteme, Programmiersprachen, Frameworks, Technologien und Planungsmethoden}
-In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umsetzung verschiedene Technologien,  Frameworks und Planungsmethoden verwendet.
-\begin{enumerate}
-	\item \textit{Betriebssystem und Programmiersprache} \\
-	\begin{itemize}
-		\item Linux(Debian) \\
-		Linux ist ein von die wichtigsten Betriebssystemen die zur Verfügung stehen. Linux wird meistens für Programmierungs- und Konfigurationszwecke. Die wichtigsten Bestandteile eines Betriebssystems sind der Bootloader, der Kernel, und das Init System. Linux würde für die Umsetzung dieses Projekts gewählt, obwohl es auch andere Möglichkeiten wie zum Beispiel Microsoft Windows gab. Die Gründe dieser Wahl sind die folgende: 
-		\begin{itemize}
-			\item Open Source und freie Software \\
-			Linux wurde genutzt, weil es komplett kostenlos benutzt werden kann und weil es ein Open Source Betriebssystem ist. Vorteile eines Open Source Betriebssystems sind die niedrige Kosten, die hohe Sicherheit, die Transparenz und die Zuverlässigkeit. Was noch erwähnt zu werden ist, ist die gute Reputation der Open Source Software, weil nur hoch qualifizierte Entwickler mit ihnen sich beschäftigen.
+\subsubsection{Verwendete Technologien}
+In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umsetzung 2 verschiedene Technologien verwendet, die in den anderen Teilen nicht oder anders verwendet sind.
+
+%\begin{itemize}
+		%\item Linux(Debian) \\
+		%Linux ist ein von die wichtigsten Betriebssystemen die zur Verfügung stehen. Linux wird meistens für Programmierungs- und Konfigurationszwecke. Die wichtigsten Bestandteile eines Betriebssystems sind der Bootloader, der Kernel, und das Init System. Linux würde für die Umsetzung dieses Projekts gewählt, obwohl es auch andere Möglichkeiten wie zum Beispiel Microsoft Windows gab. Die Gründe dieser Wahl sind die folgende: 
+		%\begin{itemize}
+		%	\item Open Source und freie Software \\
+			%Linux wurde genutzt, weil es komplett kostenlos benutzt werden kann und weil es ein Open Source Betriebssystem ist. Vorteile eines Open Source Betriebssystems sind die niedrige Kosten, die hohe Sicherheit, die Transparenz und die Zuverlässigkeit. Was noch erwähnt zu werden ist, ist die gute Reputation der Open Source Software, weil nur hoch qualifizierte Entwickler mit ihnen sich beschäftigen.
 			%https://wiki.opensourceecology.de/Vorteile/Nachteile_von_Open_Source_Software
-			\item Hohe Sicherheit \\
-			Für dieses Projekt ist Sicherheit sehr wichtig, und Linux bietet eine hohe Sicherheit. Es gibt keine Viren und sehr kleine Absturz Wahrscheinlichkeiten. Ein Backup ist auch sehr leicht machbar.
-			\item Vielfältigkeit an Möglichkeiten und Benutzerfreiheit \\
-			Linux wurde auch aufgrund der angebotenen Benutzerfreiheit und Benutzerfreundlichkeit verwendet. Beliebige Systemkonfigurationen, verschiedene Gesichtserkennungspakete(OpenCV\footnote{Open Computer Vision}) und andere Programme oder Technologien(Fritzing) sind von Linux leichter und günstiger erhältlich als bei anderen Betriebssystemen. Endlich ist der Raspberry PI auch kompatibler mit Linux.
-			Als Linux Distribution wurde Debian gewählt. Gründe dafür sind die große Menge der angebotenen Pakete, die hohe Geschwindigkeit und die schnelle Fehlerkorrektur. 
-			\cite{Linux}
-			\begin{figure}[H]
-				\includegraphics[scale=0.5]{\ordnerfigures debian.jpg}
-				\centering
-				\caption{Debian\cite{DebianBild}}
-			\end{figure}	
-		\end{itemize}
+		%	\item Hohe Sicherheit \\
+			%Für dieses Projekt ist Sicherheit sehr wichtig, und Linux bietet eine hohe Sicherheit. Es gibt keine Viren und sehr kleine Absturz Wahrscheinlichkeiten. Ein Backup ist auch sehr leicht machbar.
+		%	\item Vielfältigkeit an Möglichkeiten und Benutzerfreiheit \\
+			%Linux wurde auch aufgrund der angebotenen Benutzerfreiheit und Benutzerfreundlichkeit verwendet. Beliebige Systemkonfigurationen, verschiedene Gesichtserkennungspakete(OpenCV\footnote{Open Computer Vision}) und andere Programme oder Technologien(Fritzing) sind von Linux leichter und günstiger erhältlich als bei anderen Betriebssystemen. Endlich ist der Raspberry PI auch kompatibler mit Linux.
+			%Als Linux Distribution wurde Debian gewählt. Gründe dafür sind die große Menge der angebotenen Pakete, die hohe Geschwindigkeit und die schnelle Fehlerkorrektur. 
+			%\cite{Linux}	
+		%\end{itemize}
 		
-		\item Python \\
-		Die gewählte Programmiersprache ist Python. Der wichtigste Grund dieser Wahl ist die einfache Verwendung der OPEN-CV Pakete für die Gesichtserkennung Algorithmen. Im Vergleich zu C werden die OpenCV Bibliotheken und Programmen viel leichter und schneller eingebunden. Python hat auch Vorteile im Bezug auf Skripten Einbindung oder Skripten Aufruf, weil ein oder zwei Output Parametern reichen würden, um zwei Skripten miteinander zu verbinden(Variablen, Funktionen usw. importieren). Es wurde Python Version 3 verwendet.
-		\begin{figure}[H]
-			\includegraphics[scale=0.5]{\ordnerfigures Python.jpg}
-			\centering
-			\caption{Python\cite{PythonBild}}
-		\end{figure}
-	\end{itemize}
-	\item \textit{Frameworks} \\
-	In diesem Projekt werden einige Frameworks verwendet, die weiter unten beschrieben werden.
+		%\item Python \\
+		%Die gewählte Programmiersprache ist Python. Der wichtigste Grund dieser Wahl ist die einfache Verwendung der OPEN-CV Pakete für die Gesichtserkennung Algorithmen. Im Vergleich zu C werden die OpenCV Bibliotheken und Programmen viel leichter und schneller eingebunden. Python hat auch Vorteile im Bezug auf Skripten Einbindung oder Skripten Aufruf, weil ein oder zwei Output Parametern reichen würden, um zwei Skripten miteinander zu verbinden(Variablen, Funktionen usw. importieren). Es wurde Python Version 3 verwendet.
+%	\end{itemize}
+	%\item \textit{Frameworks} \\
+	%In diesem Projekt werden einige Frameworks verwendet, die weiter unten beschrieben werden.
 	\begin{itemize}
 		\item Open CV \\
 		Das wichtigste Framework für dieses Projekt ist OpenCV. OpenCV ist eine Softwarebibliothek, die für Computer-Vision und maschinelles Lernen verwendet wird. Die Bibliothek verfügt über mehr als 2500 optimierte Algorithmen, die sowohl klassische als auch moderne Computer Vision- und maschinelle Lernalgorithmen umfassen. Diese Algorithmen können verwendet werden, um Gesichter zu registrieren und zu erkennen, um Objekte zu identifizieren, menschliche Handlungen in Videos zu klassifizieren und Kamerabewegungen zu verfolgen. Dieses Framework wurde deswegen gewählt, weil die Vielfältigkeit der angebotenen Optionen und Paketen einfach größer ist als bei anderen Frameworks. Ein anderer Vorteil ist das OpenCV Open-Source ist. Die größte Herausforderung ist die lange und komplizierte Installation auf Linux.
-		\cite{OpenCV}
-		\begin{figure}[H]
-			\includegraphics[scale=0.5]{\ordnerfigures opencv.png}
-			\centering
-			\caption{Open CV\cite{OpenCVBild}}
-		\end{figure}
-		\item Git \\
-		Git ist ein Versionsverwaltungssystem, das  für das Back-Up des Systems verwendet wurde. Dieses Framework ist ein verteiltes Versionsverwaltungssystem, das heißt, die unterschiedlichen Versionen der Dateien werden effizient gespeichert, in dem die ganze Repository vom Server kopiert wird. Dieses erlaubt dem Benutzer lokal zu arbeiten, und alle Änderungen nachträglich am Server zu aktualisieren. Nicht nur das, sondern auch die hohe Geschwindigkeit der Fehlerfindung und die perfekte Unterstützung von großen Projekten, in dem alle Teammitgliedern auf alle Daten Zugriff haben, waren die Gründe, warum Git für das Back-Up des Systems gewählt wurde.
-		\cite{Git}
-		\begin{figure}[H]
-			\includegraphics[scale=0.5]{\ordnerfigures Git.png}
-			\centering
-			\caption{Git\cite{GitBild}}
-		\end{figure}
-	\end{itemize}
-	\item \textit{Technologien} \\
-	Das System braucht auch ein paar Technologien für die Umsetzung. Unter Technologien versteht man die Programme, die Systeme und die spezielle Komponenten, die benutzt worden sind.
-	\begin{itemize}
-		\item Raspberry Pi \\
-		Wie es vorher erwähnt wurde in dem Gesichtserkennung Teil des Projekts statt ein Computer ein Raspberry Pi verwendet. Was ein Raspberry Pi ist wurde in dem Kapitel 7.2.1 erklärt. Die wichtigsten Gründe dieser Wahl werden aber erst jetzt genannt. Der kleinere Platzbedarf und die hohe Flexibilität des Raspberry PI sind wesentliche Vorteile. Die Bestandteile bewegen sich nicht, und es gibt keinen Lärm. Was sehr beliebt ist, ist, dass der Raspberry PI gleichzeitig für die Hardware(GPIO PINS) und die Software(wie ein normaler Computer) verwendet werden kann. Er unterstützt Linux(Raspbian) sehr gut. Ein der wichtigsten Gründe dieser Wahl ist auch, dass im Fall eines Fehlers ein Raspberry PI sehr schnell und problemlos geändert oder repariert werden kann. (Gibt es ein Problem mit der SD-Karte, dann muss sie geändert werden, und dann kann die Hardware wieder ganz normal genutzt werden. Wenn es ein Hardware Problem gibt, dann muss die alte SD-Karte in eine neue SD-Karte kloniert werden und nur ein anderes Raspberry verwendet werden. Somit sind alle Daten gespeichert und es ist möglich, mit Hilfe des anderen Raspberry Pi, sie zuzugreifen)
-		\begin{figure}[H]
-			\includegraphics[scale=0.5]{\ordnerfigures RaspberryPi.jpg}
-			\centering
-			\caption{Raspberry Pi\cite{RaspberryBild}}
-		\end{figure}
+		%\cite{OpenCV}
+		%\begin{figure}[H]
+		%	\includegraphics[scale=0.5]{\ordnerfigures opencv.png}
+			%\centering
+			%\caption{Open CV\cite{OpenCVBild}}
+	%	\end{figure}
+		%\item Git \\
+		%Git ist ein Versionsverwaltungssystem, das  für das Back-Up des Systems verwendet wurde. Dieses Framework ist ein verteiltes Versionsverwaltungssystem, das heißt, die unterschiedlichen Versionen der Dateien werden effizient gespeichert, in dem die ganze Repository vom Server kopiert wird. Dieses erlaubt dem Benutzer lokal zu arbeiten, und alle Änderungen nachträglich am Server zu aktualisieren. Nicht nur das, sondern auch die hohe Geschwindigkeit der Fehlerfindung und die perfekte Unterstützung von großen Projekten, in dem alle Teammitgliedern auf alle Daten Zugriff haben, waren die Gründe, warum Git für das Back-Up des Systems gewählt wurde.	
+%	\end{itemize}
+	%\item \textit{Technologien} \\
+	%Das System braucht auch ein paar Technologien für die Umsetzung. Unter Technologien versteht man die Programme, die Systeme und die spezielle Komponenten, die benutzt worden sind.
+%	\begin{itemize}
+	%	\item Raspberry Pi \\
+	%	Wie es vorher erwähnt wurde in dem Gesichtserkennung Teil des Projekts statt ein Computer ein Raspberry Pi verwendet. Was ein Raspberry Pi ist wurde in dem Kapitel 7.2.1 erklärt. Die wichtigsten Gründe dieser Wahl werden aber erst jetzt genannt. Der kleinere Platzbedarf und die hohe Flexibilität des Raspberry PI sind wesentliche Vorteile. Die Bestandteile bewegen sich nicht, und es gibt keinen Lärm. Was sehr beliebt ist, ist, dass der Raspberry PI gleichzeitig für die Hardware(GPIO PINS) und die Software(wie ein normaler Computer) verwendet werden kann. Er unterstützt Linux(Raspbian) sehr gut. Ein der wichtigsten Gründe dieser Wahl ist auch, dass im Fall eines Fehlers ein Raspberry PI sehr schnell und problemlos geändert oder repariert werden kann. (Gibt es ein Problem mit der SD-Karte, dann muss sie geändert werden, und dann kann die Hardware wieder ganz normal genutzt werden. Wenn es ein Hardware Problem gibt, dann muss die alte SD-Karte in eine neue SD-Karte kloniert werden und nur ein anderes Raspberry verwendet werden. Somit sind alle Daten gespeichert und es ist möglich, mit Hilfe des anderen Raspberry Pi, sie zuzugreifen)
 		\item Fritzing \\
 		Fritzing ist ein Programm das für die graphische Darstellung des Schaltkreises des Systems verwendet wurde. Durch dieses Programm wurde auch der Schaltplan des Systems erstellt(Abb.\ref{fig:Schaltplan}). Fritzing bietet eine sehr große Menge von elektronischen Komponenten und ein PCB, eine Steckplatine und einen Schematic View. In diesem Fall wurde die Breadboard View gewählt, weil dort alles übersichtlicher ist. Was noch gut ist, ist das Fritzing kostenlos im Linux angeboten wird, was für Windows nicht der Fall ist.
-		\begin{figure}[H]
-			\includegraphics[scale=0.5]{\ordnerfigures Fritzing.png}
-			\centering
-			\caption{Fritzing\cite{FritzingBild}}
-		\end{figure}
-		\item MySQL und MariaDB \\
-		Um die Testdatenbanken zu erstellen und die Benutzerfotos und Benutzerdaten zu speichern, wurde die berühmteste Open-Source relationales Datenbank System, MySQL verwendet. Zusammen mit MySQL wurde auch die Pakete MariaDB auf dem System installiert, damit Python mit MySQL durch einer Schnittstelle verbunden wird. Mithilfe der MariaDB werden die ganzen Tabellen mit Daten gefüllt.
-		\begin{figure}[H]
-			\includegraphics[scale=0.5]{\ordnerfigures mysql.png}
-			\centering	
-			\caption{Mysql\cite{MysqlBild}}
-		\end{figure}
-		\begin{figure}[H]
-			\includegraphics[scale=0.5]{\ordnerfigures mariadb.png}
-			\centering	
-			\caption{Mariadb\cite{MariadbBild}}
-		\end{figure}
-	\end{itemize}
-	\item \textit{Planungsmethode} \\
-	\begin{itemize}
-		\item Structed Software Design \\
-		Structed Software Design ist die Methode, die zur Planung des Systems verwendet wurde. Diese Software-Architektur ermöglicht den Entwurf, das Implementierungskonzept und das Integrationskonzept des Systems zu planen. Obwohl Structed Design großer Aufwand benötigt, hat diese Methode viele Vorteile, die bei der Wahl der Planungsmethode eine große Rolle gespielt haben: Structed Design verwendet Logik, ist von allem verstehbar, beschreibt alles ohne Abgrenzungen und ganz detailliert. Die wichtigsten Elemente die in der Structed Design beschrieben werden sind:
-		\begin{itemize}
-			\item Bubbel \\
-			Die wichtigsten Arbeitsbereiche des Systems(Gesichtsregistrierung, Gesichtserkennung, Bildverarbeitung)
-			\item Schnittstellen \\
-			Sind die Interfaces, die die Verbindung zwischen die Bestandteile machen 
-			\item Nachrichten \\
-			Sind die geschickten Signale innerhalb des Systems.
-			\item Flüsse \\
-			Zeigen die Daten die innerhalb des Systems fließen.
-			\item Modulen \\
-			Bestandteil des Systems, das innerhalb liegt.
-			\item Terminatoren \\
-			Ähnlich mit der Modulen, aber befinden sich außerhalb des Systems und beeinflussen es von außen.
-			\item definierte Abgrenzungen \\
-			Mithilfe der Abgrenzungen wird vom Systemhersteller genau definiert, was er nicht machen wird, sei es auf Zeit-, Schwierigkeits-, oder Komplexitätsverbundende Gründe. Diese Abgrenzungen dienen dazu, dem Auftraggeber genau zu zeigen, was er erwarten kann, damit es keine Missverständnisse gibt.
-			\cite{StructedDesign}
-		\end{itemize}
-	\end{itemize}
-	Mithilfe der Structed Software Design wurden das Big Picture des Systems zusammen mit seine notwendige Iterationen, die mehr an das Gesichtserkennungsteil konzentriert sind, erstellt. (1.Ebene des Gesichtserkennungsteils)
-\end{enumerate}
+\end{itemize}	
+	%	\item MySQL und MariaDB \\
+	%	Um die Testdatenbanken zu erstellen und die Benutzerfotos und Benutzerdaten zu speichern, wurde die berühmteste Open-Source relationales Datenbank System, MySQL verwendet. Zusammen mit MySQL wurde auch die Pakete MariaDB auf dem System installiert, damit Python mit MySQL durch einer Schnittstelle verbunden wird. Mithilfe der MariaDB werden die ganzen Tabellen mit Daten gefüllt.
+	
+	%\item \textit{Planungsmethode} \\
+	%\begin{itemize}
+	%	\item Structed Software Design \\
+	%	Structed Software Design ist die Methode, die zur Planung des Systems verwendet wurde. Diese Software-Architektur ermöglicht den Entwurf, das Implementierungskonzept und das Integrationskonzept des Systems zu planen. Obwohl Structed Design großer Aufwand benötigt, hat diese Methode viele Vorteile, die bei der Wahl der Planungsmethode eine große Rolle gespielt haben: Structed Design verwendet Logik, ist von allem verstehbar, beschreibt alles ohne Abgrenzungen und ganz detailliert. Die wichtigsten Elemente die in der Structed Design beschrieben werden sind:
+		%\begin{itemize}
+		%	\item Bubbel \\
+		%	Die wichtigsten Arbeitsbereiche des Systems(Gesichtsregistrierung, Gesichtserkennung, Bildverarbeitung)
+		%	\item Schnittstellen \\
+		%	Sind die Interfaces, die die Verbindung zwischen die Bestandteile machen 
+		%	\item Nachrichten \\
+		%	Sind die geschickten Signale innerhalb des Systems.
+		%	\item Flüsse \\
+		%	Zeigen die Daten die innerhalb des Systems fließen.
+		%	\item Modulen \\
+		%	Bestandteil des Systems, das innerhalb liegt.
+		%	\item Terminatoren \\
+		%	Ähnlich mit der Modulen, aber befinden sich außerhalb des Systems und beeinflussen es von außen.
+		%	\item definierte Abgrenzungen \\
+		%	Mithilfe der Abgrenzungen wird vom Systemhersteller genau definiert, was er nicht machen wird, sei es auf Zeit-, Schwierigkeits-, oder Komplexitätsverbundende Gründe. Diese Abgrenzungen dienen dazu, dem Auftraggeber genau zu zeigen, was er erwarten kann, damit es keine Missverständnisse gibt.
+		%	\cite{StructedDesign}
+		%\end{itemize}
+	%\end{itemize}
+	%Mithilfe der Structed Software Design wurden das Big Picture des Systems zusammen mit seine notwendige Iterationen, die mehr an das Gesichtserkennungsteil konzentriert sind, erstellt. (1.Ebene des Gesichtserkennungsteils)
 \subsubsection{Lösungsweg- Beschreibung und Erklärung}
 Der Lösungsweg für die Umsetzung der Aufgaben der Gesichtserkennung ist streng mit einer guten vorherigen Planung verbunden. Deshalb wurde nicht nur das Big Picture(Großes Sicht des Systems nach Außen), die in die vorherigen Kapiteln beschrieben wurde erklärt, sondern auch die Erste Ebene des Gesichtserkennungsteils.
 Die Big Picture sieht man unter Abb.\ref{fig:Big Picture}
@@ -167,30 +130,51 @@ Die Big Picture sieht man unter Abb.\ref{fig:Big Picture}
 	\caption{Big Picture}
 	\label{fig:Big Picture}
 \end{figure}	
-Die erste Ebene sieht man unter Abb.\ref{fig:Erste Ebene}. Sie ist ein detaillierte Version des Big Picture, das sich nur auf dem Erkennungsteil konzentriert. Man spricht von einer Iteration, die hier passiert ist.  Folgend wird es die Vorgehensweiße und den Lösungsweg dieser Aufgabe mit Hilfe der 1.Ebene erklären und beschreiben.\\
+Die erste Ebene sieht man unter Abb.\ref{fig:Erste Ebene}. Sie ist ein detaillierte Version des Big Picture, das sich nur auf dem Erkennungsteil konzentriert. Man spricht von einer Iteration, die hier passiert ist.  Folgend wird es die Vorgehensweise und den Lösungsweg dieser Aufgabe mit Hilfe der 1.Ebene erklären und beschreiben.\\
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{\ordnerfigures diplom_11Ebene.png}
 	\caption{Erste Ebene}
 	\label{fig:Erste Ebene}
 \end{figure}
-\textbf{Einzelne Arbeitsschritte: } \\
+
+\textbf{Einzelne Arbeitsschritte des Erkennungsprozesses: }\\
+
+In diesem Unterkapitel wird der Vergleich der Gesichter der Personen detailliert erklärt. Es wurden die einzelne Schritte der Arbeit sowie die verwendeten Methoden beschrieben.
+
 \begin{enumerate}
+	
 	\item \textit{Erkennungstaster wird gedr{\"u}ckt} \\
+	
 	Will der Benutzer sich im System einloggen, muss er zuerst den Erkennungstaster dr{\"u}cken. Wird dieser Taster gedr{\"u}ckt, dann kriegt der Benutzer eine Anmeldung, bei der er seine Emailadresse eingeben muss. Um diese Aufgabe zu erledigen, muss das Paket RPi.GPIO importiert werden. Auf diese Weise ist der Zugriff auf den GPIO Pins m{\"o}glich, damit der Taster Zustand, oder der LED Zustand erkannt werden. Das Paket mysqldb wird auch ben{\"o}tigt, um Zugriff auf die Datenbank zu haben.
 	\begin{lstlisting}
 	if GPIO.input(17):
 	exec(open('Existiert_nExistiert.py').read()) 
 	\end{lstlisting} 
+%-----------------------------------------------------
 	\item \textit{Benutzer gibt seine Emailadresse ein} \\
-	Es ist wichtig zu erw{\"a}hnen, dass für die Umsetzung dieses Systems es notwendig ist, die verschiedenen Skripten miteinander zu verbinden.  Deshalb müssen sie innerhalb anderer Skripten angerufen werden. Das wird durch Variablen gemacht. Deshalb ist das Importieren des Pakets sys n{\"o}tig.
-	Der Benutzer gibt seine Emailadresse an, die danach verwendet wird, um in der Datenbank schneller auf die Benutzerbilddaten zuzugreifen.
-	\item \textit{Bild wird gemacht und tempor{\"a}r gespeichert} \\
-	Gleich nachdem der Benutzer sein Email eingegeben hat, macht die Kamera das Bild. Dieses Bild wird tempor{\"a}r gespeichert, weil es nach dem Vergleich mit dem Bild, das schon in der Datenbank liegt, nicht mehr benötigt wird. Sonst w{\"u}rde es extrem viele Bilderdaten in der Datenbank geben, die nur einmal verwendet werden. Stattdessen wird nur der Pfad des Bildes zusammen mit den extrahierten Punkten in der Datenbank gespeichert.
-	\item \textit{Die Existenz derselben Emailadresse des Benutzers in der Datenbank wird geprüft} \\
-		Dieser Schritt ist deswegen wichtig, weil falls die eingegebene Email nicht in der Datenbank existiert, muss das System die Bildvergleichung nicht machen. 
-		\item \textit{Wird dieselbe Emailadresse in der Datenbank gefunden, werden die zugehörige Bildinformationen geladen} \\
-		Falls aber die vom Benutzer eingegebene Emailadresse in der Datenbank ist, weißt das System Bescheid, dass ein Bilderdatenvergleich stattfinden muss. Um das zu erreichen, werden alle Bildinformationen geladen. Unter Bildinformationen sind die extrahierten Gesichtspunkte, mindestens 16, zu verstehen. Der kurze Codeabschnitt unten zeigt genau wie dies funktioniert.
+	
+Es ist wichtig zu erw{\"a}hnen, dass für die Umsetzung dieses Systems es notwendig ist, die verschiedenen Skripten miteinander zu verbinden.  Deshalb müssen sie innerhalb anderer Skripten angerufen werden. Das wird durch Variablen gemacht. Deshalb ist das Importieren des Pakets sys n{\"o}tig. Der Benutzer gibt seine Emailadresse an, die danach verwendet wird, um in der Datenbank schneller auf die Benutzerbilddaten zuzugreifen. Es wurde deshalb die Emailadresse(und nicht Vorname, Nachname usw.) gewählt, weil diese Adresse immer UNIQUE ist, das heißt, es ist unmöglich, dass zwei Benutzern dieselbe Adresse haben, und dasselbe kann für die andere Benutzerdaten(Vorname, Nachname usw.) nicht gesagt werden.
+%-----------------------------------------------------
+\item \textit{Die Existenz derselben Emailadresse des Benutzers in der Datenbank wird geprüft} \\
+
+Wie es vorher erwähnt wurde, ist dieser Schritt deswegen wichtig, weil falls die eingegebene Email nicht in der Datenbank existiert, muss das System die Bildvergleichung nicht machen. Der Benutzer kriegt stattdessen eine Anmeldung, die ihm sagt, dass er noch einmal versuchen kann, seine Emailadresse einzugeben. Wird diese neue Adresse auch nicht in der Datenbank gefunden, kann danach dieser Benutzer mit dieser Adresse im System nicht mehr versuchen anzumelden. 
+%-----------------------------------------------------
+\item \textit{Bild wird gemacht und tempor{\"a}r gespeichert} \\
+
+Gleich nachdem der Benutzer sein Email eingegeben hat, macht die Kamera das Bild. Dieses Bild wird tempor{\"a}r gespeichert, weil es nach dem Vergleich mit dem Bild, das schon in der Datenbank liegt, nicht mehr benötigt wird. Sonst w{\"u}rde es extrem viele Bilderdaten in der Datenbank geben, die nur einmal verwendet werden. Stattdessen wird nur der Pfad des Bildes zusammen mit den extrahierten Punkten in der Datenbank gespeichert.
+%-----------------------------------------------------
+	\item \textit{Gemachtes Bild wird gekroppt} \\
+	
+Das von der Kamera gemachtes Bild ist noch nicht bereit zum Vergleich. Um die Punkte richtige zu extrahieren, muss das Bild zuerst gekroppt bzw. geschnitten sein. Das heißt, die Dimensionen des Bildes werden reduziert, und somit werden die andere Objekten oder die andere Objekten nicht berücksichtigt(Sie würden die Performance der Vergleichsprozess sehr viel beeinflussen). Das Cropping des Bildes wurde mit Hilfe eines Programms, das Teil der Arbeit der Bildverarbeitungsgruppe ist. Wird das Bild gekroppt, wird es automatisch auch umbenannt. Das Bild nimmt der Schlüsselwort „New“+die Emailadresse der Person als Name. Der Datentyp ist .jpg .
+%-----------------------------------------------------
+	\item \textit{Die Gesichtspunkte werden extrahiert} \\
+	
+Das gekroppte Bild des Gesichts der Person besteht aus verschiedene Punkte. Insgesamt sind 68 Gesichtspunkte. Alle diese Punkte müssen für den Vergleichsprozess extrahiert werden. Das heißt, jeder Punkt muss ein X und ein Y Wert haben. Diese Koordinaten müssen ermittelt werden. Diese ist auch eine Aufgabe der Bildverarbeitungsbranche, und ist extrem wesentlich für die Kontinuität der Erkennungsprozess.
+%-----------------------------------------------------
+	\item \textit{Wird dieselbe Emailadresse in der Datenbank gefunden, werden die zugehörige Bildinformationen geladen} \\
+	
+	Falls aber die vom Benutzer eingegebene Emailadresse schon in der Datenbank liegt, weißt das System Bescheid, dass ein Bilderdatenvergleich stattfinden muss. Um das zu erreichen, werden alle Bildinformationen geladen. Unter Bildinformationen sind die 68 extrahierten Gesichtspunkte, zu verstehen. Der kurze Codeabschnitt unten zeigt genau wie dies funktioniert. 
 		\begin{lstlisting}
 		if b=="existiert":
 		mycursor.execute(
@@ -202,48 +186,214 @@ Die erste Ebene sieht man unter Abb.\ref{fig:Erste Ebene}. Sie ist ein detaillie
 		for x in myresult:
 		print(x)
 		\end{lstlisting}
-		\item \textit{Die Bildinformationen der beiden Bildern werden verglichen} \\
-		Die wichtigste Aufgabe ist der Vergleich der Bildinformationen. Es werden die extrahierten Punkte der bereits gemachten Bilder mit der Punkten der schon in der Datenbank existierte Bildern verglichen. Dazu wird das wichtigste Paket, Open CV, ben{\"o}tigt. Nachdem dieses Paket importiert wurde, kann der Vergleich beginnen. In jedes Gesichtsbild wird ein Startpunkt bzw. Origin für den Vergleich bestimmt. Dieser Punkt ist der zentrale Punkt des Gesichts. Es wurde so gedacht, dass der Abstand von jedem anderem Gesichtspunkt mit dem Origin kalkuliert wurde. Dieser Abstand wird dann mit dem Abstand der Origin des zweiten Bildes und sein anderer Punkt. Die zwei Punkte, dessen Abstand mit den jeweiligen Startpunkten der Bilder kalkuliert ist, müssen miteinander einpassen(zum Beispiel ein Punkt der rechten Augen im ersten Bild muss mit dem zugehörigen Punkt in dem zweiten Bild verglichen werden). In dieser Wiese wird mit Hilfe vielen Tests eine Standard Toleranz kalkuliert. Passen die kalkulierten Toleranzen für jeder der 16 Punkte am Ende des Vergleichs zu der Standard Toleranzen, stimmt die Vergleichung, und die Bilder passen miteinander.
-		\item \textit{Passen die beiden Bildern zusammen, wird der Benutzer eingeloggt.} \\
-		Wenn das Vergleichsergebnis positiv ist, wird die gr{\"u}ne LED leuchten und der Benutzer darf weitermachen. Sonst wird die rote LED eingeschalten.\\
+	Das heißt, die extrahierte Punkte des von der Kamera gemachten Bildes und die extrahierte Punkte, die in der Datenbank gespeichert waren und die dem Person mit dieselbe Emailadresse wie die vom Benutzer eingegebene Adresse gehören , stehen jetzt endlich zur Verfügung. Von hier wird es angenommen, dass die eingegebene Emailadresse mit mindestens eine in der Datenbank Emailadresse gleich ist, damit der Vergleich Prozess erklärt werden kann.
+%-----------------------------------------------------
+	\item \textit{Die extrahierten Punkte werden in 5 verschiedene Bereiche geteilt} \\
+	
+	Bevor der Vergleichsprozess beginnt, müssen die 68 extrahierten Punkte geteilt werden. Die 5 großen Bereiche sind das Gesicht, die Nase, die rechte Auge, der linke Auge und der Mund. Jeder Bereich hat seine eigenen Punkte. Die erste 28 Punkte gehören dem Gesicht, die nächste 9 gehören der Nase, die nächste 6 dem rechten Auge, die nächste 6 dem linken Auge und die letzte 19 gehören dem Mund. Durch dieser Prozess wird der Vergleichs Qualität sehr stark erhöht, weil die Punkte der Nase werden genau mit der Punkte der anderen Nase verglichen, und nicht mit die von dem Augen beispielsweise.
+%-----------------------------------------------------
+	\item \textit{Die Bildinformationen der beiden Bilder werden verglichen} \\
+	
+Die wichtigste Aufgabe ist der Vergleich der Bildinformationen. Es werden die extrahierten Gesichtspunkte der bereits gemachten Bilder mit der Gesichtspunkte in der Datenbank verglichen. Selbstverständlich müssen wie es vorher erwähnt wurde die beiden Personen, deren Gesichtspunkte verglichen werden dieselbe Emailadresse haben. Das wichtigste Paket, Open CV, wird für diesen Vergleich ben{\"o}tigt. Nachdem dieses Paket importiert wurde, kann der Vergleich beginnen. Es gibt verschiedene Schritte, die man erfolgen muss, und die nach unten erklärt werden:
+\begin{itemize}
+	\item Startpunkt bzw. Origin wird festgelegt \\
+	
+	In jedes Gesichtsbild wird ein Startpunkt bzw. Origin für den Vergleich festgelegt. Dieser Punkt ist der Punkt mit der Koordinaten (0/0). Es wurde so gedacht, dass der Abstand von jedem anderem Gesichtspunkt mit diesem Origin kalkuliert wurde. Dieser Abstand wird dann mit dem Abstand der Origin des zweiten Bildes und sein anderer Punkt. Die zwei Punkte, dessen Abstand mit den jeweiligen Startpunkten der Bilder kalkuliert ist, müssen miteinander einpassen(zum Beispiel ein Punkt der rechten Augen im ersten Bild muss mit dem zugehörigen Punkt in dem zweiten Bild verglichen werden, und nicht mit einem Punkt von den Augen).
+	\item Die Abstände jedes anderen Punktes des gemachten Bildes von der Startpunkt werden kalkuliert \\
+	Nachdem der Startpunkt festgelegt wurde, beginnt der Vergleich der Abstände des gemachten Bildes(Punkt-Startpunkt) und der Abstände, die in der Datenbank gespeichert sind.
+	------------------------------------FOTOJA ME TREKANDSHA------------------------------------------------
+	Auf Abbildung X wird die verwendete Vergleichsmethode dargestellt. Der Startpunkt hat die Koordinaten (0/0) und befindet sich links oben. Jeder Punkt hat seine bestimmten Koordinaten, zum Beispiel, der Punkt 36 des ersten Bildes hat die Koordinaten x1 und y1, und die 36.Punkt des anderen Bildes hat die Koordinaten x2 und y2. Um den Abstand des Punkt 36 zu berechnen, wird die pythagoreische Formel verwendet. Die Differenz der x-Koordinaten und die Differenz der beiden y-Koordinaten sind die beide Katheten(a und b auf die Abbildung). Um die Hypotenuse zu finden wird das Quadrat beider Katheten addiert, und am Ende wird die Wurzel des Ergebnisses gefunden. Die gerechnete Zahl ist der Abstand der Punkt 36 von dem Startpunkt. Dieselbe Methode wird für jeder Punkt verwendet.
+	Das obige Beispiel verglich die Abstände der Punkte von 2 verschiedenen Bilder. Der Grund war folgendes, dass der Weg der Vergleich zwischen der Punkte Abstände des gemachten Bildes und der in der Datenbank gespeicherten Punkte Abstände genau gleich wie im Beispiel erklärt wurde ist. Es ist einfach leichter erklärbar und verstehbar, wenn 2 Bildern vergleicht wurden. 
+	Die Abstände jeder Punkt jeder Bereich wurde in einer Variable gespeichert.
+	
+	\item Es wird der maximale Abstand für jeder einzelne Bereich gefunden \\
+	
+	Nachdem die nach oben erwähnte und erklärte Abstände kalkuliert wurden, wurden die maximalen Abstände für jeder Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund) benötigt. Diese Maximumwerte sind wesentlich für den Vergleich. Warum das so ist wird später erklärt. 
+	---------------------------------KODI-----------------------------------
+	Zuerst wurde eine Array Max erstellt, der 5 Elementen enthält. Jedes Element gehört einem von den 5 Bereichen. Beispielsweise der Maximumwert an der Stelle 0(erste Element) ist die Maximumabstand, das bei der Gesichtsbereich gefunden war. Die Funktion Max in Python verwendet. Jeder Abstand wird mit der Maxwert verglichen(Maxwert beginnt am Anfang bei 0). Ist es größer, dann wird dieser Abstand der neue Maximumwert. Am Ende wird einen Maximumwert ermittelt.
+	
+	\item Es wird das geometrische Mittel der Abstände aller Bereiche kalkuliert \\
+	
+	Das geometrische Mittel der Abstände aller Punkte (nicht in einzelnen Bereichen) ist auch wichtig für den Vergleich. Es gibt 68 Gesichtspunkten insgesamt, das heißt, 68 Abstände von dem Startpunkt. 
+	Um das geometrische Mittel von n Zahlen x1,x2,…xn zu ermitteln, muss man deren Produkt bilden und von diesem die n-te Wurzel ziehen.
+	Damit ergibt sich die Formel:
+	Fotoja e GM
+	
+	\item Die ermittelte Maximumwerte und die geometrischen Mittel der Abstände der Punkte des gemachten Bildes werden mit der Maximumwerte und die geometrische Mitteln Abstände der in der Datenbank gespeicherten Punkte verglichen \\
+	
+	\begin{enumerate}
+		\item Beschreibung \\
+		
+		Wenn die angesprochene Maximumwerte und die geometrische Mitteln der Abstände der Punkte des gemachten Bildes und die geometrische Mitteln Abstände des in der Datenbank gespeicherten Punkte gleich oder sehr ähnlich sind, dann wird es von dem selber Person gesprochen und die Erkennung muss erfolgreich sein. Deshalb werden einige Abgrenzungen bestimmt, wann die Erkennung als erfolgreich benannt wird und wann nicht.
+		\item Mögliche Fälle \\
+		
+		Insgesamt gibt es 5 Bedingungen bzw. 5 Fälle, die eintreten können und die wichtig sind. Ist einer dieser fünf Bedingungen wahr, ist die Erkennung nicht erfolgreich und es wird nicht von derselben Person gesprochen. Diese Fälle werden nach unten mit Hilfe von Bildern erklärt. Es werden die Maximumwerten jeder Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund, also 5 insgesamt), sowie der geometrische Mittel aller 68 Punkten berücksichtigt.
+		\begin{enumerate}
+			\item 1.Fall: Mindestens 2 Maximumwerte sind größer als 0.06 \\
+			
+			Sind 2 oder mehrere Maximumwerte größer als 0.06, wird das geometrische Mittel beobachtet. Ist das größer als 0.01, stimmt die Erkennung nicht. Wenn weniger als 2 Werte größer als 0.06 sind, muss auch das geometrische Mittel kleiner als 0.027 sein, um eine erfolgreiche Erkennung zu haben.
+			\item 2.Fall: Genau einen Maximumwert ist größer als 0.07 und kleiner als 0.084 \\
+			
+			Stimmt dieser Bedienung, wird es wieder überprüft, ob das geometrische Mittel kleiner als 0.027 ist oder nicht. Wenn ja, dann ist die Erkennung erfolgreich. Ist aber dieser Bedienung wahr für mehr als einen Wert, ist der Vergleich gleich als nicht erfolgreich genommen.
+			\item 3.Fall: Mindestens einen Maximumwert ist größer als 0.084 \\
+			
+			Trifft dieser Bedienung zu, stimmt die Erkennung nicht und der Person wird nicht vom System erkannt.
+		\end{enumerate} 
+		\item Andere Abgrenzungen und Entscheidungen \\
+		
+		Treffen eine von die 2 untere Kombinationen zu, ist weitere Überprüfung(geometrisches Mittel) nicht mehr nötig und die Erkennung ist nicht erfolgreich.
+		\begin{enumerate}
+			\item 1 Maximumwert größer als 0.06 und 1 Maximumwert größer als 0.07 \\
+			\item 2 Maximumwerte größer als 0.06 und 1 Maximumwert größer als 0.07 \\
+		\end{enumerate} 
+		
 	\end{enumerate}
+%----------------------------------------------------
+\item \textit{Ist die Erkennung erfolgreich, kriegt der Benutzer eine Anmeldung, die ihm informiert, dass er im System erfolgreich angemeldet ist.} \\
+
+Wenn keinen Fall bzw. Bedienung zutrifft, ist die Erkennung erfolgreich. Der Benutzer kriegt danach eine Anmeldung, die ihm Bescheid gibt, dass die Anmeldung erfolgreich war und dass er weitermachen darf. Dazu wurde ein gelbes LED verwendet, das leuchten wird. 
+\end{itemize}
+\end{enumerate}
+\subsubsection{Andere wichtige Punkte und Abgrenzungen}
+
+Es gibt auch einige Punkte, die erwähnt werden müssen, und die zur Verwendung des Systems wesentlich zu wissen sind:
+
+\begin{enumerate}
+	\item Distanz der Benutzer von der Kamera \\
+	
+	Damit der Vergleich und die Erkennung der Gesichter erfolgreich und je genau wie möglich sind, wurde eine Distanz, dass der Benutzer von der Kamera erhalten muss. Diese Distanz ist 1 Meter, und dem Benutzer wird das durch einer Linie auf dem Boden gezeigt.
+	\item Nicht gefundene bzw. unbekannte Emailadresse eingegeben \\
+	
+	Wenn der Benutzer nach dem Drucken des Tasters eine falsche Emailadresse eingibt, wird er eine Anmeldung kriegen, die ihm informiert, dass er eine zweite Chance kriegen wird, die richtige Emailadresse einzugeben(Vielleicht hat er zum Beispiel ein Fehler beim Eintippen gemacht). Ist die Adresse noch immer unbekannt oder inkorrekt, beginnt der Vergleichsprozess nicht und der Benutzer kann sich nicht anmelden.
+	\item Kein eindeutiges Gesicht von der Kamera nach der Bildaufnahme gefunden bzw. detektiert \\
+	
+	Wenn nach der Bildaufnahme kein eindeutiges Gesicht detektiert wird, wird ein zweites Bild gemacht. Der Benutzer wird durch einer Anmeldung erinnert, dass er gerade und in der Linie stehen muss.
+	\item Mehrere Gesichter von der Kamera nach der Bildaufnahme gefunden bzw. detektiert \\
+	
+	Wenn nach der Bildaufnahme mehrere Gesichter detektiert werden, wird wieder ein zweites Bild gemacht. Werden wieder mehrere Gesichter detektiert, kann das System nicht überprüfen, ob der Benutzer anmelden darf oder nicht (Nicht Ziel).
+	\item Die Erkennung stimmt nicht, Benutzer vom System nicht erkannt \\
+	
+	Ist die Erkennung nicht erfolgreich, wird ein rotes LED leuchten und der Benutzer versteht, dass er nicht anmelden darf. Er kann aber alles nochmals probieren(Erkennungstaster drücken usw. …), oder er kann sich zuerst registrieren.
+	\item Verarbeitungszeit des Systems \\
+	
+	Jedes intelligente System braucht einer Verarbeitungszeit. Der Erkennungsprozess braucht ungefähr 7 bis 8 Sekunden Zeit. Das ist aber auch von der Geschwindigkeit des Benutzers abhängig.
+\end{enumerate}
+\subsubsection{Das Testen}
+Eine der wichtigsten Arbeitspakete des Erkennungsteils war das Testen des Vergleichsverfahrens. Um die Vergleichsbedingungen und Begrenzungen, die nach oben erwähnt wurden, zu finden und zu bestimmen, war es wesentlich und extrem notwendig, viele Tests zu machen. Zuerst hat der Prozess des Testens mit verschiedene Bilder einer Person begonnen. Danach wurden verschieden Personen verwendet, um eine Toleranz zu finden, die in der Bedienungen verwendet sein kann. Nachdem die Gesichtspunkte von 2 Bilder getestet und verglichen waren, sind die Ergebnisse auch mit den in der Datenbank gespeicherten Punkten getestet. Am Ende des Testens sind die vorher erklärte Bedienungen definiert und formuliert.\\
+
+\subsubsection{Das Logging}
+Jedes große System braucht Logging. Mit Hilfe einer Logdatei (englisch: log file) können alle oder bestimmte Aktionen von Prozessen auf einem Computersystem automatisch protokolliert. Das heißt, diese Logdatei kann vom Benutzer verwendet werden, um Fehleranmeldungen zu kriegen, um den Fehlerart zu verstehen, um den Zeitpunkt verschiedener wichtiger Ereignissen zu wissen und vieles mehr. Alle diese Vorteile und Merkmale der Logging waren mehr als genug zum entschieden, dass die Protokollierung der Ereignisse des Systems eine wichtige Ziel sein wird. Das war der Grund, warum das Gesichtserkennungsteil auch protokolliert wurde.\\
+Es wurden die wichtigsten Ereignisse mitprotokolliert:
+\begin{enumerate}
+	\item Der Zeitpunkt, wann der Erkennungstaster gedrückt wurde \\
+	
+	Es ist sehr wichtig für die Admins des Systems zu wissen, wann der Erkennungstaster gedrückt wurde, bzw. wann die Gesichtserkennungsprozess beginnt. Diese Zeit kann darum verwendet werden, um die totales Dauer der Erkennungsprozess zu bestimmen.
+	
+	\item Der Zeitpunkt, wann der Benutzer erfolgreich angemeldet war: \\
+	
+	Dieser Ereignis ist der wichtigste von allem, weil es der Schlusspunkt des Erkennungsteils ist. Es kann auch als Beweis verwendet werden, dass der Benutzer im System schon registriert war.
+	
+	\item Der Zeitpunkt, wann der Benutzer nicht erfolgreich angemeldet war \\
+	
+	Wie vorher erwähnt war, ist eine Log-Datei eine sehr gute Methode, wichtige Fehlermeldungen sehr schnell zu kriegen. In diesem Fall wird es gespeichert, wann der Benutzer nicht erfolgreich angemeldet war.
+	
+	\item Der Zeitpunkt, wann die eingegebene Emailadresse in der Datenbank nicht steht, das heißt Email existiert nicht \\
+	
+	Gibt der Benutzer eine falsche oder eine nicht existierende Emailadresse ein, wird dieses Ereignis sicherlich geloggt. Das ist extrem wichtig für die Admins, weil ohne eine vom Benutzer eingegebene Emailadresse, die in der Datenbank schon existiert, beginnt die Vergleichsprozess für die Erkennung gar nicht. In diesem Weg wissen die Admins, wo der Fehler ist, und der Benutzer wird daran informiert.
+\end{enumerate}
+\textbf{Wie wurde das Logging gemacht?}\\
+Das Logging der Gesichtserkennungsprozess war nicht sehr komplex in Python. Es gab eine Tabelle in der Datenbank, die für dieser Funktion geeignet war. In dieser Tabelle wurden alle Informationen, die protokolliert werden müssen, gespeichert. Mit Hilfe einer Python Skript wurde dann die Verbindung aller Skripten, die die notwendige Informationen erhaltenen mit dieser Log Tabelle, die in der Datenbank liegt, gemacht. Es wurde danach ein Programm für jeder Ereignis, der nach oben erwähnt war, gemacht. Diese Programme ermöglichten die Verbindung mit der Datenbank, und zeigten eine Anmeldung. Beispielweise wurde es in der Datenbank notiert, dass es ein Problem bei Gesichtserkennung gab(Taster nicht gedrückt..). In das Hauptskript wurden dann diese einzelnen Programme gerufen. Für diese Programme wurde die Klasse %$LogDBHandler verwendet. Der Log_Level ist Debug. 
+
+
 	\section{Herausforderungen, Probleme, und deren Lösung}
 	W{\"a}hrend dieser Arbeit musste man mit einigen Problemen und Herausforderungen konfrontiert werden.
 	\begin{itemize}
 		\item \textit{OpenCV Installation}\\
+		
 		Die gr{\"o}ßte Probleme hat es bei der Installation von OpenCV gegeben. Diese Installation hat sehr lang gedauert und es war sehr schwer zu bestimmen, welche Paketen ausgelassen werden sollten und welche nicht. Dieses Problem wurde nach vielen Tests gel{\"o}st, durch das Kopieren von einer anderen SD-Karte, auf der OpenCV bereits installiert war. CMake und Make waren sehr wichtige Pakete, mit denen diese Aufgabe erledigt war.
 		\item \textit{Fritzing} \\
+		
 		Das Problem beim Fritzing war folgendes, dass jedes Mal wenn das Programm beendet wurde, konnte es nicht mehr ge{\"o}ffnet werden. Es fehlten entweder die Pfaden oder die Bauteile, die f{\"u}r um die Schaltung zu bauen notwendig waren. Die L{\"o}sung war eigentlich sehr leicht. Das Programm wurde komplett gel{\"o}scht und dann wieder im System installiert, und danach wurde die ganze Schaltung gemacht, ohne das Programm zu beenden. Sonst wären dieselben Probleme wieder aufgetreten.
 		\item \textit{Kurzschluss beim Raspberry Pi}\\
+		
 		Was noch passiert ist, ist das es beim Anfassen vom Raspberry PI ein Kurzschluss gab. Der Raspberry PI war kaputt und musste ersetzt werden. Glücklicherweise konnte die SD-Karte erfolgreich in kloniert werden und deshalb sind alle Daten und Informationen gespeichert.
 		\item \textit{Pakete FaceRecognition Installation} \\
+		
 		Die Installation des Paketes FaceRecognition konnte nicht erfolgreich gemacht werden, weil die dlib Pakete auch gebraucht wird. Wahrscheinlich aufgrund des zu geringen RAMs kann diese Pakete nicht installiert werden. Dieses Problem wurde noch nicht gel{\"o}st.
 		\item \textit{Probleme bei der Aufruf der Skripten } \\
+		
 		Am Beginn war das Umgehen mit der Skripten Aufrufe sehr schwer. Es war schwer zu verstehen wie das genau funktionierte, weil die große Variablenanzahl die Arbeit kompliziert machte. Dieser Anzahl wurde reduziert und es wurden viele Recherchen an der korrekten Verwendung von der sys Pakete gemacht um das Problem zu l{\"o}sen.
+		\item Schlechtere Vergleichsqualität \\
+		
+		Am Beginn des Testens des Vergleichs waren die Ergebnisse nicht stabil. Es konnte keinen Zusammenhang gefunden werden. Beispielsweise waren die Maximumwerte der Abstände bei Bilder, die derselben Person gehörten größer als bei Bildern, die verschiedenen Personen gehörten. Nach viele Tests wurde der Grund verstanden. Die 68 Punkte mussten in 5 verschiedene Teile(Gesicht, Nase, linke Auge, rechte Auge, Mund) zerlegt werden. In dieser Weise wird ein Punkt, der dem Mund gehört nicht mit einem Punkt, der der Nase gehört verglichen.
+		\item Probleme bei Einteilung der Gesichtspunkte in 5 Bereichen \\
+		
+		Der Prozess der Einteilung der Gesichtspunkte in dem verschiedenen Bereiche war auch schwierig. Ein großes Array mit 68 Elementen erstellt. Es war sehr kompliziert, in dem Index diesem Array zu zugreifen. Deshalb wurde dieses große Array in 5 kleinere Arrays zerlegt. In dieser Weise war es viel leichter zu verstehen, wie die Indexe funktionierten und wie man dort Zugriff haben kann.
+		\item Probleme bei der Berechnung des geometrischen Mittels \\
+		
+		Die Berechnung des geometrischen Mittels war auch nicht leicht. Nachdem die Formel gefunden war, musste es in dem Programm integriert werden. Die Schwierigkeit war bei dem Ziehen von der N-Wurzel. Sollte das n 67 oder 68 sein? Das war von dem Index abhängig. Am Ende wurde verstanden, dass das Produkt aller Abstände hoch 1/68, das richtige Ergebnis war.
+		\item Probleme bei der Datenbank \\
+		
+		Probleme hat es noch beim Zugriff auf der in der Datenbank gespeicherten Gesichtspunkte gegeben. 
+		\item Probleme mit GIT \\
+		
+		Letztens müssen die Probleme mit Git erwähnt werden. Es gab viele Fälle, wo es Konflikten mit der Dateien gibt. Man muss immer zuerst Pull machen, und danach Push. Das hat aber oft nicht passiert. Es wurde in einer Datei arbeitet, die aber von einem anderen Person schon geändert war. Deshalb gab es Probleme bei der Push. Oft mussten die ganze Dateien gelöscht werden, und danach wieder vom Git abgeholt. Es wurde am Ende zwischen der Gruppe darüber gesprochen, und endlich war das Problem gelöst.
 	\end{itemize}
+
 	\section{Projektmanagement und Controlling}
 	In Bezug auf Projektmanagement und Controlling wurde die Methode des Fehlerbaums verwendet. Diese ist eine ber{\"u}hmte Methode um die Aufwandsch{\"a}tzung zu kalkulieren und um eine Fehlerursache zu finden. Es wird der Problem in kleinen Teilen geschnitten damit es klarer wird. 
 	\begin{figure}		\includegraphics[width=\textwidth]{\ordnerfigures IMG_4535.jpg}
 		\caption{Fehlerbaum}
 	\end{figure}
 	Es wurde auch eine detaillierte Soll-Ist Analyse gemacht, die bei der neuen Aufgabeteilung sehr geholfen hat, und ein Balkendiagramm, das f{\"u}r die Organisation und Festlegung der Arbeitstermine dient.
+	
 	\section{Ergebnisse}
-	Die bisherige Ergebnisse sind die folgenden:\\
+	Die finale Ergebnisse sind die folgenden:\\
 	\begin{enumerate}
 		\item Systemaufbau \\
 		Das ganze System wurde zusammen mit der ganzen Hardware aufgebaut.
 		\item Digitale Darstellung des Systemaufbaus\\
 		Der Schaltplan des Systems wurde durch Fritzing digital dargestellt.
-		\item Erkennung des Admins \\
-		Der Admin wurde sofort vom System erkannt, mithilfe eines Skripts, dass OpenCV verwendet um das Adminbild mit den anderen Bildern zu vergleichen.
+		\item Erkennung der Gesichter \\
+		Es wurde eine Gesichtserkennung erreicht, die 80 Prozent der Fälle funktionieren wird.
 		\item Aufnahme der Benutzer Gesichtsdaten mithilfe der Emailadresse\\
 		Gibt der Benutzer seine Emailadresse ein, werden die zugehörigen Gesichtsdaten von der Datenbank geladen, um den Vergleich zu machen.
 	\end{enumerate}
-<<<<<<< HEAD
-	
-	
-=======
 
+\section{Was wurde gelernt und welche Verbesserungsmöglichkeiten gibt es}
+
+Während dieser Diplomarbeit war vieles wichtiges gelernt und verstanden. Die wichtigsten Lektionen werden nach unten genannt und erklärt.\\
+\begin{itemize}
+	\item Zeitmanagement \\
+	
+	Die Wichtigkeit der Zeit wurde wirklich verstanden. Man hatte nicht mehr die Möglichkeit, Dinge immer für das letzte Moment zu lassen, weil es einfach zu viel ist. Ohne ein detailliertes Zeitplan und ohne eine systematische Arbeit wurde dieses Projekt nicht fertig gemacht.
+	\item Eingehen mit OpenCV und arbeiten mit Bilderdaten\\
+	
+	Es wurde gelernt, wie man überhaupt mit Bildinformationen arbeitet, und wie das wichtige Paket OpenCV funktioniert. In der Zukunft wenn es um arbeiten mit Bilderdaten geht, ist das Basiswissen schon da.
+	\item Wichtigkeit des Testens des Systems\\
+	
+	Wie wichtig der Testen Prozess ist wurde auch hier verstanden. Vorher wurde es gedacht, dass das Testen des Systems nur eine zusätzliche und unwichtige Arbeit ist. Es war aber nur mit Hilfe des Testens möglich, den Vergleichsprozess erfolgreich zu realisieren und Fehlern zu finden. Ein System, das vorher nicht getestet ist, kann nicht ein gutes System sein.
+	
+	\item Gruppenarbeit und Verantwortlichkeiten übernehmen \\
+	
+	Die Rolle der Gruppe ist auch sehr wichtig. Geht den Mitarbeitern miteinander gut und sind sie alle gut gelaunt, sind sie auch mehr motiviert zum Arbeiten. Die Kommunikation soll nie fehlen und die Entscheidungen des Projektleiters sollen akzeptiert werden. Man muss auch seine Verantwortlichkeiten selbst übernehmen und seine Arbeit mit seiner Stärken fertig machen. Das wurde alles auch während der Arbeit gelernt.
+	
+	\item Wichtigkeit der Planung und der Begrenzungen \\
+	
+	Es wurde schon gelernt, dass die Planung eines Projekts sehr wichtig war, aber mit Hilfe dieser Diplomarbeit wurde ganz genau verstanden, warum das so ist. Ohne die Big Picture und sie Erste Ebene wurde der Aufwand der Arbeit viel grösser, und die Zeit wurde sicherlich nicht genügend sein. Die Begrenzungen sind auch wichtig, weil ohne die wurde man Zeit an etwas verlieren, das am Ende nicht realisierbar ist oder nicht nötig ist.
+	\item Wie man mit der Fehlern umgeht \\
+	
+	Letztens wurde verstanden und gelernt, wie man mit der Fehlern umgehen soll. Pessimismus und das Aufgeben sind nicht die Lösungen. Man muss optimistisch sein und viele verschiedene Wege suchen, wie man den Fehlern finden und dann reparieren kann. Fremde Hilfe ist auch irgendwann notwendig.
+\end{itemize}	
+	Die Verbesserungsmöglichkeiten sind auch bewusst. Diese sind: 
+\begin{itemize}	
+	\item Besseres Zeitmanagement \\
+	
+	Die Arbeit musste ein bisschen früherer beginnen, und es musste besser verteilt werden. Es muss verstanden werden, dass hinter einem schlechten Projekt versteckt sich eine schlechte Zeitmanagement.
+	\item Backup Verfahren \\
+	
+	Nächstes Mal wird die Arbeit öfter gespeichert. Back-Ups werden täglich gemacht werden, damit nichts verloren wird. Man denkt, dass das lokale Speichern genug ist. Was ist aber, wenn der PC kaputt wird? Das wird in die nächste Arbeiten mehr berücksichtigt sein müssen.
+\end{itemize}
 
 \chapter{Planung vs Realisierung}
 Planung vs Realisierung 
@@ -267,5 +417,5 @@ Es war früher auch geplant nur Gesichtsdaten in der Datenbank zu speichern aber
 \end{figure}
 \chapter{Evaluierung und Resümee}
 \section{Wertschöpfung und Lessons Learned}
-Also, nach einige Wochen sind wir zu Idee gekommen, dass die Planung eine große Rolle in diesem Projekt spielt, weil das Team must genau spezifizieren was jeder macht, und auch die wichtigsten Punkte, wie z.B der Losungsweg. Bei den nächsten Treffungen soll mehr über den Problemen diskutiert werden, damit klar für jeden was genau zu tun ist. Eine chaotische Arbeit wird keine guten Ergebnisse bringen, weil auch eine Software bzw. Programm, dass ohne Struktur geschrieben wird, wird schwierig zum Lesen und Verstehen.
+Also, nach einige Wochen sind wir zu Idee gekommen, dass die Planung eine große Rolle in diesem Projekt spielt, weil das Team musst genau spezifizieren was jeder macht, und auch die wichtigsten Punkte, wie z.B der Lösungsweg. Bei den nächsten Treffungen soll mehr über den Problemen diskutiert werden, damit klar für jeden was genau zu tun ist. Eine chaotische Arbeit wird keine guten Ergebnisse bringen, weil auch eine Software bzw. Programm, dass ohne Struktur geschrieben wird, wird schwierig zum Lesen und Verstehen.
 >>>>>>> ad5d4a4503bd63c93088f9dff686e29b86128b49
