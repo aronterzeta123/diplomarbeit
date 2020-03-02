@@ -2133,16 +2133,16 @@
     <bcf:citekey order="2">why_python</bcf:citekey>
     <bcf:citekey order="3">Git1</bcf:citekey>
     <bcf:citekey order="4">opencv_library</bcf:citekey>
-    <bcf:citekey order="5">OpencvLogo</bcf:citekey>
-    <bcf:citekey order="6">2019arXiv190710121V-scipy</bcf:citekey>
-    <bcf:citekey order="7">Numpy</bcf:citekey>
+    <bcf:citekey order="5">2019arXiv190710121V-scipy</bcf:citekey>
+    <bcf:citekey order="6">dlib</bcf:citekey>
+    <bcf:citekey order="7">dlib</bcf:citekey>
     <bcf:citekey order="8">dlib</bcf:citekey>
-    <bcf:citekey order="9">dlib</bcf:citekey>
+    <bcf:citekey order="9">Viola01robustreal-time</bcf:citekey>
     <bcf:citekey order="10">Viola01robustreal-time</bcf:citekey>
     <bcf:citekey order="11">Viola01robustreal-time</bcf:citekey>
-    <bcf:citekey order="12">Viola01robustreal-time</bcf:citekey>
+    <bcf:citekey order="12">Kazemi2014OneMF</bcf:citekey>
     <bcf:citekey order="13">Kazemi2014OneMF</bcf:citekey>
-    <bcf:citekey order="14">Kazemi2014OneMF</bcf:citekey>
+    <bcf:citekey order="14">fmea</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
