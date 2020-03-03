@@ -34,7 +34,7 @@ Die Bauteile, die für dieses System verwendet geworden sind, sind die folgende:
 	\item \textit{Taster} \\
 	Ein Taster wird wie ein Button gedrückt, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster vorhanden.
 	\item \textit{Raspberry Pi} \\
-	Raspberry Pi ist ein Minicomputer, der in diesem Projekt den normalen Computer ersetzt. Der verwendete Raspberry, Version 3, hat 4 USB-Anschlüsse, einem Netzteil, eine SD-Karte, 16 GPIO\footnote{Generated Input Output} Pins und einem VGA Schnittstelle. Die 32-Bit SD-Karte ist das wichtigste Element, weil dort alle Daten und Informationen gespeichert sind.
+	Raspberry Pi ist ein Minicomputer, der in diesem Projekt den normalen Computer ersetzt. Der verwendete Raspberry, Version 3, hat 4 USB-Anschlüsse, einem Netzteil, eine SD-Karte, 16 GPIO\footnote{Generated Input Output} Pins und einem VGA Schnittstelle. Die 3.-Bit SD-Karte ist das wichtigste Element, weil dort alle Daten und Informationen gespeichert sind.
 	\item \textit{Bildschirm} \\
 	Ein Bildschirm ist eine Anzeige, die für die visuelle Darstellung von verschiedenen Informationen oder Daten(wie Videos, Fotos, Statistiken usw.) verwendet wird. Ein Bildschirm wird zu den heutigen Zeiten sehr häufig verwendet, aufgrund der hohen Benutzerfreundlichkeit, die angeboten wird.
 	\item \textit{Tastatur} \\
@@ -125,6 +125,7 @@ In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umset
 \subsubsection{Lösungsweg- Beschreibung und Erklärung}
 Der Lösungsweg für die Umsetzung der Aufgaben der Gesichtserkennung ist streng mit einer guten vorherigen Planung verbunden. Deshalb wurde nicht nur das Big Picture(Großes Sicht des Systems nach Außen), die in die vorherigen Kapiteln beschrieben wurde erklärt, sondern auch die Erste Ebene des Gesichtserkennungsteils.
 Die Big Picture sieht man unter Abb.\ref{fig:Big Picture}
+
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{\ordnerfigures Big_Picture.jpg}
 	\caption{Big Picture}
@@ -157,7 +158,14 @@ In diesem Unterkapitel wird der Vergleich der Gesichter der Personen detailliert
 Es ist wichtig zu erw{\"a}hnen, dass für die Umsetzung dieses Systems es notwendig ist, die verschiedenen Skripten miteinander zu verbinden.  Deshalb müssen sie innerhalb anderer Skripten angerufen werden. Das wird durch Variablen gemacht. Deshalb ist das Importieren des Pakets sys n{\"o}tig. Der Benutzer gibt seine Emailadresse an, die danach verwendet wird, um in der Datenbank schneller auf die Benutzerbilddaten zuzugreifen. Es wurde deshalb die Emailadresse(und nicht Vorname, Nachname usw.) gewählt, weil diese Adresse immer UNIQUE ist, das heißt, es ist unmöglich, dass zwei Benutzern dieselbe Adresse haben, und dasselbe kann für die andere Benutzerdaten(Vorname, Nachname usw.) nicht gesagt werden.
 %-----------------------------------------------------
 \item \textit{Die Existenz derselben Emailadresse des Benutzers in der Datenbank wird geprüft} \\
-
+	\begin{lstlisting}
+		for x in myresult:
+		if x[2]==rei.emailiperkrahasim:
+		bool=True
+		else:
+		bool=False
+		os.system('./Log_Erkennung_Email_Nicht_Gefunden.py')
+	\end{lstlisting}
 Wie es vorher erwähnt wurde, ist dieser Schritt deswegen wichtig, weil falls die eingegebene Email nicht in der Datenbank existiert, muss das System die Bildvergleichung nicht machen. Der Benutzer kriegt stattdessen eine Anmeldung, die ihm sagt, dass er noch einmal versuchen kann, seine Emailadresse einzugeben. Wird diese neue Adresse auch nicht in der Datenbank gefunden, kann danach dieser Benutzer mit dieser Adresse im System nicht mehr versuchen anzumelden. 
 %-----------------------------------------------------
 \item \textit{Bild wird gemacht und tempor{\"a}r gespeichert} \\
@@ -174,8 +182,9 @@ Das gekroppte Bild des Gesichts der Person besteht aus verschiedene Punkte. Insg
 %-----------------------------------------------------
 	\item \textit{Wird dieselbe Emailadresse in der Datenbank gefunden, werden die zugehörige Bildinformationen geladen} \\
 	
-	Falls aber die vom Benutzer eingegebene Emailadresse schon in der Datenbank liegt, weißt das System Bescheid, dass ein Bilderdatenvergleich stattfinden muss. Um das zu erreichen, werden alle Bildinformationen geladen. Unter Bildinformationen sind die 68 extrahierten Gesichtspunkte, zu verstehen. Der kurze Codeabschnitt unten zeigt genau wie dies funktioniert. 
-		\begin{lstlisting}
+	Falls aber die vom Benutzer eingegebene Emailadresse schon in der Datenbank liegt, weißt das System Bescheid, dass ein Bilderdatenvergleich stattfinden muss. Um das zu erreichen, werden alle Bildinformationen geladen. Unter Bildinformationen sind die 68 extrahierten Gesichtspunkte, zu verstehen. Der kurze Codeabschnitt unten zeigt genau wie dies funktioniert. \\
+	
+	\begin{lstlisting}
 		if b=="existiert":
 		mycursor.execute(
 		"""select * from info i \
@@ -185,12 +194,22 @@ Das gekroppte Bild des Gesichts der Person besteht aus verschiedene Punkte. Insg
 		myresult=mycursor.fetchall()
 		for x in myresult:
 		print(x)
-		\end{lstlisting}
+	\end{lstlisting}
+	
 	Das heißt, die extrahierte Punkte des von der Kamera gemachten Bildes und die extrahierte Punkte, die in der Datenbank gespeichert waren und die dem Person mit dieselbe Emailadresse wie die vom Benutzer eingegebene Adresse gehören , stehen jetzt endlich zur Verfügung. Von hier wird es angenommen, dass die eingegebene Emailadresse mit mindestens eine in der Datenbank Emailadresse gleich ist, damit der Vergleich Prozess erklärt werden kann.
 %-----------------------------------------------------
 	\item \textit{Die extrahierten Punkte werden in 5 verschiedene Bereiche geteilt} \\
 	
-	Bevor der Vergleichsprozess beginnt, müssen die 68 extrahierten Punkte geteilt werden. Die 5 großen Bereiche sind das Gesicht, die Nase, die rechte Auge, der linke Auge und der Mund. Jeder Bereich hat seine eigenen Punkte. Die erste 28 Punkte gehören dem Gesicht, die nächste 9 gehören der Nase, die nächste 6 dem rechten Auge, die nächste 6 dem linken Auge und die letzte 19 gehören dem Mund. Durch dieser Prozess wird der Vergleichs Qualität sehr stark erhöht, weil die Punkte der Nase werden genau mit der Punkte der anderen Nase verglichen, und nicht mit die von dem Augen beispielsweise.
+	Bevor der Vergleichsprozess beginnt, müssen die 68 extrahierten Punkte geteilt werden. Die 5 großen Bereiche sind das Gesicht, die Nase, die rechte Auge, der linke Auge und der Mund. Jeder Bereich hat seine eigenen Punkte. Die erste 28 Punkte gehören dem Gesicht, die nächste 9 gehören der Nase, die nächste 6 dem rechten Auge, die nächste 6 dem linken Auge und die letzte 19 gehören dem Mund. Durch dieser Prozess wird der Vergleichs Qualität sehr stark erhöht, weil die Punkte der Nase werden genau mit der Punkte der anderen Nase verglichen, und nicht mit die von dem Augen beispielsweise. \\
+	Die untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird(nur um eine Idee zu haben, wie es funktioniert)\\
+	
+\begin{lstlisting}
+for pika in range(0,27):
+	dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * 
+	abs( (vleratx.item(pika)-float(res[vx])) ) + ( 
+	abs((vleraty.item(pika)-float(res[vy]))) *
+	abs((vleraty.item(pika)-float(res[vy])) ) ))
+\end{lstlisting}
 %-----------------------------------------------------
 	\item \textit{Die Bildinformationen der beiden Bilder werden verglichen} \\
 	
@@ -201,23 +220,75 @@ Die wichtigste Aufgabe ist der Vergleich der Bildinformationen. Es werden die ex
 	In jedes Gesichtsbild wird ein Startpunkt bzw. Origin für den Vergleich festgelegt. Dieser Punkt ist der Punkt mit der Koordinaten (0/0). Es wurde so gedacht, dass der Abstand von jedem anderem Gesichtspunkt mit diesem Origin kalkuliert wurde. Dieser Abstand wird dann mit dem Abstand der Origin des zweiten Bildes und sein anderer Punkt. Die zwei Punkte, dessen Abstand mit den jeweiligen Startpunkten der Bilder kalkuliert ist, müssen miteinander einpassen(zum Beispiel ein Punkt der rechten Augen im ersten Bild muss mit dem zugehörigen Punkt in dem zweiten Bild verglichen werden, und nicht mit einem Punkt von den Augen).
 	\item Die Abstände jedes anderen Punktes des gemachten Bildes von der Startpunkt werden kalkuliert \\
 	Nachdem der Startpunkt festgelegt wurde, beginnt der Vergleich der Abstände des gemachten Bildes(Punkt-Startpunkt) und der Abstände, die in der Datenbank gespeichert sind.
-	------------------------------------FOTOJA ME TREKANDSHA------------------------------------------------
-	Auf Abbildung X wird die verwendete Vergleichsmethode dargestellt. Der Startpunkt hat die Koordinaten (0/0) und befindet sich links oben. Jeder Punkt hat seine bestimmten Koordinaten, zum Beispiel, der Punkt 36 des ersten Bildes hat die Koordinaten x1 und y1, und die 36.Punkt des anderen Bildes hat die Koordinaten x2 und y2. Um den Abstand des Punkt 36 zu berechnen, wird die pythagoreische Formel verwendet. Die Differenz der x-Koordinaten und die Differenz der beiden y-Koordinaten sind die beide Katheten(a und b auf die Abbildung). Um die Hypotenuse zu finden wird das Quadrat beider Katheten addiert, und am Ende wird die Wurzel des Ergebnisses gefunden. Die gerechnete Zahl ist der Abstand der Punkt 36 von dem Startpunkt. Dieselbe Methode wird für jeder Punkt verwendet.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{\ordnerfigures Vergleichsweg.png}
+		\caption{Vergleichsweg}
+		\label{fig:Vergleichsweg}
+	\end{figure}
+	
+	Auf Abbildung \ref{fig:Vergleichsweg} wird die verwendete Vergleichsmethode dargestellt. Der Startpunkt hat die Koordinaten (0/0) und befindet sich links oben. Jeder Punkt hat seine bestimmten Koordinaten, zum Beispiel, der Punkt 36 des ersten Bildes hat die Koordinaten x1 und y1, und die 36.Punkt des anderen Bildes hat die Koordinaten x2 und y2. Um den Abstand des Punkt 36 zu berechnen, wird die pythagoreische Formel verwendet. Die Differenz der x-Koordinaten und die Differenz der beiden y-Koordinaten sind die beide Katheten(a und b auf die Abbildung). Um die Hypotenuse zu finden wird das Quadrat beider Katheten addiert, und am Ende wird die Wurzel des Ergebnisses gefunden. Die gerechnete Zahl ist der Abstand der Punkt 36 von dem Startpunkt. Dieselbe Methode wird für jeder Punkt verwendet.
 	Das obige Beispiel verglich die Abstände der Punkte von 2 verschiedenen Bilder. Der Grund war folgendes, dass der Weg der Vergleich zwischen der Punkte Abstände des gemachten Bildes und der in der Datenbank gespeicherten Punkte Abstände genau gleich wie im Beispiel erklärt wurde ist. Es ist einfach leichter erklärbar und verstehbar, wenn 2 Bildern vergleicht wurden. 
-	Die Abstände jeder Punkt jeder Bereich wurde in einer Variable gespeichert.
+	Die Abstände jeder Punkt jeder Bereich wurde in einer Variable gespeichert.\\
 	
 	\item Es wird der maximale Abstand für jeder einzelne Bereich gefunden \\
 	
-	Nachdem die nach oben erwähnte und erklärte Abstände kalkuliert wurden, wurden die maximalen Abstände für jeder Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund) benötigt. Diese Maximumwerte sind wesentlich für den Vergleich. Warum das so ist wird später erklärt. 
-	---------------------------------KODI-----------------------------------
+	Nachdem die nach oben erwähnte und erklärte Abstände kalkuliert wurden, wurden die maximalen Abstände für jeder Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund) benötigt. Diese Maximumwerte sind wesentlich für den Vergleich. Warum das so ist wird später erklärt. \\
+	Die untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird \\
+	
+\begin{lstlisting}
+MAX = [0,0,0,0,0]
+for pika in range(0,27):
+dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * 
+abs((vleratx.item(pika)-float(res[vx])) ) + ( 
+abs((vleraty.item(pika)-float(res[vy]))) * 
+abs((vleraty.item(pika)-float(res[vy])) ) ))
+if(dis < min):
+	min = dis
+if(dis > max):
+	max = dis    
+global MAX
+MAX[0]=max
+print("Max:\%s\n"\%(MAX[0]))
+min=10.0
+max=0.0
+dis=0
+\end{lstlisting}
+	
 	Zuerst wurde eine Array Max erstellt, der 5 Elementen enthält. Jedes Element gehört einem von den 5 Bereichen. Beispielsweise der Maximumwert an der Stelle 0(erste Element) ist die Maximumabstand, das bei der Gesichtsbereich gefunden war. Die Funktion Max in Python verwendet. Jeder Abstand wird mit der Maxwert verglichen(Maxwert beginnt am Anfang bei 0). Ist es größer, dann wird dieser Abstand der neue Maximumwert. Am Ende wird einen Maximumwert ermittelt.
 	
 	\item Es wird das geometrische Mittel der Abstände aller Bereiche kalkuliert \\
 	
-	Das geometrische Mittel der Abstände aller Punkte (nicht in einzelnen Bereichen) ist auch wichtig für den Vergleich. Es gibt 68 Gesichtspunkten insgesamt, das heißt, 68 Abstände von dem Startpunkt. 
-	Um das geometrische Mittel von n Zahlen x1,x2,…xn zu ermitteln, muss man deren Produkt bilden und von diesem die n-te Wurzel ziehen.
-	Damit ergibt sich die Formel:
-	Fotoja e GM
+	"Das geometrische Mittel der Abstände aller Punkte (nicht in einzelnen Bereichen) ist auch wichtig für den Vergleich. Es gibt 68 Gesichtspunkten insgesamt, das heißt, 68 Abstände von dem Startpunkt. 
+	Um das geometrische Mittel von n Zahlen x1,x2,…xn zu ermitteln, muss man deren Produkt bilden und von diesem die n-te Wurzel ziehen."\cite{geometrischesM}\\
+	
+	Auf Abbildung \ref{fig:geometrischesM} wird das Formel, das sich ergibt gezeigt:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{\ordnerfigures geometrischesM.png}
+		\caption{geometrisches Mittel}
+		\label{fig:geometrischesM}
+	\end{figure}
+
+	Die untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird(nur um eine Idee zu haben, wie es funktioniert)\\
+	
+\begin{lstlisting}
+for pika in range(0,27):
+dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * abs( 
+(vleratx.item(pika)-float(res[vx])) ) + ( 
+abs((vleraty.item(pika)-float(res[vy]))) * 
+abs((vleraty.item(pika)-float(res[vy])) ) ))
+gm *= dis
+vx+=2
+vy+=2
+gm=gm**(1/27)    
+print("GM:%s\n"%(gm))
+gm=1
+dis=0
+\end{lstlisting}
 	
 	\item Die ermittelte Maximumwerte und die geometrischen Mittel der Abstände der Punkte des gemachten Bildes werden mit der Maximumwerte und die geometrische Mitteln Abstände der in der Datenbank gespeicherten Punkte verglichen \\
 	
@@ -225,33 +296,161 @@ Die wichtigste Aufgabe ist der Vergleich der Bildinformationen. Es werden die ex
 		\item Beschreibung \\
 		
 		Wenn die angesprochene Maximumwerte und die geometrische Mitteln der Abstände der Punkte des gemachten Bildes und die geometrische Mitteln Abstände des in der Datenbank gespeicherten Punkte gleich oder sehr ähnlich sind, dann wird es von dem selber Person gesprochen und die Erkennung muss erfolgreich sein. Deshalb werden einige Abgrenzungen bestimmt, wann die Erkennung als erfolgreich benannt wird und wann nicht.
+		
 		\item Mögliche Fälle \\
 		
 		Insgesamt gibt es 5 Bedingungen bzw. 5 Fälle, die eintreten können und die wichtig sind. Ist einer dieser fünf Bedingungen wahr, ist die Erkennung nicht erfolgreich und es wird nicht von derselben Person gesprochen. Diese Fälle werden nach unten mit Hilfe von Bildern erklärt. Es werden die Maximumwerten jeder Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund, also 5 insgesamt), sowie der geometrische Mittel aller 68 Punkten berücksichtigt.
+		
 		\begin{enumerate}
 			\item 1.Fall: Mindestens 2 Maximumwerte sind größer als 0.06 \\
 			
-			Sind 2 oder mehrere Maximumwerte größer als 0.06, wird das geometrische Mittel beobachtet. Ist das größer als 0.01, stimmt die Erkennung nicht. Wenn weniger als 2 Werte größer als 0.06 sind, muss auch das geometrische Mittel kleiner als 0.027 sein, um eine erfolgreiche Erkennung zu haben.
+				\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{\ordnerfigures 1_Fall.png}
+				\caption{1\_Fall}
+				\label{fig:1_Fall}
+			\end{figure}
+			
+			Sind 2 oder mehrere Maximumwerte größer als 0.06, wird das geometrische Mittel beobachtet. Ist das größer als 0.01, stimmt die Erkennung nicht. Wenn weniger als 2 Werte größer als 0.06 sind, muss auch das geometrische Mittel kleiner als 0.027 sein, um eine erfolgreiche Erkennung zu haben. \\
+			
+			Auf Abbildung \ref{fig:1_Fall} ist ein Flussdiagramm dargestellt, das die Abfolge dieser Bedingung beschreibt.\\
+			
+			Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+			
+\begin{lstlisting}
+global count
+count = 0
+for i in range(0,len(MAX)):
+	if MAX[i] > 0.06:
+		count+=1
+		status1=True
+		status11=True
+		status2=True
+		status22=True
+				
+#Wenn JA: Nur wenn gmT kleiner als 0.01 sind sie richtig,
+ sonst FALSCH
+	if count ==1:
+		global status11
+		status11=False
+	if count >= 2:
+		global status22
+	status22=False
+	if gmT > 0.01:
+	global status1
+	status1 = False
+				
+#Wenn NEIN: gmT muss kleiner als 0.027 sein,
+			um RICHTIG zu sein
+	else:
+		if gmT > 0.027:
+			global status2
+			status2 = False
+\end{lstlisting}
+	
+			
 			\item 2.Fall: Genau einen Maximumwert ist größer als 0.07 und kleiner als 0.084 \\
 			
-			Stimmt dieser Bedienung, wird es wieder überprüft, ob das geometrische Mittel kleiner als 0.027 ist oder nicht. Wenn ja, dann ist die Erkennung erfolgreich. Ist aber dieser Bedienung wahr für mehr als einen Wert, ist der Vergleich gleich als nicht erfolgreich genommen.
+				\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{\ordnerfigures 2_Fall.png}
+				\caption{2\_Fall}
+				\label{fig:2_Fall}
+			\end{figure}
+			
+			Stimmt dieser Bedienung, wird es wieder überprüft, ob das geometrische Mittel kleiner als 0.027 ist oder nicht. Wenn ja, dann ist die Erkennung erfolgreich. Ist aber dieser Bedienung wahr für mehr als einen Wert, ist der Vergleich gleich als nicht erfolgreich genommen. \\
+			
+			Auf Abbildung \ref{fig:2_Fall} ist ein Flussdiagramm dargestellt, das die Abfolge dieser Bedingung beschreibt.\\
+			
+			Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+			
+\begin{lstlisting}
+count = 0
+for i in range(0,len(MAX)):
+	if MAX[i] > 0.07 and MAX[i]< 0.084:
+		count+=1
+		status3=True
+		status33=True
+		status4=True
+#Wenn JA :Wenn gmT kleiner als 0.027 ist passt, 
+		sonst FALSCH
+	if count == 1:
+		global status33
+		status33=False
+	if gmT > 0.027:
+		global status3
+		status3 = False
+#Wenn 2 oder mehr: FALSCH
+	elif count > 1:
+		global status4
+		status4 = False
+\end{lstlisting}
+			
 			\item 3.Fall: Mindestens einen Maximumwert ist größer als 0.084 \\
 			
-			Trifft dieser Bedienung zu, stimmt die Erkennung nicht und der Person wird nicht vom System erkannt.
+				\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{\ordnerfigures 3_Fall.png}
+				\caption{3\_Fall}
+				\label{fig:3_Fall}
+			\end{figure}
+			
+			Trifft dieser Bedienung zu, stimmt die Erkennung nicht und der Person wird nicht vom System erkannt.\\
+			
+			Auf Abbildung \ref{fig:3_Fall} ist ein Flussdiagramm dargestellt, das die Abfolge dieser Bedingung beschreibt.\\
+			
+			Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+			
+\begin{lstlisting}
+for i in range(0,len(MAX)):
+	if MAX[i] > 0.084:
+		count+=1
+		status5=True
+#Wenn JA: FALSCH
+	if count >=1:
+		global status5
+		status5=False
+\end{lstlisting}
+			
 		\end{enumerate} 
+	
 		\item Andere Abgrenzungen und Entscheidungen \\
 		
-		Treffen eine von die 2 untere Kombinationen zu, ist weitere Überprüfung(geometrisches Mittel) nicht mehr nötig und die Erkennung ist nicht erfolgreich.
+		Treffen eine von die 2 untere Kombinationen zu, ist weitere Überprüfung (geometrisches Mittel) nicht mehr nötig und die Erkennung ist nicht erfolgreich.
 		\begin{enumerate}
 			\item 1 Maximumwert größer als 0.06 und 1 Maximumwert größer als 0.07 \\
 			\item 2 Maximumwerte größer als 0.06 und 1 Maximumwert größer als 0.07 \\
-		\end{enumerate} 
+		\end{enumerate}
+	
+		Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+	
+\begin{lstlisting}
+if status1==False or status2==False 
+or status3==False or status4==False 
+or status5==False or
+ (status11==False and status33==False) 
+or (status22==False and status33==False):
+	print("Vergleich nicht erfolgreich, 
+	sie sind nicht eingeloggt!!!")
+	os.system
+	('./Log_Erkennung_Person_Existiert_Nicht.py')
+\end{lstlisting}
 		
 	\end{enumerate}
 %----------------------------------------------------
 \item \textit{Ist die Erkennung erfolgreich, kriegt der Benutzer eine Anmeldung, die ihm informiert, dass er im System erfolgreich angemeldet ist.} \\
 
-Wenn keinen Fall bzw. Bedienung zutrifft, ist die Erkennung erfolgreich. Der Benutzer kriegt danach eine Anmeldung, die ihm Bescheid gibt, dass die Anmeldung erfolgreich war und dass er weitermachen darf. Dazu wurde ein gelbes LED verwendet, das leuchten wird. 
+Wenn keinen Fall bzw. Bedienung zutrifft, ist die Erkennung erfolgreich. Der Benutzer kriegt danach eine Anmeldung, die ihm Bescheid gibt, dass die Anmeldung erfolgreich war und dass er weitermachen darf. Dazu wurde ein gelbes LED verwendet, das leuchten wird. \\
+
+Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+
+\begin{lstlisting}
+else:
+	b="existiert"
+	print("Vergleich erfolgreich, Sie sind eingeloggt!!!")
+	os.system('./Log_Erkennung_Person_Existiert.py')
+\end{lstlisting}
+
 \end{itemize}
 \end{enumerate}
 \subsubsection{Andere wichtige Punkte und Abgrenzungen}
@@ -304,6 +503,26 @@ Es wurden die wichtigsten Ereignisse mitprotokolliert:
 \textbf{Wie wurde das Logging gemacht?}\\
 Das Logging der Gesichtserkennungsprozess war nicht sehr komplex in Python. Es gab eine Tabelle in der Datenbank, die für dieser Funktion geeignet war. In dieser Tabelle wurden alle Informationen, die protokolliert werden müssen, gespeichert. Mit Hilfe einer Python Skript wurde dann die Verbindung aller Skripten, die die notwendige Informationen erhaltenen mit dieser Log Tabelle, die in der Datenbank liegt, gemacht. Es wurde danach ein Programm für jeder Ereignis, der nach oben erwähnt war, gemacht. Diese Programme ermöglichten die Verbindung mit der Datenbank, und zeigten eine Anmeldung. Beispielweise wurde es in der Datenbank notiert, dass es ein Problem bei Gesichtserkennung gab(Taster nicht gedrückt..). In das Hauptskript wurden dann diese einzelnen Programme gerufen. Für diese Programme wurde die Klasse %$LogDBHandler verwendet. Der Log_Level ist Debug. 
 
+Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+
+Der Taster wird gedrückt: \\
+
+\begin{lstlisting}
+	if GPIO.input(17):
+	os.system('./Log_Erkennung_TasterGed.py')
+\end{lstlisting}
+
+Zeitpunkt wird gespeichert: \\
+
+\begin{lstlisting}
+logging.basicConfig(filename=log_file_path)
+if(log_to_db):
+logging.getLogger('').addHandler(logdb)
+log=logging.getLogger('Gesichtserkennung')
+log.setLevel(log_error_level)
+test_var='Taster gedruckt'
+log.error('This event occurred: %s' % test_var)
+\end{lstlisting}
 
 	\section{Herausforderungen, Probleme, und deren Lösung}
 	W{\"a}hrend dieser Arbeit musste man mit einigen Problemen und Herausforderungen konfrontiert werden.
@@ -317,35 +536,56 @@ Das Logging der Gesichtserkennungsprozess war nicht sehr komplex in Python. Es g
 		\item \textit{Kurzschluss beim Raspberry Pi}\\
 		
 		Was noch passiert ist, ist das es beim Anfassen vom Raspberry PI ein Kurzschluss gab. Der Raspberry PI war kaputt und musste ersetzt werden. Glücklicherweise konnte die SD-Karte erfolgreich in kloniert werden und deshalb sind alle Daten und Informationen gespeichert.
+		
 		\item \textit{Pakete FaceRecognition Installation} \\
 		
 		Die Installation des Paketes FaceRecognition konnte nicht erfolgreich gemacht werden, weil die dlib Pakete auch gebraucht wird. Wahrscheinlich aufgrund des zu geringen RAMs kann diese Pakete nicht installiert werden. Dieses Problem wurde noch nicht gel{\"o}st.
+		
 		\item \textit{Probleme bei der Aufruf der Skripten } \\
 		
 		Am Beginn war das Umgehen mit der Skripten Aufrufe sehr schwer. Es war schwer zu verstehen wie das genau funktionierte, weil die große Variablenanzahl die Arbeit kompliziert machte. Dieser Anzahl wurde reduziert und es wurden viele Recherchen an der korrekten Verwendung von der sys Pakete gemacht um das Problem zu l{\"o}sen.
+		
 		\item Schlechtere Vergleichsqualität \\
 		
 		Am Beginn des Testens des Vergleichs waren die Ergebnisse nicht stabil. Es konnte keinen Zusammenhang gefunden werden. Beispielsweise waren die Maximumwerte der Abstände bei Bilder, die derselben Person gehörten größer als bei Bildern, die verschiedenen Personen gehörten. Nach viele Tests wurde der Grund verstanden. Die 68 Punkte mussten in 5 verschiedene Teile(Gesicht, Nase, linke Auge, rechte Auge, Mund) zerlegt werden. In dieser Weise wird ein Punkt, der dem Mund gehört nicht mit einem Punkt, der der Nase gehört verglichen.
+		
 		\item Probleme bei Einteilung der Gesichtspunkte in 5 Bereichen \\
 		
 		Der Prozess der Einteilung der Gesichtspunkte in dem verschiedenen Bereiche war auch schwierig. Ein großes Array mit 68 Elementen erstellt. Es war sehr kompliziert, in dem Index diesem Array zu zugreifen. Deshalb wurde dieses große Array in 5 kleinere Arrays zerlegt. In dieser Weise war es viel leichter zu verstehen, wie die Indexe funktionierten und wie man dort Zugriff haben kann.
+		
 		\item Probleme bei der Berechnung des geometrischen Mittels \\
 		
 		Die Berechnung des geometrischen Mittels war auch nicht leicht. Nachdem die Formel gefunden war, musste es in dem Programm integriert werden. Die Schwierigkeit war bei dem Ziehen von der N-Wurzel. Sollte das n 67 oder 68 sein? Das war von dem Index abhängig. Am Ende wurde verstanden, dass das Produkt aller Abstände hoch 1/68, das richtige Ergebnis war.
-		\item Probleme bei der Datenbank \\
 		
-		Probleme hat es noch beim Zugriff auf der in der Datenbank gespeicherten Gesichtspunkte gegeben. 
+		\item Probleme mit der Datenbank \\
+		
+		Probleme hat es noch beim Zugriff auf der in der Datenbank gespeicherten Gesichtspunkte gegeben. Es war sehr kompliziert zu verstehen, wie und wo waren die Punkte genau gespeichert(Auf welchem Index die X-Werte, auf welchem die Y-Werte). Es wurde deshalb Hilfe von dem Mitarbeiter, der sich mit der Datenbank beschäftigt hätte, gebraucht, und danach war alles klarer und verstehbar.
+		
 		\item Probleme mit GIT \\
 		
 		Letztens müssen die Probleme mit Git erwähnt werden. Es gab viele Fälle, wo es Konflikten mit der Dateien gibt. Man muss immer zuerst Pull machen, und danach Push. Das hat aber oft nicht passiert. Es wurde in einer Datei arbeitet, die aber von einem anderen Person schon geändert war. Deshalb gab es Probleme bei der Push. Oft mussten die ganze Dateien gelöscht werden, und danach wieder vom Git abgeholt. Es wurde am Ende zwischen der Gruppe darüber gesprochen, und endlich war das Problem gelöst.
 	\end{itemize}
 
 	\section{Projektmanagement und Controlling}
-	In Bezug auf Projektmanagement und Controlling wurde die Methode des Fehlerbaums verwendet. Diese ist eine ber{\"u}hmte Methode um die Aufwandsch{\"a}tzung zu kalkulieren und um eine Fehlerursache zu finden. Es wird der Problem in kleinen Teilen geschnitten damit es klarer wird. 
-	\begin{figure}		\includegraphics[width=\textwidth]{\ordnerfigures IMG_4535.jpg}
+	In Bezug auf Projektmanagement und Controlling wurde die Methode des Fehlerbaums verwendet. Diese ist eine ber{\"u}hmte Methode um die Aufwandsch{\"a}tzung zu kalkulieren und um eine Fehlerursache zu finden. Es wird das Problem in kleinen Teilen geschnitten damit es klarer wird. 
+	\begin{figure}		
+		\includegraphics[width=\textwidth]{\ordnerfigures Fehlerbaum.png}
 		\caption{Fehlerbaum}
+		\label{fig:Fehlerbaum}
 	\end{figure}
-	Es wurde auch eine detaillierte Soll-Ist Analyse gemacht, die bei der neuen Aufgabeteilung sehr geholfen hat, und ein Balkendiagramm, das f{\"u}r die Organisation und Festlegung der Arbeitstermine dient.
+	Es wurde eine detaillierte Soll-Ist Analyse gemacht, die bei der neuen Aufgabeteilung sehr geholfen hat, und eine Fehlerbaumanalyse.\\
+	
+	Die Fehlerbaumanalyse wird verwendet, um die Zuverlässigkeit von technischen Systemen zu testen. Die Fehlerbaumanalyse nimmt als Ausgangspunkt – im Gegensatz zur FMEA – nicht eine einzelne Systemkomponente, sondern das potenziell gestörte Gesamtsystem. Die Fehlerbaumanalyse baut auf der sogenannten negativen Logik auf. Das heißt, der Fehlerbaum beschreibt eine Ausfallsfunktion die bei dem Zustand logisch-1 einen Ausfall ausdrückt, bei logisch-0 liegt ein funktionsfähiges System vor.
+	Sie gehört zu den "Top-Down"-Analyseformen im Risikomanagement. In einem ersten Schritt wird daher das Gesamtsystem detailliert und exakt beschrieben. Darauf aufbauend wird analysiert, welche primären Störungen eine Störung des Gesamtsystems verursachen oder dazu beitragen können. Ausgangspunkt ist hierbei zunächst ein einziges unerwünschtes Ereignis, welches an der Spitze des Fehlerbaums steht, das sogenannte Top-Ereignis. Das Top-Ereignis resultiert in der Regel aus einer Risikoanalyse bzw. Szenarioanalyse.
+	In der einfachsten Form besteht er aus folgenden Elementen: Entscheidungsknoten (E), die Entscheidungen kennzeichnen, Zufallsknoten, die den Eintritt eines zufälligen Ereignisses darstellen sowie aus Ergebnisknoten (R), die das Ergebnis von Entscheidungen oder Ereignissen darstellen.
+	
+	Auf der Abbildung \ref{fig:Fehlerbaum} wird ein Fehler in der Gesichtserkennung Teil des Systems beschrieben. Zuerst muss es überprüft werden, ob der Fehlern bei der Hardware oder Software liegt.\\
+	
+	Hardware Problem?\\
+	Ist es ein Problem in Hardware, wird der Raspberry Pi und die Steckboard getestet. Beim Raspberry kann es entweder Probleme mit dem SD-Karte oder mit der GPIO Pins geben. Bei der Steckboard sind entweder die Kabeln und die Verbindungen falsch eingesteckt, oder sind die Bauteile kaputt(Taster, Widerstand, LED, Kamera).\\
+	
+	Software Problem?\\
+	Wenn es ein Softwareproblem ist, sind entweder die Versionen vermischt(Problem mit GIT), oder gibt es Programmierfehlern. Diese Programmierfehlern können beim Logik(Algorithmen) oder beim Syntax auftreten(Skripten Aufruf, Variablen usw.)
 	
 	\section{Ergebnisse}
 	Die finale Ergebnisse sind die folgenden:\\
@@ -367,9 +607,11 @@ Während dieser Diplomarbeit war vieles wichtiges gelernt und verstanden. Die wi
 	\item Zeitmanagement \\
 	
 	Die Wichtigkeit der Zeit wurde wirklich verstanden. Man hatte nicht mehr die Möglichkeit, Dinge immer für das letzte Moment zu lassen, weil es einfach zu viel ist. Ohne ein detailliertes Zeitplan und ohne eine systematische Arbeit wurde dieses Projekt nicht fertig gemacht.
+	
 	\item Eingehen mit OpenCV und arbeiten mit Bilderdaten\\
 	
 	Es wurde gelernt, wie man überhaupt mit Bildinformationen arbeitet, und wie das wichtige Paket OpenCV funktioniert. In der Zukunft wenn es um arbeiten mit Bilderdaten geht, ist das Basiswissen schon da.
+	
 	\item Wichtigkeit des Testens des Systems\\
 	
 	Wie wichtig der Testen Prozess ist wurde auch hier verstanden. Vorher wurde es gedacht, dass das Testen des Systems nur eine zusätzliche und unwichtige Arbeit ist. Es war aber nur mit Hilfe des Testens möglich, den Vergleichsprozess erfolgreich zu realisieren und Fehlern zu finden. Ein System, das vorher nicht getestet ist, kann nicht ein gutes System sein.
@@ -381,12 +623,14 @@ Während dieser Diplomarbeit war vieles wichtiges gelernt und verstanden. Die wi
 	\item Wichtigkeit der Planung und der Begrenzungen \\
 	
 	Es wurde schon gelernt, dass die Planung eines Projekts sehr wichtig war, aber mit Hilfe dieser Diplomarbeit wurde ganz genau verstanden, warum das so ist. Ohne die Big Picture und sie Erste Ebene wurde der Aufwand der Arbeit viel grösser, und die Zeit wurde sicherlich nicht genügend sein. Die Begrenzungen sind auch wichtig, weil ohne die wurde man Zeit an etwas verlieren, das am Ende nicht realisierbar ist oder nicht nötig ist.
+	
 	\item Wie man mit der Fehlern umgeht \\
 	
 	Letztens wurde verstanden und gelernt, wie man mit der Fehlern umgehen soll. Pessimismus und das Aufgeben sind nicht die Lösungen. Man muss optimistisch sein und viele verschiedene Wege suchen, wie man den Fehlern finden und dann reparieren kann. Fremde Hilfe ist auch irgendwann notwendig.
 \end{itemize}	
 	Die Verbesserungsmöglichkeiten sind auch bewusst. Diese sind: 
 \begin{itemize}	
+	
 	\item Besseres Zeitmanagement \\
 	
 	Die Arbeit musste ein bisschen früherer beginnen, und es musste besser verteilt werden. Es muss verstanden werden, dass hinter einem schlechten Projekt versteckt sich eine schlechte Zeitmanagement.

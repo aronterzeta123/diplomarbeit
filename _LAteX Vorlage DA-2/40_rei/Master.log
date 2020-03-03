@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.6)  2 MAR 2020 03:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.6)  2 MAR 2020 16:32
 entering extended mode
 **./Master.tex
 (Master.tex
@@ -1304,10 +1304,10 @@ Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 98.
 File: ./../40_rei/figures/Big_Picture.jpg Graphic file (type jpg)
 <use ./../40_rei/figures/Big_Picture.jpg>
 Package pdftex.def Info: ./../40_rei/figures/Big_Picture.jpg  used on input lin
-e 129.
+e 130.
 (pdftex.def)             Requested size: 441.01773pt x 335.18196pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
@@ -1315,44 +1315,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 File: ./../40_rei/figures/diplom_11Ebene.png Graphic file (type png)
 <use ./../40_rei/figures/diplom_11Ebene.png>
 Package pdftex.def Info: ./../40_rei/figures/diplom_11Ebene.png  used on input 
-line 136.
+line 137.
 (pdftex.def)             Requested size: 441.01773pt x 262.64821pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 140.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 141.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [6 <./../40_rei/figures/Big_Picture.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 159.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 160.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [7 <./../40_rei/figures/diplom_11Ebene.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
+Overfull \hbox (67.75613pt too wide) in paragraph at lines 167--168
+[][][][][][][][][][][][] 
  []
 
 
@@ -1365,165 +1360,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 176.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 183.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 200.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 208.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [9]
-Overfull \hbox (7.29416pt too wide) in paragraph at lines 202--208
+Overfull \hbox (60.70615pt too wide) in paragraph at lines 208--209
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Overfull \hbox (7.29416pt too wide) in paragraph at lines 221--223
 \OT1/cmr/m/n/12 Nachdem der Start-punkt fest-ge-legt wur-de, be-ginnt der Ver-g
 leich der Abst[]ande
  []
 
-
-Overfull \hbox (54.92122pt too wide) in paragraph at lines 202--208
-\OT1/cmr/m/n/12 ten-bank ge-spei-chert sind. ----------------------------------
---FOTOJA ME TREKANDSHA---
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
+<./../40_rei/figures/Vergleichsweg.png, id=193, 341.77687pt x 343.2825pt>
+File: ./../40_rei/figures/Vergleichsweg.png Graphic file (type png)
+<use ./../40_rei/figures/Vergleichsweg.png>
+Package pdftex.def Info: ./../40_rei/figures/Vergleichsweg.png  used on input l
+ine 227.
+(pdftex.def)             Requested size: 308.71106pt x 310.09328pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 214.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 231.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 238.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 240.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
-
+[11 <./../40_rei/figures/Vergleichsweg.png>]
+Overfull \hbox (30.15593pt too wide) in paragraph at lines 244--245
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-
- []
-
-
-Overfull \hbox (72.74509pt too wide) in paragraph at lines 244--245
-[]\OT1/cmr/m/n/12 Treffen ei-ne von die 2 un-te-re Kom-bi-na-tio-nen zu, ist we
-i-te-re []Uberpr[]ufung(geometrisches
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-
- []
-
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
+48.
+("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 248.
 
 Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
+<./../40_rei/figures/geometrischesM.png, id=217, 282.30469pt x 37.64063pt>
+File: ./../40_rei/figures/geometrischesM.png Graphic file (type png)
+<use ./../40_rei/figures/geometrischesM.png>
+Package pdftex.def Info: ./../40_rei/figures/geometrischesM.png  used on input 
+line 271.
+(pdftex.def)             Requested size: 308.71106pt x 41.16472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
-
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 270.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 287.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 277.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
-
+[12 <./../40_rei/figures/geometrischesM.png>]
+Overfull \hbox (65.40587pt too wide) in paragraph at lines 280--281
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
@@ -1538,87 +1501,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--301
  []
 
 
-Overfull \hbox (14.62234pt too wide) in paragraph at lines 308--308
-[]\OT1/cmr/bx/n/17.28 Herausforderungen, Pro-ble-me, und de-ren L[]osung 
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
  []
 
+<./../40_rei/figures/1_Fall.png, id=244, 532.99126pt x 314.67563pt>
+File: ./../40_rei/figures/1_Fall.png Graphic file (type png)
+<use ./../40_rei/figures/1_Fall.png>
+Package pdftex.def Info: ./../40_rei/figures/1_Fall.png  used on input line 309
+.
+(pdftex.def)             Requested size: 308.71106pt x 182.2671pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 311.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 313.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
-
+Overfull \hbox (58.00291pt too wide) in paragraph at lines 331--332
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 329.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 341.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+[14 <./../40_rei/figures/1_Fall.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+<./../40_rei/figures/2_Fall.png, id=294, 520.94624pt x 353.06906pt>
+File: ./../40_rei/figures/2_Fall.png Graphic file (type png)
+<use ./../40_rei/figures/2_Fall.png>
+Package pdftex.def Info: ./../40_rei/figures/2_Fall.png  used on input line 356
+.
+(pdftex.def)             Requested size: 308.71106pt x 209.23018pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
-
- []
-
-<./../40_rei/figures/IMG_4535.jpg, id=239, 3035.34pt x 3721.905pt>
-File: ./../40_rei/figures/IMG_4535.jpg Graphic file (type jpg)
-<use ./../40_rei/figures/IMG_4535.jpg>
-Package pdftex.def Info: ./../40_rei/figures/IMG_4535.jpg  used on input line 3
-45.
-(pdftex.def)             Requested size: 441.01773pt x 540.76985pt.
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 349.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-
- []
-
-
-Overfull \hbox (97.22395pt too wide) in paragraph at lines 363--363
-[]\OT1/cmr/bx/n/17.28 Was wur-de ge-lernt und wel-che Ver-bes-se-rungsm[]oglich
-keiten
  []
 
 
@@ -1626,102 +1565,376 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
  []
 
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 374.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[15 <./../40_rei/figures/2_Fall.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+ []
+
+<./../40_rei/figures/3_Fall.png, id=319, 532.23843pt x 226.59656pt>
+File: ./../40_rei/figures/3_Fall.png Graphic file (type png)
+<use ./../40_rei/figures/3_Fall.png>
+Package pdftex.def Info: ./../40_rei/figures/3_Fall.png  used on input line 393
+.
+(pdftex.def)             Requested size: 308.71106pt x 131.433pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 376.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 418.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[16 <./../40_rei/figures/3_Fall.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+
+ []
+
+
+Overfull \hbox (9.82822pt too wide) in paragraph at lines 436--437
+[][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
+
+ []
+
+
+Overfull \hbox (51.3059pt too wide) in paragraph at lines 450--451
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.00597pt too wide) in paragraph at lines 451--452
+[][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 464.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [17]
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 376.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 482.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [18 <./../40_rei/figures/IMG_4535.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--385
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 398.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 505.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [19]
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
+
+ []
+
+
+Overfull \hbox (14.62234pt too wide) in paragraph at lines 527--527
+[]\OT1/cmr/bx/n/17.28 Herausforderungen, Pro-ble-me, und de-ren L[]osung 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 536.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 557.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+
+ []
+
+<./../40_rei/figures/Fehlerbaum.png, id=420, 548.0475pt x 407.27156pt>
+File: ./../40_rei/figures/Fehlerbaum.png Graphic file (type png)
+<use ./../40_rei/figures/Fehlerbaum.png>
+Package pdftex.def Info: ./../40_rei/figures/Fehlerbaum.png  used on input line
+ 572.
+(pdftex.def)             Requested size: 441.01773pt x 327.73795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--577
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 581.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[22]
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 581.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+ [23 <./../40_rei/figures/Fehlerbaum.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--586
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+
+Overfull \hbox (97.22395pt too wide) in paragraph at lines 603--603
+[]\OT1/cmr/bx/n/17.28 Was wur-de ge-lernt und wel-che Ver-bes-se-rungsm[]oglich
+keiten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 608.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--620
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--624
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 635.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 642.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[26]
 Kapitel 2.
-<./../40_rei/figures/Planung_Realisierung1.png, id=267, 542.025pt x 622.325pt>
+<./../40_rei/figures/Planung_Realisierung1.png, id=455, 542.025pt x 622.325pt>
 File: ./../40_rei/figures/Planung_Realisierung1.png Graphic file (type png)
 <use ./../40_rei/figures/Planung_Realisierung1.png>
 Package pdftex.def Info: ./../40_rei/figures/Planung_Realisierung1.png  used on
- input line 407.
+ input line 651.
 (pdftex.def)             Requested size: 441.01773pt x 506.369pt.
-<./../40_rei/figures/Planung_Realisierung2.png, id=268, 544.0325pt x 502.87875p
+<./../40_rei/figures/Planung_Realisierung2.png, id=456, 544.0325pt x 502.87875p
 t>
 File: ./../40_rei/figures/Planung_Realisierung2.png Graphic file (type png)
 <use ./../40_rei/figures/Planung_Realisierung2.png>
 Package pdftex.def Info: ./../40_rei/figures/Planung_Realisierung2.png  used on
- input line 414.
+ input line 658.
 (pdftex.def)             Requested size: 441.01773pt x 407.67485pt.
-[20
+[27
 
 ]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 418.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 662.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [21 <./../40_rei/figures/Planung_Realisierung1.png>]
+ [28 <./../40_rei/figures/Planung_Realisierung1.png>]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 418.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 662.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [22 <./../40_rei/figures/Planung_Realisierung2.png>]
+ [29 <./../40_rei/figures/Planung_Realisierung2.png>]
 Kapitel 3.
-) (_Doc_App.tex) [23
+) (_Doc_App.tex) [30
 
 ] (Master.lof)
 \tf@lof=\write7
 \openout7 = `Master.lof'.
 
- [24
+ [31
 
 
 ] (Master.lot)
 \tf@lot=\write8
 \openout8 = `Master.lot'.
 
- [25
+ [32
 
 ]
 
@@ -1743,17 +1956,11 @@ Package biblatex Warning: Type 'report' not found on input line 118.
 LaTeX Warning: Empty bibliography on input line 118.
 
 
-Package biblatex Warning: Type 'online' not found on input line 119.
-
-
-LaTeX Warning: Empty bibliography on input line 119.
-
-
 LaTeX Warning: Empty bibliography on input line 120.
 
 
 AED: lastpage setting LastPage
-[26
+[33
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
@@ -1775,27 +1982,29 @@ Package logreq Info: Writing requests to 'Master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30815 strings out of 492452
- 577715 string characters out of 3120531
- 1070819 words of memory out of 3000000
- 34740 multiletter control sequences out of 15000+200000
+ 31214 strings out of 492452
+ 585315 string characters out of 3120531
+ 1075167 words of memory out of 3000000
+ 34990 multiletter control sequences out of 15000+200000
  541627 words of font info for 57 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 57i,17n,100p,1662b,2284s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,17n,100p,1662b,3556s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmcsc10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/User/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/
-User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pf
+ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/User/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/User/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/User
+s/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
 b><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmti12.pfb>
-Output written on Master.pdf (28 pages, 3163242 bytes).
+cm/cmsl12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/User/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Master.pdf (35 pages, 1395984 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 601 PDF objects out of 1000 (max. 8388607)
+ 255 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
