@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper,oneside]{book}
 
 \usepackage[pdftex]{graphicx}
+\usepackage{float}
 \usepackage{nomencl}
 \usepackage[defernumbers=true, backend=biber]{biblatex}
 \usepackage[hypcap]{caption} %for pdf export hyperlinks
@@ -14,14 +15,13 @@
 \usepackage{pdfpages}
 \usepackage{longtable}
 \usepackage{hyperref}
+\usepackage{listings}
 \usepackage{color}
 \usepackage{footnote}
-\usepackage{float}
-\usepackage{listings}
 \usepackage{transparent} %Transparente Bilder im Hintergrund
 \usepackage{eso-pic} %Background Image
 \usepackage{lastpage} %Ermittlung der letzten Seite
- 
+%\usepackage{subfigure}
 %Fußnoten forltaufend nummerieren
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
@@ -29,26 +29,7 @@
 \renewcommand{\nomname}{Abkürzungsverzeichnis}
 \makenomenclature
 \addbibresource{./../literatur.bib}
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\lstset{frame=tb,
-	language=Python,
-	aboveskip=3mm,
-	belowskip=3mm,
-	showstringspaces=false,
-	columns=flexible,
-	basicstyle={\small\ttfamily},
-	numbers=none,
-	numberstyle=\tiny\color{gray},
-	keywordstyle=\color{blue},
-	commentstyle=\color{dkgreen},
-	stringstyle=\color{mauve},
-	breaklines=true,
-	breakatwhitespace=true,
-	tabsize=3
-}
 
 
 \geometry{a4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
@@ -58,65 +39,84 @@
 
 
 \begin{document}
-% Set global Varibales for this chpater
-\input{./_Doc_A.tex}
-\fancypagestyle{plan}{
-	\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
-	\fancyhead[L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
-	\fancyfoot[C]{}
-	\fancyfoot[R]{\thepage}    
-
-}
-\pagestyle{plan}
-
-\frontmatter
-\normalsize
-
-\pagenumbering{roman}
-\input{./01_title.tex}
-
-
-
-\printnomenclature %Abkürzungsverzeichnis
-\pagebreak
-	 
-\tableofcontents % Inhaltsverzeichnis
-
-
-
-\mainmatter
-%configure Header & Footer
-\fancypagestyle{plan}{
-	\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
-	\fancyhead[L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
-	\fancyfoot[R]{\thepage / \pageref{LastPage}}    
-	\fancyfoot[C]{Autor: \autor}
-}
-\pagestyle{plan}
-
-\cleardoublepage
-\pagenumbering{arabic}      
-
-\input{./_Doc.tex}
-
-
-\appendix
-
-\input{./_Doc_App.tex}
-
-\backmatter
-
-\listoffigures
-
-%\listofmyequations 
-
-\listoftables
-
-\printbibheading%[title=Blub]
-\printbibliography[type=masterthesis, heading=subbibliography,title={Wissenschaftliche Arbeiten}]
-\printbibliography[type=book, heading=subbibliography, title={Fachbücher}]
-\printbibliography[type=report, heading=subbibliography, title={Datenblätter und Applikationsschriften}]
-\printbibliography[type=online, heading=subbibliography, title={Aus dem Netz}]
-\printbibliography[heading=subbibliography,title={Der ganze Rest},nottype=online,nottype=masterthesis,nottype=report,nottype=book,notkeyword=sekundaer]
-
+	% Set global Varibales for this chpater
+	\input{./_Doc_A.tex}
+	\fancypagestyle{plan}{
+		\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
+		\fancyhead[L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
+		\fancyfoot[C]{}
+		\fancyfoot[R]{\thepage}    
+		
+	}
+	%\definecolor{dkgreen}{rgb}{0,0.6,0}
+	%\definecolor{grey}{rgb}{0.5,0.5,0.5}
+	%\definecolor{mauve}{rgb}{0.58,0,0.82}
+	%\lstset{
+	%	frame=tb,
+	%	language=Java,
+	%	aboveskip=3mm,
+	%	belowskip=3mm.
+	%	showstringspaces=false,
+	%	columns=flexible,
+	%	basicstyle={\small\ttfamily},
+	%	numbers=none,
+	%	numberstyle=\tiny\color{gray},
+	%	keywordstyle=\color{blue},
+	%	commentstyle=\color{dkgreen},
+	%	breklines=true,
+	%	breakatwhitespace=true,
+	%	tabsize=3
+	%}
+	\pagestyle{plan}
+	
+	\frontmatter
+	\normalsize
+	
+	\pagenumbering{roman}
+	\input{./01_title.tex}
+	
+	
+	
+	\printnomenclature %Abkürzungsverzeichnis
+	\pagebreak
+	
+	\tableofcontents % Inhaltsverzeichnis
+	
+	
+	
+	\mainmatter
+	%configure Header & Footer
+	\fancypagestyle{plan}{
+		\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
+		\fancyhead[L]{\includegraphics[scale=0.5]{./figures/Header_Seite.png}}
+		\fancyfoot[R]{\thepage / \pageref{LastPage}}    
+		\fancyfoot[C]{Autor: \autor}
+	}
+	\pagestyle{plan}
+	
+	\cleardoublepage
+	\pagenumbering{arabic}      
+	
+	\input{./_Doc.tex}
+	
+	
+	\appendix
+	
+	\input{./_Doc_App.tex}
+	
+	\backmatter
+	
+	\listoffigures
+	
+	%\listofmyequations 
+	
+	\listoftables
+	
+	\printbibheading%[title=Blub]
+	\printbibliography[type=masterthesis, heading=subbibliography,title={Wissenschaftliche Arbeiten}]
+	\printbibliography[type=book, heading=subbibliography, title={Fachbücher}]
+	\printbibliography[type=report, heading=subbibliography, title={Datenblätter und Applikationsschriften}]
+	\printbibliography[type=online, heading=subbibliography, title={Aus dem Netz}]
+	\printbibliography[heading=subbibliography,title={Der ganze Rest},nottype=online,nottype=masterthesis,nottype=report,nottype=book,notkeyword=sekundaer]
+	
 \end{document}

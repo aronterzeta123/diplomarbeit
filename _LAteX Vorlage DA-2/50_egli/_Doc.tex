@@ -39,12 +39,6 @@ OpenCV wurde unter anderen Bibliotheken aufgrund seiner vielen guten Eigenschaft
 Es ist Cross-Platform, in C/C++ geschrieben und unterstützt auch Python. \\
 \cite{opencv_library}
 \\
-\begin{figure}[H]
-	\includegraphics[width=50mm,scale=0.5]{\ordnerfigures opencv.png}
-	\caption{OpenCV Logo}
-	\label{fig:OpenCV logo} 
-	\cite{OpencvLogo}
-\end{figure}
 
 
 SciPy hat sich nützlich, beim Lösen von gewisse mathematische Angabenund bei zusätzliche Installationen von Bibliotheken zu helfen.\\ 
@@ -54,22 +48,16 @@ Dies sind einige der Kernpakete von SciPy die nutzbar für das Projekt waren:\\
  \\ 
 NumPy legt die Basis für das wissenschaftliche Rechnen mit Python.\\ Es unterstützt große mehrdimensionale Arrays und Matrizen. Es enthält viele Mathematische Funktionen auf hoher Ebene um die Arrays zu bearbeiten.\\
 NumPy kann also als leistungsfähiger mehrdimensionaler Behälter für generische Daten verwendet werden.\\ Es können beliebige Datentypen definiert werden.
-\\
-\begin{figure}[H]
-	\includegraphics[width=50mm,scale=0.5]{\ordnerfigures numpy.png}
-	\caption{Numpy logo}
-	\label{fig:Numpy logo}
-	\cite{Numpy}
-\end{figure}
+
 
 Dlib ist ein so genanntes Toolkit, das Algorithmen für Machine Learning und Tools zum Erstellen komplexer Software zur Lösung von der realen Welt getauchte Probleme, beinhaltet.\\
 Es wird vielseitig eingesetzt, in Robotik, Mobilgeräte und unter anderem in Computer Vision.\cite{dlib} \\
 Es wurde prinzipiell bei der Extrahierung der so genannten „Facial Landmarks“ gebraucht. 
 
-\begin{figure}[H]
+\begin{figure}
+	\centering
 	\includegraphics[width=50mm,scale=0.5]{\ordnerfigures dlib.png}
-	\caption{dlib logo}
-	\cite{dlib}
+	\caption{ dlib logo \cite{dlib}}
 	\label{fig:dlib logo}
 \end{figure}
 
@@ -89,34 +77,34 @@ Unten wird die erste Ebene der Structed Design von der Bildverarbeitungsteil dar
 \subsection{Lösungsweg - Structed Software design} 
   
 
-\begin{figure}[H]
+\begin{figure}
+	\centering
 	\includegraphics[width=\textwidth]{\ordnerfigures bildverarbeitung.png}
-	\caption{Bildverarbeitung Structed Design}
+	\caption{ Bildverarbeitung Structed Design}
 	\label{fig:bildverarbeitung}
-
 \end{figure}
 
 Wie es in der Abb.\ref{fig:bildverarbeitung} sichtbar ist, ist die Bildverarbeitungsteil in diese Einheiten unterteilt:
 \begin{enumerate}
-	\item Image Schaffung
+	\item Bildaufnahme
 	\item Image Normalisierung
 	\item Gesichtschlüsselpunkten Extrahierung
 	\item Log
 	\item Output 
-	\item Trigger \\ \\
-	
+	\item Trigger 
 \end{enumerate}
+
 Die Schnittstellen von außen sind das Gesichtserkennungsmodul und die Gesichtsregistrierungsmodul. \\ 
-Diese schicken eine Anforderung an den Trigger der dann das Image Schaffung Modul initialisiert. Unabhängig von welchen von diesen beiden Schnittstellen die Anfrage kommt, macht die Image Schaffung aus der zwei Kameras ein Foto. 
+Diese schicken eine Anforderung an den Trigger der dann die Bildaufnahme Modul initialisiert. Unabhängig von welchen von diesen beiden Schnittstellen die Anfrage kommt, macht das Bildaufnahme Modul aus der zwei Kameras ein Foto. 
 \\
 Implementierungsnah wurde bis jetzt nur eine Kamera verwendet, da die Stereo Vision noch nicht funktional ist. \\
 Nachdem das Foto gemacht wird folgt die Image Normalisierung bzw. das „Image Prozessing“. \\
-Wenn ein Bild zu klein ist wird die Größe angepasst, wenn ein Gesicht verdreht ist wird es gerade rotiert. Affines und perspektivisches Warping wird falls notwendig geführt. Farben werden nach Bedarf auch angepasst usw. \\
-Danach erfolgt die Erkennung von Gesichtern, das Ausschneiden von ihnen und die Extrahierung der Gesischtsschlüsselpunkte.\\ Sie werden dann in Vektoren umgewandelt und zur Abgleich oder Registrierung je nach Bedarf, geschickt. \\
+Wenn ein Bild zu klein ist wird die Größe angepasst, wenn ein Gesicht verdreht ist wird es gerade rotiert. Mehr dazu wird in dem Normalisierung Abschnitt erklärt.\\
+Danach folgt die Erkennung von Gesichtern, das Ausschneiden von denen und die Extrahierung der Gesischtsschlüsselpunkte.\\ Sie werden dann zur Abgleich oder Registrierung je nach Bedarf, bereitet und geschickt. \\
 \\
-\\
-Hinweis: Bei der Umsetzung wurden bestimmte Bereiche mit einander verknüpft, was zu Folgendes führte: was bei der Planung steht, stimmt nicht vollig mit der Methoden zur Umsetzung überein. Weitere Unterschiede werden im Punkt 13b. genauer beschrieben.  \\
 
+Hinweis: Bei der Umsetzung wurden bestimmte Bereiche mit einander verknüpft, was zu Folgendes führte: was bei der Planung steht, stimmt nicht vollig mit der Methoden zur Umsetzung überein. Weitere Unterschiede werden im Punkt 13b. genauer beschrieben.  \\
+%ca??
 \subsection{Gesichtsdetektion}
 
 Das erste Ereignis, dass erfüllt werden muss bei der Gesichtserkennung ist das Finden von Gesichtern, also die Feststellung, wo sich die Gesichter im Bild befinden. \\ 
@@ -124,24 +112,23 @@ Dafür ist die „Haar Cascade Classifiers“  pre-trained Classifier gebraucht 
 Gesichtsdetektion durch „Haar“ Merkmale ist eine sehr effektive Methode die von Paul Viola und Michael Jones entwickelt wurde, indem sie Merkmale gruppiert haben und die Erkennung von diesen dadurch schneller gemacht haben. \\ \\
 Die Arbeit heißt „Rapid Object Detection using a Boosted Cascade of Simple Features". \cite{Viola01robustreal-time}\\
 
-Es geht hier um Maschinelles Lernen, wie diese Kaskadenfunktionen durch viele negative(Bilder ohne Gesichter) und positive(Bilder mit Gesichter) Bilder trainiert wurden um Objekte zu erkennen.\\ \\
+Es geht hier um Maschinelles Lernen, wie diese Kaskadenfunktionen durch viele negative(Bilder ohne Gesichter) und positive(Bilder mit Gesichter) Bilder trainiert wurden um Objekte zu erkennen.\\ 
 In diesem Fall  arbeiten wir selbstverständlich mit Gesicht Objekten. 
 Dafür wurden die Haar Merkmale benutzt. Auf Abbildung \ref{fig:haar features} sind sie dargestellt. Jedes Haar Merkmal ist nichts anders als ein Wert, durch das Subtrahieren der Summe der Pixel unter dem weißen Rechteck von der Summe der Pixel unter dem schwarzen Rechteck, erhält. \\
 Diese Summen berechnet man durch integrale Bilder, die zur Vereinfachung zu Summenberechnungen dient.
-\begin{figure}[H]
+
+\begin{figure}
+	\centering
 	\includegraphics[scale=0.8]{\ordnerfigures haar_features.jpg}
-	\caption{Haar Features}
+	\caption{ Haar Features\cite{Viola01robustreal-time}}
 	\label{fig:haar features}
-	\cite{Viola01robustreal-time}
 \end{figure}
 
 Man muss aufpassen, da nicht alle Merkmale von Nutzen sein könnten. Man kann es zum Beispiel deutlich auf Abbildung \ref*{fig:haar} sehen, wie die Nase viel heller als die Region bei den Augen ist. Die Selektion von den besten Merkmalen wird durch das Adaboost Algorithmus berechnet. 
-\begin{figure}[H]
-	\includegraphics[scale=0.8]{\ordnerfigures haar.png}
-	\caption{Haar Einsetzung}
-	\label{fig:haar}
-\end{figure}\cite{Viola01robustreal-time}
 
+
+
+% me fol ma shum per algoritmin
 Mit dieser Absicht setzen wir alle Funktionen auf alle Trainingsbilder ein. Für jedes Merkmal wird der beste Schwellenwert ermittelt, der die Gesichter in positive und negative klassifiziert.\\\\
 
 \subsubsection{Umsetzung in Code}
@@ -162,30 +149,44 @@ Durch die Verwendung von classifiers die OpenCV bietet, setzen wir das um. \\\\
 
 
 \end{lstlisting}
- //opencv und numpy importieren \\
-//Bild als input einfügen\\
-//Bild einlesen\\
-//Bild in „gray scale“ umwandeln wodurch die Rechenleistung reduziert wird.
-//(Da es keine Farben zuhanden sind).\\
-//Parametern: src(source image), dst(destination image), code(conversion code)\\
-//Hier benutzt man die Cascade Classifier um Gesichter zu finden.\\
-//Parameter: \\
-//image, objects, scaleFactor = 1.1, minNeighbors = 3, flags = 0, minSize = new cv.Size(0, 0), maxSize = new cv.Size(0, 0)) \\ 
-//Zeichenrahmen für das Gesicht zeichnen.\\
-//Bild zeigen durch ‘image’ Fenster \\
-//Press any key zum schließen vom Fenster\\
-\begin{figure}[H]
+opencv und numpy importieren \\
+Bild als input einfügen\\
+Bild einlesen\\
+Bild in „gray scale“ umwandeln wodurch die Rechenleistung reduziert wird.
+(Da es keine Farben zuhanden sind).\\
+Parametern: src(source image), dst(destination image), code(conversion code)\\
+Hier benutzt man die Cascade Classifier um Gesichter zu finden.\\
+Parameter: \\
+image, objects, scaleFactor = 1.1, minNeighbors = 3, flags = 0, minSize = new cv.Size(0, 0), maxSize = new cv.Size(0, 0)) \\ 
+Zeichenrahmen für das Gesicht zeichnen.\\
+Bild zeigen durch image Fenster \\
+Press any key zum schließen vom Fenster\\
+
+% me i rregullu ita !!!!!!
+
+\begin{figure}
+	\centering
 	\includegraphics[scale=0.6]{\ordnerfigures aronfd.png}
-	\caption{Box auf Gesicht}
+	\caption{ Box auf Gesicht}
 	\label{fig:aron}
 \end{figure}
 
 Die Funktionalität des Code ist genau auf Abb.\ref{fig:aron} ersichtlich. \\
 
+\subsection{Normalisierung}
+
+%me shtu kod, me shtu pershkrim, me blahblah
+%Was ist Normalisierung?
+%Warum Normalisierung ?
+%Was für Methoden gibt es für Normalisierung?
+%me shpjegu similarity transform nmnyr matematikore
+%Welche Methode habe ich verwendet und warum?
+%Implementierung 
+
 \subsection{Gesichtsdetektion und Zuschneiden}
 Nachdem Gesichter gefunden werden, muss man daraus eigene Bilder machen, die zur Erleichterung von der Extrahierung der Schlüsselpunkte dienen.\\\\  
 nrFace bestimmt die Anzahl von Gesichter, die von den cascade classifier gefunden wurden. 
-Nur wenn dieser Wert größer als Null ist soll die Logik von der Crop Funktion weiterlaufen. \\
+Nur wenn dieser Wert größer als Null ist soll die Logik von der Crop Funktion weiterlaufen.  
 
 \begin{lstlisting}
 if nrFace > 0:
@@ -205,14 +206,17 @@ print("no faces found")
 
 \end{lstlisting}
 
-Zeilen 1-6 berechnen das Zentrum von Bild neu und in Zeile 7 wird ein neues Image mit den berechneten Parametern angelegt.\\
-Mit imwrite wird das Image gespeichert. Auf Abb.\ref{fig:aroncropped} sieht man deutlich nur das Gesicht. \\
+%me rregullu formatimin e kodit
 
-\begin{figure}[H]
-\includegraphics[scale=0.6]{\ordnerfigures aroncropped.jpg}
-\centering
-\caption{abgeschnittenes Gesicht}
-\label{fig:aroncropped}
+Zeilen 1-6 berechnen das Zentrum von Bild neu und in Zeile 7 wird ein neues Image mit den berechneten Parametern angelegt.\\
+Mit imwrite wird das Image gespeichert. %shpjego ma gjer funksionin imwrite
+Auf Abb.\ref{fig:aroncropped} sieht man deutlich nur das Gesicht. \\
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{\ordnerfigures aroncropped.jpg}
+	\caption{ Abgeschnittenes Gesicht}
+	\label{fig:aroncropped}
 \end{figure}
 
 \subsection{Gesichtsschlüsselpunkte Extraktion}
@@ -224,39 +228,24 @@ Die Gesichtsmarkierungen werden verwendet, um Bereiche des Gesichts zu finden un
 Wie macht man das? Wie erkennt man Landmarken? \\Das ist eine Teilmenge des Problems der Formvorhersage.\\ Bei einem vorgegebenen Eingabebild (und normalerweise einer ROI\footnote{Region of interest}, die das interessierende Objekt angibt) versucht ein Formvorhersager, wichtige Punkte entlang der Form zu lokalisieren. \\
 Dieser Formvorhersager die im dlib integriert ist wurde von Kazemi and Sullivan in ihrem Paper: One Millisecond Face Alignment with an Ensemble of Regression Trees entwickelt.\cite{Kazemi2014OneMF} \\\\
 Dieser Methode werden viele Trainingsdaten hinzugefügt womit es ein Kombination von Regressionsbäumen trainiert wird um die Positionen der „Facial Landmarks“ direkt aus den Pixelintensitäten selbst zu beurteilen.\cite{Kazemi2014OneMF} \\
-
+%me shtu ma shum
 
 Dadurch werden unsere gewünschten 68 Gesichtsmarkierungen mit hohen Vorhersagbarkeit extrahiert und als x,y Koordinaten weitergegeben. 
-Die Indizes der 68 Koordinaten sind in der Abb.\ref{fig:landmarks} dargestellt:\\
+Die Indizes der 68 Koordinaten sind in der Abb. dargestellt:.%\ref{fig:landmarks} \\
 
-\begin{figure}[H]
-	\includegraphics[scale=0.8]{\ordnerfigures landmarks.png}
-	\centering
-	\caption{Facial Landmarks\cite{Kazemi2014OneMF}
-\end{figure}
+
 
 Nachdem wir der „Predictor“ geladen haben speichern wir sie in einem Formobjekt mit 68(x,y) Koordinaten. \\
 Es wird hier nicht die resize Funktion verwendet, weil es an Qualität verliert und es rechenintensiver ist, je größer das Eingabebild wird. \\
 Jede Koordinate läuft in einer Schleife durch und entspricht dem spezifischen Gesichtsmerkmal im Bild.  \\
 Die Merkmale werden in einer numpy Array gespeichert für den Zweck der Speicherung in der Datenbank. \\\\
-Nur die Positionen von diesen Merkmalen alleine reichen bei Gesichtserkennung nicht. Deswegen wurden die relative Positionen bzw. Abstände zwischen Gesichtsmerkmalen als Vektoren genommen und betrachtet um die Qualität und die Präzision der Erkennung zu verbessern. \\\\
-Die Zahlen beziehen sich auf die \ref{fig:landmarks} genannten Indizes. \\
-\begin{enumerate}
-	\item Rechtes Auge Höhe: V1 = 41 – 37 
-	\item Rechtes Auge Breite: V2 = 39 – 36
-	\item Linkes Auge Höhe: V3 = 46-44
-	\item Linkes Auge Breite: V4 = 45-42
-	\item Rechte Augenbraue Breite: V5 = 21 – 17
-	\item Linke Augenbraue Breite: V6 = 26 – 22 
-	\item Rechte augenecke mit mittlerer rechter Augenbraue: V7 = 36 – 19 
-	\item Linkes augenecke mit mittlerer linker Augenbraue: V8 = 45 – 24 
-	\item Nasespitze mit Mundzentrum: V9 = 45 -24 
-	\item Linke Augenecke mit linker Mund Ecke: V10 = 54 – 45
-	\item Rechte Augenecke mit rechter Mund ecke: V11 = 48 – 36 
-	\item Nase Höhe: V12 = 33 – 27 
-	\item Nase Breite: V13 = 35 – 31 
-\end{enumerate}
+%Nur die Positionen von diesen Merkmalen alleine reichen bei Gesichtserkennung nicht. Deswegen wurden die relative Positionen bzw. Abstände zwischen Gesichtsmerkmalen als Vektoren genommen und betrachtet um die Qualität und die Präzision der Erkennung zu verbessern. \\\\
+%Die Zahlen beziehen sich auf die \ref{fig:landmarks} genannten Indizes. \\
 
+
+
+
+\subsection{Zusammenfassung}
 
 
 
@@ -271,26 +260,37 @@ Eine weitere Herausforderung war das Verknüpfen von den Entwicklungsumgebungen 
 Die verwendete Systeme waren all zu unterschiedlich und es konnte keine Standardisierung zwischen ihnen gefunden werden. Also ist viel Zeit beim Installieren und Konfigurieren investiert worden. Ein Grund dafür ist die mangelnde Erfahrung mit den neuen Technologien. \\
 Viele Sachen waren am Beginn auch unklar wegen den Kommunikationslücken und auch die sehr grobe Planung war problematisch. \\\\
 
+%me shtuuuuuuuu ma shum heraaaaaaausfordeeeeeeerungen
+
+
 \textbf{Lösungen}: \\\\
 Während der Arbeit habe ich viel recherchiert und mich genau über alles Mögliche informiert. \\
 Die Kommunikation hat sich mit der Zeit stark verbessert und dadurch wurden auch die Unklarheiten abgeklärt. \\
 
 \section{Qualitätssicherung, Controlling}
 Die Qualität wurde durch verschiedene Methoden gesichert. Eine von denen war die Methode 5xWarum. 
-“5x Warum ist eine iterative Fragetechnik, mit der die Ursache-Wirkungs-Beziehungen untersucht werden, die einem bestimmten Problem zugrunde liegen. “
+
+„Fünf warum“ ist eine iterative Methode, die Fragen als Basis hat und die Beziehungen zwischen die Ursachen und die. Es geht hier um die Verschachtelung der Ursachen und die Herausfindung von denen durch iterative Fragetechnik, da viele Probleme nicht nur eine einzige Ursache haben. Die Methode ruft jedes Mal eine andere Folge von Fragen auf.
 \cite{fmea}
 Die aufgetauchten Probleme haben viele Ursachen, die nicht mit dem ersten Blick sichtbar sind. 5x warum hilft durch diese verschachtelten Ursachen das grundlegende Problem zu entdecken. \\
-Eine Problemstellung: „Segmentation fault“ beim Finden von Keypoints mit FAST\footnote{Features from Accelerated Segment Test}.“\\ 
+Eine Problemstellung: „Segmentation fault“ beim Finden von Keypoints mit FAST\footnote{Features from Accelerated Segment Test}.“ 
 
 \begin{enumerate}
-	\item 	Warum bekommt man überhaupt einen „Segmentation Fault“? 
+	
+	
+	\item 	Was ist überhaupt ein „Segmentation Fault“? 
 	Ein Segmentierungsfehler tritt auf, wenn ein Programm versucht, auf einen Speicherort zuzugreifen, auf den es nicht zugreifen darf, oder wenn versucht wird, auf einen Speicherort auf nicht zulässige Weise zuzugreifen (z. B. beim Versuch, an einen schreibgeschützten Speicherort zu schreiben, oder einen Teil des Betriebssystems zu überschreiben).\\
-	\item 	Warum versucht mein Program auf einen Speicherort zuzugreifen, auf den es nicht zugreifen darf?\\
+	\item 	Warum passiert das, warum versucht mein Program auf einen Speicherort zuzugreifen, auf den es nicht zugreifen darf?\\
 	
 	Problem ergibt sich in dieser Zeile: 
 	“kp = fast.detect(image, None)”
 	
 	Wahrscheinlich durften die Daten die fast.detect ergibt nicht in kp gespeichert werden. 
+	
+	ODER\\
+	
+	Das Paket in dem die FAST Algorithmus drinnen ist ist nicht (richtig) installiert worden.
+	Warum? Alle nötigen Pakete wurden in einer gesamten Installation geholt und FAST war nicht da. 
 	
 	\item	Warum dürfen die Daten die fast.detect ergibt nicht in kp gespeichert werden ? 
 	
@@ -303,13 +303,22 @@ Eine Problemstellung: „Segmentation fault“ beim Finden von Keypoints mit FAS
 	\item Warum wurde es nicht manuell angegeben? 
 	
 	Es wurde nicht manuell gegeben weil, die Methode fast.detect nicht gut recherchiert wurde. Man sollte mehr darüber in die Dokumentation nachschauen.
+	
+\textbf{Konklusion}\\
+Durch die 5x Warum Methode ist es zu den Ergebnis gekommen: Es musste ja mehr untersucht werden bevor man eine solche Methode implementiert. Die „5xWarum“ Methode haben dabei geholfen dass die eigentliche Ursache des Problems herausgefunden worden ist.\\
+Die nächste Schritte sind: entweder eine andere Methode, die schon installiert ist, verwenden oder die benötigten Pakete für FAST manuell installieren. 
+	
  
 	
 \end{enumerate}
+
+
 \section{Ergebnise}
-Ich habe ungefähr 100 Stunden Zeit bis jetzt für die Diplomarbeit investiert und folgendes erreicht.\\ 
+
+
+Ich habe ungefähr 150 Stunden Zeit bis jetzt für die Diplomarbeit investiert und folgendes erreicht.\\ 
 Face Detection wurde fertig implementiert.\\
 Bilder sind halbwegs normalisiert worden. \\
-Gesichtsschlüsselpunkte wurden extrahiert und die Merkmalvektoren wurden angegeben.  \\
-
+Gesichtsschlüsselpunkte wurden extrahiert und die Merkmalvektoren wurden angegeben.  
+%me shtu edhe ktu tekst 
 
