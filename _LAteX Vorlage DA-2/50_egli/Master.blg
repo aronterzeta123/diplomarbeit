@@ -1,0 +1,27 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[1] Config.pm:307> INFO - Logfile is 'Master.blg'
+[152] biber-MSWIN64:322> INFO - === 
+[196] Biber.pm:415> INFO - Reading 'Master.bcf'
+[507] Biber.pm:943> INFO - Found 10 citekeys in bib section 0
+[550] Biber.pm:4256> INFO - Processing section 0
+[551] Utils.pm:75> INFO - Globbing data source './../literatur.bib'
+[575] Utils.pm:91> INFO - Globbed data source './../literatur.bib' to ./../literatur.bib
+[612] Biber.pm:4455> INFO - Looking for bibtex format file './../literatur.bib' for section 0
+[621] bibtex.pm:1653> INFO - LaTeX decoding ...
+[708] bibtex.pm:1471> INFO - Found BibTeX data source './../literatur.bib'
+[710] Utils.pm:304> WARN - Possible typo (case mismatch) between datasource keys: 'OpencvLogo' and 'OpenCVlogo' in file './../literatur.bib'
+[761] Utils.pm:304> WARN - year field '3/10/2017' in entry 'why_python' is not an integer - this will probably not sort properly.
+[857] Utils.pm:304> WARN - month field 'Jul' in entry '2019arXiv190710121V-scipy' is not an integer - this will probably not sort properly.
+[879] Utils.pm:304> WARN - Entry 'affine' (./../literatur.bib): Invalid format '17.02.2020' of date field 'date' - ignoring
+[890] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\USER\AppData\Local\Temp\biber_tmp_NXkg\literatur.bib_12056.utf8, line 48, warning: 1 characters of junk seen at toplevel
+[890] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\USER\AppData\Local\Temp\biber_tmp_NXkg\literatur.bib_12056.utf8, line 52, warning: 1 characters of junk seen at toplevel
+[890] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\USER\AppData\Local\Temp\biber_tmp_NXkg\literatur.bib_12056.utf8, line 59, warning: 1 characters of junk seen at toplevel
+[890] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\USER\AppData\Local\Temp\biber_tmp_NXkg\literatur.bib_12056.utf8, line 63, warning: 1 characters of junk seen at toplevel
+[890] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\USER\AppData\Local\Temp\biber_tmp_NXkg\literatur.bib_12056.utf8, line 193, warning: 7 characters of junk seen at toplevel
+[935] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[935] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[935] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[936] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[972] bbl.pm:652> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[1001] bbl.pm:755> INFO - Output to Master.bbl
+[1002] Biber.pm:128> INFO - WARNINGS: 9
