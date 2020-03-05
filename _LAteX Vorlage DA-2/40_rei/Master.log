@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.6)  2 MAR 2020 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.6)  3 MAR 2020 12:13
 entering extended mode
 **./Master.tex
 (Master.tex
@@ -1277,7 +1277,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 42.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
  [3]
-<./../40_rei/figures/Schaltplan.png, id=115, 989.94844pt x 455.45157pt>
+<./../40_rei/figures/Schaltplan.png, id=117, 989.94844pt x 455.45157pt>
 File: ./../40_rei/figures/Schaltplan.png Graphic file (type png)
 <use ./../40_rei/figures/Schaltplan.png>
 Package pdftex.def Info: ./../40_rei/figures/Schaltplan.png  used on input line
@@ -1300,7 +1300,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 98.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
  [5]
-<./../40_rei/figures/Big_Picture.jpg, id=138, 1125.20375pt x 855.195pt>
+<./../40_rei/figures/Big_Picture.jpg, id=143, 1125.20375pt x 855.195pt>
 File: ./../40_rei/figures/Big_Picture.jpg Graphic file (type jpg)
 <use ./../40_rei/figures/Big_Picture.jpg>
 Package pdftex.def Info: ./../40_rei/figures/Big_Picture.jpg  used on input lin
@@ -1311,7 +1311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-<./../40_rei/figures/diplom_11Ebene.png, id=140, 945.5325pt x 563.10374pt>
+<./../40_rei/figures/diplom_11Ebene.png, id=145, 945.5325pt x 563.10374pt>
 File: ./../40_rei/figures/diplom_11Ebene.png Graphic file (type png)
 <use ./../40_rei/figures/diplom_11Ebene.png>
 Package pdftex.def Info: ./../40_rei/figures/diplom_11Ebene.png  used on input 
@@ -1414,7 +1414,7 @@ Overfull \hbox (7.29416pt too wide) in paragraph at lines 221--223
 leich der Abst[]ande
  []
 
-<./../40_rei/figures/Vergleichsweg.png, id=193, 341.77687pt x 343.2825pt>
+<./../40_rei/figures/Vergleichsweg.png, id=199, 341.77687pt x 343.2825pt>
 File: ./../40_rei/figures/Vergleichsweg.png Graphic file (type png)
 <use ./../40_rei/figures/Vergleichsweg.png>
 Package pdftex.def Info: ./../40_rei/figures/Vergleichsweg.png  used on input l
@@ -1465,7 +1465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
-<./../40_rei/figures/geometrischesM.png, id=217, 282.30469pt x 37.64063pt>
+<./../40_rei/figures/geometrischesM.png, id=223, 282.30469pt x 37.64063pt>
 File: ./../40_rei/figures/geometrischesM.png Graphic file (type png)
 <use ./../40_rei/figures/geometrischesM.png>
 Package pdftex.def Info: ./../40_rei/figures/geometrischesM.png  used on input 
@@ -1505,7 +1505,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
-<./../40_rei/figures/1_Fall.png, id=244, 532.99126pt x 314.67563pt>
+<./../40_rei/figures/1_Fall.png, id=250, 532.99126pt x 314.67563pt>
 File: ./../40_rei/figures/1_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/1_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/1_Fall.png  used on input line 309
@@ -1544,7 +1544,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-<./../40_rei/figures/2_Fall.png, id=294, 520.94624pt x 353.06906pt>
+<./../40_rei/figures/2_Fall.png, id=300, 520.94624pt x 353.06906pt>
 File: ./../40_rei/figures/2_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/2_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/2_Fall.png  used on input line 356
@@ -1574,7 +1574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
-<./../40_rei/figures/3_Fall.png, id=319, 532.23843pt x 226.59656pt>
+<./../40_rei/figures/3_Fall.png, id=325, 532.23843pt x 226.59656pt>
 File: ./../40_rei/figures/3_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/3_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/3_Fall.png  used on input line 393
@@ -1794,7 +1794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
-<./../40_rei/figures/Fehlerbaum.png, id=420, 548.0475pt x 407.27156pt>
+<./../40_rei/figures/Fehlerbaum.png, id=426, 548.0475pt x 407.27156pt>
 File: ./../40_rei/figures/Fehlerbaum.png Graphic file (type png)
 <use ./../40_rei/figures/Fehlerbaum.png>
 Package pdftex.def Info: ./../40_rei/figures/Fehlerbaum.png  used on input line
@@ -1894,13 +1894,13 @@ Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 642.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [26]
 Kapitel 2.
-<./../40_rei/figures/Planung_Realisierung1.png, id=455, 542.025pt x 622.325pt>
+<./../40_rei/figures/Planung_Realisierung1.png, id=461, 542.025pt x 622.325pt>
 File: ./../40_rei/figures/Planung_Realisierung1.png Graphic file (type png)
 <use ./../40_rei/figures/Planung_Realisierung1.png>
 Package pdftex.def Info: ./../40_rei/figures/Planung_Realisierung1.png  used on
  input line 651.
 (pdftex.def)             Requested size: 441.01773pt x 506.369pt.
-<./../40_rei/figures/Planung_Realisierung2.png, id=456, 544.0325pt x 502.87875p
+<./../40_rei/figures/Planung_Realisierung2.png, id=462, 544.0325pt x 502.87875p
 t>
 File: ./../40_rei/figures/Planung_Realisierung2.png Graphic file (type png)
 <use ./../40_rei/figures/Planung_Realisierung2.png>
@@ -1982,10 +1982,10 @@ Package logreq Info: Writing requests to 'Master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31214 strings out of 492452
- 585315 string characters out of 3120531
- 1075167 words of memory out of 3000000
- 34990 multiletter control sequences out of 15000+200000
+ 31228 strings out of 492452
+ 585775 string characters out of 3120531
+ 1075332 words of memory out of 3000000
+ 35001 multiletter control sequences out of 15000+200000
  541627 words of font info for 57 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  57i,17n,100p,1662b,3556s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2002,9 +2002,9 @@ cm/cmsl12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/User/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Master.pdf (35 pages, 1395984 bytes).
+Output written on Master.pdf (35 pages, 1401375 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 258 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

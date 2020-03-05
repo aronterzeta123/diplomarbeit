@@ -19,6 +19,16 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Fritzing}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://fritzing.org/learning/
+      \endverb
+      \verb{url}
+      \verb https://fritzing.org/learning/
+      \endverb
+    \endentry
     \entry{geometrischesM}{online}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
@@ -27,6 +37,30 @@
       \endverb
       \verb{url}
       \verb https://de.serlo.org/mathe/stochastik/daten-datendarstellung/daten-kenngroessen/geometrisches-mittel
+      \endverb
+    \endentry
+    \entry{OpenCVR}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labeltitlesource}{title}
+      \field{title}{Einführung in Computer Vision mit OpenCV und Python}
+      \verb{urlraw}
+      \verb https://blog.codecentric.de/2017/06/einfuehrung-in-computer-vision-mit-opencv-und-python/
+      \endverb
+      \verb{url}
+      \verb https://blog.codecentric.de/2017/06/einfuehrung-in-computer-vision-mit-opencv-und-python/
+      \endverb
+    \endentry
+    \entry{Taster}{online}{}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{labeltitlesource}{title}
+      \field{title}{Unterschied Taster als Schließer, Taster als Wechsler und Schalter}
+      \verb{urlraw}
+      \verb https://dein-elektriker-info.de/taster-als-schliesser-und-taster-als-wechsler/
+      \endverb
+      \verb{url}
+      \verb https://dein-elektriker-info.de/taster-als-schliesser-und-taster-als-wechsler/
       \endverb
     \endentry
   \enddatalist

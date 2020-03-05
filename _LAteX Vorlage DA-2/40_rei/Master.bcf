@@ -2129,7 +2129,10 @@
     <bcf:datasource type="file" datatype="bibtex">./../literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">geometrischesM</bcf:citekey>
+    <bcf:citekey order="1">Taster</bcf:citekey>
+    <bcf:citekey order="2">OpenCVR</bcf:citekey>
+    <bcf:citekey order="3">Fritzing</bcf:citekey>
+    <bcf:citekey order="4">geometrischesM</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

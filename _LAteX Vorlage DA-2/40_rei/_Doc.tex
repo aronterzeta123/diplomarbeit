@@ -32,7 +32,7 @@ Die Bauteile, die für dieses System verwendet geworden sind, sind die folgende:
 	\item \textit{Widerstand} \\
 	Ein Widerstand ist ein elektrisches Bauteil, das zur Reduzierung von Strom verwendet wird, damit ein Gleichgewicht zwischen Strom und Spannung gesichert werden kann. Die Einheit ist Ohm.
 	\item \textit{Taster} \\
-	Ein Taster wird wie ein Button gedrückt, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster vorhanden.
+	Ein Taster wird wie ein Button gedrückt, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster vorhanden.\cite{Taster}
 	\item \textit{Raspberry Pi} \\
 	Raspberry Pi ist ein Minicomputer, der in diesem Projekt den normalen Computer ersetzt. Der verwendete Raspberry, Version 3, hat 4 USB-Anschlüsse, einem Netzteil, eine SD-Karte, 16 GPIO\footnote{Generated Input Output} Pins und einem VGA Schnittstelle. Die 3.-Bit SD-Karte ist das wichtigste Element, weil dort alle Daten und Informationen gespeichert sind.
 	\item \textit{Bildschirm} \\
@@ -79,7 +79,7 @@ In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umset
 	\begin{itemize}
 		\item Open CV \\
 		Das wichtigste Framework für dieses Projekt ist OpenCV. OpenCV ist eine Softwarebibliothek, die für Computer-Vision und maschinelles Lernen verwendet wird. Die Bibliothek verfügt über mehr als 2500 optimierte Algorithmen, die sowohl klassische als auch moderne Computer Vision- und maschinelle Lernalgorithmen umfassen. Diese Algorithmen können verwendet werden, um Gesichter zu registrieren und zu erkennen, um Objekte zu identifizieren, menschliche Handlungen in Videos zu klassifizieren und Kamerabewegungen zu verfolgen. Dieses Framework wurde deswegen gewählt, weil die Vielfältigkeit der angebotenen Optionen und Paketen einfach größer ist als bei anderen Frameworks. Ein anderer Vorteil ist das OpenCV Open-Source ist. Die größte Herausforderung ist die lange und komplizierte Installation auf Linux.
-		%\cite{OpenCV}
+		\cite{OpenCVR}
 		%\begin{figure}[H]
 		%	\includegraphics[scale=0.5]{\ordnerfigures opencv.png}
 			%\centering
@@ -94,7 +94,7 @@ In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umset
 	%	\item Raspberry Pi \\
 	%	Wie es vorher erwähnt wurde in dem Gesichtserkennung Teil des Projekts statt ein Computer ein Raspberry Pi verwendet. Was ein Raspberry Pi ist wurde in dem Kapitel 7.2.1 erklärt. Die wichtigsten Gründe dieser Wahl werden aber erst jetzt genannt. Der kleinere Platzbedarf und die hohe Flexibilität des Raspberry PI sind wesentliche Vorteile. Die Bestandteile bewegen sich nicht, und es gibt keinen Lärm. Was sehr beliebt ist, ist, dass der Raspberry PI gleichzeitig für die Hardware(GPIO PINS) und die Software(wie ein normaler Computer) verwendet werden kann. Er unterstützt Linux(Raspbian) sehr gut. Ein der wichtigsten Gründe dieser Wahl ist auch, dass im Fall eines Fehlers ein Raspberry PI sehr schnell und problemlos geändert oder repariert werden kann. (Gibt es ein Problem mit der SD-Karte, dann muss sie geändert werden, und dann kann die Hardware wieder ganz normal genutzt werden. Wenn es ein Hardware Problem gibt, dann muss die alte SD-Karte in eine neue SD-Karte kloniert werden und nur ein anderes Raspberry verwendet werden. Somit sind alle Daten gespeichert und es ist möglich, mit Hilfe des anderen Raspberry Pi, sie zuzugreifen)
 		\item Fritzing \\
-		Fritzing ist ein Programm das für die graphische Darstellung des Schaltkreises des Systems verwendet wurde. Durch dieses Programm wurde auch der Schaltplan des Systems erstellt(Abb.\ref{fig:Schaltplan}). Fritzing bietet eine sehr große Menge von elektronischen Komponenten und ein PCB, eine Steckplatine und einen Schematic View. In diesem Fall wurde die Breadboard View gewählt, weil dort alles übersichtlicher ist. Was noch gut ist, ist das Fritzing kostenlos im Linux angeboten wird, was für Windows nicht der Fall ist.
+		Fritzing ist ein Programm das für die graphische Darstellung des Schaltkreises des Systems verwendet wurde. Durch dieses Programm wurde auch der Schaltplan des Systems erstellt(Abb.\ref{fig:Schaltplan}). Fritzing bietet eine sehr große Menge von elektronischen Komponenten und ein PCB, eine Steckplatine und einen Schematic View. In diesem Fall wurde die Breadboard View gewählt, weil dort alles übersichtlicher ist. Was noch gut ist, ist das Fritzing kostenlos im Linux angeboten wird, was für Windows nicht der Fall ist.\cite{Fritzing}
 \end{itemize}	
 	%	\item MySQL und MariaDB \\
 	%	Um die Testdatenbanken zu erstellen und die Benutzerfotos und Benutzerdaten zu speichern, wurde die berühmteste Open-Source relationales Datenbank System, MySQL verwendet. Zusammen mit MySQL wurde auch die Pakete MariaDB auf dem System installiert, damit Python mit MySQL durch einer Schnittstelle verbunden wird. Mithilfe der MariaDB werden die ganzen Tabellen mit Daten gefüllt.
