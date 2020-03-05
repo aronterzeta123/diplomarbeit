@@ -2,27 +2,36 @@
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Big picture\relax }}{4}{figure.caption.8}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Scrum\relax }}{5}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Big picture\relax }}{4}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Scrum\relax }}{5}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Structed Software Design bzw. erste Ebene \relax }}{9}{figure.caption.10}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Packages zu importieren im Main-Skript\relax }}{10}{figure.caption.11}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces GPIO-Ports Konfiguration\relax }}{11}{figure.caption.12}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Beispiel in Python, wie die Personen registriert werden\relax }}{12}{figure.caption.13}% 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Risikoanalyse in Excel\relax }}{15}{figure.caption.14}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Structed Software Design bzw. erste Ebene \relax }}{9}{figure.caption.10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Risikoanalyse in Excel\relax }}{16}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces MySQL Logo\relax }}{17}{figure.caption.17}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces MariaDB Logo\relax }}{18}{figure.caption.19}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Python Logo\relax }}{19}{figure.caption.21}% 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces OpenCV Logo\relax }}{19}{figure.caption.23}% 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Plan-Do-Check-Act-Zyklus\relax }}{25}{figure.caption.28}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces MySQL Logo\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MariaDB Logo\relax }}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Python Logo\relax }}{20}{figure.caption.18}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces OpenCV Logo\relax }}{20}{figure.caption.20}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Plan-Do-Check-Act-Zyklus\relax }}{26}{figure.caption.25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces OpenCV Logo\relax }}{28}{figure.caption.29}% 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Numpy logo\relax }}{29}{figure.caption.30}% 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces dlib logo\relax }}{29}{figure.caption.31}% 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Bildverarbeitung Structed Design\relax }}{31}{figure.caption.32}% 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Haar Features\relax }}{33}{figure.caption.33}% 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Haar Einsetzung\relax }}{33}{figure.caption.34}% 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Box auf Gesicht\relax }}{34}{figure.caption.36}% 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces abgeschnittenes Gesicht\relax }}{35}{figure.caption.37}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{30}{figure.caption.26}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{31}{figure.caption.27}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Haar Features\cite {Viola01robustreal-time}\relax }}{33}{figure.caption.28}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Box auf Gesicht\relax }}{34}{figure.caption.30}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Abgeschnittenes Gesicht\relax }}{35}{figure.caption.31}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Grobe Skizze des Systems\relax }}{40}{figure.caption.32}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Schaltplan des Systems\relax }}{42}{figure.caption.35}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Big Picture\relax }}{44}{figure.caption.38}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Erste Ebene\relax }}{45}{figure.caption.39}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Vergleichsweg\relax }}{49}{figure.caption.40}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces geometrisches Mittel\relax }}{50}{figure.caption.41}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces 1\_Fall\relax }}{52}{figure.caption.42}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces 2\_Fall\relax }}{53}{figure.caption.43}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces 3\_Fall\relax }}{54}{figure.caption.44}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Fehlerbaum\relax }}{61}{figure.caption.48}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Planung vs Realisierung\relax }}{66}{figure.caption.49}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Planung vs Realisierung\relax }}{67}{figure.caption.50}
+\addvspace {10\p@ }

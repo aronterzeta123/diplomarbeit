@@ -1,48 +1,74 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-\contentsline {chapter}{\numberline {1}Allgemeines}{1}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Planung}{2}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Projektziele}{2}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Ziele}{2}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Nicht Ziele}{3}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}Optionale Ziele}{3}{subsection.2.1.3}% 
-\contentsline {section}{\numberline {2.2}Projektplanung}{3}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Projektmanagmentmethode}{4}{section.2.3}% 
-\contentsline {chapter}{\numberline {3}Gesichtsregistrierung}{6}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Umsetzung}{6}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Allgemein}{6}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Technische L\"osung}{7}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}Herausforderungen}{12}{subsection.3.1.3}% 
-\contentsline {subsection}{\numberline {3.1.4}Qualit\"atssicherung und Controlling}{14}{subsection.3.1.4}% 
-\contentsline {section}{\numberline {3.2}Ergebnisse}{15}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Implementierung}{15}{subsection.3.2.1}% 
-\contentsline {chapter}{\numberline {4}Umsetzung - Jordi}{17}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Allgemeine Beschreibung}{17}{section.4.1}% 
-\contentsline {subsubsection}{MySQL}{17}{section*.16}% 
-\contentsline {subsubsection}{MariaDB}{18}{section*.18}% 
-\contentsline {subsubsection}{Python}{18}{section*.20}% 
-\contentsline {subsubsection}{OpenCV}{19}{section*.22}% 
-\contentsline {section}{\numberline {4.2}Technische L\IeC {\"o}sungen}{20}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Datenkbank}{20}{subsection.4.2.1}% 
-\contentsline {subsubsection}{Beschreibung der Tabellen}{21}{section*.24}% 
-\contentsline {subsubsection}{Tabelle Person}{21}{section*.25}% 
-\contentsline {subsubsection}{Tabelle Info}{21}{section*.26}% 
-\contentsline {subsubsection}{Log Tabelle}{22}{section*.27}% 
-\contentsline {section}{\numberline {4.3}Herausforderungen}{23}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Datenkbank - MariaDB}{23}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Python Scripting}{23}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}OpenCV}{24}{subsection.4.3.3}% 
-\contentsline {section}{\numberline {4.4}Qualit\IeC {\"a}tssicherung}{24}{section.4.4}% 
-\contentsline {chapter}{\numberline {5}Ergebnisse - Jordi}{26}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Datenbank}{26}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Tieferkennung}{26}{section.5.2}% 
-\contentsline {chapter}{\numberline {6}Bildverarbeitung - Egli}{27}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Allgemeines}{27}{section.6.1}% 
-\contentsline {subsection}{\numberline {6.1.1}Entwicklungsumgebung und Technologien}{27}{subsection.6.1.1}% 
-\contentsline {subsection}{\numberline {6.1.2}Frameworks und Bibliotheken}{28}{subsection.6.1.2}% 
-\contentsline {section}{\numberline {6.2}Technische L\IeC {\"o}sungen}{30}{section.6.2}% 
-\contentsline {subsection}{\numberline {6.2.1}L\IeC {\"o}sungsweg - Structed Software design}{31}{subsection.6.2.1}% 
-\contentsline {subsection}{\numberline {6.2.2}Gesichtsdetektion}{32}{subsection.6.2.2}% 
-\contentsline {subsubsection}{Umsetzung in Code}{34}{section*.35}% 
-\contentsline {subsection}{\numberline {6.2.3}Gesichtsdetektion und Zuschneiden}{35}{subsection.6.2.3}% 
-\contentsline {subsection}{\numberline {6.2.4}Gesichtsschl\IeC {\"u}sselpunkte Extraktion}{35}{subsection.6.2.4}% 
+\contentsline {chapter}{\numberline {1}Allgemeines}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Planung}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Projektziele}{2}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Ziele}{2}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Nicht Ziele}{3}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Optionale Ziele}{3}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Projektplanung}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Projektmanagmentmethode}{4}{section.2.3}
+\contentsline {chapter}{\numberline {3}Gesichtsregistrierung}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Umsetzung}{6}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Allgemein}{6}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Verwendete Technologien}{6}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Technische L\"osung}{7}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Herausforderungen}{13}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Qualit\"atssicherung und Controlling}{15}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Ergebnisse}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Implementierung}{17}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Umsetzung - Jordi}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Allgemeine Beschreibung}{18}{section.4.1}
+\contentsline {subsubsection}{MySQL}{18}{section*.13}
+\contentsline {subsubsection}{MariaDB}{19}{section*.15}
+\contentsline {subsubsection}{Python}{19}{section*.17}
+\contentsline {subsubsection}{OpenCV}{20}{section*.19}
+\contentsline {section}{\numberline {4.2}Technische L\IeC {\"o}sungen}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Datenkbank}{21}{subsection.4.2.1}
+\contentsline {subsubsection}{Beschreibung der Tabellen}{22}{section*.21}
+\contentsline {subsubsection}{Tabelle Person}{22}{section*.22}
+\contentsline {subsubsection}{Tabelle Info}{22}{section*.23}
+\contentsline {subsubsection}{Log Tabelle}{23}{section*.24}
+\contentsline {section}{\numberline {4.3}Herausforderungen}{24}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Datenkbank - MariaDB}{24}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Python Scripting}{24}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}OpenCV}{25}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Qualit\IeC {\"a}tssicherung}{25}{section.4.4}
+\contentsline {chapter}{\numberline {5}Ergebnisse - Jordi}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Datenbank}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tieferkennung}{27}{section.5.2}
+\contentsline {chapter}{\numberline {6}Bildverarbeitung}{28}{chapter.6}
+\contentsline {section}{\numberline {6.1}Allgemeines}{28}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Entwicklungsumgebung und Technologien}{28}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Frameworks und Bibliotheken}{29}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Technische L\IeC {\"o}sungen}{30}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}L\IeC {\"o}sungsweg - Structed Software design}{30}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Gesichtsdetektion}{32}{subsection.6.2.2}
+\contentsline {subsubsection}{Umsetzung in Code}{33}{section*.29}
+\contentsline {subsection}{\numberline {6.2.3}Normalisierung}{34}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Gesichtsdetektion und Zuschneiden}{34}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Gesichtsschl\IeC {\"u}sselpunkte Extraktion}{35}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Zusammenfassung}{36}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Herausforderungen, Probleme und deren L\IeC {\"o}sung }{36}{section.6.3}
+\contentsline {section}{\numberline {6.4}Qualit\IeC {\"a}tssicherung, Controlling}{37}{section.6.4}
+\contentsline {section}{\numberline {6.5}Ergebnise}{38}{section.6.5}
+\contentsline {chapter}{\numberline {7}Gesichtserkennung - Rei}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}Allgemeines}{39}{section.7.1}
+\contentsline {section}{\numberline {7.2}Technische L\IeC {\"o}sung}{40}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Hardware und Aufbau}{40}{subsection.7.2.1}
+\contentsline {subsubsection}{Bauteile und HW-Komponenten}{40}{section*.33}
+\contentsline {subsubsection}{Schaltplan und Erkl\IeC {\"a}rung des Aufbaus}{42}{section*.34}
+\contentsline {subsection}{\numberline {7.2.2}Software}{43}{subsection.7.2.2}
+\contentsline {subsubsection}{Verwendete Technologien}{43}{section*.36}
+\contentsline {subsubsection}{L\IeC {\"o}sungsweg- Beschreibung und Erkl\IeC {\"a}rung}{44}{section*.37}
+\contentsline {subsubsection}{Andere wichtige Punkte und Abgrenzungen}{55}{section*.45}
+\contentsline {subsubsection}{Das Testen}{56}{section*.46}
+\contentsline {subsubsection}{Das Logging}{57}{section*.47}
+\contentsline {section}{\numberline {7.3}Herausforderungen, Probleme, und deren L\IeC {\"o}sung}{58}{section.7.3}
+\contentsline {section}{\numberline {7.4}Projektmanagement und Controlling}{60}{section.7.4}
+\contentsline {section}{\numberline {7.5}Ergebnisse}{62}{section.7.5}
+\contentsline {section}{\numberline {7.6}Was wurde gelernt und welche Verbesserungsm\IeC {\"o}glichkeiten gibt es}{62}{section.7.6}
+\contentsline {chapter}{\numberline {8}Planung vs Realisierung}{65}{chapter.8}
+\contentsline {chapter}{\numberline {9}Evaluierung und Res\IeC {\"u}mee}{68}{chapter.9}
+\contentsline {section}{\numberline {9.1}Wertsch\IeC {\"o}pfung und Lessons Learned}{68}{section.9.1}
+\contentsline {chapter}{Appendix:}{}
