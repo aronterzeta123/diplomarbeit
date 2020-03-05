@@ -1,0 +1,425 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{fmea}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.quality.de/lexikon/5xwarum/}}
+      \field{note}{[Online; accessed 2019]}
+      \field{title}{{5x Warum}}
+      \field{year}{2017}
+    \endentry
+    \entry{opencv_library}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7cb92723a011baf2e0abeeb403d03960}{%
+           family={Bradski},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cb92723a011baf2e0abeeb403d03960}
+      \strng{fullhash}{7cb92723a011baf2e0abeeb403d03960}
+      \strng{bibnamehash}{7cb92723a011baf2e0abeeb403d03960}
+      \strng{authorbibnamehash}{7cb92723a011baf2e0abeeb403d03960}
+      \strng{authornamehash}{7cb92723a011baf2e0abeeb403d03960}
+      \strng{authorfullhash}{7cb92723a011baf2e0abeeb403d03960}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Dr. Dobb's Journal of Software Tools}
+      \field{title}{{The OpenCV Library}}
+      \field{year}{2000}
+      \keyw{bibtex-import}
+    \endentry
+    \entry{linx}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f0a3b4b88e71a343acc4cba86073a0a6}{%
+           family={EDUCBA},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0a3b4b88e71a343acc4cba86073a0a6}
+      \strng{fullhash}{f0a3b4b88e71a343acc4cba86073a0a6}
+      \strng{bibnamehash}{f0a3b4b88e71a343acc4cba86073a0a6}
+      \strng{authorbibnamehash}{f0a3b4b88e71a343acc4cba86073a0a6}
+      \strng{authornamehash}{f0a3b4b88e71a343acc4cba86073a0a6}
+      \strng{authorfullhash}{f0a3b4b88e71a343acc4cba86073a0a6}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.educba.com/linux-vs-windows/}}
+      \field{note}{[Online; accessed 2019]}
+      \field{title}{{Differences Between Linux vs Windows}}
+      \field{year}{2017}
+    \endentry
+    \entry{Git1}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labeltitlesource}{title}
+      \field{title}{Git}
+      \verb{urlraw}
+      \verb https://git-scm.com/docs
+      \endverb
+      \verb{url}
+      \verb https://git-scm.com/docs
+      \endverb
+    \endentry
+    \entry{Kazemi2014OneMF}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f9f7b64329b77e00c6475a990b84d37f}{%
+           family={Kazemi},
+           familyi={K\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+        {{hash=978b385f0a467be210c02e0d38d629b3}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={Josephine},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{683a03a342f13c8b2c1d1d539447f473}
+      \strng{fullhash}{683a03a342f13c8b2c1d1d539447f473}
+      \strng{bibnamehash}{683a03a342f13c8b2c1d1d539447f473}
+      \strng{authorbibnamehash}{683a03a342f13c8b2c1d1d539447f473}
+      \strng{authornamehash}{683a03a342f13c8b2c1d1d539447f473}
+      \strng{authorfullhash}{683a03a342f13c8b2c1d1d539447f473}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2014 IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{One millisecond face alignment with an ensemble of regression trees}
+      \field{year}{2014}
+      \field{pages}{1867\bibrangedash 1874}
+      \range{pages}{8}
+    \endentry
+    \entry{dlib}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dea76727c3eb87de81b639bfc2976762}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Davis\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{dea76727c3eb87de81b639bfc2976762}
+      \strng{fullhash}{dea76727c3eb87de81b639bfc2976762}
+      \strng{bibnamehash}{dea76727c3eb87de81b639bfc2976762}
+      \strng{authorbibnamehash}{dea76727c3eb87de81b639bfc2976762}
+      \strng{authornamehash}{dea76727c3eb87de81b639bfc2976762}
+      \strng{authorfullhash}{dea76727c3eb87de81b639bfc2976762}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{Dlib-ml: A Machine Learning Toolkit}
+      \field{volume}{10}
+      \field{year}{2009}
+      \field{pages}{1755\bibrangedash 1758}
+      \range{pages}{4}
+    \endentry
+    \entry{why_python}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4634159ca7c103f81d3b7eafbc67c155}{%
+           family={solutions},
+           familyi={s\bibinitperiod},
+           given={Mindfire},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4634159ca7c103f81d3b7eafbc67c155}
+      \strng{fullhash}{4634159ca7c103f81d3b7eafbc67c155}
+      \strng{bibnamehash}{4634159ca7c103f81d3b7eafbc67c155}
+      \strng{authorbibnamehash}{4634159ca7c103f81d3b7eafbc67c155}
+      \strng{authornamehash}{4634159ca7c103f81d3b7eafbc67c155}
+      \strng{authorfullhash}{4634159ca7c103f81d3b7eafbc67c155}
+      \field{sortinit}{s}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://medium.com/@mindfiresolutions.usa/python-7-important-reasons-why-you-should-use-python-5801a98a0d0b/}}
+      \field{note}{[Online; accessed 2019]}
+      \field{title}{{Python: 7 Important Reasons Why You Should Use Python}}
+      \field{year}{3/10/2017}
+    \endentry
+    \entry{Viola01robustreal-time}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=050f01d5a79687cfd1d63ef25567fc35}{%
+           family={Viola},
+           familyi={V\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5a25bc91f524ca6dfc2ecf9f4a13903c}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{add3d8794d306082d388ffc8fba59210}
+      \strng{fullhash}{add3d8794d306082d388ffc8fba59210}
+      \strng{bibnamehash}{add3d8794d306082d388ffc8fba59210}
+      \strng{authorbibnamehash}{add3d8794d306082d388ffc8fba59210}
+      \strng{authornamehash}{add3d8794d306082d388ffc8fba59210}
+      \strng{authorfullhash}{add3d8794d306082d388ffc8fba59210}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Journal of Computer Vision}
+      \field{title}{Robust Real-time Object Detection}
+      \field{year}{2001}
+    \endentry
+    \entry{2019arXiv190710121V-scipy}{article}{}
+      \name{author}{35}{}{%
+        {{hash=18703a2bb6a62484483c193a212da2f8}{%
+           family={{Virtanen}},
+           familyi={V\bibinitperiod},
+           given={Pauli},
+           giveni={P\bibinitperiod}}}%
+        {{hash=646fbfe08374cc41c2f9bd971d8c4725}{%
+           family={{Gommers}},
+           familyi={G\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d500f4849030f34359cdb3e1513acf83}{%
+           family={{Oliphant}},
+           familyi={O\bibinitperiod},
+           given={Travis\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=35bb9c71f55048509a3e9018c349ed73}{%
+           family={{Haberland}},
+           familyi={H\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fbb0c40f5d70be8ce47ce9daafdf5749}{%
+           family={{Reddy}},
+           familyi={R\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9fd9ed8466bbb96364ae008f2a665e6e}{%
+           family={{Cournapeau}},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=09a667aa6a26526bfcccb2676a494e55}{%
+           family={{Burovski}},
+           familyi={B\bibinitperiod},
+           given={Evgeni},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={{Peterson}},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
+           family={{Weckesser}},
+           familyi={W\bibinitperiod},
+           given={Warren},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7447cb057596bc2645d3980bb04f5c78}{%
+           family={{Bright}},
+           familyi={B\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1b5d87f5a394ee92a6edb4c1de058cab}{%
+           family={{van der Walt}},
+           familyi={v\bibinitperiod},
+           given={St{é}fan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=626cc151613864abeb653c0d8172d98c}{%
+           family={{Brett}},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=57849e8550281b202bd611bf6f11e14b}{%
+           family={{Wilson}},
+           familyi={W\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1ff4974975ff2e9c09906d91fa7e7a90}{%
+           family={{Jarrod Millman}},
+           familyi={J\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fbaf80580622bd40577f4a6d38021c0a}{%
+           family={{Mayorov}},
+           familyi={M\bibinitperiod},
+           given={Nikolay},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7bcf847eaccba039f7a4523540673aea}{%
+           family={{Nelson}},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelima R.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4b3d26f886661aa723985bcfd835ba18}{%
+           family={{Jones}},
+           familyi={J\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9ad1d38817acd2f00cb7f324ec7d37ea}{%
+           family={{Kern}},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8d336f110675c46226ece1db501ce712}{%
+           family={{Larson}},
+           familyi={L\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=65b1934a87acb0abe09c469aaf11c326}{%
+           family={{Carey}},
+           familyi={C\bibinitperiod},
+           given={CJ},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9989e8a18827e34b15112d671f52bd35}{%
+           family={{Polat}},
+           familyi={P\bibinitperiod},
+           given={{İ}lhan},
+           giveni={İ\bibinitperiod}}}%
+        {{hash=b8b88d61c79de60e6e1b5d44e03f5dec}{%
+           family={{Feng}},
+           familyi={F\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bf4be16325cb4f641345ca394443fd18}{%
+           family={{Moore}},
+           familyi={M\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0fd9a0e34f1b2adda41357c948d14986}{%
+           family={{Vand erPlas}},
+           familyi={V\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c6a95a8ced3b86b4e7e60a74bc6ebf5a}{%
+           family={{Laxalde}},
+           familyi={L\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=85242652d69220e83cf71ceb8d90a8cb}{%
+           family={{Perktold}},
+           familyi={P\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5bca159e697db439e23b8947dfa4b614}{%
+           family={{Cimrman}},
+           familyi={C\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=70b659f5067a8a2efbee66f770681598}{%
+           family={{Henriksen}},
+           familyi={H\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=fa5163c76600eb11a4d07a28f0701cb0}{%
+           family={{Quintero}},
+           familyi={Q\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=db2b4761cc46be347b418e68660c9554}{%
+           family={{Harris}},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7d86aea5ad1f2b4e27f2f014c71712c2}{%
+           family={{Archibald}},
+           familyi={A\bibinitperiod},
+           given={Anne\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3876f7c3dbbb1a17823dcd135d07cfc6}{%
+           family={{Ribeiro}},
+           familyi={R\bibinitperiod},
+           given={Ant{ô}nio\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=bab4e5caee2d67831e464ce575022b37}{%
+           family={{Pedregosa}},
+           familyi={P\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8928c27c900ec0b05492cbba126c5196}{%
+           family={{van Mulbregt}},
+           familyi={v\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=20952a3e58ebaa3af80857c4902b473d}{%
+           family={{Contributors}},
+           familyi={C\bibinitperiod},
+           given={SciPy\bibnamedelimb 1.\bibnamedelimi 0},
+           giveni={S\bibinitperiod\bibinitdelim 1\bibinitperiod\bibinitdelim 0\bibinitperiod}}}%
+      }
+      \strng{namehash}{f252038edd7f112d75da3bf0c1edecbc}
+      \strng{fullhash}{d34af6ea301027313fdb2726afd7e800}
+      \strng{bibnamehash}{f252038edd7f112d75da3bf0c1edecbc}
+      \strng{authorbibnamehash}{f252038edd7f112d75da3bf0c1edecbc}
+      \strng{authornamehash}{f252038edd7f112d75da3bf0c1edecbc}
+      \strng{authorfullhash}{d34af6ea301027313fdb2726afd7e800}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1907.10121}
+      \field{eprintclass}{cs.MS}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{7}
+      \field{title}{{SciPy 1.0--Fundamental Algorithms for Scientific Computing in Python}}
+      \field{year}{2019}
+      \field{pages}{arXiv:1907.10121}
+      \range{pages}{-1}
+      \verb{eprint}
+      \verb 1907.10121
+      \endverb
+    \endentry
+    \entry{affine}{online}{}
+      \name{author}{1}{}{%
+        {{hash=17eacc833e74f76c6cac4522224a09e3}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MathWorld}%
+      }
+      \strng{namehash}{17eacc833e74f76c6cac4522224a09e3}
+      \strng{fullhash}{17eacc833e74f76c6cac4522224a09e3}
+      \strng{bibnamehash}{17eacc833e74f76c6cac4522224a09e3}
+      \strng{authorbibnamehash}{17eacc833e74f76c6cac4522224a09e3}
+      \strng{authornamehash}{17eacc833e74f76c6cac4522224a09e3}
+      \strng{authorfullhash}{17eacc833e74f76c6cac4522224a09e3}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Affine Transformation}
+      \verb{urlraw}
+      \verb http://mathworld.wolfram.com/AffineTransformation.html
+      \endverb
+      \verb{url}
+      \verb http://mathworld.wolfram.com/AffineTransformation.html
+      \endverb
+      \warn{\item Entry 'affine' (./../literatur.bib): Invalid format '17.02.2020' of date field 'date' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

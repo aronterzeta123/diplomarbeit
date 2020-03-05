@@ -1,59 +1,81 @@
 
 \chapter{\docname}
-In diesem Kapitel wird feiner beschrieben, wie der Gesichtsregistrierungsteil funktioniert.
+In diesem Kapitel wird genauer beschrieben, wie der Gesichtsregistrierungsteil funktioniert.
 \label{\docname}
 \section{Umsetzung}
-Hier wird erkl\"art, wie es gedacht ist, den Gesichtsregistrierungsteil zu implementieren. 
+Hier wird erkl\"art, wie der Gesichtsregistrierungsteil implementiert wird. 
 \subsection{Allgemein}
-Sicherheit ist heutzutage hoch interessant und relevant in vielen technischen und nicht technischen Bereichen. Das System, das entwickelt wird, hat mit Gesichter von Personen zu tun. Alle wissen, dass das Gesicht f\"ur jede Person anders ist. Jede Person wird mit ihrem Gesicht authentifiziert, weil es einzigartig ist. Das Gesicht hat Daten, die von verschiedenen Algorithmen herausgeholt werden k\"onnen, um diese f\"ur Realisierung der \"Uberpr\"ufung und Authentifizierung der Personen verwenden zu k\"onnen. 
+Sicherheit ist heutzutage hoch interessant und relevant in vielen technischen und nicht technischen Bereichen. Das System, das entwickelt wird, hat mit Gesichter von Personen zu tun. Alle wissen, dass das Gesicht f\"ur jede Person anders ist. Jede Person wird mit ihrem Gesicht authentifiziert, weil es einzigartig ist. Das Gesicht hat Merkmale, die von verschiedenen Algorithmen herausgeholt werden k\"onnen, um diese f\"ur die Authentifizierung der Personen zu verwenden 
 
-Das System ist in zwei Teile geteilt. Es gibt den Registrierungsteil und den Erkennungsteil. Bei dem Registrierungsteil wird die komplette Registrierung der Sch\"uler und Sch\"ulerinnen, der Lehrer und Lehrerinnen gemacht. Bei dem Erkennungsteil wird die Authentifizierung der Sch\"uler und Sch\"ulerinnen gemacht. 
+Das System ist in zwei Teile geteilt. Es gibt den Registrierungsteil und den Erkennungsteil. Bei dem Registrierungsteil wird die komplette Registrierung der Sch\"uler und Sch\"ulerinnen, der Lehrer und Lehrerinnen durchgef\"uhrt. Bei dem Erkennungsteil wird die Authentifizierung der Sch\"uler und Sch\"ulerinnen gemacht. 
 \subsection{Verwendete Technologien}
-Das andere Paket namens "git" k\"onnte als eine Backup-Strategie verwendet, wenn das System abst\"urzt. Git ist ein Versionsverwaltungssystem, das verschiedene Versionen bzw. Commits auf einem Github-Server speichert. Auf dem Github-Server gibt dann verschiedene Versionen des Systems und die Daten werden von einem bestimmten Commit dann zur\"uckgeholt. Es wird meistens bei der Implementierung-Phase verwendet, um die Ver\"anderungen der Source-Code, wann ge\"andert hat, wer ge\"andert hat zu verwalten.
-cmake\footnote{ein erweiterbares Open-Source-System, das den Erstellungsprozess in einem Betriebssystem und auf compilerunabhängige Weise verwaltet.} ist ein Paket, das gebraucht wird, wenn das System mit OpenCV-Framework\footnote{eine Bibliothek von Programmierfunktionen, die hauptsächlich auf Computer Vision in Echtzeit abzielen.} arbeitet wird. Es muss das System so konfiguriert sein, damit das OpenCV-Framework in einem C++ Programm verwendet werden kann. Deshalb brauchen wir spezielle cmake Befehle, die es erm\"oglichen.
+Hier werden die Technologien beschrieben, die verwendet wurden.
+Das andere Paket namens "git" k\"onnte als eine Backup-Strategie verwendet, wenn das System abst\"urzt. Git ist ein Versionsverwaltungssystem, das verschiedene Versionen einer Software auf einem Server speichert. Auf dem Server gibt es dann verschiedene Versionen des Systems und die Daten k\"onnen von einer bestimmten Version dann zur\"uckgeholt werden. Es wird meistens bei der Implementierung-Phase verwendet, um die Ver\"anderungen des Source-Codes zu verwalten. \\
+cmake\footnote{ein erweiterbares Open-Source-System, das den Erstellungsprozess in einem Betriebssystem und auf compilerunabhängige Weise verwaltet.} ist ein Paket, das gebraucht wird, wenn man mit OpenCV\footnote{eine Bibliothek von Programmierfunktionen, die hauptsächlich auf Computer Vision in Echtzeit abzielen.} arbeitet. Es muss das System so konfiguriert sein, damit das OpenCV-Framework in einem C++ Programm verwendet werden kann. Deshalb brauchen wir spezielle cmake Befehle, die dies erm\"oglichen.
 
 "CMake wird verwendet, um den Softwarekompilierungsprozess mithilfe einfacher plattform- und compilerunabh\"angiger Konfigurationsdateien zu steuern und native Makefiles und Arbeitsbereiche zu generieren, die in einer Compilerumgebung Ihrer Wahl verwendet werden k\"onnen."\cite{cmake}
 
-Das gleiche passiert auch, wenn z.B. Python statt C++ verwendet wird. Die anderen Pakete wie z.B. libgtk2.0-dev pkg-config, libavcodec-dev, libavformat-dev, libswscale-dev, sind n\"otige Paketen, damit das OpenCV-Framework eigentlich verwendet kann. 
+Das gleiche passiert auch, wenn z.B. Python statt C++ verwendet wird. Die anderen Pakete wie z.B. libgtk2.0-dev pkg-config, libavcodec-dev, libavformat-dev, libswscale-dev, sind ben\"otige Paketen, damit man das OpenCV-Framework verwenden kann. 
  
-Linux als Betriebssystem \cite{Linux_Betriebssystem}  \\
-Linux ist das weit verwendete Betriebssystem der Welt. Es ist eine open-source Software. Linux ist flexibel, man kann die einzelnen Modulen wegnehmen, ohne dass das Betriebssystem abst\"urzt. Der Benutzer kann auch die Kernkomponenten w\"ahlen wie z.B. welches System-Grafiken angezeigt werden, bzw. die ganzen Komponenten der Benutzeroberfl\"ache. Warum ich Linux gew\"ahlt habe, gibt es verschiedene Gr\"unde. Linux ist f\"ur eingebettete Systeme sehr geeignet. Es ist sicher gegen Schadprogrammen, Viren und Trojanern. Linux ist einfacher. Vorher war ein kompliziertes System, jetzt seit den Bem\"uhungen der Ubuntu-Fundationen und der Ubuntu-Distribution ist es sehr einfach verwendbar.\\
-Python als Programmiersprache \\
-"Python ist eine Programmiersprache, die 1991 ver\"offentlicht wurde. Python besitzt eine einfache Lesbarkeit und eine eindeutige Syntax. Python l\"asst sich leicht erlernen und unter UNIX, Linux, Windows und Mac OS verwenden." \cite{python} Warum Python gew\"ahlt wurde, hat verschiedene Gr\"unde. Python hat weniger Schl\"usselw\"orter, reduziert die Sytax auf das Wesentliche und optimiert die Sprache. Ein Programm, das in Python geschriebt ist, ist vom Betriebssystem unabh\"angig. Das bedeutet, sie k\"onnen Plattform unabh\"angig interpretiert werden. Python hat auch eine gute Lesbarkeit. \\ 
+\textbf{Linux als Betriebssystem} \cite{Linux_Betriebssystem}  \\
+Linux ist das meist verwendete Betriebssystem der Welt. Es ist eine open-source Software. Linux ist flexibel, man kann die einzelnen Modulen wegnehmen, ohne dass das Betriebssystem abst\"urzt. Der Benutzer kann auch die Kernkomponenten w\"ahlen wie z.B. welcher System-Grafiken angezeigt werden, bzw. die ganzen Komponenten der Benutzeroberfl\"ache k\"onnen ausgew\"ahlt werden. Ich habe Linux aus verschiedene Gr\"unde gew\"ahlt. Linux ist f\"ur eingebettete Systeme sehr geeignet. Es ist sicher gegen Schadprogrammen, Viren und Trojanern. Linux ist einfacher. Vorher war es ein kompliziertes System, seit den Bem\"uhungen der Ubuntu-Fundationen und der Ubuntu-Distribution ist es sehr einfach verwendbar.\\
+\textbf{Python als Programmiersprache} \\
+"Python ist eine Programmiersprache, die 1991 ver\"offentlicht wurde. Python besitzt eine einfache Lesbarkeit und eine eindeutige Syntax. Python l\"asst sich leicht erlernen und unter UNIX, Linux, Windows und Mac OS verwenden." \cite{python} Warum Python gew\"ahlt wurde, hat verschiedene Gr\"unde. Python hat weniger Schl\"usselw\"orter, reduziert die Sytax auf das Wesentliche und optimiert die Sprache. Ein Programm, das in Python geschriebt ist, ist vom Betriebssystem unabh\"angig. Das bedeutet, es kann Plattform unabh\"angig interpretiert werden. \\
 	
 \subsection{Technische L\"osung}
-In diesem Unterabschnitt wird alles was mit Technik zu tun hat erkl\"art. Es wird eine feinere Beschreibung im Bezug auf der technischen Lösung gemacht.
+\label{section:technischelosung}
+In diesem Unterabschnitt wird alles was mit Technik zu tun hat erkl\"art. Es wird eine detalierte Beschreibung im Bezug auf die technischen Lösungen gemacht.
 \\
 \\
 
 Das System besteht aus verschiedenen sogennanten Terminatoren.
-Ein  Terminator  befindet  sich  au{\ss}erhalb  des  zu  definierenden  Systems.  Es  kann  eine andere Person, System oder eine Organisation sein. "Terminatoren k\"onnen von unserem System Informationen, Nachrichten, Materialien oder Energie erhalten oder das Systemempf\"angt diese."\cite{terminator}
+Ein  Terminator  befindet  sich  au{\ss}erhalb  des  zu  definierenden  Systems.  Es  kann  eine andere Person, System oder eine Organisation sein. "Terminatoren k\"onnen von unserem System Informationen, Nachrichten, Materialien oder Energie erhalten oder das System empf\"angt diese."\cite{terminator}
 
-Der wichtigste Terminator ist der "Register-Schalter". Er initialisiert das ganze System. Schalter in Technik ist nichts anders, nur ein Ger\"at zum Ein- und Ausschalten des Stroms oder zum Leiten des Stromflusses. Wenn der Schalter gedr\"uckt wird, bekommt das System einen Input, transformiert ihn und gibt dann einen Output. Das System ist sehr einfach verwendbar.
+Der wichtigste Terminator ist der "Register-Schalter". Er initialisiert das ganze System. Schalter in der Technik ist nichts anderes, nur ein Ger\"at zum Ein- und Ausschalten des Stroms oder zum Leiten des Stromflusses. Wenn der Schalter gedr\"uckt wird, bekommt das System einen Input, transformiert ihn und gibt dann einen Output. Das System ist sehr einfach verwendbar.
 
-Das Register-LED\footnote{Light-emitting Diode, flie{\ss}t Strom durch, strahlt sie Licht} dient als einen Anzeiger. Wenn mit dem System etwas nicht stimmt, z.B. nicht richtige Inputdaten, dann wird mit einer bestimmten Farbe geleuchtet, n\"amlich mit rot. Wenn alles passt, dann wird mit gr\"un geleuchtet. Eigentlich das normale LED hat nur eine Farbe, aber es wird ein spezielles LED verwendet, namens RGB LED\footnote{rot, gr\"un,blau LED}. RGB LED hat drei Grundfarben, rot, gr\"un, blau, und mit diesen drei Farben kann man alle Farben erstellen. Es k\"onnte auch zwei LEDs geben, rot und gr\"un, aber es ist effektiver, ein RGB LED zu verwenden.
+Die Register-LED\footnote{Light-emitting Diode, flie{\ss}t Strom durch, strahlt sie Licht aus} dient als eine Anzeige. Wenn mit dem System etwas nicht stimmt, dann wird mit rot geleuchtet. Wenn alles passt, dann wird mit gr\"un geleuchtet. Eigentlich hat die normale LED nur eine Farbe, aber es wird eine spezielle LED verwendet, namens RGB LED\footnote{rot, gr\"un,blau LED}. Eine RGB LED hat drei Grundfarben, rot, gr\"un und blau. Mit diesen drei Farben kann man alle Farben erstellen. Es k\"onnte auch zwei LEDs geben, rot und gr\"un, aber es ist effektiver, ein RGB LED zu verwenden.
 
 
-Eine spezielle Eigenschaft des Systems ist die Verwendung einer Tastatur. Sie wird verwendet, weil die einzelnen Personen ihren Namen, bzw. Email schreiben m\"ussen. 
-Die andere spezielle Eigenschaft ist die Verwendung eines LCD-Screens\footnote{Liquid Crystal Display, präsentiert die elektrischen Signale in Form von visuellen Bildern.}. Da werden z.B. Errors gezeichnet, die Daten, die in Log gespeichert sind usw. Es ist leicht auch f\"ur den Benutzer zu sehen, dass es z.B. ein Problem mit dem System gibt, damit er nicht vor der Kamera warten muss. Eigentlich die Hauptfunktion des LCD-Screens ist, alles was der Benutzer mit der Tastatur schreibt anzuzeigen. Warum es so geplant ist? Das Problem steht daran, wenn der Benutzer seine Email-Adresse schreibt, kann er Fehler machen, weil er nicht sieht, was er schreibt. Um das zu vermeiden, wird das LCD-Screen verwendet, damit der Benutzer sehen kann, was er schreibt.
+Eine spezielle Eigenschaft des Systems ist die Verwendung einer Tastatur. Sie wird verwendet, weil die einzelnen Personen ihren Namen, bzw. Email eingeben m\"ussen. 
+Die andere spezielle Eigenschaft ist die Verwendung eines LCD-Screens\footnote{Liquid Crystal Display, präsentiert die elektrischen Signale in Form von visuellen Bildern.}. Da werden z.B. Errors oder die Login-Daten angezeigt. Es ist f\"ur den Benutzer einfach zu erkennen, wenn es ein Problem mit dem System gibt. Eigentlich ist die Hauptfunktion des LCD-Screens, den Input des Benutzers anzuzeigen. Warum es so geplant ist? Das Problem besteht darin, dass, wenn der Benutzer seine Email-Adresse schreibt, Fehler passieren k\"onnen, weil er nicht sieht, was er schreibt. Um das zu vermeiden, wird der LCD-Screen verwendet. Der Benutzer kann sehen, was er schreibt.
 
-Um registrierte Personen mit ihren Gesichtsdaten zu speichern, braucht das System einen Server. Auf diesem Server l\"auft ein Datenbank Management System. Die Datenbank ist so konfiguriert, damit die Person mit ihren Infos gespeichert werden k\"onnen. 
+Um registrierte Personen mit ihren Gesichtsdaten zu speichern, braucht das System einen Server. Auf diesem Server l\"auft ein Datenbank Management System. Die Datenbank ist so konfiguriert, dass die Person mit ihren Infos gespeichert werden k\"onnen. 
 
-Das System hat auch einen Backup-Server. Die Daten werden parallel bei dem Hauptserver sowie bei dem Backup-Server gespeichert, damit die Daten noch gesichert sind, wenn der Hauptserver ein Problem hat. Die Verwendung des Backup-Servers ist zustande gekommen, weil das System 24/7 arbeiten muss, und wenn der Hauptserver Wartung oder Probleme hat, der Backup-Server die Arbeit \"ubernimmt. Auf Abb. \ref{fig:1Ebene_Gesichtsregistrierung} wird in einem technischen Weg besser gezeigt, wie der Gesichtsregistrierung-Teil arbeitet.
+Das System hat auch einen Backup-Server. Die Daten werden parallel bei dem Hauptserver sowie bei dem Backup-Server gespeichert, damit die Daten noch verf\"ugbar sind, wenn der Hauptserver ein Problem hat. Die Verwendung des Backup-Servers ist zustande gekommen, weil das System 24/7 arbeiten muss. Wenn der Hauptserver Wartungen oder Probleme hat, kann der Backup-Server die Arbeit \"ubernehmen. Auf Abb. \ref{fig:1Ebene_Gesichtsregistrierung} wird gezeigt, wie der Gesichtsregistrierung-Teil arbeitet.
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{\ordnerfigures 1Ebene.png}
-	\caption{Structed Software Design bzw. erste Ebene }
+	\caption{Structed Software Design bzw. erste Ebene } 
+	
+	Das System hat verschiedene Terminatoren. Die Terminatoren sind im Kapitel  \ref{section:technischelosung} erkl\"art. 
+	Auf Abbildung \ref{fig:1Ebene_Gesichtsregistrierung} k\"onnen 6 Terminatoren identifiziert werden:
+	\begin{itemize}
+	\item Register Schalter - Externer Trigger Schalter zum Starten des Registrierungsteils 
+	\item Register LED - Anzeiger 
+	\item Tastatur - Input Hardware f\"ur die Datenerfassung(Name,Email,Rolle) 
+	\item LCD Screen - Anzeiger 
+	\item Server bzw. Backup Server - eigener Server f\"ur die Speicherung der Daten 
+	\end{itemize}
+	Auf der erste Ebene k\"onnen 7 Hauptprozesse identifiziert werden:
+	\begin{itemize}
+	\item Input check - Kontrolliert in einer unendlichen Schleife, ob der Register Schalter gedr\"uckt wird.
+	\item Check\_Name - Kontrolliert, ob der Name in einem richtigen Format ( Nur Buchstaben) eingegeben wird. 
+	\item Verbindung \"uberpr\"ufen - \"Uberpr\"uft, ob die Server im Betrieb sind und, ob die Verbindung richtig aufgebaut ist
+	\item Log - Speichert die Fehler
+	\item Steuerung - \"Ubernimmt die zentrale Steuerung der Andwendung
+	\item INIT - Initialisiert das ganze System
+	\item \"Uberpr\"ufung - Die Gesichtsdaten bzw. Gesichtspunkte werden kontrolliert und entweder bei der Steuerung weitergeschickt oder auf dem LCD Screen angezeigt, wenn einen Fehler auftritt.
+	\end{itemize}
 	\label{fig:1Ebene_Gesichtsregistrierung}
 \end{figure}
 % shpjegoje structed software design
-Um Schalter und LEDs im System verwenden zu k\"onnen, brauchen wir ein spezielles Paket namens "RPi.GPIO“. Dieses Paket macht es m\"oglich, den Raspberry PI mit Hardware (LED und Schalter) verbinden zu k\"onnen. Daf\"ur werden GPIOs verwendet. Der Schalter hat 3 Anschl\"usse. Einer wird mit 5V verbunden, der andere mit Ground und der dritte ist f\"ur Daten. Dies wird dann mit einem GPIO-Port in Raspberry PI verbunden. Das gleiche ist auch f\"ur die LED, damit es von Raspberry PI kontrollieren verwenden kann, wird mit einem GPIO-Port verbunden. Mithilfe dieser GPIO-Ports bekommt das System zur\"uck, wenn der Schalter gedr\"uckt wird. Wert "1" ist der Schalter gedr\"uckt und werden dann die verschiedenen Skripten aufgerufen. 
+Um Schalter und LEDs im System verwenden zu k\"onnen, brauchen wir ein spezielles Paket namens "RPi.GPIO“. Dieses Paket macht es m\"oglich, den Raspberry PI mit Hardware (LED und Schalter) verbinden zu k\"onnen. Daf\"ur werden GPIOs verwendet. Der Schalter hat 3 Anschl\"usse. Einer wird mit 5V verbunden, der andere mit Ground und der dritte ist f\"ur Daten. Dies wird dann mit einem GPIO-Port in Raspberry PI verbunden. Das gleiche gilt auch f\"ur die LED, damit sie vom Raspberry PI kontrolliert verwenden kann, wird sie mit einem GPIO-Port verbunden. Mithilfe dieser GPIO-Ports bekommt das System eine Information, wenn der Schalter gedr\"uckt wird. Wert ``1'' bedeutet, dass der Schalter gedr\"uckt wird und die verschiedenen Skripten aufgerufen werden. 
 
 Schritte: 
 \begin{enumerate}
 	
-	\item Am Beginn des Skripts diese Zeile schreiben: "\#!/usr/bin/python". Es gibt zwei Gr\"unde, warum diese Zeile geschreibt wird. Der erste Grund ist, dass dieses Program mit einem Python-Interpreter ausgef\"uhrt wird, der zweite ist, der Inhalt der Datei wird von der Python-Binärdatei unter /usr/bin/python interpretiert \\ \\ \\ \\ \\ \\ \\ \\ 
-	 \item Alle Paketen importieren. Sehen Sie auf Abb. \ref{fig:Packageszuimportieren} 
+	\item Am Beginn des Skripts wird diese Zeile schreiben: "\#!/usr/bin/python". Es gibt zwei Gr\"unde, warum diese Zeile geschreibt wird. Der erste Grund ist, dass dieses Program mit einem Python-Interpreter ausgef\"uhrt wird, der zweite ist, der Inhalt der Datei wird von der Python-Binärdatei unter /usr/bin/python interpretiert \\ \\ \\ \\ \\ \\ \\ \\ 
+	 \item Alle Paketen importieren. Sehen Sie Abb. \ref{fig:Packageszuimportieren} 
 	 \begin{lstlisting}[caption={Packages zu importieren},label={fig:Packageszuimportieren},language=Python]
 	 import RPi.GPIO as GPIO
 	 import time
@@ -63,17 +85,17 @@ Schritte:
 	 \end{lstlisting}
 	 \begin{itemize}
 	 	
-	 \item RPi.GPIO ist ein Paket, das verwendet wird, um Zugriff auf die sogennanten GPIO-Ports\footnote{Eingehende und Ausgehende digitale Signale, als Eingangsport kann er verwendet werden, um  digitalen Messwerte mitzuteilen, die von Sensoren empfangen sind} zu haben. Vorher habe ich erw\"ant, wenn wir Zugriff auf die HW-Komponenten haben wollen, die mit Raspberry PI verbunden sind, brauchen wir die GPIO-Ports. Um diese GPIO-Ports in Python zu verwenden, brauchen wir das sogennante Paket "RPi.GPIO". Es gibt verschiedene Pakete, die einen Zugriff zwischen GPIO-Ports und Python erm\"oglichen, wie z.B. rpi.gpio, GPIOZero usw. Es wird das rpi.gpio Paket verwendet, weil es leicht verst\"andlich, programmierfreundlich und einfach zu verwenden ist. \cite{rpigpio}
+	 \item RPi.GPIO ist ein Paket, das verwendet wird, um Zugriff auf die sogennanten GPIO-Ports\footnote{Eingehende und Ausgehende digitale Signale, am Eingangsport k\"onnen verwendet werden, um  digitalen Messwerte mitzuteilen, die von Sensoren empfangen werden} zu haben. Vorher habe ich erw\"ant, wenn wir Zugriff auf die HW-Komponenten haben wollen, die mit Raspberry PI verbunden sind, brauchen wir die GPIO-Ports. Um diese GPIO-Ports in Python zu verwenden, brauchen wir das sogennante Paket "RPi.GPIO". Es gibt verschiedene Pakete, die einen Zugriff zwischen GPIO-Ports und Python erm\"oglichen, wie z.B. rpi.gpio, GPIOZero usw. Es wird das rpi.gpio Paket verwendet, weil es leicht verst\"andlich, programmierfreundlich und einfach zu verwenden ist. \cite{rpigpio}
 	 
-	 \item time ist ein Paket in Python. Von diesem Paket wird nur die Funktion "sleep" verwendet. Diese Funktion pausiert das python-Programm. \cite{timepackage}
+	 \item time ist ein Paket in Python. Von diesem Paket wird nur die Funktion ``sleep''  verwendet. Diese Funktion pausiert das python-Programm. \cite{timepackage}
 	 
-	 \item os ist das wichtigste Paket in unserem Skript. Es erlaubt mir, dass ich in einem Python-Skript andere Skripten aufrufen kann. Es ist egal, in welcher Programmiersprache diese Skripten geschrieben sind. Es gibt auch verschiedene Methoden, wie man verschiedene Skripten in einem Python-Skript aufrufen kann. Man macht mit dem subprocess Paket, eine Main-Funktion in dem Skript machen und hier die verschiedenen Funktionen des anderen Skripts aufrufen. 
+	 \item os ist das wichtigste Paket in unserem Skript. Es erlaubt uns, dass wir in einem Python-Skript andere Skripte aufrufen k\"onnen. Es ist egal, in welcher Programmiersprache diese Skripten geschrieben sind. Es gibt auch verschiedene Methoden, wie man verschiedene Skripte in einem Python-Skript aufrufen kann. Man kann mit dem subprocess Paket, eine Main-Funktion in dem Skript starten und die verschiedenen Funktionen des anderen Skripts aufrufen. 
 	 
-	 \item subprocess Paket dient zur Verbindung zwischen verschiedenen Prozessen, in meinem Fall, ein Prozess hei{\ss}t, ein Aufruf eines Skriptes.
+	 \item Das ``subprocess'' Paket dient zur Verbindung zwischen verschiedenen Prozessen, in meinem Fall, den Aufruf eines Skriptes.
 	 
-	 \item Das sys Paket wird verwendet, um Console Parameter zu geben. Das bedeutet, wenn der Skript aufgerufen wird, z.B. login.py dann nach dem login.py gebe ich einen Parameter mit login.py $<$parameter $>$ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
+	 \item Das sys Paket wird verwendet, um Console Parameter zu bekommen. Das bedeutet, wenn das Skript aufgerufen wird, wie z.B. login.py dann kann man login.py einen Parameter mitgeben:  login.py $<$parameter $>$ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
    \end{itemize}
-	\item GPIO-Ports Datenrichtung einrichten. Datenrichtung f\"ur LED ist "out", weil das LED als ein Output f\"ur unseres System dient. Datenrichtung f\"ur Schalter ist "in", weil der Schalter als ein Input f\"ur unseres System dient. Auf Abb. \ref{fig:GPIO-PortsKonfiguration} ist der Python-Code.
+	\item GPIO-Ports Datenrichtung einrichten. Datenrichtung f\"ur LED ist ``out'', weil das LED als ein Output f\"ur unseres System dient. Datenrichtung f\"ur Schalter ist ``in'', weil der Schalter als ein Input f\"ur unseres System dient. Auf Abb. \ref{fig:GPIO-PortsKonfiguration} ist der Python-Code.
 	\begin{lstlisting}[caption={GPIO-Ports Konfiguration},label={fig:GPIO-PortsKonfiguration},language=Python]
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(23,GPIO.OUT)
@@ -84,93 +106,102 @@ Schritte:
 	Es gibt verschiedene Betriebsarten f\"ur GPIO wie BCM und Board.
 	Ich verwende BCM\footnote{Broadcom Pin Number}, weil ich das Paket RPi.GPIO verwende. Mit diesem Paket darf nur die Betriebssart " BCM " verwendet werden. 
 	\cite{gpiomode}
-	F\"ur die Registrierung der Sch\"uler und Sch\"ulerinnen bzw. Lehrer und Lehrerinnen ist es n\"otig, dass der Admin sich bei dem System einloggt. Die \"Uberpr\"ufung, ob der Admin da ist oder nicht,  wird mit einem Vergleich von zwei Bilder gemacht. Ein Bild von Admin ist gespeichert, das andere wird gemacht, indem ich das Skript, das Bild macht, aufrufe, und dann vergleiche ich mit einem anderen Skript diese beide Bilder. Es gibt "matched" zur\"uck, wenn die Gesichter bei den beiden Bildern \"ubereinstimmen und "not matched" wenn die Gesichte nicht \"ubereinstimmen.
-	\item Dann kommt der Teil " Input check". 
-	Hier dann verwende ich die Methode 'input'. Die Methode befindet sich im Paket 'RPi.GPIO' und gibt entweder true oder false zur\"uck. 
-	Im Verzeichnis "/sys/class/gpio/gpio$<$GPIO-PORT$>$" gibt es zwei Dateien, value and direction. Direction f\"ur die Port des Schalters ist IN und f\"ur die Port des LEDs ist OUT. Mit der Methode 'input' hole ich das Wert (value) der Schalter-Port. Wenn der Schalter gedr\"uckt wird, wird der Wert '1' herausgekommt und 1 repr\"asentiert 'true' Das bedeutet, Input-methode liefert 'true' zur\"uck und das Programm l\"auft weiter.
+	F\"ur die Registrierung der Sch\"uler und Sch\"ulerinnen bzw. Lehrer und Lehrerinnen ist es n\"otig, dass der Admin sich bei dem System einloggt. Die \"Uberpr\"ufung, ob der Admin da ist oder nicht,  wird mit einem Vergleich von zwei Bildern gemacht. Ein Bild von Admin ist gespeichert, das andere wird gemacht. Dazu wird das Skript, das Bilder macht, aufgerufen, und dann vergleicht man es mit einem Skript mit dem anderen Bildern. Es gibt ``matched'' zur\"uck, wenn die Gesichter bei den beiden Bildern \"ubereinstimmen und "not matched" wenn die Gesichter nicht \"ubereinstimmen.
+	\item Dann kommt der Teil ``Input check''. 
+	Hier verwende ich dann die Methode ``input''. Die Methode befindet sich im Paket ``RPi.GPIO'' und gibt entweder true oder false zur\"uck. 
+	Im Verzeichnis "/sys/class/gpio/gpio$<$GPIO-PORT$>$" gibt es zwei Dateien, value and direction. Direction f\"ur den Port des Schalters ist IN und f\"ur den Port des LEDs ist OUT. Mit der Methode ``input'' hole ich den Wert (value) der Schalter-Port. Wenn der Schalter gedr\"uckt wird, wird der Wert ``1'' herausgekommt , 1 repr\"asentiert ``true''. Das bedeutet, dass die Input-methode ``true'' zur\"uckliefert und das Programm l\"auft weiter.
 	
 Nachdem der Schalter gedr\"uckt wird, wird ein Skript aufgerufen. Dieses Skript dient zur Registrierung der Person in der Datenbank.
 F\"ur die Registrierung der Sch\"uler und Sch\"ulerinnen bzw. Lehrer und Lehrerinnen ist es n\"otig, dass der Admin sich bei dem System einloggt. Ist der Admin da, k\"onnen die Personen mit der Registrierung beginnen.
-Diese Person wird nach ihrem Vornamen, Nachnamen, Email und Rolle gefragt. Mit der Rolle ist gemeint, die Funktion bzw. die Stelle dieser Person in der Schule, ob die Person ein Sch\"uler, Lehrer, Admin ist. Die Rolle wird vom Admin geschrieben. 1 ist f\"ur Admin, 2 f\"ur Sch\"uler und 3 f\"ur Lehrer und Lehrerinnen. Sie wird eigentlich nur f\"ur die Verwaltung des Systems verwendet. Wenn der Admin wissen m\"ochtet, wie viele Lehrer, Sch\"uler schon registiert sind, ob es noch nicht registrierte Personen gibt. 
-Die E-Mail speichere ich dann in einer Variable und diese Variable \"ubergebe ich dann bei einem anderen Skript. Dieses Skript dann erstellt mit der Kamera eine Verbindung und macht ein Bild. Der Name des Bildes ist gleich mit der Email der Person. Es ist so gew\"ahlt, weil es f\"ur das Einf\"ugen der Daten in der Datenbank und bei der Speicherung des Paths des Bildes in der Datenbank mit dem gleichen Namen wie E-Mail einfacher ist.
+Diese Person wird nach ihrem Vornamen, Nachnamen, Email und Rolle gefragt. Mit der Rolle ist gemeint, die Funktion bzw. die Stelle dieser Person in der Schule, ob die Person ein Sch\"uler, Lehrer oder ein Admin ist. Die Rolle wird vom Admin geschrieben. 1 steht f\"ur Admin, 2 f\"ur Sch\"uler und 3 f\"ur Lehrer und Lehrerinnen. Sie wird eigentlich nur f\"ur die Verwaltung des Systems verwendet. Wenn der Admin wissen m\"ochtet, wie viele Lehrer oder Sch\"uler schon registiert sind, oder ob es noch nicht registrierte Personen gibt, dann schaut er in der Datenbank nach.
+Die E-Mail speichern wir dann in einer Variable und diese Variable \"ubergeben wir dann an ein anderes Skript. Dieses Skript erstellt mit der Kamera eine Verbindung und macht ein Bild. Der Name des Bildes ist gleich mit der Email der Person. Es ist so gew\"ahlt, weil es f\"ur das Einf\"ugen der Daten in der Datenbank und bei der Speicherung des Paths des Bildes in der Datenbank mit dem gleichen Namen wie die E-Mail einfacher ist.
 
-Es wird die E-Mail verwendet, weil es eine performantere Suche in der Datenbank erm\"oglicht. Die E-Mail ist einzig, nur einmal f\"ur jede Person und die SQL-Anweisung (select-Abfrage) eine Selektion durchf\"uhrt. Von 1000 Datens\"atze wird nur der Datensatz ausgegeben, in dem die E-Mail mit der eingetippten E-Mail vom Benutzer \"ubereinstimmt.
+Es wird die E-Mail verwendet, weil es eine performantere Suche in der Datenbank erm\"oglicht. Die E-Mail ist einzigartig, nur einmal f\"ur jede Person. Von 1000 Datens\"atze wird nur der Datensatz ausgegeben, in dem die E-Mail mit der eingetippten E-Mail vom Benutzer \"ubereinstimmt.
 
-Die Struktur der Datenbank ist ge\"andert. Jetzt gibt es nur eine Tabelle. In dieser Tabelle wird alles gespeichert. Name, E-Mail, Rolle, Path des Bildes und alle Gesichtspunkte. Für die Registrierung der Personen in der Datenbank werden zwei Schritte gemacht. Der erste Schritt ist das Einfügen der neuen Person mit ihrem Vornamen, Nachnamen, E-Mail und Rolle in der Datenbank. Der zweite Schritt ist das Update der Gesichtspunkte. Es wird ein Bild gemacht, von diesem Bild werden die Gesichtspunkte extrahiert. Danach werden diese Gesichtspunkte in den zuständigen Spalten der Datenbank gespeichert. Dieser Schritt wird durch eine Update-Anweisung gemacht. Nachdem die Update-Anweisung erfolgreich ist und die Person mit ihrem Vornamen, Nachnamen, E-Mail, Rolle, ihren Gesichtspunkten gespeichert ist, wird die LED mit grün angesteuert. Wenn einen Fehler passieren wird, wird die LED mit rot angesteuert. Es gibt einige Fehler, die bei der Registrierung auftreten können. 
+In der Datenbank gibt es nur eine Tabelle. In dieser Tabelle wird alles gespeichert: Name, E-Mail, Rolle, Path des Bildes und alle Gesichtspunkte. Für die Registrierung der Personen in der Datenbank werden zwei Schritte durchgef\"uhrt. Der erste Schritt ist das Einfügen der neuen Person mit ihrem Vornamen, Nachnamen, E-Mail und Rolle in der Datenbank. Der zweite Schritt ist das Update der Gesichtspunkte. Es wird ein Bild gemacht, von diesem Bild werden die Gesichtspunkte extrahiert. Danach werden diese Gesichtspunkte in den zuständigen Spalten der Datenbank gespeichert. Dieser Schritt wird durch eine Update-Anweisung gemacht. Nachdem die Update-Anweisung erfolgreich ist und die Person mit ihrem Vornamen, Nachnamen, E-Mail, Rolle, und ihren Gesichtspunkten gespeichert ist, wird die LED grün angesteuert. Wenn ein Fehler auftritt, wird die LED rot angesteuert. Es gibt einige Fehler, die bei der Registrierung auftreten können: 
 \begin{enumerate}
 	\item Auf dem Bild gibt es kein Gesicht oder mehr als ein Gesicht.
-	\item Das Gesicht ist schlecht positioniert und ist nicht m\"oglich, die Gesichtspunkte zu extrahieren.
+	\item Das Gesicht ist schlecht positioniert und es ist nicht m\"oglich, die Gesichtspunkte zu extrahieren.
 	\item Die Person ist schon registriert.
 \end{enumerate}
-Wenn ein von den oben erw\"anten Fehler auftritt, wird auf dem Bildschirm gezeigt und die LED wird mit rot angesteuert.
+Wenn ein von den oben erw\"anten Fehler auftritt, wird das auf dem Bildschirm angezeigt und die LED wird rot angesteuert.
 \end{enumerate}
 
 \subsection{Herausforderungen}
-Eigentlich hatte das Projekt f\"ur mich viele Herausforderungen. Die Gr\"unde daf\"ur sind, weil es ein ziemlich gro{\ss}es Projekt ist, habe ich neue Technologien verwendet, die ich vorher nie verwendet habe. Ich habe keine Erfahrung z.B. mit OpenCV, Python und andere Dinge, die ich sp\"ater erw\"ahnen werde. Ich habe von diesen Herausforderungen und Problemen viel gelernt. Einerseits bin ich froh, anderseits bin ich w\"utend, weil das Datum des Ende des Projekts verz\"ogert ist. 
+Das Projekt hatte f\"ur mich viele Herausforderungen. Das lag davon, dass es ein ziemlich gro{\ss}es Projekt war, und ich neue Technologien verwendet habe, die ich vorher nie verwendet hatte. Ich habe z.B. keine Erfahrung mit OpenCV, Python und andere Dinge, die ich sp\"ater erw\"ahnen werde. Ich habe von diesen Herausforderungen und Problemen viel gelernt. Einerseits bin ich froh, anderseits bin ich frustiert, weil dies das Enddatum des Projekts verz\"ogert hat. 
 Die Herausforderungen waren:
 
 \begin{itemize}
-	\item opencv zu installieren. Das war eigentlich die gr\"o{\ss}te Herausforderung. Es hat mir 3 Woche gedauert, bis ich es installiert hatte. 
+	\item \textbf{opencv zu installieren}. Es hat 3 Woche gedauert, bis ich es installiert hatte. 
 	
-	\item Beginn des Projektes. Immer der Beginn eines Projektes ist schwierig. Die Koordination im Team war sehr schwierig. Ich, als Projektleiter, musste allen sagen, wie sie arbeiten sollen, wo sie die Dateien finden k\"onnen usw. Das war die gr\"o{\ss}te Herausforderung.
+	\item \textbf{Beginn des Projektes}. Der Beginn eines Projektes ist immer schwierig. Die Koordination im Team war sehr schwierig. Ich, als Projektleiter, musste allen sagen, wie sie arbeiten sollen, wo sie die Dateien finden k\"onnen usw. Das war die gr\"o{\ss}te Herausforderung.
 		
-	\item Git repository, Einrichtung von git. Manche von den Teammitgliedern wussten sehr wenig von git und ich musste es ihnen erkl\"aren. Manchmal gab es merge conflicts, weil sie pull gemacht haben, ohne dass Sie die \"Anderungen commited haben. Ich sollte alle diese l\"osen, weil ich mehr Erfahrung mit git hatte. 
+	\item Git repository, Einrichtung von git. Manche Teammitglieder wussten sehr wenig von git und ich musste es ihnen erkl\"aren. Manchmal gab es merge conflicts, weil sie pull gemacht haben, ohne dass Sie die \"Anderungen commited haben. Ich sollte dies l\"osen, weil ich mehr Erfahrung mit git hatte. 
 	
-	\item Python als Programmiersprache. Wir wollten vorher mit C++ es machen, aber es war sehr schwierig, OpenCV in Visual Studio zu installieren. Manche von uns wollten in Windows arbeiten und der einzige Weg war, mit Visual Studio zu arbeiten. Es ist nicht gegangen, deshalb sind wir zu Python gewechselt. Wir haben Python gew\"ahlt, weil opencv in Python sehr einfach installierbar war. Mit Python hatten wir keine gro{\ss}e Erfahrung. Das Maximum, was ich mit Python gemacht habe ist, eine Verbindung mit der Datenbank und Statements schicken (Insert,Select,Update,Delete). Alle andere Wissen sollte ich selbst von B\"ucher, Internet, Tutorials lernen. Die gro{\ss}e Herausforderung hier war, die richtigen Quellen zu finden.
+	\item Python als Programmiersprache. Wir wollten vorher mit C++ arbeiten, aber es war sehr schwierig, OpenCV in Visual Studio zu installieren. Manche von uns wollten in Windows arbeiten und der einzige Weg war, mit Visual Studio zu arbeiten. Es hat nicht funktioniert, deshalb sind wir zu Python gewechselt. Wir haben Python gew\"ahlt, weil opencv in Python sehr einfach installierbar ist. Mit Python hatten wir keine gro{\ss}e Erfahrung. Alles, was ich mit Python gemacht habe, ist eine Verbindung mit der Datenbank und Aufbau der SQL-Abfragen (Insert,Select,Update,Delete). Alle andere Wissen sollte ich selbst von B\"ucher, Internet, Tutorials lernen. Die gro{\ss}e Herausforderung hier war, die richtigen Quellen zu finden.
 	
 	\item Verwendung der Kamera und verbinden mit Python. Ich wusste nicht, welche Funktionen man verwendet, um die Verbindung mit der Kamera zu erstellen. 
-	\item Bei der \"alteren Version von Raspbian hei{\ss}t das Paket, das python mit Datenbank Managment System(MySQL) verbindet, 'python-mysqldb' und jetzt hei{\ss}t es 'python-mariadb'. Ich wusste das nicht und hat mir ein bisschen Zeit gekostet.
-	\item Abh\"angigkeiten zwischen einzelnen Arbeitsteilen. Die Aufgaben sind so geteilt, dass sie Abh\"angigkeiten zwischen einander liegen. Das hat dann zu einer Versp\"atung der Projektabgabe gef\"uhrt, weil jedes Teammitglied aufeinander warten mussten.
+	\item Bei der \"alteren Version von Raspbian hei{\ss}t das Paket, das python mit dem Datenbank Managment System(MySQL) verbindet, 'python-mysqldb' und jetzt hei{\ss}t es 'python-mariadb'. Ich wusste das nicht und dies hat mir etwas Zeit gekostet.
+	\item Abh\"angigkeiten zwischen einzelnen Arbeitsteilen. Die Aufgaben waren so geteilt, dass es Abh\"angigkeiten zwischen ihnen gab. Das hat dann zu einer Versp\"atung der Projektabgabe gef\"uhrt, weil die Teammitglieder aufeinander warten mussten.
 	\item Die gro{\ss}en Teile meiner Planung haben gepasst, nur wenige Kleinigkeiten musste ich \"andern. Sie sind erst in der Implementierungsphase angezeigt.
-	\item Problem mit dem Zugriff auf die Elementen des Numpy-Arrays.
-	\item Verbindung der Skripts miteinander und Verkn\"upfung der Variablen, die sich in verschiedenen Skripts befinden.
+	\item Problem mit dem Zugriff auf die Elementen eines Numpy-Arrays.
+	\item Verbindung der Skripte miteinander und Verkn\"upfung der Variablen, die sich in verschiedenen Skripten befinden.
 	\item Aufteilen der Gesichstpunkte in zwei Arrays. In einem Array nur die X-Werte und in dem anderen Array nur die Y-Werte. 
 	\item Die Aufgabenteilung zwischen den Teammitgliedern war unausgewogen. 
 	\\
 	\\
 Ich habe diese L\"osungen f\"ur die Herausforderungen gefunden: 
 \begin{enumerate}
-	\item Ich habe viel Tutorials geschaut, Websites gesehen, wie opencv in Raspberry PI installiert werden kann. Ich habe viele verschiedene Methoden probiert, aber mit keiner gute Ergebnis erzielt. Nach vielen Proben ist es gegangen. Es ist installiert, und habe ich dann verschiedene Skripte in Python gemacht, um es zu testen. Manche der Skripte sind gegangen, manche nicht. Jetzt war eine kleine Herausforderung f\"ur mich, dass ich die Skripte, die nicht richtig ausgegangen sind, verbessere. Anschlie{\ss}end habe ich herausgefunden, dass das Problem bei dem Kompilieren von opencv war (cmake). Ich habe es noch einmal vom Beginn kompiliert. Jetzt ist alles in Ordnung, alle Skripte arbeiten, keinen Fehler mehr, der mit opencv Paket zu tun hat.
+	\item Ich habe viel Tutorials geschaut, Websites gelesen, wie opencv in Raspberry PI installiert werden kann. Ich habe viele verschiedene Methoden ausprobiert, aber keine guten Ergebnisse erzielt. Nach vielen Versuchen wurde es erfolgreich installiert. Dannach habe ich verschiedene Skripte in Python gemacht, um es zu testen. Manche der Skripte haben funktioniert, manche nicht. Eine kleine Herausforderung war f\"ur mich, dass ich die Skripte, die nicht richtig funktioniert haben verbessert. Anschlie{\ss}end habe ich herausgefunden, dass das Problem bei dem Kompilieren von opencv aufgetreten sind (cmake). Ich habe es noch einmal vom Beginn kompiliert.Das hat das Problem gel\"ost, alle Skripte funktionieren, es gibt keine Fehler mehr, die mit dem opencv Paket zu tun haben.
 	
-	\item Ein Treffen mit meiner Gruppe vor dem Beginn des Projektes war notwendig. Ich hab es Ihnen gesagt und erkl\"art, in welchen Verzeichnise sie arbeiten sollten, die Struktur der Dokumentation, welcher Kommunikationskanal verwenden wir, um Probleme, Herausforderungen usw. zu besprechen usw. Jede Person hatte dann ihre Vorschl\"age, um das so und so zu l\"osen, und dieses Treffen hat zu lange gedauert, bis alle verstanden hatten, wie, wo,was, wann machen sollen. Aber auch nach dem Treffen gab es zwischendurch Missverst\"andisse bzw. Probleme mit der Kommunikation, z.B. wurde nicht im richtigen Verzeichnis gearbeitet usw. 
+	\item Ein Treffen mit meiner Gruppe vor dem Beginn des Projektes war notwendig. Ich habe Ihnen gesagt und erkl\"art, in welchen Verzeichnise sie arbeiten sollten, die Struktur der Dokumentation, welcher Kommunikationskanal verwenden wir, um Probleme, Herausforderungen usw. zu besprechen. Jede Person hatte ihre Vorschl\"age, um Aufgaben zu l\"osen, und dieses Treffen hat sehr lange gedauert, bis alle verstanden hatten, wie, wo,was, wann gemacht werden soll. Aber auch nach dem Treffen gab es zwischendurch Missverst\"andisse bzw. Probleme mit der Kommunikation, z.B. wurde nicht im richtigen Verzeichnis gearbeitet usw. 
 	
-	\item Ein Git-Repository erstellen und einzurichten war einfach. Ich hab es online in github.com erstellt. Einen Name eingegeben und dann als Collaborators die anderen Teammitglieder hinzugef\"ugt. Um strukturierter zu werden, habe ich dann verschiedene Branches angelegt. Wie immer, gab es mit dem Befehl "push" und "pull" wieder Probleme. Das habe ich gel\"ost, in dem ich allen gesagt habe, dass, wenn sie in einem Github-Repository arbeiten m\"ochten, dann bevor dem Beginn der Arbeit, m\"ussen sie ein "pull" machen, damit die \"Anderungen, die von anderen in dem Repository gemacht wurden, mit deiner Version am Computer synchronisiert werden. Sie wissen nie, was die anderen in diesem Repository machen. Sie machen 'push', ohne zu sagen, dass sie ein 'push' gemacht haben. Das f\"uhrt dann zu merge-Probleme usw. 
+	\item Ein Git-Repository zu erstellen und einzurichten war einfach. Ich hab es online in github.com erstellt, einen Name eingegeben und dann die anderen Teammitglieder als Collaborators hinzugef\"ugt. Um strukturierter zu arbeiten, habe ich verschiedene Branches angelegt. Es gab mit dem Befehl ``push'' und ``pull'' Probleme. Das habe ich gel\"ost, indem ich allen Teammitgliedern gesagt habe, dass, wenn sie in einem Github-Repository arbeiten m\"ochten vor dem Beginn der Arbeit einen ``pull'' machen m\"ussen, damit die \"Anderungen, die von anderen in dem Repository gemacht wurden, mit der Version am Computer synchronisiert wird. Sie wussten nie, was die anderen in diesem Repository gemacht haben. Sie machen ``push'', ohne zu sagen, dass sie einen ``push'' gemacht haben. Das f\"uhrt dann zu merge-Probleme usw. 
 	
 	\item Ich habe jedem Teammitglieder gesagt, er muss mindestens zwei Wochen mit dem Lernen von Python verbringen. Tutorials ansehen, Beispiele selbst probieren, die Quellen daf\"ur selbst finden. 
 	
 	\item  F\"ur die Verbindung der Kamera mit OpenCV, gibt es einen Skript in der offiziellen Website-Dokumentation von OpenCV. Da habe ich alle Funktionen gesucht und gefunden, die ich brauchte, um die Kamera in Python verwenden zu k\"onnen. 
 	
-	\item Damit wir die Abh\"angigkeiten zu minimieren, habe ich gedacht, dass jeder Teammitglieder andere Aufgaben bekommt, als die, die in der Dokumentation stehen. Ich war gezwungen, diese \"Anderung zu machen, sonst w\"urde das Projekt viel l\"anger dauern. 
+	\item Um die Abh\"angigkeiten zu minimieren,hat jedes Teammitglied andere Aufgaben bekommt, als die, die in der Dokumentation stehen. Ich war gezwungen, diese \"Anderung zu machen, sonst h\"atte das Projekt viel l\"anger gedauert. 
 	
-	\item Bei der Implementierung sind Kleinigkeiten herausgekommen, die bei der Planung nicht ber\"ucksichtigt waren. Die habe ich direkt in der Implementierung verbessert, ohne dass ich nocheinmal die Planung machte. Aber ich habe diese Kleinigkeiten zur Kenntnis genommen, damit ich keinen solchen Fehler(Kleinigkeiten) mehr in der Planungsphase machen werde. 
+	\item Bei der Implementierung sind Kleinigkeiten herausgekommen, die bei der Planung nicht ber\"ucksichtigt waren. Die habe ich direkt in der Implementierung verbessert, ohne dass ich nocheinmal die Planung machte. Aber ich habe diese Kleinigkeiten zur Kenntnis genommen, damit ich in der Zukunft keinen solchen Fehler(Kleinigkeiten) mehr in der Planungsphase machen werde. 
 	
-	\item Ich habe die Dokumentation von Numpy Array nicht gut gelesen. Die L\"osung war drinnen. Ich bat meinem Betreuer um Hilfe, weil dieses Problem mir viel Zeit genommen hat. Der Betreuer hat dann mir geholfen, die L\"osung zu finden. 
+	\item Ich habe die Dokumentation von Numpy Array nicht gut gelesen. Ich bat meinem Betreuer um Hilfe, weil ein Problem mir viel Zeit genommen hat. Der Betreuer hat mir dann geholfen, die L\"osung zu finden. 
 	
-	\item Alle Teammitglieder haben ihre Skripts erstellt. Jetzt war meine Aufgabe, alle diese Skripts in einem Prototyp-Skript zu verbinden. Es war keine wissenschaftliche Arbeit, aber man musste viel testen, w\"ahrend ich den Prototyp erstellte. Nach vielen Tests, habe ich erfolgreich einen Prototyp fertiggemacht.
+	\item Alle Teammitglieder haben ihre Skripts erstellt. Es war meine Aufgabe, alle diese Skripts mit einem Prototyp-Skript zu verbinden. Es war keine wissenschaftliche Arbeit, man musste viel testen, w\"ahrend man den Prototyp erstellte. Nach vielen Tests, habe ich erfolgreich einen Prototyp erstellt.
 	
-	\item Eigentlich sollte Egli die Gesichtspunkte auf ein Array speichern. Sie konnte dieses Ziel nicht erfolgreich schlie{\ss}en und ich sollte ihr helfen. Zuerst wollte ich alle Gesichtspunkte auf ein 2D Array speichern. Nach vielen Versuchen kam ich zu dem Schluss, dass es schwierig war und viel Zeit nehmen w\"urde. Stattdessen habe ich die Gesichtspunkte auf zwei Arrays gespeichert. Auf ein Array habe ich nur die x-Werte gespeichert und auf das andere Array habe ich nur die y-Werte gespeichert. Das war eigentlich die einzige M\"oglichkeit, wie ich dieses Problem l\"osen konnte. 
+	\item Eigentlich sollte Egli die Gesichtspunkte in ein Array speichern. Sie konnte dieses Ziel nicht erfolgreich abschlie{\ss}en und ich sollte ihr helfen. Zuerst wollte ich alle Gesichtspunkte in ein 2D Array speichern. Nach vielen Versuchen kam ich zu dem Schluss, dass es schwierig war und viel Zeit kosten w\"urde. Stattdessen habe ich die Gesichtspunkte in zwei Arrays gespeichert. In einem Array habe ich nur die x-Werte gespeichert und in dem andere Array habe ich nur die y-Werte gespeichert. Das war eigentlich die einzige M\"oglichkeit, wie ich dieses Problem l\"osen konnte. 
 	
-	\item Am Beginn der Diplomarbeit hat das Team eine Aufgabenteilung gemacht. Mit der Zeit haben die Teammitglieder bemerkt, dass nicht jeder Teammitglieder die gleiche Menge der Aufgaben hat. Dannach haben wir uns beschlossen, eine neue Aufgabenteilung zu machen. Zuerst hatte ich auch 2D vs 3D Unterschied zu realisieren. Mit der neuen Aufgabenteilung ist es ein Ziel von Jordi und nicht mehr ein Ziel von mir. 
+	\item Am Beginn der Diplomarbeit hat das Team eine Aufgabenteilung gemacht. Mit der Zeit haben die Teammitglieder bemerkt, dass nicht jedes Teammitglied die gleiche Menge an Aufgaben hat. Dannach haben wir uns dazu entschlossen, eine neue Aufgabenteilung zu machen. Zuerst hatte ich auch den 2D vs 3D Unterschied zu realisieren. Mit der neuen Aufgabenteilung ist es ein Ziel von Jordi und nicht mehr ein Ziel von mir. 
 \end{enumerate}
 \end{itemize}
 \subsection{Qualit\"atssicherung und Controlling}
-Ein Risiko ist meistens nur Einsch\"atzung, was kostet es einem Unternehmen, wenn die Projektziele nicht erreicht werden. Ich, als Projektleiter, muss das machen. Eine Risikoanalyse zu erstellen ist sehr schwierig, weil es mit der Zukunft zu tun hat. Zuerst muss ich an die Zukunft denken, bei welchen Bauteilen k\"onnen z.B. Fehler auftreten, welche Programme k\"onnen ausfallen. Das bedeutet, ein \"Uberblick \"uber die Zukunft und einsch\"atzen, was f\"ur Fehler und Risiken es geben kann. Dann sch\"atze ich die Wahrscheinlichkeit ihres Eintretens und am Ende die Ma{\ss}nahmen. Dahinter versteckt sich eine gr{\"o}{\ss}e Arbeit.\cite{Risikoanalyse} 
-Auf Abb. \ref{fig:Risikoanalyse} wird die Risikoanalyse dargestellt. Wahrscheinlichtkeit, Kosten usw. alles sollen beachtet werden.
+Risiko ist meistens eine Einsch\"atzung, was es einem Unternehmen kostet, wenn die Projektziele nicht erreicht werden. Ich, als Projektleiter, musste das machen. Eine Risikoanalyse zu erstellen ist sehr schwierig, weil es mit der Zukunft zu tun hat. Zuerst musste ich an die Zukunft denken, bei welchen Bauteilen k\"onnen Fehler auftreten, welche Programme k\"onnen ausfallen. Das bedeutet, einen \"Uberblick \"uber die Zukunft zu haben und einzusch\"atzen, was f\"ur Fehler und Risiken es geben kann. Dann sch\"atzte ich die Wahrscheinlichkeit ihres Eintretens ab und am Ende die Ma{\ss}nahmen. Dahinter versteckt sich eine gr{\"o}{\ss}e Arbeit.\cite{Risikoanalyse} 
+Auf Abb. \ref{fig:Risikoanalyse} wird die Risikoanalyse dargestellt. Wahrscheinlichtkeit, Kosten usw. sollen beachtet werden.
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{\ordnerfigures Risikoanalyse1.png}
 	\includegraphics[width=\textwidth]{\ordnerfigures Risikoanalyse2.png}
 	\caption{Risikoanalyse in Excel}
 	\label{fig:Risikoanalyse}
 \end{figure}
-\section{Ergebnisse}
-Die Zeit f\"ur den Abschluss der Diplomarbeit ist vorbei. Jetzt sollen alle Ziele erfolgreich geschlossen werden. Meine Ziele sind eigentlich erfolgreich geschlossen. Die Person kann sich mit ihrem Vornamen, Nachnamen, E-Mail und Rolle registrieren lassen. Die Gesichtspunkte werden von dem Gesicht dieser Person extrahiert und in der Datenbank zusammen mit Vornamen, Nachnamen, E-Mail und Rolle gespeichert. Das System hat zwei Administratoren. Die Administratoren loggen sich mit einem Passwort ein. Ohne das Einloggen des Administrators kann keine Person registriert werden. Am Beginn ist gedacht, dass das System ein LCD-Screen enth\"alt. Jetzt geht es mit der Zeit nicht aus, dieses LCD-Screen zu programmieren und im System zu implementieren. Statt des LCD-Screens wird einen Bildschirm verwendet. Alles, was vorher geplant war, auf dem LCD-Screen zu zeigen, wird jetzt auf einen Bildschirm gezeigt. Diese Ver\"anderung hat eigentlich keine Bedeutung f\"ur das System. 
-\subsection{Implementierung}
-Nachdem eine gro{\ss}e und gute Arbeit meinerseits, kann ich einen Prototyp mit einigen Funktionen erstellen. Die Funktionen, die in diesem Prototyp integriert sind, geh\"oren zu den Zielen, die ich realisieren sollte. Diese Funktionen sind: 
+Es gibt eine Priorität bei den Maßnahmen. Je höher die Zahl in der Spalte „Ampel“ ist, desto wichtiger die Maßnahmen und die Risiken sind. Die, in denen die rote Farbe ist, werden zuerst behandelt. 
+Wenn es grün ist, bedeutet es, dass das Risiko eine sehr kleine Rolle auf das System spielt. Sie werden am letztens behandelt, wenn alle andere Maßnahmen für die roten und gelben Risiken getroffen werden. 
+Spalte ``Ampel'': 
 \begin{itemize}
-	\item Admin-Konto. Die Registrierung der neuen Personen geht nicht ohne ein Admin-Konto. Der Admin muss bei dem System eingeloggt sein, um der Registrierungsteil zu funktionieren. Ich habe gedacht, dass der Admin mit einem Passwort bei dem System einloggt. 
+	\item 0 : das Risiko spielt keine Rolle oder eine sehr kleine Rolle. Die Maßnahmen für diese Risiken können getroffen werden.
+	\item 1-3 : das Risiko hat eine Bedeutung. Die Maßnahmen für diese Risiken sollen getroffen werden.
+	\item 3-100 : das Risiko spielt eine große Rolle auf das System. Die Maßnahmen für diese Risiken müssen getroffen werden.
+\end{itemize}
+
+\section{Ergebnisse}
+Die Zeit f\"ur den Abschluss der Diplomarbeit ist vorbei. Jetzt sollen alle Ziele erfolgreich abgeschlossen werden. Meine Ziele sind eigentlich erfolgreich abgeschlossen. Eine Person kann sich mit ihrem Vornamen, Nachnamen, E-Mail und Rolle registrieren lassen. Die Gesichtspunkte werden von dem Gesicht dieser Person extrahiert und in der Datenbank zusammen mit Vornamen, Nachnamen, E-Mail und Rolle gespeichert. Das System hat zwei Administratoren. Die Administratoren loggen sich mit einem Passwort ein. Ohne das Einloggen des Administrators kann keine Person registriert werden. Am Beginn war geplant, dass das System ein LCD-Screen enth\"alt. Jetzt geht es sich mit der Zeit nicht aus, dieses LCD-Screen zu programmieren und im System zu implementieren. Statt des LCD-Screens wird einen Bildschirm verwendet. Es wird nun alles auf dem Bildschirm angezeigt. Diese Ver\"anderung hat eigentlich keine Bedeutung f\"ur das System. 
+\subsection{Implementierung}
+Nachdem einer umfangreichen und guten Arbeit meinerseits, kann ich einen Prototyp mit einigen Funktionen vorwei{\ss}en. Die Funktionen, die in diesem Prototyp integriert sind, geh\"oren zu den Zielen, die ich realisieren sollte. Diese Funktionen sind: 
+\begin{itemize}
+	\item Admin-Konto. Die Registrierung einer neuen Person geht nicht ohne ein Admin-Konto. Der Admin muss bei dem System eingeloggt sein, damit der Registrierungsteil funktioniert. Der Admin loggt sich mit einem Passwort bei dem System ein. 
 	\item Eine Person wird mit ihrem Vornamen, Nachnamen, E-Mail und Rolle in der Datenbank gespeichert
 	\item Ein Bild von einer Person wird gemacht
 	\item Von diesem Bild werden die Gesichtspunkte extrahiert
-	\item Die Gesichtspunkte werden auf die Arrays gespeichert.
+	\item Die Gesichtspunkte werden in den Arrays gespeichert.
 	\item Ich hole dann die Werte von diesen Arrays und speichere sie in der Datenbank.
 \end{itemize}
