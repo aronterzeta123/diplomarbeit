@@ -1,6 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-<<<<<<< HEAD
 \contentsline {chapter}{\numberline {1}Gesichtserkennung - Rei}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Allgemeines}{1}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Technische Lösung}{2}{section.1.2}% 
@@ -17,24 +16,3 @@
 \contentsline {section}{\numberline {1.4}Projektmanagement und Controlling}{22}{section.1.4}% 
 \contentsline {section}{\numberline {1.5}Ergebnisse}{23}{section.1.5}% 
 \contentsline {section}{\numberline {1.6}Was wurde gelernt und \textbf {welche Verbesserungs möglichkeiten gibt es}}{24}{section.1.6}% 
-=======
-\contentsline {chapter}{\numberline {1}Gesichtserkennung - Rei}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Allgemeines}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Technische L\IeC {\"o}sung}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Hardware und Aufbau}{2}{subsection.1.2.1}
-\contentsline {subsubsection}{Bauteile und HW-Komponenten}{2}{section*.3}
-\contentsline {subsubsection}{Schaltplan und Erkl\IeC {\"a}rung des Aufbaus}{4}{section*.4}
-\contentsline {subsection}{\numberline {1.2.2}Software}{5}{subsection.1.2.2}
-\contentsline {subsubsection}{Verwendete Technologien}{5}{section*.6}
-\contentsline {subsubsection}{L\IeC {\"o}sungsweg- Beschreibung und Erkl\IeC {\"a}rung}{6}{section*.7}
-\contentsline {subsubsection}{Andere wichtige Punkte und Abgrenzungen}{17}{section*.15}
-\contentsline {subsubsection}{Das Testen}{18}{section*.16}
-\contentsline {subsubsection}{Das Logging}{19}{section*.17}
-\contentsline {section}{\numberline {1.3}Herausforderungen, Probleme, und deren L\IeC {\"o}sung}{20}{section.1.3}
-\contentsline {section}{\numberline {1.4}Projektmanagement und Controlling}{22}{section.1.4}
-\contentsline {section}{\numberline {1.5}Ergebnisse}{24}{section.1.5}
-\contentsline {section}{\numberline {1.6}Was wurde gelernt und welche Verbesserungsm\IeC {\"o}glichkeiten gibt es}{24}{section.1.6}
-\contentsline {chapter}{\numberline {2}Planung vs Realisierung}{27}{chapter.2}
-\contentsline {chapter}{\numberline {3}Evaluierung und Res\IeC {\"u}mee}{30}{chapter.3}
-\contentsline {section}{\numberline {3.1}Wertsch\IeC {\"o}pfung und Lessons Learned}{30}{section.3.1}
->>>>>>> 88bc5fc4e0d302a5917bbb72c0bd98a7026a02aa

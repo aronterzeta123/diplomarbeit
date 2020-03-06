@@ -137,7 +137,7 @@ In diesem Unterkapitel wird der Vergleich der Gesichter der Personen detailliert
 	\item \textit{Erkennungstaster wird gedr{\"u}ckt} \\
 	
 	Will der Benutzer sich im System einloggen, muss er zuerst den Erkennungstaster dr{\"u}cken. Wird dieser Taster gedr{\"u}ckt, dann kriegt der Benutzer eine Anmeldung, bei der er seine Emailadresse eingeben muss. Um diese Aufgabe zu erledigen, muss das Paket RPi.GPIO importiert werden. Auf diese Weise ist der Zugriff auf den GPIO Pins m{\"o}glich, damit der Taster Zustand, oder der LED Zustand erkannt werden. Das Paket mysqldb wird auch ben{\"o}tigt, um Zugriff auf die Datenbank zu haben.
-	\begin{lstlisting}
+	\begin{lstlisting}[language=Python]
 	if GPIO.input(17):
 	exec(open('Existiert_nExistiert.py').read()) 
 	\end{lstlisting} 
@@ -147,14 +147,14 @@ In diesem Unterkapitel wird der Vergleich der Gesichter der Personen detailliert
 Es ist wichtig zu erw{\"a}hnen, es dass für die Umsetzung dieses Systems notwendig ist, die verschiedenen Skripten miteinander zu verbinden.  Deshalb müssen sie innerhalb anderer Skripten angerufen werden. Das wird durch Variablen gemacht. Deshalb ist das Importieren des Pakets sys n{\"o}tig. Der Benutzer gibt seine Emailadresse an, die danach verwendet wird, um in der Datenbank schneller auf die Benutzerbilddaten zuzugreifen. Es wurde deshalb die Emailadresse(und nicht Vorname, Nachname usw.) gewählt, weil diese Adresse immer eindeutig ist, das heißt, es ist unmöglich, dass zwei Benutzern dieselbe Adresse haben, und dasselbe kann für die andere Benutzerdaten(Vorname, Nachname usw.) nicht gesagt werden.
 %-----------------------------------------------------
 \item \textit{Die Existenz der eingegebenen Emailadresse des Benutzers in der Datenbank wird geprüft} \\
-	\begin{lstlisting}
-		for x in myresult:
-		if x[2]==rei.emailiperkrahasim:
-		bool=True
-		else:
-		bool=False
-		os.system('./Log_Erkennung_Email_Nicht_Gefunden.py')
-	\end{lstlisting}
+\begin{lstlisting}[language=Python]
+for x in myresult:
+if x[2]==rei.emailiperkrahasim:
+bool=True
+else:
+bool=False
+os.system('./Log_Erkennung_Email_Nicht_Gefunden.py')
+\end{lstlisting}
 Wie es vorher erwähnt wurde, ist dieser Schritt deswegen wichtig, weil falls die eingegebene Email nicht in der Datenbank existiert, muss das System den Bildvergleich nicht machen. Der Benutzer kriegt stattdessen eine Anmeldung, die ihm sagt, dass er noch einmal versuchen kann seine Emailadresse einzugeben. Wird diese neue Adresse auch nicht in der Datenbank gefunden, kann danach dieser Benutzer mit dieser Adresse sich nicht mehr versuchen in System anzumelden. 
 %-----------------------------------------------------
 \item \textit{Bild wird gemacht und tempor{\"a}r gespeichert} \\
@@ -173,17 +173,17 @@ Das zugeschnittene Bild des Gesichts der Person besteht aus verschiedene Punkte.
 	
 	Falls aber die vom Benutzer eingegebene Emailadresse schon in der Datenbank liegt, weißt das System Bescheid, dass ein Bilderdatenvergleich stattfinden muss. Um das zu erreichen, werden alle Bildinformationen geladen. Unter Bildinformationen sind die 68 extrahierten Gesichtspunkte zu verstehen. Der kurze Codeabschnitt unten zeigt genau wie dies funktioniert: \\
 	
-	\begin{lstlisting}
-		if b=="existiert":
-		mycursor.execute(
-		"""select * from info i \
-		join person p \
-		on i.idP=p.idP \
-		where p.email='%s';"""%var1)
-		myresult=mycursor.fetchall()
-		for x in myresult:
-		print(x)
-	\end{lstlisting}
+\begin{lstlisting}[language=Python]
+if b=="existiert":
+mycursor.execute(
+"""select * from info i \
+join person p \
+on i.idP=p.idP \
+where p.email='%s';"""%var1)
+myresult=mycursor.fetchall()
+for x in myresult:
+print(x)
+\end{lstlisting}
 	
 	Das heißt, die extrahierte Punkte des von der Kamera gemachten Bildes und die extrahierte Punkte, die in der Datenbank gespeichert sind und die den Person mit derselbe Emailadresse wie die vom Benutzer eingegebene Adresse gehören , stehen jetzt endlich zur Verfügung. Ab hier wird angenommen, dass die eingegebene Emailadresse mit mindestens einer in der Datenbank vorhandenen Emailadresse gleich ist, damit der Vergleichsprozess erklärt werden kann.
 %-----------------------------------------------------
@@ -191,14 +191,15 @@ Das zugeschnittene Bild des Gesichts der Person besteht aus verschiedene Punkte.
 	
 	Bevor der Vergleichsprozess beginnt, müssen die 68 extrahierten Punkte geteilt werden. Die 5 großen Bereiche sind das Gesicht, die Nase, das rechte Auge, das linke Auge und der Mund. Jeder Bereich hat seine eigenen Punkte. Die erste 28 Punkte gehören dem Gesicht, die nächste 9 gehören der Nase, die nächste 6 dem rechten Auge, die nächste 6 dem linken Auge und die letzte 19 gehören dem Mund. Durch dieser Prozess wird die Vergleichsqualität stark erhöht, weil die Punkte der Nase werden genau mit der Punkte der anderen Nase verglichen, und nicht mit dem von dem Augen beispielsweise. \\
 	Der untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird(nur um eine Idee zu haben, wie es funktioniert):\\
-	
-\begin{lstlisting}
+
+\begin{lstlisting}[language=Python]
 for pika in range(0,27):
-	dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * 
-	abs( (vleratx.item(pika)-float(res[vx])) ) + ( 
-	abs((vleraty.item(pika)-float(res[vy]))) *
-	abs((vleraty.item(pika)-float(res[vy])) ) ))
+ dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx]))))* 
+ abs( (vleratx.item(pika)-float(res[vx])) ) + ( 
+ abs((vleraty.item(pika)-float(res[vy])))*
+ abs((vleraty.item(pika)-float(res[vy])) ) ))
 \end{lstlisting}
+
 %-----------------------------------------------------
 	\item \textit{Die Bildinformationen der beiden Bilder werden verglichen} \\
 	
@@ -227,12 +228,12 @@ Die wichtigste Aufgabe ist der Vergleich der Bildinformationen. Es werden die ex
 	Nachdem die oben erklärten Abstände kalkuliert wurden, wird der maximale Abstand für jeden Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund) benötigt. Diese Maximumwerte sind wesentlich für den Vergleich. Warum das so ist wird später erklärt. \\
 	Der untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte implementiert ist: \\
 	
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 MAX = [0,0,0,0,0]
 for pika in range(0,27):
-dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * 
+dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx]))))* 
 abs((vleratx.item(pika)-float(res[vx])) ) + ( 
-abs((vleraty.item(pika)-float(res[vy]))) * 
+abs((vleraty.item(pika)-float(res[vy])))* 
 abs((vleraty.item(pika)-float(res[vy])) ) ))
 if(dis < min):
 	min = dis
@@ -264,11 +265,11 @@ dis=0
 
 	Der untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte implementiert ist(nur um eine Idee zu haben, wie es funktioniert):\\
 	
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 for pika in range(0,27):
-dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * abs( 
+dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx]))))* abs( 
 (vleratx.item(pika)-float(res[vx])) ) + ( 
-abs((vleraty.item(pika)-float(res[vy]))) * 
+abs((vleraty.item(pika)-float(res[vy])))* 
 abs((vleraty.item(pika)-float(res[vy])) ) ))
 gm *= dis
 vx+=2
@@ -306,35 +307,35 @@ dis=0
 			
 			Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 			
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 global count
 count = 0
 for i in range(0,len(MAX)):
-	if MAX[i] > 0.06:
-		count+=1
-		status1=True
-		status11=True
-		status2=True
-		status22=True
+if MAX[i] > 0.06:
+count+=1
+status1=True
+status11=True
+status2=True
+status22=True
 				
 #Wenn JA: Nur wenn gmT kleiner als 0.01 sind sie richtig,
- sonst FALSCH
-	if count ==1:
-		global status11
-		status11=False
-	if count >= 2:
-		global status22
-	status22=False
-	if gmT > 0.01:
-	global status1
-	status1 = False
+sonst FALSCH
+if count ==1:
+global status11
+status11=False
+if count >= 2:
+global status22
+status22=False
+if gmT > 0.01:
+global status1
+status1 = False
 				
 #Wenn NEIN: gmT muss kleiner als 0.027 sein,
 			um RICHTIG zu sein
-	else:
-		if gmT > 0.027:
-			global status2
-			status2 = False
+else:
+if gmT > 0.027:
+global status2
+status2 = False
 \end{lstlisting}
 	
 			
@@ -353,26 +354,26 @@ for i in range(0,len(MAX)):
 			
 			Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 			
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 count = 0
 for i in range(0,len(MAX)):
-	if MAX[i] > 0.07 and MAX[i]< 0.084:
-		count+=1
-		status3=True
-		status33=True
-		status4=True
+if MAX[i] > 0.07 and MAX[i]< 0.084:
+count+=1
+status3=True
+status33=True
+status4=True
 #Wenn JA :Wenn gmT kleiner als 0.027 ist passt, 
-		sonst FALSCH
-	if count == 1:
-		global status33
-		status33=False
-	if gmT > 0.027:
-		global status3
-		status3 = False
+sonst FALSCH
+if count == 1:
+global status33
+status33=False
+if gmT > 0.027:
+global status3
+status3 = False
 #Wenn 2 oder mehr: FALSCH
-	elif count > 1:
-		global status4
-		status4 = False
+elif count > 1:
+global status4
+status4 = False
 \end{lstlisting}
 			
 			\item 3.Fall: Mindestens einen Maximumwert ist größer als 0.084 \\
@@ -390,15 +391,15 @@ for i in range(0,len(MAX)):
 			
 			Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 			
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 for i in range(0,len(MAX)):
-	if MAX[i] > 0.084:
-		count+=1
-		status5=True
+if MAX[i] > 0.084:
+count+=1
+status5=True
 #Wenn JA: FALSCH
-	if count >=1:
-		global status5
-		status5=False
+if count >=1:
+global status5
+status5=False
 \end{lstlisting}
 			
 		\end{enumerate} 
@@ -413,16 +414,16 @@ for i in range(0,len(MAX)):
 	
 		Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 	
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 if status1==False or status2==False 
 or status3==False or status4==False 
 or status5==False or
- (status11==False and status33==False) 
+(status11==False and status33==False) 
 or (status22==False and status33==False):
-	print("Vergleich nicht erfolgreich, 
-	sie sind nicht eingeloggt!!!")
-	os.system
-	('./Log_Erkennung_Person_Existiert_Nicht.py')
+print("Vergleich nicht erfolgreich, 
+sie sind nicht eingeloggt!!!")
+os.system
+('./Log_Erkennung_Person_Existiert_Nicht.py')
 \end{lstlisting}
 		
 	\end{enumerate}
@@ -433,11 +434,11 @@ Wenn keinen Fall bzw. Bedienung zutrifft, ist die Authentifizierung erfolgreich.
 
 Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 else:
-	b="existiert"
-	print("Vergleich erfolgreich, Sie sind eingeloggt!!!")
-	os.system('./Log_Erkennung_Person_Existiert.py')
+b="existiert"
+print("Vergleich erfolgreich, Sie sind eingeloggt!!!")
+os.system('./Log_Erkennung_Person_Existiert.py')
 \end{lstlisting}
 
 \end{itemize}
@@ -499,14 +500,14 @@ Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich.\\
 
 Der Taster wird gedrückt: \\
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 	if GPIO.input(17):
 	os.system('./Log_Erkennung_TasterGed.py')
 \end{lstlisting}
 
 Zeitpunkt wird gespeichert: \\
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 logging.basicConfig(filename=log_file_path)
 if(log_to_db):
 logging.getLogger('').addHandler(logdb)
