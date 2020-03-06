@@ -19,6 +19,46 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Led}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.simplyscience.ch/teens-liesnach-archiv/articles/was-ist-eine-leuchtdiode.html
+      \endverb
+      \verb{url}
+      \verb https://www.simplyscience.ch/teens-liesnach-archiv/articles/was-ist-eine-leuchtdiode.html
+      \endverb
+    \endentry
+    \entry{Widerstand}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.rohm.de/electronics-basics/resistors/resistor-basics
+      \endverb
+      \verb{url}
+      \verb https://www.rohm.de/electronics-basics/resistors/resistor-basics
+      \endverb
+    \endentry
+    \entry{Bildschirm}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808181.htm
+      \endverb
+      \verb{url}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808181.htm
+      \endverb
+    \endentry
+    \entry{Tastatur}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808142.htm
+      \endverb
+      \verb{url}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808142.htm
+      \endverb
+    \endentry
     \entry{Fritzing}{online}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
