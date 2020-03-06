@@ -2003,13 +2003,16 @@
     <bcf:citekey order="27">Viola01robustreal-time</bcf:citekey>
     <bcf:citekey order="28">Viola01robustreal-time</bcf:citekey>
     <bcf:citekey order="29">Viola01robustreal-time</bcf:citekey>
-    <bcf:citekey order="30">Kazemi2014OneMF</bcf:citekey>
-    <bcf:citekey order="31">Kazemi2014OneMF</bcf:citekey>
-    <bcf:citekey order="32">fmea</bcf:citekey>
-    <bcf:citekey order="33">Taster</bcf:citekey>
-    <bcf:citekey order="34">OpenCVR</bcf:citekey>
-    <bcf:citekey order="35">Fritzing</bcf:citekey>
-    <bcf:citekey order="36">geometrischesM</bcf:citekey>
+    <bcf:citekey order="30">opencv_library</bcf:citekey>
+    <bcf:citekey order="31">affine</bcf:citekey>
+    <bcf:citekey order="32">Kazemi2014OneMF</bcf:citekey>
+    <bcf:citekey order="33">Kazemi2014OneMF</bcf:citekey>
+    <bcf:citekey order="34">Kazemi2014OneMF</bcf:citekey>
+    <bcf:citekey order="35">fmea</bcf:citekey>
+    <bcf:citekey order="36">Taster</bcf:citekey>
+    <bcf:citekey order="37">OpenCVR</bcf:citekey>
+    <bcf:citekey order="38">Fritzing</bcf:citekey>
+    <bcf:citekey order="39">geometrischesM</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

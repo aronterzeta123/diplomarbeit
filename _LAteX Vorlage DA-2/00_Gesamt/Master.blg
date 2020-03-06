@@ -1,30 +1,31 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Master.blg'
-[68] biber-darwin:313> INFO - === Thu Mar  5, 2020, 11:03:43
-[98] Biber.pm:371> INFO - Reading 'Master.bcf'
-[219] Biber.pm:857> INFO - Found 30 citekeys in bib section 0
-[237] Biber.pm:3976> INFO - Processing section 0
-[251] Biber.pm:4136> INFO - Looking for bibtex format file './../literatur.bib' for section 0
-[256] bibtex.pm:1500> INFO - LaTeX decoding ...
-[296] bibtex.pm:1316> INFO - Found BibTeX data source './../literatur.bib'
-[299] Utils.pm:193> WARN - Possible typo (case mismatch) between datasource keys: 'OpencvLogo' and 'OpenCVlogo' in file './../literatur.bib'
-[316] Utils.pm:193> WARN - year field '12/7/2019' in entry 'python' is not an integer - this will probably not sort properly.
-[320] Utils.pm:193> WARN - Entry 'terminator' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
-[334] Utils.pm:193> WARN - Entry 'Risikoanalyse' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
-[358] Utils.pm:193> WARN - year field '3/10/2017' in entry 'why_python' is not an integer - this will probably not sort properly.
-[420] Utils.pm:193> WARN - month field 'Jul' in entry '2019arXiv190710121V-scipy' is not an integer - this will probably not sort properly.
-[438] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/08LRhZpoG6/literatur.bib_3336.utf8, line 48, warning: 1 characters of junk seen at toplevel
-[438] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/08LRhZpoG6/literatur.bib_3336.utf8, line 52, warning: 1 characters of junk seen at toplevel
-[438] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/08LRhZpoG6/literatur.bib_3336.utf8, line 59, warning: 1 characters of junk seen at toplevel
-[438] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/08LRhZpoG6/literatur.bib_3336.utf8, line 63, warning: 1 characters of junk seen at toplevel
-[438] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/08LRhZpoG6/literatur.bib_3336.utf8, line 193, warning: 7 characters of junk seen at toplevel
-[440] Utils.pm:193> WARN - I didn't find a database entry for 'OpenCVR' (section 0)
-[440] Utils.pm:193> WARN - I didn't find a database entry for 'Fritzing' (section 0)
-[440] Utils.pm:193> WARN - I didn't find a database entry for 'geometrischesM' (section 0)
-[479] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[479] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[479] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[480] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[510] bbl.pm:617> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
-[522] bbl.pm:720> INFO - Output to Master.bbl
-[522] Biber.pm:110> INFO - WARNINGS: 14
+[49] biber-darwin:313> INFO - === Thu Mar  5, 2020, 11:29:14
+[78] Biber.pm:371> INFO - Reading 'Master.bcf'
+[202] Biber.pm:857> INFO - Found 31 citekeys in bib section 0
+[220] Biber.pm:3976> INFO - Processing section 0
+[235] Biber.pm:4136> INFO - Looking for bibtex format file './../literatur.bib' for section 0
+[237] bibtex.pm:1500> INFO - LaTeX decoding ...
+[279] bibtex.pm:1316> INFO - Found BibTeX data source './../literatur.bib'
+[281] Utils.pm:193> WARN - Possible typo (case mismatch) between datasource keys: 'OpencvLogo' and 'OpenCVlogo' in file './../literatur.bib'
+[299] Utils.pm:193> WARN - year field '12/7/2019' in entry 'python' is not an integer - this will probably not sort properly.
+[304] Utils.pm:193> WARN - Entry 'terminator' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
+[321] Utils.pm:193> WARN - Entry 'Risikoanalyse' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring
+[349] Utils.pm:193> WARN - year field '3/10/2017' in entry 'why_python' is not an integer - this will probably not sort properly.
+[421] Utils.pm:193> WARN - month field 'Jul' in entry '2019arXiv190710121V-scipy' is not an integer - this will probably not sort properly.
+[440] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/ONfBOBXl5_/literatur.bib_3966.utf8, line 48, warning: 1 characters of junk seen at toplevel
+[441] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/ONfBOBXl5_/literatur.bib_3966.utf8, line 52, warning: 1 characters of junk seen at toplevel
+[441] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/ONfBOBXl5_/literatur.bib_3966.utf8, line 59, warning: 1 characters of junk seen at toplevel
+[441] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/ONfBOBXl5_/literatur.bib_3966.utf8, line 63, warning: 1 characters of junk seen at toplevel
+[441] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/cr/mc0wv65541v88ndzyph56_6w0000gn/T/ONfBOBXl5_/literatur.bib_3966.utf8, line 193, warning: 7 characters of junk seen at toplevel
+[443] Utils.pm:193> WARN - I didn't find a database entry for 'affine' (section 0)
+[443] Utils.pm:193> WARN - I didn't find a database entry for 'OpenCVR' (section 0)
+[443] Utils.pm:193> WARN - I didn't find a database entry for 'Fritzing' (section 0)
+[443] Utils.pm:193> WARN - I didn't find a database entry for 'geometrischesM' (section 0)
+[484] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[484] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[484] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[484] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[519] bbl.pm:617> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[533] bbl.pm:720> INFO - Output to Master.bbl
+[533] Biber.pm:110> INFO - WARNINGS: 15

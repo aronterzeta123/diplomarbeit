@@ -157,7 +157,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Frameworks und Bibliotheken}{29}{subsection.6.1.2}}
 \abx@aux@segm{0}{0}{dlib}
 \abx@aux@segm{0}{0}{dlib}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces  dlib logo \cite {dlib}\relax }}{30}{figure.caption.26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{30}{figure.caption.26}}
 \newlabel{fig:dlib logo}{{6.1}{30}{dlib logo \cite {dlib}\relax }{figure.caption.26}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6.2}Technische L\IeC {\"o}sungen}{30}{section.6.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}L\IeC {\"o}sungsweg - Structed Software design}{30}{subsection.6.2.1}}
@@ -171,116 +171,141 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces  Haar Features\cite {Viola01robustreal-time}\relax }}{33}{figure.caption.28}}
 \newlabel{fig:haar features}{{6.3}{33}{Haar Features\cite {Viola01robustreal-time}\relax }{figure.caption.28}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Umsetzung in Code}{33}{section*.29}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces  Box auf Gesicht\relax }}{34}{figure.caption.30}}
-\newlabel{fig:aron}{{6.4}{34}{Box auf Gesicht\relax }{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Normalisierung}{34}{subsection.6.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}Gesichtsdetektion und Zuschneiden}{34}{subsection.6.2.4}}
+\newlabel{detect}{{6.1}{33}{Kern Code für Gesichtsdetektion}{lstlisting.6.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.1}Kern Code f\IeC {\"u}r Gesichtsdetektion}{33}{lstlisting.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Output: Box auf Gesicht\relax }}{35}{figure.caption.30}}
+\newlabel{fig:aron}{{6.4}{35}{Output: Box auf Gesicht\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Normalisierung}{35}{subsection.6.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Was ist Normalisierung?}{35}{section*.31}}
+\@writefile{toc}{\contentsline {subsubsection}{Methoden f\IeC {\"u}r Normalisierung}{35}{section*.32}}
+\@writefile{toc}{\contentsline {subsubsection}{Warum Normalisierung?}{35}{section*.33}}
+\abx@aux@segm{0}{0}{opencv_library}
+\@writefile{toc}{\contentsline {subsubsection}{Implementation}{36}{section*.34}}
+\newlabel{norm}{{6.2}{36}{Implementation Normalisierung}{lstlisting.6.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.2}Implementation Normalisierung}{36}{lstlisting.6.2}}
+\abx@aux@cite{affine}
+\abx@aux@segm{0}{0}{affine}
+\newlabel{align}{{6.3}{37}{Gesichtsausrichtung}{lstlisting.6.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.3}Gesichtsausrichtung}{37}{lstlisting.6.3}}
+\newlabel{smooth}{{6.4}{37}{Glättungsfilter}{lstlisting.6.4}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.4}Gl\IeC {\"a}ttungsfilter}{37}{lstlisting.6.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{38}{figure.caption.35}}
+\newlabel{fig:norme}{{6.5}{38}{Unterschied: normalisiert, nicht normalisiert\relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Nicht normalisiert}}}{38}{subfigure.5.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Normalisiert}}}{38}{subfigure.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Unterschied: normalisiert, nicht normalisiert .2\relax }}{38}{figure.caption.36}}
+\newlabel{fig:norm}{{6.6}{38}{Unterschied: normalisiert, nicht normalisiert .2\relax }{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Nicht normalisiert}}}{38}{subfigure.6.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Normalisiert}}}{38}{subfigure.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}Zuschneiden von Gesichter}{38}{subsection.6.2.4}}
+\newlabel{crop}{{6.5}{38}{Code Abschnitt: Gesicht Zuschneiden}{lstlisting.6.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6.5}Code Abschnitt: Gesicht Zuschneiden}{38}{lstlisting.6.5}}
 \abx@aux@cite{Kazemi2014OneMF}
 \abx@aux@segm{0}{0}{Kazemi2014OneMF}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces Output: Abgeschnittenes Gesicht\relax }}{39}{figure.caption.37}}
+\newlabel{fig:aroncropped}{{6.7}{39}{Output: Abgeschnittenes Gesicht\relax }{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.5}Gesichtsschl\IeC {\"u}sselpunkte Extraktion}{39}{subsection.6.2.5}}
+\newlabel{gspex}{{6.2.5}{39}{Gesichtsschlüsselpunkte Extraktion}{subsection.6.2.5}{}}
 \abx@aux@segm{0}{0}{Kazemi2014OneMF}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces  Abgeschnittenes Gesicht\relax }}{35}{figure.caption.31}}
-\newlabel{fig:aroncropped}{{6.5}{35}{Abgeschnittenes Gesicht\relax }{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.5}Gesichtsschl\IeC {\"u}sselpunkte Extraktion}{35}{subsection.6.2.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.6}Zusammenfassung}{36}{subsection.6.2.6}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Herausforderungen, Probleme und deren L\IeC {\"o}sung }{36}{section.6.3}}
+\abx@aux@segm{0}{0}{Kazemi2014OneMF}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.8}{\ignorespaces Gesichtsschl\IeC {\"u}sselpunkte \cite {Kazemi2014OneMF}\relax }}{40}{figure.caption.38}}
+\newlabel{fig:landmarks}{{6.8}{40}{Gesichtsschlüsselpunkte \cite {Kazemi2014OneMF}\relax }{figure.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.9}{\ignorespaces Gesichtsdaten\relax }}{41}{figure.caption.39}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Herausforderungen, Probleme und deren L\IeC {\"o}sung }{41}{section.6.3}}
 \abx@aux@cite{fmea}
 \abx@aux@segm{0}{0}{fmea}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Qualit\IeC {\"a}tssicherung, Controlling}{37}{section.6.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}Ergebnise}{38}{section.6.5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Gesichtserkennung - Rei}{39}{chapter.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}L\IeC {\"o}sungen}{42}{subsection.6.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Qualit\IeC {\"a}tssicherung, Controlling}{42}{section.6.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Ergebnisse}{43}{section.6.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Gesichtserkennung - Rei}{44}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{Gesichtserkennung - Rei}{{7}{39}{\docname }{chapter.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Allgemeines}{39}{section.7.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Grobe Skizze des Systems\relax }}{40}{figure.caption.32}}
-\newlabel{fig:grobe_Skizze}{{7.1}{40}{Grobe Skizze des Systems\relax }{figure.caption.32}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Technische L\IeC {\"o}sung}{40}{section.7.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Hardware und Aufbau}{40}{subsection.7.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Bauteile und HW-Komponenten}{40}{section*.33}}
+\newlabel{Gesichtserkennung - Rei}{{7}{44}{\docname }{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Allgemeines}{44}{section.7.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Grobe Skizze des Systems\relax }}{45}{figure.caption.40}}
+\newlabel{fig:grobe_Skizze}{{7.1}{45}{Grobe Skizze des Systems\relax }{figure.caption.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Technische L\IeC {\"o}sung}{45}{section.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Hardware und Aufbau}{45}{subsection.7.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Bauteile und HW-Komponenten}{45}{section*.41}}
 \abx@aux@cite{Taster}
 \abx@aux@segm{0}{0}{Taster}
-\@writefile{toc}{\contentsline {subsubsection}{Schaltplan und Erkl\IeC {\"a}rung des Aufbaus}{42}{section*.34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Schaltplan des Systems\relax }}{42}{figure.caption.35}}
-\newlabel{fig:Schaltplan}{{7.2}{42}{Schaltplan des Systems\relax }{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Schaltplan und Erkl\IeC {\"a}rung des Aufbaus}{47}{section*.42}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Schaltplan des Systems\relax }}{47}{figure.caption.43}}
+\newlabel{fig:Schaltplan}{{7.2}{47}{Schaltplan des Systems\relax }{figure.caption.43}{}}
 \abx@aux@cite{OpenCVR}
 \abx@aux@segm{0}{0}{OpenCVR}
 \abx@aux@cite{Fritzing}
 \abx@aux@segm{0}{0}{Fritzing}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Software}{43}{subsection.7.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Verwendete Technologien}{43}{section*.36}}
-\@writefile{toc}{\contentsline {subsubsection}{L\IeC {\"o}sungsweg- Beschreibung und Erkl\IeC {\"a}rung}{44}{section*.37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Big Picture\relax }}{44}{figure.caption.38}}
-\newlabel{fig:Big Picture}{{7.3}{44}{Big Picture\relax }{figure.caption.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Erste Ebene\relax }}{45}{figure.caption.39}}
-\newlabel{fig:Erste Ebene}{{7.4}{45}{Erste Ebene\relax }{figure.caption.39}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Vergleichsweg\relax }}{49}{figure.caption.40}}
-\newlabel{fig:Vergleichsweg}{{7.5}{49}{Vergleichsweg\relax }{figure.caption.40}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Software}{48}{subsection.7.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Verwendete Technologien}{48}{section*.44}}
+\@writefile{toc}{\contentsline {subsubsection}{L\IeC {\"o}sungsweg- Beschreibung und Erkl\IeC {\"a}rung}{49}{section*.45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Erste Ebene\relax }}{49}{figure.caption.46}}
+\newlabel{fig:Erste Ebene}{{7.3}{49}{Erste Ebene\relax }{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Erste Ebene Erkl\IeC {\"a}rung\relax }}{50}{figure.caption.47}}
+\newlabel{fig:Erklaerung_Erste_Ebene}{{7.4}{50}{Erste Ebene Erklärung\relax }{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Vergleichsmethode zweier Punkte\relax }}{54}{figure.caption.48}}
+\newlabel{fig:Vergleichsweg}{{7.5}{54}{Vergleichsmethode zweier Punkte\relax }{figure.caption.48}{}}
 \abx@aux@cite{geometrischesM}
 \abx@aux@segm{0}{0}{geometrischesM}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces geometrisches Mittel\relax }}{50}{figure.caption.41}}
-\newlabel{fig:geometrischesM}{{7.6}{50}{geometrisches Mittel\relax }{figure.caption.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces 1\_Fall\relax }}{52}{figure.caption.42}}
-\newlabel{fig:1_Fall}{{7.7}{52}{1\_Fall\relax }{figure.caption.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces 2\_Fall\relax }}{53}{figure.caption.43}}
-\newlabel{fig:2_Fall}{{7.8}{53}{2\_Fall\relax }{figure.caption.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces 3\_Fall\relax }}{54}{figure.caption.44}}
-\newlabel{fig:3_Fall}{{7.9}{54}{3\_Fall\relax }{figure.caption.44}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Andere wichtige Punkte und Abgrenzungen}{55}{section*.45}}
-\@writefile{toc}{\contentsline {subsubsection}{Das Testen}{56}{section*.46}}
-\@writefile{toc}{\contentsline {subsubsection}{Das Logging}{57}{section*.47}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Herausforderungen, Probleme, und deren L\IeC {\"o}sung}{58}{section.7.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Projektmanagement und Controlling}{60}{section.7.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.10}{\ignorespaces Fehlerbaum\relax }}{61}{figure.caption.48}}
-\newlabel{fig:Fehlerbaum}{{7.10}{61}{Fehlerbaum\relax }{figure.caption.48}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}Ergebnisse}{62}{section.7.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.6}Was wurde gelernt und welche Verbesserungsm\IeC {\"o}glichkeiten gibt es}{62}{section.7.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Planung vs Realisierung}{65}{chapter.8}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Planung vs Realisierung\relax }}{66}{figure.caption.49}}
-\newlabel{fig:Planung_Realisierung}{{8.1}{66}{Planung vs Realisierung\relax }{figure.caption.49}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Planung vs Realisierung\relax }}{67}{figure.caption.50}}
-\newlabel{fig:Planung_Realisierung}{{8.2}{67}{Planung vs Realisierung\relax }{figure.caption.50}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Evaluierung und Res\IeC {\"u}mee}{68}{chapter.9}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {9.1}Wertsch\IeC {\"o}pfung und Lessons Learned}{68}{section.9.1}}
-\@writefile{toc}{\contentsline {chapter}{Appendix:}{}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/capture.py}{73}{lstlisting.Alph0.-16}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung\textunderscore admin.py}{73}{lstlisting.Alph0.-17}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung\textunderscore Personregistration.py}{74}{lstlisting.Alph0.-18}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung\textunderscore notPersonregistration.py}{75}{lstlisting.Alph0.-19}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung.py}{76}{lstlisting.Alph0.-20}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/Person\textunderscore Registrierung.py}{77}{lstlisting.Alph0.-21}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/prototyp.py}{79}{lstlisting.Alph0.-22}}
-\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/selectID\textunderscore UpdateBild.py}{80}{lstlisting.Alph0.-23}}
-\abx@aux@number{35}{PDCA-Zyklus}{0}{nty/global//global/global}{1}
-\abx@aux@number{36}{MySQLlogo}{0}{nty/global//global/global}{2}
-\abx@aux@number{37}{MariaDBlogo}{0}{nty/global//global/global}{3}
-\abx@aux@number{38}{Pythonlogo}{0}{nty/global//global/global}{4}
-\abx@aux@number{39}{OpenCVlogo}{0}{nty/global//global/global}{5}
-\abx@aux@number{40}{OpenCV1}{0}{nty/global//global/global}{6}
-\abx@aux@number{41}{Git1}{0}{nty/global//global/global}{7}
-\abx@aux@number{42}{cmake}{0}{nty/global//global/global}{8}
-\abx@aux@number{43}{Taster}{0}{nty/global//global/global}{9}
-\abx@aux@number{44}{fmea}{0}{nty/global//global/global}{10}
-\abx@aux@number{45}{python}{0}{nty/global//global/global}{11}
-\abx@aux@number{46}{MariaDB-Monitor}{0}{nty/global//global/global}{12}
-\abx@aux@number{47}{Risikoanalyse}{0}{nty/global//global/global}{13}
-\abx@aux@number{48}{opencv_library}{0}{nty/global//global/global}{14}
-\abx@aux@number{49}{timepackage}{0}{nty/global//global/global}{15}
-\abx@aux@number{50}{gpiomode}{0}{nty/global//global/global}{16}
-\abx@aux@number{51}{linx}{0}{nty/global//global/global}{17}
-\abx@aux@number{52}{Kazemi2014OneMF}{0}{nty/global//global/global}{18}
-\abx@aux@number{53}{dlib}{0}{nty/global//global/global}{19}
-\abx@aux@number{54}{pythonInfo}{0}{nty/global//global/global}{20}
-\abx@aux@number{55}{Linux_Betriebssystem}{0}{nty/global//global/global}{21}
-\abx@aux@number{56}{why_python}{0}{nty/global//global/global}{22}
-\abx@aux@number{57}{stepken1999mysql}{0}{nty/global//global/global}{23}
-\abx@aux@number{58}{terminator}{0}{nty/global//global/global}{24}
-\abx@aux@number{59}{rpigpio}{0}{nty/global//global/global}{25}
-\abx@aux@number{60}{Viola01robustreal-time}{0}{nty/global//global/global}{26}
-\abx@aux@number{61}{2019arXiv190710121V-scipy}{0}{nty/global//global/global}{27}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces geometrisches Mittel\relax }}{55}{figure.caption.49}}
+\newlabel{fig:geometrischesM}{{7.6}{55}{geometrisches Mittel\relax }{figure.caption.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces 1\_Fall\relax }}{57}{figure.caption.50}}
+\newlabel{fig:1_Fall}{{7.7}{57}{1\_Fall\relax }{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces 2\_Fall\relax }}{58}{figure.caption.51}}
+\newlabel{fig:2_Fall}{{7.8}{58}{2\_Fall\relax }{figure.caption.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces 3\_Fall\relax }}{59}{figure.caption.52}}
+\newlabel{fig:3_Fall}{{7.9}{59}{3\_Fall\relax }{figure.caption.52}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Andere wichtige Punkte und Abgrenzungen}{60}{section*.53}}
+\@writefile{toc}{\contentsline {subsubsection}{Das Testen}{61}{section*.54}}
+\@writefile{toc}{\contentsline {subsubsection}{Das Logging}{62}{section*.55}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Herausforderungen, Probleme, und deren L\IeC {\"o}sung}{63}{section.7.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Projektmanagement und Controlling}{65}{section.7.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.10}{\ignorespaces Fehlerbaum\relax }}{66}{figure.caption.56}}
+\newlabel{fig:Fehlerbaum}{{7.10}{66}{Fehlerbaum\relax }{figure.caption.56}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Ergebnisse}{66}{section.7.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.6}Was wurde gelernt und \textbf  {welche Verbesserungs m\IeC {\"o}glichkeiten gibt es}}{67}{section.7.6}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/capture.py}{73}{lstlisting.Alph0.-14}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung\textunderscore admin.py}{73}{lstlisting.Alph0.-15}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung\textunderscore Personregistration.py}{74}{lstlisting.Alph0.-16}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung\textunderscore notPersonregistration.py}{75}{lstlisting.Alph0.-17}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/fehlerlog\textunderscore Gesichtsregistrierung.py}{76}{lstlisting.Alph0.-18}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/Person\textunderscore Registrierung.py}{77}{lstlisting.Alph0.-19}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/prototyp.py}{79}{lstlisting.Alph0.-20}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_Aron/appendix/selectID\textunderscore UpdateBild.py}{80}{lstlisting.Alph0.-21}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_rei/appendix/reitest.py}{81}{lstlisting.Alph0.-22}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_rei/appendix/reitest3.py}{83}{lstlisting.Alph0.-23}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_rei/appendix/Log\textunderscore Erkennung\textunderscore Email\textunderscore Nicht\textunderscore Gefunden.py}{88}{lstlisting.Alph0.-24}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_rei/appendix/Log\textunderscore Erkennung\textunderscore Person\textunderscore Existiert\textunderscore Nicht.py}{89}{lstlisting.Alph0.-25}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_rei/appendix/Log\textunderscore Erkennung\textunderscore Person\textunderscore Existiert.py}{90}{lstlisting.Alph0.-26}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_rei/appendix/Log\textunderscore Erkennung\textunderscore TasterGed.py}{91}{lstlisting.Alph0.-27}}
+\@writefile{lol}{\contentsline {lstlisting}{./../40_rei/appendix/prototyp.py}{92}{lstlisting.Alph0.-28}}
+\abx@aux@number{38}{PDCA-Zyklus}{0}{nty/global//global/global}{1}
+\abx@aux@number{39}{MySQLlogo}{0}{nty/global//global/global}{2}
+\abx@aux@number{40}{MariaDBlogo}{0}{nty/global//global/global}{3}
+\abx@aux@number{41}{Pythonlogo}{0}{nty/global//global/global}{4}
+\abx@aux@number{42}{OpenCVlogo}{0}{nty/global//global/global}{5}
+\abx@aux@number{43}{OpenCV1}{0}{nty/global//global/global}{6}
+\abx@aux@number{44}{Git1}{0}{nty/global//global/global}{7}
+\abx@aux@number{45}{cmake}{0}{nty/global//global/global}{8}
+\abx@aux@number{46}{Taster}{0}{nty/global//global/global}{9}
+\abx@aux@number{47}{fmea}{0}{nty/global//global/global}{10}
+\abx@aux@number{48}{python}{0}{nty/global//global/global}{11}
+\abx@aux@number{49}{MariaDB-Monitor}{0}{nty/global//global/global}{12}
+\abx@aux@number{50}{Risikoanalyse}{0}{nty/global//global/global}{13}
+\abx@aux@number{51}{opencv_library}{0}{nty/global//global/global}{14}
+\abx@aux@number{52}{timepackage}{0}{nty/global//global/global}{15}
+\abx@aux@number{53}{gpiomode}{0}{nty/global//global/global}{16}
+\abx@aux@number{54}{linx}{0}{nty/global//global/global}{17}
+\abx@aux@number{55}{Kazemi2014OneMF}{0}{nty/global//global/global}{18}
+\abx@aux@number{56}{dlib}{0}{nty/global//global/global}{19}
+\abx@aux@number{57}{pythonInfo}{0}{nty/global//global/global}{20}
+\abx@aux@number{58}{Linux_Betriebssystem}{0}{nty/global//global/global}{21}
+\abx@aux@number{59}{why_python}{0}{nty/global//global/global}{22}
+\abx@aux@number{60}{stepken1999mysql}{0}{nty/global//global/global}{23}
+\abx@aux@number{61}{terminator}{0}{nty/global//global/global}{24}
+\abx@aux@number{62}{rpigpio}{0}{nty/global//global/global}{25}
+\abx@aux@number{63}{Viola01robustreal-time}{0}{nty/global//global/global}{26}
+\abx@aux@number{64}{2019arXiv190710121V-scipy}{0}{nty/global//global/global}{27}
 \abx@aux@refcontextdefaultsdone
 \abx@aux@defaultrefcontext{0}{PDCA-Zyklus}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{MySQLlogo}{nty/global//global/global}
@@ -309,6 +334,6 @@
 \abx@aux@defaultrefcontext{0}{rpigpio}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Viola01robustreal-time}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{2019arXiv190710121V-scipy}{nty/global//global/global}
-\newlabel{LastPage}{{}{81}{}{page.81}{}}
-\xdef\lastpage@lastpage{81}
-\xdef\lastpage@lastpageHy{81}
+\newlabel{LastPage}{{}{93}{}{page.93}{}}
+\xdef\lastpage@lastpage{93}
+\xdef\lastpage@lastpageHy{93}

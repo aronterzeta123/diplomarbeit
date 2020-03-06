@@ -25,6 +25,8 @@
 \usepackage{ifthen} %ifthen
 \usepackage{float}
 \usepackage{listings}
+\usepackage{ragged2e}
+\usepackage{subfig}
 %Fußnoten forltaufend nummerieren
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
@@ -119,7 +121,6 @@
 \tableofcontents % Inhaltsverzeichnis
 
 
-
 \mainmatter
 %configure Header & Footer
 \fancypagestyle{empty}{
@@ -169,7 +170,6 @@
 \printbibliography[heading=subbibliography,title={Der ganze Rest},nottype=online,nottype=masterthesis,nottype=report,nottype=book,notkeyword=sekundaer]
 \clearpage
 \appendix
-\addtocontents{toc}{\protect\contentsline{chapter}{Appendix:}{}}
 \inputapp{10_allgemein}
 \inputapp{20_planung}
 %\inputapp{30_doku}
