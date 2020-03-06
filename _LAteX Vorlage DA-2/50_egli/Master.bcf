@@ -2195,10 +2195,12 @@
     <bcf:citekey order="11">Viola01robustreal-time</bcf:citekey>
     <bcf:citekey order="12">opencv_library</bcf:citekey>
     <bcf:citekey order="13">affine</bcf:citekey>
-    <bcf:citekey order="14">Kazemi2014OneMF</bcf:citekey>
+    <bcf:citekey order="14">imgprz</bcf:citekey>
     <bcf:citekey order="15">Kazemi2014OneMF</bcf:citekey>
     <bcf:citekey order="16">Kazemi2014OneMF</bcf:citekey>
-    <bcf:citekey order="17">fmea</bcf:citekey>
+    <bcf:citekey order="17">Kazemi2014OneMF</bcf:citekey>
+    <bcf:citekey order="18">Kazemi2014OneMF</bcf:citekey>
+    <bcf:citekey order="19">fmea</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
