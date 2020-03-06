@@ -59,6 +59,26 @@
       \verb https://opencv.org/
       \endverb
     \endentry
+    \entry{Fritzing}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://fritzing.org/learning/
+      \endverb
+      \verb{url}
+      \verb https://fritzing.org/learning/
+      \endverb
+    \endentry
+    \entry{geometrischesM}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://de.serlo.org/mathe/stochastik/daten-datendarstellung/daten-kenngroessen/geometrisches-mittel
+      \endverb
+      \verb{url}
+      \verb https://de.serlo.org/mathe/stochastik/daten-datendarstellung/daten-kenngroessen/geometrisches-mittel
+      \endverb
+    \endentry
     \entry{fmea}{misc}{}
       \field{sortinit}{5}
       \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
@@ -245,6 +265,18 @@
       \field{note}{[Online; accessed 2019]}
       \field{title}{{Differences Between Linux vs Windows}}
       \field{year}{2017}
+    \endentry
+    \entry{OpenCVR}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labeltitlesource}{title}
+      \field{title}{Einführung in Computer Vision mit OpenCV und Python}
+      \verb{urlraw}
+      \verb https://blog.codecentric.de/2017/06/einfuehrung-in-computer-vision-mit-opencv-und-python/
+      \endverb
+      \verb{url}
+      \verb https://blog.codecentric.de/2017/06/einfuehrung-in-computer-vision-mit-opencv-und-python/
+      \endverb
     \endentry
     \entry{OpenCV1}{online}{}
       \field{sortinit}{E}
@@ -730,10 +762,7 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Fritzing}
-  \missing{OpenCVR}
   \missing{affine}
-  \missing{geometrischesM}
 \endrefsection
 \endinput
 

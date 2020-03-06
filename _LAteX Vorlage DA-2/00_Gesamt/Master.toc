@@ -72,3 +72,9 @@
 \contentsline {section}{\numberline {7.4}Projektmanagement und Controlling}{65}{section.7.4}
 \contentsline {section}{\numberline {7.5}Ergebnisse}{66}{section.7.5}
 \contentsline {section}{\numberline {7.6}Was wurde gelernt und \textbf {welche Verbesserungs m\IeC {\"o}glichkeiten gibt es}}{67}{section.7.6}
+\contentsline {section}{\numberline {7.7}Ausblick}{69}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Wie geht es weiter ?}{69}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Was passiert mit dem Ergebnis?}{69}{subsection.7.7.2}
+\contentsline {subsection}{\numberline {7.7.3}was passiert mit dem Prototyp?}{69}{subsection.7.7.3}
+\contentsline {subsection}{\numberline {7.7.4}Gibt es Folgeprojekte?}{69}{subsection.7.7.4}
+\contentsline {subsection}{\numberline {7.7.5}Gibt es Interessanten?}{69}{subsection.7.7.5}
