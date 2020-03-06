@@ -1,58 +1,58 @@
 \chapter{\docname}
 % !TeX spellcheck = de_DE
 \label{\docname}
-Am Beginn wird eine allgemeinere Übersicht dieses Diplomarbeitskapitels gemacht bzw. dargestellt. Damit wird es verstanden, worum es überhaupt in diesem Teil geht.
+Am Beginn wird eine allgemeinere Übersicht dieses Diplomarbeitskapitels gemacht bzw. dargestellt. Damit wird es verstanden, worum es in diesem Teil geht.
 \section{Allgemeines}
 %In der heutigen Zeit ist die Technologie eines der wichtigsten Themen für die Welt. Mithilfe der Technologie hat die Menschheit wesentliche Fortschritte gemacht im Bereich der Lebensqualitätsverbesserung und -erleichterung. Mehr als jemals zuvor kommen intelligente Systeme zum Einsatz, die den Arbeitsaufwand und die Arbeitskomplexität reduzieren. Diese Systeme werden in den wichtigsten Bereiche des Lebens verwendet, wie zum Beispiel: Menschlichen Beziehungen, Business, Transport, Banken, Medizin, Bildung und Kommunikation. Selbstverständlich gibt es zahlreiche Versuche von verschiedenen Menschen, auf diesen Systemen zu zugreifen. Deshalb ist die Sicherheit in diesen Systemen eine der aktuellsten und wichtigsten Themen. Der unkontrollierte Zugriff auf solche wichtigen und delikaten Systeme würde zu fatalen Konsequenzen führen. Aus diesem Grund muss sehr genau und detailliert geplant werden, welche Sicherheit Strategien die klügsten bzw. die Besten sind.   
 
 %Das Hauptthema dieses Projekts ist genau die Sicherheit der Systeme, und zwar die Ermöglichung des kontrollierten Zugriffs von Menschen in verschiedenen Gebäuden. Es wurde die Verantwortlichkeit übernommen, der Zugriff in der Österreichischen Schule “Peter Mahringer” überwiesen und kontrolliert zu machen. Zu diesem Zweck wird in diesem Projekt ein intelligentes System entwickelt, dass die Aufgabe hat, menschliche Gesichter (Gesichtern von Schülern, Lehrern, Eltern usw.) zu registrieren und zu erkennen. Es wird höchstwahrscheinlich in der Schultür integriert, weil dort müssen alle Personen unbedingt vorbeigehen. Dieses Projekt wird eine große Hilfe für die Schule sein, aufgrund der von Kameras und komplexen Algorithmen angebotenen Möglichkeiten. Beispielweise wird es überprüft, ob die Person, die reinkommt ein Student oder Lehrer ist, oder es wird notiert, wer die Schule wann verlässt oder besucht. Hat eine Person kein Zugriff, wird sie nicht herein gelassen.
 
 %Um dieses Projekt zu realisieren, wird das Projekt in drei große und wichtige Teile zerlegt. Das erste Teil heißt Bildverarbeitung und hat die Aufgabe, Gesichtsbildern von der Kamera zu normalisieren und zu verarbeiten, damit sie in geeigneten Format für den Gesichtsvergleichung sind. Der zweite Teil beschäftigt sich mit der Registrierung der Gesichter von Personen am Server. Der dritte Teil ist die Gesichtserkennung. Hier geht es um die Erkennung der Gesichter der Benutzer des Systems. 
-Die Gesichtserkennung ist der Teil des Systems, mit dem ich mir beschäftige.
-Es wird durch einen Vergleich überprüft, ob die Person vorher schon registriert worden ist oder nicht, und ob sein Gesichtsdaten schon am Server existieren oder nicht. Nur wenn die Vergleichsergebnisse positiv sind, darf die Person rein kommen.
-Der Person werden die Ergebnisse durch Anzeigern kommuniziert. Dieses Teil des Projektes erfordert eine Arbeit mit Datenbanken, Gesichtsvergleichsalgorithmen und mit vielen System Tests. Teil meiner Aufgabe ist auch der Aufbau des Systems und alles was mit Hardware zu tun hat. Alle Hardware Komponenten werden in den folgenden Kapiteln klar, verständlich und deutlich erklärt. Eine grobe Skizze des Systems ist in Abb.\ref{fig:grobe_Skizze} zu sehen.
+Die Gesichtserkennung ist der Teil des Systems, mit dem ich mich beschäftige.
+Es wird durch einen Vergleich überprüft, ob die Person vorher schon registriert worden ist oder nicht, und ob sein Gesichtsdaten schon am Server existieren oder nicht. Nur wenn die Vergleichsergebnisse positiv sind, wird die Person erkannt.
+Der Person werden die Ergebnisse durch Anzeiger kommuniziert. Dieses Teil des Projektes erfordert eine Arbeit mit Datenbanken, Gesichtsvergleichsalgorithmen und mit vielen System Tests. Teil meiner Aufgabe ist auch der Aufbau des Systems und alles was mit Hardware zu tun hat. Alle Hardware Komponenten werden in den folgenden Kapiteln klar, verständlich und deutlich erklärt. Eine grobe Skizze des Systems ist in Abb.\ref{fig:grobe_Skizze} zu sehen.
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{\ordnerfigures Capture.png}
 	\caption{Grobe Skizze des Systems}
 	\label{fig:grobe_Skizze}
 \end{figure}
 \section{Technische Lösung}
-In diesem Section wird eine feinere und detaillierte Übersicht im Bezug auf der technischen Lösung gemacht. Alles was mit Technik zu tun hat, wird hier erklärt und umgefasst.
+In diesem Abschnitt wird eine feinere und detaillierte Übersicht im Bezug auf die technischen Lösung gegeben. Alles was mit Technik zu tun hat, wird hier erklärt.
 \subsection{Hardware und Aufbau}
-Als erstens wird der Aufbau des Systems beschrieben, zusammen mit allen verwendeten Komponenten, die zu verwenden sind. Ohne die Hardware würde nichts funktionieren, weil die Software ohne die Hardware einfach nicht funktionieren kann.
+Zuerst wird der Aufbau des Systems beschrieben, zusammen mit allen Komponenten, die zu verwenden sind. Ohne die Hardware würde nichts funktionieren, weil die Software ohne die Hardware nicht funktionieren kann.
 \subsubsection{Bauteile und HW-Komponenten}
-Die Bauteile, die für dieses System verwendet geworden sind, sind die folgende:
+Die Bauteile, die für dieses System verwendet worden sind, sind die folgende:
 \begin{enumerate}
 	\item \textit{Steckboard bzw. Steckplatine}\\ 
-	Die Steckplatine ist die wichtigste Komponente der Hardware unseres Systems. Sie wird für die Entstehung der elektrischen Verbindung von verschiedenen elektrischen Bauteile benötigt, um elektrische Schaltungen zu bauen oder um verschiedene Tests und Experimenten zu machen. In dieser Steckplatine werden alle anderen Komponenten platziert, damit die Verbindung erstellt werden kann und damit das System laufen kann.
+	Die Steckplatine ist eine Komponente der Hardware des Systems. Sie wird für die Entstehung der elektrischen Verbindung von verschiedenen elektrischen Bauteile benötigt, um elektrische Schaltungen zu bauen oder um verschiedene Tests und Experimenten zu machen. In dieser Steckplatine werden alle anderen Komponenten platziert, damit die Verbindung erstellt werden kann und damit das System laufen kann.
 	\item \textit{Kabel bzw. Leiter} \\
 	Damit die verschiedenen Komponenten, die in der Steckplatine platziert sind, miteinander verbunden werden können, braucht man unbedingt Kabel. Mithilfe von Kabeln können elektrische Impulse und Signale fließen, damit die Energie und die Information übertragen werden. Die verwendeten Kabel sind aus Kupfer und vom Typ Male-Male als auch vom Typ Male-Female. Die Kabeln vom Typ Male-Female werden verwendet, um die Verbindungen zwischen die Elemente in der Steckplatine und den Raspberry Pi zu ermöglichen. Auf der anderen Seite werden die Male-Male Kabeln verwendet um die Verbindungen innerhalb der Steckplatine zu ermöglichen.
 	\item \textit{LEDs}\footnote{Light Emitting Diode} \\
-	LEDs sind elektronische Halbleiter Elemente, die Licht produzieren können, wenn sie Spannung kriegen. Ein LED besteht aus zwei Beinen. Das längere Bein ist die Anode, die den Pluspol symbolisiert. Das andere Bein ist die Kathode, und symbolisiert den Minuspol. Durch die Beine wird der Kontakt mit der Steckplatine erstellt.
+	LEDs sind elektronische Halbleiter Elemente, die Licht produzieren können, wenn sie Spannung kriegen. Ein LED besteht aus zwei Beinen. Das längere Bein ist die Anode, die den Pluspol symbolisiert. Das andere Bein ist die Kathode, und symbolisiert den Minuspol. Durch die Beine wird der Kontakt mit der Steckplatine hergestellt.
 	\item \textit{Widerstand} \\
 	Ein Widerstand ist ein elektrisches Bauteil, das zur Reduzierung von Strom verwendet wird, damit ein Gleichgewicht zwischen Strom und Spannung gesichert werden kann. Die Einheit ist Ohm.
 	\item \textit{Taster} \\
-	Ein Taster wird wie ein Button gedrückt, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster vorhanden.\cite{Taster}
+	Ein Taster wird wie ein Schalter gedrückt, mit dem Zweck Impulse oder Signale zu schicken. Im Gegenteil zu einem Schalter wird der Taster nach der Betätigung  wieder in der Basiszustand zurückgestellt. Ein Plusleiter, Minusleiter und ein Datenleiter sind bei einem Taster vorhanden.\cite{Taster}
 	\item \textit{Raspberry Pi} \\
-	Raspberry Pi ist ein Minicomputer, der in diesem Projekt den normalen Computer ersetzt. Der verwendete Raspberry, Version 3, hat 4 USB-Anschlüsse, einem Netzteil, eine SD-Karte, 16 GPIO\footnote{Generated Input Output} Pins und einem VGA Schnittstelle. Die 3.-Bit SD-Karte ist das wichtigste Element, weil dort alle Daten und Informationen gespeichert sind.
+	Raspberry Pi ist ein Minicomputer, der in diesem Projekt den normalen Computer ersetzt. Der verwendete Raspberry, Version 3, hat 4 USB-Anschlüsse, einem Netzteil, eine SD-Karte, 16 GPIO\footnote{Generated Input Output} Pins und einem VGA Schnittstelle. Die 3.-Bit SD-Karte ist ein wichtiges Element, weil dort alle Daten und Informationen gespeichert sind.
 	\item \textit{Bildschirm} \\
 	Ein Bildschirm ist eine Anzeige, die für die visuelle Darstellung von verschiedenen Informationen oder Daten(wie Videos, Fotos, Statistiken usw.) verwendet wird. Ein Bildschirm wird zu den heutigen Zeiten sehr häufig verwendet, aufgrund der hohen Benutzerfreundlichkeit, die angeboten wird.
 	\item \textit{Tastatur} \\
-	Eine Tastatur ist ein Input Gerät, dass durch das Eindrücken von Tastern den Benutzer die Eingabe von Daten oder Befehle ermöglicht.
+	Eine Tastatur ist ein Input Gerät, dass durch das Drücken von Tastern den Benutzer die Eingabe von Daten oder Befehle ermöglicht.
 	\item \textit{Kamera} \\
-	Letztens werden 2 Kameras benötigt, die die Fotos der Gesichter der Personen machen werden. Sie werden auch im Raspberry integriert bzw. mit dem Raspberry verbunden. Die Kameras sind auf Typ Aukey.
+	Es werden 2 Kameras benötigt, die die Fotos der Gesichter der Personen machen. Sie werden auch im Raspberry integriert bzw. mit dem Raspberry verbunden. Die Kameras sind vom Typ Aukey.
 \end{enumerate}
 \subsubsection{Schaltplan und Erklärung des Aufbaus}
-Die Hardware Komponenten werden in einer Steckplatine platziert. Dort werden die Verbindungen mit den anderen Komponenten sowie mit dem Raspberry Pi erstellt. Die elektrische Schaltung wird durch einen Schaltplan beschrieben. Dieser Schaltplan wurde mit Hilfe eines Programms, das Fritzing heißt, erstellt und spielt eine sehr wichtige Rolle bei der Organisation und Planung des Schaltkreises. Der Schaltplan ist auf Abb.\ref{fig:Schaltplan} zu sehen.
+Die Hardware Komponenten werden in einer Steckplatine platziert. Dort werden die Verbindungen mit den anderen Komponenten sowie mit dem Raspberry Pi hergestellt. Die elektrische Schaltung wird durch einen Schaltplan beschrieben. Dieser Schaltplan wurde mit Hilfe eines Programms, ``Fritzing'', erstellt und spielt eine sehr wichtige Rolle bei der Organisation und Planung des Schaltkreises. Der Schaltplan ist auf Abb.\ref{fig:Schaltplan} zu sehen.
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{\ordnerfigures Schaltplan.png}
 	\caption{Schaltplan des Systems}
 	\label{fig:Schaltplan}
 \end{figure}
 Wie der Schaltplan zeigt, besteht das System aus zwei LEDs, zwei Tastern, einem Widerstand, eine Steckplatine und einem Raspberry Pi. Sehr wichtig für den Aufbau der Schaltung sind die GPIO Pins. Diese Pins sind in dem Raspberry Pi platziert und können als Input, als Output oder Spannung Pins verwendet werden. 
-Der erste Taster dient für die Gesichtsregistrierung und besteht aus einem Pluspol, einem Datenleiter und aus dem Minuspol. Der Pluspol Anschluss wird mittels Steckplatine mit dem 5-Volt Pin des Raspberry Pi verbunden, während der Minuspol Anschluss mit dem Minuspol der Steckplatine verbunden wird. Der Datenanschluss ist mit dem GPIO18 Pin verbunden. Wie bei dem Registrierungs-Taster wird auch bei dem Erkennungstaster\footnote{Auch als Login Taster genannt} der Minuspol Anschluss mit einem Pin des Minusbereichs der Steckplatine verbunden. Der Pluspol Anschluss gehört zu dem 5-Volt Pin des Raspberry PI, während der Datenanschluss mit dem GPIO17 Pin verbunden sind. Die rote LED wird verwendet wenn die Registrierung oder Erkennung der Benutzer im System nicht erfolgreich war. Das längere Bein(die Anode) wird mit dem GPIO23 Pin des Raspberry verbunden, während die Kathode mit dem Minuspol Bereich der Steckplatine verbunden wird. Die grüne LED ist eine RGB(Red Green Blue) LED. Diese LED kann die Farbe ändern, und wird im Fall einer erfolgreichen Registrierung oder Erkennung des Benutzers im System verwendet. Sie hat im Gegensatz zu der normalen LED 3 Anschlüsse. Der Minus Anschluss wird in dem Minuspol Bereich der Steckplatine eingeschlossen und der Pluspol Anschluss wird mit dem Pluspol Bereich der Steckplatine verbunden. Mit dem GPIO27 Pin des Raspberry wird der Datenanschluss verbunden. Die GPIO Pins sind extrem wichtig für die Integration der Tastern, LEDs und der anderen Bauteile in dem technischen und logischen Teil bzw. in der Software und in den verwendeten Skripten.	
+Der erste Taster dient für die Gesichtsregistrierung und besteht aus einem Pluspol, einem Datenleiter und aus dem Minuspol. Der Pluspol Anschluss wird mittels Steckplatine mit dem 5-Volt Pin des Raspberry Pi verbunden, während der Minuspol Anschluss mit dem Minuspol der Steckplatine verbunden wird. Der Datenanschluss ist mit dem GPIO18 Pin verbunden. Wie bei dem Registrierungs-Taster wird auch bei dem Erkennungstaster\footnote{Auch als Login Taster genannt} der Minuspol Anschluss mit einem Pin des Minusbereichs der Steckplatine verbunden. Der Pluspol Anschluss gehört zu dem 5-Volt Pin des Raspberry PI, während der Datenanschluss mit dem GPIO17 Pin verbunden ist. Die rote LED wird verwendet wenn die Registrierung oder Erkennung der Benutzer im System nicht erfolgreich war. Das längere Bein(die Anode) wird mit dem GPIO23 Pin des Raspberry verbunden, während die Kathode mit dem Minuspol Bereich der Steckplatine verbunden wird. Die grüne LED ist eine RGB(Red Green Blue) LED. Diese LED kann die Farbe ändern, und wird im Fall einer erfolgreichen Registrierung oder Erkennung des Benutzers im System verwendet. Sie hat im Gegensatz zu der normalen LED 3 Anschlüsse. Der Minus Anschluss wird in dem Minuspol Bereich der Steckplatine eingeschlossen und der Pluspol Anschluss wird mit dem Pluspol Bereich der Steckplatine verbunden. Mit dem GPIO27 Pin des Raspberry wird der Datenanschluss verbunden. Die GPIO Pins sind extrem wichtig für die Integration der Tastern, LEDs und der anderen Bauteile in dem technischen und logischen Teil bzw. in der Software und in den verwendeten Skripten.	
 \subsection{Software}
-Nachdem der Aufbau und die verwendete Hardware des Systems beschrieben wurden, ist die Software dran. In diesem Unterkapitel wird alles was mit der logische Teil der Umsetzung zu tun hat: das verwendete Betriebssysteme, Programmiersprachen, Frameworks, Technologien und Planungsmethoden. Es wird jede Aufgabe zusammen mit der zugehörigen Lösung im Detail beschrieben und jedes programmiertes Skript erklärt.
+Nachdem der Aufbau und die verwendete Hardware des Systems beschrieben wurden, wird nun die Software beschrieben. In diesem Unterkapitel wird alles was mit dem logische Teil der Umsetzung zu tun hat besprochen: das verwendete Betriebssysteme, Programmiersprachen, Frameworks, Technologien und Planungsmethoden. Es wird jede Aufgabe zusammen mit der zugehörigen Lösung im Detail beschrieben und jedes programmiertes Skript erklärt.
 \subsubsection{Verwendete Technologien}
 In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umsetzung 2 verschiedene Technologien verwendet, die in den anderen Teilen nicht oder anders verwendet sind.
 
@@ -94,7 +94,7 @@ In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umset
 	%	\item Raspberry Pi \\
 	%	Wie es vorher erwähnt wurde in dem Gesichtserkennung Teil des Projekts statt ein Computer ein Raspberry Pi verwendet. Was ein Raspberry Pi ist wurde in dem Kapitel 7.2.1 erklärt. Die wichtigsten Gründe dieser Wahl werden aber erst jetzt genannt. Der kleinere Platzbedarf und die hohe Flexibilität des Raspberry PI sind wesentliche Vorteile. Die Bestandteile bewegen sich nicht, und es gibt keinen Lärm. Was sehr beliebt ist, ist, dass der Raspberry PI gleichzeitig für die Hardware(GPIO PINS) und die Software(wie ein normaler Computer) verwendet werden kann. Er unterstützt Linux(Raspbian) sehr gut. Ein der wichtigsten Gründe dieser Wahl ist auch, dass im Fall eines Fehlers ein Raspberry PI sehr schnell und problemlos geändert oder repariert werden kann. (Gibt es ein Problem mit der SD-Karte, dann muss sie geändert werden, und dann kann die Hardware wieder ganz normal genutzt werden. Wenn es ein Hardware Problem gibt, dann muss die alte SD-Karte in eine neue SD-Karte kloniert werden und nur ein anderes Raspberry verwendet werden. Somit sind alle Daten gespeichert und es ist möglich, mit Hilfe des anderen Raspberry Pi, sie zuzugreifen)
 		\item Fritzing \\
-		Fritzing ist ein Programm das für die graphische Darstellung des Schaltkreises des Systems verwendet wurde. Durch dieses Programm wurde auch der Schaltplan des Systems erstellt(Abb.\ref{fig:Schaltplan}). Fritzing bietet eine sehr große Menge von elektronischen Komponenten und ein PCB, eine Steckplatine und einen Schematic View. In diesem Fall wurde die Breadboard View gewählt, weil dort alles übersichtlicher ist. Was noch gut ist, ist das Fritzing kostenlos im Linux angeboten wird, was für Windows nicht der Fall ist.\cite{Fritzing}
+		Fritzing ist ein Programm das für die graphische Darstellung des Schaltkreises des Systems verwendet wurde. Durch dieses Programm wurde auch der Schaltplan des Systems erstellt(Abb.\ref{fig:Schaltplan}). Fritzing bietet eine sehr große Menge von elektronischen Komponenten und ein PCB, eine Steckplatine und einen Schematic View. In diesem Fall wurde die Breadboard View gewählt, weil dort alles übersichtlicher ist. Was noch gut ist, ist das Fritzing kostenlos in Linux angeboten wird, was für Windows nicht der Fall ist.\cite{Fritzing}
 \end{itemize}	
 	%	\item MySQL und MariaDB \\
 	%	Um die Testdatenbanken zu erstellen und die Benutzerfotos und Benutzerdaten zu speichern, wurde die berühmteste Open-Source relationales Datenbank System, MySQL verwendet. Zusammen mit MySQL wurde auch die Pakete MariaDB auf dem System installiert, damit Python mit MySQL durch einer Schnittstelle verbunden wird. Mithilfe der MariaDB werden die ganzen Tabellen mit Daten gefüllt.
@@ -103,40 +103,29 @@ In diesem Teil des Projekts, das Gesichtserkennung heißt, werden für die Umset
 	%\begin{itemize}
 	%	\item Structed Software Design \\
 	%	Structed Software Design ist die Methode, die zur Planung des Systems verwendet wurde. Diese Software-Architektur ermöglicht den Entwurf, das Implementierungskonzept und das Integrationskonzept des Systems zu planen. Obwohl Structed Design großer Aufwand benötigt, hat diese Methode viele Vorteile, die bei der Wahl der Planungsmethode eine große Rolle gespielt haben: Structed Design verwendet Logik, ist von allem verstehbar, beschreibt alles ohne Abgrenzungen und ganz detailliert. Die wichtigsten Elemente die in der Structed Design beschrieben werden sind:
-		%\begin{itemize}
-		%	\item Bubbel \\
-		%	Die wichtigsten Arbeitsbereiche des Systems(Gesichtsregistrierung, Gesichtserkennung, Bildverarbeitung)
-		%	\item Schnittstellen \\
-		%	Sind die Interfaces, die die Verbindung zwischen die Bestandteile machen 
-		%	\item Nachrichten \\
-		%	Sind die geschickten Signale innerhalb des Systems.
-		%	\item Flüsse \\
-		%	Zeigen die Daten die innerhalb des Systems fließen.
-		%	\item Modulen \\
-		%	Bestandteil des Systems, das innerhalb liegt.
-		%	\item Terminatoren \\
-		%	Ähnlich mit der Modulen, aber befinden sich außerhalb des Systems und beeinflussen es von außen.
-		%	\item definierte Abgrenzungen \\
-		%	Mithilfe der Abgrenzungen wird vom Systemhersteller genau definiert, was er nicht machen wird, sei es auf Zeit-, Schwierigkeits-, oder Komplexitätsverbundende Gründe. Diese Abgrenzungen dienen dazu, dem Auftraggeber genau zu zeigen, was er erwarten kann, damit es keine Missverständnisse gibt.
+		%
 		%	\cite{StructedDesign}
 		%\end{itemize}
 	%\end{itemize}
 	%Mithilfe der Structed Software Design wurden das Big Picture des Systems zusammen mit seine notwendige Iterationen, die mehr an das Gesichtserkennungsteil konzentriert sind, erstellt. (1.Ebene des Gesichtserkennungsteils)
 \subsubsection{Lösungsweg- Beschreibung und Erklärung}
-Der Lösungsweg für die Umsetzung der Aufgaben der Gesichtserkennung ist streng mit einer guten vorherigen Planung verbunden. Deshalb wurde nicht nur das Big Picture(Großes Sicht des Systems nach Außen), die in die vorherigen Kapiteln beschrieben wurde erklärt, sondern auch die Erste Ebene des Gesichtserkennungsteils.
-Die Big Picture sieht man unter Abb.\ref{fig:Big Picture}
+Der Lösungsweg für die Umsetzung der Aufgaben der Gesichtserkennung ist streng mit der vorherigen Planung verbunden. Deshalb wurde nicht nur das Big Picture(Großes Sicht des Systems nach Außen), die in die vorherigen Kapiteln beschrieben wurde, erklärt, sondern auch die Erste Ebene des Gesichtserkennungsteils.
 
-\begin{figure}[H]
-	\includegraphics[width=\textwidth]{\ordnerfigures Big_Picture.jpg}
-	\caption{Big Picture}
-	\label{fig:Big Picture}
-\end{figure}	
-Die erste Ebene sieht man unter Abb.\ref{fig:Erste Ebene}. Sie ist ein detaillierte Version des Big Picture, das sich nur auf dem Erkennungsteil konzentriert. Man spricht von einer Iteration, die hier passiert ist.  Folgend wird es die Vorgehensweise und den Lösungsweg dieser Aufgabe mit Hilfe der 1.Ebene erklären und beschreiben.\\
+
+Die erste Ebene sieht man unter Abb.\ref{fig:Erste Ebene}. Sie ist ein detaillierte Version des Big Picture, das sich nur auf den Erkennungsteil konzentriert. Man spricht von einer Iteration, die hier passiert ist.  Folgend wird die Vorgehensweise und der Lösungsweg dieser Aufgabe mit Hilfe der 1.Ebene erklären und beschrieben.\\
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{\ordnerfigures diplom_11Ebene.png}
 	\caption{Erste Ebene}
 	\label{fig:Erste Ebene}
+\end{figure}
+
+Die wichtigste Elemente der ersten Ebene sind auf der Abbildung \ref{fig:Erklaerung_Erste_Ebene} erklärt: \\
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{\ordnerfigures Erklaerung_Erste_Ebene.png}
+	\caption{Erste Ebene Erklärung}
+	\label{fig:Erklaerung_Erste_Ebene}
 \end{figure}
 
 \textbf{Einzelne Arbeitsschritte des Erkennungsprozesses: }\\
@@ -148,102 +137,103 @@ In diesem Unterkapitel wird der Vergleich der Gesichter der Personen detailliert
 	\item \textit{Erkennungstaster wird gedr{\"u}ckt} \\
 	
 	Will der Benutzer sich im System einloggen, muss er zuerst den Erkennungstaster dr{\"u}cken. Wird dieser Taster gedr{\"u}ckt, dann kriegt der Benutzer eine Anmeldung, bei der er seine Emailadresse eingeben muss. Um diese Aufgabe zu erledigen, muss das Paket RPi.GPIO importiert werden. Auf diese Weise ist der Zugriff auf den GPIO Pins m{\"o}glich, damit der Taster Zustand, oder der LED Zustand erkannt werden. Das Paket mysqldb wird auch ben{\"o}tigt, um Zugriff auf die Datenbank zu haben.
-	\begin{lstlisting}
+	\begin{lstlisting}[language=Python]
 	if GPIO.input(17):
 	exec(open('Existiert_nExistiert.py').read()) 
 	\end{lstlisting} 
 %-----------------------------------------------------
 	\item \textit{Benutzer gibt seine Emailadresse ein} \\
 	
-Es ist wichtig zu erw{\"a}hnen, dass für die Umsetzung dieses Systems es notwendig ist, die verschiedenen Skripten miteinander zu verbinden.  Deshalb müssen sie innerhalb anderer Skripten angerufen werden. Das wird durch Variablen gemacht. Deshalb ist das Importieren des Pakets sys n{\"o}tig. Der Benutzer gibt seine Emailadresse an, die danach verwendet wird, um in der Datenbank schneller auf die Benutzerbilddaten zuzugreifen. Es wurde deshalb die Emailadresse(und nicht Vorname, Nachname usw.) gewählt, weil diese Adresse immer UNIQUE ist, das heißt, es ist unmöglich, dass zwei Benutzern dieselbe Adresse haben, und dasselbe kann für die andere Benutzerdaten(Vorname, Nachname usw.) nicht gesagt werden.
+Es ist wichtig zu erw{\"a}hnen, es dass für die Umsetzung dieses Systems notwendig ist, die verschiedenen Skripten miteinander zu verbinden.  Deshalb müssen sie innerhalb anderer Skripten angerufen werden. Das wird durch Variablen gemacht. Deshalb ist das Importieren des Pakets sys n{\"o}tig. Der Benutzer gibt seine Emailadresse an, die danach verwendet wird, um in der Datenbank schneller auf die Benutzerbilddaten zuzugreifen. Es wurde deshalb die Emailadresse(und nicht Vorname, Nachname usw.) gewählt, weil diese Adresse immer eindeutig ist, das heißt, es ist unmöglich, dass zwei Benutzern dieselbe Adresse haben, und dasselbe kann für die andere Benutzerdaten(Vorname, Nachname usw.) nicht gesagt werden.
 %-----------------------------------------------------
-\item \textit{Die Existenz derselben Emailadresse des Benutzers in der Datenbank wird geprüft} \\
-	\begin{lstlisting}
-		for x in myresult:
-		if x[2]==rei.emailiperkrahasim:
-		bool=True
-		else:
-		bool=False
-		os.system('./Log_Erkennung_Email_Nicht_Gefunden.py')
-	\end{lstlisting}
-Wie es vorher erwähnt wurde, ist dieser Schritt deswegen wichtig, weil falls die eingegebene Email nicht in der Datenbank existiert, muss das System die Bildvergleichung nicht machen. Der Benutzer kriegt stattdessen eine Anmeldung, die ihm sagt, dass er noch einmal versuchen kann, seine Emailadresse einzugeben. Wird diese neue Adresse auch nicht in der Datenbank gefunden, kann danach dieser Benutzer mit dieser Adresse im System nicht mehr versuchen anzumelden. 
+\item \textit{Die Existenz der eingegebenen Emailadresse des Benutzers in der Datenbank wird geprüft} \\
+\begin{lstlisting}[language=Python]
+for x in myresult:
+if x[2]==rei.emailiperkrahasim:
+bool=True
+else:
+bool=False
+os.system('./Log_Erkennung_Email_Nicht_Gefunden.py')
+\end{lstlisting}
+Wie es vorher erwähnt wurde, ist dieser Schritt deswegen wichtig, weil falls die eingegebene Email nicht in der Datenbank existiert, muss das System den Bildvergleich nicht machen. Der Benutzer kriegt stattdessen eine Anmeldung, die ihm sagt, dass er noch einmal versuchen kann seine Emailadresse einzugeben. Wird diese neue Adresse auch nicht in der Datenbank gefunden, kann danach dieser Benutzer mit dieser Adresse sich nicht mehr versuchen in System anzumelden. 
 %-----------------------------------------------------
 \item \textit{Bild wird gemacht und tempor{\"a}r gespeichert} \\
 
-Gleich nachdem der Benutzer sein Email eingegeben hat, macht die Kamera das Bild. Dieses Bild wird tempor{\"a}r gespeichert, weil es nach dem Vergleich mit dem Bild, das schon in der Datenbank liegt, nicht mehr benötigt wird. Sonst w{\"u}rde es extrem viele Bilderdaten in der Datenbank geben, die nur einmal verwendet werden. Stattdessen wird nur der Pfad des Bildes zusammen mit den extrahierten Punkten in der Datenbank gespeichert.
+Gleich nachdem der Benutzer sein Email eingegeben hat, macht die Kamera das Bild. Dieses Bild wird tempor{\"a}r gespeichert, weil es nach dem Vergleich mit dem Bild, das schon in der Datenbank liegt, nicht mehr benötigt wird. Sonst w{\"u}rde es extrem viele Bilddaten in der Datenbank geben, die nur einmal verwendet werden. Stattdessen wird nur der Pfad des Bildes zusammen mit den extrahierten Punkten in der Datenbank gespeichert.
 %-----------------------------------------------------
-	\item \textit{Gemachtes Bild wird gekroppt} \\
+	\item \textit{Gemachtes Bild wird zugeschnitten} \\
 	
-Das von der Kamera gemachtes Bild ist noch nicht bereit zum Vergleich. Um die Punkte richtige zu extrahieren, muss das Bild zuerst gekroppt bzw. geschnitten sein. Das heißt, die Dimensionen des Bildes werden reduziert, und somit werden die andere Objekten oder die andere Objekten nicht berücksichtigt(Sie würden die Performance der Vergleichsprozess sehr viel beeinflussen). Das Cropping des Bildes wurde mit Hilfe eines Programms, das Teil der Arbeit der Bildverarbeitungsgruppe ist. Wird das Bild gekroppt, wird es automatisch auch umbenannt. Das Bild nimmt der Schlüsselwort „New“+die Emailadresse der Person als Name. Der Datentyp ist .jpg .
+Das von der Kamera gemachtes Bild ist noch nicht bereit zum Vergleich. Um die Punkte richtige zu extrahieren, muss das Bild zuerst zugeschnitten werden. Das heißt, die Dimensionen des Bildes werden reduziert, und somit werden die andere Objekten auf dem Bild nicht berücksichtigt(Sie würden die Performance der Vergleichsprozess negativ beeinflussen). Das Zuschneiden des Bildes wurde mit Hilfe eines Programms, das Teil der Arbeit der Bildverarbeitungsgruppe ist, gemacht. Wird das Bild zugeschnitten, wird es automatisch auch umbenannt. Das Bild nimmt das Schlüsselwort „New“+die Emailadresse der Person als Name. Der Datentyp ist .jpg .
 %-----------------------------------------------------
 	\item \textit{Die Gesichtspunkte werden extrahiert} \\
 	
-Das gekroppte Bild des Gesichts der Person besteht aus verschiedene Punkte. Insgesamt sind 68 Gesichtspunkte. Alle diese Punkte müssen für den Vergleichsprozess extrahiert werden. Das heißt, jeder Punkt muss ein X und ein Y Wert haben. Diese Koordinaten müssen ermittelt werden. Diese ist auch eine Aufgabe der Bildverarbeitungsbranche, und ist extrem wesentlich für die Kontinuität der Erkennungsprozess.
+Das zugeschnittene Bild des Gesichts der Person besteht aus verschiedene Punkte. Insgesamt sind es 68 Gesichtspunkte. Alle diese Punkte müssen für den Vergleichsprozess extrahiert werden. Das heißt, jeder Punkt muss ein X und ein Y Wert haben. Diese Koordinaten müssen ermittelt werden. Dies ist auch eine Aufgabe der Bildverarbeitungsbranche, und ist extrem wesentlich für das Funktionieren des Erkennungsprozesses.
 %-----------------------------------------------------
 	\item \textit{Wird dieselbe Emailadresse in der Datenbank gefunden, werden die zugehörige Bildinformationen geladen} \\
 	
-	Falls aber die vom Benutzer eingegebene Emailadresse schon in der Datenbank liegt, weißt das System Bescheid, dass ein Bilderdatenvergleich stattfinden muss. Um das zu erreichen, werden alle Bildinformationen geladen. Unter Bildinformationen sind die 68 extrahierten Gesichtspunkte, zu verstehen. Der kurze Codeabschnitt unten zeigt genau wie dies funktioniert. \\
+	Falls aber die vom Benutzer eingegebene Emailadresse schon in der Datenbank liegt, weißt das System Bescheid, dass ein Bilderdatenvergleich stattfinden muss. Um das zu erreichen, werden alle Bildinformationen geladen. Unter Bildinformationen sind die 68 extrahierten Gesichtspunkte zu verstehen. Der kurze Codeabschnitt unten zeigt genau wie dies funktioniert: \\
 	
-	\begin{lstlisting}
-		if b=="existiert":
-		mycursor.execute(
-		"""select * from info i \
-		join person p \
-		on i.idP=p.idP \
-		where p.email='%s';"""%var1)
-		myresult=mycursor.fetchall()
-		for x in myresult:
-		print(x)
-	\end{lstlisting}
+\begin{lstlisting}[language=Python]
+if b=="existiert":
+mycursor.execute(
+"""select * from info i \
+join person p \
+on i.idP=p.idP \
+where p.email='%s';"""%var1)
+myresult=mycursor.fetchall()
+for x in myresult:
+print(x)
+\end{lstlisting}
 	
-	Das heißt, die extrahierte Punkte des von der Kamera gemachten Bildes und die extrahierte Punkte, die in der Datenbank gespeichert waren und die dem Person mit dieselbe Emailadresse wie die vom Benutzer eingegebene Adresse gehören , stehen jetzt endlich zur Verfügung. Von hier wird es angenommen, dass die eingegebene Emailadresse mit mindestens eine in der Datenbank Emailadresse gleich ist, damit der Vergleich Prozess erklärt werden kann.
+	Das heißt, die extrahierte Punkte des von der Kamera gemachten Bildes und die extrahierte Punkte, die in der Datenbank gespeichert sind und die den Person mit derselbe Emailadresse wie die vom Benutzer eingegebene Adresse gehören , stehen jetzt endlich zur Verfügung. Ab hier wird angenommen, dass die eingegebene Emailadresse mit mindestens einer in der Datenbank vorhandenen Emailadresse gleich ist, damit der Vergleichsprozess erklärt werden kann.
 %-----------------------------------------------------
 	\item \textit{Die extrahierten Punkte werden in 5 verschiedene Bereiche geteilt} \\
 	
-	Bevor der Vergleichsprozess beginnt, müssen die 68 extrahierten Punkte geteilt werden. Die 5 großen Bereiche sind das Gesicht, die Nase, die rechte Auge, der linke Auge und der Mund. Jeder Bereich hat seine eigenen Punkte. Die erste 28 Punkte gehören dem Gesicht, die nächste 9 gehören der Nase, die nächste 6 dem rechten Auge, die nächste 6 dem linken Auge und die letzte 19 gehören dem Mund. Durch dieser Prozess wird der Vergleichs Qualität sehr stark erhöht, weil die Punkte der Nase werden genau mit der Punkte der anderen Nase verglichen, und nicht mit die von dem Augen beispielsweise. \\
-	Die untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird(nur um eine Idee zu haben, wie es funktioniert)\\
-	
-\begin{lstlisting}
+	Bevor der Vergleichsprozess beginnt, müssen die 68 extrahierten Punkte geteilt werden. Die 5 großen Bereiche sind das Gesicht, die Nase, das rechte Auge, das linke Auge und der Mund. Jeder Bereich hat seine eigenen Punkte. Die erste 28 Punkte gehören dem Gesicht, die nächste 9 gehören der Nase, die nächste 6 dem rechten Auge, die nächste 6 dem linken Auge und die letzte 19 gehören dem Mund. Durch dieser Prozess wird die Vergleichsqualität stark erhöht, weil die Punkte der Nase werden genau mit der Punkte der anderen Nase verglichen, und nicht mit dem von dem Augen beispielsweise. \\
+	Der untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird(nur um eine Idee zu haben, wie es funktioniert):\\
+
+\begin{lstlisting}[language=Python]
 for pika in range(0,27):
-	dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * 
-	abs( (vleratx.item(pika)-float(res[vx])) ) + ( 
-	abs((vleraty.item(pika)-float(res[vy]))) *
-	abs((vleraty.item(pika)-float(res[vy])) ) ))
+ dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx]))))* 
+ abs( (vleratx.item(pika)-float(res[vx])) ) + ( 
+ abs((vleraty.item(pika)-float(res[vy])))*
+ abs((vleraty.item(pika)-float(res[vy])) ) ))
 \end{lstlisting}
+
 %-----------------------------------------------------
 	\item \textit{Die Bildinformationen der beiden Bilder werden verglichen} \\
 	
-Die wichtigste Aufgabe ist der Vergleich der Bildinformationen. Es werden die extrahierten Gesichtspunkte der bereits gemachten Bilder mit der Gesichtspunkte in der Datenbank verglichen. Selbstverständlich müssen wie es vorher erwähnt wurde die beiden Personen, deren Gesichtspunkte verglichen werden dieselbe Emailadresse haben. Das wichtigste Paket, Open CV, wird für diesen Vergleich ben{\"o}tigt. Nachdem dieses Paket importiert wurde, kann der Vergleich beginnen. Es gibt verschiedene Schritte, die man erfolgen muss, und die nach unten erklärt werden:
+Die wichtigste Aufgabe ist der Vergleich der Bildinformationen. Es werden die extrahierten Gesichtspunkte der bereits gemachten Bilder mit der Gesichtspunkte in der Datenbank verglichen. Selbstverständlich müssen wie es vorher erwähnt wurde die beiden Personen, deren Gesichtspunkte verglichen werden dieselbe Emailadresse haben. Das wichtigste Paket, Open CV, wird für diesen Vergleich ben{\"o}tigt. Nachdem dieses Paket importiert wurde, kann der Vergleich beginnen. Es gibt verschiedene Schritte, die erfolgen, und die nun erklärt werden:
 \begin{itemize}
 	\item Startpunkt bzw. Origin wird festgelegt \\
 	
-	In jedes Gesichtsbild wird ein Startpunkt bzw. Origin für den Vergleich festgelegt. Dieser Punkt ist der Punkt mit der Koordinaten (0/0). Es wurde so gedacht, dass der Abstand von jedem anderem Gesichtspunkt mit diesem Origin kalkuliert wurde. Dieser Abstand wird dann mit dem Abstand der Origin des zweiten Bildes und sein anderer Punkt. Die zwei Punkte, dessen Abstand mit den jeweiligen Startpunkten der Bilder kalkuliert ist, müssen miteinander einpassen(zum Beispiel ein Punkt der rechten Augen im ersten Bild muss mit dem zugehörigen Punkt in dem zweiten Bild verglichen werden, und nicht mit einem Punkt von den Augen).
-	\item Die Abstände jedes anderen Punktes des gemachten Bildes von der Startpunkt werden kalkuliert \\
+	In jeden Gesichtsbild wird ein Startpunkt bzw. eine Origin für den Vergleich festgelegt. Dieser Punkt ist der Punkt mit der Koordinaten (0/0). Es wird der Abstand von jedem anderen Gesichtspunkt zu dieser Origin berechnet. Dieser Abstand wird dann mit dem entsprechenden Abstand des zweiten Bildes verglichen. Diese Abstände müssen miteinander übereinstimmen(zum Beispiel ein Punkt vom rechten Augen im ersten Bild muss mit dem zugehörigen Punkt im zweiten Bild verglichen werden, und nicht mit einem Punkt von dem Augen in ersten Bild).
+	\item Die Abstände jedes anderen Punktes des gemachten Bildes vom Startpunkt werden berechnet. \\
 	Nachdem der Startpunkt festgelegt wurde, beginnt der Vergleich der Abstände des gemachten Bildes(Punkt-Startpunkt) und der Abstände, die in der Datenbank gespeichert sind.
 	
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{\ordnerfigures Vergleichsweg.png}
-		\caption{Vergleichsweg}
+		\caption{Vergleichsmethode zweier Punkte}
 		\label{fig:Vergleichsweg}
 	\end{figure}
 	
-	Auf Abbildung \ref{fig:Vergleichsweg} wird die verwendete Vergleichsmethode dargestellt. Der Startpunkt hat die Koordinaten (0/0) und befindet sich links oben. Jeder Punkt hat seine bestimmten Koordinaten, zum Beispiel, der Punkt 36 des ersten Bildes hat die Koordinaten x1 und y1, und die 36.Punkt des anderen Bildes hat die Koordinaten x2 und y2. Um den Abstand des Punkt 36 zu berechnen, wird die pythagoreische Formel verwendet. Die Differenz der x-Koordinaten und die Differenz der beiden y-Koordinaten sind die beide Katheten(a und b auf die Abbildung). Um die Hypotenuse zu finden wird das Quadrat beider Katheten addiert, und am Ende wird die Wurzel des Ergebnisses gefunden. Die gerechnete Zahl ist der Abstand der Punkt 36 von dem Startpunkt. Dieselbe Methode wird für jeder Punkt verwendet.
-	Das obige Beispiel verglich die Abstände der Punkte von 2 verschiedenen Bilder. Der Grund war folgendes, dass der Weg der Vergleich zwischen der Punkte Abstände des gemachten Bildes und der in der Datenbank gespeicherten Punkte Abstände genau gleich wie im Beispiel erklärt wurde ist. Es ist einfach leichter erklärbar und verstehbar, wenn 2 Bildern vergleicht wurden. 
-	Die Abstände jeder Punkt jeder Bereich wurde in einer Variable gespeichert.\\
+	Auf Abbildung \ref{fig:Vergleichsweg} wird die verwendete Vergleichsmethode dargestellt. Der Startpunkt hat die Koordinaten (0/0) und befindet sich links oben. Jeder Punkt hat seine bestimmten Koordinaten, zum Beispiel, der Punkt 36 des ersten Bildes hat die Koordinaten x1 und y1, und den 36.Punkt des anderen Bildes hat die Koordinaten x2 und y2. Um den Abstand des Punkt 36 zu berechnen, wird die pythagoreische Formel verwendet. Die Differenz der x-Koordinaten und die Differenz der beiden y-Koordinaten sind die beide Katheten(a und b auf der Abbildung). Um die Hypotenuse zu finden wird das Quadrat beider Katheten addiert, und am Ende wird die Wurzel des Ergebnisses berechnet. Das Ergebnis ist der Abstand des Punktes 36 vom Startpunkt. Dieselbe Methode wird für jeder Punkt verwendet.
+	Das obige Beispiel vergleicht die Abstände der Punkte von 2 verschiedenen Bildern. Das Vergleichsprinzip ist dasselbe wie bei dem Vergleich der Punkteabstände des gemachten Bildes und der in der Datenbank gespeicherten Punkteabstände. Es ist einfach leichter erklärbar und verstehbar, wenn 2 Bildern vergleicht wurden. 
+	Die Abstände aller Punkt aller Bereiche wurde in einer Variable gespeichert.\\
 	
-	\item Es wird der maximale Abstand für jeder einzelne Bereich gefunden \\
+	\item Es wird der maximale Abstand für jeden einzelnen Bereich berechnet \\
 	
-	Nachdem die nach oben erwähnte und erklärte Abstände kalkuliert wurden, wurden die maximalen Abstände für jeder Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund) benötigt. Diese Maximumwerte sind wesentlich für den Vergleich. Warum das so ist wird später erklärt. \\
-	Die untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird \\
+	Nachdem die oben erklärten Abstände kalkuliert wurden, wird der maximale Abstand für jeden Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund) benötigt. Diese Maximumwerte sind wesentlich für den Vergleich. Warum das so ist wird später erklärt. \\
+	Der untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte implementiert ist: \\
 	
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 MAX = [0,0,0,0,0]
 for pika in range(0,27):
-dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * 
+dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx]))))* 
 abs((vleratx.item(pika)-float(res[vx])) ) + ( 
-abs((vleraty.item(pika)-float(res[vy]))) * 
+abs((vleraty.item(pika)-float(res[vy])))* 
 abs((vleraty.item(pika)-float(res[vy])) ) ))
 if(dis < min):
 	min = dis
@@ -257,14 +247,14 @@ max=0.0
 dis=0
 \end{lstlisting}
 	
-	Zuerst wurde eine Array Max erstellt, der 5 Elementen enthält. Jedes Element gehört einem von den 5 Bereichen. Beispielsweise der Maximumwert an der Stelle 0(erste Element) ist die Maximumabstand, das bei der Gesichtsbereich gefunden war. Die Funktion Max in Python verwendet. Jeder Abstand wird mit der Maxwert verglichen(Maxwert beginnt am Anfang bei 0). Ist es größer, dann wird dieser Abstand der neue Maximumwert. Am Ende wird einen Maximumwert ermittelt.
+	Zuerst wurde eine Array MAX erstellt, die 5 Elemente enthält. Jedes Element gehört zu einem der 5 Bereiche. Beispielsweise der Maximumwert an der Stelle 0(erste Element) ist der Maximumabstand, der bei dem Gesichtsbereich gefunden wurde. Die Funktion Max in Python, die den größte Wert automatisch findet, wurde verwendet. Jeder Abstand wird mit dem Maximumwert verglichen(Maxwert beginnt am Anfang bei 0). Ist er größer, dann wird dieser Abstand der neue Maximumwert. So wird der Maximumwert ermittelt.
 	
-	\item Es wird das geometrische Mittel der Abstände aller Bereiche kalkuliert \\
+	\item Es wird das geometrische Mittel der Abstände aller Bereiche berechnet \\
 	
 	"Das geometrische Mittel der Abstände aller Punkte (nicht in einzelnen Bereichen) ist auch wichtig für den Vergleich. Es gibt 68 Gesichtspunkten insgesamt, das heißt, 68 Abstände von dem Startpunkt. 
 	Um das geometrische Mittel von n Zahlen x1,x2,…xn zu ermitteln, muss man deren Produkt bilden und von diesem die n-te Wurzel ziehen."\cite{geometrischesM}\\
 	
-	Auf Abbildung \ref{fig:geometrischesM} wird das Formel, das sich ergibt gezeigt:
+	Auf Abbildung \ref{fig:geometrischesM} wird die Formel, die sich ergibt gezeigt:
 	
 	\begin{figure}[H]
 		\centering
@@ -273,13 +263,13 @@ dis=0
 		\label{fig:geometrischesM}
 	\end{figure}
 
-	Die untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte programmiert wird(nur um eine Idee zu haben, wie es funktioniert)\\
+	Der untere Codeabschnitt zeigt wie dieser Schritt für die ersten 27 Punkte implementiert ist(nur um eine Idee zu haben, wie es funktioniert):\\
 	
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 for pika in range(0,27):
-dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx])))) * abs( 
+dis=math.sqrt(abs(( (vleratx.item(pika)-float(res[vx]))))* abs( 
 (vleratx.item(pika)-float(res[vx])) ) + ( 
-abs((vleraty.item(pika)-float(res[vy]))) * 
+abs((vleraty.item(pika)-float(res[vy])))* 
 abs((vleraty.item(pika)-float(res[vy])) ) ))
 gm *= dis
 vx+=2
@@ -290,16 +280,16 @@ gm=1
 dis=0
 \end{lstlisting}
 	
-	\item Die ermittelte Maximumwerte und die geometrischen Mittel der Abstände der Punkte des gemachten Bildes werden mit der Maximumwerte und die geometrische Mitteln Abstände der in der Datenbank gespeicherten Punkte verglichen \\
+	\item Die ermittelte Maximumwerte und die geometrischen Mittel der Abstände der Punkte des gemachten Bildes werden mit der Maximumwerten und den geometrische Mitteln der Abstände der, in der Datenbank, gespeicherten Punkte verglichen \\
 	
 	\begin{enumerate}
 		\item Beschreibung \\
 		
-		Wenn die angesprochene Maximumwerte und die geometrische Mitteln der Abstände der Punkte des gemachten Bildes und die geometrische Mitteln Abstände des in der Datenbank gespeicherten Punkte gleich oder sehr ähnlich sind, dann wird es von dem selber Person gesprochen und die Erkennung muss erfolgreich sein. Deshalb werden einige Abgrenzungen bestimmt, wann die Erkennung als erfolgreich benannt wird und wann nicht.
+		Wenn die angesprochene Maximumwerte und die geometrische Mitteln der Abstände der Punkte des gemachten Bildes und die geometrische Mitteln Abstände des in der Datenbank gespeicherten Punkte gleich oder sehr ähnlich sind, dann wird von der selben Person gesprochen und die Erkennung ist erfolgreich. Deshalb werden einige Abgrenzungen bestimmt, wann die Erkennung als erfolgreich gemacht wird und wann nicht.
 		
 		\item Mögliche Fälle \\
 		
-		Insgesamt gibt es 5 Bedingungen bzw. 5 Fälle, die eintreten können und die wichtig sind. Ist einer dieser fünf Bedingungen wahr, ist die Erkennung nicht erfolgreich und es wird nicht von derselben Person gesprochen. Diese Fälle werden nach unten mit Hilfe von Bildern erklärt. Es werden die Maximumwerten jeder Bereich(Gesicht, Nase, linke Auge, rechte Auge, Mund, also 5 insgesamt), sowie der geometrische Mittel aller 68 Punkten berücksichtigt.
+		Insgesamt gibt es 5 Bedingungen bzw. 5 Fälle, die eintreten können und die wichtig sind. Diese Bedingungen wurden mit Hilfe des vielen gemachten Tests, darüber später gesprochen wird, bestimmt. Ist einer dieser fünf Bedingungen wahr, ist die Erkennung nicht erfolgreich und es wird nicht von derselben Person gesprochen. Diese Fälle werden unten mit Hilfe von Bildern erklärt. Es werden die Maximumwerten jeder Bereiche(Gesicht, Nase, linke Auge, rechte Auge, Mund, also 5 insgesamt), sowie das geometrische Mittel aller 68 Punkten berücksichtigt.
 		
 		\begin{enumerate}
 			\item 1.Fall: Mindestens 2 Maximumwerte sind größer als 0.06 \\
@@ -311,45 +301,45 @@ dis=0
 				\label{fig:1_Fall}
 			\end{figure}
 			
-			Sind 2 oder mehrere Maximumwerte größer als 0.06, wird das geometrische Mittel beobachtet. Ist das größer als 0.01, stimmt die Erkennung nicht. Wenn weniger als 2 Werte größer als 0.06 sind, muss auch das geometrische Mittel kleiner als 0.027 sein, um eine erfolgreiche Erkennung zu haben. \\
+			Sind 2 oder mehrere Maximumwerte größer als 0.06, wird das geometrische Mittel betrachtet. Ist der Wert größer als 0.01, gibt es keine Übereinstimmung. Wenn weniger als 2 Werte größer als 0.06 sind, muss auch das geometrische Mittel kleiner als 0.027 sein, um eine erfolgreiche Erkennung zu haben. \\
 			
 			Auf Abbildung \ref{fig:1_Fall} ist ein Flussdiagramm dargestellt, das die Abfolge dieser Bedingung beschreibt.\\
 			
-			Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+			Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 			
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 global count
 count = 0
 for i in range(0,len(MAX)):
-	if MAX[i] > 0.06:
-		count+=1
-		status1=True
-		status11=True
-		status2=True
-		status22=True
+if MAX[i] > 0.06:
+count+=1
+status1=True
+status11=True
+status2=True
+status22=True
 				
 #Wenn JA: Nur wenn gmT kleiner als 0.01 sind sie richtig,
- sonst FALSCH
-	if count ==1:
-		global status11
-		status11=False
-	if count >= 2:
-		global status22
-	status22=False
-	if gmT > 0.01:
-	global status1
-	status1 = False
+sonst FALSCH
+if count ==1:
+global status11
+status11=False
+if count >= 2:
+global status22
+status22=False
+if gmT > 0.01:
+global status1
+status1 = False
 				
 #Wenn NEIN: gmT muss kleiner als 0.027 sein,
 			um RICHTIG zu sein
-	else:
-		if gmT > 0.027:
-			global status2
-			status2 = False
+else:
+if gmT > 0.027:
+global status2
+status2 = False
 \end{lstlisting}
 	
 			
-			\item 2.Fall: Genau einen Maximumwert ist größer als 0.07 und kleiner als 0.084 \\
+			\item 2.Fall: Genau einen Maximumwert größer als 0.07 ist und kleiner als 0.084 \\
 			
 				\begin{figure}[H]
 				\centering
@@ -358,32 +348,32 @@ for i in range(0,len(MAX)):
 				\label{fig:2_Fall}
 			\end{figure}
 			
-			Stimmt dieser Bedienung, wird es wieder überprüft, ob das geometrische Mittel kleiner als 0.027 ist oder nicht. Wenn ja, dann ist die Erkennung erfolgreich. Ist aber dieser Bedienung wahr für mehr als einen Wert, ist der Vergleich gleich als nicht erfolgreich genommen. \\
+			Stimmt dieser Bedienung, wird wieder überprüft, ob das geometrische Mittel kleiner als 0.027 ist oder nicht. Wenn ja, dann gibt es keine Übereinstimmung. Ist aber dieser Bedienung wahr für mehr als einen Wert, gibt es keine Übereinstimmung. \\
 			
 			Auf Abbildung \ref{fig:2_Fall} ist ein Flussdiagramm dargestellt, das die Abfolge dieser Bedingung beschreibt.\\
 			
-			Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+			Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 			
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 count = 0
 for i in range(0,len(MAX)):
-	if MAX[i] > 0.07 and MAX[i]< 0.084:
-		count+=1
-		status3=True
-		status33=True
-		status4=True
+if MAX[i] > 0.07 and MAX[i]< 0.084:
+count+=1
+status3=True
+status33=True
+status4=True
 #Wenn JA :Wenn gmT kleiner als 0.027 ist passt, 
-		sonst FALSCH
-	if count == 1:
-		global status33
-		status33=False
-	if gmT > 0.027:
-		global status3
-		status3 = False
+sonst FALSCH
+if count == 1:
+global status33
+status33=False
+if gmT > 0.027:
+global status3
+status3 = False
 #Wenn 2 oder mehr: FALSCH
-	elif count > 1:
-		global status4
-		status4 = False
+elif count > 1:
+global status4
+status4 = False
 \end{lstlisting}
 			
 			\item 3.Fall: Mindestens einen Maximumwert ist größer als 0.084 \\
@@ -399,122 +389,125 @@ for i in range(0,len(MAX)):
 			
 			Auf Abbildung \ref{fig:3_Fall} ist ein Flussdiagramm dargestellt, das die Abfolge dieser Bedingung beschreibt.\\
 			
-			Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+			Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 			
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 for i in range(0,len(MAX)):
-	if MAX[i] > 0.084:
-		count+=1
-		status5=True
+if MAX[i] > 0.084:
+count+=1
+status5=True
 #Wenn JA: FALSCH
-	if count >=1:
-		global status5
-		status5=False
+if count >=1:
+global status5
+status5=False
 \end{lstlisting}
 			
 		\end{enumerate} 
 	
 		\item Andere Abgrenzungen und Entscheidungen \\
 		
-		Treffen eine von die 2 untere Kombinationen zu, ist weitere Überprüfung (geometrisches Mittel) nicht mehr nötig und die Erkennung ist nicht erfolgreich.
+		Trifft eine von diesen 2 unterstehenden Kombinationen zu, ist weitere Überprüfung (geometrisches Mittel) nicht mehr nötig und es gibt keine Übereinstimmung.
 		\begin{enumerate}
 			\item 1 Maximumwert größer als 0.06 und 1 Maximumwert größer als 0.07 \\
 			\item 2 Maximumwerte größer als 0.06 und 1 Maximumwert größer als 0.07 \\
 		\end{enumerate}
 	
-		Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+		Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 	
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 if status1==False or status2==False 
 or status3==False or status4==False 
 or status5==False or
- (status11==False and status33==False) 
+(status11==False and status33==False) 
 or (status22==False and status33==False):
-	print("Vergleich nicht erfolgreich, 
-	sie sind nicht eingeloggt!!!")
-	os.system
-	('./Log_Erkennung_Person_Existiert_Nicht.py')
+print("Vergleich nicht erfolgreich, 
+sie sind nicht eingeloggt!!!")
+os.system
+('./Log_Erkennung_Person_Existiert_Nicht.py')
 \end{lstlisting}
 		
 	\end{enumerate}
 %----------------------------------------------------
-\item \textit{Ist die Erkennung erfolgreich, kriegt der Benutzer eine Anmeldung, die ihm informiert, dass er im System erfolgreich angemeldet ist.} \\
+\item \textit{Ist die Erkennung erfolgreich, kriegt der Benutzer eine Information, dass er im System erfolgreich angemeldet ist.} \\
 
-Wenn keinen Fall bzw. Bedienung zutrifft, ist die Erkennung erfolgreich. Der Benutzer kriegt danach eine Anmeldung, die ihm Bescheid gibt, dass die Anmeldung erfolgreich war und dass er weitermachen darf. Dazu wurde ein gelbes LED verwendet, das leuchten wird. \\
+Wenn keinen Fall bzw. Bedienung zutrifft, ist die Authentifizierung erfolgreich. Der Benutzer kriegt danach eine Information, die ihm Bescheid gibt, dass die Authentifizierung erfolgreich war und dass er weitermachen darf. Dazu wurde eine gelbe LED verwendet, die leuchtet. \\	
 
-Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich:\\
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 else:
-	b="existiert"
-	print("Vergleich erfolgreich, Sie sind eingeloggt!!!")
-	os.system('./Log_Erkennung_Person_Existiert.py')
+b="existiert"
+print("Vergleich erfolgreich, Sie sind eingeloggt!!!")
+os.system('./Log_Erkennung_Person_Existiert.py')
 \end{lstlisting}
 
 \end{itemize}
 \end{enumerate}
 \subsubsection{Andere wichtige Punkte und Abgrenzungen}
 
-Es gibt auch einige Punkte, die erwähnt werden müssen, und die zur Verwendung des Systems wesentlich zu wissen sind:
+Es gibt auch einige Punkte, die erwähnt werden müssen, und die zur Verwendung des Systems wesentlich sind:
 
 \begin{enumerate}
 	\item Distanz der Benutzer von der Kamera \\
 	
-	Damit der Vergleich und die Erkennung der Gesichter erfolgreich und je genau wie möglich sind, wurde eine Distanz, dass der Benutzer von der Kamera erhalten muss. Diese Distanz ist 1 Meter, und dem Benutzer wird das durch einer Linie auf dem Boden gezeigt.
-	\item Nicht gefundene bzw. unbekannte Emailadresse eingegeben \\
+	Damit der Vergleich und die Erkennung der Gesichter erfolgreich und so genau wie möglich sind, gibt es eine Distanz, die der Benutzer von der Kamera stehen muss. Diese Distanz ist 1 Meter, dem Benutzer wird das durch einer Linie auf dem Boden angezeigt.
+	\item Unbekannte Emailadresse eingegeben \\
 	
-	Wenn der Benutzer nach dem Drucken des Tasters eine falsche Emailadresse eingibt, wird er eine Anmeldung kriegen, die ihm informiert, dass er eine zweite Chance kriegen wird, die richtige Emailadresse einzugeben(Vielleicht hat er zum Beispiel ein Fehler beim Eintippen gemacht). Ist die Adresse noch immer unbekannt oder inkorrekt, beginnt der Vergleichsprozess nicht und der Benutzer kann sich nicht anmelden.
-	\item Kein eindeutiges Gesicht von der Kamera nach der Bildaufnahme gefunden bzw. detektiert \\
+	Wenn der Benutzer nach dem Drücken des Tasters eine falsche Emailadresse eingibt, wird er informiert, dass er eine zweite Chance bekommen wird, die richtige Emailadresse einzugeben(Vielleicht hat er zum Beispiel ein Fehler beim Eintippen gemacht). Ist die Adresse noch immer unbekannt oder inkorrekt, beginnt der Vergleichsprozess nicht und der Benutzer kann sich nicht anmelden.
 	
-	Wenn nach der Bildaufnahme kein eindeutiges Gesicht detektiert wird, wird ein zweites Bild gemacht. Der Benutzer wird durch einer Anmeldung erinnert, dass er gerade und in der Linie stehen muss.
-	\item Mehrere Gesichter von der Kamera nach der Bildaufnahme gefunden bzw. detektiert \\
+	\item Kein eindeutiges Gesicht von der Kamera nach der Bildaufnahme gefunden \\
 	
-	Wenn nach der Bildaufnahme mehrere Gesichter detektiert werden, wird wieder ein zweites Bild gemacht. Werden wieder mehrere Gesichter detektiert, kann das System nicht überprüfen, ob der Benutzer anmelden darf oder nicht (Nicht Ziel).
-	\item Die Erkennung stimmt nicht, Benutzer vom System nicht erkannt \\
+	Wenn nach der Bildaufnahme kein eindeutiges Gesicht erkannt wird, wird ein zweites Bild gemacht. Der Benutzer wird durch eine Meldung erinnert, dass er gerade und an der Linie stehen muss.
 	
-	Ist die Erkennung nicht erfolgreich, wird ein rotes LED leuchten und der Benutzer versteht, dass er nicht anmelden darf. Er kann aber alles nochmals probieren(Erkennungstaster drücken usw. …), oder er kann sich zuerst registrieren.
+	\item Mehrere Gesichter von der Kamera nach der Bildaufnahme gefunden \\
+	
+	Wenn nach der Bildaufnahme mehrere Gesichter erkannt werden, wird wieder ein zweites Bild gemacht. Werden wieder mehrere Gesichter erkannt, kann das System nicht überprüfen, ob such der Benutzer anmelden darf oder nicht (Nicht Ziel).
+	
+	\item Benutzer vom System nicht erkannt \\
+	
+	Ist die Authentifizierung nicht erfolgreich, leuchtet eine rote LED um den Benutzer zu zeigen, dass er sich nicht anmelden darf. Er kann aber alles nochmals probieren(Erkennungstaster drücken usw. …), oder er kann sich registrieren.
 	\item Verarbeitungszeit des Systems \\
 	
-	Jedes intelligente System braucht einer Verarbeitungszeit. Der Erkennungsprozess braucht ungefähr 7 bis 8 Sekunden Zeit. Das ist aber auch von der Geschwindigkeit des Benutzers abhängig.
+	Jedes intelligente System braucht einer Verarbeitungszeit. Der Erkennungsprozess braucht ungefähr 7 bis 8 Sekunden. Das ist aber auch von der Geschwindigkeit des Benutzers abhängig.
 \end{enumerate}
 \subsubsection{Das Testen}
-Eine der wichtigsten Arbeitspakete des Erkennungsteils war das Testen des Vergleichsverfahrens. Um die Vergleichsbedingungen und Begrenzungen, die nach oben erwähnt wurden, zu finden und zu bestimmen, war es wesentlich und extrem notwendig, viele Tests zu machen. Zuerst hat der Prozess des Testens mit verschiedene Bilder einer Person begonnen. Danach wurden verschieden Personen verwendet, um eine Toleranz zu finden, die in der Bedienungen verwendet sein kann. Nachdem die Gesichtspunkte von 2 Bilder getestet und verglichen waren, sind die Ergebnisse auch mit den in der Datenbank gespeicherten Punkten getestet. Am Ende des Testens sind die vorher erklärte Bedienungen definiert und formuliert.\\
+Eine der wichtigsten Arbeitspakete des Erkennungsteils war das Testen des Vergleichsverfahrens. Um die Vergleichsbedingungen und Begrenzungen, die weiter oben erwähnt wurden, zu finden und zu bestimmen, war es wesentlich und extrem notwendig, viele Tests zu machen. Zuerst hat der Prozess des Testens mit verschiedene Bilder einer Person begonnen. Danach wurden verschieden Personen verwendet, um eine Toleranz zu finden, die in der Bedienungen verwendet werden kann. Nachdem die Gesichtspunkte von 2 Bilder getestet und verglichen waren, sind die Ergebnisse auch mit den in der Datenbank gespeicherten Punkten getestet werden. Am Ende des Testens sind die vorher erklärte Bedingungen definiert und formuliert.\\
 
 \subsubsection{Das Logging}
-Jedes große System braucht Logging. Mit Hilfe einer Logdatei (englisch: log file) können alle oder bestimmte Aktionen von Prozessen auf einem Computersystem automatisch protokolliert. Das heißt, diese Logdatei kann vom Benutzer verwendet werden, um Fehleranmeldungen zu kriegen, um den Fehlerart zu verstehen, um den Zeitpunkt verschiedener wichtiger Ereignissen zu wissen und vieles mehr. Alle diese Vorteile und Merkmale der Logging waren mehr als genug zum entschieden, dass die Protokollierung der Ereignisse des Systems eine wichtige Ziel sein wird. Das war der Grund, warum das Gesichtserkennungsteil auch protokolliert wurde.\\
+Jedes große System braucht Logging. Mit Hilfe einer Logdatei (englisch: log file) können alle oder bestimmte Aktionen von Prozessen auf einem Computersystem automatisch protokolliert werden. Das heißt, diese Logdatei kann vom Benutzer verwendet werden, um Fehlermeldungen zu erhalten, um den Fehler zu verstehen, um den Zeitpunkt verschiedener wichtiger Ereignissen zu erfahren und vieles mehr. Alle diese Vorteile und Merkmale des Logging waren mehr als genug zum entscheiden, dass die Protokollierung der Ereignisse des Systems ein wichtiges Ziel sind. Das war der Grund, warum der Gesichtserkennungsteil auch protokolliert.\\
 Es wurden die wichtigsten Ereignisse mitprotokolliert:
 \begin{enumerate}
 	\item Der Zeitpunkt, wann der Erkennungstaster gedrückt wurde \\
 	
-	Es ist sehr wichtig für die Admins des Systems zu wissen, wann der Erkennungstaster gedrückt wurde, bzw. wann die Gesichtserkennungsprozess beginnt. Diese Zeit kann darum verwendet werden, um die totales Dauer der Erkennungsprozess zu bestimmen.
+	Es ist sehr wichtig für die Admins des Systems zu wissen, wann der Erkennungstaster gedrückt wurde, bzw. wann die Gesichtserkennungsprozess beginnt. Diese Zeit kann dafür verwendet werden, um die totales Dauer des Erkennungsprozesses zu bestimmen.
 	
-	\item Der Zeitpunkt, wann der Benutzer erfolgreich angemeldet war: \\
+	\item Der Zeitpunkt, wann der Benutzer erfolgreich angemeldet war \\
 	
-	Dieser Ereignis ist der wichtigste von allem, weil es der Schlusspunkt des Erkennungsteils ist. Es kann auch als Beweis verwendet werden, dass der Benutzer im System schon registriert war.
+	Dieses Ereignis ist ein sehr wichtiges, weil es der Schlusspunkt des Erkennungsteils ist. Es kann auch als Beweis verwendet werden, dass der Benutzer im System schon registriert war.
 	
-	\item Der Zeitpunkt, wann der Benutzer nicht erfolgreich angemeldet war \\
+	\item Der Zeitpunkt, wann der Benutzer sich nicht erfolgreich anmeldet \\
 	
-	Wie vorher erwähnt war, ist eine Log-Datei eine sehr gute Methode, wichtige Fehlermeldungen sehr schnell zu kriegen. In diesem Fall wird es gespeichert, wann der Benutzer nicht erfolgreich angemeldet war.
+	Wie vorher erwähnt, ist eine Log-Datei eine sehr gute Methode, wichtige Fehlermeldungen sehr schnell zu erhalten. In diesem Fall wird gespeichert, wann der Benutzer sich nicht erfolgreich anmeldet.
 	
-	\item Der Zeitpunkt, wann die eingegebene Emailadresse in der Datenbank nicht steht, das heißt Email existiert nicht \\
+	\item Der Zeitpunkt, wann die eingegebene Emailadresse in der Datenbank nicht gefunden wird \\
 	
-	Gibt der Benutzer eine falsche oder eine nicht existierende Emailadresse ein, wird dieses Ereignis sicherlich geloggt. Das ist extrem wichtig für die Admins, weil ohne eine vom Benutzer eingegebene Emailadresse, die in der Datenbank schon existiert, beginnt die Vergleichsprozess für die Erkennung gar nicht. In diesem Weg wissen die Admins, wo der Fehler ist, und der Benutzer wird daran informiert.
+	Gibt der Benutzer eine falsche oder eine nicht existierende Emailadresse ein, wird dieses Ereignis geloggt. Das ist extrem wichtig für die Administratoren, weil ohne eine vom Benutzer eingegebene Emailadresse, die in der Datenbank schon existiert, beginnt die Vergleichsprozess für die Erkennung gar nicht. Auf diesem Weg wissen die Administratoren, wo der Fehler ist, und der Benutzer wird darüber informiert.
 \end{enumerate}
 \textbf{Wie wurde das Logging gemacht?}\\
-Das Logging der Gesichtserkennungsprozess war nicht sehr komplex in Python. Es gab eine Tabelle in der Datenbank, die für dieser Funktion geeignet war. In dieser Tabelle wurden alle Informationen, die protokolliert werden müssen, gespeichert. Mit Hilfe einer Python Skript wurde dann die Verbindung aller Skripten, die die notwendige Informationen erhaltenen mit dieser Log Tabelle, die in der Datenbank liegt, gemacht. Es wurde danach ein Programm für jeder Ereignis, der nach oben erwähnt war, gemacht. Diese Programme ermöglichten die Verbindung mit der Datenbank, und zeigten eine Anmeldung. Beispielweise wurde es in der Datenbank notiert, dass es ein Problem bei Gesichtserkennung gab(Taster nicht gedrückt..). In das Hauptskript wurden dann diese einzelnen Programme gerufen. Für diese Programme wurde die Klasse %$LogDBHandler verwendet. Der Log_Level ist Debug. 
+Das Logging des Gesichtserkennungsprozesses war nicht sehr komplex in Python. Es gab eine Tabelle in der Datenbank, die für dieser Funktion geeignet war. In dieser Tabelle wurden alle Informationen, die protokolliert werden müssen, gespeichert. Mit Hilfe einer Python Skript wurde dann die Verbindung aller Skripten, die die notwendige Informationen senden mit dieser Log Tabelle, die in der Datenbank liegt, gemacht. Es wurde danach ein Programm für jeder Ereignis, das oben erwähnt war, erzeugt. Diese Programme ermöglichten die Verbindung mit der Datenbank, und zeigten eine Anmeldung. Beispielweise wurde in der Datenbank notiert, dass es ein Problem bei Gesichtserkennung gab(Taster nicht gedrückt..). In der Hauptskript wurde dann dieses einzelne Programm aufgerufen.
 
-Nach unten ist die Codeabschnitt, die wie das funktioniert zeigt, ersichtlich.\\
+Unten ist der Codeabschnitt, der zeigt wie das funktioniert, ersichtlich.\\
 
 Der Taster wird gedrückt: \\
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 	if GPIO.input(17):
 	os.system('./Log_Erkennung_TasterGed.py')
 \end{lstlisting}
 
 Zeitpunkt wird gespeichert: \\
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 logging.basicConfig(filename=log_file_path)
 if(log_to_db):
 logging.getLogger('').addHandler(logdb)
@@ -525,25 +518,25 @@ log.error('This event occurred: %s' % test_var)
 \end{lstlisting}
 
 	\section{Herausforderungen, Probleme, und deren Lösung}
-	W{\"a}hrend dieser Arbeit musste man mit einigen Problemen und Herausforderungen konfrontiert werden.
+	W{\"a}hrend dieser Arbeit musste man einigen Problemen und Herausforderungen lösen.
 	\begin{itemize}
 		\item \textit{OpenCV Installation}\\
 		
-		Die gr{\"o}ßte Probleme hat es bei der Installation von OpenCV gegeben. Diese Installation hat sehr lang gedauert und es war sehr schwer zu bestimmen, welche Paketen ausgelassen werden sollten und welche nicht. Dieses Problem wurde nach vielen Tests gel{\"o}st, durch das Kopieren von einer anderen SD-Karte, auf der OpenCV bereits installiert war. CMake und Make waren sehr wichtige Pakete, mit denen diese Aufgabe erledigt war.
+		Die gr{\"o}ßten Probleme hat es bei der Installation von OpenCV gegeben. Diese Installation hat sehr lang gedauert und es war sehr schwer zu bestimmen, welche Paketen ausgelassen werden sollten und welche nicht. Dieses Problem wurde nach vielen Tests gel{\"o}st, durch das Kopieren von einer anderen SD-Karte, auf der OpenCV bereits installiert war. CMake und Make waren sehr wichtige Pakete, mit denen diese Aufgabe erledigt wurde.
 		\item \textit{Fritzing} \\
 		
-		Das Problem beim Fritzing war folgendes, dass jedes Mal wenn das Programm beendet wurde, konnte es nicht mehr ge{\"o}ffnet werden. Es fehlten entweder die Pfaden oder die Bauteile, die f{\"u}r um die Schaltung zu bauen notwendig waren. Die L{\"o}sung war eigentlich sehr leicht. Das Programm wurde komplett gel{\"o}scht und dann wieder im System installiert, und danach wurde die ganze Schaltung gemacht, ohne das Programm zu beenden. Sonst wären dieselben Probleme wieder aufgetreten.
+		Das Problem beim Fritzing war, dass jedes Mal wenn das Programm beendet wurde, es nicht mehr ge{\"o}ffnet werden konnte. Es fehlten entweder die Pfaden oder die Bauteile, die f{\"u}r  die Schaltung notwendig waren. Die L{\"o}sung war eigentlich sehr leicht. Das Programm wurde komplett gel{\"o}scht und dann wieder im System installiert, und danach wurde die ganze Schaltung gemacht, ohne das Programm zu beenden. Sonst wären dieselben Probleme wieder aufgetreten.
 		\item \textit{Kurzschluss beim Raspberry Pi}\\
 		
-		Was noch passiert ist, ist das es beim Anfassen vom Raspberry PI ein Kurzschluss gab. Der Raspberry PI war kaputt und musste ersetzt werden. Glücklicherweise konnte die SD-Karte erfolgreich in kloniert werden und deshalb sind alle Daten und Informationen gespeichert.
+		Was noch passiert ist, ist das es beim Anfassen vom Raspberry PI einen Kurzschluss gab. Der Raspberry PI war kaputt und musste ersetzt werden. Glücklicherweise konnte die SD-Karte erfolgreich in kopiert werden und deshalb sind alle Daten und Informationen gespeichert.
 		
-		\item \textit{Pakete FaceRecognition Installation} \\
+		\item \textit{Paket FaceRecognition Installation} \\
 		
-		Die Installation des Paketes FaceRecognition konnte nicht erfolgreich gemacht werden, weil die dlib Pakete auch gebraucht wird. Wahrscheinlich aufgrund des zu geringen RAMs kann diese Pakete nicht installiert werden. Dieses Problem wurde noch nicht gel{\"o}st.
+		Die Installation des Paketes FaceRecognition konnte nicht erfolgreich gemacht werden, weil die dlib Pakete auch gebraucht wurden. Wahrscheinlich aufgrund des zu geringen RAMs kann diese Pakete nicht installiert werden. Dieses Problem wurde noch nicht gel{\"o}st.
 		
 		\item \textit{Probleme bei der Aufruf der Skripten } \\
 		
-		Am Beginn war das Umgehen mit der Skripten Aufrufe sehr schwer. Es war schwer zu verstehen wie das genau funktionierte, weil die große Variablenanzahl die Arbeit kompliziert machte. Dieser Anzahl wurde reduziert und es wurden viele Recherchen an der korrekten Verwendung von der sys Pakete gemacht um das Problem zu l{\"o}sen.
+		Am Beginn war das Umgehen mit dem Aufruf der Skripten sehr schwer. Es war schwer zu verstehen wie das genau funktionierte, weil die große Variablenanzahl die Arbeit kompliziert machte. Dieser Anzahl wurde reduziert und es wurden viele Recherchen über die korrekten Verwendung des \textit{sys} Paketes gemacht um das Problem zu l{\"o}sen.
 		
 		\item Schlechtere Vergleichsqualität \\
 		
@@ -551,115 +544,109 @@ log.error('This event occurred: %s' % test_var)
 		
 		\item Probleme bei Einteilung der Gesichtspunkte in 5 Bereichen \\
 		
-		Der Prozess der Einteilung der Gesichtspunkte in dem verschiedenen Bereiche war auch schwierig. Ein großes Array mit 68 Elementen erstellt. Es war sehr kompliziert, in dem Index diesem Array zu zugreifen. Deshalb wurde dieses große Array in 5 kleinere Arrays zerlegt. In dieser Weise war es viel leichter zu verstehen, wie die Indexe funktionierten und wie man dort Zugriff haben kann.
+		Der Prozess der Einteilung der Gesichtspunkte in dem verschiedenen Bereiche war auch schwierig. Ein großes Array mit 68 Elementen wurde verwendet. Es war sehr kompliziert, auf einem Index dieses Array zu zugreifen. Deshalb wurde dieses große Array in 5 kleinere Arrays zerlegt. Auf diese Weise war es viel leichter zu verstehen, wie die Indizien funktionieren und wie man dort zugreifen kann.
 		
 		\item Probleme bei der Berechnung des geometrischen Mittels \\
 		
-		Die Berechnung des geometrischen Mittels war auch nicht leicht. Nachdem die Formel gefunden war, musste es in dem Programm integriert werden. Die Schwierigkeit war bei dem Ziehen von der N-Wurzel. Sollte das n 67 oder 68 sein? Das war von dem Index abhängig. Am Ende wurde verstanden, dass das Produkt aller Abstände hoch 1/68, das richtige Ergebnis war.
+		Die Berechnung des geometrischen Mittels war auch nicht leicht. Nachdem die Formel gefunden war, musste es in dem Programm integriert werden. Die Schwierigkeit war bei dem Ziehen von der N-Wurzel. Sollte das n 67 oder 68 sein? Das war von dem Index abhängig. Am Ende wurde verstanden, dass das Produkt aller Abstände hoch 1/68, die richtige Lösung ist.
 		
 		\item Probleme mit der Datenbank \\
 		
-		Probleme hat es noch beim Zugriff auf der in der Datenbank gespeicherten Gesichtspunkte gegeben. Es war sehr kompliziert zu verstehen, wie und wo waren die Punkte genau gespeichert(Auf welchem Index die X-Werte, auf welchem die Y-Werte). Es wurde deshalb Hilfe von dem Mitarbeiter, der sich mit der Datenbank beschäftigt hätte, gebraucht, und danach war alles klarer und verstehbar.
+		Probleme hat es noch beim Zugriff auf der in der Datenbank gespeicherten Gesichtspunkte gegeben. Es war sehr kompliziert zu verstehen, wie und wo  die Punkte genau gespeichert waren(Auf welchem Index die X-Werte, auf welchem die Y-Werte). Es wurde deshalb Hilfe von dem Mitarbeiter, der sich mit der Datenbank beschäftigt hätte, gebraucht, und danach war alles klarer und verständlich.
 		
 		\item Probleme mit GIT \\
 		
-		Letztens müssen die Probleme mit Git erwähnt werden. Es gab viele Fälle, wo es Konflikten mit der Dateien gibt. Man muss immer zuerst Pull machen, und danach Push. Das hat aber oft nicht passiert. Es wurde in einer Datei arbeitet, die aber von einem anderen Person schon geändert war. Deshalb gab es Probleme bei der Push. Oft mussten die ganze Dateien gelöscht werden, und danach wieder vom Git abgeholt. Es wurde am Ende zwischen der Gruppe darüber gesprochen, und endlich war das Problem gelöst.
+		Am Ende müssen die Probleme mit Git erwähnt werden. Es gab viele Fälle, wo es Konflikten mit der Dateien gab. Man muss immer zuerst Pull machen, und danach Push. Das ist aber oft nicht passiert. Es wurde in einer Datei gearbeitet, die aber von einem anderen Person schon geändert wurde. Deshalb gab es Probleme bei den Push. Oft mussten die ganze Dateien gelöscht werden, und danach wieder vom Git geholt werden. Es wurde am Ende zwischen der Gruppe darüber gesprochen und das Problem gelöst.
 	\end{itemize}
 
 	\section{Projektmanagement und Controlling}
-	In Bezug auf Projektmanagement und Controlling wurde die Methode des Fehlerbaums verwendet. Diese ist eine ber{\"u}hmte Methode um die Aufwandsch{\"a}tzung zu kalkulieren und um eine Fehlerursache zu finden. Es wird das Problem in kleinen Teilen geschnitten damit es klarer wird. 
+	In Bezug auf Projektmanagement und Controlling wurde die Methode des Fehlerbaums verwendet. Diese ist eine ber{\"u}hmte Methode um die Aufwandsch{\"a}tzung zu kalkulieren und um eine Fehlerursache zu finden. Es wird das Problem in kleinen Teile geschnitten damit es klarer wird. 
 	\begin{figure}		
 		\includegraphics[width=\textwidth]{\ordnerfigures Fehlerbaum.png}
 		\caption{Fehlerbaum}
 		\label{fig:Fehlerbaum}
 	\end{figure}
-	Es wurde eine detaillierte Soll-Ist Analyse gemacht, die bei der neuen Aufgabeteilung sehr geholfen hat, und eine Fehlerbaumanalyse.\\
+	Es wurde eine detaillierte Soll-Ist Analyse gemacht, die bei der neuen Aufgabeteilung sehr geholfen hat, und eine Fehlerbaumanalyse zu erstellen.\\
 	
-	Die Fehlerbaumanalyse wird verwendet, um die Zuverlässigkeit von technischen Systemen zu testen. Die Fehlerbaumanalyse nimmt als Ausgangspunkt – im Gegensatz zur FMEA – nicht eine einzelne Systemkomponente, sondern das potenziell gestörte Gesamtsystem. Die Fehlerbaumanalyse baut auf der sogenannten negativen Logik auf. Das heißt, der Fehlerbaum beschreibt eine Ausfallsfunktion die bei dem Zustand logisch-1 einen Ausfall ausdrückt, bei logisch-0 liegt ein funktionsfähiges System vor.
-	Sie gehört zu den "Top-Down"-Analyseformen im Risikomanagement. In einem ersten Schritt wird daher das Gesamtsystem detailliert und exakt beschrieben. Darauf aufbauend wird analysiert, welche primären Störungen eine Störung des Gesamtsystems verursachen oder dazu beitragen können. Ausgangspunkt ist hierbei zunächst ein einziges unerwünschtes Ereignis, welches an der Spitze des Fehlerbaums steht, das sogenannte Top-Ereignis. Das Top-Ereignis resultiert in der Regel aus einer Risikoanalyse bzw. Szenarioanalyse.
+	Die Fehlerbaumanalyse wird verwendet, um die Zuverlässigkeit von technischen Systemen zu testen. Die Fehlerbaumanalyse nimmt als Ausgangspunkt nicht eine einzelne Systemkomponente, sondern das potenziell gestörte Gesamtsystem. Die Fehlerbaumanalyse baut auf der sogenannten negativen Logik auf. Das heißt, der Fehlerbaum beschreibt eine Ausfallsfunktion die bei dem Zustand logisch-1 einen Ausfall ausdrückt, bei logisch-0 liegt ein funktionsfähiges System vor.
+	Sie gehört zu den ``Top-Down''- Analyseformen im Risikomanagement. In einem ersten Schritt wird daher das Gesamtsystem detailliert und exakt beschrieben. Darauf aufbauend wird analysiert, welche primären Störungen eine Störung des Gesamtsystems verursachen oder dazu beitragen können. Ausgangspunkt ist hierbei zunächst ein einziges unerwünschtes Ereignis, welches an der Spitze des Fehlerbaums steht, das sogenannte Top-Ereignis. Das Top-Ereignis resultiert in der Regel aus einer Risikoanalyse bzw. Szenarioanalyse.
 	In der einfachsten Form besteht er aus folgenden Elementen: Entscheidungsknoten (E), die Entscheidungen kennzeichnen, Zufallsknoten, die den Eintritt eines zufälligen Ereignisses darstellen sowie aus Ergebnisknoten (R), die das Ergebnis von Entscheidungen oder Ereignissen darstellen.
 	
-	Auf der Abbildung \ref{fig:Fehlerbaum} wird ein Fehler in der Gesichtserkennung Teil des Systems beschrieben. Zuerst muss es überprüft werden, ob der Fehlern bei der Hardware oder Software liegt.\\
+	Auf der Abbildung \ref{fig:Fehlerbaum} wird ein Fehler in den Gesichtserkennungsteil des Systems beschrieben. Zuerst muss es überprüft werden, ob der Fehlern bei der Hardware oder Software liegt.\\
 	
-	Hardware Problem?\\
-	Ist es ein Problem in Hardware, wird der Raspberry Pi und die Steckboard getestet. Beim Raspberry kann es entweder Probleme mit dem SD-Karte oder mit der GPIO Pins geben. Bei der Steckboard sind entweder die Kabeln und die Verbindungen falsch eingesteckt, oder sind die Bauteile kaputt(Taster, Widerstand, LED, Kamera).\\
+	\textit{Hardware Problem}\\
+	Ist es ein Problem in Hardware, wird der Raspberry Pi und die Steckboard getestet. Beim Raspberry kann es entweder Probleme mit dem SD-Karte oder mit der GPIO Pins geben. Bei dem Steckboard sind entweder die Kabel und die Verbindungen falsch eingesteckt, oder die Bauteile sind kaputt(Taster, Widerstand, LED, Kamera).\\
 	
-	Software Problem?\\
-	Wenn es ein Softwareproblem ist, sind entweder die Versionen vermischt(Problem mit GIT), oder gibt es Programmierfehlern. Diese Programmierfehlern können beim Logik(Algorithmen) oder beim Syntax auftreten(Skripten Aufruf, Variablen usw.)
+	\textit{Software Problem}\\
+	Wenn es ein Softwareproblem ist, sind entweder die Versionen vermischt(Problem mit GIT), oder es gibt Programmierfehlern. Diese Programmierfehlern können bei der Logik(Algorithmen) oder bei der Syntax auftreten(Skripten Aufruf, Variablen usw.)
 	
 	\section{Ergebnisse}
-	Die finale Ergebnisse sind die folgenden:\\
+	Die finale Ergebnisse sind die folgende:\\
 	\begin{enumerate}
 		\item Systemaufbau \\
-		Das ganze System wurde zusammen mit der ganzen Hardware aufgebaut.
+		Das ganze System wurde zusammen mit der Hardware aufgebaut.
 		\item Digitale Darstellung des Systemaufbaus\\
 		Der Schaltplan des Systems wurde durch Fritzing digital dargestellt.
 		\item Erkennung der Gesichter \\
-		Es wurde eine Gesichtserkennung erreicht, die 80 Prozent der Fälle funktionieren wird.
+		Es wurde eine Gesichtserkennung erreicht, die in 80 Prozent der Fälle funktioniert.
 		\item Aufnahme der Benutzer Gesichtsdaten mithilfe der Emailadresse\\
 		Gibt der Benutzer seine Emailadresse ein, werden die zugehörigen Gesichtsdaten von der Datenbank geladen, um den Vergleich zu machen.
 	\end{enumerate}
 
-\section{Was wurde gelernt und welche Verbesserungsmöglichkeiten gibt es}
+\section{Was wurde gelernt und 
+\textbf{welche
+	 Verbesserungs
+	 möglichkeiten gibt es}}
 
-Während dieser Diplomarbeit war vieles wichtiges gelernt und verstanden. Die wichtigsten Lektionen werden nach unten genannt und erklärt.\\
+Während dieser Diplomarbeit wurde viele wichtiges gelernt und verstanden. Die wichtigsten Lektionen werden unten genannt und erklärt.\\
 \begin{itemize}
 	\item Zeitmanagement \\
 	
-	Die Wichtigkeit der Zeit wurde wirklich verstanden. Man hatte nicht mehr die Möglichkeit, Dinge immer für das letzte Moment zu lassen, weil es einfach zu viel ist. Ohne ein detailliertes Zeitplan und ohne eine systematische Arbeit wurde dieses Projekt nicht fertig gemacht.
+	Die Wichtigkeit der Zeit wurde wirklich verstanden. Man hatte nicht mehr die Möglichkeit, Dinge immer für den letzte Moment zu lassen, weil es einfach zu viel ist. Ohne einen detaillierten Zeitplan und ohne eine systematische Arbeit würde dieses Projekt nicht fertig sein.
 	
-	\item Eingehen mit OpenCV und arbeiten mit Bilderdaten\\
+	\item Wie man mit OpenCV und mit Bilderdaten arbeitet\\
 	
-	Es wurde gelernt, wie man überhaupt mit Bildinformationen arbeitet, und wie das wichtige Paket OpenCV funktioniert. In der Zukunft wenn es um arbeiten mit Bilderdaten geht, ist das Basiswissen schon da.
+	Es wurde gelernt, wie man überhaupt mit Bildinformationen arbeitet, und wie das Paket OpenCV funktioniert. In Zukunft wenn es um Arbeiten mit Bilderdaten geht, ist das Basiswissen vorhanden.
 	
 	\item Wichtigkeit des Testens des Systems\\
 	
-	Wie wichtig der Testen Prozess ist wurde auch hier verstanden. Vorher wurde es gedacht, dass das Testen des Systems nur eine zusätzliche und unwichtige Arbeit ist. Es war aber nur mit Hilfe des Testens möglich, den Vergleichsprozess erfolgreich zu realisieren und Fehlern zu finden. Ein System, das vorher nicht getestet ist, kann nicht ein gutes System sein.
+	Wie wichtig der Test des Prozesses ist wurde auch hier verstanden. Vorher wurde gedacht, dass das Testen des Systems nur eine zusätzliche und unwichtige Arbeit ist. Es war aber nur mit Hilfe des Testens möglich, den Vergleichsprozess erfolgreich zu realisieren und Fehler zu finden. Ein System, das vorher nicht getestet ist, kann kein gutes System sein.
 	
 	\item Gruppenarbeit und Verantwortlichkeiten übernehmen \\
 	
-	Die Rolle der Gruppe ist auch sehr wichtig. Geht den Mitarbeitern miteinander gut und sind sie alle gut gelaunt, sind sie auch mehr motiviert zum Arbeiten. Die Kommunikation soll nie fehlen und die Entscheidungen des Projektleiters sollen akzeptiert werden. Man muss auch seine Verantwortlichkeiten selbst übernehmen und seine Arbeit mit seiner Stärken fertig machen. Das wurde alles auch während der Arbeit gelernt.
+	Die Rolle der Gruppe ist auch sehr wichtig. Geht es den Mitarbeitern miteinander gut und sie sind gut gelaunt, sind sie auch mehr motivierter zum Arbeiten. Die Kommunikation soll nie fehlen und die Entscheidungen des Projektleiters sollen akzeptiert werden. Man muss auch seine Verantwortlichkeiten selbst übernehmen und seine Arbeit mit seiner Stärken erledigen. Das wurde alles auch während der Arbeit gelernt.
 	
 	\item Wichtigkeit der Planung und der Begrenzungen \\
 	
-	Es wurde schon gelernt, dass die Planung eines Projekts sehr wichtig war, aber mit Hilfe dieser Diplomarbeit wurde ganz genau verstanden, warum das so ist. Ohne die Big Picture und sie Erste Ebene wurde der Aufwand der Arbeit viel grösser, und die Zeit wurde sicherlich nicht genügend sein. Die Begrenzungen sind auch wichtig, weil ohne die wurde man Zeit an etwas verlieren, das am Ende nicht realisierbar ist oder nicht nötig ist.
+	Es wurde schon gelernt, dass die Planung eines Projekts sehr wichtig war, aber mit Hilfe dieser Diplomarbeit wurde ganz genau verstanden, warum das so ist. Ohne die Big Pictures und die Erste Ebene wurde der Aufwand der Arbeit viel grösser, und die Zeit würde sicherlich nicht genügen. Die Begrenzungen sind auch wichtig, weil ohne die wurde man Zeit an etwas verlieren, das am Ende nicht realisierbar oder nicht nötig ist.
 	
-	\item Wie man mit der Fehlern umgeht \\
+	\item Wie man mit Fehlern umgeht \\
 	
-	Letztens wurde verstanden und gelernt, wie man mit der Fehlern umgehen soll. Pessimismus und das Aufgeben sind nicht die Lösungen. Man muss optimistisch sein und viele verschiedene Wege suchen, wie man den Fehlern finden und dann reparieren kann. Fremde Hilfe ist auch irgendwann notwendig.
+	Außerdem wurde verstanden und gelernt, wie man mit Fehlern umgehen soll. Pessimismus und das Aufgeben sind nicht die Lösungen. Man muss optimistisch sein und viele verschiedene Wege suchen, wie man den Fehlern finden und dann reparieren kann. Fremde Hilfe ist auch irgendwann notwendig.
 \end{itemize}	
-	Die Verbesserungsmöglichkeiten sind auch bewusst. Diese sind: 
+	 Verbesserungsmöglichkeiten sind auch erkannt werden. Diese sind: 
 \begin{itemize}	
 	
 	\item Besseres Zeitmanagement \\
 	
-	Die Arbeit musste ein bisschen früherer beginnen, und es musste besser verteilt werden. Es muss verstanden werden, dass hinter einem schlechten Projekt versteckt sich eine schlechte Zeitmanagement.
+	Die Arbeit musste ein bisschen früherer begonnen worden, und es muss besser verteilt werden. Es muss verstanden werden, dass hinter einem schlechten Projekt eine schlechte Zeitmanagement versteckt.
+	
 	\item Backup Verfahren \\
 	
-	Nächstes Mal wird die Arbeit öfter gespeichert. Back-Ups werden täglich gemacht werden, damit nichts verloren wird. Man denkt, dass das lokale Speichern genug ist. Was ist aber, wenn der PC kaputt wird? Das wird in die nächste Arbeiten mehr berücksichtigt sein müssen.
+	Nächstes Mal wird die Arbeit öfter gespeichert. Back-Ups werden täglich gemacht, damit nichts verloren geht. Man denkt, dass das lokale Speichern genug ist. Was ist aber, wenn der PC kaputt wird? Das wird in die nächste Arbeiten mehr berücksichtigt.
 \end{itemize}
 
-\chapter{Planung vs Realisierung}
-Planung vs Realisierung 
-Viele Sachen sind anders umgesetzt worden als sie geplant waren. Die Aufgabenteilung wurde anders geplant aber bei der Implementierung wurde es als vernünftiger angesehen, dass die verändert werden. 
-Es war die Wichtigkeit und die Große der Arbeitspakete beim Beginn nicht richtig abgeschätzt weil wir uns nicht gut ausgekannt haben.
-Konkretes Beispiel ist das Datenbankdesign. Zuerst war diese Aufgabe an Aron zugeteilt, und erst später wurde festgestellt, dass Jordi besser für das geeignet war und so hat er sie übernommen. 
-Gewisse Ziele wurden auch entsprechend angepasst und sogar weggenommen, weil sie als unnötig galten.  Zum Beispiel: „Licht neben der Kamera“ wird nicht mehr berücksichtigt.
-Wir wollten auch eine minimale Verarbeitungszeit erreichen, aber dadurch wir fertig trainierte Modelle und Formvorhersager verwenden, auf denen wir nicht zugreifen können, ist es also schwierig so was zu machen. 
-Es war früher auch geplant nur Gesichtsdaten in der Datenbank zu speichern aber erst wenn es in der Implementierungsphase gekommen ist, haben wir gemerkt, dass wir auch Fotos von den Personen(ins Besondere die von den Administratoren) in der Datenbank speichern sollen. Das wurde aber noch nicht fest entschieden. Auf Abb. \ref{fig:Planung_Realisierung} sind die erreichten und nicht erreichten Ziele.
-\begin{figure}[H]
-	\includegraphics[width=\textwidth]{\ordnerfigures Planung_Realisierung1.png}
-	%\includegraphics[width=\textwidth]{\ordnerfigures Planung_Realisierung2.png}
-	\caption{Planung vs Realisierung}
-	\label{fig:Planung_Realisierung}
-\end{figure}
-\begin{figure}[H]
-	%\includegraphics[width=\textwidth]{\ordnerfigures Planung_Realisierung1.png}
-	\includegraphics[width=\textwidth]{\ordnerfigures Planung_Realisierung2.png}
-	\caption{Planung vs Realisierung}
-	\label{fig:Planung_Realisierung}
-\end{figure}
-\chapter{Evaluierung und Resümee}
-\section{Wertschöpfung und Lessons Learned}
-Also, nach einige Wochen sind wir zu Idee gekommen, dass die Planung eine große Rolle in diesem Projekt spielt, weil das Team musst genau spezifizieren was jeder macht, und auch die wichtigsten Punkte, wie z.B der Lösungsweg. Bei den nächsten Treffungen soll mehr über den Problemen diskutiert werden, damit klar für jeden was genau zu tun ist. Eine chaotische Arbeit wird keine guten Ergebnisse bringen, weil auch eine Software bzw. Programm, dass ohne Struktur geschrieben wird, wird schwierig zum Lesen und Verstehen.
->>>>>>> ad5d4a4503bd63c93088f9dff686e29b86128b49
+
+\newpage 
+\section{Ausblick}
+In diesem Kapitel wird kurz erkl\"art, was mit dem Projekt in der Zukunft passieren wird?
+\subsection{Wie geht es weiter ?}
+Dieses Projekt wird nicht in der Schule implementiert, weil die Schule es nicht angenommen hat. Dieses Projekt war zu kompliziert, um in die Schulinfrastruktur implementiert zu werden. Nach der Diploma Präsentation wird dieses Projekt abgeschlossen.
+\subsection{Was passiert mit dem Ergebnis?}
+Das Ergebnis wird von der Schule betrachtet, aber nichts besonders anders und nicht weiterentwickelt von dieser Gruppe.
+\subsection{was passiert mit dem Prototyp?}
+Der Prototyp wird im Lager der Schule eingeschlossen, da kein Interesse daran hat. 
+\subsection{Gibt es Folgeprojekte?}
+Momentan gibt es keine, aber die anderen Gruppen mit dem Schwerpunkt Systemtechnik können bzw. haben die Möglichkeit mit dem Projekt weiterzumachen.
+\subsection{Gibt es Interessanten?}
+Sowohl von der Schule als auch von anderen Unternehmen gibt es keine Interessengruppen, die dieses Projekt finanzieren möchten.
