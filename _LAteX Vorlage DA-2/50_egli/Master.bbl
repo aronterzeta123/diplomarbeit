@@ -161,6 +161,35 @@
       \field{title}{{Python: 7 Important Reasons Why You Should Use Python}}
       \field{year}{3/10/2017}
     \endentry
+    \entry{imgprz}{online}{}
+      \name{author}{1}{}{%
+        {{hash=22d7baa35753fba6b70fe7cfc7ac3db0}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={OpenCV},
+           giveni={O\bibinitperiod},
+           prefix={dev},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
+      \strng{fullhash}{22d7baa35753fba6b70fe7cfc7ac3db0}
+      \strng{bibnamehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
+      \strng{authorbibnamehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
+      \strng{authornamehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
+      \strng{authorfullhash}{22d7baa35753fba6b70fe7cfc7ac3db0}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Image Processing}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html
+      \endverb
+      \warn{\item Entry 'imgprz' (./../literatur.bib): Invalid format '5.3.2020' of date field 'date' - ignoring}
+    \endentry
     \entry{Viola01robustreal-time}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=050f01d5a79687cfd1d63ef25567fc35}{%
