@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 MAR 2020 10:19
+=======
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 MAR 2020 11:26
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,6 +1086,12 @@ Package biblatex Info: ... file 'Master.bbl' found.
 (./Master.bbl
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'imgprz':
+(biblatex)                - Entry 'imgprz' (./../literatur.bib): Invalid format
+ '5.3.2020' of date field 'date' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'affine':
 (biblatex)                - Entry 'affine' (./../literatur.bib): Invalid format
  '17.02.2020' of date field 'date' - ignoring.
@@ -1299,6 +1309,8 @@ l.118 	\mainmatter
 
 ] (./_Doc.tex
 Kapitel 1.
+<<<<<<< HEAD
+=======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1345,11 +1357,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 [1
 
 
 
 ]
+<<<<<<< HEAD
+=======
 Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
@@ -1368,10 +1383,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--51
 
  []
 
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 56.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 98.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1390,6 +1407,12 @@ Package babel Info: Redefining ngerman shorthand "~
 <./../50_egli/figures/dlib.png, id=110, 479.391pt x 342.078pt>
 File: ./../50_egli/figures/dlib.png Graphic file (type png)
 <use ./../50_egli/figures/dlib.png>
+<<<<<<< HEAD
+Package pdftex.def Info: ./../50_egli/figures/dlib.png  used on input line 102.
+
+(pdftex.def)             Requested size: 239.69492pt x 171.03857pt.
+<./../50_egli/figures/bildverarbeitung.png, id=113, 1085.05376pt x 885.3075pt>
+=======
 Package pdftex.def Info: ./../50_egli/figures/dlib.png  used on input line 59.
 (pdftex.def)             Requested size: 239.69492pt x 171.03857pt.
 Package babel Info: Redefining ngerman shorthand "|
@@ -1426,15 +1449,19 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 77.
 <./../50_egli/figures/bildverarbeitung.png, id=114, 1085.05376pt x 885.3075pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/bildverarbeitung.png Graphic file (type png)
 <use ./../50_egli/figures/bildverarbeitung.png>
 Package pdftex.def Info: ./../50_egli/figures/bildverarbeitung.png  used on inp
-ut line 82.
+ut line 136.
 (pdftex.def)             Requested size: 441.01773pt x 359.8309pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 90.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 151.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [3 <./../50_egli/figures/dlib.png>]
+=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1450,10 +1477,15 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 90.
 [3 <./../50_egli/figures/dlib.png>]
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 90.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 151.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [4 <./../50_egli/figures/bildverarbeitung.png>]
+<./../50_egli/figures/haar_features.jpg, id=134, 321.2pt x 272.01625pt>
+=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1528,12 +1560,38 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 117.
 [5]
 <./../50_egli/figures/haar_features.jpg, id=146, 321.2pt x 272.01625pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/haar_features.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/haar_features.jpg>
 Package pdftex.def Info: ./../50_egli/figures/haar_features.jpg  used on input 
-line 125.
+line 210.
 (pdftex.def)             Requested size: 256.96034pt x 217.61328pt.
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 214.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+ [5]
+<./../50_egli/figures/haar.png, id=153, 335.2525pt x 203.76125pt>
+File: ./../50_egli/figures/haar.png Graphic file (type png)
+<use ./../50_egli/figures/haar.png>
+Package pdftex.def Info: ./../50_egli/figures/haar.png  used on input line 222.
 
+<<<<<<< HEAD
+(pdftex.def)             Requested size: 268.20236pt x 163.0092pt.
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 240.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+ [6 <./../50_egli/figures/haar_features.jpg> <./../50_egli/figures/haar.png (PN
+G copy)>]
+("C:\Users\USER\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.s
+ty"
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 242.
+<./../50_egli/figures/aronfd.png, id=162, 324.46219pt x 261.97874pt>
+=======
 
 LaTeX Warning: Reference `fig:haar' on page 6 undefined on input line 130.
 
@@ -1582,15 +1640,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
  []
 
 <./../50_egli/figures/aronfd.png, id=163, 324.46219pt x 261.97874pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/aronfd.png Graphic file (type png)
 <use ./../50_egli/figures/aronfd.png>
-Package pdftex.def Info: ./../50_egli/figures/aronfd.png  used on input line 18
-0.
+Package pdftex.def Info: ./../50_egli/figures/aronfd.png  used on input line 29
+7.
 (pdftex.def)             Requested size: 194.6788pt x 157.18845pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 184.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 301.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [7]
+=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1610,10 +1672,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 186.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 186.
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 206.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 339.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [8 <./../50_egli/figures/aronfd.png>]
+=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1651,10 +1717,15 @@ Overfull \hbox (1.56047pt too wide) in paragraph at lines 237--239
  f[]ur ei-ne ro-bus-te Sch[]atzung."[[]4[]] 
  []
 
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 246.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 408.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [9]
+<./../50_egli/figures/NewAron4.jpg, id=223, 272.01625pt x 272.01625pt>
+=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1671,22 +1742,31 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 246.
 [9]
 <./../50_egli/figures/NewAron4.jpg, id=208, 272.01625pt x 272.01625pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/NewAron4.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/NewAron4.jpg>
 Package pdftex.def Info: ./../50_egli/figures/NewAron4.jpg  used on input line 
-287.
+464.
 (pdftex.def)             Requested size: 136.00778pt x 136.00778pt.
+<<<<<<< HEAD
+<./../50_egli/figures/alignedAronCropped.jpg, id=224, 434.62375pt x 434.62375pt
+=======
 <./../50_egli/figures/alignedAronCropped.jpg, id=209, 434.62375pt x 434.62375pt
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 >
 File: ./../50_egli/figures/alignedAronCropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/alignedAronCropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/alignedAronCropped.jpg  used on i
-nput line 289.
+nput line 467.
 (pdftex.def)             Requested size: 136.9072pt x 136.9072pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 294.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 472.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [10]
+<./../50_egli/figures/Neworens1.jpg, id=251, 198.7425pt x 198.7425pt>
+=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1704,17 +1784,24 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 294.
 [10]
 <./../50_egli/figures/Neworens1.jpg, id=237, 198.7425pt x 198.7425pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/Neworens1.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/Neworens1.jpg>
 Package pdftex.def Info: ./../50_egli/figures/Neworens1.jpg  used on input line
- 297.
+ 476.
 (pdftex.def)             Requested size: 139.11879pt x 139.11879pt.
+<<<<<<< HEAD
+<./../50_egli/figures/alignedorens1Cropped.jpg, id=252, 445.665pt x 445.665pt>
+=======
 <./../50_egli/figures/alignedorens1Cropped.jpg, id=238, 445.665pt x 445.665pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/alignedorens1Cropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/alignedorens1Cropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/alignedorens1Cropped.jpg  used on
- input line 299.
+ input line 479.
 (pdftex.def)             Requested size: 140.38521pt x 140.38521pt.
+<<<<<<< HEAD
+=======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 307.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1729,10 +1816,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 323.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 510.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [11 <./../50_egli/figures/NewAron4.jpg> <./../50_egli/figures/alignedAronCropp
+ed.jpg> <./../50_egli/figures/Neworens1.jpg> <./../50_egli/figures/alignedorens
+1Cropped.jpg>]
+<./../50_egli/figures/aroncropped.jpg, id=283, 155.58125pt x 155.58125pt>
+=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1755,18 +1849,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--337
  []
 
 <./../50_egli/figures/aroncropped.jpg, id=265, 155.58125pt x 155.58125pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/aroncropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/aroncropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/aroncropped.jpg  used on input li
-ne 340.
+ne 530.
 (pdftex.def)             Requested size: 93.34946pt x 93.34946pt.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 345.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 345.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 351.
+(Font)              <7> on input line 549.
 LaTeX Font Info:    External font `cmex10' loaded for size
+<<<<<<< HEAD
+(Font)              <5> on input line 549.
+<./../50_egli/figures/landmarks.png, id=288, 415.5525pt x 395.4775pt>
+=======
 (Font)              <5> on input line 351.
 
 Underfull \hbox (badness 10000) in paragraph at lines 348--354
@@ -1812,31 +1911,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 356--359
  []
 
 <./../50_egli/figures/landmarks.png, id=284, 415.5525pt x 395.4775pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/landmarks.png Graphic file (type png)
 <use ./../50_egli/figures/landmarks.png>
 Package pdftex.def Info: ./../50_egli/figures/landmarks.png  used on input line
- 361.
+ 565.
 (pdftex.def)             Requested size: 207.77574pt x 197.73827pt.
+<<<<<<< HEAD
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 570.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+ [12 <./../50_egli/figures/aroncropped.jpg>]
+<./../50_egli/figures/pikat.png, id=304, 577.40718pt x 300.3722pt>
+=======
 <./../50_egli/figures/pikat.png, id=287, 577.40718pt x 300.3722pt>
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./../50_egli/figures/pikat.png Graphic file (type png)
 <use ./../50_egli/figures/pikat.png>
-Package pdftex.def Info: ./../50_egli/figures/pikat.png  used on input line 371
+Package pdftex.def Info: ./../50_egli/figures/pikat.png  used on input line 578
 .
 (pdftex.def)             Requested size: 461.92638pt x 240.29807pt.
 
-Overfull \hbox (20.90865pt too wide) in paragraph at lines 371--373
+Overfull \hbox (20.90865pt too wide) in paragraph at lines 578--580
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--374
-
+Overfull \hbox (9.22018pt too wide) in paragraph at lines 589--589
+[]\OT1/cmr/bx/n/17.28 Herausforderungen, Pro-ble-me und de-ren L[]osung 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 375.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 596.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+[13 <./../50_egli/figures/landmarks.png (PNG copy)> <./../50_egli/figures/pikat
+.png>]
+=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1870,10 +1983,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 380.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 380.
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 394.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 660.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [14]
+=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1918,10 +2035,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
  []
 
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 425.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 729.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+<<<<<<< HEAD
+ [15]) (_Doc_App.tex)
+=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -1956,6 +2077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--465
  []
 
 ) (./_Doc_App.tex)
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 138.
@@ -2004,6 +2126,13 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 145.
  [18
 
+<<<<<<< HEAD
+]
+(Master.lol)
+\tf@lol=\write9
+\openout9 = `Master.lol'.
+
+=======
 ] (./Master.lol)
 \tf@lol=\write10
 \openout10 = `Master.lol'.
@@ -2016,6 +2145,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 146.
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
  [19
 
 ]
@@ -2056,6 +2186,15 @@ Package babel Info: Redefining ngerman shorthand "~
 [20
 
 ]
+<<<<<<< HEAD
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+ (Master.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package rerunfilecheck Info: File `Master.out' has not changed.
+(rerunfilecheck)             Checksum: 5BABE04151415D6E5DFD090DD8EE659C;1043.
+=======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 153.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2067,18 +2206,44 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: 9E1F2ED87564714C455A31A975E5089C;1043.
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'Master.run.xml'.
 \openout1 = `Master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 22222 strings out of 481258
+ 414667 string characters out of 2906671
+ 1150497 words of memory out of 3000000
+ 37235 multiletter control sequences out of 15000+200000
+ 541964 words of font info for 58 fonts, out of 3000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 57i,17n,106p,852b,3540s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\USER\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\t
+crm1200.pk><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/USER/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/U
+SER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsl12.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmti12.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/USER/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Master.pdf (22 pages, 1279536 bytes).
+PDF statistics:
+ 461 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
  28283 strings out of 492649
  527874 string characters out of 6129622
  1000451 words of memory out of 5000000
@@ -2103,4 +2268,5 @@ PDF statistics:
  380 compressed objects within 4 object streams
  140 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
 

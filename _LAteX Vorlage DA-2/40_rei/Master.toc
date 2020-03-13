@@ -16,3 +16,9 @@
 \contentsline {section}{\numberline {1.4}Projektmanagement und Controlling}{22}{section.1.4}% 
 \contentsline {section}{\numberline {1.5}Ergebnisse}{23}{section.1.5}% 
 \contentsline {section}{\numberline {1.6}Was wurde gelernt und \textbf {welche Verbesserungs möglichkeiten gibt es}}{24}{section.1.6}% 
+\contentsline {section}{\numberline {1.7}Ausblick}{26}{section.1.7}% 
+\contentsline {subsection}{\numberline {1.7.1}Wie geht es weiter ?}{26}{subsection.1.7.1}% 
+\contentsline {subsection}{\numberline {1.7.2}Was passiert mit dem Ergebnis?}{26}{subsection.1.7.2}% 
+\contentsline {subsection}{\numberline {1.7.3}was passiert mit dem Prototyp?}{26}{subsection.1.7.3}% 
+\contentsline {subsection}{\numberline {1.7.4}Gibt es Folgeprojekte?}{26}{subsection.1.7.4}% 
+\contentsline {subsection}{\numberline {1.7.5}Gibt es Interessanten?}{26}{subsection.1.7.5}% 
