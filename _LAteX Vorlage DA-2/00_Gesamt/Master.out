@@ -15,7 +15,7 @@
 \BOOKMARK [2][-]{subsection.3.1.5}{Qualit\344tssicherung und Controlling}{section.3.1}% 15
 \BOOKMARK [1][-]{section.3.2}{Ergebnisse}{chapter.3}% 16
 \BOOKMARK [2][-]{subsection.3.2.1}{Implementierung}{section.3.2}% 17
-\BOOKMARK [0][-]{chapter.4}{Umsetzung - Jordi}{}% 18
+\BOOKMARK [0][-]{chapter.4}{Umsetzung }{}% 18
 \BOOKMARK [1][-]{section.4.1}{Allgemeine Beschreibung}{chapter.4}% 19
 \BOOKMARK [1][-]{section.4.2}{Technische L\366sungen}{chapter.4}% 20
 \BOOKMARK [2][-]{subsection.4.2.1}{Datenkbank}{section.4.2}% 21
@@ -24,7 +24,7 @@
 \BOOKMARK [2][-]{subsection.4.3.2}{Python Scripting}{section.4.3}% 24
 \BOOKMARK [2][-]{subsection.4.3.3}{OpenCV}{section.4.3}% 25
 \BOOKMARK [1][-]{section.4.4}{Qualit\344tssicherung}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{Ergebnisse - Jordi}{}% 27
+\BOOKMARK [0][-]{chapter.5}{Ergebnisse }{}% 27
 \BOOKMARK [1][-]{section.5.1}{Datenbank}{chapter.5}% 28
 \BOOKMARK [1][-]{section.5.2}{Tieferkennung}{chapter.5}% 29
 \BOOKMARK [0][-]{chapter.6}{Bildverarbeitung}{}% 30
@@ -33,7 +33,7 @@
 \BOOKMARK [2][-]{subsection.6.1.2}{Frameworks und Bibliotheken}{section.6.1}% 33
 \BOOKMARK [1][-]{section.6.2}{Technische L\366sungen}{chapter.6}% 34
 \BOOKMARK [2][-]{subsection.6.2.1}{L\366sungsweg - Structed Software design}{section.6.2}% 35
-\BOOKMARK [2][-]{subsection.6.2.2}{Gesichtsdetektion}{section.6.2}% 36
+\BOOKMARK [2][-]{subsection.6.2.2}{Gesichtserkennung}{section.6.2}% 36
 \BOOKMARK [2][-]{subsection.6.2.3}{Normalisierung}{section.6.2}% 37
 \BOOKMARK [2][-]{subsection.6.2.4}{Zuschneiden von Gesichter}{section.6.2}% 38
 \BOOKMARK [2][-]{subsection.6.2.5}{Gesichtsschl\374sselpunkte Extraktion}{section.6.2}% 39
@@ -41,18 +41,21 @@
 \BOOKMARK [2][-]{subsection.6.3.1}{L\366sungen}{section.6.3}% 41
 \BOOKMARK [1][-]{section.6.4}{Qualit\344tssicherung, Controlling}{chapter.6}% 42
 \BOOKMARK [1][-]{section.6.5}{Ergebnisse}{chapter.6}% 43
-\BOOKMARK [0][-]{chapter.7}{Gesichtserkennung - Rei}{}% 44
-\BOOKMARK [1][-]{section.7.1}{Allgemeines}{chapter.7}% 45
-\BOOKMARK [1][-]{section.7.2}{Technische L\366sung}{chapter.7}% 46
-\BOOKMARK [2][-]{subsection.7.2.1}{Hardware und Aufbau}{section.7.2}% 47
-\BOOKMARK [2][-]{subsection.7.2.2}{Software}{section.7.2}% 48
-\BOOKMARK [1][-]{section.7.3}{Herausforderungen, Probleme, und deren L\366sung}{chapter.7}% 49
-\BOOKMARK [1][-]{section.7.4}{Projektmanagement und Controlling}{chapter.7}% 50
-\BOOKMARK [1][-]{section.7.5}{Ergebnisse}{chapter.7}% 51
-\BOOKMARK [1][-]{section.7.6}{Was wurde gelernt und welche Verbesserungs m\366glichkeiten gibt es}{chapter.7}% 52
-\BOOKMARK [1][-]{section.7.7}{Ausblick}{chapter.7}% 53
-\BOOKMARK [2][-]{subsection.7.7.1}{Wie geht es weiter ?}{section.7.7}% 54
-\BOOKMARK [2][-]{subsection.7.7.2}{Was passiert mit dem Ergebnis?}{section.7.7}% 55
-\BOOKMARK [2][-]{subsection.7.7.3}{was passiert mit dem Prototyp?}{section.7.7}% 56
-\BOOKMARK [2][-]{subsection.7.7.4}{Gibt es Folgeprojekte?}{section.7.7}% 57
-\BOOKMARK [2][-]{subsection.7.7.5}{Gibt es Interessanten?}{section.7.7}% 58
+\BOOKMARK [1][-]{section.6.6}{Evaluierung und Res\374mee}{chapter.6}% 44
+\BOOKMARK [2][-]{subsection.6.6.1}{Planung vs. Realisierung}{section.6.6}% 45
+\BOOKMARK [2][-]{subsection.6.6.2}{Lessons Learned}{section.6.6}% 46
+\BOOKMARK [0][-]{chapter.7}{Gesichtserkennung}{}% 47
+\BOOKMARK [1][-]{section.7.1}{Allgemeines}{chapter.7}% 48
+\BOOKMARK [1][-]{section.7.2}{Technische L\366sung}{chapter.7}% 49
+\BOOKMARK [2][-]{subsection.7.2.1}{Hardware und Aufbau}{section.7.2}% 50
+\BOOKMARK [2][-]{subsection.7.2.2}{Software}{section.7.2}% 51
+\BOOKMARK [1][-]{section.7.3}{Herausforderungen, Probleme, und deren L\366sung}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.4}{Projektmanagement und Controlling}{chapter.7}% 53
+\BOOKMARK [1][-]{section.7.5}{Ergebnisse}{chapter.7}% 54
+\BOOKMARK [1][-]{section.7.6}{Was wurde gelernt und welche Verbesserungs m\366glichkeiten gibt es}{chapter.7}% 55
+\BOOKMARK [0][-]{chapter.8}{Ausblick}{}% 56
+\BOOKMARK [1][-]{section.8.1}{Wie geht es weiter ?}{chapter.8}% 57
+\BOOKMARK [1][-]{section.8.2}{Was passiert mit dem Ergebnis?}{chapter.8}% 58
+\BOOKMARK [1][-]{section.8.3}{was passiert mit dem Prototyp?}{chapter.8}% 59
+\BOOKMARK [1][-]{section.8.4}{Gibt es Folgeprojekte?}{chapter.8}% 60
+\BOOKMARK [1][-]{section.8.5}{Gibt es Interessanten?}{chapter.8}% 61

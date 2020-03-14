@@ -2,40 +2,41 @@
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Big picture\relax }}{4}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Scrum\relax }}{5}{figure.caption.9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Big picture\relax }}{5}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Structed Software Design bzw. erste Ebene \relax }}{9}{figure.caption.10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Risikoanalyse in Excel\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Structed Software Design bzw. erste Ebene \relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Risikoanalyse in Excel\relax }}{16}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces MySQL Logo\relax }}{18}{figure.caption.14}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces MariaDB Logo\relax }}{19}{figure.caption.16}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Python Logo\relax }}{20}{figure.caption.18}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces OpenCV Logo\relax }}{20}{figure.caption.20}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Plan-Do-Check-Act-Zyklus\relax }}{26}{figure.caption.25}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces MySQL Logo\relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MariaDB Logo\relax }}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Python Logo\relax }}{20}{figure.caption.17}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces OpenCV Logo\relax }}{20}{figure.caption.19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Plan-Do-Check-Act-Zyklus\relax }}{26}{figure.caption.24}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{30}{figure.caption.26}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{31}{figure.caption.27}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{30}{figure.caption.25}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{31}{figure.caption.26}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Haar Features\cite {Viola01robustreal-time}\relax }}{33}{figure.caption.28}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Output: Box auf Gesicht\relax }}{35}{figure.caption.30}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{38}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{38}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{38}{subfigure.5.2}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Unterschied: normalisiert, nicht normalisiert .2\relax }}{38}{figure.caption.36}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Haar\relax }}{33}{figure.caption.29}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Output: Box auf Gesicht\relax }}{35}{figure.caption.31}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{38}{figure.caption.36}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{38}{subfigure.6.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{38}{subfigure.6.2}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Output: Abgeschnittenes Gesicht\relax }}{39}{figure.caption.37}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Gesichtsschl\IeC {\"u}sselpunkte \cite {Kazemi2014OneMF}\relax }}{40}{figure.caption.38}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Gesichtsdaten\relax }}{41}{figure.caption.39}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Unterschied: normalisiert, nicht normalisiert .2\relax }}{38}{figure.caption.37}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{38}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{38}{subfigure.7.2}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Output: Zugeschnittenes Bild\relax }}{39}{figure.caption.38}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Gesichtsschl\IeC {\"u}sselpunkte \cite {Kazemi2014OneMF}\relax }}{40}{figure.caption.39}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Gesichtsdaten\relax }}{40}{figure.caption.40}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Grobe Skizze des Systems\relax }}{45}{figure.caption.40}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Schaltplan des Systems\relax }}{47}{figure.caption.43}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Erste Ebene\relax }}{49}{figure.caption.46}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Erste Ebene Erkl\IeC {\"a}rung\relax }}{50}{figure.caption.47}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Vergleichsmethode zweier Punkte\relax }}{54}{figure.caption.48}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces geometrisches Mittel\relax }}{55}{figure.caption.49}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces 1\_Fall\relax }}{57}{figure.caption.50}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces 2\_Fall\relax }}{58}{figure.caption.51}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces 3\_Fall\relax }}{59}{figure.caption.52}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Fehlerbaum\relax }}{66}{figure.caption.56}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Grobe Skizze des Systems\relax }}{46}{figure.caption.41}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Schaltplan des Systems\relax }}{48}{figure.caption.44}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Erste Ebene\relax }}{50}{figure.caption.47}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Erste Ebene Erkl\IeC {\"a}rung\relax }}{51}{figure.caption.48}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Vergleichsmethode zweier Punkte\relax }}{55}{figure.caption.49}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces geometrisches Mittel\relax }}{56}{figure.caption.50}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces 1\_Fall\relax }}{58}{figure.caption.51}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces 2\_Fall\relax }}{59}{figure.caption.52}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces 3\_Fall\relax }}{60}{figure.caption.53}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Fehlerbaum\relax }}{67}{figure.caption.57}
+\addvspace {10\p@ }

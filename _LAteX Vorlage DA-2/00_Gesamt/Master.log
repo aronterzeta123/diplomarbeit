@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  6 MAR 2020 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 MAR 2020 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1083,6 +1083,12 @@ Package biblatex Info: ... file 'Master.bbl' found.
 (./Master.bbl
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'scrum':
+(biblatex)                - Entry 'scrum' (./../literatur.bib): Invalid format 
+'19.09.2019' of date field 'date' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'Risikoanalyse':
 (biblatex)                - Entry 'Risikoanalyse' (./../literatur.bib): Invalid
  format 'date' of date field 'date' - ignoring.
@@ -1091,7 +1097,13 @@ Package biblatex Warning: Biber reported the following issues
 Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'terminator':
 (biblatex)                - Entry 'terminator' (./../literatur.bib): Invalid fo
-rmat 'date' of date field 'date' - ignoring.
+rmat '16.09.2018' of date field 'date' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Bigpicture':
+(biblatex)                - Entry 'Bigpicture' (./../literatur.bib): Invalid fo
+rmat '16.09.2018' of date field 'date' - ignoring.
 
 
 Package biblatex Warning: The following entry could not be found
@@ -1100,9 +1112,20 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                imgprz
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
 )
 
 Package biblatex Warning: citation 'affine' was not found at all in the .bbl, b
+ibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'imgprz' was not found at all in the .bbl, b
 ibliography labels cannot be generated, please correct the citation.
 
 Package biblatex Info: Reference section=0 on input line 92.
@@ -1266,14 +1289,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 92.
 
 (./_Doc_A.tex) (./01_title.tex
-<./figures/Header_Seite.png, id=237, 137.01187pt x 48.18pt>
+<./figures/Header_Seite.png, id=249, 137.01187pt x 48.18pt>
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 6.
 (pdftex.def)             Requested size: 137.01154pt x 48.17986pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 49.
-<./../00_Gesamt/figures/Frontpage_back.png, id=238, 716.6775pt x 403.5075pt>
+<./../00_Gesamt/figures/Frontpage_back.png, id=250, 716.6775pt x 403.5075pt>
 File: ./../00_Gesamt/figures/Frontpage_back.png Graphic file (type png)
 <use ./../00_Gesamt/figures/Frontpage_back.png>
 Package pdftex.def Info: ./../00_Gesamt/figures/Frontpage_back.png  used on inp
@@ -1384,19 +1407,42 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 14.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 14.
+[1
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 
-Overfull \hbox (1.80756pt too wide) in paragraph at lines 19--20
+Overfull \hbox (1.80756pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/n/12 Form der Au-genh[]ohlen, Na-se, Wan-gen-kno-chen und Kie-fer). 
 Po-si-tion/ Verh[]altnisse
  []
 
 ) (./../20_planung/_Doc_A.tex) (./../20_planung/_Doc.tex
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 1.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 28.43996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1405,10 +1451,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [1
-
-
-]
+[2]
 Kapitel 2.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1423,14 +1466,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
-[2
+(babel)             in language  on input line 29.
+[3
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1442,17 +1485,16 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
-<./figures/Big_Picture.jpg, id=356, 1125.20375pt x 855.195pt>
-File: ./figures/Big_Picture.jpg Graphic file (type jpg)
-<use ./figures/Big_Picture.jpg>
-Package pdftex.def Info: ./figures/Big_Picture.jpg  used on input line 77.
-(pdftex.def)             Requested size: 352.81552pt x 268.14818pt.
+(babel)             in language  on input line 69.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 71.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 71.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 81.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 72.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1462,23 +1504,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 81.
-[3]
+(babel)             in language  on input line 72.
+[4]
+<./figures/Big_Picture.jpg, id=404, 1125.20375pt x 855.195pt>
+File: ./figures/Big_Picture.jpg Graphic file (type jpg)
+<use ./figures/Big_Picture.jpg>
+Package pdftex.def Info: ./figures/Big_Picture.jpg  used on input line 74.
+(pdftex.def)             Requested size: 352.81552pt x 268.14818pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
-<./figures/scrum.jpg, id=378, 845.1575pt x 597.23125pt>
-File: ./figures/scrum.jpg Graphic file (type jpg)
-<use ./figures/scrum.jpg>
-Package pdftex.def Info: ./figures/scrum.jpg  used on input line 86.
-(pdftex.def)             Requested size: 352.81552pt x 249.32265pt.
+(babel)             in language  on input line 79.
 ) (./../40_Aron/_Doc_A.tex) (./../40_Aron/_Doc.tex
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
@@ -1499,27 +1541,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-[4 <./figures/Big_Picture.jpg>]
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 1.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-[5 <./figures/scrum.jpg>]
+[5 <./figures/Big_Picture.jpg>]
 Kapitel 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1537,10 +1559,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 13.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1572,7 +1590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 33.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 34.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1581,15 +1599,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 [7]
-<./../40_Aron/figures/1Ebene.png, id=419, 622.9674pt x 441.8106pt>
+<./../40_Aron/figures/1Ebene.png, id=440, 622.9674pt x 441.8106pt>
 File: ./../40_Aron/figures/1Ebene.png Graphic file (type png)
 <use ./../40_Aron/figures/1Ebene.png>
 Package pdftex.def Info: ./../40_Aron/figures/1Ebene.png  used on input line 46
@@ -1597,7 +1615,7 @@ Package pdftex.def Info: ./../40_Aron/figures/1Ebene.png  used on input line 46
 (pdftex.def)             Requested size: 441.01773pt x 312.78435pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 71.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 72.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1607,19 +1625,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 [8]
-Overfull \vbox (88.60397pt too high) has occurred while \output is active []
+Overfull \vbox (86.27066pt too high) has occurred while \output is active []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 71.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 72.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1629,50 +1647,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 72.
 [9 <./../40_Aron/figures/1Ebene.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
@@ -1680,10 +1673,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 78.
+nput line 79.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 92.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 93.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1693,61 +1686,61 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 112.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 113.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1756,17 +1749,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 [11]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 130.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 130.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 125.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 133.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1776,21 +1773,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 133.
 [12]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 129.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 129.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 147.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 149.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1800,21 +1793,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 149.
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 149--153
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 161.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 164.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1823,33 +1816,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 164.
 [14]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 177.
-<./../40_Aron/figures/Risikoanalyse1.png, id=503, 1099.10625pt x 569.12625pt>
+(babel)             in language  on input line 178.
+<./../40_Aron/figures/Risikoanalyse1.png, id=524, 1099.10625pt x 569.12625pt>
 File: ./../40_Aron/figures/Risikoanalyse1.png Graphic file (type png)
 <use ./../40_Aron/figures/Risikoanalyse1.png>
 Package pdftex.def Info: ./../40_Aron/figures/Risikoanalyse1.png  used on input
- line 181.
+ line 182.
 (pdftex.def)             Requested size: 441.01773pt x 228.35857pt.
-<./../40_Aron/figures/Risikoanalyse2.png, id=504, 1088.065pt x 363.3575pt>
+<./../40_Aron/figures/Risikoanalyse2.png, id=525, 1088.065pt x 363.3575pt>
 File: ./../40_Aron/figures/Risikoanalyse2.png Graphic file (type png)
 <use ./../40_Aron/figures/Risikoanalyse2.png>
 Package pdftex.def Info: ./../40_Aron/figures/Risikoanalyse2.png  used on input
- line 182.
+ line 183.
 (pdftex.def)             Requested size: 441.01773pt x 147.28094pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 185.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 186.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1859,17 +1852,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 [15]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 196.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 196.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 193.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 198.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1879,23 +1876,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 198.
 [16 <./../40_Aron/figures/Risikoanalyse1.png> <./../40_Aron/figures/Risikoanaly
 se2.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 195.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 195.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 198.
 ) (./../70_Jordi/_Doc_A.tex) (./../70_Jordi/_Doc.tex
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
@@ -1926,7 +1919,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-<./../70_Jordi/figures/mysql.jpg, id=532, 401.5pt x 401.5pt>
+<./../70_Jordi/figures/mysql.jpg, id=552, 401.5pt x 401.5pt>
 File: ./../70_Jordi/figures/mysql.jpg Graphic file (type jpg)
 <use ./../70_Jordi/figures/mysql.jpg>
 Package pdftex.def Info: ./../70_Jordi/figures/mysql.jpg  used on input line 28
@@ -1943,13 +1936,13 @@ Package babel Info: Redefining ngerman shorthand "~
 [18
 
  <./../70_Jordi/figures/mysql.jpg>]
-<./../70_Jordi/figures/mariadb.png, id=545, 281.05pt x 281.05pt>
+<./../70_Jordi/figures/mariadb.png, id=565, 281.05pt x 281.05pt>
 File: ./../70_Jordi/figures/mariadb.png Graphic file (type png)
 <use ./../70_Jordi/figures/mariadb.png>
 Package pdftex.def Info: ./../70_Jordi/figures/mariadb.png  used on input line 
 48.
 (pdftex.def)             Requested size: 84.31564pt x 84.31564pt.
-<./../70_Jordi/figures/python.png, id=548, 401.5pt x 401.5pt>
+<./../70_Jordi/figures/python.png, id=568, 401.5pt x 401.5pt>
 File: ./../70_Jordi/figures/python.png Graphic file (type png)
 <use ./../70_Jordi/figures/python.png>
 Package pdftex.def Info: ./../70_Jordi/figures/python.png  used on input line 6
@@ -1975,7 +1968,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 67.
 [19 <./../70_Jordi/figures/mariadb.png>]
-<./../70_Jordi/figures/opencv.png, id=563, 117.3183pt x 144.54pt>
+<./../70_Jordi/figures/opencv.png, id=584, 117.3183pt x 144.54pt>
 File: ./../70_Jordi/figures/opencv.png Graphic file (type png)
 <use ./../70_Jordi/figures/opencv.png>
 Package pdftex.def Info: ./../70_Jordi/figures/opencv.png  used on input line 7
@@ -2142,7 +2135,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 183.
 [25]
-<./../70_Jordi/figures/pdca.png, id=612, 211.992pt x 197.538pt>
+<./../70_Jordi/figures/pdca.png, id=632, 211.992pt x 197.538pt>
 File: ./../70_Jordi/figures/pdca.png Graphic file (type png)
 <use ./../70_Jordi/figures/pdca.png>
 Package pdftex.def Info: ./../70_Jordi/figures/pdca.png  used on input line 186
@@ -2199,72 +2192,33 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 4.
+(babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
-
- []
-
+(babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 12.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 12.
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-
- []
-
-
-Overfull \hbox (2.69844pt too wide) in paragraph at lines 18--26
-\OT1/cmr/m/n/12 Raspberry Pi ist klein, funk-tio-niert aber wie ein nor-ma-ler 
-Rech-ner und ist kos-teng[]unstig.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--26
-
- []
-
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 44.
 [28
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
-
- []
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--51
-
- []
-
+(babel)             in language  on input line 59.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 56.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 98.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -2272,62 +2226,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 98.
 [29]
-<./../50_egli/figures/dlib.png, id=647, 479.391pt x 342.078pt>
+<./../50_egli/figures/dlib.png, id=667, 479.391pt x 342.078pt>
 File: ./../50_egli/figures/dlib.png Graphic file (type png)
 <use ./../50_egli/figures/dlib.png>
-Package pdftex.def Info: ./../50_egli/figures/dlib.png  used on input line 59.
+Package pdftex.def Info: ./../50_egli/figures/dlib.png  used on input line 102.
+
 (pdftex.def)             Requested size: 239.69492pt x 171.03857pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 109.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--76
-
- []
-
+(babel)             in language  on input line 109.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
-<./../50_egli/figures/bildverarbeitung.png, id=650, 1085.05376pt x 885.3075pt>
+(babel)             in language  on input line 131.
+<./../50_egli/figures/bildverarbeitung.png, id=670, 1085.05376pt x 885.3075pt>
 File: ./../50_egli/figures/bildverarbeitung.png Graphic file (type png)
 <use ./../50_egli/figures/bildverarbeitung.png>
 Package pdftex.def Info: ./../50_egli/figures/bildverarbeitung.png  used on inp
-ut line 82.
+ut line 136.
 (pdftex.def)             Requested size: 441.01773pt x 359.8309pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 90.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 151.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -2335,17 +2266,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 [30 <./../50_egli/figures/dlib.png>]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 90.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 151.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -2355,133 +2286,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 151.
 [31 <./../50_egli/figures/bildverarbeitung.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
-
- []
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 108.
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 117.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
-[32]
-<./../50_egli/figures/haar_features.jpg, id=682, 321.2pt x 272.01625pt>
+(babel)             in language  on input line 180.
+<./../50_egli/figures/haar_features.jpg, id=691, 321.2pt x 272.01625pt>
 File: ./../50_egli/figures/haar_features.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/haar_features.jpg>
 Package pdftex.def Info: ./../50_egli/figures/haar_features.jpg  used on input 
-line 125.
+line 210.
 (pdftex.def)             Requested size: 256.96034pt x 217.61328pt.
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 214.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
-LaTeX Warning: Reference `fig:haar' on page 33 undefined on input line 130.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 28.43996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 214.
+[32]
+<./../50_egli/figures/haar.png, id=709, 335.2525pt x 203.76125pt>
+File: ./../50_egli/figures/haar.png Graphic file (type png)
+<use ./../50_egli/figures/haar.png>
+Package pdftex.def Info: ./../50_egli/figures/haar.png  used on input line 222.
+
+(pdftex.def)             Requested size: 268.20236pt x 163.0092pt.
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 240.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 28.43996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-
-Overfull \hbox (38.38144pt too wide) in paragraph at lines 143--145
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 240.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 240.
+[33 <./../50_egli/figures/haar_features.jpg> <./../50_egli/figures/haar.png (PN
+G copy)>]
+Overfull \hbox (38.38144pt too wide) in paragraph at lines 244--246
 [][][][][][][][][][][][][][] 
  []
 
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 145.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 145.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 145.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 145.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 145.
-[33 <./../50_egli/figures/haar_features.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-<./../50_egli/figures/aronfd.png, id=694, 324.46219pt x 261.97874pt>
+<./../50_egli/figures/aronfd.png, id=718, 324.46219pt x 261.97874pt>
 File: ./../50_egli/figures/aronfd.png Graphic file (type png)
 <use ./../50_egli/figures/aronfd.png>
-Package pdftex.def Info: ./../50_egli/figures/aronfd.png  used on input line 18
-0.
+Package pdftex.def Info: ./../50_egli/figures/aronfd.png  used on input line 29
+7.
 (pdftex.def)             Requested size: 194.6788pt x 157.18845pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 184.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 301.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2490,21 +2372,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 301.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 301.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 301.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 301.
 [34]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 304.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 304.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 206.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 339.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -2514,43 +2396,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 206.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 206.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 206.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 206.
+(babel)             in language  on input line 339.
 [35 <./../50_egli/figures/aronfd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-
+Overfull \hbox (45.43143pt too wide) in paragraph at lines 371--372
+[][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
-
- []
-
-
-Overfull \hbox (271.03104pt too wide) in paragraph at lines 228--229
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (36.14954pt too wide) in paragraph at lines 235--236
-[]\OT1/cmr/m/n/12 Sie wer-den dann in Ar-rays ge-spei-chert und aus de-nen wird
- doch die []Ahnlichkeitstransformation
- []
-
-
-Overfull \hbox (7.43541pt too wide) in paragraph at lines 237--239
-\OT1/cmr/m/n/12 schr[]ankt sind. Ver-wen-det den aus-gew[]ahlten Al-go-rith-mus
- f[]ur ei-ne ro-bus-te Sch[]atzung."[[]14[]] 
+Overfull \hbox (52.48141pt too wide) in paragraph at lines 373--374
+[][][][][][][][][][][][][][][][][][] 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 245.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 407.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2559,49 +2424,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 407.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 407.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 407.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 407.
 [36]
-Overfull \hbox (179.3812pt too wide) in paragraph at lines 251--253
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (80.68137pt too wide) in paragraph at lines 409--410
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (165.28122pt too wide) in paragraph at lines 253--255
+Overfull \hbox (165.28122pt too wide) in paragraph at lines 412--414
 [][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 255--257
+Overfull \hbox (10.18149pt too wide) in paragraph at lines 414--416
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 257--259
+Overfull \hbox (66.58139pt too wide) in paragraph at lines 416--418
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<./../50_egli/figures/NewAron4.jpg, id=740, 272.01625pt x 272.01625pt>
+<./../50_egli/figures/NewAron4.jpg, id=770, 272.01625pt x 272.01625pt>
 File: ./../50_egli/figures/NewAron4.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/NewAron4.jpg>
 Package pdftex.def Info: ./../50_egli/figures/NewAron4.jpg  used on input line 
-287.
+464.
 (pdftex.def)             Requested size: 136.00778pt x 136.00778pt.
-<./../50_egli/figures/alignedAronCropped.jpg, id=741, 434.62375pt x 434.62375pt
+<./../50_egli/figures/alignedAronCropped.jpg, id=771, 434.62375pt x 434.62375pt
 >
 File: ./../50_egli/figures/alignedAronCropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/alignedAronCropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/alignedAronCropped.jpg  used on i
-nput line 289.
+nput line 467.
 (pdftex.def)             Requested size: 136.9072pt x 136.9072pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 294.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 472.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2610,50 +2475,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 294.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 294.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 294.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 294.
+(babel)             in language  on input line 472.
 [37]
-<./../50_egli/figures/Neworens1.jpg, id=768, 198.7425pt x 198.7425pt>
+<./../50_egli/figures/Neworens1.jpg, id=795, 198.7425pt x 198.7425pt>
 File: ./../50_egli/figures/Neworens1.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/Neworens1.jpg>
 Package pdftex.def Info: ./../50_egli/figures/Neworens1.jpg  used on input line
- 297.
+ 476.
 (pdftex.def)             Requested size: 139.11879pt x 139.11879pt.
-<./../50_egli/figures/alignedorens1Cropped.jpg, id=769, 445.665pt x 445.665pt>
+<./../50_egli/figures/alignedorens1Cropped.jpg, id=796, 445.665pt x 445.665pt>
 File: ./../50_egli/figures/alignedorens1Cropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/alignedorens1Cropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/alignedorens1Cropped.jpg  used on
- input line 299.
+ input line 479.
 (pdftex.def)             Requested size: 140.38521pt x 140.38521pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 307.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 307.
+(babel)             in language  on input line 491.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 497.
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-
- []
-
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 312.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 312.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 497.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 320.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 507.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -2663,59 +2518,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 507.
 [38 <./../50_egli/figures/NewAron4.jpg> <./../50_egli/figures/alignedAronCroppe
 d.jpg> <./../50_egli/figures/Neworens1.jpg> <./../50_egli/figures/alignedorens1
 Cropped.jpg>]
-Overfull \hbox (80.68137pt too wide) in paragraph at lines 322--323
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--337
-
- []
-
-<./../50_egli/figures/aroncropped.jpg, id=791, 155.58125pt x 155.58125pt>
+<./../50_egli/figures/aroncropped.jpg, id=822, 155.58125pt x 155.58125pt>
 File: ./../50_egli/figures/aroncropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/aroncropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/aroncropped.jpg  used on input li
-ne 340.
+ne 530.
 (pdftex.def)             Requested size: 93.34946pt x 93.34946pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 345.
+(babel)             in language  on input line 538.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 345.
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--354
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--354
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--354
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--354
-
- []
-
+(babel)             in language  on input line 538.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 354.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 562.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -2723,43 +2550,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 562.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 562.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 562.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 562.
 [39 <./../50_egli/figures/aroncropped.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 356--359
-
- []
-
-<./../50_egli/figures/landmarks.png, id=811, 415.5525pt x 395.4775pt>
+<./../50_egli/figures/landmarks.png, id=841, 415.5525pt x 395.4775pt>
 File: ./../50_egli/figures/landmarks.png Graphic file (type png)
 <use ./../50_egli/figures/landmarks.png>
 Package pdftex.def Info: ./../50_egli/figures/landmarks.png  used on input line
- 361.
+ 565.
 (pdftex.def)             Requested size: 207.77574pt x 197.73827pt.
-<./../50_egli/figures/pikat.png, id=814, 577.40718pt x 300.3722pt>
+<./../50_egli/figures/pikat.png, id=844, 577.40718pt x 300.3722pt>
 File: ./../50_egli/figures/pikat.png Graphic file (type png)
 <use ./../50_egli/figures/pikat.png>
-Package pdftex.def Info: ./../50_egli/figures/pikat.png  used on input line 371
+Package pdftex.def Info: ./../50_egli/figures/pikat.png  used on input line 578
 .
 (pdftex.def)             Requested size: 461.92638pt x 240.29807pt.
 
-Overfull \hbox (20.90865pt too wide) in paragraph at lines 371--373
+Overfull \hbox (20.90865pt too wide) in paragraph at lines 578--580
  [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--374
-
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 375.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 585.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2768,35 +2586,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 585.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 585.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 585.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 375.
-[40 <./../50_egli/figures/landmarks.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
-
- []
-
-
-Overfull \hbox (9.22018pt too wide) in paragraph at lines 380--380
+(babel)             in language  on input line 585.
+[40 <./../50_egli/figures/landmarks.png (PNG copy)> <./../50_egli/figures/pikat
+.png>]
+Overfull \hbox (9.22018pt too wide) in paragraph at lines 589--589
 []\OT1/cmr/bx/n/17.28 Herausforderungen, Pro-ble-me und de-ren L[]osung 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 589.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 589.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 636.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 636.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 648.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 648.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 394.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 655.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2805,47 +2622,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 655.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 655.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 655.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 394.
-[41 <./../50_egli/figures/pikat.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 403.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 403.
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
-
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 410.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 410.
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
-
- []
-
-
-Overfull \hbox (6.93814pt too wide) in paragraph at lines 417--418
-[]\OT1/cmr/m/n/12 Eine Pro-blem-stel-lung: []Seg-men-ta-ti-on fault\ beim Fin-d
-en von Key-po-ints mit FAST[][][].\ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
-
- []
-
+(babel)             in language  on input line 655.
+[41]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 425.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 714.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 28.43996pt.
@@ -2853,33 +2642,50 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 425.
+(babel)             in language  on input line 714.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 425.
+(babel)             in language  on input line 714.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 425.
+(babel)             in language  on input line 714.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 425.
+(babel)             in language  on input line 714.
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 724.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 724.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 740.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 740.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 744.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 744.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 758.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 758.
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 767.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
-
- []
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 28.43996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 767.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 458.
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--465
-
- []
-
-) (./../40_rei/_Doc_A.tex) (./../40_rei/_Doc.tex
+(babel)             in language  on input line 767.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 767.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 767.
+[43]) (./../40_rei/_Doc_A.tex) (./../40_rei/_Doc.tex
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 1.
@@ -2899,7 +2705,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-[43]
+[44]
 Kapitel 7.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2909,7 +2715,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
-<./../40_rei/figures/Capture.png, id=850, 404.26031pt x 294.34969pt>
+<./../40_rei/figures/Capture.png, id=884, 404.26031pt x 294.34969pt>
 File: ./../40_rei/figures/Capture.png Graphic file (type png)
 <use ./../40_rei/figures/Capture.png>
 Package pdftex.def Info: ./../40_rei/figures/Capture.png  used on input line 15
@@ -2923,7 +2729,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
-[44
+[45
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -2953,7 +2759,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
-[45 <./../40_rei/figures/Capture.png>]
+[46 <./../40_rei/figures/Capture.png>]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 42.
@@ -2973,8 +2779,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 42.
-[46]
-<./../40_rei/figures/Schaltplan.png, id=882, 989.94844pt x 455.45157pt>
+[47]
+<./../40_rei/figures/Schaltplan.png, id=923, 989.94844pt x 455.45157pt>
 File: ./../40_rei/figures/Schaltplan.png Graphic file (type png)
 <use ./../40_rei/figures/Schaltplan.png>
 Package pdftex.def Info: ./../40_rei/figures/Schaltplan.png  used on input line
@@ -2999,7 +2805,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 54.
-[47 <./../40_rei/figures/Schaltplan.png>]
+[48 <./../40_rei/figures/Schaltplan.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3023,12 +2829,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 98.
-[48]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-<./../40_rei/figures/diplom_11Ebene.png, id=907, 945.5325pt x 563.10374pt>
+<./../40_rei/figures/diplom_11Ebene.png, id=950, 945.5325pt x 563.10374pt>
 File: ./../40_rei/figures/diplom_11Ebene.png Graphic file (type png)
 <use ./../40_rei/figures/diplom_11Ebene.png>
 Package pdftex.def Info: ./../40_rei/figures/diplom_11Ebene.png  used on input 
@@ -3039,7 +2845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-<./../40_rei/figures/Erklaerung_Erste_Ebene.png, id=909, 679.78969pt x 314.6756
+<./../40_rei/figures/Erklaerung_Erste_Ebene.png, id=952, 679.78969pt x 314.6756
 3pt>
 File: ./../40_rei/figures/Erklaerung_Erste_Ebene.png Graphic file (type png)
 <use ./../40_rei/figures/Erklaerung_Erste_Ebene.png>
@@ -3064,7 +2870,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 130.
-[49 <./../40_rei/figures/diplom_11Ebene.png>]
+[50 <./../40_rei/figures/diplom_11Ebene.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
@@ -3097,7 +2903,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 149.
-[50 <./../40_rei/figures/Erklaerung_Erste_Ebene.png>]
+[51 <./../40_rei/figures/Erklaerung_Erste_Ebene.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
@@ -3135,7 +2941,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 172.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 172.
-[51]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
@@ -3180,7 +2986,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 200.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 200.
-[52]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
@@ -3196,7 +3002,7 @@ Overfull \hbox (7.29416pt too wide) in paragraph at lines 211--213
 leich der Abst[]ande
  []
 
-<./../40_rei/figures/Vergleichsweg.png, id=969, 341.77687pt x 343.2825pt>
+<./../40_rei/figures/Vergleichsweg.png, id=1011, 341.77687pt x 343.2825pt>
 File: ./../40_rei/figures/Vergleichsweg.png Graphic file (type png)
 <use ./../40_rei/figures/Vergleichsweg.png>
 Package pdftex.def Info: ./../40_rei/figures/Vergleichsweg.png  used on input l
@@ -3220,7 +3026,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 221.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 221.
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
@@ -3253,7 +3059,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 230.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 230.
-[54 <./../40_rei/figures/Vergleichsweg.png>]
+[55 <./../40_rei/figures/Vergleichsweg.png>]
 Overfull \hbox (23.10594pt too wide) in paragraph at lines 234--235
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3268,7 +3074,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
-<./../40_rei/figures/geometrischesM.png, id=989, 282.30469pt x 37.64063pt>
+<./../40_rei/figures/geometrischesM.png, id=1031, 282.30469pt x 37.64063pt>
 File: ./../40_rei/figures/geometrischesM.png Graphic file (type png)
 <use ./../40_rei/figures/geometrischesM.png>
 Package pdftex.def Info: ./../40_rei/figures/geometrischesM.png  used on input 
@@ -3297,7 +3103,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 267.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 267.
-[55 <./../40_rei/figures/geometrischesM.png>]
+[56 <./../40_rei/figures/geometrischesM.png>]
 Overfull \hbox (58.35588pt too wide) in paragraph at lines 270--271
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3322,7 +3128,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
-<./../40_rei/figures/1_Fall.png, id=1015, 532.99126pt x 314.67563pt>
+<./../40_rei/figures/1_Fall.png, id=1058, 532.99126pt x 314.67563pt>
 File: ./../40_rei/figures/1_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/1_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/1_Fall.png  used on input line 299
@@ -3346,7 +3152,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 303.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 303.
-[56]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
@@ -3384,12 +3190,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 331.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 331.
-[57 <./../40_rei/figures/1_Fall.png>]
+[58 <./../40_rei/figures/1_Fall.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-<./../40_rei/figures/2_Fall.png, id=1066, 520.94624pt x 353.06906pt>
+<./../40_rei/figures/2_Fall.png, id=1108, 520.94624pt x 353.06906pt>
 File: ./../40_rei/figures/2_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/2_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/2_Fall.png  used on input line 346
@@ -3428,12 +3234,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 364.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 364.
-[58 <./../40_rei/figures/2_Fall.png>]
+[59 <./../40_rei/figures/2_Fall.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
-<./../40_rei/figures/3_Fall.png, id=1091, 532.23843pt x 226.59656pt>
+<./../40_rei/figures/3_Fall.png, id=1133, 532.23843pt x 226.59656pt>
 File: ./../40_rei/figures/3_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/3_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/3_Fall.png  used on input line 383
@@ -3477,7 +3283,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 408.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 408.
-[59 <./../40_rei/figures/3_Fall.png>]
+[60 <./../40_rei/figures/3_Fall.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
@@ -3530,7 +3336,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 454.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 454.
-[60]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
@@ -3578,7 +3384,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 475.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 475.
-[61]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
@@ -3616,7 +3422,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 498.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 498.
-[62]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
@@ -3668,7 +3474,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 529.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 529.
-[63]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
@@ -3722,7 +3528,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 552.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 552.
-[64]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
@@ -3736,7 +3542,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 562.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 562.
-<./../40_rei/figures/Fehlerbaum.png, id=1193, 642.14906pt x 384.6872pt>
+<./../40_rei/figures/Fehlerbaum.png, id=1235, 642.14906pt x 384.6872pt>
 File: ./../40_rei/figures/Fehlerbaum.png Graphic file (type png)
 <use ./../40_rei/figures/Fehlerbaum.png>
 Package pdftex.def Info: ./../40_rei/figures/Fehlerbaum.png  used on input line
@@ -3765,7 +3571,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 574.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 574.
-[65]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
@@ -3802,7 +3608,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 588.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 588.
-[66 <./../40_rei/figures/Fehlerbaum.png>]
+[67 <./../40_rei/figures/Fehlerbaum.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 599.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3850,7 +3656,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 618.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 618.
-[67]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 619--620
 
  []
@@ -3872,7 +3678,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 634--635
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 640.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 639.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3881,14 +3687,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 640.
+(babel)             in language  on input line 639.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 640.
+(babel)             in language  on input line 639.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 640.
+(babel)             in language  on input line 639.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 640.
-[68]
+(babel)             in language  on input line 639.
+[69]
+Kapitel 8.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 639.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 639.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 641.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3909,22 +3720,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 649.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 649.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 651.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 651.
 )
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 147.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3933,19 +3729,21 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 147.
-[69] (./Master.lof)
+ [70
+
+] (./Master.lof)
 \tf@lof=\write8
 \openout8 = `Master.lof'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
- [70
+(babel)             in language  on input line 160.
+ [71
 
 
 ]
@@ -3968,7 +3766,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 163.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 163.
-[71] (./Master.lot)
+[72] (./Master.lot)
 \tf@lot=\write9
 \openout9 = `Master.lot'.
 
@@ -3993,14 +3791,14 @@ mr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / viscircle . de / einsteigerguide -[
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 170.
-[72
+(babel)             in language  on input line 169.
+[73
 
 ]
 Overfull \hbox (19.86485pt too wide) in paragraph at lines 170--170
@@ -4009,7 +3807,25 @@ cmr/m/n/12 . []$\OT1/cmtt/m/n/12 https : / / sourceforge . net / p / raspberry
 -[]
  []
 
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 170.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 28.43996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 170.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 170.
+[74]
 Overfull \hbox (9.69699pt too wide) in paragraph at lines 170--170
 \OT1/cmr/m/n/12 ting in Py-thon''. In: \OT1/cmr/m/it/12 ar-Xiv e-prints\OT1/cmr
 /m/n/12 , ar-Xiv:1907.10121 (Ju-li 2019), ar-Xiv:1907.10121.
@@ -4033,843 +3849,33 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 171.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 171.
-[73] (./../10_allgemein/_Doc_A.tex) (./../10_allgemein/_Doc_App.tex)
+[75] (./../10_allgemein/_Doc_A.tex) (./../10_allgemein/_Doc_App.tex)
 (./../20_planung/_Doc_A.tex) (./../20_planung/_Doc_App.tex)
-(./../40_Aron/_Doc_A.tex) (./../40_Aron/_Doc_App.tex
-(./../40_Aron/appendix/capture.py)
-(./../40_Aron/appendix/fehlerlog_Gesichtsregistrierung_admin.py
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
 
-
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 22.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-[74
-
-]
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_Aron/appendix/fehlerlog_Gesichtsregistrierung_Personregistration.py
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 18.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
-[75]
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-)
-(./../40_Aron/appendix/fehlerlog_Gesichtsregistrierung_notPersonregistration.py
-
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 14.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
-[76]
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_Aron/appendix/fehlerlog_Gesichtsregistrierung.py
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 10.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 10.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 10.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 10.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 10.
-[77]
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (17.23148pt too wide) in paragraph at lines 49--50
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_Aron/appendix/Person_Registrierung.py
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 6.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
-[78]
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 17--18
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (877.32999pt too wide) in paragraph at lines 22--23
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][] 
- []
-
-
-Overfull \hbox (947.82986pt too wide) in paragraph at lines 23--24
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (679.93033pt too wide) in paragraph at lines 24--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (799.78012pt too wide) in paragraph at lines 26--27
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][] 
- []
-
-
-Overfull \hbox (38.38144pt too wide) in paragraph at lines 30--31
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 52.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
-[79]
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 56--57
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 58--59
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.73135pt too wide) in paragraph at lines 64--65
-[][][][][][][][][][][][][][][] 
- []
-
-) (./../40_Aron/appendix/prototyp.py
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 25.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 25.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 25.
-[80]
-Overfull \hbox (31.33145pt too wide) in paragraph at lines 27--28
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (31.33145pt too wide) in paragraph at lines 36--37
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (38.38144pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 66--67
-[][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_Aron/appendix/selectID_UpdateBild.py
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 4.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 4.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 4.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 4.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 4.
-[81]
-Overfull \hbox (38.38144pt too wide) in paragraph at lines 8--9
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-)) (./../70_Jordi/_Doc_A.tex) (./../70_Jordi/_Doc_App.tex)
-(./../50_egli/_Doc_A.tex) (./../50_egli/_Doc_App.tex) (./../40_rei/_Doc_A.tex)
-(./../40_rei/_Doc_App.tex (./../40_rei/appendix/reitest.py
-Overfull \hbox (115.9313pt too wide) in paragraph at lines 12--13
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 29--30
-[][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 40.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
-[82])
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 1.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-[83] (./../40_rei/appendix/reitest3.py
-Overfull \hbox (38.38144pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (137.08127pt too wide) in paragraph at lines 19--20
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (207.58115pt too wide) in paragraph at lines 46--48
-[][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 48.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
-[84]
-Overfull \hbox (1011.27975pt too wide) in paragraph at lines 49--50
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][] 
- []
-
-
-Overfull \hbox (165.28122pt too wide) in paragraph at lines 67--69
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1011.27975pt too wide) in paragraph at lines 70--71
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][] 
- []
-
-
-Overfull \hbox (207.58115pt too wide) in paragraph at lines 90--92
-[][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 93.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
-[85]
-Overfull \hbox (1011.27975pt too wide) in paragraph at lines 93--94
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][] 
- []
-
-
-Overfull \hbox (193.48117pt too wide) in paragraph at lines 111--113
-[][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1011.27975pt too wide) in paragraph at lines 114--115
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][] 
- []
-
-
-Overfull \hbox (158.23123pt too wide) in paragraph at lines 132--134
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1011.27975pt too wide) in paragraph at lines 135--136
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 139.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 139.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 139.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 139.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 139.
-[86]
-Overfull \hbox (165.28122pt too wide) in paragraph at lines 152--153
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1011.27975pt too wide) in paragraph at lines 156--157
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][] 
- []
-
-
-Overfull \hbox (38.38144pt too wide) in paragraph at lines 169--170
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (144.13126pt too wide) in paragraph at lines 179--180
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 185.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 185.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 185.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 185.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 185.
-[87]
-Overfull \hbox (87.73135pt too wide) in paragraph at lines 189--190
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (115.9313pt too wide) in paragraph at lines 203--204
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (827.98007pt too wide) in paragraph at lines 227--228
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (172.3312pt too wide) in paragraph at lines 228--229
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (108.88132pt too wide) in paragraph at lines 229--230
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 230--231
-[][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 231.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 231.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 231.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 231.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 231.
-[88]
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 233--234
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_rei/appendix/Log_Erkennung_Email_Nicht_Gefunden.py
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 39.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
-[89]
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_rei/appendix/Log_Erkennung_Person_Existiert_Nicht.py
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 35.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
-[90]
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (17.23148pt too wide) in paragraph at lines 49--50
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_rei/appendix/Log_Erkennung_Person_Existiert.py
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 31.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
-[91]
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_rei/appendix/Log_Erkennung_TasterGed.py
-Overfull \hbox (24.28146pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (101.83133pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 27.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
-[92]
-Overfull \hbox (66.58139pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-) (./../40_rei/appendix/prototyp.py
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 23.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 23.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 23.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 23.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 23.
-[93]
-Overfull \hbox (31.33145pt too wide) in paragraph at lines 27--28
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (31.33145pt too wide) in paragraph at lines 36--37
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (38.38144pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.18149pt too wide) in paragraph at lines 66--67
-[][][][][][][][][][][][][][][][][][] 
- []
-
-)) 
 AED: lastpage setting LastPage
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 180.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 28.43996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 180.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 180.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 180.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 180.
-[94]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 180.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 180.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
- (./Master.aux)
+(./Master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: BC75021BF396AD12B5D327B19387990D;4007.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 03FBF9F2B69A19DD7A219B70C2AE32C8;4161.
 Package logreq Info: Writing requests to 'Master.run.xml'.
 \openout1 = `Master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30367 strings out of 492649
- 563384 string characters out of 6129622
- 999012 words of memory out of 5000000
- 32246 multiletter control sequences out of 15000+600000
+ 29227 strings out of 492649
+ 544964 string characters out of 6129622
+ 966483 words of memory out of 5000000
+ 32156 multiletter control sequences out of 15000+600000
  540649 words of font info for 59 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 47i,17n,52p,10379b,3624s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,52p,10379b,3626s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
@@ -4882,10 +3888,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Master.pdf (101 pages, 2724043 bytes).
+Output written on Master.pdf (82 pages, 2545475 bytes).
 PDF statistics:
- 2778 PDF objects out of 2984 (max. 8388607)
- 2581 compressed objects within 26 object streams
- 1545 named destinations out of 1728 (max. 500000)
- 630 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1530 PDF objects out of 1728 (max. 8388607)
+ 1364 compressed objects within 14 object streams
+ 558 named destinations out of 1000 (max. 500000)
+ 654 words of extra memory for PDF output out of 10000 (max. 10000000)
 

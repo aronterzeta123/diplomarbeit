@@ -1,6 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}
-\contentsline {chapter}{\numberline {1}Dokumentation des Projektverlaufs}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Allgemeine Beschreibungen}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Technische L\IeC {\"o}sungen}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Beschreibungen des Arbeitsverlaufs}{1}{section.1.3}

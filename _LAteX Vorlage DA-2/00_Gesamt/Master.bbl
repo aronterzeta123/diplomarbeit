@@ -59,6 +59,46 @@
       \verb https://opencv.org/
       \endverb
     \endentry
+    \entry{Led}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.simplyscience.ch/teens-liesnach-archiv/articles/was-ist-eine-leuchtdiode.html
+      \endverb
+      \verb{url}
+      \verb https://www.simplyscience.ch/teens-liesnach-archiv/articles/was-ist-eine-leuchtdiode.html
+      \endverb
+    \endentry
+    \entry{Widerstand}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.rohm.de/electronics-basics/resistors/resistor-basics
+      \endverb
+      \verb{url}
+      \verb https://www.rohm.de/electronics-basics/resistors/resistor-basics
+      \endverb
+    \endentry
+    \entry{Bildschirm}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808181.htm
+      \endverb
+      \verb{url}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808181.htm
+      \endverb
+    \endentry
+    \entry{Tastatur}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808142.htm
+      \endverb
+      \verb{url}
+      \verb https://www.elektronik-kompendium.de/sites/com/0808142.htm
+      \endverb
+    \endentry
     \entry{Fritzing}{online}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
@@ -87,6 +127,27 @@
       \field{note}{[Online; accessed 2019]}
       \field{title}{{5x Warum}}
       \field{year}{2017}
+    \endentry
+    \entry{scrum}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=3474a6f687a64142ccbdfb420a822b23}{%
+           family={Alibali},
+           familyi={A\bibinitperiod},
+           given={Bekim},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3474a6f687a64142ccbdfb420a822b23}
+      \strng{fullhash}{3474a6f687a64142ccbdfb420a822b23}
+      \strng{bibnamehash}{3474a6f687a64142ccbdfb420a822b23}
+      \strng{authorbibnamehash}{3474a6f687a64142ccbdfb420a822b23}
+      \strng{authornamehash}{3474a6f687a64142ccbdfb420a822b23}
+      \strng{authorfullhash}{3474a6f687a64142ccbdfb420a822b23}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scrum}
+      \warn{\item Entry 'scrum' (./../literatur.bib): Invalid format '19.09.2019' of date field 'date' - ignoring}
     \endentry
     \entry{python}{misc}{}
       \name{author}{1}{}{%
@@ -324,10 +385,10 @@
       \field{year}{2000}
       \field{dateera}{ce}
       \verb{urlraw}
-      \verb url
+      \verb https://cmake.org/overview/
       \endverb
       \verb{url}
-      \verb url
+      \verb https://cmake.org/overview/
       \endverb
     \endentry
     \entry{Kazemi2014OneMF}{article}{}
@@ -496,7 +557,28 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Architektur}
-      \warn{\item Entry 'terminator' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring}
+      \warn{\item Entry 'terminator' (./../literatur.bib): Invalid format '16.09.2018' of date field 'date' - ignoring}
+    \endentry
+    \entry{Bigpicture}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=7f5ad19b850ff12478759e8cefd48ef8}{%
+           family={Stocklasser},
+           familyi={S\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{fullhash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{bibnamehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{authorbibnamehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{authornamehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{authorfullhash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aufbau von Systemen}
+      \warn{\item Entry 'Bigpicture' (./../literatur.bib): Invalid format '16.09.2018' of date field 'date' - ignoring}
     \endentry
     \entry{rpigpio}{misc}{}
       \name{author}{1}{}{%
@@ -763,6 +845,7 @@
     \endentry
   \enddatalist
   \missing{affine}
+  \missing{imgprz}
 \endrefsection
 \endinput
 
