@@ -1,32 +1,31 @@
-[1] Config.pm:304> INFO - This is Biber 2.13
+[2] Config.pm:304> INFO - This is Biber 2.13
 [2] Config.pm:307> INFO - Logfile is 'Master.blg'
-[187] biber-MSWIN64:315> INFO - === 
-[293] Biber.pm:375> INFO - Reading 'Master.bcf'
-[1039] Biber.pm:905> INFO - Found 8 citekeys in bib section 0
-[1173] Biber.pm:4196> INFO - Processing section 0
-[1180] Utils.pm:75> INFO - Globbing data source './../literatur.bib'
-[1250] Utils.pm:91> INFO - Globbed data source './../literatur.bib' to ./../literatur.bib
-[1343] Biber.pm:4373> INFO - Looking for bibtex format file './../literatur.bib' for section 0
-[1368] bibtex.pm:1462> INFO - LaTeX decoding ...
-[1582] bibtex.pm:1281> INFO - Found BibTeX data source './../literatur.bib'
-[1591] Utils.pm:300> WARN - Possible typo (case mismatch) between datasource keys: 'OpencvLogo' and 'OpenCVlogo' in file './../literatur.bib'
-[1644] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 48, warning: 1 characters of junk seen at toplevel
-[1644] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 52, warning: 1 characters of junk seen at toplevel
-[1645] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 59, warning: 1 characters of junk seen at toplevel
-[1645] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 70, warning: 1 characters of junk seen at toplevel
-[1646] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 76, warning: 1 characters of junk seen at toplevel
-[1646] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 81, warning: 1 characters of junk seen at toplevel
-[1647] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 85, warning: 1 characters of junk seen at toplevel
-[1648] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 89, warning: 1 characters of junk seen at toplevel
-[1648] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 93, warning: 1 characters of junk seen at toplevel
-[1648] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 97, warning: 1 characters of junk seen at toplevel
-[1649] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 101, warning: 1 characters of junk seen at toplevel
-[1649] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 192, warning: 7 characters of junk seen at toplevel
-[1650] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\srnkx0hTSe\literatur.bib_1336.utf8, line 280, warning: 18 characters of junk seen at toplevel
-[1770] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1771] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1771] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[1772] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
-[1841] bbl.pm:648> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
-[1851] bbl.pm:751> INFO - Output to Master.bbl
-[1863] Biber.pm:110> INFO - WARNINGS: 14
+[230] biber-MSWIN64:315> INFO - === 
+[362] Biber.pm:375> INFO - Reading 'Master.bcf'
+[1206] Biber.pm:905> INFO - Found 8 citekeys in bib section 0
+[1334] Biber.pm:4196> INFO - Processing section 0
+[1340] Utils.pm:75> INFO - Globbing data source './../literatur.bib'
+[1398] Utils.pm:91> INFO - Globbed data source './../literatur.bib' to ./../literatur.bib
+[1481] Biber.pm:4373> INFO - Looking for bibtex format file './../literatur.bib' for section 0
+[1508] bibtex.pm:1462> INFO - LaTeX decoding ...
+[1743] bibtex.pm:1281> INFO - Found BibTeX data source './../literatur.bib'
+[1756] Utils.pm:300> WARN - Possible typo (case mismatch) between datasource keys: 'OpencvLogo' and 'OpenCVlogo' in file './../literatur.bib'
+[1812] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 68, warning: 1 characters of junk seen at toplevel
+[1813] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 72, warning: 1 characters of junk seen at toplevel
+[1813] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 79, warning: 1 characters of junk seen at toplevel
+[1814] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 90, warning: 1 characters of junk seen at toplevel
+[1814] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 96, warning: 1 characters of junk seen at toplevel
+[1815] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 101, warning: 1 characters of junk seen at toplevel
+[1815] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 105, warning: 1 characters of junk seen at toplevel
+[1816] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 109, warning: 1 characters of junk seen at toplevel
+[1816] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 113, warning: 1 characters of junk seen at toplevel
+[1817] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 117, warning: 1 characters of junk seen at toplevel
+[1817] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 121, warning: 1 characters of junk seen at toplevel
+[1817] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\goGNubIUGb\literatur.bib_10996.utf8, line 212, warning: 7 characters of junk seen at toplevel
+[1943] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1944] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1944] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[1945] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
+[2023] bbl.pm:648> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[2037] bbl.pm:751> INFO - Output to Master.bbl
+[2042] Biber.pm:110> INFO - WARNINGS: 13
