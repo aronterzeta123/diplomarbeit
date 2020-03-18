@@ -2,13 +2,13 @@
 \label{\docname}
 
 
-\begin{flushleft}
+
 	Diese Diplomarbeit besteht aus vielen unterschiedlichen Modulen, die um
-	bestimmte Ziele bzw. Aufgaben zu lösen gut aufgeteilt sind.\\
-	Ein sehr wichtiger Teil dieses Projektes ist der Bildverarbeitungsteil.\\
+	bestimmte Ziele bzw. Aufgaben zu lösen gut aufgeteilt sind.
+	Ein sehr wichtiger Teil dieses Projektes ist der Bildverarbeitungsteil.
 	In dem folgenden Abschnitt der Ausarbeitung wird  genau erklärt und beschrieben
-	wie diese Aufgabe gelöst wurde und was dafür verwendet wurde.\\ 
-\end{flushleft}
+	wie diese Aufgabe gelöst wurde und was dafür verwendet wurde.
+
 
 \section{Allgemeines}
 
@@ -17,117 +17,116 @@ Bibliotheken beschrieben.
 
 \subsection{Entwicklungsumgebung und Technologien}
 
-\begin{flushleft}
+
 	Die gewählte Entwicklungsumgebung war grundsätzlich eine virtuelle Maschine die
-	Linux auf einem Windows System geboten hat. \\
+	Linux auf einem Windows System geboten hat. 
 	Linux im Gegensatz zu Windows ermöglicht volle Kontrolle über Updates und
-	Upgrades und dadurch könnten komplexe Aufgaben einfacher erlediget werden.\\
-	Alles wird leicht und bequem durch die Konsole eingegeben. \\
+	Upgrades und dadurch könnten komplexe Aufgaben einfacher erlediget werden.
+	Alles wird leicht und bequem durch die Konsole eingegeben. 
 	So wurden die Entwicklung und das Testen der genutzten Algorithmen und andere
 	Technologien erleichtert. \cite{linx}\\
 	
-	Zusätzlich ist Raspberry Pi als Backup System verwendet worden, funktioniert
-	auch mit einem lauffähigen Linux Betriebssystem (Debian). \\
-	Raspberry Pi ist klein, funktioniert aber wie ein normaler Rechner und ist 
+	Zusätzlich ist Raspberry Pi als Backup System verwendet worden dies, funktioniert
+	auch mit einem lauffähigen Linux Betriebssystem (Debian). 
+	Der Raspberry Pi ist klein, funktioniert aber wie ein normaler Rechner und ist 
 	kostengünstig. Für technische/elektronische Projekte wie das Betreffende, ist es
-	perfekt geeignet. \\ 
+	perfekt geeignet. 
 	Für die Implementierung des Codes wurde hauptsächlich die Programmiersprache
-	Python verwendet. \\
+	Python verwendet. 
 	Python ist eine höhere Programmiersprache. Dies bedeutet dass es näher an
-	menschlichen Sprachen ist. \\
+	menschlichen Sprachen ist. 
 	Also ist ein in Python geschriebener Code sehr leicht von einem Mensch zu lesen,
 	zu verwalten und zu warten.  \\ 
 	
 	Es bietet zahlreiche Module, mit seiner großen und robusten Standardbibliothek
 	an, von denen man beruhigt, abhängig vom Bedarf, auswählen kann.  
-	Sehr leicht kann es in der Dokumentation der Python-Standardbibliothek nachsehen
-	um sich besser mit den gezielten Funktionalitäten auszukennen. \\
+	Sehr leicht kann man in der Dokumentation der Python-Standardbibliothek nachsehen
+	um sich besser mit den Funktionalitäten auszukennen. 
 	\cite{why_python}
 	
 	
 	"Git ist ein freies und Open Source verteiltes Versionskontrollsystem, das
 	entwickelt wurde, um alles von kleinen bis zu sehr großen Projekten mit
 	Geschwindigkeit und Effizienz abzuwickeln." \cite{Git1} \\
-	Die Versionierung der Software Änderungen erfolgte durch Git.\\
+	Die Versionierung der Software Änderungen erfolgte durch Git.
 	Es hat sich als nützlich herausgestellt, da die Arbeit dadurch zwischen die
-	Projektmitgliedern sehr gut koordiniert und verwaltet wurde. \\
+	Projektmitgliedern sehr gut koordiniert und verwaltet wurde. 
 	
-\end{flushleft}
 
 
 
 \subsection{Frameworks und Bibliotheken}
 
-\begin{flushleft}
+
 	
-	Schlüsselwort von unserem Projekt war das Framework bzw. die Bibliothek
-	„OpenCV“.\\
-	OpenCV ist eine open-source Bibliothek für Computer Vision. Also, ganz allgemein
-	kann sie als eine Bibliothek für Bildverarbeitung betrachtet werden.\\
-	Es beschäftigt sich unter anderem mit der Manipulation und Analyse von Bildern,
-	die Analyse von denen und um die daraus bestimmte Muster bzw. Objekte, für
-	verschiedenen Zwecken einzusetzen. Ganz berühmte Anwendungsgebieten sind
-	Gesichtserkennung und Stereo Vision. \\
+	Das Schlüsselwort von unserem Projekt war das Framework bzw. die Bibliothek
+	„OpenCV“.
+	OpenCV ist eine open-source Bibliothek für Computer Vision. Ganz allgemein
+	kann sie als eine Bibliothek für Bildverarbeitung betrachtet werden.
+	Sie beschäftigt sich unter anderem mit der Manipulation und Analyse von Bildern,
+	die Analyse von denen und um die Bestimmung von Muster bzw. Objekte, für
+	verschiedenen Zwecken. Ganz berühmte Anwendungsgebieten sind
+	Gesichtserkennung und Stereo Vision. 
 	Stereo Vision bedeutet die Extrahierung von Informationen aus einem Bild in eine
-	3-dimensionale Ebene. \\
+	3-dimensionale Ebene. 
 	OpenCV wurde unter anderen Bibliotheken aufgrund seiner vielen guten
 	Eigenschaften und seiner Flexibilität ausgewählt. Es umfasst hunderte von
 	Computer-Vision-Algorithmen und besteht aus strukturierten Einheiten bzw. Module
-	die als feststehende Bibliotheken implementiert sind. \\
-	Es ist Cross-Platform, in C/C++ geschrieben und unterstützt auch Python. \\
+	die als feststehende Bibliotheken implementiert sind. 
+	Es ist Cross-Platform, in C/C++ geschrieben und unterstützt auch Python. 
 	\cite{opencv_library}
 	
 	SciPy hat sich als nützlich, beim Lösen von gewisse mathematische Angaben und
-	bei zusätzliche Installationen von Bibliotheken herausgestellt.\\ 
+	bei zusätzliche Installationen von Bibliotheken herausgestellt. 
 	"SciPy ist eine kostenlose, Open-Source-Python-Bibliothek für wissenschaftliches
 	und technisches Rechnen."\cite{2019arXiv190710121V-scipy}
 	\\ 
-	Dies sind einige der Kernpakete von SciPy die nutzbar für das Projekt verwendet
-	werden:\\ 
+	Dies sind einige der Kernpakete von SciPy die für das Projekt verwendet
+	werden.
 	
-	NumPy legt die Basis für das wissenschaftliche Rechnen mit Python.\\ Es
-	unterstützt große mehrdimensionale Arrays und Matrizen. Es enthält viele
-	anspruchsvolle Mathematische Funktionen um die Arrays zu bearbeiten.\\
+	NumPy legt die Basis für das wissenschaftliche Rechnen mit Python.
+	Es unterstützt große mehrdimensionale Arrays und Matrizen. Es enthält viele
+	anspruchsvolle Mathematische Funktionen um die Arrays zu bearbeiten.
 	NumPy kann also als leistungsfähiger mehrdimensionaler Behälter für generische
-	Daten verwendet werden.\\ Es können beliebige Datentypen definiert werden.\\
+	Daten verwendet werden. Es können beliebige Datentypen definiert werden.
 	
 	\textbf{Dlib} ist ein so genanntes Toolkit, das Algorithmen für Machine Learning
 	und Tools zum Erstellen komplexer Software zur Lösung von Probleme der realen
-	Welt beinhaltet.\\
+	Welt beinhaltet.
 	Es wird vielseitig eingesetzt, in Robotik, bei Mobilgeräte und unter anderem in
-	Computer Vision.\cite{dlib} \\
-	Es wurde bei der Extrahierung der so genannten „Facial Landmarks“ gebraucht. 
-	\begin{figure}
+	Computer Vision.\cite{dlib} 
+	Es wurde bei der Extrahierung der Gesichtsmerkmalen gebraucht. Das Logo von Dlib ist auf das \ref{fig:dlib logo} ersichtlich. 
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=50mm,scale=0.5]{\ordnerfigures dlib.png}
+		\includegraphics[scale=0.2]{\ordnerfigures dlib.png}
 		\caption{dlib logo \cite{dlib}}
 		\label{fig:dlib logo}
 	\end{figure}
 	
-\end{flushleft}
+
 
 \section{Technische Lösungen}
 
-\begin{flushleft}
+
 	Bei der Gesichtsregistrierungs und Gesichtserkennungs Diplomarbeit war es eine
 	schwierige und herausfordernde Aufgabe, sie sorgfältig zu planen, um die
 	Effektivität bei der Arbeit zu steigern und das Endprodukt zufriedenstellend zu
-	machen. \\
+	machen. 
 	Wichtig war es die Ziele richtig zu setzen und sie gut abzugrenzen, damit es zu
-	keine Lücken bei der Implementierung kommt.\\
+	keinen Lücken bei der Implementierung kommt.
 	Aus diesem Grund musste die Arbeitsteilung gut geregelt werden, damit jedes
-	Teammitglied sich auf bestimmte Modul der Arbeit konzentrieren konnte.\\
+	Teammitglied sich auf bestimmte Modul der Arbeit konzentrieren konnte.
 	Es wurde auch berücksichtigt, dass jedes Teammitglied das machte was ihm/ihr am
-	besten gefällt und was ihm/ihr am leichtesten fällt. \\ 
+	besten gefällt und was ihm/ihr am leichtesten fällt. 
 	Die Planung der betreffenden Bereiche der Projektarbeit ist durch die Methode
-	„Structed Design“ erfolgt. \\
+	„Structed Design“ erfolgt. 
 	Structed Design ist eine Erweiterung von der „Big Picture“ Methode, die dazu
 	dient, ein technisches System mit ihren Schnittstellen von außen grob zu
-	beschreiben. \\
-	Es ist in verschieden Ebenen unterteilt, von außen beginnend. \\
+	beschreiben. 
+	Es ist in verschieden Ebenen unterteilt, von außen beginnend. 
 	Nun wird die erste Ebene der Structed Design von der Bildverarbeitungsteil
 	dargestellt. 
-\end{flushleft}
+
 \subsection{Lösungsweg - Structed Software design} 
 
 
@@ -138,11 +137,12 @@ Bibliotheken beschrieben.
 	\label{fig:bildverarbeitung}
 \end{figure}
 \subsubsection{Legende:}
-\begin{itemize}
-	\item Die Pfeile bezeichnen die Datentypen
-	\item Die Bubbles entsprechen den einzelnen Module.
-	\item Die Rechtecke bezeichnen die Terminatoren von außen.  
-\end{itemize}
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{\ordnerfigures Erklaerung_Erste_Ebene.png}
+	\caption{Erste Ebene Erklärung}
+	\label{fig:Erklaerung_Erste_Ebene}
+\end{figure}
+
 Wie es in der Abb.\ref{fig:bildverarbeitung} ersichtlich ist, ist der
 Bildverarbeitungsteil in diese Einheiten unterteilt:
 \begin{enumerate}
@@ -154,55 +154,53 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	\item Trigger 
 \end{enumerate}
 
-\begin{flushleft}
+
 	Die Schnittstellen nach außen sind das Gesichtserkennungsmodul und das
-	Gesichtsregistrierungsmodul. \\ 
-	Diese schicken eine Anforderung an den Trigger der dann das Bildaufnahmemodul
+	Gesichtsregistrierungsmodul.  
+	Diese schicken ein Signal an den Trigger der dann das Bildaufnahmemodul
 	initialisiert. Unabhängig von welchen dieser beiden Schnittstellen die Anfrage
 	kommt, macht das Bildaufnahmemodul mit den zwei Kameras ein Foto. 
-	\\
+	\justify
 	Implementierungsnah wurde nur eine Kamera verwendet, da die Stereo Vision
-	Herausforderungen gegeben hat. \\
+	Probleme gegeben hat. 
 	Nachdem das Foto gemacht wird folgt die Image Normalisierung bzw. das „Image
-	Processing“. \\
+	Processing“. 
 	Wenn ein Bild zu klein ist, wird die Größe angepasst, wenn ein Gesicht verdreht
 	ist wird es gerade rotiert. Mehr dazu wird im Normalisierungabschnitt erklärt.
-	Siehe \\
+	
 	Danach folgt die Erkennung von Gesichtern, das Ausschneiden von denen und die
-	Extrahierung der Gesischtsschlüsselpunkte.\\ 
-	Sie werden dann zum Abgleich oder zum Registrierung je nach Bedarf, geschickt.
-	\\	
+	Extrahierung der Gesischtsschlüsselpunkte. 
+	Sie werden dann zum Abgleich oder Registrierung je nach Bedarf, geschickt.
+	
 	Bei der Umsetzung wurden bestimmte Bereiche miteinander verknüpft, was zu
 	Folgenden führte: was bei der Planung steht, stimmt nicht vollig mit der
 	Methoden zur Umsetzung überein.
-\end{flushleft} 
+
 
 \subsection{Gesichtserkennung}
 
-\begin{flushleft}
-	
 	Das erste Ziel, dass bei der Gesichtserkennung erfüllt worden war ist das Finden
 	von Gesichtern, also die Feststellung, wo sich die Gesichter im Bild befinden.
-	\\ 
+	 
 	Dafür ist der vorgefertigter Klassifikator \textit{„Haar Cascade Classifiers“}
-	benutzt worden. \\ 
+	benutzt worden.  
 	Gesichtserkennung durch „Haar“ Merkmale ist eine sehr effektive Methode die von
 	Paul Viola und Michael Jones entwickelt wurde, indem sie Merkmale gruppiert
-	haben und die Erkennung von diesen dadurch schneller erfolgt ist. \\ 
+	haben und die Erkennung von diesen dadurch schneller erfolgt ist.  
 	Die Arbeit heißt „Rapid Object Detection using a Boosted Cascade of Simple
-	Features". \cite{Viola01robustreal-time}\\
+	Features". \cite{Viola01robustreal-time}
 	
 	
 	Unten wird eine kurze technische Übersicht über diese Klassifikator gegeben.\\
 	
 	Es geht hier um Maschinelles Lernen, wie diese Kaskadenfunktionen durch viele
 	negative(Bilder ohne Gesichter) und positive(Bilder mit Gesichter) Bilder
-	trainiert wurden um Objekte zu erkennen.\\ 
+	trainiert wurden um Objekte zu erkennen. 
 	In diesem Fall  arbeiten wir selbstverständlich mit Gesicht Objekten. 
-	Dafür wurden die Haare Merkmale benutzt. Auf Abbildung \ref{fig:haar features}
-	sind sie dargestellt. Jedes Haar Merkmal ist nichts anders als ein Wert, den man
+	Dafür wurden Merkmale Haare benutzt. Auf Abbildung \ref{fig:haar features}
+	ist dies dargestellt. Jedes Haar Merkmal ist nichts anders als ein Wert, den man
 	durch das Subtrahieren der Summe der Pixel unter dem weißen Rechteck von der
-	Summe der Pixel unter dem schwarzen Rechteck erhält. \\
+	Summe der Pixel unter dem schwarzen Rechteck erhält. 
 	%Diese Summen berechnet man durch integrale Bilder, die zur Vereinfachung zu
 	%Summenberechnungen dienen. 
 	\begin{figure}[H]
@@ -226,44 +224,44 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	
 	Mit dieser Absicht wenden wir alle Funktionen auf alle Trainingsbilder an. Für
 	jedes Merkmal wird der beste Schwellenwert ermittelt, der die Gesichter in
-	positive und negative klassifiziert.\\\
+	positive und negative klassifiziert.\\
 	
-\end{flushleft}
+
 
 
 \subsubsection{Umsetzung in Code}
 
-\begin{flushleft}
+
 	
 	In Listing \ref{detect} ist ein Code Abschnitt der Gesichtserkennung
 	dargestellt. \\
 	
-	\begin{lstlisting}[language=Python, caption=Kern Code für
-	Gesichtsdetektion,label=detect]
-	face_cascade = 
-	cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+\begin{lstlisting}[language=Python, caption=Kern Code für
+Gesichtsdetektion,label=detect]
+face_cascade = 
+cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 	
-	image = cv2.imread('gesicht.jpg')
+image = cv2.imread('gesicht.jpg')
 	
-	gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 	
-	faces = face_cascade.detectMultiScale(gray,1.1,4)
+faces = face_cascade.detectMultiScale(gray,1.1,4)
 	
-	for(x, y, w, h) in faces:
+for(x, y, w, h) in faces:
 	
-	cv2.rectangle(image, (x, y), (x+w, y+h), (255,0,0), 2) 
+cv2.rectangle(image, (x, y), (x+w, y+h), (255,0,0), 2) 
 	
-	\end{lstlisting}
+\end{lstlisting}
 	
 	
 	Es wurde die trainierte Klassifikator-XML-Datei (haarcascade\textunderscore
 	frontalface\textunderscore default.xml) die sich im GitHub-Repository von OpenCV
-	befinden ist, verwendet.\\
+	befindet, verwendet.
 	In den Zeilen \textbf{1} und \textbf{2} wurde sie geladen und in die Variable
 	face\textunderscore cascade gespeichert.
-	In den Zeile \textbf{4} wird das Bild von den Funktion \emph{imread} geladen.\\
+	In den Zeile \textbf{4} wird das Bild von den Funktion \emph{imread} geladen.
 	Die Erkennung funktioniert nur bei Graustufenbildern. Daher wurde das Farbbild
-	in Graustufen umgewandelt, wie in der Zeile \textbf{6} ersichtlich.\\
+	in Graustufen umgewandelt, wie in der Zeile \textbf{6} ersichtlich.
 	Der Funktion \textit{ detectMultiScale } in der Zeile \textbf{8} erkennt die
 	Gesichter im Bild. Diese Funktion ist sehr wichtig und braucht 3 Argumente – das
 	Eingabebild, der Skalierungsfaktor (scaleFactor) und die Zahl
@@ -298,15 +296,15 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 		\caption{Output: Box auf Gesicht}
 		\label{fig:aron}
 	\end{figure}
-\end{flushleft}
+
 
 
 \subsection{Normalisierung}
 
 \label{normal}
-\begin{flushleft}
+
 	
-	In dieser Kapitel wird ein sehr wichtiger Bereich, der sogenannte Normalisierung
+	In dieser Kapitel wird ein sehr wichtiger Bereich, die sogenannte Normalisierung
 	eines Bildes, genau erklärt. 
 	
 	\subsubsection{Was ist Normalisierung?}
@@ -321,7 +319,7 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	eine maßgebliche Ausrichtung des Gesichts basierend auf Skalierung und Rotation
 	zu erhalten.
 	\subsubsection{Methoden für Normalisierung}
-	Es gibt viele Methoden mit dem man Bilder normalisieren könnte. 
+	Es gibt viele Methoden mit denen man Bilder normalisieren könnte. 
 	Einige von denen basieren auf pre-definierten 3D-Modellen und transformieren
 	dadurch die Eingabebilder, sodass die Gesichtsschlüsselpunkte der Eingabebild
 	mit denen von dem 3D Modell übereinstimmen.
@@ -329,13 +327,13 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	Die in dieser Diplomarbeit verwendete Methode, eine eher einfachere, verlässt
 	sich nur auf die Gesichtspunkte selbst, um eine normalisierte Darstellung des
 	Gesichts durch Affine- und Ähnlichkeits-Transformation zu erhalten.
-	Diese Methode wurde deswegen implementiert, weil es sehr effizient ist.
+	Diese Methode wurde deswegen implementiert, weil sie sehr effizient ist.
 	
 	\subsubsection{Warum Normalisierung?}
 	Der Grund warum in dieser Arbeit Normalisierung von Daten durchgeführt wird, ist
-	dass viele Gesichtserkennungsalgorithmen, einschließlich unseren, von der
-	Anwendung dieser Ausrichtung viel profitieren. 
-	Es wird dadurch der Präzision der Gesichtserkennung erhöht. 
+	dass viele Gesichtserkennungsalgorithmen, einschließlich unserem, von der
+	Anwendung dieser Ausrichtung sehr profitieren. 
+	Es wird dadurch die Präzision der Gesichtserkennung erhöht. 
 	
 	
 	\subsubsection{Implementation}
@@ -343,12 +341,12 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	Die hier verwendete Methode für die Normalisierung, wie oben kurz erwähnt wurde,
 	wendet
 	Ähnlichkeitstransformation bei zwei Paaren entsprechender Punkte an.
-	Die Punkten sind die von Dlib extrahierten Gesichtsmerkmalen. Siehe Kapitel
+	Die Punkten sind die von Dlib extrahierten Gesichtsmerkmale, siehe Kapitel
 	\ref{gspex}.
 	\\
 	
 	OpenCV benötigt in diesem Fall 3 Punkte zur Berechnung der Ähnlichkeitsmatrix.
-	Wir nehmen somit als dritten Punkt, der dritte Punkt des gleichseitigen Dreiecks
+	Wir nehmen somit als dritten Punkt, den dritten Punkt eines gleichseitigen Dreiecks
 	mit diesen beiden gegebenen Punkten an.
 	\\
 	
@@ -365,16 +363,16 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	Ein solches Prinzip ist auch in unsere Methode eingesetzt worden. Es wird eine
 	zweites, dem ersten Bild ähnliches Bild, erstellt. \\
 	
-	\begin{lstlisting}[caption=Implementation
+\begin{lstlisting}[caption=Implementation
 	Normalisierung,language=python,label=norm]
 	
-	def similarityTransformMat(initialPoints, destinationPoints):
-	...
-	tform = cv2.estimateAffinePartial2D(np.array([initialPoints]),
+def similarityTransformMat(initialPoints, destinationPoints):
+...
+tform = cv2.estimateAffinePartial2D(np.array([initialPoints]),
 	np.array([destinationPoints]))
-	return tform[0]
+return tform[0]
 	
-	\end{lstlisting}
+\end{lstlisting}
 	
 	Im Code Abschnitt \ref{norm} wird die Methode gezeigt, die als Parameter die
 	Anfangs- und die Zielpunkte nimmt und aus den beiden jeweils einen dritten Punkt
@@ -386,7 +384,7 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	\textit{cv2.estimateAffinePartial2D} berechnet.
 	\\
 	
-	Ausgabe ist eine 2D affine Transformation, also eine 2x3 Matrix oder leere
+	Ausgabe ist eine 2D affine Transformation, also eine 2x3 Matrix, oder eine leere
 	Matrix, wenn die Transformation nicht geschätzt werden konnte.\\
 	"Die Funktion schätzt eine optimale affine 2D-Transformation mit 4
 	Freiheitsgraden, die auf Kombinationen aus Translation, Rotation und
@@ -395,7 +393,7 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	\\
 	
 	Die nächste Funktion macht die Ausrichtung des Gesicht im Bild. 
-	Es bekommt ein, von Funktion \textit{cv2.imread} eingelesenes Bild, die
+	Es bekommt ein, von der Funktion \textit{cv2.imread} eingelesenes Bild, die
 	gewünschte Größe, und die Dlib Gesichtsmerkmale als Parameter. 
 	
 	\begin{lstlisting}[caption=Gesichtsausrichtung,label=align,language=python]
@@ -431,7 +429,7 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	Schließlich wird die Ähnlichkeitstransformation durch die Methode
 	\textit{cv2.warpAffine} angewendet.\\
 	Diese Methode bekommt das Tupel vom Bild, \textit{similarityTransform}, und die
-	Größen von Bild als Parameter. Das Ergebnis wird dann von den Funktion
+	Größen vom Bild als Parameter. Das Ergebnis wird dann von den Funktion
 	zurückgegeben. (Zeile \textbf{16}) 
 	\\
 	
@@ -439,18 +437,18 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 	Alle auf einer Linie liegenden Punkte, die anfänglich nach der Transformation
 	noch auf einer Linie liegen) und die Entfernungsverhältnisse (z. B. der
 	Mittelpunkt eines Liniensegments bleibt der Mittelpunkt nach der Transformation)
-	bewahrt. \\
+	bewahrt. 
 	Eine affine Transformation wird auch als Affinität bezeichnet.\cite{affine}
 	\\ 
 	Zusätzlich wurde noch eine Glättungsfilter angewendet. Dies geschieht durch die
 	Funktion \textit{cv.2filter2d}, die ein Bild mit dem Kernel faltet. \\
-	Es bekommt folgende Parameter: 
+	Sie bekommt folgende Parameter: 
 	\textit{output} - Zielbild.\\
 	\textit{kernel} - Faltungskern (oder vielmehr ein Korrelationskern), eine
 	einkanalige Gleitkommamatrix.\\
-	\textit{ddepth} - gewünschte Tiefe des Zielbildes. \cite{imgprz}\\
+	\textit{ddepth} - gewünschte Tiefe des Zielbildes. \\
 	
-	Kernel ist auf Code abschnitt \ref{smooth} genau sichtbar. 
+	Der Kernel ist auf Code abschnitt \ref{smooth} genau sichtbar. 
 	
 	\begin{lstlisting}[language=python,caption=Glättungsfilter,label=smooth]
 	kernel = np.ones((5,5),np.float32)/25
@@ -477,16 +475,14 @@ Bildverarbeitungsteil in diese Einheiten unterteilt:
 		\qquad
 		\subfloat[Normalisiert]{ {\includegraphics[scale=0.315]{\ordnerfigures
 					alignedorens1Cropped.jpg} }}%
-		\caption{Unterschied: normalisiert, nicht normalisiert .2}
+		\caption{Unterschied: normalisiert, nicht normalisiert}
 		\label{fig:norm}
 	\end{figure}
 	
 	
 	Auf Abbildungen \ref{fig:norm} und \ref{fig:norme} sieht man ganz klar die
 	Unterschiede die die Normalisierung in Bildern verursacht. 
-\end{flushleft}
 
-\begin{flushleft}
 	
 \subsection{Zuschneiden von Gesichter}
 
@@ -515,11 +511,11 @@ In Listing \ref{crop} sieht man folgendes:\\
 
 \textit{nrFace} bestimmt die Anzahl der Gesichter, die von den
 Kaskadenklassifikator gefunden wurden. 
-Nur wenn dieser Wert größer als 0 ist soll der Programm weiterlaufen.  
+Nur wenn dieser Wert größer als 0 ist soll das Programm weiterlaufen.  
 Es wird durch jedes Gesicht iteriert.
 \\
 
-Zeilen \textbf{1-6} berechnen das Zentrum von neuen Bild und in Zeile \textbf{7}
+Zeilen \textbf{1-6} berechnen das Zentrum vom neuen Bild und in Zeile \textbf{7}
 wird ein neues Bild mit den berechneten Parametern angelegt.\\
 Mit imwrite wird das Bild gespeichert (Zeile \textbf{12}). 
 Auf Abb.\ref{fig:aroncropped} sieht man deutlich nur das Gesicht.
@@ -531,9 +527,7 @@ Auf Abb.\ref{fig:aroncropped} sieht man deutlich nur das Gesicht.
 	\caption{Output: Zugeschnittenes Bild}
 	\label{fig:aroncropped}
 \end{figure}
-\end{flushleft}
 
-\begin{flushleft}
 	
 \subsection{Gesichtsschlüsselpunkte Extraktion}
 \label{gspex}
@@ -573,28 +567,28 @@ mit 68(x,y) Koordinaten. \\
 Es wird hier nicht die \textit{resize} Funktion verwendet, weil das Bild an Qualität verliert
 und es rechenintensiver ist, je größer das Eingabebild wird. \\
 Jede Koordinate läuft in einer Schleife durch und entspricht dem spezifischen
-Gesichtsmerkmal im Bild.  \\
+Gesichtsmerkmal im Bild. Auf Abbildung \ref{fig:data} sieht man die extrahierten Daten von einem Gesicht. \\
 \begin{figure}[H]
 	\includegraphics[scale=0.8]{\ordnerfigures pikat.png}
 	\centering
 	\caption{Gesichtsdaten}
+	\label{fig:data}
 \end{figure}
 
 
 Die Merkmale werden in einer numpy Array gespeichert für die
 Speicherung in der Datenbank. \\
 
-\end{flushleft}
+
 
 \section{Herausforderungen, Probleme und deren Lösung }
 
-\begin{flushleft}
 
 
 Die größte Herausforderung lag bei der Planung der Software und den Methoden
 die zum Extrahieren von den Gesichtsschlüsselpunkten dienten.\\
 Es hat mich viel Zeit gekostet, bis ich eine geeignete Lösung gefunden habe und
-das hat viel Stress gemacht. \\
+das hat mir viel Stress gemacht. \\
 Eine weitere Herausforderung war das Verknüpfen von den Entwicklungsumgebungen
 und die Kooperation zwischen den Teammitgliedern. \\
 Die verwendete Systeme waren all zu unterschiedlich und es konnte keine
@@ -608,28 +602,27 @@ die sehr grobe Planung, war am Beginn auch wegen den
 Kommunikationslücken unklar. 
 \\
 
-Als das Projekt weiter fort schritt, hat sich der Bedarf an Genauigkeit und Präzision
+Als das Projekt weiter fortschritt, hat sich der Bedarf an Genauigkeit und Präzision
 auch enorm gesteigert.
 Es hat immer wieder Fälle beim Finden von Gesichter gegeben, in denen die fertig gestellten neuronale Netze
 nicht so gut funktioniert haben . 
 \\
 
-Es war keine gute Idee sich nur von einem Prädiktor sich abhängig
+Es war keine gute Idee sich nur von einem Prädiktor abhängig
 zu machen. 
-Herausforderung war es deutlich, die Einsetzung von mehreren neuronalen Netzen
-und die Erhöhung der Treffsicherheit.
+Es war deutlich dass, die Einsetzung von mehreren neuronalen Netzen Erhöhung der Treffsicherheit ergeben hätte.
 \\
 
-Eine einfache Normalisierung genügte auch nicht (die Umwandlung der Bilder in
+Eine einfache Normalisierung genügte auch nicht die Umwandlung der Bilder in
 Graustufe), sondern es war eine komplexere Lösung dafür notwendig.
 \\
 Bis das funktioniert hat, hat es viel Zeit und Mühe gekostet. 
 Dafür waren auch relativ fortgeschrittene mathematische Kenntnisse nötig.
-Dabei habe ich viel "Try und Error" angewendet. 
+Dabei habe ich viel Try and Error angewendet.
 \\
  
 Es hat auch Schwierigkeiten beim Qualitätsmanagement gegeben. Die
-Erfahrung fehlte, somit waren gewisse Maßstäbe, Standarte auch nicht bekannt. 
+Erfahrung fehlte, somit waren gewisse Maßstäbe und Standarts auch nicht bekannt. 
 
 
 
@@ -643,18 +636,17 @@ getestet, damit die Ziele auch qualitativ erfüllt wurden.
 \\
 Die Kommunikation hat sich steigendem mit Bedarf über die Zeit stark verbessert und
 dadurch sind auch die Unklarheiten abgeklärt worden. 
-\end{flushleft}
+
 
 \section{Qualitätssicherung, Controlling}
-\begin{flushleft}
-	
+
 
 Die Qualität wurde durch verschiedene Methoden gesichert. Eine von denen war die
 Methode 5xWarum. 
 \\
  
 „Fünf warum“ ist eine iterative Methode, die Fragen als Basis hat und die
-Beziehungen zwischen Ursachen und Problemen. \\
+Beziehungen zwischen Fragen und Problemen. \\
 Es geht hier um die Verschachtelung der Ursachen und das Herausfinden von ihnen durch iterative Fragetechnik, da viele Probleme nicht nur eine einzige Ursache haben. 
 Die Methode ruft jedes Mal eine andere Folge von Fragen auf.\cite{fmea}
 \\
@@ -670,15 +662,14 @@ FAST\footnote{Features from Accelerated Segment Test}.“
 \begin{enumerate}
 	
 	
-	\item 	Was ist überhaupt ein „Segmentation Fault“? 
+		\item  \textbf{Was ist überhaupt ein „Segmentation Fault“? }
 	Ein Segmentierungsfehler tritt auf, wenn ein Programm versucht, auf einen
 	Speicherort zuzugreifen, auf den es nicht zugreifen darf, oder wenn versucht
 	wird, auf einen Speicherort auf nicht zulässige Weise zuzugreifen (z. B. beim
 	Versuch, an einen schreibgeschützten Speicherort zu schreiben, oder einen Teil
-	des Betriebssystems zu überschreiben).\\
-	\item 	Warum passiert das, warum versucht mein Program auf einen Speicherort
-	zuzugreifen, auf den es nicht zugreifen darf?\\
-	
+	des Betriebssystems zu überschreiben).
+	\item \textbf{Warum passiert das, warum versucht mein Program auf einen Speicherort
+	zuzugreifen, auf den es nicht zugreifen darf?}\\
 	Problem ergibt sich in dieser Zeile: 
 	“kp = fast.detect(image, None)”
 	
@@ -692,17 +683,17 @@ FAST\footnote{Features from Accelerated Segment Test}.“
 	Warum? Alle nötigen Pakete wurden in einer gesamten Installation geholt und
 	FAST war nicht da. 
 	
-	\item	Warum dürfen die Daten die fast.detect zurückgibt nicht in kp gespeichert
-	werden ? 
+	\item	\textbf{Warum dürfen die Daten die fast.detect zurückgibt nicht in kp gespeichert
+	werden ? }
 	
 	Die Daten die fast.detect zurückgibt, dürfen nicht in kp gespeichert werden, weil
 	kp kein Array ist. 
 	
-	\item	Warum ist kp kein Array? 
+	\item	\textbf{Warum ist kp kein Array? }
 	
 	Kp ist kein array, weil man es in Python  manuell angeben muss.
 	
-	\item Warum wurde es nicht manuell angegeben? 
+	\item \textbf{Warum wurde es nicht manuell angegeben? }
 	
 	Es wurde nicht manuell gegeben weil, die Methode fast.detect nicht gut
 	recherchiert wurde. Man sollte mehr darüber in die Dokumentation nachschauen.
@@ -719,11 +710,9 @@ FAST\footnote{Features from Accelerated Segment Test}.“
 	
 \end{enumerate}
 
-\end{flushleft}
 
 \section{Ergebnisse}
 
-\begin{flushleft}
 	
 Ich habe ungefähr 180 Stunden Zeit ins gesamt für die Diplomarbeit investiert und folgendes erreicht.\\
 
@@ -736,36 +725,27 @@ Ich habe ungefähr 180 Stunden Zeit ins gesamt für die Diplomarbeit investiert 
 \end{itemize}
 
 
-\end{flushleft}
 \section{Evaluierung und Resümee}
-\begin{flushleft}
-	In diesem Kapitel geht es um die Reflexion, Evaluierung der Ergebnisse. Was von der Planung abgewichen hat usw. 
-\end{flushleft}
+
+	In diesem Kapitel geht es um die Reflexion, Evaluierung der Ergebnisse. Was von der Planung abgewichen ist usw. 
+
 \subsection{Planung vs. Realisierung}
-\begin{flushleft}
-Es wurde am Anfang so gedacht, dass die Klassifikatoren und die neuronale Netze alle selbst gemacht werden müssten. \\
 
-Über die Zeit wurde mir klar, dass so was zu kompliziert und fast unmöglich war.\\
 
-Die Genauigkeit der Gesichtserkennungsalgorithmen könnte nie erreicht werden, wenn es vom Scratch erarbeitet wurde. 
-
-Geplant waren auch gewisse Ziele, die durch den Diplomarbeit-Mitgliedern gemischt worden waren. \\
-
-Z.b.: Ein Ziel von mir war die Vektorumwandlung, die später so geschätzt wurde, dass es eigentlich zu Rei's Teil gehörte. \\
+Es wurde am Anfang so geplant, dass die Klassifikatoren und die neuronale Netze alle selbst gemacht werden müssten. 
+Über die Zeit wurde mir klar, dass so was zu kompliziert und fast unmöglich war.
+Die Genauigkeit der Gesichtserkennungsalgorithmen könnte nie erreicht werden, wenn es vom Beginn erarbeitet wurde. Geplant waren auch gewisse Ziele, die über die Diplomarbeit-Mitglieder falsch verteilt worden waren. Z.b.: Ein Ziel von mir war die Vektorumwandlung, die später so geschätzt wurde, dass es eigentlich zu Rei's Teil gehörte. 
 	
 	
-\end{flushleft}
-\subsection{Lessons Learned}
-\begin{flushleft}
+
+\subsection{Ergebnisse}
+
 	Im technischen Aspekt habe ich viel gelernt.
-	Diese Diplomarbeit hat viele Kenntnisse mit sich gebracht. Zahlreiche neue Bibliotheken wurden verwendet. \\
-	Eine ganz unbekannte Framework ist kennen gelernt worden. \\
-	Ich habe viel Erfahrung über Computer Vision bekommen.\\
-	Da meine Aufgaben zum Teil sehr anspruchsvoll waren, habe ich viel Zeit und Mühe für die Realisierung investiert.\\
+	Diese Diplomarbeit hat viele Kenntnisse mit sich gebracht. Zahlreiche neue Bibliotheken wurden verwendet. 
+	Ein ganz unbekanntes Framework ist kennen gelernt worden. 
+	Ich habe viel Erfahrung mit Computer Vision bekommen.
+	Da meine Aufgaben zum Teil sehr anspruchsvoll waren, habe ich viel Zeit und Mühe für die Realisierung investiert.
 	Soft Skills wurden auch dazugewonnen. Ich habe erlernt wie wichtig Teamwork und Kommunikation ist. 
-	Wenn ich die ganze Diplomarbeit noch einmal machen würde, wäre vieles anders sein. 
+	Wenn ich die ganze Diplomarbeit noch einmal machen würde, wäre vieles anders. 
 	  
-	
-	
-\end{flushleft}
 

@@ -16,46 +16,51 @@
 \BOOKMARK [1][-]{section.3.2}{Ergebnisse}{chapter.3}% 16
 \BOOKMARK [2][-]{subsection.3.2.1}{Implementierung}{section.3.2}% 17
 \BOOKMARK [0][-]{chapter.4}{Umsetzung }{}% 18
-\BOOKMARK [1][-]{section.4.1}{Allgemeine Beschreibung}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.2}{Technische L\366sungen}{chapter.4}% 20
-\BOOKMARK [2][-]{subsection.4.2.1}{Datenkbank}{section.4.2}% 21
-\BOOKMARK [1][-]{section.4.3}{Herausforderungen}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.3.1}{Datenkbank - MariaDB}{section.4.3}% 23
-\BOOKMARK [2][-]{subsection.4.3.2}{Python Scripting}{section.4.3}% 24
-\BOOKMARK [2][-]{subsection.4.3.3}{OpenCV}{section.4.3}% 25
-\BOOKMARK [1][-]{section.4.4}{Qualit\344tssicherung}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{Ergebnisse }{}% 27
-\BOOKMARK [1][-]{section.5.1}{Datenbank}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.2}{Tieferkennung}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter.6}{Bildverarbeitung}{}% 30
-\BOOKMARK [1][-]{section.6.1}{Allgemeines}{chapter.6}% 31
-\BOOKMARK [2][-]{subsection.6.1.1}{Entwicklungsumgebung und Technologien}{section.6.1}% 32
-\BOOKMARK [2][-]{subsection.6.1.2}{Frameworks und Bibliotheken}{section.6.1}% 33
-\BOOKMARK [1][-]{section.6.2}{Technische L\366sungen}{chapter.6}% 34
-\BOOKMARK [2][-]{subsection.6.2.1}{L\366sungsweg - Structed Software design}{section.6.2}% 35
-\BOOKMARK [2][-]{subsection.6.2.2}{Gesichtserkennung}{section.6.2}% 36
-\BOOKMARK [2][-]{subsection.6.2.3}{Normalisierung}{section.6.2}% 37
-\BOOKMARK [2][-]{subsection.6.2.4}{Zuschneiden von Gesichter}{section.6.2}% 38
-\BOOKMARK [2][-]{subsection.6.2.5}{Gesichtsschl\374sselpunkte Extraktion}{section.6.2}% 39
-\BOOKMARK [1][-]{section.6.3}{Herausforderungen, Probleme und deren L\366sung }{chapter.6}% 40
-\BOOKMARK [2][-]{subsection.6.3.1}{L\366sungen}{section.6.3}% 41
-\BOOKMARK [1][-]{section.6.4}{Qualit\344tssicherung, Controlling}{chapter.6}% 42
-\BOOKMARK [1][-]{section.6.5}{Ergebnisse}{chapter.6}% 43
-\BOOKMARK [1][-]{section.6.6}{Evaluierung und Res\374mee}{chapter.6}% 44
-\BOOKMARK [2][-]{subsection.6.6.1}{Planung vs. Realisierung}{section.6.6}% 45
-\BOOKMARK [2][-]{subsection.6.6.2}{Lessons Learned}{section.6.6}% 46
-\BOOKMARK [0][-]{chapter.7}{Gesichtserkennung}{}% 47
-\BOOKMARK [1][-]{section.7.1}{Allgemeines}{chapter.7}% 48
-\BOOKMARK [1][-]{section.7.2}{Technische L\366sung}{chapter.7}% 49
-\BOOKMARK [2][-]{subsection.7.2.1}{Hardware und Aufbau}{section.7.2}% 50
-\BOOKMARK [2][-]{subsection.7.2.2}{Software}{section.7.2}% 51
-\BOOKMARK [1][-]{section.7.3}{Herausforderungen, Probleme, und deren L\366sung}{chapter.7}% 52
-\BOOKMARK [1][-]{section.7.4}{Projektmanagement und Controlling}{chapter.7}% 53
-\BOOKMARK [1][-]{section.7.5}{Ergebnisse}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.6}{Was wurde gelernt und welche Verbesserungs m\366glichkeiten gibt es}{chapter.7}% 55
-\BOOKMARK [0][-]{chapter.8}{Ausblick}{}% 56
-\BOOKMARK [1][-]{section.8.1}{Wie geht es weiter ?}{chapter.8}% 57
-\BOOKMARK [1][-]{section.8.2}{Was passiert mit dem Ergebnis?}{chapter.8}% 58
-\BOOKMARK [1][-]{section.8.3}{was passiert mit dem Prototyp?}{chapter.8}% 59
-\BOOKMARK [1][-]{section.8.4}{Gibt es Folgeprojekte?}{chapter.8}% 60
-\BOOKMARK [1][-]{section.8.5}{Gibt es Interessanten?}{chapter.8}% 61
+\BOOKMARK [0][-]{chapter.5}{Datenbank \046 2D vs 3D Unterschied}{}% 19
+\BOOKMARK [1][-]{section.5.1}{Umsetzung}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.2}{Technische L\366sungen}{chapter.5}% 21
+\BOOKMARK [2][-]{subsection.5.2.1}{Datenkbank}{section.5.2}% 22
+\BOOKMARK [2][-]{subsection.5.2.2}{2D vs. 3D Unterschied}{section.5.2}% 23
+\BOOKMARK [1][-]{section.5.3}{Herausforderungen}{chapter.5}% 24
+\BOOKMARK [2][-]{subsection.5.3.1}{Datenkbank - MariaDB}{section.5.3}% 25
+\BOOKMARK [2][-]{subsection.5.3.2}{Disparity Map}{section.5.3}% 26
+\BOOKMARK [2][-]{subsection.5.3.3}{Python Scripting}{section.5.3}% 27
+\BOOKMARK [2][-]{subsection.5.3.4}{OpenCV}{section.5.3}% 28
+\BOOKMARK [1][-]{section.5.4}{Qualit\344tssicherung}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{Ergebnisse }{}% 30
+\BOOKMARK [1][-]{section.6.1}{Datenbank}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Ergebnisse}{chapter.6}% 32
+\BOOKMARK [2][-]{subsection.6.2.1}{Datenbank}{section.6.2}% 33
+\BOOKMARK [2][-]{subsection.6.2.2}{2D vs. 3D Unterschied}{section.6.2}% 34
+\BOOKMARK [0][-]{chapter.7}{Bildverarbeitung}{}% 35
+\BOOKMARK [1][-]{section.7.1}{Allgemeines}{chapter.7}% 36
+\BOOKMARK [2][-]{subsection.7.1.1}{Entwicklungsumgebung und Technologien}{section.7.1}% 37
+\BOOKMARK [2][-]{subsection.7.1.2}{Frameworks und Bibliotheken}{section.7.1}% 38
+\BOOKMARK [1][-]{section.7.2}{Technische L\366sungen}{chapter.7}% 39
+\BOOKMARK [2][-]{subsection.7.2.1}{L\366sungsweg - Structed Software design}{section.7.2}% 40
+\BOOKMARK [2][-]{subsection.7.2.2}{Gesichtserkennung}{section.7.2}% 41
+\BOOKMARK [2][-]{subsection.7.2.3}{Normalisierung}{section.7.2}% 42
+\BOOKMARK [2][-]{subsection.7.2.4}{Zuschneiden von Gesichter}{section.7.2}% 43
+\BOOKMARK [2][-]{subsection.7.2.5}{Gesichtsschl\374sselpunkte Extraktion}{section.7.2}% 44
+\BOOKMARK [1][-]{section.7.3}{Herausforderungen, Probleme und deren L\366sung }{chapter.7}% 45
+\BOOKMARK [2][-]{subsection.7.3.1}{L\366sungen}{section.7.3}% 46
+\BOOKMARK [1][-]{section.7.4}{Qualit\344tssicherung, Controlling}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.5}{Ergebnisse}{chapter.7}% 48
+\BOOKMARK [1][-]{section.7.6}{Evaluierung und Res\374mee}{chapter.7}% 49
+\BOOKMARK [2][-]{subsection.7.6.1}{Planung vs. Realisierung}{section.7.6}% 50
+\BOOKMARK [2][-]{subsection.7.6.2}{Ergebnisse}{section.7.6}% 51
+\BOOKMARK [0][-]{chapter.8}{Gesichtserkennung}{}% 52
+\BOOKMARK [1][-]{section.8.1}{Allgemeines}{chapter.8}% 53
+\BOOKMARK [1][-]{section.8.2}{Technische L\366sung}{chapter.8}% 54
+\BOOKMARK [2][-]{subsection.8.2.1}{Hardware und Aufbau}{section.8.2}% 55
+\BOOKMARK [2][-]{subsection.8.2.2}{Software}{section.8.2}% 56
+\BOOKMARK [1][-]{section.8.3}{Herausforderungen, Probleme, und deren L\366sung}{chapter.8}% 57
+\BOOKMARK [1][-]{section.8.4}{Projektmanagement und Controlling}{chapter.8}% 58
+\BOOKMARK [1][-]{section.8.5}{Ergebnisse}{chapter.8}% 59
+\BOOKMARK [1][-]{section.8.6}{Was wurde gelernt und welche Verbesserungs m\366glichkeiten gibt es}{chapter.8}% 60
+\BOOKMARK [0][-]{chapter.9}{Ausblick}{}% 61
+\BOOKMARK [1][-]{section.9.1}{Wie geht es weiter ?}{chapter.9}% 62
+\BOOKMARK [1][-]{section.9.2}{Was passiert mit dem Ergebnis?}{chapter.9}% 63
+\BOOKMARK [1][-]{section.9.3}{was passiert mit dem Prototyp?}{chapter.9}% 64
+\BOOKMARK [1][-]{section.9.4}{Gibt es Folgeprojekte?}{chapter.9}% 65
+\BOOKMARK [1][-]{section.9.5}{Gibt es Interessanten?}{chapter.9}% 66

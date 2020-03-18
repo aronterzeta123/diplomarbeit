@@ -161,35 +161,6 @@
       \field{title}{{Python: 7 Important Reasons Why You Should Use Python}}
       \field{year}{3/10/2017}
     \endentry
-    \entry{imgprz}{online}{}
-      \name{author}{1}{}{%
-        {{hash=22d7baa35753fba6b70fe7cfc7ac3db0}{%
-           family={Team},
-           familyi={T\bibinitperiod},
-           given={OpenCV},
-           giveni={O\bibinitperiod},
-           prefix={dev},
-           prefixi={d\bibinitperiod}}}%
-      }
-      \strng{namehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
-      \strng{fullhash}{22d7baa35753fba6b70fe7cfc7ac3db0}
-      \strng{bibnamehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
-      \strng{authorbibnamehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
-      \strng{authornamehash}{22d7baa35753fba6b70fe7cfc7ac3db0}
-      \strng{authorfullhash}{22d7baa35753fba6b70fe7cfc7ac3db0}
-      \field{sortinit}{T}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Image Processing}
-      \verb{urlraw}
-      \verb https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html
-      \endverb
-      \verb{url}
-      \verb https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html
-      \endverb
-      \warn{\item Entry 'imgprz' (./../literatur.bib): Invalid format '5.3.2020' of date field 'date' - ignoring}
-    \endentry
     \entry{Viola01robustreal-time}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=050f01d5a79687cfd1d63ef25567fc35}{%
@@ -420,33 +391,33 @@
     \endentry
     \entry{affine}{online}{}
       \name{author}{1}{}{%
-        {{hash=17eacc833e74f76c6cac4522224a09e3}{%
+        {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
            family={Weisstein},
            familyi={W\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod}}}%
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
       \list{organization}{1}{%
         {MathWorld}%
       }
-      \strng{namehash}{17eacc833e74f76c6cac4522224a09e3}
-      \strng{fullhash}{17eacc833e74f76c6cac4522224a09e3}
-      \strng{bibnamehash}{17eacc833e74f76c6cac4522224a09e3}
-      \strng{authorbibnamehash}{17eacc833e74f76c6cac4522224a09e3}
-      \strng{authornamehash}{17eacc833e74f76c6cac4522224a09e3}
-      \strng{authorfullhash}{17eacc833e74f76c6cac4522224a09e3}
+      \strng{namehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{fullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{bibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Affine Transformation}
+      \field{title}{Affine Transformation.}
       \verb{urlraw}
       \verb http://mathworld.wolfram.com/AffineTransformation.html
       \endverb
       \verb{url}
       \verb http://mathworld.wolfram.com/AffineTransformation.html
       \endverb
-      \warn{\item Entry 'affine' (./../literatur.bib): Invalid format '17.02.2020' of date field 'date' - ignoring}
+      \warn{\item Entry 'affine' (./../literatur.bib): Invalid format '3.3.2020' of date field 'date' - ignoring}
     \endentry
   \enddatalist
 \endrefsection
