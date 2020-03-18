@@ -17,75 +17,72 @@
 \contentsline {subsection}{\numberline {3.1.5}Qualit\"atssicherung und Controlling}{15}{subsection.3.1.5}%
 \contentsline {section}{\numberline {3.2}Ergebnisse}{17}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Implementierung}{17}{subsection.3.2.1}%
-\contentsline {chapter}{\numberline {4}Umsetzung }{18}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Datenbank \& 2D vs 3D Unterschied}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Umsetzung}{19}{section.5.1}%
-\contentsline {subsubsection}{MySQL}{19}{section*.12}%
-\contentsline {subsubsection}{MariaDB}{20}{section*.14}%
-\contentsline {subsubsection}{Python}{21}{section*.16}%
-\contentsline {subsubsection}{OpenCV}{21}{section*.18}%
-\contentsline {section}{\numberline {5.2}Technische Lösungen}{22}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Datenkbank}{22}{subsection.5.2.1}%
-\contentsline {subsubsection}{Beschreibung der Tabellen}{23}{section*.20}%
-\contentsline {subsubsection}{Tabelle Person}{23}{section*.22}%
-\contentsline {subsubsection}{Log Tabelle}{24}{section*.23}%
-\contentsline {subsection}{\numberline {5.2.2}2D vs. 3D Unterschied}{25}{subsection.5.2.2}%
-\contentsline {subsubsection}{Lösungsweg}{25}{section*.24}%
-\contentsline {subsubsection}{Beispiele}{26}{section*.25}%
-\contentsline {subsubsection}{Zeitdauer}{27}{section*.30}%
-\contentsline {section}{\numberline {5.3}Herausforderungen}{28}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Datenkbank - MariaDB}{28}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Disparity Map}{31}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Python Scripting}{34}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}OpenCV}{36}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Qualitätssicherung}{37}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Ergebnisse }{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Datenbank}{39}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Ergebnisse}{40}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Datenbank}{40}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}2D vs. 3D Unterschied}{40}{subsection.6.2.2}%
-\contentsline {chapter}{\numberline {7}Bildverarbeitung}{41}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Allgemeines}{41}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Entwicklungsumgebung und Technologien}{41}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Frameworks und Bibliotheken}{42}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Technische Lösungen}{43}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Lösungsweg - Structed Software design}{44}{subsection.7.2.1}%
-\contentsline {subsubsection}{Legende:}{44}{section*.44}%
-\contentsline {subsection}{\numberline {7.2.2}Gesichtserkennung}{45}{subsection.7.2.2}%
-\contentsline {subsubsection}{Umsetzung in Code}{46}{section*.48}%
-\contentsline {subsection}{\numberline {7.2.3}Normalisierung}{47}{subsection.7.2.3}%
-\contentsline {subsubsection}{Was ist Normalisierung?}{47}{section*.50}%
-\contentsline {subsubsection}{Methoden für Normalisierung}{48}{section*.51}%
-\contentsline {subsubsection}{Warum Normalisierung?}{48}{section*.52}%
-\contentsline {subsubsection}{Implementation}{48}{section*.53}%
-\contentsline {subsection}{\numberline {7.2.4}Zuschneiden von Gesichter}{51}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5}Gesichtsschlüsselpunkte Extraktion}{52}{subsection.7.2.5}%
-\contentsline {section}{\numberline {7.3}Herausforderungen, Probleme und deren Lösung }{54}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Lösungen}{54}{subsection.7.3.1}%
-\contentsline {section}{\numberline {7.4}Qualitätssicherung, Controlling}{55}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Ergebnisse}{56}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Evaluierung und Resümee}{56}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Planung vs. Realisierung}{56}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Ergebnisse}{56}{subsection.7.6.2}%
-\contentsline {chapter}{\numberline {8}Gesichtserkennung}{58}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Allgemeines}{58}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Technische Lösung}{59}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Hardware und Aufbau}{59}{subsection.8.2.1}%
-\contentsline {subsubsection}{Bauteile und HW-Komponenten}{59}{section*.60}%
-\contentsline {subsubsection}{Schaltplan und Erklärung des Aufbaus}{61}{section*.61}%
-\contentsline {subsection}{\numberline {8.2.2}Software}{62}{subsection.8.2.2}%
-\contentsline {subsubsection}{Verwendete Technologien}{62}{section*.63}%
-\contentsline {subsubsection}{Lösungsweg- Beschreibung und Erklärung}{63}{section*.64}%
-\contentsline {subsubsection}{Andere wichtige Punkte und Abgrenzungen}{74}{section*.72}%
-\contentsline {subsubsection}{Das Testen}{75}{section*.73}%
-\contentsline {subsubsection}{Das Logging}{76}{section*.74}%
-\contentsline {section}{\numberline {8.3}Herausforderungen, Probleme, und deren Lösung}{77}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Projektmanagement und Controlling}{79}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Ergebnisse}{81}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Was wurde gelernt und \textbf {welche Verbesserungs möglichkeiten gibt es}}{81}{section.8.6}%
-\contentsline {chapter}{\numberline {9}Ausblick}{83}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Wie geht es weiter ?}{83}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Was passiert mit dem Ergebnis?}{83}{section.9.2}%
-\contentsline {section}{\numberline {9.3}was passiert mit dem Prototyp?}{83}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Gibt es Folgeprojekte?}{83}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Gibt es Interessanten?}{83}{section.9.5}%
+\contentsline {chapter}{\numberline {4}Datenbank \& 2D vs 3D Unterschied}{18}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Umsetzung}{18}{section.4.1}%
+\contentsline {subsubsection}{MySQL}{18}{section*.12}%
+\contentsline {subsubsection}{MariaDB}{19}{section*.14}%
+\contentsline {subsubsection}{Python}{20}{section*.16}%
+\contentsline {subsubsection}{OpenCV}{20}{section*.18}%
+\contentsline {section}{\numberline {4.2}Technische Lösungen}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Datenkbank}{21}{subsection.4.2.1}%
+\contentsline {subsubsection}{Beschreibung der Tabellen}{22}{section*.20}%
+\contentsline {subsubsection}{Tabelle Person}{22}{section*.22}%
+\contentsline {subsubsection}{Log Tabelle}{23}{section*.23}%
+\contentsline {subsection}{\numberline {4.2.2}2D vs. 3D Unterschied}{24}{subsection.4.2.2}%
+\contentsline {subsubsection}{Lösungsweg}{24}{section*.24}%
+\contentsline {subsubsection}{Beispiele}{25}{section*.25}%
+\contentsline {subsubsection}{Zeitdauer}{26}{section*.30}%
+\contentsline {section}{\numberline {4.3}Herausforderungen}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Datenkbank - MariaDB}{27}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Disparity Map}{30}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Python Scripting}{33}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}OpenCV}{35}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Qualitätssicherung}{36}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Ergebnisse}{37}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Datenbank}{37}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}2D vs. 3D Unterschied}{38}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Bildverarbeitung}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Allgemeines}{39}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Entwicklungsumgebung und Technologien}{39}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Frameworks und Bibliotheken}{40}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Technische Lösungen}{41}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Lösungsweg - Structed Software design}{42}{subsection.5.2.1}%
+\contentsline {subsubsection}{Legende:}{42}{section*.44}%
+\contentsline {subsection}{\numberline {5.2.2}Gesichtserkennung}{43}{subsection.5.2.2}%
+\contentsline {subsubsection}{Umsetzung in Code}{44}{section*.48}%
+\contentsline {subsection}{\numberline {5.2.3}Normalisierung}{45}{subsection.5.2.3}%
+\contentsline {subsubsection}{Was ist Normalisierung?}{45}{section*.50}%
+\contentsline {subsubsection}{Methoden für Normalisierung}{46}{section*.51}%
+\contentsline {subsubsection}{Warum Normalisierung?}{46}{section*.52}%
+\contentsline {subsubsection}{Implementation}{46}{section*.53}%
+\contentsline {subsection}{\numberline {5.2.4}Zuschneiden von Gesichter}{49}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Gesichtsschlüsselpunkte Extraktion}{50}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Herausforderungen, Probleme und deren Lösung }{52}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Lösungen}{52}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Qualitätssicherung, Controlling}{53}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Ergebnisse}{54}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Evaluierung und Resümee}{54}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Planung vs. Realisierung}{54}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Ergebnisse}{54}{subsection.5.6.2}%
+\contentsline {chapter}{\numberline {6}Gesichtserkennung}{56}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Allgemeines}{56}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Technische Lösung}{57}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Hardware und Aufbau}{57}{subsection.6.2.1}%
+\contentsline {subsubsection}{Bauteile und HW-Komponenten}{57}{section*.60}%
+\contentsline {subsubsection}{Schaltplan und Erklärung des Aufbaus}{59}{section*.61}%
+\contentsline {subsection}{\numberline {6.2.2}Software}{60}{subsection.6.2.2}%
+\contentsline {subsubsection}{Verwendete Technologien}{60}{section*.63}%
+\contentsline {subsubsection}{Lösungsweg- Beschreibung und Erklärung}{61}{section*.64}%
+\contentsline {subsubsection}{Andere wichtige Punkte und Abgrenzungen}{72}{section*.72}%
+\contentsline {subsubsection}{Das Testen}{73}{section*.73}%
+\contentsline {subsubsection}{Das Logging}{74}{section*.74}%
+\contentsline {section}{\numberline {6.3}Herausforderungen, Probleme, und deren Lösung}{75}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Projektmanagement und Controlling}{77}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Ergebnisse}{79}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Was wurde gelernt und \textbf {welche Verbesserungs möglichkeiten gibt es}}{79}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Ausblick}{81}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Wie geht es weiter ?}{81}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Was passiert mit dem Ergebnis?}{81}{section.7.2}%
+\contentsline {section}{\numberline {7.3}was passiert mit dem Prototyp?}{81}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Gibt es Folgeprojekte?}{81}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Gibt es Interessanten?}{81}{section.7.5}%

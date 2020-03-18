@@ -7,57 +7,55 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Structed Software Design bzw. erste Ebene \relax }}{9}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Risikoanalyse in Excel\relax }}{16}{figure.caption.10}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces MySQL Logo\relax }}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MariaDB Logo\relax }}{19}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Python Logo\relax }}{20}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces OpenCV Logo\relax }}{20}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Datenbank - RDM\relax }}{22}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Reale Person\relax }}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ausgabe: Person Detected\relax }}{26}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Bild eines Kindes\relax }}{27}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Ausgabe: Nicht Detected\relax }}{28}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Zeitdauer 1\relax }}{28}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Zeitdauer 2\relax }}{28}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Zeitdauer 3\relax }}{29}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Zeitdauerl 4\relax }}{29}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Mysql-Server is missing\relax }}{30}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Linke und Rechte Bild\relax }}{31}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Beispiel Disparity Map\relax }}{32}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces 3D Gesicht Matlab\relax }}{33}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Jordi Linke Bild 1\relax }}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Jordi Linke Bild 1\relax }}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Gutes Disparity Map\relax }}{34}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Jordi Linke Bild 2\relax }}{34}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Jordi Linke Bild 2\relax }}{34}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Schlechtes Disparity Map\relax }}{35}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Plan-Do-Check-Act-Zyklus\relax }}{37}{figure.caption.41}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces MySQL Logo\relax }}{20}{figure.caption.13}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces MariaDB Logo\relax }}{20}{figure.caption.15}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Python Logo\relax }}{21}{figure.caption.17}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces OpenCV Logo\relax }}{21}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Datenbank - RDM\relax }}{23}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Reale Person\relax }}{26}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Ausgabe: Person Detected\relax }}{27}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Bild eines Kindes\relax }}{28}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Ausgabe: Nicht Detected\relax }}{29}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Zeitdauer 1\relax }}{29}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Zeitdauer 2\relax }}{29}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Zeitdauer 3\relax }}{30}{figure.caption.32}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Zeitdauerl 4\relax }}{30}{figure.caption.32}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Mysql-Server is missing\relax }}{31}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Linke und Rechte Bild\relax }}{32}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Beispiel Disparity Map\relax }}{33}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces 3D Gesicht Matlab\relax }}{34}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Jordi Linke Bild 1\relax }}{34}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Jordi Linke Bild 1\relax }}{34}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Gutes Disparity Map\relax }}{35}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Jordi Linke Bild 2\relax }}{35}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Jordi Linke Bild 2\relax }}{35}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Schlechtes Disparity Map\relax }}{36}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Plan-Do-Check-Act-Zyklus\relax }}{38}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{40}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{41}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Erste Ebene Erklärung\relax }}{42}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Haar Features\cite {Viola01robustreal-time}\relax }}{43}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Haar\relax }}{44}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Output: Box auf Gesicht\relax }}{45}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{48}{figure.caption.54}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{48}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{48}{subfigure.7.2}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{49}{figure.caption.55}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{49}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{49}{subfigure.8.2}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Output: Zugeschnittenes Bild\relax }}{50}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Gesichtsschlüsselpunkte \cite {Kazemi2014OneMF}\relax }}{51}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Gesichtsdaten\relax }}{51}{figure.caption.58}%
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{42}{figure.caption.42}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{43}{figure.caption.43}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Erste Ebene Erklärung\relax }}{44}{figure.caption.45}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Haar Features\cite {Viola01robustreal-time}\relax }}{45}{figure.caption.46}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Haar\relax }}{46}{figure.caption.47}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Output: Box auf Gesicht\relax }}{47}{figure.caption.49}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{50}{figure.caption.54}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{50}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{50}{subfigure.7.2}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{51}{figure.caption.55}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{51}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{51}{subfigure.8.2}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Output: Zugeschnittenes Bild\relax }}{52}{figure.caption.56}%
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Gesichtsschlüsselpunkte \cite {Kazemi2014OneMF}\relax }}{53}{figure.caption.57}%
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Gesichtsdaten\relax }}{53}{figure.caption.58}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Grobe Skizze des Systems\relax }}{59}{figure.caption.59}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Schaltplan des Systems\relax }}{61}{figure.caption.62}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Erste Ebene\relax }}{63}{figure.caption.65}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Erste Ebene Erklärung\relax }}{64}{figure.caption.66}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Vergleichsmethode zweier Punkte\relax }}{68}{figure.caption.67}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces geometrisches Mittel\relax }}{69}{figure.caption.68}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces 1\_Fall\relax }}{71}{figure.caption.69}%
-\contentsline {figure}{\numberline {8.8}{\ignorespaces 2\_Fall\relax }}{72}{figure.caption.70}%
-\contentsline {figure}{\numberline {8.9}{\ignorespaces 3\_Fall\relax }}{73}{figure.caption.71}%
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Fehlerbaum\relax }}{80}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Grobe Skizze des Systems\relax }}{57}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Schaltplan des Systems\relax }}{59}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Erste Ebene\relax }}{61}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Erste Ebene Erklärung\relax }}{62}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Vergleichsmethode zweier Punkte\relax }}{66}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces geometrisches Mittel\relax }}{67}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces 1\_Fall\relax }}{69}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces 2\_Fall\relax }}{70}{figure.caption.70}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces 3\_Fall\relax }}{71}{figure.caption.71}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Fehlerbaum\relax }}{78}{figure.caption.75}%
 \addvspace {10\p@ }

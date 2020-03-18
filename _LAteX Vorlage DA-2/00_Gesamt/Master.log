@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  18 MAR 2020 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  18 MAR 2020 23:57
 entering extended mode
 **./Master.tex
 (Master.tex
@@ -843,7 +843,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \&
-l.98 ...ank \& 2D vs 3D Unterschied}{chapter.5}{}}
+l.95 ...ank \& 2D vs 3D Unterschied}{chapter.4}{}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -851,7 +851,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \&
-l.98 ...ank \& 2D vs 3D Unterschied}{chapter.5}{}}
+l.95 ...ank \& 2D vs 3D Unterschied}{chapter.4}{}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1100,14 +1100,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 116.
  (_Doc_A.tex) (01_title.tex
-<./figures/Header_Seite.png, id=267, 137.01187pt x 48.18pt>
+<./figures/Header_Seite.png, id=255, 137.01187pt x 48.18pt>
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 6.
 (pdftex.def)             Requested size: 137.01154pt x 48.17986pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 49.
-<./../00_Gesamt/figures/Frontpage_back.png, id=268, 716.6775pt x 403.5075pt>
+<./../00_Gesamt/figures/Frontpage_back.png, id=256, 716.6775pt x 403.5075pt>
 File: ./../00_Gesamt/figures/Frontpage_back.png Graphic file (type png)
 <use ./../00_Gesamt/figures/Frontpage_back.png>
 Package pdftex.def Info: ./../00_Gesamt/figures/Frontpage_back.png  used on inp
@@ -1138,10 +1138,13 @@ No file Master.nls.
 
 ] (Master.toc [5
 
-]
+])
+\tf@toc=\write6
+\openout6 = `Master.toc'.
+
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 90.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 148.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 
 
@@ -1150,15 +1153,7 @@ Make it at least 28.43996pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[6])
-\tf@toc=\write6
-\openout6 = `Master.toc'.
-
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 148.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [7] (../10_allgemein/_Doc_A.tex) (../10_allgemein/_Doc.tex
+[6] (../10_allgemein/_Doc_A.tex) (../10_allgemein/_Doc.tex
 Kapitel 1.
 [1
 
@@ -1188,7 +1183,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 72.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
  [4]
-<./figures/Big_Picture.jpg, id=430, 1125.20375pt x 855.195pt>
+<./figures/Big_Picture.jpg, id=411, 1125.20375pt x 855.195pt>
 File: ./figures/Big_Picture.jpg Graphic file (type jpg)
 <use ./figures/Big_Picture.jpg>
 Package pdftex.def Info: ./figures/Big_Picture.jpg  used on input line 74.
@@ -1222,7 +1217,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 34.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [7]
-<./../40_Aron/figures/1Ebene.png, id=466, 622.9674pt x 441.8106pt>
+<./../40_Aron/figures/1Ebene.png, id=447, 622.9674pt x 441.8106pt>
 File: ./../40_Aron/figures/1Ebene.png Graphic file (type png)
 <use ./../40_Aron/figures/1Ebene.png>
 Package pdftex.def Info: ./../40_Aron/figures/1Ebene.png  used on input line 46
@@ -1335,13 +1330,13 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 164.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [14]
-<./../40_Aron/figures/Risikoanalyse1.png, id=553, 1099.10625pt x 569.12625pt>
+<./../40_Aron/figures/Risikoanalyse1.png, id=534, 1099.10625pt x 569.12625pt>
 File: ./../40_Aron/figures/Risikoanalyse1.png Graphic file (type png)
 <use ./../40_Aron/figures/Risikoanalyse1.png>
 Package pdftex.def Info: ./../40_Aron/figures/Risikoanalyse1.png  used on input
  line 182.
 (pdftex.def)             Requested size: 441.01773pt x 228.35857pt.
-<./../40_Aron/figures/Risikoanalyse2.png, id=554, 1088.065pt x 363.3575pt>
+<./../40_Aron/figures/Risikoanalyse2.png, id=535, 1088.065pt x 363.3575pt>
 File: ./../40_Aron/figures/Risikoanalyse2.png Graphic file (type png)
 <use ./../40_Aron/figures/Risikoanalyse2.png>
 Package pdftex.def Info: ./../40_Aron/figures/Risikoanalyse2.png  used on input
@@ -1360,73 +1355,69 @@ Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 198.
 yse2.png>]) (../70_Jordi/_Doc_A.tex) (../70_Jordi/_Doc.tex
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 2.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 1.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
  [17]
 Kapitel 4.
+<./../70_Jordi/figures/mysql.jpg, id=562, 401.5pt x 401.5pt>
+File: ./../70_Jordi/figures/mysql.jpg Graphic file (type jpg)
+<use ./../70_Jordi/figures/mysql.jpg>
+Package pdftex.def Info: ./../70_Jordi/figures/mysql.jpg  used on input line 28
+.
+(pdftex.def)             Requested size: 120.45091pt x 120.45091pt.
 [18
 
 ]
-Kapitel 5.
-<./../70_Jordi/figures/mysql.jpg, id=586, 401.5pt x 401.5pt>
-File: ./../70_Jordi/figures/mysql.jpg Graphic file (type jpg)
-<use ./../70_Jordi/figures/mysql.jpg>
-Package pdftex.def Info: ./../70_Jordi/figures/mysql.jpg  used on input line 32
-.
-(pdftex.def)             Requested size: 120.45091pt x 120.45091pt.
-[19
-
-]
-<./../70_Jordi/figures/mariadb.png, id=598, 281.05pt x 281.05pt>
+<./../70_Jordi/figures/mariadb.png, id=575, 281.05pt x 281.05pt>
 File: ./../70_Jordi/figures/mariadb.png Graphic file (type png)
 <use ./../70_Jordi/figures/mariadb.png>
 Package pdftex.def Info: ./../70_Jordi/figures/mariadb.png  used on input line 
-51.
+47.
 (pdftex.def)             Requested size: 84.31564pt x 84.31564pt.
-<./../70_Jordi/figures/python.png, id=601, 401.5pt x 401.5pt>
+<./../70_Jordi/figures/python.png, id=578, 401.5pt x 401.5pt>
 File: ./../70_Jordi/figures/python.png Graphic file (type png)
 <use ./../70_Jordi/figures/python.png>
 Package pdftex.def Info: ./../70_Jordi/figures/python.png  used on input line 6
-4.
+0.
 (pdftex.def)             Requested size: 120.45091pt x 120.45091pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 70.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 66.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [20 <./../70_Jordi/figures/mysql.jpg> <./../70_Jordi/figures/mariadb.png>]
-<./../70_Jordi/figures/opencv.png, id=616, 117.3183pt x 144.54pt>
+ [19 <./../70_Jordi/figures/mysql.jpg> <./../70_Jordi/figures/mariadb.png>]
+<./../70_Jordi/figures/opencv.png, id=593, 117.3183pt x 144.54pt>
 File: ./../70_Jordi/figures/opencv.png Graphic file (type png)
 <use ./../70_Jordi/figures/opencv.png>
 Package pdftex.def Info: ./../70_Jordi/figures/opencv.png  used on input line 7
-7.
+3.
 (pdftex.def)             Requested size: 35.19576pt x 43.36232pt.
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 87.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 83.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[21 <./../70_Jordi/figures/python.png> <./../70_Jordi/figures/opencv.png>]
+[20 <./../70_Jordi/figures/python.png> <./../70_Jordi/figures/opencv.png>]
 
-LaTeX Warning: Citation 'Database1' on page 22 undefined on input line 92.
-
-
-LaTeX Warning: Citation 'Database2' on page 22 undefined on input line 93.
+LaTeX Warning: Citation 'Database1' on page 21 undefined on input line 88.
 
 
-LaTeX Warning: Citation 'Database3' on page 22 undefined on input line 94.
+LaTeX Warning: Citation 'Database2' on page 21 undefined on input line 89.
 
 
-LaTeX Warning: Citation 'Database4' on page 22 undefined on input line 95.
+LaTeX Warning: Citation 'Database3' on page 21 undefined on input line 90.
 
 
-LaTeX Warning: Citation 'Database5' on page 22 undefined on input line 96.
+LaTeX Warning: Citation 'Database4' on page 21 undefined on input line 91.
+
+
+LaTeX Warning: Citation 'Database5' on page 21 undefined on input line 92.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 106.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 102.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[22]
+[21]
 
-LaTeX Warning: File `./figures/db.png' not found on input line 109.
+LaTeX Warning: File `./figures/db.png' not found on input line 105.
 
 
 ! Package pdftex.def Error: File `./figures/db.png' not found: using draft sett
@@ -1436,28 +1427,28 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 ...cs[width=0.8\textwidth]{./figures/db.png}
+l.105 ...cs[width=0.8\textwidth]{./figures/db.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 118.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 114.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[23]
+[22]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 137.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 133.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+ [23]
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 145.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
  [24]
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 149.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [25]
 
-LaTeX Warning: File `./figures/jordiR.jpg' not found on input line 154.
+LaTeX Warning: File `./figures/jordiR.jpg' not found on input line 150.
 
 
 ! Package pdftex.def Error: File `./figures/jordiR.jpg' not found: using draft 
@@ -1467,13 +1458,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 ...idth=0.9\textwidth]{./figures/jordiR.jpg}
+l.150 ...idth=0.9\textwidth]{./figures/jordiR.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/detected.png' not found on input line 159.
+LaTeX Warning: File `./figures/detected.png' not found on input line 155.
 
 
 ! Package pdftex.def Error: File `./figures/detected.png' not found: using draf
@@ -1483,18 +1474,18 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 ...th=0.9\textwidth]{./figures/detected.png}
+l.155 ...th=0.9\textwidth]{./figures/detected.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 163.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 159.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[26]
+[25]
 
-LaTeX Warning: File `./figures/kind.jpg' not found on input line 167.
+LaTeX Warning: File `./figures/kind.jpg' not found on input line 163.
 
 
 ! Package pdftex.def Error: File `./figures/kind.jpg' not found: using draft se
@@ -1504,13 +1495,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 ...[width=0.9\textwidth]{./figures/kind.jpg}
+l.163 ...[width=0.9\textwidth]{./figures/kind.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/ndetected.png' not found on input line 172.
+LaTeX Warning: File `./figures/ndetected.png' not found on input line 168.
 
 
 ! Package pdftex.def Error: File `./figures/ndetected.png' not found: using dra
@@ -1520,13 +1511,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 ...h=0.9\textwidth]{./figures/ndetected.png}
+l.168 ...h=0.9\textwidth]{./figures/ndetected.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/time1.png' not found on input line 180.
+LaTeX Warning: File `./figures/time1.png' not found on input line 176.
 
 
 ! Package pdftex.def Error: File `./figures/time1.png' not found: using draft s
@@ -1536,13 +1527,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.180 ...[width=.9\linewidth]{./figures/time1.png}
+l.176 ...[width=.9\linewidth]{./figures/time1.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/time2.png' not found on input line 185.
+LaTeX Warning: File `./figures/time2.png' not found on input line 181.
 
 
 ! Package pdftex.def Error: File `./figures/time2.png' not found: using draft s
@@ -1552,13 +1543,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 ...[width=.9\linewidth]{./figures/time2.png}
+l.181 ...[width=.9\linewidth]{./figures/time2.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/time3.png' not found on input line 192.
+LaTeX Warning: File `./figures/time3.png' not found on input line 188.
 
 
 ! Package pdftex.def Error: File `./figures/time3.png' not found: using draft s
@@ -1568,13 +1559,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 ...[width=.9\linewidth]{./figures/time3.png}
+l.188 ...[width=.9\linewidth]{./figures/time3.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/time4.png' not found on input line 197.
+LaTeX Warning: File `./figures/time4.png' not found on input line 193.
 
 
 ! Package pdftex.def Error: File `./figures/time4.png' not found: using draft s
@@ -1584,31 +1575,31 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 ...[width=.9\linewidth]{./figures/time4.png}
+l.193 ...[width=.9\linewidth]{./figures/time4.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 201.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 197.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[27]
+[26]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 209.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 205.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [28]
+ [27]
 
-LaTeX Warning: Text page 29 contains only floats.
+LaTeX Warning: Text page 28 contains only floats.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 209.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 205.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[29]
+[28]
 
-LaTeX Warning: File `./figures/fehler1.png' not found on input line 212.
+LaTeX Warning: File `./figures/fehler1.png' not found on input line 208.
 
 
 ! Package pdftex.def Error: File `./figures/fehler1.png' not found: using draft
@@ -1618,13 +1609,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.212 ...dth=0.9\textwidth]{./figures/fehler1.png}
+l.208 ...dth=0.9\textwidth]{./figures/fehler1.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/disp1.png' not found on input line 230.
+LaTeX Warning: File `./figures/disp1.png' not found on input line 226.
 
 
 ! Package pdftex.def Error: File `./figures/disp1.png' not found: using draft s
@@ -1634,16 +1625,16 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 ...width=0.9\textwidth]{./figures/disp1.png}
+l.226 ...width=0.9\textwidth]{./figures/disp1.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation 'disparityM' on page 30 undefined on input line 232.
+LaTeX Warning: Citation 'disparityM' on page 29 undefined on input line 228.
 
 
-LaTeX Warning: File `./figures/disp.png' not found on input line 236.
+LaTeX Warning: File `./figures/disp.png' not found on input line 232.
 
 
 ! Package pdftex.def Error: File `./figures/disp.png' not found: using draft se
@@ -1653,21 +1644,21 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.236 ...[width=0.5\textwidth]{./figures/disp.png}
+l.232 ...[width=0.5\textwidth]{./figures/disp.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation 'disparityM' on page 30 undefined on input line 238.
+LaTeX Warning: Citation 'disparityM' on page 29 undefined on input line 234.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 240.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 236.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[30]
+[29]
 
-LaTeX Warning: File `./figures/matlib.jpg' not found on input line 244.
+LaTeX Warning: File `./figures/matlib.jpg' not found on input line 240.
 
 
 ! Package pdftex.def Error: File `./figures/matlib.jpg' not found: using draft 
@@ -1677,26 +1668,26 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.244 ...idth=0.7\textwidth]{./figures/matlib.jpg}
+l.240 ...idth=0.7\textwidth]{./figures/matlib.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation 'matlab' on page 31 undefined on input line 246.
+LaTeX Warning: Citation 'matlab' on page 30 undefined on input line 242.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 250.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 246.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[31]
+[30]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 251.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 247.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [32]
+ [31]
 
-LaTeX Warning: File `./figures/jordiL.jpg' not found on input line 256.
+LaTeX Warning: File `./figures/jordiL.jpg' not found on input line 252.
 
 
 ! Package pdftex.def Error: File `./figures/jordiL.jpg' not found: using draft 
@@ -1706,13 +1697,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.256 ...width=.9\linewidth]{./figures/jordiL.jpg}
+l.252 ...width=.9\linewidth]{./figures/jordiL.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/jordiR.jpg' not found on input line 261.
+LaTeX Warning: File `./figures/jordiR.jpg' not found on input line 257.
 
 
 ! Package pdftex.def Error: File `./figures/jordiR.jpg' not found: using draft 
@@ -1722,13 +1713,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.261 ...width=.9\linewidth]{./figures/jordiR.jpg}
+l.257 ...width=.9\linewidth]{./figures/jordiR.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/dispgood.jpg' not found on input line 267.
+LaTeX Warning: File `./figures/dispgood.jpg' not found on input line 263.
 
 
 ! Package pdftex.def Error: File `./figures/dispgood.jpg' not found: using draf
@@ -1738,13 +1729,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.267 ...th=0.9\textwidth]{./figures/dispgood.jpg}
+l.263 ...th=0.9\textwidth]{./figures/dispgood.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/frameL.jpg' not found on input line 274.
+LaTeX Warning: File `./figures/frameL.jpg' not found on input line 270.
 
 
 ! Package pdftex.def Error: File `./figures/frameL.jpg' not found: using draft 
@@ -1754,13 +1745,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.274 ...width=.7\linewidth]{./figures/frameL.jpg}
+l.270 ...width=.7\linewidth]{./figures/frameL.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/frameR.jpg' not found on input line 279.
+LaTeX Warning: File `./figures/frameR.jpg' not found on input line 275.
 
 
 ! Package pdftex.def Error: File `./figures/frameR.jpg' not found: using draft 
@@ -1770,13 +1761,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.279 ...width=.7\linewidth]{./figures/frameR.jpg}
+l.275 ...width=.7\linewidth]{./figures/frameR.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `./figures/dispbad.jpg' not found on input line 285.
+LaTeX Warning: File `./figures/dispbad.jpg' not found on input line 281.
 
 
 ! Package pdftex.def Error: File `./figures/dispbad.jpg' not found: using draft
@@ -1786,46 +1777,46 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.285 ...dth=0.7\textwidth]{./figures/dispbad.jpg}
+l.281 ...dth=0.7\textwidth]{./figures/dispbad.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 288.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 284.
+(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 288--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--293
+
+ []
+
+File: ./figures/Header_Seite.png Graphic file (type png)
+<use ./figures/Header_Seite.png>
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 293.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 292--297
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--297
-
- []
-
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 297.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 293.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[34]
-File: ./figures/Header_Seite.png Graphic file (type png)
-<use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 297.
-(pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [35]
-Underfull \hbox (badness 10000) in paragraph at lines 304--309
+ [34]
+Underfull \hbox (badness 10000) in paragraph at lines 300--305
 
  []
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 309.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 305.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[36]
+[35]
 
-LaTeX Warning: File `./figures/pdca.png' not found on input line 320.
+LaTeX Warning: File `./figures/pdca.png' not found on input line 316.
 
 
 ! Package pdftex.def Error: File `./figures/pdca.png' not found: using draft se
@@ -1835,37 +1826,27 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.320 ...[width=0.7\textwidth]{./figures/pdca.png}
+l.316 ...[width=0.7\textwidth]{./figures/pdca.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 334.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 325.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[37]
+[36]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
-Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 334.
+Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 338.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [38]
-Kapitel 6.
-[39
-
-]
-Overfull \hbox (142.79349pt too wide) in paragraph at lines 343--345
-\OT1/cmr/m/n/12 den. Die fol-gen-den Punk-ten der Da-ten-bank wur-den rea-li-si
-ert: >>>>>>> 43a890056db5f50128fae685ad181baae098276d 
- []
-
-)
+ [37])
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 167.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [40] (../50_egli/_Doc_A.tex) (../50_egli/_Doc.tex
-Kapitel 7.
+ [38] (../50_egli/_Doc_A.tex) (../50_egli/_Doc.tex
+Kapitel 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--28
 
@@ -1876,10 +1857,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--40
 
  []
 
-[41
+[39
 
 ]
-<./../50_egli/figures/dlib.png, id=771, 479.391pt x 342.078pt>
+<./../50_egli/figures/dlib.png, id=742, 479.391pt x 342.078pt>
 File: ./../50_egli/figures/dlib.png Graphic file (type png)
 <use ./../50_egli/figures/dlib.png>
 Package pdftex.def Info: ./../50_egli/figures/dlib.png  used on input line 101.
@@ -1895,14 +1876,14 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 129.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[42 <./../50_egli/figures/dlib.png>]
-<./../50_egli/figures/bildverarbeitung.png, id=786, 1085.05376pt x 885.3075pt>
+[40 <./../50_egli/figures/dlib.png>]
+<./../50_egli/figures/bildverarbeitung.png, id=757, 1085.05376pt x 885.3075pt>
 File: ./../50_egli/figures/bildverarbeitung.png Graphic file (type png)
 <use ./../50_egli/figures/bildverarbeitung.png>
 Package pdftex.def Info: ./../50_egli/figures/bildverarbeitung.png  used on inp
 ut line 135.
 (pdftex.def)             Requested size: 441.01773pt x 359.8309pt.
-<./../50_egli/figures/Erklaerung_Erste_Ebene.png, id=787, 676.77844pt x 236.383
+<./../50_egli/figures/Erklaerung_Erste_Ebene.png, id=758, 676.77844pt x 236.383
 12pt>
 File: ./../50_egli/figures/Erklaerung_Erste_Ebene.png Graphic file (type png)
 <use ./../50_egli/figures/Erklaerung_Erste_Ebene.png>
@@ -1913,23 +1894,23 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 145.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [43 <./../50_egli/figures/bildverarbeitung.png>]
+ [41 <./../50_egli/figures/bildverarbeitung.png>]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 185.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [44 <./../50_egli/figures/Erklaerung_Erste_Ebene.png>]
+ [42 <./../50_egli/figures/Erklaerung_Erste_Ebene.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-<./../50_egli/figures/haar_features.jpg, id=812, 321.2pt x 272.01625pt>
+<./../50_egli/figures/haar_features.jpg, id=784, 321.2pt x 272.01625pt>
 File: ./../50_egli/figures/haar_features.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/haar_features.jpg>
 Package pdftex.def Info: ./../50_egli/figures/haar_features.jpg  used on input 
 line 208.
 (pdftex.def)             Requested size: 256.96034pt x 217.61328pt.
-<./../50_egli/figures/haar.png, id=816, 335.2525pt x 203.76125pt>
+<./../50_egli/figures/haar.png, id=788, 335.2525pt x 203.76125pt>
 File: ./../50_egli/figures/haar.png Graphic file (type png)
 <use ./../50_egli/figures/haar.png>
 Package pdftex.def Info: ./../50_egli/figures/haar.png  used on input line 220.
@@ -1939,7 +1920,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 224.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[45 <./../50_egli/figures/haar_features.jpg>]
+[43 <./../50_egli/figures/haar_features.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 225--228
 
  []
@@ -1964,8 +1945,8 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 291.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[46 <./../50_egli/figures/haar.png (PNG copy)>]
-<./../50_egli/figures/aronfd.png, id=847, 324.46219pt x 261.97874pt>
+[44 <./../50_egli/figures/haar.png (PNG copy)>]
+<./../50_egli/figures/aronfd.png, id=819, 324.46219pt x 261.97874pt>
 File: ./../50_egli/figures/aronfd.png Graphic file (type png)
 <use ./../50_egli/figures/aronfd.png>
 Package pdftex.def Info: ./../50_egli/figures/aronfd.png  used on input line 29
@@ -1975,7 +1956,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 321.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [47 <./../50_egli/figures/aronfd.png>]
+ [45 <./../50_egli/figures/aronfd.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 341--347
 
  []
@@ -2004,7 +1985,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 373.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[48]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 377--381
 
  []
@@ -2040,31 +2021,31 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 435.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[49]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 436--450
 
  []
 
-<./../50_egli/figures/NewAron4.jpg, id=902, 272.01625pt x 272.01625pt>
+<./../50_egli/figures/NewAron4.jpg, id=873, 272.01625pt x 272.01625pt>
 File: ./../50_egli/figures/NewAron4.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/NewAron4.jpg>
 Package pdftex.def Info: ./../50_egli/figures/NewAron4.jpg  used on input line 
 462.
 (pdftex.def)             Requested size: 136.00778pt x 136.00778pt.
-<./../50_egli/figures/alignedAronCropped.jpg, id=903, 434.62375pt x 434.62375pt
+<./../50_egli/figures/alignedAronCropped.jpg, id=874, 434.62375pt x 434.62375pt
 >
 File: ./../50_egli/figures/alignedAronCropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/alignedAronCropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/alignedAronCropped.jpg  used on i
 nput line 465.
 (pdftex.def)             Requested size: 136.9072pt x 136.9072pt.
-<./../50_egli/figures/Neworens1.jpg, id=904, 198.7425pt x 198.7425pt>
+<./../50_egli/figures/Neworens1.jpg, id=875, 198.7425pt x 198.7425pt>
 File: ./../50_egli/figures/Neworens1.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/Neworens1.jpg>
 Package pdftex.def Info: ./../50_egli/figures/Neworens1.jpg  used on input line
  474.
 (pdftex.def)             Requested size: 139.11879pt x 139.11879pt.
-<./../50_egli/figures/alignedorens1Cropped.jpg, id=905, 445.665pt x 445.665pt>
+<./../50_egli/figures/alignedorens1Cropped.jpg, id=876, 445.665pt x 445.665pt>
 File: ./../50_egli/figures/alignedorens1Cropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/alignedorens1Cropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/alignedorens1Cropped.jpg  used on
@@ -2074,7 +2055,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 481.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[50 <./../50_egli/figures/NewAron4.jpg> <./../50_egli/figures/alignedAronCroppe
+[48 <./../50_egli/figures/NewAron4.jpg> <./../50_egli/figures/alignedAronCroppe
 d.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
@@ -2095,7 +2076,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--523
 
  []
 
-<./../50_egli/figures/aroncropped.jpg, id=923, 155.58125pt x 155.58125pt>
+<./../50_egli/figures/aroncropped.jpg, id=895, 155.58125pt x 155.58125pt>
 File: ./../50_egli/figures/aroncropped.jpg Graphic file (type jpg)
 <use ./../50_egli/figures/aroncropped.jpg>
 Package pdftex.def Info: ./../50_egli/figures/aroncropped.jpg  used on input li
@@ -2105,7 +2086,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 529.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[51 <./../50_egli/figures/Neworens1.jpg> <./../50_egli/figures/alignedorens1Cro
+[49 <./../50_egli/figures/Neworens1.jpg> <./../50_egli/figures/alignedorens1Cro
 pped.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 535--550
 
@@ -2116,7 +2097,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 551--557
 
  []
 
-<./../50_egli/figures/landmarks.png, id=952, 415.5525pt x 395.4775pt>
+<./../50_egli/figures/landmarks.png, id=924, 415.5525pt x 395.4775pt>
 File: ./../50_egli/figures/landmarks.png Graphic file (type png)
 <use ./../50_egli/figures/landmarks.png>
 Package pdftex.def Info: ./../50_egli/figures/landmarks.png  used on input line
@@ -2126,8 +2107,8 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 564.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[52 <./../50_egli/figures/aroncropped.jpg>]
-<./../50_egli/figures/pikat.png, id=964, 577.40718pt x 300.3722pt>
+[50 <./../50_egli/figures/aroncropped.jpg>]
+<./../50_egli/figures/pikat.png, id=936, 577.40718pt x 300.3722pt>
 File: ./../50_egli/figures/pikat.png Graphic file (type png)
 <use ./../50_egli/figures/pikat.png>
 Package pdftex.def Info: ./../50_egli/figures/pikat.png  used on input line 572
@@ -2152,7 +2133,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 584.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[53 <./../50_egli/figures/landmarks.png (PNG copy)> <./../50_egli/figures/pikat
+[51 <./../50_egli/figures/landmarks.png (PNG copy)> <./../50_egli/figures/pikat
 .png>]
 Overfull \hbox (9.22018pt too wide) in paragraph at lines 584--584
 []\OT1/cmr/bx/n/17.28 Herausforderungen, Pro-ble-me und de-ren L[]osung 
@@ -2197,7 +2178,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 647.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[54]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 648--653
 
  []
@@ -2222,7 +2203,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 708.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[55]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 717--718
 
  []
@@ -2241,33 +2222,33 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 750.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[56]) (../40_rei/_Doc_A.tex) (../40_rei/_Doc.tex
+[54]) (../40_rei/_Doc_A.tex) (../40_rei/_Doc.tex
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 1.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [57]
-Kapitel 8.
-<./../40_rei/figures/Capture.png, id=1003, 404.26031pt x 294.34969pt>
+ [55]
+Kapitel 6.
+<./../40_rei/figures/Capture.png, id=975, 404.26031pt x 294.34969pt>
 File: ./../40_rei/figures/Capture.png Graphic file (type png)
 <use ./../40_rei/figures/Capture.png>
 Package pdftex.def Info: ./../40_rei/figures/Capture.png  used on input line 15
 .
 (pdftex.def)             Requested size: 441.01773pt x 321.11774pt.
-[58
+[56
 
 ]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 28.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [59 <./../40_rei/figures/Capture.png>]
+ [57 <./../40_rei/figures/Capture.png>]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 42.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [60]
-<./../40_rei/figures/Schaltplan.png, id=1043, 989.94844pt x 455.45157pt>
+ [58]
+<./../40_rei/figures/Schaltplan.png, id=1014, 989.94844pt x 455.45157pt>
 File: ./../40_rei/figures/Schaltplan.png Graphic file (type png)
 <use ./../40_rei/figures/Schaltplan.png>
 Package pdftex.def Info: ./../40_rei/figures/Schaltplan.png  used on input line
@@ -2277,17 +2258,17 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 54.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [61 <./../40_rei/figures/Schaltplan.png>]
+ [59 <./../40_rei/figures/Schaltplan.png>]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 98.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [62]
+ [60]
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-<./../40_rei/figures/diplom_11Ebene.png, id=1069, 945.5325pt x 563.10374pt>
+<./../40_rei/figures/diplom_11Ebene.png, id=1041, 945.5325pt x 563.10374pt>
 File: ./../40_rei/figures/diplom_11Ebene.png Graphic file (type png)
 <use ./../40_rei/figures/diplom_11Ebene.png>
 Package pdftex.def Info: ./../40_rei/figures/diplom_11Ebene.png  used on input 
@@ -2298,7 +2279,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-<./../40_rei/figures/Erklaerung_Erste_Ebene.png, id=1071, 676.77844pt x 236.383
+<./../40_rei/figures/Erklaerung_Erste_Ebene.png, id=1043, 676.77844pt x 236.383
 12pt>
 File: ./../40_rei/figures/Erklaerung_Erste_Ebene.png Graphic file (type png)
 <use ./../40_rei/figures/Erklaerung_Erste_Ebene.png>
@@ -2309,7 +2290,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 130.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[63 <./../40_rei/figures/diplom_11Ebene.png>]
+[61 <./../40_rei/figures/diplom_11Ebene.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
@@ -2333,7 +2314,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 151.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[64 <./../40_rei/figures/Erklaerung_Erste_Ebene.png>]
+[62 <./../40_rei/figures/Erklaerung_Erste_Ebene.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
@@ -2357,7 +2338,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 176.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[65]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
@@ -2376,7 +2357,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 205.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[66]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
@@ -2392,7 +2373,7 @@ Overfull \hbox (7.29416pt too wide) in paragraph at lines 215--217
 leich der Abst[]ande
  []
 
-<./../40_rei/figures/Vergleichsweg.png, id=1139, 341.77687pt x 343.2825pt>
+<./../40_rei/figures/Vergleichsweg.png, id=1110, 341.77687pt x 343.2825pt>
 File: ./../40_rei/figures/Vergleichsweg.png Graphic file (type png)
 <use ./../40_rei/figures/Vergleichsweg.png>
 Package pdftex.def Info: ./../40_rei/figures/Vergleichsweg.png  used on input l
@@ -2402,7 +2383,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 225.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[67]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 226--229
 
  []
@@ -2421,7 +2402,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 234.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[68 <./../40_rei/figures/Vergleichsweg.png>]
+[66 <./../40_rei/figures/Vergleichsweg.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
@@ -2431,7 +2412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
-<./../40_rei/figures/geometrischesM.png, id=1159, 282.30469pt x 37.64063pt>
+<./../40_rei/figures/geometrischesM.png, id=1131, 282.30469pt x 37.64063pt>
 File: ./../40_rei/figures/geometrischesM.png Graphic file (type png)
 <use ./../40_rei/figures/geometrischesM.png>
 Package pdftex.def Info: ./../40_rei/figures/geometrischesM.png  used on input 
@@ -2441,7 +2422,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 274.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[69 <./../40_rei/figures/geometrischesM.png>]
+[67 <./../40_rei/figures/geometrischesM.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
@@ -2461,7 +2442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
-<./../40_rei/figures/1_Fall.png, id=1188, 532.99126pt x 314.67563pt>
+<./../40_rei/figures/1_Fall.png, id=1160, 532.99126pt x 314.67563pt>
 File: ./../40_rei/figures/1_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/1_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/1_Fall.png  used on input line 304
@@ -2471,7 +2452,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 308.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[70]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
@@ -2490,12 +2471,12 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 341.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[71 <./../40_rei/figures/1_Fall.png>]
+[69 <./../40_rei/figures/1_Fall.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
-<./../40_rei/figures/2_Fall.png, id=1245, 520.94624pt x 353.06906pt>
+<./../40_rei/figures/2_Fall.png, id=1216, 520.94624pt x 353.06906pt>
 File: ./../40_rei/figures/2_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/2_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/2_Fall.png  used on input line 352
@@ -2520,12 +2501,12 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 376.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[72 <./../40_rei/figures/2_Fall.png>]
+[70 <./../40_rei/figures/2_Fall.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
-<./../40_rei/figures/3_Fall.png, id=1273, 532.23843pt x 226.59656pt>
+<./../40_rei/figures/3_Fall.png, id=1244, 532.23843pt x 226.59656pt>
 File: ./../40_rei/figures/3_Fall.png Graphic file (type png)
 <use ./../40_rei/figures/3_Fall.png>
 Package pdftex.def Info: ./../40_rei/figures/3_Fall.png  used on input line 393
@@ -2555,7 +2536,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 422.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[73 <./../40_rei/figures/3_Fall.png>]
+[71 <./../40_rei/figures/3_Fall.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
@@ -2594,7 +2575,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 465.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[74]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
@@ -2628,7 +2609,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 486.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[75]
+[73]
 Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
@@ -2652,9 +2633,9 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 509.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[76]
+[74]
 
-LaTeX Warning: Reference `L2, ' on page 77 undefined on input line 510.
+LaTeX Warning: Reference `L2, ' on page 75 undefined on input line 510.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 510--511
@@ -2690,7 +2671,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 540.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[77]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
@@ -2730,7 +2711,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 561.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[78]
+[76]
 Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
@@ -2740,7 +2721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 568--569
 
  []
 
-<./../40_rei/figures/Fehlerbaum.png, id=1377, 642.14906pt x 384.6872pt>
+<./../40_rei/figures/Fehlerbaum.png, id=1348, 642.14906pt x 384.6872pt>
 File: ./../40_rei/figures/Fehlerbaum.png Graphic file (type png)
 <use ./../40_rei/figures/Fehlerbaum.png>
 Package pdftex.def Info: ./../40_rei/figures/Fehlerbaum.png  used on input line
@@ -2755,7 +2736,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 585.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[79]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 586--587
 
  []
@@ -2774,7 +2755,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 597.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[80 <./../40_rei/figures/Fehlerbaum.png>]
+[78 <./../40_rei/figures/Fehlerbaum.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 612--613
 
  []
@@ -2803,7 +2784,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 628.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[81]
+[79]
 Underfull \hbox (badness 10000) in paragraph at lines 630--631
 
  []
@@ -2827,11 +2808,11 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 650.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[82]
-Kapitel 9.
-) [83
+[80]
+Kapitel 7.
+) [81
 
-] (Master.lof [84
+] (Master.lof [82
 
 
 ])
@@ -2842,7 +2823,7 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 187.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [85] (Master.lot)
+ [83] (Master.lot)
 \tf@lot=\write8
 \openout8 = `Master.lot'.
 
@@ -2866,7 +2847,7 @@ mr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / viscircle . de / einsteigerguide -[
 ]
  []
 
-[86
+[84
 
 ]
 Overfull \hbox (13.98991pt too wide) in paragraph at lines 194--194
@@ -2879,12 +2860,12 @@ File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 194.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
-[87]
+[85]
 File: ./figures/Header_Seite.png Graphic file (type png)
 <use ./figures/Header_Seite.png>
 Package pdftex.def Info: ./figures/Header_Seite.png  used on input line 195.
 (pdftex.def)             Requested size: 68.50577pt x 24.08992pt.
- [88] (../10_allgemein/_Doc_A.tex) (../10_allgemein/_Doc_App.tex)
+ [86] (../10_allgemein/_Doc_A.tex) (../10_allgemein/_Doc_App.tex)
 (../20_planung/_Doc_A.tex) (../20_planung/_Doc_App.tex)
 
 AED: lastpage setting LastPage
@@ -2894,7 +2875,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \&
-l.98 ...ank \& 2D vs 3D Unterschied}{chapter.5}{}}
+l.95 ...ank \& 2D vs 3D Unterschied}{chapter.4}{}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2902,7 +2883,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \@newl@bel ... \bbl@tempa \csname #1@#2\endcsname 
                                                   \def \bbl@tempb {#3}\@safe...
-l.98 ...ank \& 2D vs 3D Unterschied}{chapter.5}{}}
+l.95 ...ank \& 2D vs 3D Unterschied}{chapter.4}{}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -2910,7 +2891,7 @@ I'm ignoring this, since I wasn't doing a \csname.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: B4FE1BEFF212B4128AD9E51D262F0515;4490.
+(rerunfilecheck)             Checksum: D6DB7F05B4C4ECF1AA5C4472943D7B22;4341.
 
 
 LaTeX Warning: There were undefined references.
@@ -2927,20 +2908,20 @@ Package logreq Info: Writing requests to 'Master.run.xml'.
 \openout1 = `Master.run.xml'.
 
 
-Overfull \hbox (530.75934pt too wide) in paragraph at lines 98--204
+Overfull \hbox (520.315pt too wide) in paragraph at lines 95--204
 []\OT1/cmr/m/n/12 & 2D vs. 3D Un-ter-schied                                    
                                                                                
                                                                                
                                                                                
-                                              
+                                          
  []
 
  ) 
 Here is how much of TeX's memory you used:
- 23595 strings out of 481258
- 442657 string characters out of 2906671
- 1167560 words of memory out of 3000000
- 38021 multiletter control sequences out of 15000+200000
+ 23586 strings out of 481258
+ 442571 string characters out of 2906671
+ 1167557 words of memory out of 3000000
+ 38018 multiletter control sequences out of 15000+200000
  543052 words of font info for 62 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  57i,17n,106p,1658b,3778s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2961,9 +2942,9 @@ ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/USER/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/U
 SER/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 >
-Output written on Master.pdf (96 pages, 2677107 bytes).
+Output written on Master.pdf (93 pages, 2671141 bytes).
 PDF statistics:
- 1704 PDF objects out of 1728 (max. 8388607)
- 614 named destinations out of 1000 (max. 500000)
- 694 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1674 PDF objects out of 1728 (max. 8388607)
+ 608 named destinations out of 1000 (max. 500000)
+ 670 words of extra memory for PDF output out of 10000 (max. 10000000)
 

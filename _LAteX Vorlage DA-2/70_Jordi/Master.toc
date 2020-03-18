@@ -1,0 +1,26 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Datenbank \& 2D vs 3D Unterschied}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Umsetzung}{1}{section.1.1}%
+\contentsline {subsubsection}{MySQL}{1}{section*.3}%
+\contentsline {subsubsection}{MariaDB}{2}{section*.5}%
+\contentsline {subsubsection}{Python}{3}{section*.7}%
+\contentsline {subsubsection}{OpenCV}{3}{section*.9}%
+\contentsline {section}{\numberline {1.2}Technische Lösungen}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Datenkbank}{4}{subsection.1.2.1}%
+\contentsline {subsubsection}{Beschreibung der Tabellen}{5}{section*.11}%
+\contentsline {subsubsection}{Tabelle Person}{5}{section*.13}%
+\contentsline {subsubsection}{Log Tabelle}{6}{section*.14}%
+\contentsline {subsection}{\numberline {1.2.2}2D vs. 3D Unterschied}{7}{subsection.1.2.2}%
+\contentsline {subsubsection}{Lösungsweg}{7}{section*.15}%
+\contentsline {subsubsection}{Beispiele}{8}{section*.16}%
+\contentsline {subsubsection}{Zeitdauer}{9}{section*.21}%
+\contentsline {section}{\numberline {1.3}Herausforderungen}{10}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Datenkbank - MariaDB}{10}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Disparity Map}{11}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Python Scripting}{14}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}OpenCV}{15}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Qualitätssicherung}{15}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Ergebnisse}{16}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Datenbank}{16}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}2D vs. 3D Unterschied}{17}{subsection.1.5.2}%

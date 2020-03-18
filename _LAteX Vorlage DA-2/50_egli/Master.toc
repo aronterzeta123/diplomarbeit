@@ -22,4 +22,4 @@
 \contentsline {section}{\numberline {1.5}Ergebnisse}{16}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Evaluierung und Resümee}{16}{section.1.6}%
 \contentsline {subsection}{\numberline {1.6.1}Planung vs. Realisierung}{16}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Lessons Learned}{16}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.2}Ergebnisse}{16}{subsection.1.6.2}%
