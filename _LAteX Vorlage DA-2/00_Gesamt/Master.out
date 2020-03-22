@@ -15,7 +15,7 @@
 \BOOKMARK [2][-]{subsection.3.1.5}{Qualit\344tssicherung und Controlling}{section.3.1}% 15
 \BOOKMARK [1][-]{section.3.2}{Ergebnisse}{chapter.3}% 16
 \BOOKMARK [2][-]{subsection.3.2.1}{Implementierung}{section.3.2}% 17
-\BOOKMARK [0][-]{chapter.4}{Datenbank \046 2D vs 3D Unterschied}{}% 18
+\BOOKMARK [0][-]{chapter.4}{Datenbank und 2D vs. 3D Unterschied}{}% 18
 \BOOKMARK [1][-]{section.4.1}{Umsetzung}{chapter.4}% 19
 \BOOKMARK [1][-]{section.4.2}{Technische L\366sungen}{chapter.4}% 20
 \BOOKMARK [2][-]{subsection.4.2.1}{Datenkbank}{section.4.2}% 21
@@ -29,35 +29,39 @@
 \BOOKMARK [1][-]{section.4.5}{Ergebnisse}{chapter.4}% 29
 \BOOKMARK [2][-]{subsection.4.5.1}{Datenbank}{section.4.5}% 30
 \BOOKMARK [2][-]{subsection.4.5.2}{2D vs. 3D Unterschied}{section.4.5}% 31
-\BOOKMARK [0][-]{chapter.5}{Bildverarbeitung}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Allgemeines}{chapter.5}% 33
-\BOOKMARK [2][-]{subsection.5.1.1}{Entwicklungsumgebung und Technologien}{section.5.1}% 34
-\BOOKMARK [2][-]{subsection.5.1.2}{Frameworks und Bibliotheken}{section.5.1}% 35
-\BOOKMARK [1][-]{section.5.2}{Technische L\366sungen}{chapter.5}% 36
-\BOOKMARK [2][-]{subsection.5.2.1}{L\366sungsweg - Structed Software design}{section.5.2}% 37
-\BOOKMARK [2][-]{subsection.5.2.2}{Gesichtserkennung}{section.5.2}% 38
-\BOOKMARK [2][-]{subsection.5.2.3}{Normalisierung}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.4}{Zuschneiden von Gesichter}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.5}{Gesichtsschl\374sselpunkte Extraktion}{section.5.2}% 41
-\BOOKMARK [1][-]{section.5.3}{Herausforderungen, Probleme und deren L\366sung }{chapter.5}% 42
-\BOOKMARK [2][-]{subsection.5.3.1}{L\366sungen}{section.5.3}% 43
-\BOOKMARK [1][-]{section.5.4}{Qualit\344tssicherung, Controlling}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.5}{Ergebnisse}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.6}{Evaluierung und Res\374mee}{chapter.5}% 46
-\BOOKMARK [2][-]{subsection.5.6.1}{Planung vs. Realisierung}{section.5.6}% 47
-\BOOKMARK [2][-]{subsection.5.6.2}{Ergebnisse}{section.5.6}% 48
-\BOOKMARK [0][-]{chapter.6}{Gesichtserkennung}{}% 49
-\BOOKMARK [1][-]{section.6.1}{Allgemeines}{chapter.6}% 50
-\BOOKMARK [1][-]{section.6.2}{Technische L\366sung}{chapter.6}% 51
-\BOOKMARK [2][-]{subsection.6.2.1}{Hardware und Aufbau}{section.6.2}% 52
-\BOOKMARK [2][-]{subsection.6.2.2}{Software}{section.6.2}% 53
-\BOOKMARK [1][-]{section.6.3}{Herausforderungen, Probleme, und deren L\366sung}{chapter.6}% 54
-\BOOKMARK [1][-]{section.6.4}{Projektmanagement und Controlling}{chapter.6}% 55
-\BOOKMARK [1][-]{section.6.5}{Ergebnisse}{chapter.6}% 56
-\BOOKMARK [1][-]{section.6.6}{Was wurde gelernt und welche Verbesserungs m\366glichkeiten gibt es}{chapter.6}% 57
-\BOOKMARK [0][-]{chapter.7}{Ausblick}{}% 58
-\BOOKMARK [1][-]{section.7.1}{Wie geht es weiter ?}{chapter.7}% 59
-\BOOKMARK [1][-]{section.7.2}{Was passiert mit dem Ergebnis?}{chapter.7}% 60
-\BOOKMARK [1][-]{section.7.3}{was passiert mit dem Prototyp?}{chapter.7}% 61
-\BOOKMARK [1][-]{section.7.4}{Gibt es Folgeprojekte?}{chapter.7}% 62
-\BOOKMARK [1][-]{section.7.5}{Gibt es Interessanten?}{chapter.7}% 63
+\BOOKMARK [1][-]{section.4.6}{Evaluierung und Res\374mee}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.6.1}{Planung vs. Realisierung}{section.4.6}% 33
+\BOOKMARK [2][-]{subsection.4.6.2}{Wertsch\366pfung und Lessons Learned}{section.4.6}% 34
+\BOOKMARK [0][-]{chapter.5}{Bildverarbeitung}{}% 35
+\BOOKMARK [1][-]{section.5.1}{Allgemeines}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.1.1}{Entwicklungsumgebung und Technologien}{section.5.1}% 37
+\BOOKMARK [2][-]{subsection.5.1.2}{Frameworks und Bibliotheken}{section.5.1}% 38
+\BOOKMARK [1][-]{section.5.2}{Technische L\366sungen}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{L\366sungsweg - Structed Software design}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.2}{Gesichtserkennung}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.3}{Normalisierung}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.4}{Zuschneiden von Gesichter}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.5}{Gesichtsschl\374sselpunkte Extraktion}{section.5.2}% 44
+\BOOKMARK [1][-]{section.5.3}{Herausforderungen, Probleme und deren L\366sung }{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.3.1}{L\366sungen}{section.5.3}% 46
+\BOOKMARK [1][-]{section.5.4}{Qualit\344tssicherung, Controlling}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.5}{Ergebnisse}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.6}{Evaluierung und Res\374mee}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.6.1}{Planung vs. Realisierung}{section.5.6}% 50
+\BOOKMARK [2][-]{subsection.5.6.2}{Ergebnisse}{section.5.6}% 51
+\BOOKMARK [0][-]{chapter.6}{Gesichtserkennung}{}% 52
+\BOOKMARK [1][-]{section.6.1}{Allgemeines}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.2}{Technische L\366sung}{chapter.6}% 54
+\BOOKMARK [2][-]{subsection.6.2.1}{Hardware und Aufbau}{section.6.2}% 55
+\BOOKMARK [2][-]{subsection.6.2.2}{Software}{section.6.2}% 56
+\BOOKMARK [1][-]{section.6.3}{Herausforderungen, Probleme, und deren L\366sung}{chapter.6}% 57
+\BOOKMARK [1][-]{section.6.4}{Projektmanagement und Controlling}{chapter.6}% 58
+\BOOKMARK [1][-]{section.6.5}{Ergebnisse}{chapter.6}% 59
+\BOOKMARK [1][-]{section.6.6}{Was wurde gelernt und welche Verbesserungs m\366glichkeiten gibt es}{chapter.6}% 60
+\BOOKMARK [0][-]{chapter.7}{Ausblick}{}% 61
+\BOOKMARK [1][-]{section.7.1}{Wie geht es weiter ?}{chapter.7}% 62
+\BOOKMARK [1][-]{section.7.2}{Was passiert mit dem Ergebnis?}{chapter.7}% 63
+\BOOKMARK [1][-]{section.7.3}{was passiert mit dem Prototyp?}{chapter.7}% 64
+\BOOKMARK [1][-]{section.7.4}{Gibt es Folgeprojekte?}{chapter.7}% 65
+\BOOKMARK [1][-]{section.7.5}{Gibt es Interessanten?}{chapter.7}% 66
+\BOOKMARK [0][-]{chapter.8}{Handbuch}{}% 67

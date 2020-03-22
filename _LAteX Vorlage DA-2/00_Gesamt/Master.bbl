@@ -59,6 +59,76 @@
       \verb https://opencv.org/
       \endverb
     \endentry
+    \entry{Database1}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.idiap.ch/dataset/3dmad
+      \endverb
+      \verb{url}
+      \verb https://www.idiap.ch/dataset/3dmad
+      \endverb
+    \endentry
+    \entry{Database2}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb http://www2.ece.ohio-state.edu/~aleix/ARdatabase.html
+      \endverb
+      \verb{url}
+      \verb http://www2.ece.ohio-state.edu/~aleix/ARdatabase.html
+      \endverb
+    \endentry
+    \entry{Database3}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb http://www.vision.caltech.edu/Image_Datasets/Caltech_10K_WebFaces/
+      \endverb
+      \verb{url}
+      \verb http://www.vision.caltech.edu/Image_Datasets/Caltech_10K_WebFaces/
+      \endverb
+    \endentry
+    \entry{Database4}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb http://www.jdl.ac.cn/peal/
+      \endverb
+      \verb{url}
+      \verb http://www.jdl.ac.cn/peal/
+      \endverb
+    \endentry
+    \entry{Database5}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.nist.gov/itl/products-and-services/color-feret-database
+      \endverb
+      \verb{url}
+      \verb https://www.nist.gov/itl/products-and-services/color-feret-database
+      \endverb
+    \endentry
+    \entry{disparityM}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_calib3d/py_depthmap/py_depthmap.html
+      \endverb
+      \verb{url}
+      \verb https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_calib3d/py_depthmap/py_depthmap.html
+      \endverb
+    \endentry
+    \entry{matlab}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.mathworks.com/matlabcentral/fileexchange/69497-matlab-3d-face-recognition-code
+      \endverb
+      \verb{url}
+      \verb https://www.mathworks.com/matlabcentral/fileexchange/69497-matlab-3d-face-recognition-code
+      \endverb
+    \endentry
     \entry{Led}{online}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
@@ -843,9 +913,37 @@
       \verb 1907.10121
       \endverb
     \endentry
+    \entry{affine}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5d54d442adc2a0d430f0728fd6530577}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MathWorld}%
+      }
+      \strng{namehash}{5d54d442adc2a0d430f0728fd6530577}
+      \strng{fullhash}{5d54d442adc2a0d430f0728fd6530577}
+      \strng{bibnamehash}{5d54d442adc2a0d430f0728fd6530577}
+      \strng{authorbibnamehash}{5d54d442adc2a0d430f0728fd6530577}
+      \strng{authornamehash}{5d54d442adc2a0d430f0728fd6530577}
+      \strng{authorfullhash}{5d54d442adc2a0d430f0728fd6530577}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Affine Transformation.}
+      \verb{urlraw}
+      \verb http://mathworld.wolfram.com/AffineTransformation.html
+      \endverb
+      \verb{url}
+      \verb http://mathworld.wolfram.com/AffineTransformation.html
+      \endverb
+      \warn{\item Entry 'affine' (./../literatur.bib): Invalid format '3.3.2020' of date field 'date' - ignoring}
+    \endentry
   \enddatalist
-  \missing{affine}
-  \missing{imgprz}
 \endrefsection
 \endinput
 

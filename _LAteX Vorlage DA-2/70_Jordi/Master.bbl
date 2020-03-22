@@ -1,0 +1,238 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{MySQLlogo}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.mysql.com/
+      \endverb
+      \verb{url}
+      \verb https://www.mysql.com/
+      \endverb
+    \endentry
+    \entry{MariaDBlogo}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://mariadb.org/
+      \endverb
+      \verb{url}
+      \verb https://mariadb.org/
+      \endverb
+    \endentry
+    \entry{Pythonlogo}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.python.org/
+      \endverb
+      \verb{url}
+      \verb https://www.python.org/
+      \endverb
+    \endentry
+    \entry{OpenCVlogo}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://opencv.org/
+      \endverb
+      \verb{url}
+      \verb https://opencv.org/
+      \endverb
+    \endentry
+    \entry{Database1}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.idiap.ch/dataset/3dmad
+      \endverb
+      \verb{url}
+      \verb https://www.idiap.ch/dataset/3dmad
+      \endverb
+    \endentry
+    \entry{Database2}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb http://www2.ece.ohio-state.edu/~aleix/ARdatabase.html
+      \endverb
+      \verb{url}
+      \verb http://www2.ece.ohio-state.edu/~aleix/ARdatabase.html
+      \endverb
+    \endentry
+    \entry{Database3}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb http://www.vision.caltech.edu/Image_Datasets/Caltech_10K_WebFaces/
+      \endverb
+      \verb{url}
+      \verb http://www.vision.caltech.edu/Image_Datasets/Caltech_10K_WebFaces/
+      \endverb
+    \endentry
+    \entry{Database4}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb http://www.jdl.ac.cn/peal/
+      \endverb
+      \verb{url}
+      \verb http://www.jdl.ac.cn/peal/
+      \endverb
+    \endentry
+    \entry{Database5}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.nist.gov/itl/products-and-services/color-feret-database
+      \endverb
+      \verb{url}
+      \verb https://www.nist.gov/itl/products-and-services/color-feret-database
+      \endverb
+    \endentry
+    \entry{disparityM}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_calib3d/py_depthmap/py_depthmap.html
+      \endverb
+      \verb{url}
+      \verb https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_calib3d/py_depthmap/py_depthmap.html
+      \endverb
+    \endentry
+    \entry{matlab}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.mathworks.com/matlabcentral/fileexchange/69497-matlab-3d-face-recognition-code
+      \endverb
+      \verb{url}
+      \verb https://www.mathworks.com/matlabcentral/fileexchange/69497-matlab-3d-face-recognition-code
+      \endverb
+    \endentry
+    \entry{MariaDB-Monitor}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0a8ad43252d022ccfdcc70b741f518af}{%
+           family={Badicke},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a8ad43252d022ccfdcc70b741f518af}
+      \strng{fullhash}{0a8ad43252d022ccfdcc70b741f518af}
+      \strng{bibnamehash}{0a8ad43252d022ccfdcc70b741f518af}
+      \strng{authorbibnamehash}{0a8ad43252d022ccfdcc70b741f518af}
+      \strng{authornamehash}{0a8ad43252d022ccfdcc70b741f518af}
+      \strng{authorfullhash}{0a8ad43252d022ccfdcc70b741f518af}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{3}
+      \field{title}{MariaDB-Monitor?}
+      \field{year}{2017}
+      \field{dateera}{ce}
+    \endentry
+    \entry{PDCA-Zyklus}{report}{}
+      \name{author}{1}{}{%
+        {{hash=92145a7f32ec212724f0ea5b126b382b}{%
+           family={Bekim\bibnamedelima Alibali},
+           familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={MA\bibnamedelima BSc},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{fullhash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{bibnamehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{authorbibnamehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{authornamehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{authorfullhash}{92145a7f32ec212724f0ea5b126b382b}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ITP QM ALB Skript SchülerTeil1}
+    \endentry
+    \entry{OpenCV1}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labeltitlesource}{title}
+      \field{title}{Einsteigerguide: Was ist OpenCV?}
+      \verb{urlraw}
+      \verb https://viscircle.de/einsteigerguide-was-ist-opencv/
+      \endverb
+      \verb{url}
+      \verb https://viscircle.de/einsteigerguide-was-ist-opencv/
+      \endverb
+    \endentry
+    \entry{pythonInfo}{article}{}
+      \name{author}{1}{}{%
+        {{hash=95c5b2bb99f983119bb81ec2bf7fa2aa}{%
+           family={Luber},
+           familyi={L\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{95c5b2bb99f983119bb81ec2bf7fa2aa}
+      \strng{fullhash}{95c5b2bb99f983119bb81ec2bf7fa2aa}
+      \strng{bibnamehash}{95c5b2bb99f983119bb81ec2bf7fa2aa}
+      \strng{authorbibnamehash}{95c5b2bb99f983119bb81ec2bf7fa2aa}
+      \strng{authornamehash}{95c5b2bb99f983119bb81ec2bf7fa2aa}
+      \strng{authorfullhash}{95c5b2bb99f983119bb81ec2bf7fa2aa}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{journaltitle}{Nico Litzel}
+      \field{month}{7}
+      \field{title}{Was is Python?}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{stepken1999mysql}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bf1fdad59bb5143ae0cdfcf4610fcf21}{%
+           family={Stepken},
+           familyi={S\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf1fdad59bb5143ae0cdfcf4610fcf21}
+      \strng{fullhash}{bf1fdad59bb5143ae0cdfcf4610fcf21}
+      \strng{bibnamehash}{bf1fdad59bb5143ae0cdfcf4610fcf21}
+      \strng{authorbibnamehash}{bf1fdad59bb5143ae0cdfcf4610fcf21}
+      \strng{authornamehash}{bf1fdad59bb5143ae0cdfcf4610fcf21}
+      \strng{authorfullhash}{bf1fdad59bb5143ae0cdfcf4610fcf21}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Abruf: http://www. littleidiot. de/mysql (am 23.04. 2008)}
+      \field{title}{MySQL Datenbankhandbuch}
+      \field{year}{1999}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
