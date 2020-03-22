@@ -532,20 +532,18 @@ Auf Abb.\ref{fig:aroncropped} sieht man deutlich nur das Gesicht.
 \subsection{Gesichtsschlüsselpunkte Extraktion}
 \label{gspex}
 
-Nun kommt ist es zu einem sehr wichtigen Punkt meines Teils der Diplomarbeit, die Extraktion Gesichtsschlüsselpunkte. \\
+Nun kommt ist es zu einem sehr wichtigen Punkt meines Teils der Diplomarbeit, die Extraktion Gesichtsschlüsselpunkte. 
 Dazu wurden die Gesichtsmerkmale \textit{„Facial Landmarks“} von dlib verwendet.
-\\
+
 Die Gesichtsmarkierungen werden verwendet, um Bereiche des Gesichts zu finden
 und darzustellen, wie zum Beispiel: die Augen, die Augenbrauen, die Nase, den
-Mund und den Kiefer. \\
-Wie macht man das? Wie erkennt man Gesichtsmerkmale? \\Das ist eine Teilmenge
-des Problems der Formvorhersage.\\ Bei einem vorgegebenen Eingabebild (und
+Mund und den Kiefer. Wie macht man das? Wie erkennt man Gesichtsmerkmale? \\Das ist eine Teilmenge des Problems der Formvorhersage. Bei einem vorgegebenen Eingabebild (und
 normalerweise einem ROI\footnote{Region of interest, Region von Interesse}, die
 das interessierende Objekt angibt) versucht ein Formvorhersager, wichtige Punkte
-entlang der Form zu lokalisieren. \\
+entlang der Form zu lokalisieren. 
 Dieser Formvorhersager, der im Dlib integriert ist wurde von Kazemi and Sullivan
 in ihrem Paper: \textit{One Millisecond Face Alignment with an Ensemble of
-	Regression Trees} entwickelt.\cite{Kazemi2014OneMF} \\
+	Regression Trees} entwickelt.\cite{Kazemi2014OneMF} 
 Dieser Methode werden viele Trainingsdaten zur Verfügung gestellt, damit sie ein Kombination von Regressionskurven trainiert, um die Positionen der \textit{Facial Landmarks} direkt aus den Pixelintensitäten selbst zu berechnen.\cite{Kazemi2014OneMF} \\
 
 Dadurch werden unsere gewünschten 68 Gesichtsmarkierungen mit hohen
