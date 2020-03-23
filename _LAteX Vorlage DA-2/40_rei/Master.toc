@@ -18,7 +18,3 @@
 \contentsline {section}{\numberline {1.6}Was wurde gelernt und \textbf {welche Verbesserungs möglichkeiten gibt es}}{24}{section.1.6}% 
 \contentsline {chapter}{\numberline {2}Ausblick}{27}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Wie geht es weiter ?}{27}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Was passiert mit dem Ergebnis?}{27}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}was passiert mit dem Prototyp?}{27}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Gibt es Folgeprojekte?}{27}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Gibt es Interessanten?}{27}{section.2.5}% 
