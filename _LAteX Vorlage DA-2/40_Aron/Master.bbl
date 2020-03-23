@@ -131,10 +131,10 @@
       \field{year}{2000}
       \field{dateera}{ce}
       \verb{urlraw}
-      \verb url
+      \verb https://cmake.org/overview/
       \endverb
       \verb{url}
-      \verb url
+      \verb https://cmake.org/overview/
       \endverb
     \endentry
     \entry{Linux_Betriebssystem}{misc}{}
@@ -179,7 +179,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Architektur}
-      \warn{\item Entry 'terminator' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring}
+      \warn{\item Entry 'terminator' (./../literatur.bib): Invalid format '16.09.2018' of date field 'date' - ignoring}
     \endentry
     \entry{rpigpio}{misc}{}
       \name{author}{1}{}{%

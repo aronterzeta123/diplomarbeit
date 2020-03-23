@@ -1,33 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
-<<<<<<< HEAD
-\contentsline {figure}{\numberline {1.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{3}{figure.caption.2}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{4}{figure.caption.3}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Haar Features\cite {Viola01robustreal-time}\relax }}{6}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Haar\relax }}{6}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Output: Box auf Gesicht\relax }}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{11}{figure.caption.13}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{11}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{11}{subfigure.6.2}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Unterschied: normalisiert, nicht normalisiert .2\relax }}{11}{figure.caption.14}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{11}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{11}{subfigure.7.2}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Output: Zugeschnittenes Bild\relax }}{12}{figure.caption.15}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Gesichtsschlüsselpunkte \cite {Kazemi2014OneMF}\relax }}{13}{figure.caption.16}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Gesichtsdaten\relax }}{13}{figure.caption.17}%
-=======
-\contentsline {figure}{\numberline {1.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{3}{figure.caption.2}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{4}{figure.caption.3}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Haar Features\cite {Viola01robustreal-time}\relax }}{6}{figure.caption.4}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Output: Box auf Gesicht\relax }}{8}{figure.caption.6}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{11}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{11}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{11}{subfigure.5.2}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Unterschied: normalisiert, nicht normalisiert .2\relax }}{11}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{11}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{11}{subfigure.6.2}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Output: Abgeschnittenes Gesicht\relax }}{12}{figure.caption.13}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Gesichtsschl\IeC {\"u}sselpunkte \cite {Kazemi2014OneMF}\relax }}{13}{figure.caption.14}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Gesichtsdaten\relax }}{14}{figure.caption.15}
->>>>>>> 52d1b49996b62138dc15ca4fb998fb33c9aa2c47
+\contentsline {figure}{\numberline {1.1}{\ignorespaces dlib logo \cite {dlib}\relax }}{2}{figure.caption.2}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Bildverarbeitung Structed Design\relax }}{3}{figure.caption.3}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Erste Ebene Erklärung\relax }}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Haar Features\cite {Viola01robustreal-time}\relax }}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Haar\relax }}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Output: Box auf Gesicht\relax }}{7}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{10}{figure.caption.14}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{10}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{10}{subfigure.7.2}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Unterschied: normalisiert, nicht normalisiert\relax }}{11}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nicht normalisiert}}}{11}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalisiert}}}{11}{subfigure.8.2}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Output: Zugeschnittenes Bild\relax }}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Gesichtsschlüsselpunkte \cite {Kazemi2014OneMF}\relax }}{13}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Gesichtsdaten\relax }}{13}{figure.caption.18}%
