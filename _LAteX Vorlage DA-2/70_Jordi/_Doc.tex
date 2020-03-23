@@ -1,4 +1,4 @@
-\chapter{\docname}
+\chapter{Datenbank \& 2D vs 3D Unterschied}
 \label{\docname}
 In diesem Kapitel wird die Umsetzung von der Datenbank sowie auch die Differenzierung zwischen 3D und 2D Gesichtern besprochen. Es wird zuerst eine allgemeine Beschreibung gemacht, danach werden allen Schritten von der Plan-Phase bis zu der Implementierungsphase besprochen. Alle Probleme, Herausforderungen und Ergebnisse dieses Teils des Projektes werden genau erklärt.
 \section{Umsetzung}
@@ -37,7 +37,7 @@ Informationen erleichtert. Beispielsweise kann man Produktinformationen eines Ku
 WWW-Server speichern und abrufen. MySQL ist äußerst schnell und flexibel genug, um sogar Bilder
 und Log-Dateien darin abzulegen. In der Praxis ist MySQL sehr viel schneller, als z.B. ORACLE oder INFORMIX."}\cite{stepken1999mysql}
 \bigbreak
-MySQL hat ein breites Anwendungsspektrum und wird meistens in Verbindung mit PHP, Linux, Python usw. verwendet. Der Grund warum MySQL verwendet wird, ist die einfache Bedienung und Verwaltung dieser Datenbank. Da es sich bei diesem DBS um eines der am häufigsten verwendeten DBS handelt, gibt es eine Vielzahl von Tools, die zum Verwalten der Datenbank verwendet werden können.
+MySQL hat ein breites Anwendungsspektrum und wird meistens in Verbindung mit PHP, Linux, Python usw. verwendet. Der Grund warum MySQL verwendet wird, ist die einfache Bedienung und Verwaltung dieser Datenbank. Da es sich bei diesem DBS um eines der am häufigsten verwendeten DBS handelt, gibt es eine Vielzahl von Tools, die zum Verwalten der Datenbank verwendet werden können (Abbildung \ref{fig:mysql}).
 
 \subsubsection{MariaDB}
 \textit{"MariaDB ist aktuell die am schnellsten wachsende Open-Source-Datenbanklösung. Sie wird hauptsächlich von der MariaDB Corporation entwickelt und ist ein Fork von MySQL. Mittlerweile bietet das Datenbankverwaltungssystem mit seinen diversen kostenfreien Features vieles, was MySQL nicht oder nur kostenpflichtig zur Verfügung stellt (z.B. eine Speicher-Engine zur performanten Verarbeitung von riesigen Datenmengen; ein Datenbank-Proxy zur sicheren und hoch-verfügbaren Verwaltung skalierbarer Installationen u.v.m.). Im Gegensatz zu MySQL verfügt MariaDB jedoch nicht über einen eigenen Client wie die Workbench. Eine gute kostenfreie Alternative stellt HeidiSQL dar, jedoch verfügt diese über kein Dashboard, welches z.B. die Funktionsweise des Servers darstellt und damit Optimierungsentscheidungen erleichtert."}\cite{MariaDB-Monitor}
@@ -48,7 +48,7 @@ MySQL hat ein breites Anwendungsspektrum und wird meistens in Verbindung mit PHP
 	\label{fig:mariadb}
 \end{figure}
 \bigbreak
-Es ist hauptsächlich für Linux ausgelegt. Es bietet eine einfache Verbindung mit dem Linux-Betriebssystem so wie auch mit Python, C ++ und vielen anderen Programmiersprachen. Da dies das Standard-Linux-DBS ist und unsere Software unter Linux mit Python-Skripten geschrieben wurde, ist MariaDB das DBS unserer Wahl.
+Es ist hauptsächlich für Linux ausgelegt. Es bietet eine einfache Verbindung mit dem Linux-Betriebssystem so wie auch mit Python, C ++ und vielen anderen Programmiersprachen. Da dies das Standard-Linux-DBS ist und unsere Software unter Linux mit Python-Skripten geschrieben wurde, ist MariaDB das DBS unserer Wahl (Abbildung \ref{fig:mariadb}).
 
 \subsubsection{Python}
 Python ist eine Programmiersprache, die dem User mit seiner einfachen Syntax hilft. Für die meisten Betriebssysteme steht Python frei zur Verfügung. Alles was mit Objektorientierung zu tun hat, wird in Python unterstützt.\cite{pythonInfo}
@@ -59,7 +59,7 @@ Python ist eine Programmiersprache, die dem User mit seiner einfachen Syntax hil
 	\label{fig:python}
 \end{figure}
 \bigbreak
-Der Grund, warum die Software in Python geschrieben wurde, legt an der einfachen und schnellen Möglichkeit, um Datenbankskripte und Gesichtserkennungsprogramme zu erstellen.
+Der Grund, warum die Software in Python geschrieben wurde, legt an der einfachen und schnellen Möglichkeit, um Datenbankskripte und Gesichtserkennungsprogramme zu erstellen (Abbildung \ref{fig:python}).
 \subsubsection{OpenCV}
 OpenCV (Open Source Computer Vision Library) ist eine Open-Source-Bibliothek für Machine Learning Programme und Computer Vision Software. Der Grund zur Entwicklung von OpenCV ist, eine Moglichkeit anzubieten, wo Objekte analysiert und erkennt bzw. identifiziert werden. Der Code von OpenCv ist leicht nutzbar und änderbar, weil es als Berkeley Software Distribution (BSD) Produkt lizenziert ist. Es ist für Windows, Linux, Android und Mac verfügbar.\cite{OpenCV1}
 \begin{figure}[ht]
@@ -69,7 +69,7 @@ OpenCV (Open Source Computer Vision Library) ist eine Open-Source-Bibliothek fü
 	\label{fig:opencv}
 \end{figure}
 \bigbreak
-Obwohl es in C ++ geschrieben wurde, bietet es viele Schnittstellen zu anderen Programmiersprachen wie Python, die in diesem Projekt benutzt werden. OpenCV ist eine plattformübergreifende Bibliothek und da es viele Deep-Learning-Algorithmen und Frameworks enthält, ist unsere Wahl für die Objekterkennung.
+Obwohl es in C ++ geschrieben wurde, bietet es viele Schnittstellen zu anderen Programmiersprachen wie Python, die in diesem Projekt benutzt werden. OpenCV ist eine plattformübergreifende Bibliothek und da es viele Deep-Learning-Algorithmen und Frameworks enthält, ist unsere Wahl für die Objekterkennung (Abbildung \ref{fig:opencv}).
 \newpage
 \section{Technische Lösungen}
 In diesem Teilbereich werden die Technischen Lösungen bzw. die Planung und Implementierung der verschiedenen Aufgaben der Datenbank und Gesicht-Spoofing Erkennung erklärt.
@@ -88,7 +88,7 @@ Auf den ersten Blick scheint es nicht sehr schwierig zu sein, eine Gesichtserken
 \bigbreak
 Der nächste Schritt bestand darin nachzuforschen, wie in Python die Schnittstelle mit MariaDB aussieht. Da von vielen Linux-Benutzern empfohlen wird, Python für die Verbindung zu MariaDB zu wählen, wurde der Programmierer aufgefordert, den Code mithilfe von Methoden und try and except-Anweisungen zu schreiben, um saubere Skripte zu erstellen. Auf diese Weise würde der Code sehr einfach zu analysieren und zu verbessern sein, damit die Fehlermeldungen so schnell wie möglich beseitigen zu können.
 \subsubsection{Beschreibung der Tabellen}
-Nach der Anfangsplanung wurden die folgenden zwei Tabellen (Bild \ref{fig:datenbank}) definiert:
+Nach der Anfangsplanung wurden die folgenden zwei Tabellen (Abbildung \ref{fig:datenbank}) definiert:
 \begin{itemize}
 	\item Person
 	\item Log
@@ -138,7 +138,7 @@ In diesem Projekt wurde als Antispoofing Methode die Blinzeln Methode verwendet.
 Auf dem Bild werden zwei Linien, eine horizontale und eine vertikale, gezeichnet. Wenn sich die Länge dieser Linien mehrmals ändert oder viel zu klein wird, dann wird das als ein „Blinzeln“ erkannt. Wenn ein Bild vor der Kamera ist, sind diese Länge immer gleichbleibend, und so erkennt das Programm den Unterschied zwischen eine reale Person und einem Bild.
 \newpage
 \subsubsection{Beispiele}
-Als erstes Beispiel wird eine Person vor der Kamera gezeigt (Bild \ref{fig:realep}),  fund in einer sehr kleinen Zeitdauer wird die Nachricht Person detected zurückgeleitet. Diese Nachricht informiert das System, dass vor der Kamera eine reale Person ist  (Bild \ref{fig:ausgabep}).\\
+Als erstes Beispiel wird eine Person vor der Kamera gezeigt (Abbildung \ref{fig:realep}),  fund in einer sehr kleinen Zeitdauer wird die Nachricht Person detected zurückgeleitet. Diese Nachricht informiert das System, dass vor der Kamera eine reale Person ist  (Abbildung \ref{fig:ausgabep}).\\
 \begin{figure}[ht]
   \centering
     \includegraphics[width=0.9\textwidth]{\ordnerfigures jordiR.jpg}
@@ -153,7 +153,7 @@ Als erstes Beispiel wird eine Person vor der Kamera gezeigt (Bild \ref{fig:reale
 \end{figure}
 
 \newpage
-Als zweites Beispiel wird ein Bild  von einem Kind genommen, und vor der Kamera gehalten (Bild \ref{fig:kindb}). Dieses Mal ist das Ergebnis anders, das Progamm liefert keine Nachricht zurück. Das Programm läuft weiter bis wirklich eine Person vor der Kamera steht, sonst wartet das System auf eine Rückmeldung (Bild \ref{fig:ausgabeb}).
+Als zweites Beispiel wird ein Bild  von einem Kind genommen, und vor der Kamera gehalten (Abbildung \ref{fig:kindb}). Dieses Mal ist das Ergebnis anders, das Progamm liefert keine Nachricht zurück. Das Programm läuft weiter bis wirklich eine Person vor der Kamera steht, sonst wartet das System auf eine Rückmeldung (Abbildung \ref{fig:ausgabeb}).
 \begin{figure}[ht]
   \centering
     \includegraphics[width=0.9\textwidth]{\ordnerfigures kind.jpg}
@@ -163,7 +163,7 @@ Als zweites Beispiel wird ein Bild  von einem Kind genommen, und vor der Kamera 
 \begin{figure}[ht]
   \centering
     \includegraphics[width=0.9\textwidth]{\ordnerfigures ndetected.png}
-      \caption{Ausgabe: Nicht Detected}
+      \caption{Ausgabe: Nicht Erkannt}
       \label{fig:ausgabeb}
 \end{figure}
 \subsubsection{Zeitdauer}
@@ -212,7 +212,7 @@ Dieser Fehler wurde ausgelöst, wenn ein Trigger Script ausgeführt wurde. Der F
 Dieser Fehler zeigt, dass kein MySQL Server auf dem Betriebssystem installiert ist. Dieses Problem ist eingetreten, wegen Änderungen im Linux System. MySQL Server wurde nicht mehr unterstützt, es sollte mariadb-server durch den Befehl \textit{sudo apt-get install mariadb-server} installiert werden.
 \bigbreak
 \textit{ERROR 2002 (HY000): Can't connect to local MySQL server through socket \\'/var/run/mysqld/mysqld.sock' (2 "No such file or directory")}\\
-Dass war nur ein kleiner Fehler (Bild \ref{fig:fehler1}), weil wenn man in Kali Linux programmiert und gearbeitet hat, musste der MariaDB Server immer noch einmal durch den Befehl \\ \textit{service mariadb restart} gestartet werden. Im Debian Betriebssystem, das auf RaspberryPi installiert ist, muss der Server nicht gestartet werden, weil er automatisch in Betrieb ist.
+Dass war nur ein kleiner Fehler (Abbildung \ref{fig:fehler1}), weil wenn man in Kali Linux programmiert und gearbeitet hat, musste der MariaDB Server immer noch einmal durch den Befehl \\ \textit{service mariadb restart} gestartet werden. Im Debian Betriebssystem, das auf RaspberryPi installiert ist, muss der Server nicht gestartet werden, weil er automatisch in Betrieb ist.
 \begin{figure}[ht]
   \centering
     \includegraphics[width=0.9\textwidth]{\ordnerfigures fehler1.png}
@@ -220,7 +220,7 @@ Dass war nur ein kleiner Fehler (Bild \ref{fig:fehler1}), weil wenn man in Kali 
       \label{fig:fehler1}
 \end{figure}
 \subsection{Disparity Map}
-Am Begin war geplant, als Antispoofing-Methode die 3D Depth Perception zu implementieren. In dieser Methode werden zwei Kameras gebraucht, wo zwei Bilder gemacht werden, eines von jeder Kamera (Bild \ref{fig:bilder1}). Dann werden sie verglichen, um eine 3D Objekt zu erstellen. Zuerst wird eine Mischung von beiden Bildern zum Erstellen eine sogenannten Disparty Map gemacht (Bild \ref{fig:dispm1}). Eine Disparity Map ist ein schwarz-weiß Bild, das die Tiefe der einzelnen Objektpunkten darstellt.
+Am Begin war geplant, als Antispoofing-Methode die 3D Depth Perception zu implementieren. In dieser Methode werden zwei Kameras gebraucht, wo zwei Bilder gemacht werden, eines von jeder Kamera (Abbildung \ref{fig:bilder1}). Dann werden sie verglichen, um eine 3D Objekt zu erstellen. Zuerst wird eine Mischung von beiden Bildern zum Erstellen eine sogenannten Disparty Map gemacht (Abbildung \ref{fig:dispm1}). Eine Disparity Map ist ein schwarz-weiß Bild, das die Tiefe der einzelnen Objektpunkten darstellt.
 \begin{figure}[ht]
   \centering
     \includegraphics[width=0.8\textwidth]{\ordnerfigures disp1.png}
@@ -234,7 +234,7 @@ Am Begin war geplant, als Antispoofing-Methode die 3D Depth Perception zu implem
       \label{fig:dispm1}
 \end{figure}
 \bigbreak
-Daher kann die Disparity Map in ein 3D File umgewandelt werden. Es gibt Programmen, wie MatLab, das eine Matplotlib Bibliothek hat, um dieses Disparity Map in einem 3D Graph zu zeigen (Bild \ref{fig:matlab}). Wenn man die 3D Koordinaten eines Punktes hat, kann man verschiedene Punkten vergleichen z.B Nasen-Punkte mit Augen-Punkte. So wird gezeigt, dass diese Punkten verschiedene Distanzen von der Kamera haben. Während ein normales Bild 2D ist, erkennt das Programm automatisch, dass vor der Kamera ein Bild und nicht eine reale Person ist.
+Daher kann die Disparity Map in ein 3D File umgewandelt werden. Es gibt Programmen, wie MatLab, das eine Matplotlib Bibliothek hat, um dieses Disparity Map in einem 3D Graph zu zeigen (Abbildung \ref{fig:matlab}). Wenn man die 3D Koordinaten eines Punktes hat, kann man verschiedene Punkten vergleichen z.B Nasen-Punkte mit Augen-Punkte. So wird gezeigt, dass diese Punkten verschiedene Distanzen von der Kamera haben. Während ein normales Bild 2D ist, erkennt das Programm automatisch, dass vor der Kamera ein Bild und nicht eine reale Person ist.
 \begin{figure}[ht]
   \centering
     \includegraphics[width=0.7\textwidth]{\ordnerfigures matlib.jpg}
@@ -245,7 +245,7 @@ Daher kann die Disparity Map in ein 3D File umgewandelt werden. Es gibt Programm
 Die große Herausforderung war die Recherche und Erstellen von der Disparity Map. Das Tutorial bzw. die Dokumentation waren entweder sehr kurz erklärt und veraltet, oder sehr anspruchsvoll. Nach ein paar Tests vom Erstellen von Disparity Maps war die Erfolgsrate gering, eine von drei Disparity Maps wurde  richtig erzeugt.
 \bigbreak
 \newpage
-Aus dem ersten Beispiel wurde eine gute Disparity Map erzeugt (Bild \ref{fig:gutdm}), und mit dieser Disparity Map kann man bis zur 3D Umwandlung  weiterarbeiten.
+Aus dem ersten Beispiel wurde eine gute Disparity Map erzeugt (Abbildung \ref{fig:gutdm}), und mit dieser Disparity Map kann man bis zur 3D Umwandlung  weiterarbeiten.
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
      \centering
@@ -264,7 +264,7 @@ Aus dem ersten Beispiel wurde eine gute Disparity Map erzeugt (Bild \ref{fig:gut
     \includegraphics[width=0.9\textwidth]{\ordnerfigures dispgood.jpg}
       \caption{Gute Disparity Map}
 \end{figure}\\
-Aber aus den anderen Bildern wurde keine gute Disparity Map erzeugt (Bild \ref{fig:baddm}). Mit dieser Disparity Map war die 3D Umwandlung nicht realisierbar.
+Aber aus den anderen Bildern wurde keine gute Disparity Map erzeugt (Abbildung \ref{fig:baddm}). Mit dieser Disparity Map war die 3D Umwandlung nicht realisierbar.
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
      \centering
@@ -288,11 +288,11 @@ Aber aus den anderen Bildern wurde keine gute Disparity Map erzeugt (Bild \ref{f
 Python ist eine beliebte Programmiersprachen von vielen Benutzern, aber Python unterscheidet sich von anderen Programmiersprachen durch die Code Struktur. Die meisten Fehler wurden bei der Übergabe von den Parametern zwischen den verschieden Funktionen erzeugt.
 \bigbreak
 \textit{TypeError: not all arguments converted during string formatting python}\\
-Der folgende Code nimmt als Parameter die Daten von dem neuen User, damit der User in der Datenbank registriert wird. Aber wenn man die Methode nur testen möchte, und als Parameter nur den Namen für eine einfache Registrierung übergibt, dann tritt dieser Fehler ein. \\
-\begin{lstlisting}[language=Python]
+Der folgende Code nimmt als Parameter die Daten von dem neuen User, damit der User in der Datenbank registriert wird. Aber wenn man die Methode nur testen möchte, und als Parameter nur den Namen für eine einfache Registrierung übergibt, dann tritt dieser Fehler ein.
+\begin{lstlisting}[language=Python, label={lst:personin}, caption={Insert Person}]
 insertvalues1(curs,'jordi','zmiani','jorzmi14@htl-shkoder.com',1
 \end{lstlisting}
-Bei der ersten Möglichkeit sollten zwei Parameter übergeben werden, denn nur bei einem String Parameter wurde dieser Fehler generiert.
+Bei der ersten Möglichkeit sollten zwei Parameter übergeben werden (Listing \ref{lst:personin}), denn nur bei einem String Parameter wurde dieser Fehler generiert.
 Bein der zweiten Möglichkeit musst dieser Parameter durch die Funktion format()  geparst werden.
 \bigbreak
 \textit{TypeError: 'str' object is not callable (Python)}\\
@@ -302,8 +302,8 @@ Str in Python ist eine spezielle Methode, und diese Methode sollte nicht übersc
 OpenCV Biblotheken können manchmal schwierig zu installieren sein, weil es so viele Möglichkeiten zum Einrichten von OpenCV gibt, die aber von dem Betriebsystem abhängen. In den meisten Fällen, wenn die Installation Fehler produziert, muss OpenCV noch einmal, von Beginn eingerichtet werden.
 \bigbreak
 \textit{Unable to locate package libjasper-dev}\\
-Dieses Package ermöglicht das Benutzen von ein paar Funktion von OpenCV, das ist eine von vielen Bibliotheken, die eingebunden werden soll. In diesem Fall konnte diese Bibliothek nicht installiert werden, weil sich das Repository geändert hat, und deshalb mussten die Bibliotheken in einer älteren Version heruntergeladen werden. Mit den folgenden Befehlen wurden diese Bibliotheken installiert.\\\\
-\begin{lstlisting}[language=Python]
+Dieses Package ermöglicht das Benutzen von ein paar Funktion von OpenCV, das ist eine von vielen Bibliotheken, die eingebunden werden soll. In diesem Fall konnte diese Bibliothek nicht installiert werden, weil sich das Repository geändert hat, und deshalb mussten die Bibliotheken in einer älteren Version heruntergeladen werden. Mit den folgenden Befehlen wurden diese Bibliotheken installiert (Listing \ref{lst:binstallieren}).\\\\
+\begin{lstlisting}[language=Python, caption={Bibliothek installieren}, label={lst:binstallieren}]
 echo "deb http://us.archive.ubuntu.com/ubuntu/ yakkety universe" | sudo tee -a /etc/apt/sources.list
 sudo apt update
 sudo apt install libjasper1 libjasper-dev
@@ -322,7 +322,7 @@ statt, die fortan als Basis für weitere Verbesserungen dient."}\cite{PDCA-Zyklu
       \caption{Plan-Do-Check-Act-Zyklus \cite{PDCA-Zyklus}}
     \label{fig:pdca}
 \end{figure}
-Auf dem Bild \ref{fig:pdca} wird der PDCA Zyklus dargestellte. Man sieht, dass diese Qualitätsmethode gut für die Verbesserung von Software und Programmen geeignet ist. Deshalb wurde auch diese Methode gewählt, weil durch Error Checking konnten die Fehler gefunden, analysiert und verbessert werden. Das passt gut zum Team, da es keine Erfahrungen mit bestimmenden Programmiersprachen bzw. Softwareprogrammen gab.
+Auf dem Abbildung \ref{fig:pdca} wird der PDCA Zyklus dargestellte. Man sieht, dass diese Qualitätsmethode gut für die Verbesserung von Software und Programmen geeignet ist. Deshalb wurde auch diese Methode gewählt, weil durch Error Checking konnten die Fehler gefunden, analysiert und verbessert werden. Das passt gut zum Team, da es keine Erfahrungen mit bestimmenden Programmiersprachen bzw. Softwareprogrammen gab.
 \bigbreak
 Bei den Herausforderungen (Kapitel \ref{chap:hf}) war klar, dass wenn Probleme erkannt wurden, diese durch Hilfe von Tutorials bzw. Net Blogs gelöst werden. Durch verschiedene Zyklen wird man, wenn etwas nicht funktionier,das Problem  schnell finden und später wird ein neuer Lösungsweg bestimmt. So werden die Risiken so früh wie möglich eliminiert.
 
