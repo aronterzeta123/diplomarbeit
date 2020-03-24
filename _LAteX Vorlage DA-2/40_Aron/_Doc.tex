@@ -77,7 +77,7 @@ Um Schalter und LEDs im System verwenden zu k\"onnen, brauchen wir ein spezielle
 Schritte: 
 \begin{enumerate}
 	
-	\item Am Beginn des Skripts wird diese Zeile schreiben: "\#!/usr/bin/python". Es gibt zwei Gr\"unde, warum diese Zeile geschrieben wird. Der erste Grund ist, dass dieses Program mit einem Python-Interpreter ausgef\"uhrt wird, der zweite ist, der Inhalt der Datei wird von der Python-Binärdatei unter /usr/bin/python interpretiert \\ \\ \\ 
+	\item Am Beginn des Skripts wird diese Zeile schreiben: "\#!/usr/bin/python". Es gibt zwei Gr\"unde, warum diese Zeile geschrieben wird. Der erste Grund ist, dass dieses Program mit einem Python-Interpreter ausgef\"uhrt wird, der zweite ist, der Inhalt der Datei wird von der Python-Binärdatei unter /usr/bin/python interpretiert \\  
 	 \item Alle Paketen importieren. Sehen Sie Listing. \ref{fig:Packageszuimportieren} 
 	 \begin{lstlisting}[caption={Packages zu importieren},label={fig:Packageszuimportieren},language=Python]
 	 import RPi.GPIO as GPIO
@@ -96,7 +96,7 @@ Schritte:
 	 
 	 \item Das ``subprocess'' Paket dient zur Verbindung zwischen verschiedenen Prozessen, in meinem Fall, den Aufruf eines Skriptes.
 	 
-	 \item Das sys Paket wird verwendet, um Console Parameter zu bekommen. Das bedeutet, wenn das Skript aufgerufen wird, wie z.B. login.py dann kann man login.py einen Parameter mitgeben:  login.py $<$parameter $>$ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
+	 \item Das sys Paket wird verwendet, um Console Parameter zu bekommen. Das bedeutet, wenn das Skript aufgerufen wird, wie z.B. login.py dann kann man login.py einen Parameter mitgeben:  login.py $<$parameter $>$ \\ 
    \end{itemize}
 	\item GPIO-Ports Datenrichtung einrichten. Datenrichtung f\"ur LED ist ``out'', weil das LED als ein Output f\"ur unseres System dient. Datenrichtung f\"ur Schalter ist ``in'', weil der Schalter als ein Input f\"ur unseres System dient. Auf Listing. \ref{fig:GPIO-PortsKonfiguration} ist der Python-Code.
 	\begin{lstlisting}[caption={GPIO-Ports Konfiguration},label={fig:GPIO-PortsKonfiguration},language=Python]
