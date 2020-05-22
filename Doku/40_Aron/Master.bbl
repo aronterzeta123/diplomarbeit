@@ -1,0 +1,210 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{python}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6d43ba4f262081aa3ba7e923d5db4c2}{%
+           family={Augsten},
+           familyi={A\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6d43ba4f262081aa3ba7e923d5db4c2}
+      \strng{fullhash}{b6d43ba4f262081aa3ba7e923d5db4c2}
+      \strng{bibnamehash}{b6d43ba4f262081aa3ba7e923d5db4c2}
+      \strng{authorbibnamehash}{b6d43ba4f262081aa3ba7e923d5db4c2}
+      \strng{authornamehash}{b6d43ba4f262081aa3ba7e923d5db4c2}
+      \strng{authorfullhash}{b6d43ba4f262081aa3ba7e923d5db4c2}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.dev-insider.de/was-ist-python-a-843060/}}
+      \field{note}{[Online; accessed 2019]}
+      \field{title}{{Was ist Python?}}
+      \field{year}{12/7/2019}
+    \endentry
+    \entry{Risikoanalyse}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=92145a7f32ec212724f0ea5b126b382b}{%
+           family={Bekim\bibnamedelima Alibali},
+           familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={MA\bibnamedelima BSc},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{fullhash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{bibnamehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{authorbibnamehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{authornamehash}{92145a7f32ec212724f0ea5b126b382b}
+      \strng{authorfullhash}{92145a7f32ec212724f0ea5b126b382b}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Projektmanagement Teil5}
+      \warn{\item Entry 'Risikoanalyse' (./../literatur.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{timepackage}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=94dd9e4171964fc465ffe51b493a32f3}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Jackson},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{94dd9e4171964fc465ffe51b493a32f3}
+      \strng{fullhash}{94dd9e4171964fc465ffe51b493a32f3}
+      \strng{bibnamehash}{94dd9e4171964fc465ffe51b493a32f3}
+      \strng{authorbibnamehash}{94dd9e4171964fc465ffe51b493a32f3}
+      \strng{authornamehash}{94dd9e4171964fc465ffe51b493a32f3}
+      \strng{authorfullhash}{94dd9e4171964fc465ffe51b493a32f3}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/}}
+      \field{note}{[Online; accessed Tuesday 23rd July 2013]}
+      \field{title}{{Python’s time.sleep() – Pause, Stop, Wait or Sleep your Python Code}}
+      \field{year}{2013}
+    \endentry
+    \entry{gpiomode}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=88bfc8d3931c8265ef8837956157fc73}{%
+           family={Croston},
+           familyi={C\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{88bfc8d3931c8265ef8837956157fc73}
+      \strng{fullhash}{88bfc8d3931c8265ef8837956157fc73}
+      \strng{bibnamehash}{88bfc8d3931c8265ef8837956157fc73}
+      \strng{authorbibnamehash}{88bfc8d3931c8265ef8837956157fc73}
+      \strng{authornamehash}{88bfc8d3931c8265ef8837956157fc73}
+      \strng{authorfullhash}{88bfc8d3931c8265ef8837956157fc73}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/}}
+      \field{note}{[Online; accessed 2014]}
+      \field{title}{{RPi.GPIO Python Module}}
+      \field{year}{2014}
+    \endentry
+    \entry{cmake}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f0b4005f1994bd8025bc7a92d2e4dded}{%
+           family={inc.},
+           familyi={i\bibinitperiod},
+           given={Kitware},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0b4005f1994bd8025bc7a92d2e4dded}
+      \strng{fullhash}{f0b4005f1994bd8025bc7a92d2e4dded}
+      \strng{bibnamehash}{f0b4005f1994bd8025bc7a92d2e4dded}
+      \strng{authorbibnamehash}{f0b4005f1994bd8025bc7a92d2e4dded}
+      \strng{authornamehash}{f0b4005f1994bd8025bc7a92d2e4dded}
+      \strng{authorfullhash}{f0b4005f1994bd8025bc7a92d2e4dded}
+      \field{sortinit}{i}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CMake}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://cmake.org/overview/
+      \endverb
+      \verb{url}
+      \verb https://cmake.org/overview/
+      \endverb
+    \endentry
+    \entry{Linux_Betriebssystem}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d434615105f8d9dd7651abe336d34fb8}{%
+           family={Niels\bibnamedelima Held},
+           familyi={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={CHIP\bibnamedelimb Digital\bibnamedelima GmbH},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d434615105f8d9dd7651abe336d34fb8}
+      \strng{fullhash}{d434615105f8d9dd7651abe336d34fb8}
+      \strng{bibnamehash}{d434615105f8d9dd7651abe336d34fb8}
+      \strng{authorbibnamehash}{d434615105f8d9dd7651abe336d34fb8}
+      \strng{authornamehash}{d434615105f8d9dd7651abe336d34fb8}
+      \strng{authorfullhash}{d434615105f8d9dd7651abe336d34fb8}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.chip.de/artikel/Linux-Umstieg-So-einfach-gelingt-der-Windows-Wechsel-2_140047889.html}}
+      \field{note}{[Online; accessed 2007]}
+      \field{title}{{Linux-Umstieg: So einfach gelingt der Windows-Wechsel}}
+      \field{year}{2007}
+    \endentry
+    \entry{terminator}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=7f5ad19b850ff12478759e8cefd48ef8}{%
+           family={Stocklasser},
+           familyi={S\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{fullhash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{bibnamehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{authorbibnamehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{authornamehash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \strng{authorfullhash}{7f5ad19b850ff12478759e8cefd48ef8}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Architektur}
+      \warn{\item Entry 'terminator' (./../literatur.bib): Invalid format '16.09.2018' of date field 'date' - ignoring}
+    \endentry
+    \entry{rpigpio}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3f01020ce529fdc65da70e80f1ef74c3}{%
+           family={Tranter},
+           familyi={T\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f01020ce529fdc65da70e80f1ef74c3}
+      \strng{fullhash}{3f01020ce529fdc65da70e80f1ef74c3}
+      \strng{bibnamehash}{3f01020ce529fdc65da70e80f1ef74c3}
+      \strng{authorbibnamehash}{3f01020ce529fdc65da70e80f1ef74c3}
+      \strng{authornamehash}{3f01020ce529fdc65da70e80f1ef74c3}
+      \strng{authorfullhash}{3f01020ce529fdc65da70e80f1ef74c3}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.ics.com/blog/control-raspberry-pi-gpio-pins-python}}
+      \field{note}{[Online; accessed Wednesday, July 31, 2019]}
+      \field{title}{{Control Raspberry Pi GPIO Pins from Python}}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

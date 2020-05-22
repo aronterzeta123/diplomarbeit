@@ -1,0 +1,93 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Allgemeines}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Planung}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Projektziele}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Ziele}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Nicht Ziele}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Optionale Ziele}{4}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Projektplanung}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Projektmanagmentmethode}{6}{section.2.3}
+\contentsline {chapter}{\numberline {3}Gesichtsregistrierung}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Umsetzung}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Allgemein}{7}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Verwendete Technologien}{7}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Technische L\"osung}{8}{subsection.3.1.3}
+\contentsline {subsubsection}{Legende:}{10}{section*.11}
+\contentsline {subsection}{\numberline {3.1.4}Herausforderungen}{13}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Qualit\"atssicherung und Controlling}{16}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Ergebnisse}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Implementierung}{18}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Datenbank \& 2D vs. 3D Unterschied}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Umsetzung}{19}{section.4.1}
+\contentsline {subsubsection}{MySQL}{19}{section*.14}
+\contentsline {subsubsection}{MariaDB}{20}{section*.16}
+\contentsline {subsubsection}{Python}{21}{section*.18}
+\contentsline {subsubsection}{OpenCV}{21}{section*.20}
+\contentsline {section}{\numberline {4.2}Technische L\IeC {\"o}sungen}{22}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Datenkbank}{22}{subsection.4.2.1}
+\contentsline {subsubsection}{Beschreibung der Tabellen}{23}{section*.22}
+\contentsline {subsubsection}{Tabelle Person}{23}{section*.24}
+\contentsline {subsubsection}{Log Tabelle}{24}{section*.25}
+\contentsline {subsection}{\numberline {4.2.2}2D vs. 3D Unterschied}{25}{subsection.4.2.2}
+\contentsline {subsubsection}{L\IeC {\"o}sungsweg}{25}{section*.26}
+\contentsline {subsubsection}{Beispiele}{26}{section*.27}
+\contentsline {subsubsection}{Zeitdauer}{27}{section*.32}
+\contentsline {section}{\numberline {4.3}Herausforderungen}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Datenkbank - MariaDB}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Disparity Map}{29}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Python Scripting}{32}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}OpenCV}{33}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Qualit\IeC {\"a}tssicherung}{33}{section.4.4}
+\contentsline {section}{\numberline {4.5}Ergebnisse}{34}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Datenbank}{34}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}2D vs. 3D Unterschied}{35}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Evaluierung und Res\IeC {\"u}mee}{35}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Planung vs. Realisierung}{35}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Wertsch\IeC {\"o}pfung und Lessons Learned}{35}{subsection.4.6.2}
+\contentsline {chapter}{\numberline {5}Bildverarbeitung}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Allgemeines}{36}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Entwicklungsumgebung und Technologien}{36}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Frameworks und Bibliotheken}{37}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Technische L\IeC {\"o}sungen}{38}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}L\IeC {\"o}sungsweg - Structed Software design}{39}{subsection.5.2.1}
+\contentsline {subsubsection}{Legende:}{39}{section*.46}
+\contentsline {subsection}{\numberline {5.2.2}Gesichtserkennung}{40}{subsection.5.2.2}
+\contentsline {subsubsection}{Umsetzung in Code}{41}{section*.50}
+\contentsline {subsection}{\numberline {5.2.3}Normalisierung}{42}{subsection.5.2.3}
+\contentsline {subsubsection}{Was ist Normalisierung?}{42}{section*.52}
+\contentsline {subsubsection}{Methoden f\IeC {\"u}r Normalisierung}{43}{section*.53}
+\contentsline {subsubsection}{Warum Normalisierung?}{43}{section*.54}
+\contentsline {subsubsection}{Implementation}{43}{section*.55}
+\contentsline {subsection}{\numberline {5.2.4}Zuschneiden von Gesichter}{46}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Gesichtsschl\IeC {\"u}sselpunkte Extraktion}{47}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}Herausforderungen, Probleme und deren L\IeC {\"o}sung }{49}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}L\IeC {\"o}sungen}{49}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Qualit\IeC {\"a}tssicherung, Controlling}{50}{section.5.4}
+\contentsline {section}{\numberline {5.5}Ergebnisse}{51}{section.5.5}
+\contentsline {section}{\numberline {5.6}Evaluierung und Res\IeC {\"u}mee}{51}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Planung vs. Realisierung}{51}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Ergebnisse}{51}{subsection.5.6.2}
+\contentsline {chapter}{\numberline {6}Gesichtserkennung}{53}{chapter.6}
+\contentsline {section}{\numberline {6.1}Allgemeines}{53}{section.6.1}
+\contentsline {section}{\numberline {6.2}Technische L\IeC {\"o}sung}{54}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Hardware und Aufbau}{54}{subsection.6.2.1}
+\contentsline {subsubsection}{Bauteile und HW-Komponenten}{54}{section*.62}
+\contentsline {subsubsection}{Schaltplan und Erkl\IeC {\"a}rung des Aufbaus}{56}{section*.63}
+\contentsline {subsection}{\numberline {6.2.2}Software}{57}{subsection.6.2.2}
+\contentsline {subsubsection}{Verwendete Technologien}{57}{section*.65}
+\contentsline {subsubsection}{L\IeC {\"o}sungsweg- Beschreibung und Erkl\IeC {\"a}rung}{58}{section*.66}
+\contentsline {subsubsection}{Andere wichtige Punkte und Abgrenzungen}{69}{section*.74}
+\contentsline {subsubsection}{Das Testen}{70}{section*.75}
+\contentsline {subsubsection}{Das Logging}{71}{section*.76}
+\contentsline {section}{\numberline {6.3}Herausforderungen, Probleme, und deren L\IeC {\"o}sung}{72}{section.6.3}
+\contentsline {section}{\numberline {6.4}Projektmanagement und Controlling}{74}{section.6.4}
+\contentsline {section}{\numberline {6.5}Ergebnisse}{76}{section.6.5}
+\contentsline {section}{\numberline {6.6}Was wurde gelernt und \textbf {welche Verbesserungs m\IeC {\"o}glichkeiten gibt es}}{76}{section.6.6}
+\contentsline {chapter}{\numberline {7}Ausblick}{78}{chapter.7}
+\contentsline {section}{\numberline {7.1}Wie geht es weiter ?}{78}{section.7.1}
+\contentsline {section}{\numberline {7.2}Was passiert mit dem Ergebnis?}{78}{section.7.2}
+\contentsline {section}{\numberline {7.3}was passiert mit dem Prototyp?}{78}{section.7.3}
+\contentsline {section}{\numberline {7.4}Gibt es Folgeprojekte?}{79}{section.7.4}
+\contentsline {section}{\numberline {7.5}Gibt es Interessanten?}{79}{section.7.5}
+\contentsline {chapter}{\numberline {8}Handbuch}{80}{chapter.8}

@@ -1,0 +1,749 @@
+\chapter{\docname}
+\label{\docname}
+
+
+
+	Diese Diplomarbeit besteht aus vielen unterschiedlichen Modulen, die um
+	bestimmte Ziele bzw. Aufgaben zu lösen gut aufgeteilt sind.
+	Ein sehr wichtiger Teil dieses Projektes ist der Bildverarbeitungsteil.
+	In dem folgenden Abschnitt der Ausarbeitung wird  genau erklärt und beschrieben
+	wie diese Aufgabe gelöst wurde und was dafür verwendet wurde.
+
+
+\section{Allgemeines}
+
+In diesem Allgemeinen Abschnitt werden die verwendeten Technologien und
+Bibliotheken beschrieben.
+
+\subsection{Entwicklungsumgebung und Technologien}
+
+
+	Die gewählte Entwicklungsumgebung war grundsätzlich eine virtuelle Maschine die
+	Linux auf einem Windows System geboten hat. 
+	Linux im Gegensatz zu Windows ermöglicht volle Kontrolle über Updates und
+	Upgrades und dadurch könnten komplexe Aufgaben einfacher erlediget werden.
+	Alles wird leicht und bequem durch die Konsole eingegeben. 
+	So wurden die Entwicklung und das Testen der genutzten Algorithmen und andere
+	Technologien erleichtert. \cite{linx}\\
+	
+	Zusätzlich ist Raspberry Pi als Backup System verwendet worden dies, funktioniert
+	auch mit einem lauffähigen Linux Betriebssystem (Debian). 
+	Der Raspberry Pi ist klein, funktioniert aber wie ein normaler Rechner und ist 
+	kostengünstig. Für technische/elektronische Projekte wie das Betreffende, ist es
+	perfekt geeignet. 
+	Für die Implementierung des Codes wurde hauptsächlich die Programmiersprache
+	Python verwendet. 
+	Python ist eine höhere Programmiersprache. Dies bedeutet dass es näher an
+	menschlichen Sprachen ist. 
+	Also ist ein in Python geschriebener Code sehr leicht von einem Mensch zu lesen,
+	zu verwalten und zu warten.  \\ 
+	
+	Es bietet zahlreiche Module, mit seiner großen und robusten Standardbibliothek
+	an, von denen man beruhigt, abhängig vom Bedarf, auswählen kann.  
+	Sehr leicht kann man in der Dokumentation der Python-Standardbibliothek nachsehen
+	um sich besser mit den Funktionalitäten auszukennen. 
+	\cite{why_python}
+	
+	
+	"Git ist ein freies und Open Source verteiltes Versionskontrollsystem, das
+	entwickelt wurde, um alles von kleinen bis zu sehr großen Projekten mit
+	Geschwindigkeit und Effizienz abzuwickeln." \cite{Git1} \\
+	Die Versionierung der Software Änderungen erfolgte durch Git.
+	Es hat sich als nützlich herausgestellt, da die Arbeit dadurch zwischen die
+	Projektmitgliedern sehr gut koordiniert und verwaltet wurde. 
+	
+
+
+
+\subsection{Frameworks und Bibliotheken}
+
+
+	
+	Das Schlüsselwort von unserem Projekt war das Framework bzw. die Bibliothek
+	„OpenCV“.
+	OpenCV ist eine open-source Bibliothek für Computer Vision. Ganz allgemein
+	kann sie als eine Bibliothek für Bildverarbeitung betrachtet werden.
+	Sie beschäftigt sich unter anderem mit der Manipulation und Analyse von Bildern,
+	die Analyse von denen und um die Bestimmung von Muster bzw. Objekte, für
+	verschiedenen Zwecken. Ganz berühmte Anwendungsgebieten sind
+	Gesichtserkennung und Stereo Vision. 
+	Stereo Vision bedeutet die Extrahierung von Informationen aus einem Bild in eine
+	3-dimensionale Ebene. 
+	OpenCV wurde unter anderen Bibliotheken aufgrund seiner vielen guten
+	Eigenschaften und seiner Flexibilität ausgewählt. Es umfasst hunderte von
+	Computer-Vision-Algorithmen und besteht aus strukturierten Einheiten bzw. Module
+	die als feststehende Bibliotheken implementiert sind. 
+	Es ist Cross-Platform, in C/C++ geschrieben und unterstützt auch Python. 
+	\cite{opencv_library}
+	
+	SciPy hat sich als nützlich, beim Lösen von gewisse mathematische Angaben und
+	bei zusätzliche Installationen von Bibliotheken herausgestellt. 
+	"SciPy ist eine kostenlose, Open-Source-Python-Bibliothek für wissenschaftliches
+	und technisches Rechnen."\cite{2019arXiv190710121V-scipy}
+	\\ 
+	Dies sind einige der Kernpakete von SciPy die für das Projekt verwendet
+	werden.
+	
+	NumPy legt die Basis für das wissenschaftliche Rechnen mit Python.
+	Es unterstützt große mehrdimensionale Arrays und Matrizen. Es enthält viele
+	anspruchsvolle Mathematische Funktionen um die Arrays zu bearbeiten.
+	NumPy kann also als leistungsfähiger mehrdimensionaler Behälter für generische
+	Daten verwendet werden. Es können beliebige Datentypen definiert werden.
+	
+	\textbf{Dlib} ist ein so genanntes Toolkit, das Algorithmen für Machine Learning
+	und Tools zum Erstellen komplexer Software zur Lösung von Probleme der realen
+	Welt beinhaltet.
+	Es wird vielseitig eingesetzt, in Robotik, bei Mobilgeräte und unter anderem in
+	Computer Vision.\cite{dlib} 
+	Es wurde bei der Extrahierung der Gesichtsmerkmalen gebraucht. Das Logo von Dlib ist auf das \ref{fig:dlib logo} ersichtlich. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.2]{\ordnerfigures dlib.png}
+		\caption{dlib logo \cite{dlib}}
+		\label{fig:dlib logo}
+	\end{figure}
+	
+
+
+\section{Technische Lösungen}
+
+
+	Bei der Gesichtsregistrierungs und Gesichtserkennungs Diplomarbeit war es eine
+	schwierige und herausfordernde Aufgabe, sie sorgfältig zu planen, um die
+	Effektivität bei der Arbeit zu steigern und das Endprodukt zufriedenstellend zu
+	machen. 
+	Wichtig war es die Ziele richtig zu setzen und sie gut abzugrenzen, damit es zu
+	keinen Lücken bei der Implementierung kommt.
+	Aus diesem Grund musste die Arbeitsteilung gut geregelt werden, damit jedes
+	Teammitglied sich auf bestimmte Modul der Arbeit konzentrieren konnte.
+	Es wurde auch berücksichtigt, dass jedes Teammitglied das machte was ihm/ihr am
+	besten gefällt und was ihm/ihr am leichtesten fällt. 
+	Die Planung der betreffenden Bereiche der Projektarbeit ist durch die Methode
+	„Structed Design“ erfolgt. 
+	Structed Design ist eine Erweiterung von der „Big Picture“ Methode, die dazu
+	dient, ein technisches System mit ihren Schnittstellen von außen grob zu
+	beschreiben. 
+	Es ist in verschieden Ebenen unterteilt, von außen beginnend. 
+	Nun wird die erste Ebene der Structed Design von der Bildverarbeitungsteil
+	dargestellt. 
+
+\subsection{Lösungsweg - Structed Software design} 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{\ordnerfigures bildverarbeitung.png}
+	\caption{ Bildverarbeitung Structed Design}
+	\label{fig:bildverarbeitung}
+\end{figure}
+\subsubsection{Legende:}
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{\ordnerfigures Erklaerung_Erste_Ebene.png}
+	\caption{Erste Ebene Erklärung}
+	\label{fig:Erklaerung_Erste_Ebene}
+\end{figure}
+
+Wie es in der Abb.\ref{fig:bildverarbeitung} ersichtlich ist, ist der
+Bildverarbeitungsteil in diese Einheiten unterteilt:
+\begin{enumerate}
+	\item Bildaufnahme
+	\item Bild Normalisierung
+	\item Gesichtschlüsselpunkten Extrahierung
+	\item Log
+	\item Output 
+	\item Trigger 
+\end{enumerate}
+
+
+	Die Schnittstellen nach außen sind das Gesichtserkennungsmodul und das
+	Gesichtsregistrierungsmodul.  
+	Diese schicken ein Signal an den Trigger der dann das Bildaufnahmemodul
+	initialisiert. Unabhängig von welchen dieser beiden Schnittstellen die Anfrage
+	kommt, macht das Bildaufnahmemodul mit den zwei Kameras ein Foto. 
+	\justify
+	Implementierungsnah wurde nur eine Kamera verwendet, da die Stereo Vision
+	Probleme gegeben hat. 
+	Nachdem das Foto gemacht wird folgt die Image Normalisierung bzw. das „Image
+	Processing“. 
+	Wenn ein Bild zu klein ist, wird die Größe angepasst, wenn ein Gesicht verdreht
+	ist wird es gerade rotiert. Mehr dazu wird im Normalisierungabschnitt erklärt.
+	
+	Danach folgt die Erkennung von Gesichtern, das Ausschneiden von denen und die
+	Extrahierung der Gesischtsschlüsselpunkte. 
+	Sie werden dann zum Abgleich oder Registrierung je nach Bedarf, geschickt.
+	
+	Bei der Umsetzung wurden bestimmte Bereiche miteinander verknüpft, was zu
+	Folgenden führte: was bei der Planung steht, stimmt nicht vollig mit der
+	Methoden zur Umsetzung überein.
+
+
+\subsection{Gesichtserkennung}
+
+	Das erste Ziel, dass bei der Gesichtserkennung erfüllt worden war ist das Finden
+	von Gesichtern, also die Feststellung, wo sich die Gesichter im Bild befinden.
+	 
+	Dafür ist der vorgefertigter Klassifikator \textit{„Haar Cascade Classifiers“}
+	benutzt worden.  
+	Gesichtserkennung durch „Haar“ Merkmale ist eine sehr effektive Methode die von
+	Paul Viola und Michael Jones entwickelt wurde, indem sie Merkmale gruppiert
+	haben und die Erkennung von diesen dadurch schneller erfolgt ist.  
+	Die Arbeit heißt „Rapid Object Detection using a Boosted Cascade of Simple
+	Features". \cite{Viola01robustreal-time}
+	
+	
+	Unten wird eine kurze technische Übersicht über diese Klassifikator gegeben.\\
+	
+	Es geht hier um Maschinelles Lernen, wie diese Kaskadenfunktionen durch viele
+	negative(Bilder ohne Gesichter) und positive(Bilder mit Gesichter) Bilder
+	trainiert wurden um Objekte zu erkennen. 
+	In diesem Fall  arbeiten wir selbstverständlich mit Gesicht Objekten. 
+	Dafür wurden Merkmale Haare benutzt. Auf Abbildung \ref{fig:haar features}
+	ist dies dargestellt. Jedes Haar Merkmal ist nichts anders als ein Wert, den man
+	durch das Subtrahieren der Summe der Pixel unter dem weißen Rechteck von der
+	Summe der Pixel unter dem schwarzen Rechteck erhält. 
+	%Diese Summen berechnet man durch integrale Bilder, die zur Vereinfachung zu
+	%Summenberechnungen dienen. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{\ordnerfigures haar_features.jpg}
+		\caption{ Haar Features\cite{Viola01robustreal-time}}
+		\label{fig:haar features}
+	\end{figure}
+	
+	Man muss aufpassen, da nicht alle Merkmale von Nutzen sein könnten. Man kann zum
+	Beispiel deutlich auf Abbildung \ref{fig:haar} sehen, wie die Nase viel heller
+	als die Region bei den Augen ist. Die Selektion von den besten Merkmalen wird
+	durch den Adaboost Algorithmus berechnet. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{\ordnerfigures haar.png}
+		\caption{Haar}
+		\label{fig:haar}
+	\end{figure}
+	
+	Mit dieser Absicht wenden wir alle Funktionen auf alle Trainingsbilder an. Für
+	jedes Merkmal wird der beste Schwellenwert ermittelt, der die Gesichter in
+	positive und negative klassifiziert.\\
+	
+
+
+
+\subsubsection{Umsetzung in Code}
+
+
+	
+	In Listing \ref{detect} ist ein Code Abschnitt der Gesichtserkennung
+	dargestellt. \\
+	
+\begin{lstlisting}[language=Python, caption=Kern Code für
+Gesichtsdetektion,label=detect]
+face_cascade = 
+cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+	
+image = cv2.imread('gesicht.jpg')
+	
+gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+	
+faces = face_cascade.detectMultiScale(gray,1.1,4)
+	
+for(x, y, w, h) in faces:
+	
+cv2.rectangle(image, (x, y), (x+w, y+h), (255,0,0), 2) 
+	
+\end{lstlisting}
+	
+	
+	Es wurde die trainierte Klassifikator-XML-Datei (haarcascade\textunderscore
+	frontalface\textunderscore default.xml) die sich im GitHub-Repository von OpenCV
+	befindet, verwendet.
+	In den Zeilen \textbf{1} und \textbf{2} wurde sie geladen und in die Variable
+	face\textunderscore cascade gespeichert.
+	In den Zeile \textbf{4} wird das Bild von den Funktion \emph{imread} geladen.
+	Die Erkennung funktioniert nur bei Graustufenbildern. Daher wurde das Farbbild
+	in Graustufen umgewandelt, wie in der Zeile \textbf{6} ersichtlich.
+	Der Funktion \textit{ detectMultiScale } in der Zeile \textbf{8} erkennt die
+	Gesichter im Bild. Diese Funktion ist sehr wichtig und braucht 3 Argumente – das
+	Eingabebild, der Skalierungsfaktor (scaleFactor) und die Zahl
+	\textit{minNeighbours}. 
+	\\
+	\textit{scaleFactor} gibt die an, um wie viel das Bild vergrößert bzw.
+	verkleinert wird. \\
+	\textit{minNeighbours} gibt an, wie viele Nachbarrechtecke jedes Rechteck haben
+	muss. Dieser Parameter bestimmt die Qualität der erkannten Gesichter: Ein
+	höherer Wert führt zu weniger Erkennungen, jedoch zu einer höheren Qualität.
+	Es ist bei uns nicht so entscheidend viele Gesichter zu erkennen, sondern die
+	Qualität. Es wird der Wert 4 benutzt.
+	\\
+	In Zeile \textbf{10} wird durch die Gesichter \textit{faces} iteriert. \\
+	\textit{x} und \textit{y} entsprechen den Koordinaten vom Bild, \textit{w},
+	\textit{h} bezeichnen die Breite und Höhe \textit{width}, \textit{height}.
+	\\
+	Schließlich wird in Zeile \textbf{12} mit den Funktion \textit{cv2.rectangle}
+	ein Rahmen auf dem Gesicht gezeichnet. \\
+	Die Funktion bekommt diese Parameter: \textit{image} für die Bildeingabe,
+	\textit{x, y} beschreiben den Startpunkt, \textit{w, h} den Endpunkt, die Farbe
+	und die Dicke der Rahmen werden in den 2 letzten Parameter angegeben.
+	\\
+	Dieser Code wurde so umgeändert, dass er in der Lage ist, durch mehrere
+	\textit{Predictors} bzw. Klassifikatoren, die Genauigkeit der Gesichtserkennung
+	zu erhöhen. \\
+	
+	Auf Abbildung \ref{fig:aron} sieht man deutlich ein erkanntes Gesicht.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\ordnerfigures aronfd.png}
+		\caption{Output: Box auf Gesicht}
+		\label{fig:aron}
+	\end{figure}
+
+
+
+\subsection{Normalisierung}
+
+\label{normal}
+
+	
+	In dieser Kapitel wird ein sehr wichtiger Bereich, die sogenannte Normalisierung
+	eines Bildes, genau erklärt. 
+	
+	\subsubsection{Was ist Normalisierung?}
+	
+	Normalisierung in \textit{Computer Vision} ist der Prozess der Bereitstellung
+	von Daten, bei dem "falsche" Daten, die die Genauigkeit unseres Systems
+	beschädigen können, korrigiert werden\\ 
+	Normalisierung heißt in unserem Fall Ausrichtung. 
+	Die Ausrichtung der Gesichter, die im Bild "falsch" positioniert sind. \\
+	Also entspricht Normalisierung dem Prozess in dem man zuerst die geometrische
+	Struktur von Gesichtern in digitalen Bildern identifiziert und dann versucht
+	eine maßgebliche Ausrichtung des Gesichts basierend auf Skalierung und Rotation
+	zu erhalten.
+	\subsubsection{Methoden für Normalisierung}
+	Es gibt viele Methoden mit denen man Bilder normalisieren könnte. 
+	Einige von denen basieren auf pre-definierten 3D-Modellen und transformieren
+	dadurch die Eingabebilder, sodass die Gesichtsschlüsselpunkte der Eingabebild
+	mit denen von dem 3D Modell übereinstimmen.
+	\\
+	Die in dieser Diplomarbeit verwendete Methode, eine eher einfachere, verlässt
+	sich nur auf die Gesichtspunkte selbst, um eine normalisierte Darstellung des
+	Gesichts durch Affine- und Ähnlichkeits-Transformation zu erhalten.
+	Diese Methode wurde deswegen implementiert, weil sie sehr effizient ist.
+	
+	\subsubsection{Warum Normalisierung?}
+	Der Grund warum in dieser Arbeit Normalisierung von Daten durchgeführt wird, ist
+	dass viele Gesichtserkennungsalgorithmen, einschließlich unserem, von der
+	Anwendung dieser Ausrichtung sehr profitieren. 
+	Es wird dadurch die Präzision der Gesichtserkennung erhöht. 
+	
+	
+	\subsubsection{Implementation}
+	
+	Die hier verwendete Methode für die Normalisierung, wie oben kurz erwähnt wurde,
+	wendet
+	Ähnlichkeitstransformation bei zwei Paaren entsprechender Punkte an.
+	Die Punkten sind die von Dlib extrahierten Gesichtsmerkmale, siehe Kapitel
+	\ref{gspex}.
+	\\
+	
+	OpenCV benötigt in diesem Fall 3 Punkte zur Berechnung der Ähnlichkeitsmatrix.
+	Wir nehmen somit als dritten Punkt, den dritten Punkt eines gleichseitigen Dreiecks
+	mit diesen beiden gegebenen Punkten an.
+	\\
+	
+	Was eine Ähnlichkeitstransformation ist, lässt sich mathematisch beschreiben. 
+	Eine Ähnlichkeitstransformation ist eine Transformation wie z.b.: Reflexion,
+	Rotation oder Translation. 
+	\\
+	
+	Wenn eine Figur durch eine Ähnlichkeitstransformation transformiert wird, wird
+	ein Bild erstellt, das der ursprünglichen Figur ähnlich ist. Mit anderen Worten,
+	zwei Figuren sind ähnlich, wenn eine Ähnlichkeitstransformation die erste Figur
+	zur zweiten Figur transformiert.\\
+	
+	Ein solches Prinzip ist auch in unsere Methode eingesetzt worden. Es wird eine
+	zweites, dem ersten Bild ähnliches Bild, erstellt. \\
+	
+\begin{lstlisting}[caption=Implementation
+	Normalisierung,language=python,label=norm]
+	
+def similarityTransformMat(initialPoints, destinationPoints):
+...
+tform = cv2.estimateAffinePartial2D(np.array([initialPoints]),
+	np.array([destinationPoints]))
+return tform[0]
+	
+\end{lstlisting}
+	
+	Im Code Abschnitt \ref{norm} wird die Methode gezeigt, die als Parameter die
+	Anfangs- und die Zielpunkte nimmt und aus den beiden jeweils einen dritten Punkt
+	berechnet.
+	\\
+	
+	Sie werden dann in Arrays gespeichert und aus denen wird die
+	Ähnlichkeitstransform von den in OpenCV eingebetteter Funktion
+	\textit{cv2.estimateAffinePartial2D} berechnet.
+	\\
+	
+	Ausgabe ist eine 2D affine Transformation, also eine 2x3 Matrix, oder eine leere
+	Matrix, wenn die Transformation nicht geschätzt werden konnte.\\
+	"Die Funktion schätzt eine optimale affine 2D-Transformation mit 4
+	Freiheitsgraden, die auf Kombinationen aus Translation, Rotation und
+	gleichmäßiger Skalierung beschränkt sind. Verwendet den ausgewählten Algorithmus
+	für eine robuste Schätzung."\cite{opencv_library}
+	\\
+	
+	Die nächste Funktion macht die Ausrichtung des Gesicht im Bild. 
+	Es bekommt ein, von der Funktion \textit{cv2.imread} eingelesenes Bild, die
+	gewünschte Größe, und die Dlib Gesichtsmerkmale als Parameter. 
+	
+	\begin{lstlisting}[caption=Gesichtsausrichtung,label=align,language=python]
+	def faceAlign(image, size, faceLandmarks):
+	(h, w) = size
+	initialPoints = []
+	destinationPoints = []
+	
+	initialPoints = [faceLandmarks[36], faceLandmarks[45]]
+	
+	destinationPoints = [(np.int(0.3*w), np.int(h/3)), (np.int(0.7*w),
+	np.int(h/3))]
+	
+	similarityTransform = similarityTransformMat(initialPoints, destinationPoints)
+	
+	faceAligned = np.zeros((image.shape), dtype=image.dtype)
+	
+	faceAligned = cv2.warpAffine(image, similarityTransform, (w, h))
+	
+	return faceAligned
+	
+	\end{lstlisting}
+	
+	Im Code Abschnitt \ref{align} in Zeile \textbf{6} wird die Position der linken
+	Ecke des linken Auges und der rechten Ecke des rechten Auges von dem Eingabebild
+	genommen. \\
+	In Zeile \textbf{8} wird die Position der linken Ecke des linken Auges und der
+	rechten Ecke des rechten Auges im ausgerichtete Bild berechnet. \\
+	In Zeile \textbf{10} und \textbf{11} wird die Ähnlichkeitstransformation durch
+	die vorher erstellten Funktion \textit{similarityTransformMat} berechnet.\\
+	In Zeile \textbf{12} wird das ausgerichtete Gesicht in einem Tupel gespeichert.
+	\\
+	Schließlich wird die Ähnlichkeitstransformation durch die Methode
+	\textit{cv2.warpAffine} angewendet.\\
+	Diese Methode bekommt das Tupel vom Bild, \textit{similarityTransform}, und die
+	Größen vom Bild als Parameter. Das Ergebnis wird dann von den Funktion
+	zurückgegeben. (Zeile \textbf{16}) 
+	\\
+	
+	Eine affine Transformation ist jede Transformation, die die Kollinearität (d. H.
+	Alle auf einer Linie liegenden Punkte, die anfänglich nach der Transformation
+	noch auf einer Linie liegen) und die Entfernungsverhältnisse (z. B. der
+	Mittelpunkt eines Liniensegments bleibt der Mittelpunkt nach der Transformation)
+	bewahrt. 
+	Eine affine Transformation wird auch als Affinität bezeichnet.\cite{affine}
+	\\ 
+	Zusätzlich wurde noch eine Glättungsfilter angewendet. Dies geschieht durch die
+	Funktion \textit{cv.2filter2d}, die ein Bild mit dem Kernel faltet. \\
+	Sie bekommt folgende Parameter: 
+	\textit{output} - Zielbild.\\
+	\textit{kernel} - Faltungskern (oder vielmehr ein Korrelationskern), eine
+	einkanalige Gleitkommamatrix.\\
+	\textit{ddepth} - gewünschte Tiefe des Zielbildes. \\
+	
+	Der Kernel ist auf Code abschnitt \ref{smooth} genau sichtbar. 
+	
+	\begin{lstlisting}[language=python,caption=Glättungsfilter,label=smooth]
+	kernel = np.ones((5,5),np.float32)/25
+	
+	output = cv2.filter2d(output,-1, kernel)
+	\end{lstlisting}
+	
+	\begin{figure}[H]
+		\centering
+		\subfloat[Nicht normalisiert]{{\includegraphics[scale=0.5]{\ordnerfigures
+					NewAron4.jpg}} }%
+		\qquad
+		\subfloat[Normalisiert]{{\includegraphics[scale=0.315]{\ordnerfigures
+					alignedAronCropped.jpg}} }%
+		\caption{Unterschied: normalisiert, nicht normalisiert}
+		\label{fig:norme}
+		
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\subfloat[Nicht normalisiert]{ {\includegraphics[scale=0.7]{\ordnerfigures
+					Neworens1.jpg} }}%
+		\qquad
+		\subfloat[Normalisiert]{ {\includegraphics[scale=0.315]{\ordnerfigures
+					alignedorens1Cropped.jpg} }}%
+		\caption{Unterschied: normalisiert, nicht normalisiert}
+		\label{fig:norm}
+	\end{figure}
+	
+	
+	Auf Abbildungen \ref{fig:norm} und \ref{fig:norme} sieht man ganz klar die
+	Unterschiede die die Normalisierung in Bildern verursacht. 
+
+	
+\subsection{Zuschneiden von Gesichter}
+
+Nachdem Gesichter gefunden werden, muss man daraus eigene Bilder machen, die dasExtrahieren der Schlüsselpunkte erleichtern.\\  
+
+\begin{lstlisting}[language=python,caption=Code Abschnitt: Gesicht
+Zuschneiden,label=crop]
+if nrFace > 0:
+for face in faces:
+for(x, y, w, h) in faces:
+r = max(w, h) /2 
+centerx = x + w /2 
+centery = y + h /2
+nx = int(centerx - r) 
+ny = int(centery - r) 
+nr = int(r * 2) 
+faceimg = image[ny:ny+nr, nx:nx+nr] 
+filenam = input("Give new filename for cropped photo: \n")
+image2 = cv2.imwrite(filenam,faceimg)
+elif nrFace <= 0:
+print("no faces found")
+
+\end{lstlisting}
+
+In Listing \ref{crop} sieht man folgendes:\\
+
+\textit{nrFace} bestimmt die Anzahl der Gesichter, die von den
+Kaskadenklassifikator gefunden wurden. 
+Nur wenn dieser Wert größer als 0 ist soll das Programm weiterlaufen.  
+Es wird durch jedes Gesicht iteriert.
+\\
+
+Zeilen \textbf{1-6} berechnen das Zentrum vom neuen Bild und in Zeile \textbf{7}
+wird ein neues Bild mit den berechneten Parametern angelegt.\\
+Mit imwrite wird das Bild gespeichert (Zeile \textbf{12}). 
+Auf Abb.\ref{fig:aroncropped} sieht man deutlich nur das Gesicht.
+\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{\ordnerfigures aroncropped.jpg}
+	\caption{Output: Zugeschnittenes Bild}
+	\label{fig:aroncropped}
+\end{figure}
+
+	
+\subsection{Gesichtsschlüsselpunkte Extraktion}
+\label{gspex}
+
+Nun kommt ist es zu einem sehr wichtigen Punkt meines Teils der Diplomarbeit, die Extraktion Gesichtsschlüsselpunkte. 
+Dazu wurden die Gesichtsmerkmale \textit{„Facial Landmarks“} von dlib verwendet.
+
+Die Gesichtsmarkierungen werden verwendet, um Bereiche des Gesichts zu finden
+und darzustellen, wie zum Beispiel: die Augen, die Augenbrauen, die Nase, den
+Mund und den Kiefer. Wie macht man das? Wie erkennt man Gesichtsmerkmale? \\Das ist eine Teilmenge des Problems der Formvorhersage. Bei einem vorgegebenen Eingabebild (und
+normalerweise einem ROI\footnote{Region of interest, Region von Interesse}, die
+das interessierende Objekt angibt) versucht ein Formvorhersager, wichtige Punkte
+entlang der Form zu lokalisieren. 
+Dieser Formvorhersager, der im Dlib integriert ist wurde von Kazemi and Sullivan
+in ihrem Paper: \textit{One Millisecond Face Alignment with an Ensemble of
+	Regression Trees} entwickelt.\cite{Kazemi2014OneMF} 
+Dieser Methode werden viele Trainingsdaten zur Verfügung gestellt, damit sie ein Kombination von Regressionskurven trainiert, um die Positionen der \textit{Facial Landmarks} direkt aus den Pixelintensitäten selbst zu berechnen.\cite{Kazemi2014OneMF} \\
+
+Dadurch werden unsere gewünschten 68 Gesichtsmarkierungen mit hohen
+Vorhersagbarkeit extrahiert und als x, y Koordinaten weitergegeben. 
+Zusätzlich ist es auch so, dass diese Koordinaten nicht von den
+Dimensionen des Bildes abhängig sind. 
+Die Indizes der 68 Koordinaten sind in der Abb.\ref{fig:landmarks} dargestellt:
+\\
+
+\begin{figure}[H]
+	\includegraphics[scale=0.5]{\ordnerfigures landmarks.png}
+	\centering
+	\caption{Gesichtsschlüsselpunkte \cite{Kazemi2014OneMF}}
+	\label{fig:landmarks}
+\end{figure}
+
+Nachdem der Prediktor geladen wird, speichern wir die Gesichtsschlüsselpunkte in einem Formobjekt
+mit 68(x,y) Koordinaten. \\
+Es wird hier nicht die \textit{resize} Funktion verwendet, weil das Bild an Qualität verliert
+und es rechenintensiver ist, je größer das Eingabebild wird. \\
+Jede Koordinate läuft in einer Schleife durch und entspricht dem spezifischen
+Gesichtsmerkmal im Bild. Auf Abbildung \ref{fig:data} sieht man die extrahierten Daten von einem Gesicht. \\
+\begin{figure}[H]
+	\includegraphics[scale=0.8]{\ordnerfigures pikat.png}
+	\centering
+	\caption{Gesichtsdaten}
+	\label{fig:data}
+\end{figure}
+
+
+Die Merkmale werden in einer numpy Array gespeichert für die
+Speicherung in der Datenbank. \\
+
+
+
+\section{Herausforderungen, Probleme und deren Lösung }
+
+
+
+Die größte Herausforderung lag bei der Planung der Software und den Methoden
+die zum Extrahieren von den Gesichtsschlüsselpunkten dienten.\\
+Es hat mich viel Zeit gekostet, bis ich eine geeignete Lösung gefunden habe und
+das hat mir viel Stress gemacht. \\
+Eine weitere Herausforderung war das Verknüpfen von den Entwicklungsumgebungen
+und die Kooperation zwischen den Teammitgliedern. \\
+Die verwendete Systeme waren all zu unterschiedlich und es konnte keine
+Standardisierung zwischen ihnen gefunden werden. Also ist viel Zeit beim
+Installieren und Konfigurieren investiert worden. Ein Grund dafür ist die
+mangelnde Erfahrung mit den verwendeten Technologien. 
+\\
+
+Viele Sachen, wie z.b.: die Einteilung der Arbeit, die genaue Spezifikationen,
+die sehr grobe Planung, war am Beginn auch wegen den
+Kommunikationslücken unklar. 
+\\
+
+Als das Projekt weiter fortschritt, hat sich der Bedarf an Genauigkeit und Präzision
+auch enorm gesteigert.
+Es hat immer wieder Fälle beim Finden von Gesichter gegeben, in denen die fertig gestellten neuronale Netze
+nicht so gut funktioniert haben . 
+\\
+
+Es war keine gute Idee sich nur von einem Prädiktor abhängig
+zu machen. 
+Es war deutlich dass, die Einsetzung von mehreren neuronalen Netzen Erhöhung der Treffsicherheit ergeben hätte.
+\\
+
+Eine einfache Normalisierung genügte auch nicht die Umwandlung der Bilder in
+Graustufe), sondern es war eine komplexere Lösung dafür notwendig.
+\\
+Bis das funktioniert hat, hat es viel Zeit und Mühe gekostet. 
+Dafür waren auch relativ fortgeschrittene mathematische Kenntnisse nötig.
+Dabei habe ich viel Try and Error angewendet.
+\\
+ 
+Es hat auch Schwierigkeiten beim Qualitätsmanagement gegeben. Die
+Erfahrung fehlte, somit waren gewisse Maßstäbe und Standarts auch nicht bekannt. 
+
+
+
+\subsection{Lösungen}
+Während der Arbeit habe ich viel recherchiert und mich genau über alles Mögliche
+informiert. 
+\\
+
+Es wurde viel herumprobiert und experimentiert. Es wurde auch sehr viel
+getestet, damit die Ziele auch qualitativ erfüllt wurden. 
+\\
+Die Kommunikation hat sich steigendem mit Bedarf über die Zeit stark verbessert und
+dadurch sind auch die Unklarheiten abgeklärt worden. 
+
+
+\section{Qualitätssicherung, Controlling}
+
+
+Die Qualität wurde durch verschiedene Methoden gesichert. Eine von denen war die
+Methode 5xWarum. 
+\\
+ 
+„Fünf warum“ ist eine iterative Methode, die Fragen als Basis hat und die
+Beziehungen zwischen Fragen und Problemen. \\
+Es geht hier um die Verschachtelung der Ursachen und das Herausfinden von ihnen durch iterative Fragetechnik, da viele Probleme nicht nur eine einzige Ursache haben. 
+Die Methode ruft jedes Mal eine andere Folge von Fragen auf.\cite{fmea}
+\\
+
+Die aufgetauchten Probleme haben viele Ursachen, die nicht mit dem ersten Blick
+sichtbar sind. 5x warum hilft durch diese verschachtelten Ursachen das
+grundlegende Problem zu entdecken. \\
+
+Eine Problemstellung: „Segmentation fault“ beim Finden von Keypoints mit
+FAST\footnote{Features from Accelerated Segment Test}.“ 
+
+
+\begin{enumerate}
+	
+	
+		\item  \textbf{Was ist überhaupt ein „Segmentation Fault“? }
+	Ein Segmentierungsfehler tritt auf, wenn ein Programm versucht, auf einen
+	Speicherort zuzugreifen, auf den es nicht zugreifen darf, oder wenn versucht
+	wird, auf einen Speicherort auf nicht zulässige Weise zuzugreifen (z. B. beim
+	Versuch, an einen schreibgeschützten Speicherort zu schreiben, oder einen Teil
+	des Betriebssystems zu überschreiben).
+	\item \textbf{Warum passiert das, warum versucht mein Program auf einen Speicherort
+	zuzugreifen, auf den es nicht zugreifen darf?}\\
+	Problem ergibt sich in dieser Zeile: 
+	“kp = fast.detect(image, None)”
+	
+	Wahrscheinlich durften die Daten die fast.detect zurückgibt nicht in kp gespeichert
+	werden. 
+	
+	ODER\\
+	
+	Das Paket in dem die FAST Algorithmus drinnen ist ist nicht (richtig)
+	installiert worden.
+	Warum? Alle nötigen Pakete wurden in einer gesamten Installation geholt und
+	FAST war nicht da. 
+	
+	\item	\textbf{Warum dürfen die Daten die fast.detect zurückgibt nicht in kp gespeichert
+	werden ? }
+	
+	Die Daten die fast.detect zurückgibt, dürfen nicht in kp gespeichert werden, weil
+	kp kein Array ist. 
+	
+	\item	\textbf{Warum ist kp kein Array? }
+	
+	Kp ist kein array, weil man es in Python  manuell angeben muss.
+	
+	\item \textbf{Warum wurde es nicht manuell angegeben? }
+	
+	Es wurde nicht manuell gegeben weil, die Methode fast.detect nicht gut
+	recherchiert wurde. Man sollte mehr darüber in die Dokumentation nachschauen.
+	
+	\textbf{Konklusion}\\
+	Durch die 5x Warum Methode ist es zu den Ergebnis gekommen: Es musste ja mehr
+	untersucht werden bevor man eine solche Methode implementiert. Die „5xWarum“
+	Methode hat dabei geholfen, dass die eigentliche Ursache des Problems
+	herausgefunden wurde.\\
+	Die nächste Schritte sind: entweder eine andere Methode, die schon installiert
+	ist, verwenden oder die benötigten Pakete für FAST manuell installieren. 
+	
+	
+	
+\end{enumerate}
+
+
+\section{Ergebnisse}
+
+	
+Ich habe ungefähr 180 Stunden Zeit ins gesamt für die Diplomarbeit investiert und folgendes erreicht.\\
+
+\begin{itemize}
+	\item Gesichtserkennung und das Zuschneiden von Gesichter wurden fertig
+	implementiert.
+	\item Bilder sind normalisiert worden.\\
+	\item Gesichtsschlüsselpunkte wurden extrahiert.\\
+	
+\end{itemize}
+
+
+\section{Evaluierung und Resümee}
+
+	In diesem Kapitel geht es um die Reflexion, Evaluierung der Ergebnisse. Was von der Planung abgewichen ist usw. 
+
+\subsection{Planung vs. Realisierung}
+
+
+Es wurde am Anfang so geplant, dass die Klassifikatoren und die neuronale Netze alle selbst gemacht werden müssten. 
+Über die Zeit wurde mir klar, dass so was zu kompliziert und fast unmöglich war.
+Die Genauigkeit der Gesichtserkennungsalgorithmen könnte nie erreicht werden, wenn es vom Beginn erarbeitet wurde. Geplant waren auch gewisse Ziele, die über die Diplomarbeit-Mitglieder falsch verteilt worden waren. Z.b.: Ein Ziel von mir war die Vektorumwandlung, die später so geschätzt wurde, dass es eigentlich zu Rei's Teil gehörte. 
+	
+	
+
+\subsection{Ergebnisse}
+
+	Im technischen Aspekt habe ich viel gelernt.
+	Diese Diplomarbeit hat viele Kenntnisse mit sich gebracht. Zahlreiche neue Bibliotheken wurden verwendet. 
+	Ein ganz unbekanntes Framework ist kennen gelernt worden. 
+	Ich habe viel Erfahrung mit Computer Vision bekommen.
+	Da meine Aufgaben zum Teil sehr anspruchsvoll waren, habe ich viel Zeit und Mühe für die Realisierung investiert.
+	Soft Skills wurden auch dazugewonnen. Ich habe erlernt wie wichtig Teamwork und Kommunikation ist. 
+	Wenn ich die ganze Diplomarbeit noch einmal machen würde, wäre vieles anders. 
+	  
+

@@ -1,0 +1,25 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Bildverarbeitung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Allgemeines}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Entwicklungsumgebung und Technologien}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Frameworks und Bibliotheken}{2}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Technische Lösungen}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Lösungsweg - Structed Software design}{4}{subsection.1.2.1}%
+\contentsline {subsubsection}{Legende:}{4}{section*.4}%
+\contentsline {subsection}{\numberline {1.2.2}Gesichtserkennung}{5}{subsection.1.2.2}%
+\contentsline {subsubsection}{Umsetzung in Code}{6}{section*.8}%
+\contentsline {subsection}{\numberline {1.2.3}Normalisierung}{7}{subsection.1.2.3}%
+\contentsline {subsubsection}{Was ist Normalisierung?}{7}{section*.10}%
+\contentsline {subsubsection}{Methoden für Normalisierung}{8}{section*.11}%
+\contentsline {subsubsection}{Warum Normalisierung?}{8}{section*.12}%
+\contentsline {subsubsection}{Implementation}{8}{section*.13}%
+\contentsline {subsection}{\numberline {1.2.4}Zuschneiden von Gesichter}{11}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Gesichtsschlüsselpunkte Extraktion}{12}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Herausforderungen, Probleme und deren Lösung }{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Lösungen}{14}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Qualitätssicherung, Controlling}{15}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Ergebnisse}{16}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Evaluierung und Resümee}{16}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Planung vs. Realisierung}{16}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Ergebnisse}{16}{subsection.1.6.2}%
